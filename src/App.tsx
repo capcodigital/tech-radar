@@ -1,16 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import styled from 'styled-components/macro';
 import RadialPage from './RadialPage';
 import BubblePage from './BubblePage';
-const PageWrapper = styled.div`
-  width: 100vw;
-  height: 100vh;
-  background: black;
-  text-align: center;
-`;
+import PageWrapper from './PageWrapper';
 
-function App() {
+const App = () => {
   return (
     <PageWrapper>
       <Router>
@@ -25,6 +19,6 @@ function App() {
       </Router>
     </PageWrapper>
   );
-}
+};
 
 export default App;
