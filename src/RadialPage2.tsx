@@ -1,11 +1,11 @@
 import React from 'react';
 import { radial } from './data';
-import RadialChart from './RadialChart';
+import RadialChart2 from './RadialChart2';
 
 const RadialPage = () => {
   return (
     <div>
-      <RadialChart data={radial} />
+      <RadialChart2 data={radial} />
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import RadialPage from './RadialPage';
+import RadialPage2 from './RadialPage2';
 import BubblePage from './BubblePage';
 import PageWrapper from './PageWrapper';
 
@@ -11,6 +12,9 @@ const App = () => {
         <Switch>
           <Route exact path='/radial'>
             <RadialPage />
+          </Route>
+          <Route exact path='/radial2'>
+            <RadialPage2 />
           </Route>
           <Route exact path='/bubble'>
             <BubblePage />

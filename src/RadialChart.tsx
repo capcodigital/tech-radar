@@ -1,11 +1,13 @@
 import React, { FC } from 'react';
 import * as d3 from 'd3';
-import styled from 'styled-components/macro';
-import chroma from 'chroma-js';
 import Tooltip from '@material-ui/core/Tooltip';
+import styled from 'styled-components/macro';
+
 type BarChartProps = {
   data: any;
 };
+
+const angleScale = d3.scaleLinear().range([0.4, 0.8]).domain([0, 1]);
 
 // from stackoverflow... but it works :)
 // returns random numbers with min distance between them
@@ -14,19 +16,16 @@ const spacedRandArray = (distance: number, count: number) => {
   const max = 1;
   let available = max - min - distance * (count - 1);
   if (available < 0) return false;
-  // not able to fit the this amount of values in this range
 
-  let arr: number[] = [];
+  let randArray: number[] = [];
   for (let i = 0; i < count; i++) {
     let temp = Math.random() * available;
-    arr[i] = i == 0 ? min + temp : arr[i - 1] + temp + distance;
+    randArray[i] = i == 0 ? min + temp : randArray[i - 1] + temp + distance;
     available -= temp;
   }
-  // map 0 to 0.1 and 1 to 0.9 to overlapping data points near borders
-  return arr;
+  return randArray;
 };
-
-const RadialBarChart: FC<BarChartProps> = ({ data }) => {
+const RadialChart: FC<BarChartProps> = ({ data }) => {
   const width = 900;
   const height = 900;
   const dataPointCircleRadius = 22;
@@ -63,7 +62,7 @@ const RadialBarChart: FC<BarChartProps> = ({ data }) => {
 
         {[1, 2, 3, 4].map((idx: number) => (
           <line
-            transform={`rotate(${45+90 * idx})`}
+            transform={`rotate(${45 + 90 * idx})`}
             x1={0}
             y1={0}
             y2={height / 2}
@@ -116,14 +115,16 @@ const RadialBarChart: FC<BarChartProps> = ({ data }) => {
                 y={-(radius + 20)}
                 fontSize={15}
                 fill={'white'}
+                letterSpacing={1}
               >
                 {d.name}
               </text>
               {d.preferred.map((dataPoint: any, idx: number) => {
-                // generate random angle to spread out the data in quadrants
-                // *0.9 to avoid points to be close to each other on the boarders of each quadrant
-                let randomAnglePreferred =
-                  (randomPreferredAngles as any)[idx] * 0.9;
+                // generate random angle for data in each quadrants
+                // scaling this random angle to avoid overlapping of points on quadrant borders
+                let randomAnglePreferred = angleScale(
+                  (randomPreferredAngles as any)[idx]
+                );
                 idx += 1; // avoid alignment of first(idx=0) data points
                 return (
                   <Tooltip
@@ -132,7 +133,7 @@ const RadialBarChart: FC<BarChartProps> = ({ data }) => {
                     aria-label='haha'
                     placement='right'
                   >
-                    <>
+                    <g>
                       {/* background circle for icons */}
                       <circle
                         key={`preferred-${d.name}-${idx}`}
@@ -156,7 +157,6 @@ const RadialBarChart: FC<BarChartProps> = ({ data }) => {
                         }`}
                         r={dataPointCircleRadius}
                         fill={'white'}
-                        onMouseOver={() => console.log('hey preferred')}
                       />
                       <image
                         x={`${
@@ -183,13 +183,14 @@ const RadialBarChart: FC<BarChartProps> = ({ data }) => {
                         height={imageSize}
                         width={imageSize}
                       />
-                    </>
+                    </g>
                   </Tooltip>
                 );
               })}
               {d.skilled.map((dataPoint: any, idx: number) => {
-                let randomAngleSkilled =
-                  (randomSkilledAngles as any)[idx] * 0.9;
+                let randomAngleSkilled = angleScale(
+                  (randomSkilledAngles as any)[idx]
+                );
                 idx += 1;
                 return (
                   <Tooltip
@@ -198,7 +199,7 @@ const RadialBarChart: FC<BarChartProps> = ({ data }) => {
                     aria-label='haha'
                     placement='right'
                   >
-                    <>
+                    <g>
                       <circle
                         key={`skilled-${d.name}-${idx}`}
                         cx={`${
@@ -221,7 +222,6 @@ const RadialBarChart: FC<BarChartProps> = ({ data }) => {
                         }`}
                         r={dataPointCircleRadius}
                         fill={'white'}
-                        onMouseOver={() => console.log('hey skilled')}
                       />
                       <image
                         x={`${
@@ -248,13 +248,14 @@ const RadialBarChart: FC<BarChartProps> = ({ data }) => {
                         height={imageSize}
                         width={imageSize}
                       />
-                    </>
+                    </g>
                   </Tooltip>
                 );
               })}
               {d.scaling.map((dataPoint: any, idx: number) => {
-                let randomAngleScaling =
-                  (randomScalingAngles as any)[idx] * 0.9;
+                let randomAngleScaling = angleScale(
+                  (randomScalingAngles as any)[idx]
+                );
                 idx += 1;
                 return (
                   <Tooltip
@@ -263,7 +264,7 @@ const RadialBarChart: FC<BarChartProps> = ({ data }) => {
                     aria-label='haha'
                     placement='right'
                   >
-                    <>
+                    <g>
                       <circle
                         key={`scaling-${data.name}-${idx}`}
                         cx={`${
@@ -286,7 +287,6 @@ const RadialBarChart: FC<BarChartProps> = ({ data }) => {
                         }`}
                         r={dataPointCircleRadius}
                         fill={'white'}
-                        onMouseOver={() => console.log('hey scaling')}
                       />
                       <image
                         x={`${
@@ -313,7 +313,7 @@ const RadialBarChart: FC<BarChartProps> = ({ data }) => {
                         height={imageSize}
                         width={imageSize}
                       />
-                    </>
+                    </g>
                   </Tooltip>
                 );
               })}
@@ -325,4 +325,4 @@ const RadialBarChart: FC<BarChartProps> = ({ data }) => {
   );
 };
 
-export default RadialBarChart;
+export default RadialChart;
