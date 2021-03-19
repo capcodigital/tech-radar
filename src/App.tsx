@@ -10,7 +10,7 @@ const App = () => {
     <PageWrapper>
       <Router>
         <Switch>
-          <Route exact path='/radial'>
+          <Route exact path='/'>
             <RadialPage />
           </Route>
           <Route exact path='/radial2'>
