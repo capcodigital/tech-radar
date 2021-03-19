@@ -14,12 +14,29 @@ const RadialChart2: FC<BarChartProps> = ({ data }) => {
   const imageSize = 24;
   const color = d3
     .scaleLinear<string>()
-    .domain([0, 12, 24])
+    .domain([0, 8, 16, 24])
     .range(['#D91448', '#592556', '#38379F']);
-
-
+  //const createArc = d3.arc().padAngle(0.05).cornerRadius(3);
   return (
     <svg width={width} height={height} style={{ overflow: 'visible' }}>
+      {/* <g transform={`translate(${height / 2} ${width / 2})`}>
+        {d3.range(180).map((d: any, i: number) => {
+          return (
+            <path
+              className={`arc-${i}`}
+              d={
+                createArc({
+                  startAngle: i * 2 * (Math.PI / 180),
+                  endAngle: (i + 1) * 2 * (Math.PI / 180),
+                  innerRadius: 0,
+                  outerRadius: height / 2,
+                })!
+              }
+              fill={d3.hsl(i, 1, 0.5).toString()}
+            />
+          );
+        })}
+      </g> */}
       <g transform={`translate(${height / 2} ${width / 2})`}>
         <circle
           key={'last-circle'}
@@ -44,7 +61,7 @@ const RadialChart2: FC<BarChartProps> = ({ data }) => {
         ))}
         {new Array(24).fill(0).map((d: any, idx: number) => (
           <line
-            transform={`rotate(${(360 / 24) * idx - 30})`}
+            transform={`rotate(${(360 / 24) * idx + 90})`}
             x1={0}
             y1={0}
             y2={height / 2}
@@ -88,6 +105,8 @@ const RadialChart2: FC<BarChartProps> = ({ data }) => {
                         }`}
                         r={dataPointCircleRadius}
                         fill={'white'}
+                        stroke={color(techIdx)}
+                        strokeWidth={2}
                       />
                       <image
                         x={`${
@@ -118,7 +137,7 @@ const RadialChart2: FC<BarChartProps> = ({ data }) => {
               })}
               {d.skilled.map((dataPoint: any, idx: number) => {
                 idx += 1;
-                let r = innerCircleRadius + idx * Math.pow(0.7, 2) * 120; //adding decay for radius size increase
+                let r = innerCircleRadius + idx * Math.pow(0.7, 2) * 120; //adding 0.7^2 decay for radius size increase
                 return (
                   <Tooltip
                     key={`preferred-${idx}`}
@@ -148,6 +167,8 @@ const RadialChart2: FC<BarChartProps> = ({ data }) => {
                         }`}
                         r={dataPointCircleRadius}
                         fill={'white'}
+                        stroke={color(techIdx + 8)}
+                        strokeWidth={2}
                       />
                       <image
                         x={`${
@@ -208,6 +229,8 @@ const RadialChart2: FC<BarChartProps> = ({ data }) => {
                         }`}
                         r={dataPointCircleRadius}
                         fill={'white'}
+                        stroke={color(techIdx + 16)}
+                        strokeWidth={2}
                       />
                       <image
                         x={`${
