@@ -4,7 +4,7 @@ import RadialPage from './RadialPage';
 import RadialPage2 from './RadialPage2';
 import BubblePage from './BubblePage';
 import PageWrapper from './PageWrapper';
-
+import Menu from './Menu';
 const App = () => {
   return (
     <PageWrapper>

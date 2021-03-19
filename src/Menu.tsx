@@ -24,11 +24,9 @@ const Menu = () => {
       <StyledLink to={'/'}>
         <div>radial</div>
       </StyledLink>
-
       <StyledLink to={'/radial2'}>
         <div>radial 2</div>
       </StyledLink>
-
       <StyledLink to={'/bubble'}>
         <div>bubble chart</div>
       </StyledLink>

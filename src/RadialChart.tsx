@@ -35,6 +35,10 @@ const RadialChart: FC<BarChartProps> = ({ data }) => {
     .domain([8, 5, 0])
     .range(['#009cff', '#214e7e', '#000000']);
 
+  const xScaleSegments = d3
+    .scaleLinear()
+    .domain([1, 4])
+    .range([0, 2 * Math.PI]);
   const createArc = d3.arc().padAngle(0.05).cornerRadius(3);
   return (
     <svg width={width} height={height} style={{ overflow: 'visible' }}>
@@ -59,7 +63,6 @@ const RadialChart: FC<BarChartProps> = ({ data }) => {
           strokeDasharray={3}
           opacity={0.6}
         />
-
         {[1, 2, 3, 4].map((idx: number) => (
           <line
             transform={`rotate(${45 + 90 * idx})`}
@@ -71,7 +74,22 @@ const RadialChart: FC<BarChartProps> = ({ data }) => {
             strokeDasharray={4}
           />
         ))}
-
+        // labels for segments
+        {['preferred', 'skilled', 'scaling'].map(
+          (segmentName: string, idx: number) => (
+            <g transform={`rotate(${180+ (idx + 1) * (360 / 4)})`}>
+              <text
+                textAnchor='middle'
+                y={50 / 2 - 10}
+                fontSize={15}
+                transform={`rotate(180, ${xScaleSegments(1)} ${65 / 2 - 10})`} // rotate(a,x,y) rotate around a given point
+                fill={'white'}
+              >
+                {segmentName}
+              </text>
+            </g>
+          )
+        )}
         {data.map((d: any, idx: number) => {
           const radius = (data.length - idx) * 50;
           const r = radius + 25;
