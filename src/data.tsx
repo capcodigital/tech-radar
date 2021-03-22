@@ -17,7 +17,11 @@ export const radial = [
         link:
           'https://symbols.getvecta.com/stencil_100/11_vault-icon.469c5366cc.svg',
       },
-      { name: 'SonarQube', link: 'https://pbs.twimg.com/profile_images/1224335491899760641/h404B5dU_400x400.jpg' },
+      {
+        name: 'SonarQube',
+        link:
+          'https://pbs.twimg.com/profile_images/1224335491899760641/h404B5dU_400x400.jpg',
+      },
       {
         name: 'Elastic',
         link:
@@ -25,13 +29,19 @@ export const radial = [
       },
     ],
     skilled: [
-      { name: 'Bitbucket', link: 'https://cdn.worldvectorlogo.com/logos/bitbucket-icon.svg' },
+      {
+        name: 'Bitbucket',
+        link: 'https://cdn.worldvectorlogo.com/logos/bitbucket-icon.svg',
+      },
       {
         name: 'Jenkins',
         link:
           'https://symbols.getvecta.com/stencil_97/67_the-jenkins-project-icon.0141f64fe7.svg',
       },
-      { name: 'TeamCity', link: 'https://cdn.worldvectorlogo.com/logos/teamcity-icon.svg' },
+      {
+        name: 'TeamCity',
+        link: 'https://cdn.worldvectorlogo.com/logos/teamcity-icon.svg',
+      },
       {
         name: 'Istio',
         link:
@@ -54,8 +64,15 @@ export const radial = [
         link:
           'https://symbols.getvecta.com/stencil_98/71_twistlock-icon.8db1b813dd.svg',
       },
-      { name: 'Kiali', link: 'https://design.jboss.org/kiali/logo/final/PNG/kiali_icon_darkbkg_1280px.png' },
-      { name: 'ConcourseCl', link: 'https://cdn.worldvectorlogo.com/logos/concourse-1.svg' },
+      {
+        name: 'Kiali',
+        link:
+          'https://design.jboss.org/kiali/logo/final/PNG/kiali_icon_darkbkg_1280px.png',
+      },
+      {
+        name: 'ConcourseCl',
+        link: 'https://cdn.worldvectorlogo.com/logos/concourse-1.svg',
+      },
       {
         name: 'Consul',
         link:
@@ -120,8 +137,18 @@ export const radial = [
           'https://symbols.getvecta.com/stencil_90/47_openshift-icon.e98513fd69.svg',
       },
     ],
-    skilled: [{ name: 'PCF', link: 'https://avatars.githubusercontent.com/u/5497370?s=200&v=4' }],
-    scaling: [{ name: 'PKS', link: 'https://blogs.vmware.com/virtualblocks/files/2018/08/PKS-2.png' }],
+    skilled: [
+      {
+        name: 'PCF',
+        link: 'https://avatars.githubusercontent.com/u/5497370?s=200&v=4',
+      },
+    ],
+    scaling: [
+      {
+        name: 'PKS',
+        link: 'https://blogs.vmware.com/virtualblocks/files/2018/08/PKS-2.png',
+      },
+    ],
   },
   {
     name: 'CLOUD',
@@ -154,7 +181,11 @@ export const radial = [
         link: 'https://miro.medium.com/max/300/1*1RDFnS8FgAOQFegtuynxWw.png',
       },
       { name: 'Camel', link: 'https://camel.apache.org/_/img/logo-d.svg' },
-      { name: 'gRPC', link: 'https://docs.konghq.com/assets/images/icons/hub/kong-inc_grpc-gateway.png' },
+      {
+        name: 'gRPC',
+        link:
+          'https://docs.konghq.com/assets/images/icons/hub/kong-inc_grpc-gateway.png',
+      },
       {
         name: 'Kafka',
         link:
@@ -194,8 +225,12 @@ export const radial = [
       },
       { name: 'Go', link: 'https://img.icons8.com/color/344/golang.png' },
     ],
-    skilled: [{ name: 'Python', link: 'https://img.icons8.com/color/452/python.png' }],
-    scaling: [{ name: 'Kotlin', link: 'https://img.icons8.com/color/344/kotlin.png' }],
+    skilled: [
+      { name: 'Python', link: 'https://img.icons8.com/color/452/python.png' },
+    ],
+    scaling: [
+      { name: 'Kotlin', link: 'https://img.icons8.com/color/344/kotlin.png' },
+    ],
   },
   {
     name: 'FRONTEND',
@@ -226,105 +261,17 @@ export const radial = [
     skilled: [
       { name: 'Swift', link: 'https://img.icons8.com/fluent/452/swift.png' },
       { name: 'Kotlin', link: 'https://img.icons8.com/color/344/kotlin.png' },
-      { name: 'Java', link: 'https://img.icons8.com/color/452/java-coffee-cup-logo.png' },
-      { name: 'Ionic', link: 'https://img.icons8.com/ios-filled/452/ionic.png' },
-    ],
-    scaling: [{ name: 'Flutter', link: 'https://img.icons8.com/color/452/flutter.png' }],
-  },
-];
-// occurence can be 100,50,30
-// 100 = preferred
-// 50 = skilled
-// scaling = scaling
-export const bubble = [
-  {
-    name: 'BackEnd',
-    data: [
       {
-        tech: 'Java',
-        occurence: 100,
+        name: 'Java',
         link: 'https://img.icons8.com/color/452/java-coffee-cup-logo.png',
       },
       {
-        tech: 'Node',
-        occurence: 100,
-        link: 'https://img.icons8.com/color/344/nodejs.png',
-      },
-      {
-        tech: 'Go',
-        occurence: 100,
-        link: 'https://img.icons8.com/color/344/golang.png',
-      },
-      {
-        tech: 'Python',
-        occurence: 50,
-        link: 'https://img.icons8.com/color/452/python.png',
-      },
-      {
-        tech: 'Kotlin',
-        occurence: 30,
-        link: 'https://img.icons8.com/color/344/kotlin.png',
-      },
-    ],
-  },
-  {
-    name: 'FrontEnd',
-    data: [
-      {
-        tech: 'React',
-        occurence: 100,
-        link: 'https://img.icons8.com/color/452/react-native.png',
-      },
-      {
-        tech: 'Angular',
-        occurence: 100,
-        link: 'https://img.icons8.com/color/452/angularjs.png',
-      },
-      {
-        tech: 'Vue',
-        occurence: 30,
-        link: 'https://img.icons8.com/color/344/vue-js.png',
-      },
-      {
-        tech: 'Flutter',
-        occurence: 30,
-        link: 'https://img.icons8.com/color/452/flutter.png',
-      },
-    ],
-  },
-  {
-    name: 'Mobile',
-    data: [
-      {
-        tech: 'React Native',
-        occurence: 100,
-        link: 'https://img.icons8.com/color/452/react-native.png',
-      },
-      {
-        tech: 'Swift',
-        occurence: 50,
-        link: 'https://img.icons8.com/fluent/452/swift.png',
-      },
-      {
-        tech: 'Kotlin',
-        occurence: 50,
-        link: 'https://img.icons8.com/color/344/kotlin.png',
-      },
-      {
-        tech: 'Java',
-        occurence: 50,
-        link: 'https://img.icons8.com/color/452/java-coffee-cup-logo.png',
-      },
-      {
-        tech: 'Ionic',
-        occurence: 50,
+        name: 'Ionic',
         link: 'https://img.icons8.com/ios-filled/452/ionic.png',
       },
-      {
-        tech: 'Flutter',
-        occurence: 30,
-        link: 'https://img.icons8.com/color/452/flutter.png',
-      },
+    ],
+    scaling: [
+      { name: 'Flutter', link: 'https://img.icons8.com/color/452/flutter.png' },
     ],
   },
 ];
