@@ -19,6 +19,7 @@ const useStyles = makeStyles((theme: any) => ({
   appBar: {
     background: 'black',
     paddingTop: 20,
+    //borderBottom: '1px solid white'
   },
   list: {
     width: 250,
@@ -30,9 +31,6 @@ const useStyles = makeStyles((theme: any) => ({
     right: 0,
     float: 'right',
     fontSize: 'large',
-  },
-  title: {
-    fontSize: 45,
   },
 }));
 

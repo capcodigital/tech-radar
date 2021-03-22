@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './Home';
-import BubblePage from './BubblePage';
 import InfoPage from './InfoPage';
 import PageWrapper from './PageWrapper';
 import Menu from './Menu';
 import RadarContext from './RadarContext';
-
 
 const App = () => {
   const [name, setName] = useState('');
@@ -19,9 +17,6 @@ const App = () => {
             <Menu />
             <Route exact path='/'>
               <Home />
-            </Route>
-            <Route exact path='/bubble'>
-              <BubblePage />
             </Route>
             <Route exact path='/info'>
               <InfoPage/>

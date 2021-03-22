@@ -3,7 +3,6 @@ import RadarContext from './RadarContext';
 import * as d3 from 'd3';
 import Tooltip from '@material-ui/core/Tooltip';
 import { radial } from './data';
-import styled from 'styled-components/macro';
 import StyledGroup from './StyledGroup';
 import Grid from '@material-ui/core/Grid';
 import List from '@material-ui/core/List';
@@ -40,7 +39,7 @@ const InfoPage: FC = () => {
   let data: any = radial.find((d) => d.name === name.toUpperCase());
 
   const width = 550;
-  const height = 550;
+  const height = 500;
   const dataPointCircleRadius = 22;
   const imageSize = 30;
 
@@ -58,10 +57,10 @@ const InfoPage: FC = () => {
         spacing={5}
         style={{ margin: '1%', textAlign: 'left', width:'100%' }}
       >
-        <Grid item style={{ color: 'white', width: '40%' }}>
+        <Grid item style={{ width: '40%' }}>
           <h2 style={{ marginBottom: '2rem' }}>{name.toUpperCase()}</h2>
           <h3>Preferred</h3>
-          <Divider style={{ backgroundColor: 'white' }} />
+          <Divider />
           <List>
             {data.preferred.map((item: any) => (
               <ListItem key={`menu-${item.name}`} button component='li'>
@@ -72,10 +71,10 @@ const InfoPage: FC = () => {
           {data.skilled.length > 0 && (
             <>
               <h3>Skilled</h3>
-              <Divider style={{ backgroundColor: 'white' }} />
+              <Divider />
             </>
           )}
-          <List style={{ marginBottom: '1rem' }}>
+          <List>
             {data.skilled.map((item: any) => (
               <ListItem key={`menu-${item.name}`} button component='li'>
                 {item.name}
@@ -83,8 +82,8 @@ const InfoPage: FC = () => {
             ))}
           </List>
           <h3>Scaling</h3>
-          <Divider style={{ backgroundColor: 'white' }} />
-          <List style={{ marginBottom: '1rem' }}>
+          <Divider />
+          <List>
             {data.scaling.map((item: any) => (
               <ListItem key={`menu-${item.name}`} button component='li'>
                 {item.name}
