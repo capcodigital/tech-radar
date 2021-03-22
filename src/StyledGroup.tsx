@@ -1,8 +1,4 @@
-import React, { FC, useContext } from 'react';
-import RadarContext from './RadarContext';
-import * as d3 from 'd3';
-import Tooltip from '@material-ui/core/Tooltip';
-import { radial } from './data';
+import React, { FC } from 'react';
 import styled from 'styled-components/macro';
 
 const StyledDataGroup = styled.g`

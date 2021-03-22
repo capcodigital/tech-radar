@@ -10,7 +10,6 @@ import ClearIcon from '@material-ui/icons/Clear';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Grid from '@material-ui/core/Grid';
-import styled from 'styled-components/macro';
 import logo from './logo.png';
 import { ListItem } from '@material-ui/core';
 import RadarContext from './RadarContext';

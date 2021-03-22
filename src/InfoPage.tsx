@@ -39,7 +39,7 @@ const InfoPage: FC = () => {
   let data: any = radial.find((d) => d.name === name.toUpperCase());
 
   const width = 550;
-  const height = 500;
+  const height = 550;
   const dataPointCircleRadius = 22;
   const imageSize = 30;
 
@@ -92,7 +92,7 @@ const InfoPage: FC = () => {
           </List>
         </Grid>
         <Grid item>
-          <svg width={width} height={height} style={{ overflow: 'visible' }}>
+          <svg width={width} height={height} style={{ overflow: 'visible', marginBottom:'3rem' }}>
             <g transform={`translate(${width} ${height})`}>
               {['scaling', 'skilled', 'preferred'].map(
                 (item: string, idx: number) => {
