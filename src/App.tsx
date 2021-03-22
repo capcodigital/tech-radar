@@ -1,24 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import RadialPage from './RadialPage';
-import RadialPage2 from './RadialPage2';
+import Home from './Home';
 import BubblePage from './BubblePage';
+import InfoPage from './InfoPage';
 import PageWrapper from './PageWrapper';
 import Menu from './Menu';
+import RadarContext from './RadarContext';
+
+
 const App = () => {
+  const [name, setName] = useState('');
+  const value = { name, setName };
   return (
     <PageWrapper>
       <Router>
         <Switch>
-          <Route exact path='/'>
-            <RadialPage />
-          </Route>
-          <Route exact path='/radial2'>
-            <RadialPage2 />
-          </Route>
-          <Route exact path='/bubble'>
-            <BubblePage />
-          </Route>
+          <RadarContext.Provider value={value}>
+            <Menu />
+            <Route exact path='/'>
+              <Home />
+            </Route>
+            <Route exact path='/bubble'>
+              <BubblePage />
+            </Route>
+            <Route exact path='/info'>
+              <InfoPage/>
+            </Route>
+          </RadarContext.Provider>
         </Switch>
       </Router>
     </PageWrapper>

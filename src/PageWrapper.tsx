@@ -6,6 +6,7 @@ const StyledPageWrapper = styled.div`
   height: 100vh;
   background: black;
   text-align: center;
+  padding: 1rem;
 `;
 
 const PageWrapper: FC = ({ children }) => {

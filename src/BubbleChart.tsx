@@ -14,11 +14,10 @@ const radiusScale = d3.scaleLinear().range([1, 100]).domain([0, 200]);
 const width = 300;
 const height = 300;
 
-export const color = d3
-  .scaleLinear()
-  .domain([0, 30, 50, 100])
-  .interpolate(d3.interpolateHcl as any)
-  .range(['#9558B2', '#61DAFB', '#ED1944', '#9999FF'] as any);
+const color = d3
+  .scaleLinear<string>()
+  .domain([30, 50, 100])
+  .range(['#D91448', '#592556', '#38379F']);
 
 class BubbleMap extends React.Component<BubbleMapProps, BubbleMapState> {
   constructor(props: any) {
@@ -33,7 +32,7 @@ class BubbleMap extends React.Component<BubbleMapProps, BubbleMapState> {
       .force('y', d3.forceY().strength(0.05))
       .force(
         'collide',
-        d3.forceCollide((d:any) => {
+        d3.forceCollide((d: any) => {
           return radiusScale(d.occurence) + 15;
         })
       )
@@ -59,7 +58,7 @@ class BubbleMap extends React.Component<BubbleMapProps, BubbleMapState> {
       .force('y', d3.forceY().strength(0.05))
       .force(
         'collide',
-        d3.forceCollide((d:any) => {
+        d3.forceCollide((d: any) => {
           return radiusScale(d.occurence) + 15;
         })
       )
@@ -72,11 +71,11 @@ class BubbleMap extends React.Component<BubbleMapProps, BubbleMapState> {
       .forceSimulation()
       .nodes(this.props.data)
       .velocityDecay(0.5)
-      .force('x', d3.forceX((d:any) => -2 * d.x).strength(0.05))
-      .force('y', d3.forceY((d:any) => -2 * d.y).strength(0.05))
+      .force('x', d3.forceX((d: any) => -2 * d.x).strength(0.05))
+      .force('y', d3.forceY((d: any) => -2 * d.y).strength(0.05))
       .force(
         'collide',
-        d3.forceCollide((d:any) => {
+        d3.forceCollide((d: any) => {
           return radiusScale(d.occurence / 10) + 11;
         })
       )
@@ -108,7 +107,7 @@ class BubbleMap extends React.Component<BubbleMapProps, BubbleMapState> {
         </text>
 
         <g transform={`translate(${width / 2}, ${height / 2})`}>
-          {this.state.data.map((item:any, index:number) => (
+          {this.state.data.map((item: any, index: number) => (
             <g
               key={`bubble-${index}`}
               onMouseOver={() => this.handleMouseOver(item)}
@@ -119,6 +118,8 @@ class BubbleMap extends React.Component<BubbleMapProps, BubbleMapState> {
                 cx={item.x}
                 cy={item.y}
                 fill={'white'}
+                stroke={color(item.occurence)}
+                strokeWidth={5}
               />
 
               <image

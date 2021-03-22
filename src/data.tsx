@@ -232,7 +232,10 @@ export const radial = [
     scaling: [{ name: 'Flutter', link: 'https://img.icons8.com/color/452/flutter.png' }],
   },
 ];
-
+// occurence can be 100,50,30
+// 100 = preferred
+// 50 = skilled
+// scaling = scaling
 export const bubble = [
   {
     name: 'BackEnd',
