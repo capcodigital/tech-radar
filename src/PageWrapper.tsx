@@ -6,6 +6,15 @@ const StyledPageWrapper = styled.div`
   height: 100vh;
   background: black;
   text-align: center;
+  padding: 1rem;
+  color: white;
+  hr {
+    background-color: grey;
+  }
+  ul {
+    font-family: Helvetica Neue;
+    margin-bottom: 1rem;
+  }
 `;
 
 const PageWrapper: FC = ({ children }) => {
