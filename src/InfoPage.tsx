@@ -55,7 +55,7 @@ const InfoPage: FC = () => {
         container
         justify='center'
         spacing={5}
-        style={{ margin: '1%', textAlign: 'left', width:'100%' }}
+        style={{ margin: '1%', textAlign: 'left', width: '100%' }}
       >
         <Grid item style={{ width: '40%' }}>
           <h2 style={{ marginBottom: '2rem' }}>{name.toUpperCase()}</h2>
@@ -92,15 +92,18 @@ const InfoPage: FC = () => {
           </List>
         </Grid>
         <Grid item>
-          <svg width={width} height={height} style={{ overflow: 'visible', marginBottom:'3rem' }}>
+          <svg
+            width={width}
+            height={height}
+            style={{ overflow: 'visible', marginBottom: '3rem' }}
+          >
             <g transform={`translate(${width} ${height})`}>
               {['scaling', 'skilled', 'preferred'].map(
                 (item: string, idx: number) => {
                   idx += 1;
                   return (
-                    <>
+                    <g key={`segment-${idx}`}>
                       <path
-                        key={`segment-${idx}`}
                         className={`arc`}
                         d={
                           createArc({
@@ -125,7 +128,7 @@ const InfoPage: FC = () => {
                       >
                         {item}
                       </text>
-                    </>
+                    </g>
                   );
                 }
               )}

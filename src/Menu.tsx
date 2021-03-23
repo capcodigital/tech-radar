@@ -39,6 +39,7 @@ export default function Header() {
   const { setName } = useContext(RadarContext);
 
   const handleClick = (item: string) => {
+    localStorage.setItem('category', item);
     setName(item);
   };
 
@@ -84,7 +85,7 @@ export default function Header() {
           'Devops',
         ].map((item: string) => (
           <ListItem
-          key={`menu-${item}`}
+            key={`menu-${item}`}
             button
             component={Link}
             to='/info'
@@ -93,7 +94,7 @@ export default function Header() {
             {item}
           </ListItem>
         ))}
-         <Divider />
+        <Divider />
         {/* <ListItem button component={Link} to='/table'>
           Table
         </ListItem> */}

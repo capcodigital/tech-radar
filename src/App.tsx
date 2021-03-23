@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './Home';
 import InfoPage from './InfoPage';
@@ -7,8 +7,10 @@ import Menu from './Menu';
 import RadarContext from './RadarContext';
 
 const App = () => {
-  const [name, setName] = useState('');
-  const value = { name, setName };
+  const value = {
+    name: '' || `${localStorage.getItem('category')}`,
+    setName: (name: string) => {},
+  };
   return (
     <PageWrapper>
       <Router>
@@ -19,7 +21,7 @@ const App = () => {
               <Home />
             </Route>
             <Route exact path='/info'>
-              <InfoPage/>
+              <InfoPage />
             </Route>
           </RadarContext.Provider>
         </Switch>
