@@ -1,4 +1,4 @@
-import React, { FC, useContext } from 'react';
+import React, { FC, useContext, useState, useMemo } from 'react';
 import RadarContext from './RadarContext';
 import * as d3 from 'd3';
 import Tooltip from '@material-ui/core/Tooltip';
@@ -29,13 +29,18 @@ const spacedRandArray = (distance: number, count: number) => {
   return randArray.map((el) => angleScale(el));
 };
 
+const randomNumGen = (min: number, max: number) =>
+  Math.random() * (max - min) + min;
+
 const circleColor = d3
   .scaleLinear<string>()
   .domain([1, 2, 3])
   .range(['#671114', '#592556', '#38379F']);
 
 const InfoPage: FC = () => {
+  const [hovered, setHovered] = useState('');
   const { name } = useContext(RadarContext);
+  console.log(name);
   let data: any = radial.find((d) => d.name === name.toUpperCase());
 
   const width = 550;
@@ -45,9 +50,32 @@ const InfoPage: FC = () => {
 
   const createArc = d3.arc().padAngle(0).cornerRadius(3);
 
-  const randomPreferredAngles = spacedRandArray(0.2, data.preferred.length);
-  const randomSkilledAngles = spacedRandArray(0.2, data.skilled.length);
-  const randomScalingAngles = spacedRandArray(0.2, data.scaling.length);
+  const randomPreferredAngles = useMemo(
+    () => spacedRandArray(0.2, data.preferred.length),
+    [data]
+  );
+
+  const randomSkilledAngles = useMemo(
+    () => spacedRandArray(0.2, data.skilled.length),
+    [data]
+  );
+
+  const randomScalingAngles = useMemo(
+    () => spacedRandArray(0.2, data.scaling.length),
+    [data]
+  );
+
+  const radiusPreferred = useMemo(
+    () => data.preferred.map((d: any) => randomNumGen(400, 470)),
+    [data]
+  );
+
+  const radiusSkilled = useMemo(
+    () => data.skilled.map((d: any) => randomNumGen(250, 300)),
+    [data]
+  );
+
+  const radiusScaling = data.scaling.map((d: any) => randomNumGen(100, 170));
 
   return (
     <div>
@@ -63,7 +91,18 @@ const InfoPage: FC = () => {
           <Divider />
           <List>
             {data.preferred.map((item: any) => (
-              <ListItem key={`menu-${item.name}`} button component='li'>
+              <ListItem
+                key={`menu-${item.name}`}
+                button
+                component='li'
+                style={{
+                  background: `${
+                    item.name === hovered ? 'grey' : 'transparent'
+                  }`,
+                }}
+                onMouseOver={() => setHovered(item.name)}
+                onMouseLeave={() => setHovered('')}
+              >
                 {item.name}
               </ListItem>
             ))}
@@ -76,7 +115,18 @@ const InfoPage: FC = () => {
           )}
           <List>
             {data.skilled.map((item: any) => (
-              <ListItem key={`menu-${item.name}`} button component='li'>
+              <ListItem
+                key={`menu-${item.name}`}
+                button
+                component='li'
+                style={{
+                  background: `${
+                    item.name === hovered ? 'grey' : 'transparent'
+                  }`,
+                }}
+                onMouseOver={() => setHovered(item.name)}
+                onMouseLeave={() => setHovered('')}
+              >
                 {item.name}
               </ListItem>
             ))}
@@ -85,7 +135,18 @@ const InfoPage: FC = () => {
           <Divider />
           <List>
             {data.scaling.map((item: any) => (
-              <ListItem key={`menu-${item.name}`} button component='li'>
+              <ListItem
+                key={`menu-${item.name}`}
+                button
+                component='li'
+                style={{
+                  background: `${
+                    item.name === hovered ? 'grey' : 'transparent'
+                  }`,
+                }}
+                onMouseOver={() => setHovered(item.name)}
+                onMouseLeave={() => setHovered('')}
+              >
                 {item.name}
               </ListItem>
             ))}
@@ -134,7 +195,6 @@ const InfoPage: FC = () => {
               )}
 
               {data.scaling.map((dataPoint: any, idx: number) => {
-                let r = Math.random() * (170 - 100) + 100;
                 // generate random angle for data in this segment
                 let randomAngleScaling = (randomScalingAngles as any)[idx];
 
@@ -149,7 +209,7 @@ const InfoPage: FC = () => {
                       <g>
                         <circle
                           cx={`${
-                            r *
+                            radiusScaling[idx - 1] *
                             Math.cos(
                               (randomAngleScaling * idx * 2 * Math.PI) /
                                 4 /
@@ -158,7 +218,7 @@ const InfoPage: FC = () => {
                             )
                           }`}
                           cy={`${
-                            r *
+                            radiusScaling[idx - 1] *
                             Math.sin(
                               (randomAngleScaling * idx * 2 * Math.PI) /
                                 4 /
@@ -173,7 +233,7 @@ const InfoPage: FC = () => {
                         />
                         <image
                           x={`${
-                            r *
+                            radiusScaling[idx - 1] *
                               Math.cos(
                                 (randomAngleScaling * idx * 2 * Math.PI) /
                                   4 /
@@ -183,7 +243,7 @@ const InfoPage: FC = () => {
                             imageSize / 2 // subtracting half the image size to center image on circle
                           }`}
                           y={`${
-                            r *
+                            radiusScaling[idx - 1] *
                               Math.sin(
                                 (randomAngleScaling * idx * 2 * Math.PI) /
                                   4 /
@@ -202,7 +262,6 @@ const InfoPage: FC = () => {
                 );
               })}
               {data.skilled.map((dataPoint: any, idx: number) => {
-                let r = Math.random() * (300 - 250) + 250;
                 // generate random angle for data in this segment
                 let randomAngleSkilled = (randomSkilledAngles as any)[idx];
 
@@ -217,7 +276,7 @@ const InfoPage: FC = () => {
                       <g>
                         <circle
                           cx={`${
-                            r *
+                            radiusSkilled[idx - 1] *
                             Math.cos(
                               (randomAngleSkilled * idx * 2 * Math.PI) /
                                 4 /
@@ -226,7 +285,7 @@ const InfoPage: FC = () => {
                             )
                           }`}
                           cy={`${
-                            r *
+                            radiusSkilled[idx - 1] *
                             Math.sin(
                               (randomAngleSkilled * idx * 2 * Math.PI) /
                                 4 /
@@ -241,7 +300,7 @@ const InfoPage: FC = () => {
                         />
                         <image
                           x={`${
-                            r *
+                            radiusSkilled[idx - 1] *
                               Math.cos(
                                 (randomAngleSkilled * idx * 2 * Math.PI) /
                                   4 /
@@ -251,7 +310,7 @@ const InfoPage: FC = () => {
                             imageSize / 2 // subtracting half the image size to center image on circle
                           }`}
                           y={`${
-                            r *
+                            radiusSkilled[idx - 1] *
                               Math.sin(
                                 (randomAngleSkilled * idx * 2 * Math.PI) /
                                   4 /
@@ -270,7 +329,6 @@ const InfoPage: FC = () => {
                 );
               })}
               {data.preferred.map((dataPoint: any, idx: number) => {
-                let r = Math.random() * (470 - 400) + 400;
                 // generate random angle for data in this segment
                 let randomAnglePreferred = (randomPreferredAngles as any)[idx];
 
@@ -285,7 +343,7 @@ const InfoPage: FC = () => {
                       <g>
                         <circle
                           cx={`${
-                            r *
+                            radiusPreferred[idx - 1] *
                             Math.cos(
                               (randomAnglePreferred * idx * 2 * Math.PI) /
                                 4 /
@@ -294,7 +352,7 @@ const InfoPage: FC = () => {
                             )
                           }`}
                           cy={`${
-                            r *
+                            radiusPreferred[idx - 1] *
                             Math.sin(
                               (randomAnglePreferred * idx * 2 * Math.PI) /
                                 4 /
@@ -309,7 +367,7 @@ const InfoPage: FC = () => {
                         />
                         <image
                           x={`${
-                            r *
+                            radiusPreferred[idx - 1] *
                               Math.cos(
                                 (randomAnglePreferred * idx * 2 * Math.PI) /
                                   4 /
@@ -319,7 +377,7 @@ const InfoPage: FC = () => {
                             imageSize / 2 // subtracting half the image size to center image on circle
                           }`}
                           y={`${
-                            r *
+                            radiusPreferred[idx - 1] *
                               Math.sin(
                                 (randomAnglePreferred * idx * 2 * Math.PI) /
                                   4 /
