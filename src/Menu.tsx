@@ -39,7 +39,6 @@ export default function Header() {
   const { setName } = useContext(RadarContext);
 
   const handleClick = (item: string) => {
-    localStorage.setItem('category', item);
     setName(item);
   };
 

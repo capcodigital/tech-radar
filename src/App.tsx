@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './Home';
 import InfoPage from './InfoPage';
@@ -8,7 +8,7 @@ import RadarContext from './RadarContext';
 
 const App = () => {
   const [name, setName] = useState('');
-  const value = { name: name || `${localStorage.getItem('category')}`, setName };
+  const value = { name, setName };
   return (
     <PageWrapper>
       <Router>
