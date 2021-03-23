@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme: any) => ({
 export default function Header() {
   const classes = useStyles();
   const [open, setOpen] = useState(false);
-  const { name, setName } = useContext(RadarContext);
+  const { setName } = useContext(RadarContext);
 
   const handleClick = (item: string) => {
     setName(item);
@@ -75,8 +75,8 @@ export default function Header() {
         <Divider />
         {[
           'Mobile',
-          'FrontEnd',
-          'BackEnd',
+          'Frontend',
+          'Backend',
           'Integration',
           'Cloud',
           'Hosting',

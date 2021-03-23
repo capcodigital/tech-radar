@@ -35,7 +35,7 @@ const circleColor = d3
   .range(['#671114', '#592556', '#38379F']);
 
 const InfoPage: FC = () => {
-  const { name, setName } = useContext(RadarContext);
+  const { name } = useContext(RadarContext);
   let data: any = radial.find((d) => d.name === name.toUpperCase());
 
   const width = 550;

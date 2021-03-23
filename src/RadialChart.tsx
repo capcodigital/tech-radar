@@ -5,6 +5,7 @@ import styled from 'styled-components/macro';
 import StyledGroup from './StyledGroup';
 
 const Wrapper = styled.div`
+  width: 60vw;
   svg {
     @-webkit-keyframes swirl-in-fwd {
       0% {
@@ -41,11 +42,11 @@ type BarChartProps = {
 };
 
 const RadialChart: FC<BarChartProps> = ({ data }) => {
-  const width = 900;
-  const height = 900;
-  const dataPointCircleRadius = 17;
-  const innerCircleRadius = 100;
-  const imageSize = 24;
+  const size = 700;
+  const dataPointCircleRadius = 14;
+  const innerCircleRadius = 90;
+  const imageSize = Math.sqrt(2)*dataPointCircleRadius;//square inside circle
+  const decayRate = 0.6;
   const color = d3
     .scaleLinear<string>()
     .domain([0, 8, 16, 24])
@@ -64,17 +65,16 @@ const RadialChart: FC<BarChartProps> = ({ data }) => {
 
   return (
     <Wrapper>
-      <svg
-        width={width}
-        height={height}
+      <svg      
+       viewBox={"60 60 800 800"}
         style={{ overflow: 'visible', marginBottom: 50 }}
       >
-        <g transform={`translate(${height / 2} ${width / 2})`}>
+        <g transform={`translate(${size / 2+100} ${size / 2+100})`}>
           <circle
             key={'last-circle'}
             cx={0}
             cy={0}
-            r={height / 2}
+            r={size / 2}
             fill={'transparent'}
             stroke={'lightgrey'}
             strokeDasharray={3}
@@ -86,7 +86,7 @@ const RadialChart: FC<BarChartProps> = ({ data }) => {
               transform={`rotate(${(360 / 24) * idx + 90})`}
               x1={0}
               y1={0}
-              y2={height / 2}
+              y2={size / 2}
               stroke={color(idx)}
               strokeWidth={1}
             />
@@ -106,7 +106,7 @@ const RadialChart: FC<BarChartProps> = ({ data }) => {
               transform={`rotate(${120 * idx - 37})`}
               x1={0}
               y1={0}
-              y2={height / 2}
+              y2={size / 2}
               stroke={'white'}
               strokeWidth={3}
             />
@@ -132,7 +132,7 @@ const RadialChart: FC<BarChartProps> = ({ data }) => {
               </g>
             )
           )}
-          {data.map((d: any, techIdx: number) => {
+          {data.map((d: any, categoryIdx: number) => {
             return (
               <g key={`data-${d.name}`}>
                 {/*labels for each line*/}
@@ -140,17 +140,17 @@ const RadialChart: FC<BarChartProps> = ({ data }) => {
                   <g
                     key={`line-label-${segment}`}
                     transform={`rotate(${
-                      -30 + techIdx * (360 / 24) + 120 * segment
+                      -30 + categoryIdx * (360 / 24) + 120 * segment
                     })`}
                   >
                     {/*rotate around the chart*/}
                     <text
                       textAnchor='middle'
-                      y={height / 2}
+                      y={(categoryIdx+segment*8) > 20 ? size / 2 + 40 : size / 2}
                       fontSize={15}
-                      fill={color(techIdx + (segment - 1) * 8)}
-                      transform={`rotate(180, ${xScale(techIdx)} ${
-                        height / 2 + 15
+                      fill={color(categoryIdx + (segment - 1) * 8)}
+                      transform={`rotate(${(categoryIdx+segment*8) > 20 ? 0 : 180}, ${xScale(categoryIdx)} ${
+                        size / 2 + 15
                       })`} // rotate(a,x,y) rotate around a given point
                     >
                       {d.name}
@@ -159,7 +159,7 @@ const RadialChart: FC<BarChartProps> = ({ data }) => {
                 ))}
                 {d.preferred.map((dataPoint: any, idx: number) => {
                   idx += 1;
-                  let r = innerCircleRadius + idx * Math.pow(0.7, 2) * 120; //adding decay for radius size increase
+                  let r = innerCircleRadius + idx * Math.pow(decayRate, 2) * 120; //adding decay for radius size increase
                   return (
                     <StyledGroup key={`preferred-${idx}`}>
                       <Tooltip
@@ -175,7 +175,7 @@ const RadialChart: FC<BarChartProps> = ({ data }) => {
                               r *
                               Math.cos(
                                 idx * 2 * Math.PI +
-                                  (Math.PI / 12) * techIdx +
+                                  (Math.PI / 12) * categoryIdx +
                                   Math.PI
                               )
                             }`}
@@ -183,13 +183,13 @@ const RadialChart: FC<BarChartProps> = ({ data }) => {
                               r *
                               Math.sin(
                                 idx * 2 * Math.PI +
-                                  (Math.PI / 12) * techIdx +
+                                  (Math.PI / 12) * categoryIdx +
                                   Math.PI
                               )
                             }`}
                             r={dataPointCircleRadius}
                             fill={'white'}
-                            stroke={color(techIdx)}
+                            stroke={color(categoryIdx)}
                             strokeWidth={2}
                           />
                           <image
@@ -197,19 +197,19 @@ const RadialChart: FC<BarChartProps> = ({ data }) => {
                               r *
                                 Math.cos(
                                   idx * 2 * Math.PI +
-                                    (Math.PI / 12) * techIdx +
+                                    (Math.PI / 12) * categoryIdx +
                                     Math.PI
                                 ) -
-                              12
+                                imageSize/2
                             }`}
                             y={`${
                               r *
                                 Math.sin(
                                   idx * 2 * Math.PI +
-                                    (Math.PI / 12) * techIdx +
+                                    (Math.PI / 12) * categoryIdx +
                                     Math.PI
                                 ) -
-                              12
+                                imageSize/2
                             }`}
                             href={dataPoint.link}
                             height={imageSize}
@@ -222,7 +222,7 @@ const RadialChart: FC<BarChartProps> = ({ data }) => {
                 })}
                 {d.skilled.map((dataPoint: any, idx: number) => {
                   idx += 1;
-                  let r = innerCircleRadius + idx * Math.pow(0.7, 2) * 120; //adding 0.7^2 decay for radius size increase
+                  let r = innerCircleRadius + idx * Math.pow(decayRate, 2) * 120; //adding 0.7^2 decay for radius size increase
                   return (
                     <StyledGroup key={`skilled-${idx}`}>
                       <Tooltip
@@ -237,7 +237,7 @@ const RadialChart: FC<BarChartProps> = ({ data }) => {
                               r *
                               Math.cos(
                                 idx * 2 * Math.PI +
-                                  (Math.PI / 12) * techIdx -
+                                  (Math.PI / 12) * categoryIdx -
                                   Math.PI / 3
                               )
                             }`}
@@ -245,13 +245,13 @@ const RadialChart: FC<BarChartProps> = ({ data }) => {
                               r *
                               Math.sin(
                                 idx * 2 * Math.PI +
-                                  (Math.PI / 12) * techIdx -
+                                  (Math.PI / 12) * categoryIdx -
                                   Math.PI / 3
                               )
                             }`}
                             r={dataPointCircleRadius}
                             fill={'white'}
-                            stroke={color(techIdx + 8)}
+                            stroke={color(categoryIdx + 8)}
                             strokeWidth={2}
                           />
                           <image
@@ -259,19 +259,19 @@ const RadialChart: FC<BarChartProps> = ({ data }) => {
                               r *
                                 Math.cos(
                                   idx * 2 * Math.PI +
-                                    (Math.PI / 12) * techIdx -
+                                    (Math.PI / 12) * categoryIdx -
                                     Math.PI / 3
                                 ) -
-                              12
+                                imageSize/2
                             }`}
                             y={`${
                               r *
                                 Math.sin(
                                   idx * 2 * Math.PI +
-                                    (Math.PI / 12) * techIdx -
+                                    (Math.PI / 12) * categoryIdx -
                                     Math.PI / 3
                                 ) -
-                              12
+                                imageSize/2
                             }`}
                             href={dataPoint.link}
                             height={imageSize}
@@ -284,7 +284,7 @@ const RadialChart: FC<BarChartProps> = ({ data }) => {
                 })}
                 {d.scaling.map((dataPoint: any, idx: number) => {
                   idx += 1;
-                  let r = innerCircleRadius + idx * Math.pow(0.7, 2) * 120; //adding decay for radius size increase
+                  let r = innerCircleRadius + idx * Math.pow(decayRate, 2) * 120; //adding decay for radius size increase
                   return (
                     <StyledGroup key={`scaling-${idx}`}>
                       <Tooltip
@@ -299,7 +299,7 @@ const RadialChart: FC<BarChartProps> = ({ data }) => {
                               r *
                               Math.cos(
                                 idx * 2 * Math.PI +
-                                  (Math.PI / 12) * techIdx +
+                                  (Math.PI / 12) * categoryIdx +
                                   Math.PI / 3
                               )
                             }`}
@@ -307,13 +307,13 @@ const RadialChart: FC<BarChartProps> = ({ data }) => {
                               r *
                               Math.sin(
                                 idx * 2 * Math.PI +
-                                  (Math.PI / 12) * techIdx +
+                                  (Math.PI / 12) * categoryIdx +
                                   Math.PI / 3
                               )
                             }`}
                             r={dataPointCircleRadius}
                             fill={'white'}
-                            stroke={color(techIdx + 16)}
+                            stroke={color(categoryIdx + 16)}
                             strokeWidth={2}
                           />
                           <image
@@ -321,19 +321,19 @@ const RadialChart: FC<BarChartProps> = ({ data }) => {
                               r *
                                 Math.cos(
                                   idx * 2 * Math.PI +
-                                    (Math.PI / 12) * techIdx +
+                                    (Math.PI / 12) * categoryIdx +
                                     Math.PI / 3
                                 ) -
-                              12
+                                imageSize/2
                             }`}
                             y={`${
                               r *
                                 Math.sin(
                                   idx * 2 * Math.PI +
-                                    (Math.PI / 12) * techIdx +
+                                    (Math.PI / 12) * categoryIdx +
                                     Math.PI / 3
                                 ) -
-                              12
+                                imageSize/2
                             }`}
                             href={dataPoint.link}
                             height={imageSize}
