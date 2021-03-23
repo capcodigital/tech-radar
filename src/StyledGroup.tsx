@@ -25,9 +25,15 @@ const StyledDataGroup = styled.g`
     }
   }
 `;
+type StyledGroupProps = {
+  onMouseOver?: any;
+  onMouseLeave?: any;
+};
 
-const StyledGroup: FC = ({ children }) => {
-  return <StyledDataGroup>{children}</StyledDataGroup>;
+const StyledGroup: FC<StyledGroupProps> = ({ children, onMouseOver, onMouseLeave }) => {
+  return (
+    <StyledDataGroup onMouseOver={onMouseOver} onMouseLeave={onMouseLeave}>{children}</StyledDataGroup>
+  );
 };
 
 export default StyledGroup;

@@ -40,7 +40,7 @@ const circleColor = d3
 const InfoPage: FC = () => {
   const [hovered, setHovered] = useState('');
   const { name } = useContext(RadarContext);
-  console.log(name);
+
   let data: any = radial.find((d) => d.name === name.toUpperCase());
 
   const width = 550;
@@ -66,16 +66,19 @@ const InfoPage: FC = () => {
   );
 
   const radiusPreferred = useMemo(
-    () => data.preferred.map((d: any) => randomNumGen(400, 470)),
+    () => data.preferred.map(() => randomNumGen(400, 470)),
     [data]
   );
 
   const radiusSkilled = useMemo(
-    () => data.skilled.map((d: any) => randomNumGen(250, 300)),
+    () => data.skilled.map(() => randomNumGen(250, 300)),
     [data]
   );
 
-  const radiusScaling = data.scaling.map((d: any) => randomNumGen(100, 170));
+  const radiusScaling = useMemo(
+    () => data.scaling.map(() => randomNumGen(100, 170)),
+    [data]
+  );
 
   return (
     <div>
@@ -200,7 +203,11 @@ const InfoPage: FC = () => {
 
                 idx += 1; // avoid rendering data points on the border
                 return (
-                  <StyledGroup key={`scaling-${idx}`}>
+                  <StyledGroup
+                    key={`scaling-${idx}`}
+                    onMouseOver={() => setHovered(dataPoint.name)}
+                    onMouseLeave={() => setHovered('')}
+                  >
                     <Tooltip
                       title={dataPoint.name}
                       aria-label='preferred'
@@ -267,7 +274,11 @@ const InfoPage: FC = () => {
 
                 idx += 1; // avoid rendering data points on the border
                 return (
-                  <StyledGroup key={`skilled-${idx}`}>
+                  <StyledGroup
+                    key={`skilled-${idx}`}
+                    onMouseOver={() => setHovered(dataPoint.name)}
+                    onMouseLeave={() => setHovered('')}
+                  >
                     <Tooltip
                       title={dataPoint.name}
                       aria-label='preferred'
@@ -334,7 +345,11 @@ const InfoPage: FC = () => {
 
                 idx += 1; // avoid rendering data points on the border
                 return (
-                  <StyledGroup key={`preferred-${idx}`}>
+                  <StyledGroup
+                    key={`preferred-${idx}`}
+                    onMouseOver={() => setHovered(dataPoint.name)}
+                    onMouseLeave={() => setHovered('')}
+                  >
                     <Tooltip
                       title={dataPoint.name}
                       aria-label='preferred'
