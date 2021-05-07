@@ -16,9 +16,9 @@ import RadarContext from './RadarContext';
 
 const useStyles = makeStyles((theme: any) => ({
   appBar: {
-    background: 'black',
+    background: 'transparent',
     paddingTop: 20,
-    //borderBottom: '1px solid white'
+    boxShadow: 'none'
   },
   list: {
     width: 250,
