@@ -7,7 +7,7 @@ interface techType {
 
 export const data: Array<{name:string, data: techType}> = [
   {
-    name: 'DEVOPS',
+    name: 'DevOps',
     data: {
       preferred: [
         {
@@ -93,7 +93,7 @@ export const data: Array<{name:string, data: techType}> = [
     },
   },
   {
-    name: 'DATABASES',
+    name: 'Databases',
     data: {
       preferred: [
         {
@@ -134,7 +134,7 @@ export const data: Array<{name:string, data: techType}> = [
     },
   },
   {
-    name: 'HOSTING',
+    name: 'Hosting',
     data: {
       preferred: [
         {
@@ -168,7 +168,7 @@ export const data: Array<{name:string, data: techType}> = [
     },
   },
   {
-    name: 'CLOUD',
+    name: 'Cloud',
     data: {
       preferred: [
         {
@@ -193,7 +193,7 @@ export const data: Array<{name:string, data: techType}> = [
     },
   },
   {
-    name: 'INTEGRATION',
+    name: 'Integration',
     data: {
       preferred: [
         {
@@ -234,7 +234,7 @@ export const data: Array<{name:string, data: techType}> = [
     },
   },
   {
-    name: 'BACKEND',
+    name: 'Backend',
     data: {
       preferred: [
         {
@@ -256,7 +256,7 @@ export const data: Array<{name:string, data: techType}> = [
     },
   },
   {
-    name: 'FRONTEND',
+    name: 'Frontend',
     data: {
       preferred: [
         {
@@ -279,7 +279,7 @@ export const data: Array<{name:string, data: techType}> = [
     },
   },
   {
-    name: 'MOBILE',
+    name: 'Mobile',
     data: {
       preferred: [
         {

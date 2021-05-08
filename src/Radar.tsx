@@ -1,12 +1,18 @@
-import React, { FC } from 'react';
+import React, { FC, useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import * as d3 from 'd3';
 import Tooltip from '@material-ui/core/Tooltip';
-import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import styled from 'styled-components/macro';
 import { data } from './data';
 import images from './images';
+
 const Wrapper = styled.div`
   width: 60vw;
+  .arc {
+    :hover {
+      transition: 0.7s;
+    }
+  }
   svg {
     @-webkit-keyframes swirl-in-fwd {
       0% {
@@ -38,6 +44,29 @@ const Wrapper = styled.div`
   }
 `;
 
+const StyledNav = styled.g`
+  cursor: pointer;
+
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 4s;
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  :hover {
+    path,
+    text {
+      fill: lightgrey;
+      transition: 0.3s;
+    }
+  }
+`;
+
 const StyledGroup = styled.g`
   image {
     transform-origin: 50% 50%;
@@ -63,27 +92,32 @@ const StyledGroup = styled.g`
   }
 `;
 
+const getRowLength = (dataNum: number, idx: number) => {
+  if (dataNum <= 3) return dataNum;
+  else if (dataNum > 3 || dataNum < 6) {
+    return idx < 3 ? 3 : dataNum - 3;
+  } else if (dataNum === 6) return dataNum / 2;
+  else return 0;
+};
+
+const size = 700;
+const outterRadius = 350;
+const middleRadius = (outterRadius * 2) / 3;
+const innerCircleRadius = outterRadius / 3;
+const radius = [350, (outterRadius * 2) / 3, outterRadius / 3];
+const segmentsNum = 8;
+const dataPointCircleRadius = 14;
+const imageSize = Math.sqrt(2) * dataPointCircleRadius; //square inside circle
+const navBtnRadius = 430;
+const navImageSize = 50;
+
+const createArc = d3.arc().padAngle(0);
+
+let techIdx = 9;
+
 const Radar: FC = () => {
-  const size = 700;
-  const outterRadius = 350;
-  const middleRadius = (outterRadius * 2) / 3;
-  const innerCircleRadius = outterRadius / 3;
-  const radius = [350, (outterRadius * 2) / 3, outterRadius / 3];
-  const segmentsNum = 8;
-  const dataPointCircleRadius = 14;
-  const imageSize = Math.sqrt(2) * dataPointCircleRadius; //square inside circle
-
-  const getRowLength = (dataNum: number, idx: number) => {
-    if (dataNum <= 3) return dataNum;
-    else if (dataNum > 3 || dataNum < 6) {
-      return idx < 3 ? 3 : dataNum - 3;
-    } else if (dataNum === 6) return dataNum / 2;
-    else return 0;
-  };
-
-  let techIdx = 9;
-  const navBtnRadius = 430;
-  const navImageSize = 50;
+  let history = useHistory();
+  const [hovered, setHovered] = useState('DevOps');
   return (
     <Wrapper>
       <svg
@@ -127,10 +161,9 @@ const Radar: FC = () => {
           ))}
 
           {Object.entries(images).map(([name, image], idx) => {
-            console.log(idx);
-            console.log(name);
             return (
-              <g
+              <StyledNav
+                onClick={() => history.push(`${name}`)}
                 transform={`translate(${
                   navBtnRadius *
                     Math.cos(
@@ -139,9 +172,10 @@ const Radar: FC = () => {
                   (idx === 4 ? 90 : idx === 0 ? 70 : idx > 3 ? 120 : 30)
                 }, ${
                   navBtnRadius *
-                  Math.sin(
-                    ((2 * Math.PI) / segmentsNum) * idx - (4 * Math.PI) / 8
-                  )
+                    Math.sin(
+                      ((2 * Math.PI) / segmentsNum) * idx - (4 * Math.PI) / 8
+                    ) -
+                  (idx === 4 ? 40 : 0)
                 })`}
               >
                 <image
@@ -165,14 +199,11 @@ const Radar: FC = () => {
                 </text>
                 <path
                   scale={0.5}
-                  transform={`translate(${
-                    (document.querySelector(`.${name}`) as any).getBBox()
-                      .width + 70
-                  },16) scale(0.6)`}
+                  transform={`translate(${name.length * 9 + 90},16) scale(0.6)`}
                   d='M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z'
                   fill={'white'}
                 />
-              </g>
+              </StyledNav>
             );
           })}
           {/* labels for rings */}
@@ -218,6 +249,33 @@ const Radar: FC = () => {
             )
           )}
 
+          {[
+            'DevOps',
+            'Databases',
+            'Hosting',
+            'Cloud',
+            'Integration',
+            'Backend',
+            'Frontend',
+            'Mobile',
+          ].map((tech: string, idx: number) => (
+            <path
+              className={`arc`}
+              d={
+                createArc({
+                  startAngle: -Math.PI / 8 + (Math.PI / 8) * 2 * idx,
+                  endAngle: Math.PI / 8 + (Math.PI / 8) * 2 * idx,
+                  innerRadius: 0,
+                  outerRadius: outterRadius,
+                })!
+              }
+              fill={tech === hovered ? 'rgb(235, 35, 109, 0.2)' : 'transparent'}
+              // strokeWidth={3}
+              // stroke={'white'}
+              onMouseOver={() => setHovered(tech)}
+            />
+          ))}
+
           {data.map((tech: any) => {
             techIdx += 2;
             return ['preferred', 'skilled', 'scaling'].map(
@@ -231,7 +289,7 @@ const Radar: FC = () => {
                   );
 
                   return (
-                    <StyledGroup key={`preferred-${idx}`}>
+                    <StyledGroup key={`preferred-${idx}`} opacity={hovered === tech.name ? 1 : 0.3}>
                       <Tooltip
                         title={dataPoint.name}
                         aria-label={dataPoint.name}
@@ -270,33 +328,35 @@ const Radar: FC = () => {
                             r={dataPointCircleRadius}
                             fill={'white'}
                           />
-                          <image
-                            x={`${
-                              r *
-                                Math.cos(
-                                  (techIdx * Math.PI) / segmentsNum +
-                                    ((2 * Math.PI) /
-                                      (segmentsNum * dataLengthPerRow)) *
-                                      (idx > 2 ? idx - 3 : idx) +
-                                    Math.PI / (segmentsNum * dataLengthPerRow)
-                                ) -
-                              imageSize / 2
-                            }`}
-                            y={`${
-                              r *
-                                Math.sin(
-                                  (techIdx * Math.PI) / segmentsNum +
-                                    ((2 * Math.PI) /
-                                      (segmentsNum * dataLengthPerRow)) *
-                                      (idx > 2 ? idx - 3 : idx) +
-                                    Math.PI / (segmentsNum * dataLengthPerRow)
-                                ) -
-                              imageSize / 2
-                            }`}
-                            href={dataPoint.link}
-                            height={imageSize}
-                            width={imageSize}
-                          />
+                         
+                            <image
+                              x={`${
+                                r *
+                                  Math.cos(
+                                    (techIdx * Math.PI) / segmentsNum +
+                                      ((2 * Math.PI) /
+                                        (segmentsNum * dataLengthPerRow)) *
+                                        (idx > 2 ? idx - 3 : idx) +
+                                      Math.PI / (segmentsNum * dataLengthPerRow)
+                                  ) -
+                                imageSize / 2
+                              }`}
+                              y={`${
+                                r *
+                                  Math.sin(
+                                    (techIdx * Math.PI) / segmentsNum +
+                                      ((2 * Math.PI) /
+                                        (segmentsNum * dataLengthPerRow)) *
+                                        (idx > 2 ? idx - 3 : idx) +
+                                      Math.PI / (segmentsNum * dataLengthPerRow)
+                                  ) -
+                                imageSize / 2
+                              }`}
+                              href={dataPoint.link}
+                              height={imageSize}
+                              width={imageSize}
+                            />
+                          
                         </g>
                       </Tooltip>
                     </StyledGroup>

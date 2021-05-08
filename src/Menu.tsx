@@ -9,7 +9,7 @@ import ClearIcon from '@material-ui/icons/Clear';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Grid from '@material-ui/core/Grid';
-import logo from './logo.png';
+import logo from './images/logo.png';
 import { ListItem } from '@material-ui/core';
 import RadarContext from './RadarContext';
 import styled from 'styled-components/macro';
@@ -28,7 +28,7 @@ const StyledDrawer = styled(Drawer)`
     height: ${window.innerHeight}px;
     width: 100%;
     padding-top: 10rem;
-    background: radial-gradient(rgba(230, 35, 109, 0.7) 0%, transparent 80%);
+    background: radial-gradient(rgba(230, 35, 109, 0.7) 0%, transparent 90%);
     padding-left: 100px;
     a {
       font-size: 30px;
