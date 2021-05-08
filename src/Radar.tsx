@@ -1,9 +1,10 @@
 import React, { FC } from 'react';
 import * as d3 from 'd3';
 import Tooltip from '@material-ui/core/Tooltip';
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import styled from 'styled-components/macro';
-import StyledGroup from './StyledGroup';
-
+import { data } from './data';
+import images from './images';
 const Wrapper = styled.div`
   width: 60vw;
   svg {
@@ -37,36 +38,52 @@ const Wrapper = styled.div`
   }
 `;
 
-type RadarProps = {
-  data?: any;
-};
+const StyledGroup = styled.g`
+  image {
+    transform-origin: 50% 50%;
+    transition: 0.3s;
+    transform-box: fill-box;
+  }
+  circle {
+    transform-origin: 50% 50%;
+    transition: 0.3s;
+    transform-box: fill-box;
+  }
+  :hover {
+    image {
+      transform: scale(2);
+      transform-origin: 50% 50%;
+      transition: 0.3s;
+    }
+    circle {
+      transform: scale(2);
+      transform-origin: 50% 50%;
+      transition: 0.3s;
+    }
+  }
+`;
 
-const Radar: FC<RadarProps> = ({ data }) => {
+const Radar: FC = () => {
   const size = 700;
   const outterRadius = 350;
   const middleRadius = (outterRadius * 2) / 3;
   const innerCircleRadius = outterRadius / 3;
-
+  const radius = [350, (outterRadius * 2) / 3, outterRadius / 3];
+  const segmentsNum = 8;
   const dataPointCircleRadius = 14;
   const imageSize = Math.sqrt(2) * dataPointCircleRadius; //square inside circle
-  const decayRate = 0.6;
 
-  const color = d3
-    .scaleLinear<string>()
-    .domain([0, 8, 16, 24])
-    .range(['#671114', '#592556', '#38379F']);
-  //const createArc = d3.arc().padAngle(0.05).cornerRadius(3);
+  const getRowLength = (dataNum: number, idx: number) => {
+    if (dataNum <= 3) return dataNum;
+    else if (dataNum > 3 || dataNum < 6) {
+      return idx < 3 ? 3 : dataNum - 3;
+    } else if (dataNum === 6) return dataNum / 2;
+    else return 0;
+  };
 
-  const xScale = d3
-    .scaleLinear()
-    .domain([1, 24])
-    .range([0, 2 * Math.PI]);
-
-  const xScaleSegments = d3
-    .scaleLinear()
-    .domain([1, 3])
-    .range([0, 2 * Math.PI]);
-
+  let techIdx = 9;
+  const navBtnRadius = 430;
+  const navImageSize = 50;
   return (
     <Wrapper>
       <svg
@@ -109,38 +126,184 @@ const Radar: FC<RadarProps> = ({ data }) => {
             />
           ))}
 
-          {/* labels for rings */}
-          {[-1, 1].map((side:number)=>['scaling', 'skilled', 'preferred'].map(
-            (segmentName: string, idx: number) => (
-              <g key={`${segmentName}-line`} transform={``}>
-                <text
-                  textAnchor='middle'
-                  y={side*(innerCircleRadius * (idx + 1) - innerCircleRadius / 3)}
-                  fontSize={12}
-                  fill={'white'}
-                  opacity={0.5}
-                >
-                  {segmentName}
-                </text>
-              </g>
-            )
-          ))}
-          {[-1, 1].map((side:number)=>['scaling', 'skilled', 'preferred'].map(
-            (segmentName: string, idx: number) => (
-              <g key={`${segmentName}-line`} transform={``}>
-                <text
-                  textAnchor='middle'
+          {Object.entries(images).map(([name, image], idx) => {
+            console.log(idx);
+            console.log(name);
+            return (
+              <g
+                transform={`translate(${
+                  navBtnRadius *
+                    Math.cos(
+                      ((2 * Math.PI) / segmentsNum) * idx - (4 * Math.PI) / 8
+                    ) -
+                  (idx === 4 ? 90 : idx === 0 ? 70 : idx > 3 ? 120 : 30)
+                }, ${
+                  navBtnRadius *
+                  Math.sin(
+                    ((2 * Math.PI) / segmentsNum) * idx - (4 * Math.PI) / 8
+                  )
+                })`}
+              >
+                <image
+                  key={`tech-line-${idx}`}
+                  x={0}
                   y={0}
-                  x={side*(innerCircleRadius * (idx + 1) - innerCircleRadius / 3)}
-                  fontSize={12}
+                  href={image}
+                  height={navImageSize}
+                  width={navImageSize}
+                />
+                <text
+                  className={name}
+                  textAnchor='start'
+                  x={60}
+                  y={30}
+                  fontSize={20}
+                  fontWeight={700}
                   fill={'white'}
-                  opacity={0.5}
                 >
-                  {segmentName}
+                  {name}
                 </text>
+                <path
+                  scale={0.5}
+                  transform={`translate(${
+                    (document.querySelector(`.${name}`) as any).getBBox()
+                      .width + 70
+                  },16) scale(0.6)`}
+                  d='M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z'
+                  fill={'white'}
+                />
               </g>
+            );
+          })}
+          {/* labels for rings */}
+          {[-1, 1].map((side: number) =>
+            ['scaling', 'skilled', 'preferred'].map(
+              (segmentName: string, idx: number) => (
+                <g key={`${segmentName}-line`} transform={``}>
+                  <text
+                    textAnchor='middle'
+                    y={
+                      side *
+                      (innerCircleRadius * (idx + 1) - innerCircleRadius / 2)
+                    }
+                    fontSize={12}
+                    fill={'white'}
+                    opacity={0.5}
+                  >
+                    {segmentName}
+                  </text>
+                </g>
+              )
             )
-          ))}
+          )}
+          {[-1, 1].map((side: number) =>
+            ['scaling', 'skilled', 'preferred'].map(
+              (segmentName: string, idx: number) => (
+                <g key={`${idx}-line`}>
+                  <text
+                    textAnchor='middle'
+                    y={0}
+                    x={
+                      side *
+                      (innerCircleRadius * (idx + 1) - innerCircleRadius / 2)
+                    }
+                    fontSize={12}
+                    fill={'white'}
+                    opacity={0.5}
+                  >
+                    {segmentName}
+                  </text>
+                </g>
+              )
+            )
+          )}
+
+          {data.map((tech: any) => {
+            techIdx += 2;
+            return ['preferred', 'skilled', 'scaling'].map(
+              (category: any, catIdx: number) =>
+                tech.data[category].map((dataPoint: any, idx: number) => {
+                  // split data into 2 rows if more than 3 data point
+                  let r = idx > 2 ? radius[catIdx] - 90 : radius[catIdx] - 30;
+                  let dataLengthPerRow = getRowLength(
+                    tech.data[category].length,
+                    idx
+                  );
+
+                  return (
+                    <StyledGroup key={`preferred-${idx}`}>
+                      <Tooltip
+                        title={dataPoint.name}
+                        aria-label={dataPoint.name}
+                        placement='top'
+                        className='lol'
+                      >
+                        <g>
+                          {/* background circle for icons */}
+                          <circle
+                            key={`preferred-${dataPoint.name}-${idx}`}
+                            // r = distance from center
+                            // Math.PI/segmentsNum = move points inside a segment otherwise only half of the points would be inside
+                            // (2 * Math.PI) / (segmentsNum * dataLengthPerRow)) * (idx > 2 ? idx - 3 : idx) = calculating coordinates
+                            // (idx > 2 ? idx - 3 : idx) = start angle at original point after 3rd data point
+                            // Math.PI / (segmentsNum * dataLengthPerRow) = evenly distribute inside segment
+                            cx={`${
+                              r *
+                              Math.cos(
+                                (techIdx * Math.PI) / segmentsNum +
+                                  ((2 * Math.PI) /
+                                    (segmentsNum * dataLengthPerRow)) *
+                                    (idx > 2 ? idx - 3 : idx) +
+                                  Math.PI / (segmentsNum * dataLengthPerRow)
+                              )
+                            }`}
+                            cy={`${
+                              r *
+                              Math.sin(
+                                (techIdx * Math.PI) / segmentsNum +
+                                  ((2 * Math.PI) /
+                                    (segmentsNum * dataLengthPerRow)) *
+                                    (idx > 2 ? idx - 3 : idx) +
+                                  Math.PI / (segmentsNum * dataLengthPerRow)
+                              )
+                            }`}
+                            r={dataPointCircleRadius}
+                            fill={'white'}
+                          />
+                          <image
+                            x={`${
+                              r *
+                                Math.cos(
+                                  (techIdx * Math.PI) / segmentsNum +
+                                    ((2 * Math.PI) /
+                                      (segmentsNum * dataLengthPerRow)) *
+                                      (idx > 2 ? idx - 3 : idx) +
+                                    Math.PI / (segmentsNum * dataLengthPerRow)
+                                ) -
+                              imageSize / 2
+                            }`}
+                            y={`${
+                              r *
+                                Math.sin(
+                                  (techIdx * Math.PI) / segmentsNum +
+                                    ((2 * Math.PI) /
+                                      (segmentsNum * dataLengthPerRow)) *
+                                      (idx > 2 ? idx - 3 : idx) +
+                                    Math.PI / (segmentsNum * dataLengthPerRow)
+                                ) -
+                              imageSize / 2
+                            }`}
+                            href={dataPoint.link}
+                            height={imageSize}
+                            width={imageSize}
+                          />
+                        </g>
+                      </Tooltip>
+                    </StyledGroup>
+                  );
+                })
+            );
+          })}
         </g>
       </svg>
     </Wrapper>
