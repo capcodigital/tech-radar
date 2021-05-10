@@ -3,25 +3,23 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './Home';
 import PageWrapper from './PageWrapper';
 import Menu from './Menu';
-import RadarContext from './RadarContext';
-
+import { RadarContextProvider } from './RadarContextProvider';
+import Footer from './Footer';
 const App = () => {
-  const [name, setName] = useState('');
-  const value = { name, setName };
   return (
-    <PageWrapper>
-      <Router>
-        <Switch>
-          <RadarContext.Provider value={value}>
+    <Router>
+      <Switch>
+        <RadarContextProvider>
+          <PageWrapper>
             <Menu />
             <Route exact path='/'>
               <Home />
             </Route>
-           
-          </RadarContext.Provider>
-        </Switch>
-      </Router>
-    </PageWrapper>
+          </PageWrapper>
+          <Footer />
+        </RadarContextProvider>
+      </Switch>
+    </Router>
   );
 };
 

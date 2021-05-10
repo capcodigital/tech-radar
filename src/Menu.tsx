@@ -11,9 +11,20 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Grid from '@material-ui/core/Grid';
 import logo from './images/logo.png';
 import { ListItem } from '@material-ui/core';
-import RadarContext from './RadarContext';
+import { RadarContext } from './RadarContextProvider';
 import styled from 'styled-components/macro';
 
+const LogoGridItem = styled(Grid)`
+  && {
+    z-index: 1400;
+    margin-left: 60px;
+    div {
+      color: #e6236d;
+      font-weight: 700;
+      font-size: 24px;
+    }
+  }
+`;
 const StyledDrawer = styled(Drawer)`
   div.MuiPaper-root {
     width: 100%;
@@ -49,10 +60,10 @@ const useStyles = makeStyles((theme: any) => ({
 export default function Header() {
   const classes = useStyles();
   const [open, setOpen] = useState(false);
-  const { setName } = useContext(RadarContext);
+  const { setCategory } = useContext(RadarContext);
 
   const handleClick = (item: string) => {
-    setName(item);
+    setCategory(item);
   };
 
   const toggleDrawer = (open: boolean) => (event: any) => {
@@ -89,15 +100,15 @@ export default function Header() {
           'Hosting',
           'Databases',
           'Devops',
-        ].map((item: string) => (
+        ].map((name: string) => (
           <ListItem
-            key={`menu-${item}`}
+            key={`menu-${name}`}
             button
             component={Link}
-            to='/info'
-            onClick={() => handleClick(item)}
+            to={`/category/${name.toLowerCase()}`}
+            onClick={() => handleClick(name)}
           >
-            {item}
+            {name}
           </ListItem>
         ))}
       </List>
@@ -109,14 +120,12 @@ export default function Header() {
       <AppBar className={classes.appBar} position='static'>
         <Toolbar>
           <Grid justify='space-between' container>
-            <Grid item style={{ zIndex: 1400, marginLeft: '60px' }}>
+            <LogoGridItem item>
               <Link to='/'>
-                <img height={40} src={logo} alt='Logo' />
-                <div style={{ color: '#E6236D', fontWeight: 700 }}>
-                  TECH RADAR 2021
-                </div>
+                <img height={46} src={logo} alt='Logo' />
+                <div>TECH RADAR 2021</div>
               </Link>
-            </Grid>
+            </LogoGridItem>
 
             <Grid item>
               <div>

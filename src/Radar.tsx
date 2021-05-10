@@ -1,13 +1,14 @@
 import React, { FC, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import * as d3 from 'd3';
-import Tooltip from '@material-ui/core/Tooltip';
 import styled from 'styled-components/macro';
 import { data } from './data';
 import images from './images';
+import StyledTooltip from './StyledTooltip';
 
 const Wrapper = styled.div`
   width: 60vw;
+  display: inline-block;
   .arc {
     :hover {
       transition: 0.7s;
@@ -83,11 +84,13 @@ const StyledGroup = styled.g`
       transform: scale(2);
       transform-origin: 50% 50%;
       transition: 0.3s;
+      z-index: 1400;
     }
     circle {
       transform: scale(2);
       transform-origin: 50% 50%;
       transition: 0.3s;
+      z-index: 1399;
     }
   }
 `;
@@ -100,15 +103,15 @@ const getRowLength = (dataNum: number, idx: number) => {
   else return 0;
 };
 
-const size = 700;
-const outterRadius = 350;
+const size = 900;
+const outterRadius = size / 2 - 100;
 const middleRadius = (outterRadius * 2) / 3;
 const innerCircleRadius = outterRadius / 3;
 const radius = [350, (outterRadius * 2) / 3, outterRadius / 3];
 const segmentsNum = 8;
 const dataPointCircleRadius = 14;
 const imageSize = Math.sqrt(2) * dataPointCircleRadius; //square inside circle
-const navBtnRadius = 430;
+const navBtnRadius = size / 2;
 const navImageSize = 50;
 
 const createArc = d3.arc().padAngle(0);
@@ -120,11 +123,9 @@ const Radar: FC = () => {
   const [hovered, setHovered] = useState('DevOps');
   return (
     <Wrapper>
-      <svg
-        viewBox={'60 60 800 800'}
-        style={{ overflow: 'visible', marginBottom: 50 }}
-      >
-        <g transform={`translate(${size / 2 + 100} ${size / 2 + 100})`}>
+      <svg viewBox={'0 0 900 900'} style={{ overflow: 'visible' }}>
+        <g transform={`translate(${size / 2} ${size / 2})`}>
+          {/* 3 main rings */}
           <circle
             cx={0}
             cy={0}
@@ -154,12 +155,12 @@ const Radar: FC = () => {
               transform={`rotate(${(360 / 8) * idx + 22.5})`}
               x1={0}
               y1={0}
-              y2={size / 2}
+              y2={outterRadius}
               stroke={'white'}
               strokeWidth={0.2}
             />
           ))}
-
+          {/* nav buttons around the radar */}
           {Object.entries(images).map(([name, image], idx) => {
             return (
               <StyledNav
@@ -175,7 +176,7 @@ const Radar: FC = () => {
                     Math.sin(
                       ((2 * Math.PI) / segmentsNum) * idx - (4 * Math.PI) / 8
                     ) -
-                  (idx === 4 ? 40 : 0)
+                  (idx === 4 ? 30 : 0)
                 })`}
               >
                 <image
@@ -191,7 +192,7 @@ const Radar: FC = () => {
                   textAnchor='start'
                   x={60}
                   y={30}
-                  fontSize={20}
+                  fontSize={24}
                   fontWeight={700}
                   fill={'white'}
                 >
@@ -199,7 +200,7 @@ const Radar: FC = () => {
                 </text>
                 <path
                   scale={0.5}
-                  transform={`translate(${name.length * 9 + 90},16) scale(0.6)`}
+                  transform={`translate(${name.length * 9 + 60},17) scale(0.6)`}
                   d='M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z'
                   fill={'white'}
                 />
@@ -270,8 +271,6 @@ const Radar: FC = () => {
                 })!
               }
               fill={tech === hovered ? 'rgb(235, 35, 109, 0.2)' : 'transparent'}
-              // strokeWidth={3}
-              // stroke={'white'}
               onMouseOver={() => setHovered(tech)}
             />
           ))}
@@ -289,12 +288,14 @@ const Radar: FC = () => {
                   );
 
                   return (
-                    <StyledGroup key={`preferred-${idx}`} opacity={hovered === tech.name ? 1 : 0.3}>
-                      <Tooltip
+                    <StyledGroup
+                      key={`preferred-${idx}`}
+                      opacity={hovered === tech.name ? 1 : 0.3}
+                    >
+                      <StyledTooltip
                         title={dataPoint.name}
                         aria-label={dataPoint.name}
                         placement='top'
-                        className='lol'
                       >
                         <g>
                           {/* background circle for icons */}
@@ -328,37 +329,36 @@ const Radar: FC = () => {
                             r={dataPointCircleRadius}
                             fill={'white'}
                           />
-                         
-                            <image
-                              x={`${
-                                r *
-                                  Math.cos(
-                                    (techIdx * Math.PI) / segmentsNum +
-                                      ((2 * Math.PI) /
-                                        (segmentsNum * dataLengthPerRow)) *
-                                        (idx > 2 ? idx - 3 : idx) +
-                                      Math.PI / (segmentsNum * dataLengthPerRow)
-                                  ) -
-                                imageSize / 2
-                              }`}
-                              y={`${
-                                r *
-                                  Math.sin(
-                                    (techIdx * Math.PI) / segmentsNum +
-                                      ((2 * Math.PI) /
-                                        (segmentsNum * dataLengthPerRow)) *
-                                        (idx > 2 ? idx - 3 : idx) +
-                                      Math.PI / (segmentsNum * dataLengthPerRow)
-                                  ) -
-                                imageSize / 2
-                              }`}
-                              href={dataPoint.link}
-                              height={imageSize}
-                              width={imageSize}
-                            />
-                          
+
+                          <image
+                            x={`${
+                              r *
+                                Math.cos(
+                                  (techIdx * Math.PI) / segmentsNum +
+                                    ((2 * Math.PI) /
+                                      (segmentsNum * dataLengthPerRow)) *
+                                      (idx > 2 ? idx - 3 : idx) +
+                                    Math.PI / (segmentsNum * dataLengthPerRow)
+                                ) -
+                              imageSize / 2
+                            }`}
+                            y={`${
+                              r *
+                                Math.sin(
+                                  (techIdx * Math.PI) / segmentsNum +
+                                    ((2 * Math.PI) /
+                                      (segmentsNum * dataLengthPerRow)) *
+                                      (idx > 2 ? idx - 3 : idx) +
+                                    Math.PI / (segmentsNum * dataLengthPerRow)
+                                ) -
+                              imageSize / 2
+                            }`}
+                            href={dataPoint.link}
+                            height={imageSize}
+                            width={imageSize}
+                          />
                         </g>
-                      </Tooltip>
+                      </StyledTooltip>
                     </StyledGroup>
                   );
                 })
