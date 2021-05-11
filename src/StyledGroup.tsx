@@ -1,7 +1,7 @@
-import React, { FC } from 'react';
+import React from 'react';
 import styled from 'styled-components/macro';
 
-const StyledDataGroup = styled.g`
+const StyledGroup = styled.g`
   image {
     transform-origin: 50% 50%;
     transition: 0.3s;
@@ -17,23 +17,15 @@ const StyledDataGroup = styled.g`
       transform: scale(2);
       transform-origin: 50% 50%;
       transition: 0.3s;
+      z-index: 1400;
     }
     circle {
       transform: scale(2);
       transform-origin: 50% 50%;
       transition: 0.3s;
+      z-index: 1399;
     }
   }
 `;
-type StyledGroupProps = {
-  onMouseOver?: any;
-  onMouseLeave?: any;
-};
-
-const StyledGroup: FC<StyledGroupProps> = ({ children, onMouseOver, onMouseLeave }) => {
-  return (
-    <StyledDataGroup onMouseOver={onMouseOver} onMouseLeave={onMouseLeave}>{children}</StyledDataGroup>
-  );
-};
 
 export default StyledGroup;

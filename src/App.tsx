@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { RadarContextProvider } from './RadarContextProvider';
 import Home from './Home';
 import PageWrapper from './PageWrapper';
 import Menu from './Menu';
-import { RadarContextProvider } from './RadarContextProvider';
 import Footer from './Footer';
+
 const App = () => {
   return (
     <Router>

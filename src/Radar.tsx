@@ -4,7 +4,23 @@ import * as d3 from 'd3';
 import styled from 'styled-components/macro';
 import { data } from './data';
 import images from './images';
+import StyledGroup from './StyledGroup';
 import StyledTooltip from './StyledTooltip';
+
+const size = 900;
+const outterRadius = size / 2 - 100;
+const middleRadius = (outterRadius * 2) / 3;
+const innerCircleRadius = outterRadius / 3;
+const radius = [350, (outterRadius * 2) / 3, outterRadius / 3];
+const segmentsNum = 8;
+const dataPointCircleRadius = 14;
+const imageSize = Math.sqrt(2) * dataPointCircleRadius; //square inside circle
+const navBtnRadius = size / 2;
+const navImageSize = 50;
+
+const createArc = d3.arc().padAngle(0);
+
+let techIdx = 9;
 
 const Wrapper = styled.div`
   width: 60vw;
@@ -13,35 +29,6 @@ const Wrapper = styled.div`
     :hover {
       transition: 0.7s;
     }
-  }
-  svg {
-    @-webkit-keyframes swirl-in-fwd {
-      0% {
-        -webkit-transform: rotate(-540deg) scale(0);
-        transform: rotate(-540deg) scale(0);
-        opacity: 0;
-      }
-      100% {
-        -webkit-transform: rotate(0) scale(1);
-        transform: rotate(0) scale(1);
-        opacity: 1;
-      }
-    }
-    @keyframes swirl-in-fwd {
-      0% {
-        -webkit-transform: rotate(-540deg) scale(0);
-        transform: rotate(-540deg) scale(0);
-        opacity: 0;
-      }
-      100% {
-        -webkit-transform: rotate(0) scale(1);
-        transform: rotate(0) scale(1);
-        opacity: 1;
-      }
-    }
-
-    -webkit-animation: swirl-in-fwd 0.6s ease-out both;
-    animation: swirl-in-fwd 0.6s ease-out both;
   }
 `;
 
@@ -68,33 +55,6 @@ const StyledNav = styled.g`
   }
 `;
 
-const StyledGroup = styled.g`
-  image {
-    transform-origin: 50% 50%;
-    transition: 0.3s;
-    transform-box: fill-box;
-  }
-  circle {
-    transform-origin: 50% 50%;
-    transition: 0.3s;
-    transform-box: fill-box;
-  }
-  :hover {
-    image {
-      transform: scale(2);
-      transform-origin: 50% 50%;
-      transition: 0.3s;
-      z-index: 1400;
-    }
-    circle {
-      transform: scale(2);
-      transform-origin: 50% 50%;
-      transition: 0.3s;
-      z-index: 1399;
-    }
-  }
-`;
-
 const getRowLength = (dataNum: number, idx: number) => {
   if (dataNum <= 3) return dataNum;
   else if (dataNum > 3 || dataNum < 6) {
@@ -103,20 +63,7 @@ const getRowLength = (dataNum: number, idx: number) => {
   else return 0;
 };
 
-const size = 900;
-const outterRadius = size / 2 - 100;
-const middleRadius = (outterRadius * 2) / 3;
-const innerCircleRadius = outterRadius / 3;
-const radius = [350, (outterRadius * 2) / 3, outterRadius / 3];
-const segmentsNum = 8;
-const dataPointCircleRadius = 14;
-const imageSize = Math.sqrt(2) * dataPointCircleRadius; //square inside circle
-const navBtnRadius = size / 2;
-const navImageSize = 50;
 
-const createArc = d3.arc().padAngle(0);
-
-let techIdx = 9;
 
 const Radar: FC = () => {
   let history = useHistory();
