@@ -49,7 +49,7 @@ const StyledNav = styled.g`
   :hover {
     path,
     text {
-      fill: lightgrey;
+      fill: #007bff;
       transition: 0.3s;
     }
   }
@@ -111,7 +111,7 @@ const Radar: FC = () => {
           {Object.entries(images).map(([name, image], idx) => {
             return (
               <StyledNav
-                onClick={() => history.push(`${name}`)}
+                onClick={() => history.push(`/category/${name}`.toLowerCase())}
                 transform={`translate(${
                   navBtnRadius *
                     Math.cos(

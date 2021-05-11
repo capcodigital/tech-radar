@@ -5,13 +5,13 @@ import styled from 'styled-components/macro';
 
 const Wrapper = styled.div`
   margin-top: -50px;
+  position: relative;
 `;
 
 const Home = () => {
   return (
     <Wrapper>
       <RadarKey />
-      
       <Radar />
     </Wrapper>
   );
