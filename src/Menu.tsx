@@ -25,6 +25,7 @@ const LogoGridItem = styled(Grid)`
     }
   }
 `;
+
 const StyledDrawer = styled(Drawer)`
   div.MuiPaper-root {
     width: 100%;

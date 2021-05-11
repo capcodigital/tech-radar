@@ -63,8 +63,6 @@ const getRowLength = (dataNum: number, idx: number) => {
   else return 0;
 };
 
-
-
 const Radar: FC = () => {
   let history = useHistory();
   const [hovered, setHovered] = useState('DevOps');

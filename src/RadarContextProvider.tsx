@@ -3,7 +3,6 @@ import { createContext, useState, FC } from 'react';
 export type RadarContextType = {
   category: string;
   technology: string;
-
   setCategory: (newCategory: string) => void;
   setTechnology: (newComptenecy: string) => void;
 };
