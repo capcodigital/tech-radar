@@ -5,41 +5,66 @@ import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
-import Divider from '@material-ui/core/Divider';
 import ClearIcon from '@material-ui/icons/Clear';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Grid from '@material-ui/core/Grid';
-import logo from './logo.png';
+import logo from './images/logo.png';
 import { ListItem } from '@material-ui/core';
-import RadarContext from './RadarContext';
+import { RadarContext } from './RadarContextProvider';
+import styled from 'styled-components/macro';
+
+const LogoGridItem = styled(Grid)`
+  && {
+    z-index: 1400;
+    margin-left: 60px;
+    div {
+      color: #e6236d;
+      font-weight: 700;
+      font-size: 24px;
+    }
+  }
+`;
+
+const StyledDrawer = styled(Drawer)`
+  div.MuiPaper-root {
+    width: 100%;
+    background-color: #0e0330;
+    color: white;
+  }
+  .MuiIconButton-root {
+    margin: 20px;
+    float: right;
+  }
+  ul {
+    height: ${window.innerHeight}px;
+    width: 100%;
+    padding-top: 10rem;
+    background: radial-gradient(rgba(230, 35, 109, 0.7) 0%, transparent 90%);
+    padding-left: 100px;
+    a {
+      font-size: 30px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  }
+`;
 
 const useStyles = makeStyles((theme: any) => ({
   appBar: {
-    background: 'black',
+    background: 'transparent',
     paddingTop: 20,
-    //borderBottom: '1px solid white'
-  },
-  list: {
-    width: 250,
-    margin: 20,
-    fontSize: 20,
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
-    right: 0,
-    float: 'right',
-    fontSize: 'large',
+    boxShadow: 'none',
   },
 }));
 
 export default function Header() {
   const classes = useStyles();
   const [open, setOpen] = useState(false);
-  const { setName } = useContext(RadarContext);
+  const { setCategory } = useContext(RadarContext);
 
   const handleClick = (item: string) => {
-    setName(item);
+    setCategory(item);
   };
 
   const toggleDrawer = (open: boolean) => (event: any) => {
@@ -54,7 +79,6 @@ export default function Header() {
 
   const MenuItems = () => (
     <div
-      className={classes.list}
       role='presentation'
       onClick={toggleDrawer(false)}
       onKeyDown={toggleDrawer(false)}
@@ -62,17 +86,12 @@ export default function Header() {
       <IconButton
         onClick={toggleDrawer(false)}
         edge='start'
-        className={classes.menuButton}
         color='inherit'
         aria-label='clear'
       >
         <ClearIcon fontSize='large' />
       </IconButton>
       <List>
-        <ListItem button component={Link} to='/'>
-          Home
-        </ListItem>
-        <Divider />
         {[
           'Mobile',
           'Frontend',
@@ -82,21 +101,17 @@ export default function Header() {
           'Hosting',
           'Databases',
           'Devops',
-        ].map((item: string) => (
+        ].map((name: string) => (
           <ListItem
-            key={`menu-${item}`}
+            key={`menu-${name}`}
             button
             component={Link}
-            to='/info'
-            onClick={() => handleClick(item)}
+            to={`/category/${name.toLowerCase()}`}
+            onClick={() => handleClick(name)}
           >
-            {item}
+            {name}
           </ListItem>
         ))}
-        <Divider />
-        {/* <ListItem button component={Link} to='/table'>
-          Table
-        </ListItem> */}
       </List>
     </div>
   );
@@ -106,21 +121,18 @@ export default function Header() {
       <AppBar className={classes.appBar} position='static'>
         <Toolbar>
           <Grid justify='space-between' container>
-            <Grid item>
-              <img
-                height={40}
-                src={logo}
-                alt='Logo'
-                style={{ margin: '1rem' }}
-              />
-            </Grid>
+            <LogoGridItem item>
+              <Link to='/'>
+                <img height={46} src={logo} alt='Logo' />
+                <div>TECH RADAR 2021</div>
+              </Link>
+            </LogoGridItem>
 
             <Grid item>
               <div>
                 <IconButton
                   onClick={toggleDrawer(true)}
                   edge='start'
-                  className={classes.menuButton}
                   color='inherit'
                   aria-label='menu'
                 >
@@ -131,9 +143,9 @@ export default function Header() {
           </Grid>
         </Toolbar>
       </AppBar>
-      <Drawer anchor={'right'} open={open} onClose={toggleDrawer(false)}>
+      <StyledDrawer anchor={'right'} open={open} onClose={toggleDrawer(false)}>
         <MenuItems />
-      </Drawer>
+      </StyledDrawer>
     </>
   );
 }

@@ -1,15 +1,19 @@
 import React from 'react';
-import { radial } from './data';
-import RadialChart from './RadialChart';
-import Grid from '@material-ui/core/Grid';
+import RadarKey from './RadarKey'
+import Radar from './Radar';
+import styled from 'styled-components/macro';
+
+const Wrapper = styled.div`
+  margin-top: -50px;
+  position: relative;
+`;
 
 const Home = () => {
   return (
-    <Grid container justify='center' spacing={5}>
-      <Grid item>
-        <RadialChart data={radial} />
-      </Grid>
-    </Grid>
+    <Wrapper>
+      <RadarKey />
+      <Radar />
+    </Wrapper>
   );
 };
 
