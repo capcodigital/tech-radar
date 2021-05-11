@@ -8,14 +8,14 @@ import databases from './databases.svg';
 import devops from './devops.svg';
 
 const images = {
-  DevOps: devops,
-  Databases: databases,
-  Hosting: hosting,
-  Cloud: cloud,
-  Integration: integration,
-  Backend: backend,
-  Frontend: frontend,
-  Mobile: mobile,
+  devops: devops,
+  databases: databases,
+  hosting: hosting,
+  cloud: cloud,
+  integration: integration,
+  backend: backend,
+  frontend: frontend,
+  mobile: mobile,
 };
 
 export default images;

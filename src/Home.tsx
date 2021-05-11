@@ -5,6 +5,8 @@ import styled from 'styled-components/macro';
 
 const Wrapper = styled.div`
   position: relative;
+  height:120%;
+  padding: 0rem 1rem 1rem 1rem;
 `;
 
 const Home = () => {

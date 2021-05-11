@@ -1,11 +1,23 @@
-import React, { FC, useState } from 'react';
+import React, { FC, useState, useContext, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
+import { RadarContextType, RadarContext } from './RadarContextProvider';
 import * as d3 from 'd3';
 import styled from 'styled-components/macro';
 import { data } from './data';
 import images from './images';
 import StyledGroup from './StyledGroup';
-import StyledTooltip from './StyledTooltip';
+import { RadarTooltip } from './StyledTooltip';
+
+const labels = [
+  'DevOps',
+  'Databases',
+  'Hosting',
+  'Cloud',
+  'Integration',
+  'Backend',
+  'Frontend',
+  'Mobile',
+]
 
 const size = 900;
 const outterRadius = size / 2 - 100;
@@ -15,7 +27,7 @@ const radius = [350, (outterRadius * 2) / 3, outterRadius / 3];
 const segmentsNum = 8;
 const dataPointCircleRadius = 14;
 const imageSize = Math.sqrt(2) * dataPointCircleRadius; //square inside circle
-const navBtnRadius = size / 2 -50;
+const navBtnRadius = size / 2 - 50;
 const navImageSize = 50;
 
 const createArc = d3.arc().padAngle(0);
@@ -23,7 +35,7 @@ const createArc = d3.arc().padAngle(0);
 let techIdx = 9;
 
 const Wrapper = styled.div`
-margin-top: -110px;
+  margin-top: -110px;
   width: 50vw;
   display: inline-block;
   .arc {
@@ -66,7 +78,14 @@ const getRowLength = (dataNum: number, idx: number) => {
 
 const Radar: FC = () => {
   let history = useHistory();
+  const { setCategory } = useContext<RadarContextType>(RadarContext);
   const [hovered, setHovered] = useState('DevOps');
+
+  const handleClick = (categoryName: string) => {
+    setCategory(categoryName);
+    history.push(`/category/${categoryName}`.toLowerCase());
+  };
+
   return (
     <Wrapper>
       <svg viewBox={'0 0 900 900'} style={{ overflow: 'visible' }}>
@@ -110,7 +129,8 @@ const Radar: FC = () => {
           {Object.entries(images).map(([name, image], idx) => {
             return (
               <StyledNav
-                onClick={() => history.push(`/category/${name}`.toLowerCase())}
+                key={`${name}-nav`}
+                onClick={() => handleClick(name)}
                 transform={`translate(${
                   navBtnRadius *
                     Math.cos(
@@ -142,7 +162,7 @@ const Radar: FC = () => {
                   fontWeight={700}
                   fill={'white'}
                 >
-                  {name}
+                  {labels[idx]}
                 </text>
                 <path
                   scale={0.5}
@@ -196,17 +216,9 @@ const Radar: FC = () => {
             )
           )}
 
-          {[
-            'DevOps',
-            'Databases',
-            'Hosting',
-            'Cloud',
-            'Integration',
-            'Backend',
-            'Frontend',
-            'Mobile',
-          ].map((tech: string, idx: number) => (
+          {labels.map((tech: string, idx: number) => (
             <path
+              key={`${tech}-arc`}
               className={`arc`}
               d={
                 createArc({
@@ -238,10 +250,11 @@ const Radar: FC = () => {
                       key={`preferred-${idx}`}
                       opacity={hovered === tech.name ? 1 : 0.3}
                     >
-                      <StyledTooltip
+                      <RadarTooltip
                         title={dataPoint.name}
                         aria-label={dataPoint.name}
                         placement='top'
+                        arrow
                       >
                         <g>
                           {/* background circle for icons */}
@@ -304,7 +317,7 @@ const Radar: FC = () => {
                             width={imageSize}
                           />
                         </g>
-                      </StyledTooltip>
+                      </RadarTooltip>
                     </StyledGroup>
                   );
                 })
