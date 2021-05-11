@@ -15,7 +15,7 @@ const radius = [350, (outterRadius * 2) / 3, outterRadius / 3];
 const segmentsNum = 8;
 const dataPointCircleRadius = 14;
 const imageSize = Math.sqrt(2) * dataPointCircleRadius; //square inside circle
-const navBtnRadius = size / 2;
+const navBtnRadius = size / 2 -50;
 const navImageSize = 50;
 
 const createArc = d3.arc().padAngle(0);
@@ -23,7 +23,8 @@ const createArc = d3.arc().padAngle(0);
 let techIdx = 9;
 
 const Wrapper = styled.div`
-  width: 60vw;
+margin-top: -110px;
+  width: 50vw;
   display: inline-block;
   .arc {
     :hover {
@@ -115,13 +116,13 @@ const Radar: FC = () => {
                     Math.cos(
                       ((2 * Math.PI) / segmentsNum) * idx - (4 * Math.PI) / 8
                     ) -
-                  (idx === 4 ? 90 : idx === 0 ? 70 : idx > 3 ? 120 : 30)
+                  (idx === 4 ? 90 : idx === 0 ? 70 : idx > 3 ? 120 : 20)
                 }, ${
                   navBtnRadius *
                     Math.sin(
                       ((2 * Math.PI) / segmentsNum) * idx - (4 * Math.PI) / 8
                     ) -
-                  (idx === 4 ? 30 : 0)
+                  (idx === 4 ? 40 : idx === 0 ? 10 : 0)
                 })`}
               >
                 <image
@@ -137,7 +138,7 @@ const Radar: FC = () => {
                   textAnchor='start'
                   x={60}
                   y={30}
-                  fontSize={24}
+                  fontSize={20}
                   fontWeight={700}
                   fill={'white'}
                 >

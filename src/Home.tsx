@@ -4,7 +4,6 @@ import Radar from './Radar';
 import styled from 'styled-components/macro';
 
 const Wrapper = styled.div`
-  margin-top: -50px;
   position: relative;
 `;
 

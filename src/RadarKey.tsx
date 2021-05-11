@@ -6,7 +6,7 @@ const StyledRadarKey = styled.div`
   margin-left: 90px;
   position: absolute;
   width: 100px;
-  margin-top: 90px;
+  margin-top: 50px;
   text-align: left;
   font-size: 16px;
   div:first-child {
