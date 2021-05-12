@@ -1,11 +1,23 @@
-import React, { FC, useState } from 'react';
+import React, { FC, useState, useContext } from 'react';
 import { useHistory } from 'react-router-dom';
+import { RadarContextType, RadarContext } from './RadarContextProvider';
 import * as d3 from 'd3';
 import styled from 'styled-components/macro';
 import { data } from './data';
 import images from './images';
 import StyledGroup from './StyledGroup';
-import StyledTooltip from './StyledTooltip';
+import { RadarTooltip } from './StyledTooltip';
+
+const labels = [
+  'DevOps',
+  'Databases',
+  'Hosting',
+  'Cloud',
+  'Integration',
+  'Backend',
+  'Frontend',
+  'Mobile',
+];
 
 const size = 900;
 const outterRadius = size / 2 - 100;
@@ -15,7 +27,7 @@ const radius = [350, (outterRadius * 2) / 3, outterRadius / 3];
 const segmentsNum = 8;
 const dataPointCircleRadius = 14;
 const imageSize = Math.sqrt(2) * dataPointCircleRadius; //square inside circle
-const navBtnRadius = size / 2;
+const navBtnRadius = size / 2 - 50;
 const navImageSize = 50;
 
 const createArc = d3.arc().padAngle(0);
@@ -23,10 +35,12 @@ const createArc = d3.arc().padAngle(0);
 let techIdx = 9;
 
 const Wrapper = styled.div`
-  width: 60vw;
+  margin-top: -110px;
+  width: 50vw;
   display: inline-block;
   .arc {
     :hover {
+      cursor: pointer;
       transition: 0.7s;
     }
   }
@@ -65,7 +79,14 @@ const getRowLength = (dataNum: number, idx: number) => {
 
 const Radar: FC = () => {
   let history = useHistory();
+  const { setCategory } = useContext<RadarContextType>(RadarContext);
   const [hovered, setHovered] = useState('DevOps');
+
+  const handleClick = (categoryName: string) => {
+    setCategory(categoryName);
+    history.push(`/category/${categoryName}`.toLowerCase());
+  };
+
   return (
     <Wrapper>
       <svg viewBox={'0 0 900 900'} style={{ overflow: 'visible' }}>
@@ -109,19 +130,20 @@ const Radar: FC = () => {
           {Object.entries(images).map(([name, image], idx) => {
             return (
               <StyledNav
-                onClick={() => history.push(`/category/${name}`.toLowerCase())}
+                key={`${name}-nav`}
+                onClick={() => handleClick(name)}
                 transform={`translate(${
                   navBtnRadius *
                     Math.cos(
                       ((2 * Math.PI) / segmentsNum) * idx - (4 * Math.PI) / 8
                     ) -
-                  (idx === 4 ? 90 : idx === 0 ? 70 : idx > 3 ? 120 : 30)
+                  (idx === 4 ? 90 : idx === 0 ? 70 : idx > 3 ? 120 : 20)
                 }, ${
                   navBtnRadius *
                     Math.sin(
                       ((2 * Math.PI) / segmentsNum) * idx - (4 * Math.PI) / 8
                     ) -
-                  (idx === 4 ? 30 : 0)
+                  (idx === 4 ? 40 : idx === 0 ? 10 : 0)
                 })`}
               >
                 <image
@@ -137,11 +159,11 @@ const Radar: FC = () => {
                   textAnchor='start'
                   x={60}
                   y={30}
-                  fontSize={24}
+                  fontSize={20}
                   fontWeight={700}
                   fill={'white'}
                 >
-                  {name}
+                  {labels[idx]}
                 </text>
                 <path
                   scale={0.5}
@@ -195,17 +217,9 @@ const Radar: FC = () => {
             )
           )}
 
-          {[
-            'DevOps',
-            'Databases',
-            'Hosting',
-            'Cloud',
-            'Integration',
-            'Backend',
-            'Frontend',
-            'Mobile',
-          ].map((tech: string, idx: number) => (
+          {labels.map((tech: string, idx: number) => (
             <path
+              key={`${tech}-arc`}
               className={`arc`}
               d={
                 createArc({
@@ -217,6 +231,7 @@ const Radar: FC = () => {
               }
               fill={tech === hovered ? 'rgb(235, 35, 109, 0.2)' : 'transparent'}
               onMouseOver={() => setHovered(tech)}
+              onClick={() => handleClick(tech)}
             />
           ))}
 
@@ -237,10 +252,11 @@ const Radar: FC = () => {
                       key={`preferred-${idx}`}
                       opacity={hovered === tech.name ? 1 : 0.3}
                     >
-                      <StyledTooltip
+                      <RadarTooltip
                         title={dataPoint.name}
                         aria-label={dataPoint.name}
                         placement='top'
+                        arrow
                       >
                         <g>
                           {/* background circle for icons */}
@@ -303,7 +319,7 @@ const Radar: FC = () => {
                             width={imageSize}
                           />
                         </g>
-                      </StyledTooltip>
+                      </RadarTooltip>
                     </StyledGroup>
                   );
                 })

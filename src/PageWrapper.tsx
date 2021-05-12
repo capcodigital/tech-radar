@@ -6,10 +6,9 @@ const StyledPageWrapper = styled.div`
   height: 100%;
   background: radial-gradient(rgba(230, 35, 109, 0.7) 0%, transparent 70%);
   text-align: center;
-  padding: 1rem;
+  padding: 1rem 0rem 1rem 1rem;
   color: white;
   overflow-x: hidden;
-
   a:hover {
     text-decoration: none;
   }

@@ -4,13 +4,16 @@ import styled from 'styled-components/macro';
 
 const StyledFooter = styled.div`
   height: 70px;
+  width:100%;
   background: #00000026;
   text-align: center;
   font-size: 18px;
   color: white;
-  margin-top:50px;
   padding: 0 100px 0 100px;
   line-height: 70px;
+  // position: absolute;
+  top: 100%;
+  bottom: 0;
   a {
     color: inherit;
     float: left;

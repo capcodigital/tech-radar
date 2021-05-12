@@ -1,15 +1,36 @@
 import React from 'react';
 import Tooltip from '@material-ui/core/Tooltip';
-import { withStyles, Theme } from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/styles';
 
-const StyledTooltip = withStyles((theme: Theme) => ({
+export const KeyTooltip = withStyles(() => ({
   tooltip: {
     backgroundColor: 'white',
     color: 'black',
-    fontSize: 18,
-    marginBottom: 20,
+    fontSize: 16,
     fontFamily: 'bebas-neue-pro, sans-serif',
+    borderRadius: 0,
+    padding:15,
   },
+  arrow: {
+    "&::before": {
+      backgroundColor: "white",
+    }
+  }
 }))(Tooltip);
 
-export default StyledTooltip;
+export const RadarTooltip = withStyles(() => ({
+  tooltip: {
+    backgroundColor: 'white',
+    color: 'black',
+    fontSize: 14,
+    marginBottom:20,
+    fontFamily: 'bebas-neue-pro, sans-serif',
+    borderRadius: 0,
+  },
+  arrow: {
+    "&::before": {
+      backgroundColor: "white",
+    }
+  }
+}))(Tooltip);
+
