@@ -7,16 +7,24 @@ import CategoryRadar from './CategoryRadar';
 import styled from 'styled-components/macro';
 import { data } from './data';
 import images from './images';
+import StyledButton from './StyledButton';
 
 type WrapperProps = {
   category: string;
 };
+
 const Wrapper = styled.div<WrapperProps>`
   position: relative;
   width: 100%;
   display: flex;
   .MuiGrid-container {
     padding-left: 100px;
+  }
+  .categories-grid {
+    display: flex;
+    span {
+      padding-right: 20px;
+    }
   }
   .background {
     opacity: 0.12;
@@ -63,6 +71,15 @@ const Title = styled.div`
   text-align: left;
   display: inline-block;
   vertical-align: middle;
+  margin-bottom: 20px;
+`;
+const SubHeader = styled.div`
+  font-size: 32px;
+  font-weight: 700;
+  text-align: left;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 100px 0 20px 0;
 `;
 
 type ContentType = {
@@ -71,16 +88,30 @@ type ContentType = {
   scaling: Array<{ name: string; link: string }>;
 };
 const CategoryPage = () => {
-  const { category, technology, setCategory, setTechnology } =
+  const { category, setCategory, setTechnology } =
     useContext<RadarContextType>(RadarContext);
-  const [content, setContent] = useState<ContentType | null>(null);
+
+  const [content, setContent] =
+    useState<{ name: string; data: ContentType } | null>(null);
+
+  const buttonText = [
+    'DevOps',
+    'Databases',
+    'Hosting',
+    'Cloud',
+    'Integration',
+    'Backend',
+    'Frontend',
+    'Mobile',
+  ].filter((name: string) => name.toLowerCase() !== category);
+
   useEffect(() => {
     let categoryName = window.location.pathname.split('/')[2];
     setCategory(categoryName);
     setContent(
-      data.filter((cat: any) => cat.name.toLowerCase() === categoryName)[0].data
+      data.filter((cat: any) => cat.name.toLowerCase() === categoryName)[0]
     );
-  });
+  }, [setCategory]);
 
   return (
     <>
@@ -98,7 +129,7 @@ const CategoryPage = () => {
           >
             <Grid container>
               <Grid item xs={12}>
-                <Title>DevOps</Title>
+                <Title>{content.name}</Title>
                 <img
                   src={(images as any)[category]}
                   alt={category}
@@ -109,7 +140,7 @@ const CategoryPage = () => {
               <Grid item xs={4}>
                 <hr />
                 <div className='title'>Preferred</div>
-                {content.preferred.map(({ name }) => (
+                {content.data.preferred.map(({ name }) => (
                   <div key={name} className='technology'>
                     <Link to={`/technology/${name.toLowerCase()}`}>{name}</Link>
                     <ArrowForwardIosIcon />
@@ -119,7 +150,7 @@ const CategoryPage = () => {
               <Grid item xs={4}>
                 <hr />
                 <div className='title'>Skilled</div>
-                {content.skilled.map(({ name }) => (
+                {content.data.skilled.map(({ name }) => (
                   <div key={name} className='technology'>
                     <Link to={`/technology/${name.toLowerCase()}`}>{name}</Link>
                     <ArrowForwardIosIcon />
@@ -129,20 +160,36 @@ const CategoryPage = () => {
               <Grid item xs={4}>
                 <hr />
                 <div className='title'>Scaling</div>
-                {content.scaling.map(({ name }) => (
+                {content.data.scaling.map(({ name }) => (
                   <div key={name} className='technology'>
                     <Link to={`/technology/${name.toLowerCase()}`}>{name}</Link>
                     <ArrowForwardIosIcon />
                   </div>
                 ))}
               </Grid>
+              <SubHeader>Other Categories</SubHeader>
+              <Grid item xs={12} className='categories-grid'>
+                <span>
+                  {buttonText.slice(0, 4).map((text: string) => (
+                    <StyledButton
+                      name={text}
+                      onClick={() => setTechnology(text)}
+                    />
+                  ))}
+                </span>
+                <span>
+                  {buttonText.slice(4, 7).map((text: string) => (
+                    <StyledButton
+                      name={text}
+                      onClick={() => setTechnology(text)}
+                    />
+                  ))}
+                </span>
+              </Grid>
             </Grid>
           </div>
-          <div
-            style={{
-              marginTop: -10,
-            }}
-          ><CategoryRadar data={content}/></div>
+
+          <CategoryRadar data={content.data} />
         </Wrapper>
       )}
     </>

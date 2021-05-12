@@ -1,9 +1,6 @@
-import React, { FC, useState, useContext, useEffect } from 'react';
-import { useHistory } from 'react-router-dom';
-import { RadarContextType, RadarContext } from './RadarContextProvider';
+import React, { FC } from 'react';
 import * as d3 from 'd3';
 import styled from 'styled-components/macro';
-import images from './images';
 import StyledGroup from './StyledGroup';
 import { RadarTooltip } from './StyledTooltip';
 
@@ -17,7 +14,8 @@ const dataPointCircleRadius = 14;
 const imageSize = Math.sqrt(2) * dataPointCircleRadius; //square inside circle
 
 const Wrapper = styled.div`
-  // width: 50vw;
+  width: 40vw;
+  margin-top: -10px;
   display: inline-block;
   .arc {
     :hover {
@@ -26,13 +24,6 @@ const Wrapper = styled.div`
   }
 `;
 
-const getRowLength = (dataNum: number, idx: number) => {
-  if (dataNum <= 3) return dataNum;
-  else if (dataNum > 3 || dataNum < 6) {
-    return idx < 3 ? 3 : dataNum - 3;
-  } else if (dataNum === 6) return dataNum / 2;
-  else return 0;
-};
 type CategoryRadarType = {
   data: {
     preferred: Array<{ name: string; link: string }>;
@@ -46,10 +37,9 @@ const createArc = d3.arc().padAngle(0);
 const CategoryRadar: FC<CategoryRadarType> = ({ data }) => {
   return (
     <Wrapper>
-      <svg width={400} height={800} style={{ overflow: 'visible' }}>
+      <svg viewBox={'0 0 400 800'} style={{ overflow: 'visible' }}>
         <g transform={`translate(${width} ${height / 2})`}>
           {/* 3 main rings */}
-
           <path
             className={`arc`}
             d={
@@ -106,15 +96,21 @@ const CategoryRadar: FC<CategoryRadarType> = ({ data }) => {
                       cx={`${
                         radius[groupIdx] *
                         Math.cos(
-                          (3 * Math.PI) / 4 +
-                            (Math.PI / (data.length + 3)) * idx
+                          (6 * Math.PI) / 8 +
+                            (Math.PI /
+                              (data.length + (groupIdx === 2 ? 1 : 4))) *
+                              idx +
+                            Math.PI / ((groupIdx === 2 ? 3 : 2) * data.length)
                         )
                       }`}
                       cy={`${
                         radius[groupIdx] *
                         Math.sin(
-                          (3 * Math.PI) / 4 +
-                            (Math.PI / (data.length + 3)) * idx
+                          (6 * Math.PI) / 8 +
+                            (Math.PI /
+                              (data.length + (groupIdx === 2 ? 1 : 4))) *
+                              idx +
+                            Math.PI / ((groupIdx === 2 ? 3 : 2) * data.length)
                         )
                       }`}
                       r={dataPointCircleRadius}
@@ -125,16 +121,22 @@ const CategoryRadar: FC<CategoryRadarType> = ({ data }) => {
                       x={`${
                         radius[groupIdx] *
                           Math.cos(
-                            (3 * Math.PI) / 4 +
-                              (Math.PI / (data.length + 3)) * idx
+                            (6 * Math.PI) / 8 +
+                              (Math.PI /
+                                (data.length + (groupIdx === 2 ? 1 : 4))) *
+                                idx +
+                              Math.PI / ((groupIdx === 2 ? 3 : 2) * data.length)
                           ) -
                         imageSize / 2
                       }`}
                       y={`${
                         radius[groupIdx] *
                           Math.sin(
-                            (3 * Math.PI) / 4 +
-                              (Math.PI / (data.length + 3)) * idx
+                            (6 * Math.PI) / 8 +
+                              (Math.PI /
+                                (data.length + (groupIdx === 2 ? 1 : 4))) *
+                                idx +
+                              Math.PI / ((groupIdx === 2 ? 3 : 2) * data.length)
                           ) -
                         imageSize / 2
                       }`}

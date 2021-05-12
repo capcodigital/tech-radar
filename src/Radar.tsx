@@ -1,4 +1,4 @@
-import React, { FC, useState, useContext, useEffect } from 'react';
+import React, { FC, useState, useContext } from 'react';
 import { useHistory } from 'react-router-dom';
 import { RadarContextType, RadarContext } from './RadarContextProvider';
 import * as d3 from 'd3';
@@ -17,7 +17,7 @@ const labels = [
   'Backend',
   'Frontend',
   'Mobile',
-]
+];
 
 const size = 900;
 const outterRadius = size / 2 - 100;
@@ -40,6 +40,7 @@ const Wrapper = styled.div`
   display: inline-block;
   .arc {
     :hover {
+      cursor: pointer;
       transition: 0.7s;
     }
   }
@@ -230,6 +231,7 @@ const Radar: FC = () => {
               }
               fill={tech === hovered ? 'rgb(235, 35, 109, 0.2)' : 'transparent'}
               onMouseOver={() => setHovered(tech)}
+              onClick={() => handleClick(tech)}
             />
           ))}
 
