@@ -2,6 +2,7 @@ import { ImageAspectRatioOutlined } from '@material-ui/icons';
 
 export type TechContentType = {
   technology: string;
+  link:string;
   intro: string;
   content: Array<{
     name: string;
@@ -14,6 +15,7 @@ export type TechContentType = {
 export default [
   {
     technology: 'React',
+    link: 'https://reactjs.org/docs/getting-started.html',
     intro:
       'React is the world’s most popular JavaScript library that uses components to change content of a single-page Mobile and Web application without refreshing.',
     content: [

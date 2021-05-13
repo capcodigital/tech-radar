@@ -39,7 +39,7 @@ const Wrapper = styled.div<WrapperProps>`
   .background {
     opacity: 0.12;
     position: absolute;
-    top: -70px;
+    top: -80px;
     left: -300px;
   }
   hr {
@@ -104,6 +104,18 @@ const CategoryPage = () => {
   const [content, setContent] =
     useState<{ name: string; data: ContentType } | null>(null);
 
+  useEffect(() => {
+    let categoryName = window.location.pathname.split('/')[2];
+    setCategory(categoryName);
+    setContent(
+      data.filter((cat: any) => cat.name.toLowerCase() === categoryName)[0]
+    );
+    window.scroll({
+      top: 0, 
+      behavior: 'smooth'
+    });
+  }, [category, setCategory]);
+
   const buttonText = [
     'DevOps',
     'Databases',
@@ -114,14 +126,6 @@ const CategoryPage = () => {
     'Frontend',
     'Mobile',
   ].filter((name: string) => name.toLowerCase() !== category);
-
-  useEffect(() => {
-    let categoryName = window.location.pathname.split('/')[2];
-    setCategory(categoryName);
-    setContent(
-      data.filter((cat: any) => cat.name.toLowerCase() === categoryName)[0]
-    );
-  }, [category, setCategory]);
 
   return (
     <>
@@ -229,7 +233,6 @@ const CategoryPage = () => {
               </Grid>
             </Grid>
           </div>
-
           <CategoryRadar data={content.data} />
         </Wrapper>
       )}

@@ -1,7 +1,6 @@
 import React, { FC } from 'react';
 import * as d3 from 'd3';
 import styled from 'styled-components/macro';
-import StyledGroup from './StyledGroup';
 import { CategoryRadarTooltip } from './StyledTooltip';
 
 const width = 400;
@@ -80,7 +79,7 @@ const CategoryRadar: FC<CategoryRadarType> = ({ data }) => {
           />
           {Object.entries(data).map(([group, data], groupIdx) =>
             data.map(({ name, link }, idx) => (
-              <StyledGroup key={`preferred-${idx}`}>
+              <g key={`preferred-${idx}`}>
                 <CategoryRadarTooltip
                   title={name}
                   aria-label={name}
@@ -144,7 +143,7 @@ const CategoryRadar: FC<CategoryRadarType> = ({ data }) => {
                     />
                   </g>
                 </CategoryRadarTooltip>
-              </StyledGroup>
+              </g>
             ))
           )}
         </g>

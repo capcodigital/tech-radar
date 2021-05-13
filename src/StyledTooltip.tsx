@@ -39,7 +39,7 @@ export const CategoryRadarTooltip = withStyles(() => ({
     backgroundColor: 'white',
     color: 'black',
     fontSize: 16,
-    marginRight: 40,
+    marginRight: 15,
     fontFamily: 'bebas-neue-pro, sans-serif',
     borderRadius: 0,
   },
