@@ -45,7 +45,10 @@ const StyledDrawer = styled(Drawer)`
     a {
       font-size: 30px;
       font-weight: bold;
-      text-decoration: none;
+      color: inherit;
+      :hover {
+        text-decoration: underline;
+      }
     }
   }
 `;
@@ -64,7 +67,7 @@ export default function Header() {
   const { setCategory } = useContext(RadarContext);
 
   const handleClick = (item: string) => {
-    setCategory(item);
+    setCategory(item.toLowerCase());
   };
 
   const toggleDrawer = (open: boolean) => (event: any) => {

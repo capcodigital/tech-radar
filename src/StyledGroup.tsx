@@ -3,8 +3,8 @@ import styled from 'styled-components/macro';
 
 const StyledGroup = styled.g`
   image {
-    transform-origin: 50% 50%;
     transition: 0.3s;
+    transform-origin: 50% 50%;
     transform-box: fill-box;
   }
   circle {
