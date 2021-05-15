@@ -9,13 +9,13 @@ export const KeyTooltip = withStyles(() => ({
     fontSize: 16,
     fontFamily: 'bebas-neue-pro, sans-serif',
     borderRadius: 0,
-    padding:15,
+    padding: 15,
   },
   arrow: {
-    "&::before": {
-      backgroundColor: "white",
-    }
-  }
+    '&::before': {
+      backgroundColor: 'white',
+    },
+  },
 }))(Tooltip);
 
 export const RadarTooltip = withStyles(() => ({
@@ -23,14 +23,29 @@ export const RadarTooltip = withStyles(() => ({
     backgroundColor: 'white',
     color: 'black',
     fontSize: 14,
-    marginBottom:20,
+    marginBottom: 20,
     fontFamily: 'bebas-neue-pro, sans-serif',
     borderRadius: 0,
   },
   arrow: {
-    "&::before": {
-      backgroundColor: "white",
-    }
-  }
+    '&::before': {
+      backgroundColor: 'white',
+    },
+  },
 }))(Tooltip);
 
+export const CategoryRadarTooltip = withStyles(() => ({
+  tooltip: {
+    backgroundColor: 'white',
+    color: 'black',
+    fontSize: 16,
+    marginRight: 15,
+    fontFamily: 'bebas-neue-pro, sans-serif',
+    borderRadius: 0,
+  },
+  arrow: {
+    '&::before': {
+      backgroundColor: 'white',
+    },
+  },
+}))(Tooltip);

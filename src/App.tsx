@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { RadarContextProvider } from './RadarContextProvider';
 import Home from './Home';
 import CategoryPage from './CategoryPage';
+import ContentPage from './ContentPage';
 import PageWrapper from './PageWrapper';
 import Menu from './Menu';
 import Footer from './Footer';
@@ -21,7 +22,7 @@ const App = () => {
               <CategoryPage />
             </Route>
             <Route path='/technology'>
-              <Home />
+              <ContentPage />
             </Route>
           </PageWrapper>
           <Footer />

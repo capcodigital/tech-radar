@@ -20,6 +20,9 @@ const ButtonWrapper = styled.div`
   svg.MuiSvgIcon-root {
     font-size: 20px;
   }
+  :hover {
+    background: rgb(255, 255, 255, 0.1);
+  }
 `;
 
 type StyledButtonProps = {
@@ -28,10 +31,10 @@ type StyledButtonProps = {
 };
 
 export const StyledButton: FC<StyledButtonProps> = ({ name, onClick }) => (
-  <Link to={`/tecnology/${name.toLowerCase()}`}>
+  <Link to={`/category/${name.toLowerCase()}`}>
     <ButtonWrapper onClick={onClick}>
       <img
-        src={(images as any)[name.toLowerCase()]}
+        src={(images as any)[name]}
         alt={name}
         width={54}
         height={54}

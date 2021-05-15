@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom';
 import { RadarContextType, RadarContext } from './RadarContextProvider';
 import * as d3 from 'd3';
 import styled from 'styled-components/macro';
-import { data } from './data';
+import { data } from './data/data';
 import images from './images';
 import StyledGroup from './StyledGroup';
 import { RadarTooltip } from './StyledTooltip';
@@ -59,12 +59,14 @@ const StyledNav = styled.g`
       opacity: 1;
     }
   }
-
+  path {
+    opacity: 1;
+  }
   :hover {
     path,
     text {
-      fill: #007bff;
       transition: 0.3s;
+      text-decoration: underline;
     }
   }
 `;

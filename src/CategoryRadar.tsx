@@ -1,26 +1,23 @@
 import React, { FC } from 'react';
 import * as d3 from 'd3';
 import styled from 'styled-components/macro';
-import StyledGroup from './StyledGroup';
-import { RadarTooltip } from './StyledTooltip';
+import { CategoryRadarTooltip } from './StyledTooltip';
 
 const width = 400;
 const height = 800;
 const outterRadius = width;
 const middleRadius = (outterRadius * 2) / 3;
 const innerRadius = outterRadius / 3;
-const radius = [outterRadius - 50, middleRadius - 50, innerRadius - 50];
-const dataPointCircleRadius = 14;
+const radius = [outterRadius - 60, middleRadius - 60, innerRadius - 60];
+const dataPointCircleRadius = 24;
 const imageSize = Math.sqrt(2) * dataPointCircleRadius; //square inside circle
 
 const Wrapper = styled.div`
-  width: 40vw;
   margin-top: -10px;
   display: inline-block;
-  .arc {
-    :hover {
-      transition: 0.7s;
-    }
+  float: right;
+  svg {
+    overflow: visible;
   }
 `;
 
@@ -30,14 +27,15 @@ type CategoryRadarType = {
     skilled: Array<{ name: string; link: string }>;
     scaling: Array<{ name: string; link: string }>;
   };
+  setHovered: any;
 };
 
 const createArc = d3.arc().padAngle(0);
 
-const CategoryRadar: FC<CategoryRadarType> = ({ data }) => {
+const CategoryRadar: FC<CategoryRadarType> = ({ data, setHovered }) => {
   return (
     <Wrapper>
-      <svg viewBox={'0 0 400 800'} style={{ overflow: 'visible' }}>
+      <svg width={400} height={800}>
         <g transform={`translate(${width} ${height / 2})`}>
           {/* 3 main rings */}
           <path
@@ -82,11 +80,15 @@ const CategoryRadar: FC<CategoryRadarType> = ({ data }) => {
           />
           {Object.entries(data).map(([group, data], groupIdx) =>
             data.map(({ name, link }, idx) => (
-              <StyledGroup key={`preferred-${idx}`}>
-                <RadarTooltip
+              <g
+                key={`${group} ${idx}`}
+                onMouseOver={() => setHovered(name)}
+                onMouseLeave={() => setHovered('')}
+              >
+                <CategoryRadarTooltip
                   title={name}
                   aria-label={name}
-                  placement='top'
+                  placement='left'
                   arrow
                 >
                   <g>
@@ -96,21 +98,21 @@ const CategoryRadar: FC<CategoryRadarType> = ({ data }) => {
                       cx={`${
                         radius[groupIdx] *
                         Math.cos(
-                          (6 * Math.PI) / 8 +
+                          ((groupIdx === 2 ? 4 : 6) * Math.PI) / 8 +
                             (Math.PI /
-                              (data.length + (groupIdx === 2 ? 1 : 4))) *
+                              (data.length + (groupIdx === 2 ? 0 : 4))) *
                               idx +
-                            Math.PI / ((groupIdx === 2 ? 3 : 2) * data.length)
+                            Math.PI / (2 * data.length)
                         )
                       }`}
                       cy={`${
                         radius[groupIdx] *
                         Math.sin(
-                          (6 * Math.PI) / 8 +
+                          ((groupIdx === 2 ? 4 : 6) * Math.PI) / 8 +
                             (Math.PI /
-                              (data.length + (groupIdx === 2 ? 1 : 4))) *
+                              (data.length + (groupIdx === 2 ? 0 : 4))) *
                               idx +
-                            Math.PI / ((groupIdx === 2 ? 3 : 2) * data.length)
+                            Math.PI / (2 * data.length)
                         )
                       }`}
                       r={dataPointCircleRadius}
@@ -121,22 +123,22 @@ const CategoryRadar: FC<CategoryRadarType> = ({ data }) => {
                       x={`${
                         radius[groupIdx] *
                           Math.cos(
-                            (6 * Math.PI) / 8 +
+                            ((groupIdx === 2 ? 4 : 6) * Math.PI) / 8 +
                               (Math.PI /
-                                (data.length + (groupIdx === 2 ? 1 : 4))) *
+                                (data.length + (groupIdx === 2 ? 0 : 4))) *
                                 idx +
-                              Math.PI / ((groupIdx === 2 ? 3 : 2) * data.length)
+                              Math.PI / (2 * data.length)
                           ) -
                         imageSize / 2
                       }`}
                       y={`${
                         radius[groupIdx] *
                           Math.sin(
-                            (6 * Math.PI) / 8 +
+                            ((groupIdx === 2 ? 4 : 6) * Math.PI) / 8 +
                               (Math.PI /
-                                (data.length + (groupIdx === 2 ? 1 : 4))) *
+                                (data.length + (groupIdx === 2 ? 0 : 4))) *
                                 idx +
-                              Math.PI / ((groupIdx === 2 ? 3 : 2) * data.length)
+                              Math.PI / (2 * data.length)
                           ) -
                         imageSize / 2
                       }`}
@@ -145,8 +147,8 @@ const CategoryRadar: FC<CategoryRadarType> = ({ data }) => {
                       width={imageSize}
                     />
                   </g>
-                </RadarTooltip>
-              </StyledGroup>
+                </CategoryRadarTooltip>
+              </g>
             ))
           )}
         </g>
