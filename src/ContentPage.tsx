@@ -73,9 +73,11 @@ const ContentBody = styled.div`
     }
   }
 `;
+
 type ContentNavButtonProps = {
   align: string;
 };
+
 const ContentNavButton = styled.div<ContentNavButtonProps>`
   margin-top: 75px;
   float: ${({ align }) => align};
@@ -146,6 +148,15 @@ const CategoryPage = () => {
     });
   }, [technology, category, setCategory, setTechnology]);
 
+  const nextTechnology = getNextItem(technology);
+  const previousTechnology = getPrevItem(technology);
+  const nextCategory = technologies.filter(({ technologies }) =>
+    technologies.includes(nextTechnology)
+  )[0].categoryName;
+  const previousCategory = technologies.filter(({ technologies }) =>
+    technologies.includes(previousTechnology)
+  )[0].categoryName;
+
   return (
     <>
       <Wrapper category={category}>
@@ -161,7 +172,7 @@ const CategoryPage = () => {
             <div>
               <BackLink category={category} />
               <Title>{technology}</Title>
-              <a href={content.docsLink} target='_blank'>
+              <a href={content.docsLink} target='_blank' rel='noreferrer'>
                 <svg width={80} height={80}>
                   <circle cx={40} cy={40} r={40} fill={'white'} />
                   <image
@@ -184,26 +195,28 @@ const CategoryPage = () => {
                 <div className='content-nav'>
                   <ContentNavButton
                     align={'left'}
-                    onClick={() => setTechnology(getPrevItem(technology))}
+                    onClick={() => setTechnology(previousTechnology)}
                   >
                     <div>Previous</div>
                     <Link
-                      to={`/technology/${category}/${getPrevItem(
-                        technology
-                      ).replace(/\s/g, '-')}`.toLowerCase()}
+                      to={`/technology/${previousCategory}/${previousTechnology.replace(
+                        /\s/g,
+                        '-'
+                      )}`.toLowerCase()}
                     >
                       {getPrevItem(technology)}
                     </Link>
                   </ContentNavButton>
                   <ContentNavButton
                     align={'right'}
-                    onClick={() => setTechnology(getNextItem(technology))}
+                    onClick={() => setTechnology(nextTechnology)}
                   >
                     <div>Next</div>
                     <Link
-                      to={`/technology/${category}/${getNextItem(
-                        technology
-                      ).replace(/\s/g, '-')}`.toLowerCase()}
+                      to={`/technology/${nextCategory}/${nextTechnology.replace(
+                        /\s/g,
+                        '-'
+                      )}`.toLowerCase()}
                     >
                       {getNextItem(technology)}
                     </Link>

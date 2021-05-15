@@ -55,7 +55,7 @@ export const SubContent: FC<SubContentType> = ({ contentData }) => (
         {data.map(({ name, description }) => (
           <div className={'content'} key={name}>
             <div>{name}</div>
-            <div dangerouslySetInnerHTML={{ __html: description }} />
+            <div dangerouslySetInnerHTML={{ __html: description.replace(/href=/g, 'rel="noreferrer" target="_blank" href=') }} />
           </div>
         ))}
       </StyledSubContent>
@@ -69,8 +69,8 @@ export const ExampleContent: FC<ExampleContentType> = ({ contentData }) => (
     {contentData.map(({ name, description, imageUrl }) => (
       <div className={'content'} key={name}>
         <div>{name}</div>
-        <div dangerouslySetInnerHTML={{ __html: description }} />
-        <img src={imageUrl} width={'100%'} />
+        <div dangerouslySetInnerHTML={{ __html: description.replace(/href=/g, 'rel="noreferrer" target="_blank" href=') }} />
+        <img src={imageUrl} width={'100%'} alt={'demo'}/>
       </div>
     ))}
   </StyledSubContent>

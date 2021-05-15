@@ -15,7 +15,7 @@ export default [
     technology: 'React',
     docsLink: 'https://reactjs.org/',
     intro:
-      '<a href="https://reactjs.org" target="_blank">React</a> is the world’s most popular JavaScript library that uses components to change content of a single-page Mobile and Web application without refreshing.',
+      '<a href="https://reactjs.org">React</a> is the world’s most popular JavaScript library that uses components to change content of a single-page Mobile and Web application without refreshing.',
     content: [
       {
         name: 'State Management',
@@ -25,12 +25,12 @@ export default [
           {
             name: 'Redux',
             description:
-              '<a href="https://redux.js.org/" target="_blank">Redux</a> provides a central store for states that each component can access. Main building parts: store, actions, reducers and optional middleware.',
+              '<a href="https://redux.js.org/">Redux</a> provides a central store for states that each component can access. Main building parts: store, actions, reducers and optional middleware.',
           },
           {
             name: 'ContextAPI',
             description:
-              '<a href="https://reactjs.org/docs/context.html" target="_blank">Context</a> provides a way to pass data through the component tree without having to pass props down manually at every level and helps to avoid the prop-drilling problem. It has 3 main building parts: context, provider and consumer.',
+              '<a href="https://reactjs.org/docs/context.html" >Context</a> provides a way to pass data through the component tree without having to pass props down manually at every level and helps to avoid the prop-drilling problem. It has 3 main building parts: context, provider and consumer.',
           },
         ],
       },
@@ -41,17 +41,17 @@ export default [
           {
             name: 'MaterialUI',
             description:
-              '<a href="https://material-ui.com/" target="_blank">Google’s Material Design</a> is a popular React UI library with responsive animations and it has been adopted by the wider design community.',
+              '<a href="https://material-ui.com/">Google’s Material Design</a> is a popular React UI library with responsive animations and it has been adopted by the wider design community.',
           },
           {
             name: 'SemanticUI',
             description:
-              '<a href="https://react.semantic-ui.com/" target="_blank">SemanticUI</a> contains pre-built semantic components that helps create responsive layouts.',
+              '<a href="https://react.semantic-ui.com/">SemanticUI</a> contains pre-built semantic components that helps create responsive layouts.',
           },
           {
             name: 'Ant Design of React',
             description:
-              '<a href="https://ant.design/docs/react/introduce" target="_blank">Ant Design of React</a> contains a set of high-quality components and demos for building rich, interactive user interfaces.',
+              '<a href="https://ant.design/docs/react/introduce">Ant Design of React</a> contains a set of high-quality components and demos for building rich, interactive user interfaces.',
           },
         ],
       },
@@ -63,22 +63,22 @@ export default [
           {
             name: 'CSS and SASS',
             description:
-              'This involves using separate stylesheets like our conventional way of styling our HTML websites either with CSS or a CSS preprocessor called <a href="https://sass-lang.com/" target="_blank">SASS</a>.',
+              'This involves using separate stylesheets like our conventional way of styling our HTML websites either with CSS or a CSS preprocessor called <a href="https://sass-lang.com/">SASS</a>.',
           },
           {
             name: 'BEM - Block Element Modifier',
             description:
-              "It's a CSS naming convention for writing cleaner and more readable CSS classes. <a href='http://getbem.com/' target='_blank'>BEM</a> aims to write independent CSS blocks increasing reusability.",
+              "It's a CSS naming convention for writing cleaner and more readable CSS classes. <a href='http://getbem.com/'>BEM</a> aims to write independent CSS blocks increasing reusability.",
           },
           {
             name: 'CSS Modules',
             description:
-              "A CSS Module is a CSS file in which all class names and animation names are scoped locally by default. The key words here are scoped locally. With this, your CSS class names become similar to local variables in JavaScript. It goes into the compiler, and CSS comes out the other side.",
+              'A CSS Module is a CSS file in which all class names and animation names are scoped locally by default. The key words here are scoped locally. With this, your CSS class names become similar to local variables in JavaScript. It goes into the compiler, and CSS comes out the other side.',
           },
           {
             name: 'Styled Components',
             description:
-              '<a href="https://styled-components.com/" target="_blank">styled-components</a> is a library for React and React Native that allows you to use component-level styles in your application that are written with a mixture of JavaScript and CSS using a technique called CSS-in-JS.',
+              '<a href="https://styled-components.com/">styled-components</a> is a library for React and React Native that allows you to use component-level styles in your application that are written with a mixture of JavaScript and CSS using a technique called CSS-in-JS.',
           },
         ],
       },
@@ -90,22 +90,22 @@ export default [
           {
             name: 'Jest',
             description:
-              '<a href="https://jestjs.io/" target="_blank">Jest</a> is an open-source testing framework. It comes with built-in mocking and assertion libraries, which also runs your tests concurrently in parallel, providing faster test execution.',
+              '<a href="https://jestjs.io/">Jest</a> is an open-source testing framework. It comes with built-in mocking and assertion libraries, which also runs your tests concurrently in parallel, providing faster test execution.',
           },
           {
             name: 'Enzyme',
             description:
-              '<a href="https://enzymejs.github.io/enzyme/" target="_blank">Enzyme</a> is an open-source JavaScript testing utility by Airbnb and needs a testing library to provide a foundation for the tests it generates. Using Jest and Enzyme together results in cleaner testing code that’s also easier to debug when a test breaks. Jest as a test runner and assertion library, then use Enzyme to build the tests for their UI. ',
+              '<a href="https://enzymejs.github.io/enzyme/">Enzyme</a> is an open-source JavaScript testing utility by Airbnb and needs a testing library to provide a foundation for the tests it generates. Using Jest and Enzyme together results in cleaner testing code that’s also easier to debug when a test breaks. Jest as a test runner and assertion library, then use Enzyme to build the tests for their UI. ',
           },
           {
             name: 'React Testing Library',
             description:
-              'The <a href="https://testing-library.com/docs/react-testing-library/intro/" target="_blank">React Testing Library</a> is a very lightweight solution for testing React components. It provides light utility functions on top of react-dom and react-dom/test-utils, in a way that encourages better testing practices. ',
+              'The <a href="https://testing-library.com/docs/react-testing-library/intro/">React Testing Library</a> is a very lightweight solution for testing React components. It provides light utility functions on top of react-dom and react-dom/test-utils, in a way that encourages better testing practices. ',
           },
           {
             name: 'Cypress',
             description:
-              "<a href='https://www.cypress.io/' target='_blank'>Cypress</a> is a JavaScript based end-to-end testing framework that doesn't use Selenium at all. It is built on top of Mocha, which is a feature-rich JavaScript test framework, making asynchronous testing simple. Cypress also uses a BDD/TDD assertion library and a browser that can be paired with any JavaScript testing framework.",
+              "<a href='https://www.cypress.io/'>Cypress</a> is a JavaScript based end-to-end testing framework that doesn't use Selenium at all. It is built on top of Mocha, which is a feature-rich JavaScript test framework, making asynchronous testing simple. Cypress also uses a BDD/TDD assertion library and a browser that can be paired with any JavaScript testing framework.",
           },
         ],
       },
@@ -113,8 +113,10 @@ export default [
     examples: [
       {
         name: 'Digital Engineering Framework App',
-        imageUrl: 'https://general-gif-bucket.s3.eu-west-2.amazonaws.com/demo.gif',
-        description: 'A React, TypeScript web application that provides a more readable format of our Engineering Competency Framework to help explain performance expectations. Unit tests are written in Jest and React Testing Library, E2E tests are witten in Cypress and are automated via <a href="https://github.com/features/actions" target="_blank">GitHub Actions</a>.',
+        imageUrl:
+          'https://general-gif-bucket.s3.eu-west-2.amazonaws.com/demo.gif',
+        description:
+          'A React, TypeScript web application that provides a more readable format of our Engineering Competency Framework to help explain performance expectations. Unit tests are written in Jest and React Testing Library, E2E tests are witten in Cypress and are automated via <a href="https://github.com/features/actions">GitHub Actions</a>.',
       },
     ],
   },
