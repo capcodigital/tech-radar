@@ -148,12 +148,12 @@ const CategoryPage = () => {
     });
   }, [technology, category, setCategory, setTechnology]);
 
-  const nextTechnology = getNextItem(technology);
-  const previousTechnology = getPrevItem(technology);
-  const nextCategory = technologies.filter(({ technologies }) =>
+  let nextTechnology = getNextItem(technology);
+  let previousTechnology = getPrevItem(technology);
+  let nextCategory = technology && technologies.filter(({ technologies }) =>
     technologies.includes(nextTechnology)
   )[0].categoryName;
-  const previousCategory = technologies.filter(({ technologies }) =>
+  let previousCategory = technology && technologies.filter(({ technologies }) =>
     technologies.includes(previousTechnology)
   )[0].categoryName;
 
