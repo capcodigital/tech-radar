@@ -34,7 +34,7 @@ export const StyledButton: FC<StyledButtonProps> = ({ name, onClick }) => (
   <Link to={`/category/${name.toLowerCase()}`}>
     <ButtonWrapper onClick={onClick}>
       <img
-        src={(images as any)[name.toLowerCase()]}
+        src={(images as any)[name]}
         alt={name}
         width={54}
         height={54}

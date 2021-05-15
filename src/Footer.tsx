@@ -11,7 +11,6 @@ const StyledFooter = styled.div`
   color: white;
   padding: 0 100px 0 100px;
   line-height: 70px;
-  // position: absolute;
   top: 100%;
   bottom: 0;
   a {

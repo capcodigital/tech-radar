@@ -5,7 +5,8 @@ import Grid from '@material-ui/core/Grid';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import CategoryRadar from './CategoryRadar';
 import styled from 'styled-components/macro';
-import { data } from './data/data';
+
+import { data, technologies } from './data/data';
 import images from './images';
 import StyledButton from './StyledButton';
 
@@ -69,6 +70,9 @@ const Wrapper = styled.div<WrapperProps>`
         text-decoration: underline;
       }
     }
+    &.hovered {
+      color: #e6236d;
+    }
   }
 `;
 
@@ -101,18 +105,25 @@ const CategoryPage = () => {
   const { category, setCategory, setTechnology } =
     useContext<RadarContextType>(RadarContext);
 
+  const [hovered, setHovered] = useState('');
+
   const [content, setContent] =
     useState<{ name: string; data: ContentType } | null>(null);
 
   useEffect(() => {
-    let categoryName = window.location.pathname.split('/')[2];
+    let url = window.location.pathname.split('/');
+    let categoriesAndTechnologies = technologies.filter(
+      ({ categoryName }) => categoryName.toLowerCase() === url[2]
+    )[0];
+
+    let categoryName = categoriesAndTechnologies.categoryName;
+
     setCategory(categoryName);
-    setContent(
-      data.filter((cat: any) => cat.name.toLowerCase() === categoryName)[0]
-    );
+    setContent(data.filter((item: any) => item.name === categoryName)[0]);
+
     window.scroll({
-      top: 0, 
-      behavior: 'smooth'
+      top: 0,
+      behavior: 'smooth',
     });
   }, [category, setCategory]);
 
@@ -125,7 +136,7 @@ const CategoryPage = () => {
     'Backend',
     'Frontend',
     'Mobile',
-  ].filter((name: string) => name.toLowerCase() !== category);
+  ].filter((name: string) => name !== category);
 
   return (
     <>
@@ -158,7 +169,7 @@ const CategoryPage = () => {
                 {content.data.preferred.map(({ name }) => (
                   <div
                     key={name}
-                    className='technology'
+                    className={`technology ${hovered === name && 'hovered'}`}
                     onClick={() => setTechnology(name)}
                   >
                     <Link
@@ -178,7 +189,7 @@ const CategoryPage = () => {
                 {content.data.skilled.map(({ name }) => (
                   <div
                     key={name}
-                    className='technology'
+                    className={`technology ${hovered === name && 'hovered'}`}
                     onClick={() => setTechnology(name)}
                   >
                     <Link
@@ -198,7 +209,7 @@ const CategoryPage = () => {
                 {content.data.scaling.map(({ name }) => (
                   <div
                     key={name}
-                    className='technology'
+                    className={`technology ${hovered === name && 'hovered'}`}
                     onClick={() => setTechnology(name)}
                   >
                     <Link
@@ -217,6 +228,7 @@ const CategoryPage = () => {
                 <span>
                   {buttonText.slice(0, 4).map((text: string) => (
                     <StyledButton
+                      key={text}
                       name={text}
                       onClick={() => setCategory(text)}
                     />
@@ -225,6 +237,7 @@ const CategoryPage = () => {
                 <span>
                   {buttonText.slice(4, 7).map((text: string) => (
                     <StyledButton
+                      key={text}
                       name={text}
                       onClick={() => setCategory(text)}
                     />
@@ -233,7 +246,7 @@ const CategoryPage = () => {
               </Grid>
             </Grid>
           </div>
-          <CategoryRadar data={content.data} />
+          <CategoryRadar data={content.data} setHovered={setHovered} />
         </Wrapper>
       )}
     </>

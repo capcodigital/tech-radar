@@ -28,7 +28,7 @@ const BackLink: FC<BackLinkType> = ({ category }) => (
       <NavigateBeforeIcon />
       Back to {category}
       <img
-        src={(images as any)[category.toLowerCase()]}
+        src={(images as any)[category]}
         alt={category}
         width={24}
         height={24}

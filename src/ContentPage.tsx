@@ -1,7 +1,8 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { RadarContextType, RadarContext } from './RadarContextProvider';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components/macro';
-import { icons } from './data/data';
+import { icons, technologies, technologyList } from './data/data';
 import images from './images';
 import techContent from './data/content';
 import { SubContent, ExampleContent } from './Content';
@@ -16,7 +17,7 @@ const Wrapper = styled.div<WrapperProps>`
   width: 100%;
   display: flex;
   padding-left: 90px;
-  margin-top:50px;
+  margin-top: 50px;
   .background {
     opacity: 0.12;
     position: absolute;
@@ -26,13 +27,25 @@ const Wrapper = styled.div<WrapperProps>`
   img {
     margin: auto;
   }
+  hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.75),
+      rgba(255, 255, 255, 0)
+    );
+  }
+  .conent-nav {
+  }
 `;
 
 const StyledContent = styled.div`
   text-align: left;
   width: 1060px;
   margin: auto;
-  position:relative;
+  position: relative;
   :first-child {
     display: inline-block;
   }
@@ -54,8 +67,43 @@ const ContentBody = styled.div`
   .content-intro {
     font-size: 24px;
     margin-bottom: 34px;
+    a {
+      color: inherit;
+      border-bottom: 1px solid #e6236d;
+    }
   }
 `;
+type ContentNavButtonProps = {
+  align: string;
+};
+const ContentNavButton = styled.div<ContentNavButtonProps>`
+  margin-top: 75px;
+  float: ${({ align }) => align};
+  div:first-child {
+    font-family: poppins, sans-serif;
+    font-size: 19px;
+    font-weight: 300;
+    opacity: 0.5;
+  }
+  a:nth-child(2) {
+    :hover {
+      text-decoration: underline;
+    }
+    font-family: bebas-neue-pro, sans-serif;
+    font-size: 59px;
+    color: inherit;
+  }
+`;
+const getNextItem = (currentItem: string) => {
+  const currentIndex = technologyList.indexOf(currentItem);
+  const nextIndex = (currentIndex + 1) % technologyList.length;
+  return technologyList[nextIndex];
+};
+const getPrevItem = (currentItem: string) => {
+  const currentIndex = technologyList.indexOf(currentItem);
+  const nextIndex = (currentIndex - 1) % technologyList.length;
+  return technologyList[nextIndex];
+};
 
 const CategoryPage = () => {
   const { category, technology, setCategory, setTechnology } =
@@ -66,29 +114,44 @@ const CategoryPage = () => {
 
   useEffect(() => {
     let url = window.location.pathname.split('/');
-    let categoryName = url[2].charAt(0).toUpperCase() + url[2].slice(1);
 
-    // once we have content for everything technology name can come from content
-    let technologyName = url[3]
-      .split('-')
-      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-      .join(' ');
+    //search for the category and tech name in technologies data
+    let categoriesAndTechnologies = technologies.filter(
+      ({ categoryName }) => categoryName.toLowerCase() === url[2]
+    )[0];
+
+    let technologyFromUrl = categoriesAndTechnologies.technologies.filter(
+      (tech: string) => tech.toLowerCase() === url[3].replace(/-/g, ' ')
+    )[0];
+
+    let categoryFromUrl = categoriesAndTechnologies.categoryName;
+
     let icon = icons.filter(
-      (el: any) => el.name.toLowerCase() === technologyName.toLowerCase()
+      (el: any) => el.name.toLowerCase() === technologyFromUrl.toLowerCase()
     )[0]!;
 
+    // let content = techContent.filter(
+    //   ({ technology }) => technology === technologyFromUrl
+    // )[0];
+
     setImageLink(icon.link);
-    setTechnology(technology ? technology : technologyName);
-    setCategory(categoryName);
-    setContent(techContent[0]); // filter for content based on technologyName
-  }, [setTechnology]);
+    setTechnology(technologyFromUrl);
+    setCategory(categoryFromUrl);
+    // setContent(content);
+    setContent(techContent[0]);
+
+    window.scroll({
+      top: 0,
+      behavior: 'smooth',
+    });
+  }, [technology, category, setCategory, setTechnology]);
 
   return (
     <>
       <Wrapper category={category}>
         <img
           className='background'
-          src={(images as any)[category.toLowerCase()]}
+          src={(images as any)[category]}
           alt={category}
           width={650}
           height={650}
@@ -98,10 +161,7 @@ const CategoryPage = () => {
             <div>
               <BackLink category={category} />
               <Title>{technology}</Title>
-              <a
-                href={content.link}
-                target='_blank'
-              >
+              <a href={content.docsLink} target='_blank'>
                 <svg width={80} height={80}>
                   <circle cx={40} cy={40} r={40} fill={'white'} />
                   <image
@@ -114,9 +174,41 @@ const CategoryPage = () => {
                 </svg>
               </a>
               <ContentBody>
-                <div className='content-intro'>{content.intro}</div>
+                <div
+                  className='content-intro'
+                  dangerouslySetInnerHTML={{ __html: content.intro }}
+                />
                 <SubContent contentData={content.content} />
                 <ExampleContent contentData={content.examples} />
+                <hr />
+                <div className='content-nav'>
+                  <ContentNavButton
+                    align={'left'}
+                    onClick={() => setTechnology(getPrevItem(technology))}
+                  >
+                    <div>Previous</div>
+                    <Link
+                      to={`/technology/${category}/${getPrevItem(
+                        technology
+                      ).replace(/\s/g, '-')}`.toLowerCase()}
+                    >
+                      {getPrevItem(technology)}
+                    </Link>
+                  </ContentNavButton>
+                  <ContentNavButton
+                    align={'right'}
+                    onClick={() => setTechnology(getNextItem(technology))}
+                  >
+                    <div>Next</div>
+                    <Link
+                      to={`/technology/${category}/${getNextItem(
+                        technology
+                      ).replace(/\s/g, '-')}`.toLowerCase()}
+                    >
+                      {getNextItem(technology)}
+                    </Link>
+                  </ContentNavButton>
+                </div>
               </ContentBody>
             </div>
           </StyledContent>

@@ -27,11 +27,12 @@ type CategoryRadarType = {
     skilled: Array<{ name: string; link: string }>;
     scaling: Array<{ name: string; link: string }>;
   };
+  setHovered: any;
 };
 
 const createArc = d3.arc().padAngle(0);
 
-const CategoryRadar: FC<CategoryRadarType> = ({ data }) => {
+const CategoryRadar: FC<CategoryRadarType> = ({ data, setHovered }) => {
   return (
     <Wrapper>
       <svg width={400} height={800}>
@@ -79,7 +80,11 @@ const CategoryRadar: FC<CategoryRadarType> = ({ data }) => {
           />
           {Object.entries(data).map(([group, data], groupIdx) =>
             data.map(({ name, link }, idx) => (
-              <g key={`preferred-${idx}`}>
+              <g
+                key={`${group} ${idx}`}
+                onMouseOver={() => setHovered(name)}
+                onMouseLeave={() => setHovered('')}
+              >
                 <CategoryRadarTooltip
                   title={name}
                   aria-label={name}
