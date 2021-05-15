@@ -70,6 +70,7 @@ const ContentBody = styled.div`
     a {
       color: inherit;
       border-bottom: 1px solid #e6236d;
+      text-decoration: none;
     }
   }
 `;
@@ -150,12 +151,16 @@ const CategoryPage = () => {
 
   let nextTechnology = getNextItem(technology);
   let previousTechnology = getPrevItem(technology);
-  let nextCategory = technology && technologies.filter(({ technologies }) =>
-    technologies.includes(nextTechnology)
-  )[0].categoryName;
-  let previousCategory = technology && technologies.filter(({ technologies }) =>
-    technologies.includes(previousTechnology)
-  )[0].categoryName;
+  let nextCategory =
+    technology &&
+    technologies.filter(({ technologies }) =>
+      technologies.includes(nextTechnology)
+    )[0].categoryName;
+  let previousCategory =
+    technology &&
+    technologies.filter(({ technologies }) =>
+      technologies.includes(previousTechnology)
+    )[0].categoryName;
 
   return (
     <>

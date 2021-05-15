@@ -58,16 +58,16 @@ const Wrapper = styled.div<WrapperProps>`
     font-family: poppins, sans-serif;
     font-size: 19px;
     font-weight: 300;
+    transform all 3s;
+    transition: 0.3s;
     svg.MuiSvgIcon-root {
       font-size: 12px;
       margin-left: 10px;
     }
     a {
       color: inherit;
-    }
-    :hover {
-      a {
-        text-decoration: underline;
+      :hover {
+        border-bottom: 1px solid white;   
       }
     }
     &.hovered {

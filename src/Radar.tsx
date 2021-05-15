@@ -59,13 +59,18 @@ const StyledNav = styled.g`
       opacity: 1;
     }
   }
+
   path {
-    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    transform-origin: -10% 0%;
   }
   :hover {
-    path,
+    path {
+      opacity: 1;
+      transform-origin: 0% 0%;
+    }
     text {
-      transition: 0.3s;
       text-decoration: underline;
     }
   }

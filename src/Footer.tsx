@@ -1,10 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components/macro';
 
 const StyledFooter = styled.div`
   height: 70px;
-  width:100%;
+  width: 100%;
   background: #00000026;
   text-align: center;
   font-size: 18px;
@@ -24,7 +23,9 @@ const StyledFooter = styled.div`
 
 const Footer = () => (
   <StyledFooter>
-    <Link to='https://www.capco.com/'>Capco @2021</Link>
+    <a href='https://www.capco.com/' target='_blank' rel='noreferrer'>
+      Capco @2021
+    </a>
     <div>All Rights Reserved</div>
   </StyledFooter>
 );

@@ -14,6 +14,7 @@ const ButtonWrapper = styled.div`
   align-items: center;
   padding: 0 12px 0 12px;
   margin-bottom: 10px;
+  transition: 0.3s;
   span {
     margin: 0 auto 0 10px;
   }
