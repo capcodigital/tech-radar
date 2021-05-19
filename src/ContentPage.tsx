@@ -104,8 +104,8 @@ const getNextItem = (currentItem: string) => {
 };
 const getPrevItem = (currentItem: string) => {
   const currentIndex = technologyList.indexOf(currentItem);
-  const nextIndex = (currentIndex - 1) % technologyList.length;
-  return technologyList[nextIndex];
+  const prevIndex = (currentIndex - 1) % technologyList.length;
+  return technologyList[prevIndex < 0 ? technologyList.length - 1 : prevIndex];
 };
 
 const CategoryPage = () => {
@@ -150,17 +150,22 @@ const CategoryPage = () => {
   }, [technology, category, setCategory, setTechnology]);
 
   let nextTechnology = getNextItem(technology);
+
   let previousTechnology = getPrevItem(technology);
-  let nextCategory =
+
+  let filteredNext =
     technology &&
     technologies.filter(({ technologies }) =>
       technologies.includes(nextTechnology)
-    )[0].categoryName;
-  let previousCategory =
+    )[0];
+  let nextCategory = filteredNext ? filteredNext.categoryName : 'Devops';
+
+  let filteredPrev =
     technology &&
     technologies.filter(({ technologies }) =>
       technologies.includes(previousTechnology)
-    )[0].categoryName;
+    )[0];
+  let previousCategory = filteredPrev ? filteredPrev.categoryName : 'Mobile';
 
   return (
     <>
