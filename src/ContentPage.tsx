@@ -97,11 +97,13 @@ const ContentNavButton = styled.div<ContentNavButtonProps>`
     color: inherit;
   }
 `;
+
 const getNextItem = (currentItem: string) => {
   const currentIndex = technologyList.indexOf(currentItem);
   const nextIndex = (currentIndex + 1) % technologyList.length;
   return technologyList[nextIndex];
 };
+
 const getPrevItem = (currentItem: string) => {
   const currentIndex = technologyList.indexOf(currentItem);
   const prevIndex = (currentIndex - 1) % technologyList.length;

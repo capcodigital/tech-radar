@@ -236,7 +236,7 @@ const Radar: FC = () => {
                   outerRadius: outterRadius,
                 })!
               }
-              fill={tech === hovered ? 'rgb(235, 35, 109, 0.1)' : 'transparent'}
+              fill={tech === hovered ? 'rgb(235, 35, 109, 0.3)' : 'transparent'}
               onMouseOver={() => setHovered(tech)}
               onClick={() => handleClick(tech)}
             />
