@@ -23,6 +23,9 @@ const StyledRadarKey = styled.div`
       color: #e6236d;
     }
   }
+  @media screen and (max-width: 1000px) {
+    display: none;
+  }
 `;
 
 type KeyCircleProps = {
@@ -40,14 +43,12 @@ const KeyCircle: FC<KeyCircleProps> = ({ color1, color2, color3 }) => (
 );
 
 const TooltipTitle: FC = ({ children }) => (
-  <div style={{ fontSize: 20, color: '#e6236d', paddingBottom:10 }}>
+  <div style={{ fontSize: 20, color: '#e6236d', paddingBottom: 10 }}>
     {children}
   </div>
 );
 const TooltipContent: FC = ({ children }) => (
-  <div style={{ fontFamily: 'Poppins, sans-serif'}}>
-    {children}
-  </div>
+  <div style={{ fontFamily: 'Poppins, sans-serif' }}>{children}</div>
 );
 
 const RadarKey = () => (
@@ -56,9 +57,7 @@ const RadarKey = () => (
     <KeyTooltip
       title={
         <>
-          <TooltipTitle>
-            Scaling
-          </TooltipTitle>
+          <TooltipTitle>Scaling</TooltipTitle>
           <TooltipContent>
             The team are actively scaling the usage and skills for this
             technology or tool. These technologies are driven by both client

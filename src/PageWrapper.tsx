@@ -12,6 +12,9 @@ const StyledPageWrapper = styled.div`
   a:hover {
     text-decoration: none;
   }
+  @media screen and (max-width: 1000px) {
+    background: radial-gradient(120% 50% at center, rgba(230, 35, 109, 0.6), transparent);
+  }
 `;
 
 const PageWrapper: FC = ({ children }) => {

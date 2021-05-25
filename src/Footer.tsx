@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from './images/logo.png';
 import styled from 'styled-components/macro';
 
 const StyledFooter = styled.div`
@@ -19,10 +20,26 @@ const StyledFooter = styled.div`
   div {
     float: right;
   }
+  img{
+    display:none;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    height: 250px;
+    padding: 40px 100px 0 100px;
+    a,
+    div {
+      float: none;
+    }
+    img{
+      display:block;
+    }
+  }
 `;
 
 const Footer = () => (
   <StyledFooter>
+    <img height={44} src={logo} alt='Logo' />
     <a href='https://www.capco.com/' target='_blank' rel='noreferrer'>
       Capco @2021
     </a>
