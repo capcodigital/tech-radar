@@ -33,6 +33,7 @@ const StyledFooter = styled.div`
     }
     img{
       display:block;
+      margin:auto;
     }
   }
 `;

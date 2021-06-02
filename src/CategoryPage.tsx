@@ -48,7 +48,7 @@ const Wrapper = styled.div<WrapperProps>`
     margin: 0;
     width: 20px;
     border-width: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   .title {
     font-size: 32px;
@@ -74,6 +74,38 @@ const Wrapper = styled.div<WrapperProps>`
       color: #e6236d;
     }
   }
+  .small-screen{
+    display:none;
+  }
+  @media screen and (max-width: 1000px) {
+    .small-screen{
+    display:block;
+    }
+    .large-screen{
+      display:none;
+    }
+    .MuiGrid-container {
+      padding-left: 30px;
+      padding-top:30px;    
+    }
+    .category-icon{
+      width:64px;
+      height:64px;
+    }
+    .technology{
+      font-size:18px;
+    }
+    .title{
+      font-size:30px;
+    }
+    .categories-grid {
+      display: unset;
+      
+      span {
+        padding-right: 0px;
+      }
+    }
+  }
 `;
 
 const Title = styled.div`
@@ -84,6 +116,9 @@ const Title = styled.div`
   vertical-align: middle;
   margin-bottom: 20px;
   padding-right: 20px;
+  @media screen and (max-width: 1000px) {
+    font-size: 52px;
+  }
 `;
 
 const SubHeader = styled.div`
@@ -157,51 +192,61 @@ const CategoryPage = () => {
               <Grid item xs={12}>
                 <Title>{content.name}</Title>
                 <img
+                  className='category-icon'
                   src={(images as any)[category]}
                   alt={category}
                   width={126}
                   height={126}
                 />
               </Grid>
-              <Grid item xs={4}>
-                <hr />
-                <div className='title'>Preferred</div>
-                {content.data.preferred.map(({ name }) => (
-                  <div
-                    key={name}
-                    className={`technology ${hovered === name && 'hovered'}`}
-                    onClick={() => setTechnology(name)}
-                  >
-                    <Link
-                      to={`/technology/${category.toLowerCase()}/${name
-                        .replace(' ', '-')
-                        .toLowerCase()}`}
-                    >
-                      {name}
-                    </Link>
-                    <ArrowForwardIosIcon />
-                  </div>
-                ))}
-              </Grid>
-              <Grid item xs={4}>
-                <hr />
-                <div className='title'>Skilled</div>
-                {content.data.skilled.map(({ name }) => (
-                  <div
-                    key={name}
-                    className={`technology ${hovered === name && 'hovered'}`}
-                    onClick={() => setTechnology(name)}
-                  >
-                    <Link
-                      to={`/technology/${category.toLowerCase()}/${name
-                        .replace(' ', '-')
-                        .toLowerCase()}`}
-                    >
-                      {name}
-                    </Link>
-                    <ArrowForwardIosIcon />
-                  </div>
-                ))}
+              <div className='small-screen'>
+              <Grid item xs={4} >
+                <Grid container style={{ padding: '10px 0 40px 0' }}>
+                  <Grid item xs={2}>
+                    <hr />
+                    <div className='title'>Preferred</div>
+                    {content.data.preferred.map(({ name }) => (
+                      <div
+                        key={name}
+                        className={`technology ${
+                          hovered === name && 'hovered'
+                        }`}
+                        onClick={() => setTechnology(name)}
+                      >
+                        <Link
+                          to={`/technology/${category.toLowerCase()}/${name
+                            .replace(' ', '-')
+                            .toLowerCase()}`}
+                        >
+                          {name}
+                        </Link>
+                        <ArrowForwardIosIcon />
+                      </div>
+                    ))}
+                  </Grid>
+                  <Grid item xs={2}>
+                    <hr />
+                    <div className='title'>Skilled</div>
+                    {content.data.skilled.map(({ name }) => (
+                      <div
+                        key={name}
+                        className={`technology ${
+                          hovered === name && 'hovered'
+                        }`}
+                        onClick={() => setTechnology(name)}
+                      >
+                        <Link
+                          to={`/technology/${category.toLowerCase()}/${name
+                            .replace(' ', '-')
+                            .toLowerCase()}`}
+                        >
+                          {name}
+                        </Link>
+                        <ArrowForwardIosIcon />
+                      </div>
+                    ))}
+                  </Grid>
+                </Grid>
               </Grid>
               <Grid item xs={4}>
                 <hr />
@@ -223,8 +268,71 @@ const CategoryPage = () => {
                   </div>
                 ))}
               </Grid>
+              </div>
+
+              <Grid item xs={4} className='large-screen'>
+                <hr />
+                <div className='title'>Preferred</div>
+                {content.data.preferred.map(({ name }) => (
+                  <div
+                    key={name}
+                    className={`technology ${hovered === name && 'hovered'}`}
+                    onClick={() => setTechnology(name)}
+                  >
+                    <Link
+                      to={`/technology/${category.toLowerCase()}/${name
+                        .replace(' ', '-')
+                        .toLowerCase()}`}
+                    >
+                      {name}
+                    </Link>
+                    <ArrowForwardIosIcon />
+                  </div>
+                ))}
+              </Grid>
+              <Grid item xs={4} className='large-screen'>
+                <hr />
+                <div className='title'>Skilled</div>
+                {content.data.skilled.map(({ name }) => (
+                  <div
+                    key={name}
+                    className={`technology ${hovered === name && 'hovered'}`}
+                    onClick={() => setTechnology(name)}
+                  >
+                    <Link
+                      to={`/technology/${category.toLowerCase()}/${name
+                        .replace(' ', '-')
+                        .toLowerCase()}`}
+                    >
+                      {name}
+                    </Link>
+                    <ArrowForwardIosIcon />
+                  </div>
+                ))}
+              </Grid>
+              <Grid item xs={4} className='large-screen'>
+                <hr />
+                <div className='title'>Scaling</div>
+                {content.data.scaling.map(({ name }) => (
+                  <div
+                    key={name}
+                    className={`technology ${hovered === name && 'hovered'}`}
+                    onClick={() => setTechnology(name)}
+                  >
+                    <Link
+                      to={`/technology/${category.toLowerCase()}/${name
+                        .replace(' ', '-')
+                        .toLowerCase()}`}
+                    >
+                      {name}
+                    </Link>
+                    <ArrowForwardIosIcon />
+                  </div>
+                ))}
+              </Grid>
+             
               <SubHeader>Other Categories</SubHeader>
-              <Grid item xs={12} className='categories-grid'>
+              <Grid item xs={10} className='categories-grid'>
                 <span>
                   {buttonText.slice(0, 4).map((text: string) => (
                     <StyledButton
