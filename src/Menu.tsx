@@ -69,8 +69,11 @@ const StyledDrawer = styled(Drawer)`
       }
     }
     @media screen and (max-width: 1000px) {
-      padding: 150px 0 0 20px;
+      padding: 100px 0 0 20px;
       background: radial-gradient(rgba(230, 35, 109, 0.7) 0%, transparent 150%);
+      .MuiListItem-root {
+        padding-bottom: 0;
+      }
     }
   }
 `;
