@@ -564,6 +564,17 @@ export const technologies = [
   },
 ];
 
+export const categoryList = [
+  'Mobile',
+  'Frontend',
+  'Backend',
+  'Integration',
+  'Cloud',
+  'Hosting',
+  'Databases',
+  'DevOps',
+];
+
 export const technologyList = [
   'GitHub',
   'CircleCI',

@@ -44,6 +44,9 @@ const Wrapper = styled.div`
       transition: 0.7s;
     }
   }
+  @media screen and (max-width: 1000px) {
+    display: none;
+  }
 `;
 
 const StyledNav = styled.g`

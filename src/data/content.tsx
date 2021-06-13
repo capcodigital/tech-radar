@@ -10,7 +10,7 @@ export type TechContentType = {
   examples: Array<{ name: string; description: string }>;
 };
 
-export default [
+const techContent = [
   {
     technology: 'React',
     docsLink: 'https://reactjs.org/',
@@ -112,12 +112,13 @@ export default [
     ],
     examples: [
       {
-        name: 'Digital Engineering Framework App',
+        name: 'Digital Engineering Framework',
         imageUrl:
           'https://general-gif-bucket.s3.eu-west-2.amazonaws.com/demo.gif',
         description:
-          'A React, TypeScript web application that provides a more readable format of our Engineering Competency Framework to help explain performance expectations. Unit tests are written in Jest and React Testing Library, E2E tests are witten in Cypress and are automated via <a href="https://github.com/features/actions">GitHub Actions</a>.',
+          'A React, TypeScript web application that provides a more readable format of our Engineering Competency Framework to help explain performance expectations. Unit tests are written in Jest and React Testing Library, E2E tests are written in Cypress and are automated via <a href="https://github.com/features/actions">GitHub Actions</a>.',
       },
     ],
   },
 ];
+export default techContent;

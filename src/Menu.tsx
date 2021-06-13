@@ -1,6 +1,5 @@
 import React, { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
 import IconButton from '@material-ui/core/IconButton';
@@ -12,16 +11,36 @@ import Grid from '@material-ui/core/Grid';
 import logo from './images/logo.png';
 import { ListItem } from '@material-ui/core';
 import { RadarContext } from './RadarContextProvider';
+import { categoryList } from './data/data';
 import styled from 'styled-components/macro';
+
+const StyledAppBar = styled(AppBar)`
+  && {
+    background: transparent;
+    padding-top: 20px;
+    box-shadow: none;
+  }
+`;
 
 const LogoGridItem = styled(Grid)`
   && {
     z-index: 1400;
     margin-left: 60px;
+
     div {
       color: #e6236d;
       font-weight: 700;
       font-size: 24px;
+    }
+
+    @media screen and (max-width: 1000px) {
+      margin-left: 10px;
+      img {
+        height: 36px;
+      }
+      div {
+        font-size: 19px;
+      }
     }
   }
 `;
@@ -39,9 +58,8 @@ const StyledDrawer = styled(Drawer)`
   ul {
     height: ${window.innerHeight}px;
     width: 100%;
-    padding-top: 10rem;
+    padding: 150px 0 0 80px;
     background: radial-gradient(rgba(230, 35, 109, 0.7) 0%, transparent 90%);
-    padding-left: 100px;
     a {
       font-size: 30px;
       font-weight: bold;
@@ -50,19 +68,14 @@ const StyledDrawer = styled(Drawer)`
         text-decoration: underline;
       }
     }
+    @media screen and (max-width: 1000px) {
+      padding: 150px 0 0 20px;
+      background: radial-gradient(rgba(230, 35, 109, 0.7) 0%, transparent 150%);
+    }
   }
 `;
 
-const useStyles = makeStyles((theme: any) => ({
-  appBar: {
-    background: 'transparent',
-    paddingTop: 20,
-    boxShadow: 'none',
-  },
-}));
-
 export default function Header() {
-  const classes = useStyles();
   const [open, setOpen] = useState(false);
   const { setCategory } = useContext(RadarContext);
 
@@ -95,16 +108,7 @@ export default function Header() {
         <ClearIcon fontSize='large' />
       </IconButton>
       <List>
-        {[
-          'Mobile',
-          'Frontend',
-          'Backend',
-          'Integration',
-          'Cloud',
-          'Hosting',
-          'Databases',
-          'Devops',
-        ].map((name: string) => (
+        {categoryList.map((name: string) => (
           <ListItem
             key={`menu-${name}`}
             button
@@ -121,7 +125,7 @@ export default function Header() {
 
   return (
     <>
-      <AppBar className={classes.appBar} position='static'>
+      <StyledAppBar position='static'>
         <Toolbar>
           <Grid justify='space-between' container>
             <LogoGridItem item>
@@ -145,7 +149,7 @@ export default function Header() {
             </Grid>
           </Grid>
         </Toolbar>
-      </AppBar>
+      </StyledAppBar>
       <StyledDrawer anchor={'right'} open={open} onClose={toggleDrawer(false)}>
         <MenuItems />
       </StyledDrawer>
