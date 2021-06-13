@@ -11,6 +11,7 @@ import Grid from '@material-ui/core/Grid';
 import logo from './images/logo.png';
 import { ListItem } from '@material-ui/core';
 import { RadarContext } from './RadarContextProvider';
+import { categoryList } from './data/data';
 import styled from 'styled-components/macro';
 
 const StyledAppBar = styled(AppBar)`
@@ -20,11 +21,12 @@ const StyledAppBar = styled(AppBar)`
     box-shadow: none;
   }
 `;
+
 const LogoGridItem = styled(Grid)`
   && {
     z-index: 1400;
     margin-left: 60px;
-    
+
     div {
       color: #e6236d;
       font-weight: 700;
@@ -33,8 +35,8 @@ const LogoGridItem = styled(Grid)`
 
     @media screen and (max-width: 1000px) {
       margin-left: 10px;
-      img{
-        height:36px;
+      img {
+        height: 36px;
       }
       div {
         font-size: 19px;
@@ -56,9 +58,8 @@ const StyledDrawer = styled(Drawer)`
   ul {
     height: ${window.innerHeight}px;
     width: 100%;
-    padding-top: 10rem;
+    padding: 150px 0 0 80px;
     background: radial-gradient(rgba(230, 35, 109, 0.7) 0%, transparent 90%);
-    padding-left: 100px;
     a {
       font-size: 30px;
       font-weight: bold;
@@ -66,6 +67,10 @@ const StyledDrawer = styled(Drawer)`
       :hover {
         text-decoration: underline;
       }
+    }
+    @media screen and (max-width: 1000px) {
+      padding: 150px 0 0 20px;
+      background: radial-gradient(rgba(230, 35, 109, 0.7) 0%, transparent 150%);
     }
   }
 `;
@@ -103,16 +108,7 @@ export default function Header() {
         <ClearIcon fontSize='large' />
       </IconButton>
       <List>
-        {[
-          'Mobile',
-          'Frontend',
-          'Backend',
-          'Integration',
-          'Cloud',
-          'Hosting',
-          'Databases',
-          'Devops',
-        ].map((name: string) => (
+        {categoryList.map((name: string) => (
           <ListItem
             key={`menu-${name}`}
             button

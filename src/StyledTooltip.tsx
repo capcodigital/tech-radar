@@ -10,7 +10,7 @@ export const KeyTooltip = withStyles(() => ({
     fontFamily: 'bebas-neue-pro, sans-serif',
     borderRadius: 0,
     padding: 15,
-    boxShadow: '3px 3px 3px 3px rgba(0, 0, 0, 0.2)'
+    boxShadow: '3px 3px 3px 3px rgba(0, 0, 0, 0.2)',
   },
   arrow: {
     '&::before': {

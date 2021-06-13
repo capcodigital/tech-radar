@@ -1,23 +1,14 @@
-import React, { FC } from 'react';
+import React, { FC, MouseEventHandler } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components/macro';
-import { technologyList } from './data/data';
 
-type NavButtonProps = {
-  align: string;
-  onClick: React.MouseEventHandler<HTMLDivElement>;
-  technology: string;
-  category: string;
-  next: boolean;
-};
-
-type ButtonProps = {
+type StyledContentNavButtonProps = {
   align: string;
 };
 
-const StyledNavButton = styled.div<ButtonProps>`
-  float: ${({ align }) => align};
+const StyledContentNavButton = styled.div<StyledContentNavButtonProps>`
   margin-top: 75px;
+  float: ${({ align }) => align};
   div:first-child {
     font-family: poppins, sans-serif;
     font-size: 19px;
@@ -25,42 +16,64 @@ const StyledNavButton = styled.div<ButtonProps>`
     opacity: 0.5;
   }
   a:nth-child(2) {
+    :hover {
+      text-decoration: underline;
+    }
     font-family: bebas-neue-pro, sans-serif;
     font-size: 59px;
     color: inherit;
   }
+  @media screen and (max-width: 1000px) {
+    div:first-child {
+      font-size: 19px;
+    }
+    a:nth-child(2) {
+      font-size: 44px;
+    }
+  }
 `;
 
-const getNextItem = (currentItem: string) => {
-  const currentIndex = technologyList.indexOf(currentItem);
-  const nextIndex = (currentIndex + 1) % technologyList.length;
-  return technologyList[nextIndex];
+type ContentNavButtonProps = {
+  onClick: MouseEventHandler<HTMLDivElement>;
+  previousTechnology: string;
+  nextTechnology: string;
+  previousCategory: string;
+  nextCategory: string;
+  next: boolean;
 };
 
-const getPrevItem = (currentItem: string) => {
-  const currentIndex = technologyList.indexOf(currentItem);
-  const nextIndex = (currentIndex - 1) % technologyList.length;
-  return technologyList[nextIndex];
-};
-
-const ContentNavButton: FC<NavButtonProps> = ({
-  align,
+const ContentNavButton: FC<ContentNavButtonProps> = ({
   onClick,
-  technology,
-  category,
+  previousTechnology,
+  nextTechnology,
+  previousCategory,
+  nextCategory,
   next,
-}) => (
-  <StyledNavButton align={align} onClick={onClick}>
-    <div>Next</div>
-    <Link
-      to={`/technology/${category}/${(next
-        ? getNextItem(technology)
-        : getPrevItem(technology)
-      ).replace(/\s/g, '-')}`.toLowerCase()}
-    >
-      {next ? getNextItem(technology) : getPrevItem(technology)}
-    </Link>
-  </StyledNavButton>
-);
+}) => {
+  return (
+    <StyledContentNavButton align={next ? 'right' : 'left'} onClick={onClick}>
+      <div>{next ? 'Next' : 'Previous'}</div>
+      {next ? (
+        <Link
+          to={`/technology/${nextCategory}/${nextTechnology.replace(
+            /\s/g,
+            '-'
+          )}`.toLowerCase()}
+        >
+          {nextTechnology}
+        </Link>
+      ) : (
+        <Link
+          to={`/technology/${previousCategory}/${previousTechnology.replace(
+            /\s/g,
+            '-'
+          )}`.toLowerCase()}
+        >
+          {previousTechnology}
+        </Link>
+      )}
+    </StyledContentNavButton>
+  );
+};
 
 export default ContentNavButton;

@@ -1,18 +1,27 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import { RadarContextType, RadarContext } from './RadarContextProvider';
-import Grid from '@material-ui/core/Grid';
+import { Link } from 'react-router-dom';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import CategoryRadar from './CategoryRadar';
-import styled from 'styled-components/macro';
-
-import { data, technologies } from './data/data';
-import images from './images';
+import Footer from './Footer';
+import Grid from '@material-ui/core/Grid';
+import MobileRadarBackground from './MobileRadarBackground';
 import StyledButton from './StyledButton';
+import { data, technologies, categoryList } from './data/data';
+import images from './images';
+import styled from 'styled-components/macro';
 
 type WrapperProps = {
   category: string;
 };
+
+const SubheaderStyle = `
+  font-size: 32px;
+  font-weight: 700;
+  text-align: left;
+  display: inline-block;
+  vertical-align: middle;
+`;
 
 const Wrapper = styled.div<WrapperProps>`
   width: 100%;
@@ -25,6 +34,7 @@ const Wrapper = styled.div<WrapperProps>`
     position: relative;
     width: 100%;
     float: left;
+    margin-bottom: 50px;
     .MuiGrid-container {
       text-align: left;
       width: 790px;
@@ -37,7 +47,7 @@ const Wrapper = styled.div<WrapperProps>`
       padding-right: 20px;
     }
   }
-  .background {
+  img.background {
     opacity: 0.12;
     position: absolute;
     top: -80px;
@@ -74,60 +84,80 @@ const Wrapper = styled.div<WrapperProps>`
       color: #e6236d;
     }
   }
-  .small-screen{
-    display:none;
+  .small-screen {
+    display: none;
   }
+  .subheader {
+    ${SubheaderStyle}
+    margin: 100px 0 20px 0;
+  }
+  .subheader-mobile{
+    display: none;
+  }
+  .mobile-category{
+    display: none;
+  }
+
   @media screen and (max-width: 1000px) {
-    .small-screen{
-    display:block;
+    text-align: left;
+    .mobile-category {
+      display: block;
+      margin-bottom: 100px;
     }
-    .large-screen{
-      display:none;
+    .grid-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
-    .MuiGrid-container {
-      padding-left: 30px;
-      padding-top:30px;    
-    }
-    .category-icon{
-      width:64px;
-      height:64px;
-    }
-    .technology{
-      font-size:18px;
-    }
-    .title{
-      font-size:30px;
-    }
-    .categories-grid {
-      display: unset;
-      
-      span {
-        padding-right: 0px;
+    .first-row-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      margin-bottom: 50px;
+      div:first-child {
+        padding-right: 50px;
       }
+    }
+    .category-icon {
+      width: 64px;
+      height: 64px;
+    }
+    .technology {
+      font-size: 18px;
+    }
+    .title {
+      font-size: 30px;
+    }
+    .subheader-mobile {
+      ${SubheaderStyle}
+      margin: 50px 0 20px 0;
+    }
+    img.background,
+    .desktop-grid,
+    .large-screen {
+      display: none;
     }
   }
 `;
 
 const Title = styled.div`
   font-size: 120px;
+  margin-bottom: 20px;
   font-weight: 700;
   text-align: left;
   display: inline-block;
   vertical-align: middle;
-  margin-bottom: 20px;
   padding-right: 20px;
-  @media screen and (max-width: 1000px) {
-    font-size: 52px;
-  }
 `;
 
-const SubHeader = styled.div`
-  font-size: 32px;
+const MobileTitle = styled.div`
+  font-size: 52px;
+  padding-right: 20px;
   font-weight: 700;
   text-align: left;
   display: inline-block;
   vertical-align: middle;
-  margin: 100px 0 20px 0;
+  margin: 20px 0 20px 0;
 `;
 
 type ContentType = {
@@ -162,16 +192,7 @@ const CategoryPage = () => {
     });
   }, [category, setCategory]);
 
-  const buttonText = [
-    'DevOps',
-    'Databases',
-    'Hosting',
-    'Cloud',
-    'Integration',
-    'Backend',
-    'Frontend',
-    'Mobile',
-  ].filter((name: string) => name !== category);
+  const buttonText = categoryList.filter((name: string) => name !== category);
 
   return (
     <>
@@ -184,71 +205,60 @@ const CategoryPage = () => {
             width={650}
             height={650}
           />
+          <MobileRadarBackground />
           <div className='grid-wrapper'>
-            <Grid
-              container
-              style={{ textAlign: 'left', width: '790px', margin: 'auto' }}
-            >
-              <Grid item xs={12}>
-                <Title>{content.name}</Title>
-                <img
-                  className='category-icon'
-                  src={(images as any)[category]}
-                  alt={category}
-                  width={126}
-                  height={126}
-                />
-              </Grid>
-              <div className='small-screen'>
-              <Grid item xs={4} >
-                <Grid container style={{ padding: '10px 0 40px 0' }}>
-                  <Grid item xs={2}>
-                    <hr />
-                    <div className='title'>Preferred</div>
-                    {content.data.preferred.map(({ name }) => (
-                      <div
-                        key={name}
-                        className={`technology ${
-                          hovered === name && 'hovered'
-                        }`}
-                        onClick={() => setTechnology(name)}
+            <div className='mobile-category'>
+              <MobileTitle>{content.name}</MobileTitle>
+              <img
+                className='category-icon'
+                src={(images as any)[category]}
+                alt={category}
+                width={126}
+                height={126}
+              />
+              <div className='first-row-wrapper'>
+                <div>
+                  <hr />
+                  <div className='title'>Preferred</div>
+                  {content.data.preferred.map(({ name }) => (
+                    <div
+                      key={name}
+                      className={`technology ${hovered === name && 'hovered'}`}
+                      onClick={() => setTechnology(name)}
+                    >
+                      <Link
+                        to={`/technology/${category.toLowerCase()}/${name
+                          .replace(' ', '-')
+                          .toLowerCase()}`}
                       >
-                        <Link
-                          to={`/technology/${category.toLowerCase()}/${name
-                            .replace(' ', '-')
-                            .toLowerCase()}`}
-                        >
-                          {name}
-                        </Link>
-                        <ArrowForwardIosIcon />
-                      </div>
-                    ))}
-                  </Grid>
-                  <Grid item xs={2}>
-                    <hr />
-                    <div className='title'>Skilled</div>
-                    {content.data.skilled.map(({ name }) => (
-                      <div
-                        key={name}
-                        className={`technology ${
-                          hovered === name && 'hovered'
-                        }`}
-                        onClick={() => setTechnology(name)}
+                        {name}
+                      </Link>
+                      <ArrowForwardIosIcon />
+                    </div>
+                  ))}
+                </div>
+                <div>
+                  <hr />
+                  <div className='title'>Skilled</div>
+                  {content.data.skilled.map(({ name }) => (
+                    <div
+                      key={name}
+                      className={`technology ${hovered === name && 'hovered'}`}
+                      onClick={() => setTechnology(name)}
+                    >
+                      <Link
+                        to={`/technology/${category.toLowerCase()}/${name
+                          .replace(' ', '-')
+                          .toLowerCase()}`}
                       >
-                        <Link
-                          to={`/technology/${category.toLowerCase()}/${name
-                            .replace(' ', '-')
-                            .toLowerCase()}`}
-                        >
-                          {name}
-                        </Link>
-                        <ArrowForwardIosIcon />
-                      </div>
-                    ))}
-                  </Grid>
-                </Grid>
-              </Grid>
-              <Grid item xs={4}>
+                        {name}
+                      </Link>
+                      <ArrowForwardIosIcon />
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div>
                 <hr />
                 <div className='title'>Scaling</div>
                 {content.data.scaling.map(({ name }) => (
@@ -267,9 +277,41 @@ const CategoryPage = () => {
                     <ArrowForwardIosIcon />
                   </div>
                 ))}
-              </Grid>
               </div>
+              <div>
+                <div className='subheader-mobile'>Other Categories</div>
+                <span>
+                  {buttonText.slice(0, 4).map((text: string) => (
+                    <StyledButton
+                      key={text}
+                      name={text}
+                      onClick={() => setCategory(text)}
+                    />
+                  ))}
+                </span>
+                <span>
+                  {buttonText.slice(4, 7).map((text: string) => (
+                    <StyledButton
+                      key={text}
+                      name={text}
+                      onClick={() => setCategory(text)}
+                    />
+                  ))}
+                </span>
+              </div>
+            </div>
 
+            <Grid container className='desktop-grid'>
+              <Grid item xs={12}>
+                <Title>{content.name}</Title>
+                <img
+                  className='category-icon'
+                  src={(images as any)[category]}
+                  alt={category}
+                  width={126}
+                  height={126}
+                />
+              </Grid>
               <Grid item xs={4} className='large-screen'>
                 <hr />
                 <div className='title'>Preferred</div>
@@ -330,9 +372,9 @@ const CategoryPage = () => {
                   </div>
                 ))}
               </Grid>
-             
-              <SubHeader>Other Categories</SubHeader>
-              <Grid item xs={10} className='categories-grid'>
+
+              <div className='subheader'>Other Categories</div>
+              <Grid className='categories-grid' item xs={12}>
                 <span>
                   {buttonText.slice(0, 4).map((text: string) => (
                     <StyledButton
@@ -357,6 +399,7 @@ const CategoryPage = () => {
           <CategoryRadar data={content.data} setHovered={setHovered} />
         </Wrapper>
       )}
+      <Footer />
     </>
   );
 };

@@ -6,7 +6,6 @@ import CategoryPage from './CategoryPage';
 import ContentPage from './ContentPage';
 import PageWrapper from './PageWrapper';
 import Menu from './Menu';
-import Footer from './Footer';
 
 const App = () => {
   return (
@@ -23,9 +22,8 @@ const App = () => {
             </Route>
             <Route path='/technology'>
               <ContentPage />
-            </Route>
+            </Route>     
           </PageWrapper>
-          <Footer />
         </RadarContextProvider>
       </Switch>
     </Router>

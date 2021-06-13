@@ -1,13 +1,15 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { RadarContextType, RadarContext } from './RadarContextProvider';
-import { Link } from 'react-router-dom';
-import styled from 'styled-components/macro';
+import BackLink from './BackLink';
+import Footer from './Footer';
 import { icons, technologies, technologyList } from './data/data';
-import images from './images';
-import techContent from './data/content';
 import { SubContent, ExampleContent } from './Content';
 import { TechContentType } from './data/content';
-import BackLink from './BackLink';
+import techContent from './data/content';
+import images from './images';
+import styled from 'styled-components/macro';
+import ContentNavButton from './ContentNavButton';
+
 type WrapperProps = {
   category: string;
 };
@@ -17,7 +19,7 @@ const Wrapper = styled.div<WrapperProps>`
   width: 100%;
   display: flex;
   padding-left: 90px;
-  margin-top: 50px;
+  margin: 50px 0 100px 0;
   .background {
     opacity: 0.12;
     position: absolute;
@@ -39,6 +41,13 @@ const Wrapper = styled.div<WrapperProps>`
   }
   .conent-nav {
   }
+  @media screen and (max-width: 1000px) {
+    margin-top: 30px;
+    padding: 0 25px 0 25px;
+    img.background {
+      display: none;
+    }
+  }
 `;
 
 const StyledContent = styled.div`
@@ -49,6 +58,20 @@ const StyledContent = styled.div`
   :first-child {
     display: inline-block;
   }
+  svg.icon {
+    width: 80px;
+    height: 80px;
+  }
+  @media screen and (max-width: 1000px) {
+    width: 100%;
+    svg.icon {
+      width: 50px;
+      height: 50px;
+    }
+    a:first-child {
+      display: none;
+    }
+  }
 `;
 
 const Title = styled.div`
@@ -58,6 +81,10 @@ const Title = styled.div`
   display: inline-block;
   vertical-align: middle;
   padding-right: 50px;
+  @media screen and (max-width: 1000px) {
+    font-size: 52px;
+    padding-right: 30px;
+  }
 `;
 
 const ContentBody = styled.div`
@@ -73,28 +100,11 @@ const ContentBody = styled.div`
       text-decoration: none;
     }
   }
-`;
-
-type ContentNavButtonProps = {
-  align: string;
-};
-
-const ContentNavButton = styled.div<ContentNavButtonProps>`
-  margin-top: 75px;
-  float: ${({ align }) => align};
-  div:first-child {
-    font-family: poppins, sans-serif;
-    font-size: 19px;
-    font-weight: 300;
-    opacity: 0.5;
-  }
-  a:nth-child(2) {
-    :hover {
-      text-decoration: underline;
+  @media screen and (max-width: 1000px) {
+    width: 100%;
+    .content-intro {
+      font-size: 18px;
     }
-    font-family: bebas-neue-pro, sans-serif;
-    font-size: 59px;
-    color: inherit;
   }
 `;
 
@@ -120,7 +130,7 @@ const CategoryPage = () => {
   useEffect(() => {
     let url = window.location.pathname.split('/');
 
-    //search for the category and tech name in technologies data
+    // Find category and tech name in technologies data
     let categoriesAndTechnologies = technologies.filter(
       ({ categoryName }) => categoryName.toLowerCase() === url[2]
     )[0];
@@ -135,14 +145,15 @@ const CategoryPage = () => {
       (el: any) => el.name.toLowerCase() === technologyFromUrl.toLowerCase()
     )[0]!;
 
+    // Once we have content for every technology enable filtering the content for specific tech
     // let content = techContent.filter(
     //   ({ technology }) => technology === technologyFromUrl
     // )[0];
+    // setContent(content);
 
     setImageLink(icon.link);
     setTechnology(technologyFromUrl);
     setCategory(categoryFromUrl);
-    // setContent(content);
     setContent(techContent[0]);
 
     window.scroll({
@@ -185,7 +196,7 @@ const CategoryPage = () => {
               <BackLink category={category} />
               <Title>{technology}</Title>
               <a href={content.docsLink} target='_blank' rel='noreferrer'>
-                <svg width={80} height={80}>
+                <svg className='icon' viewBox={'0 0 80 80'}>
                   <circle cx={40} cy={40} r={40} fill={'white'} />
                   <image
                     x={15}
@@ -206,39 +217,28 @@ const CategoryPage = () => {
                 <hr />
                 <div className='content-nav'>
                   <ContentNavButton
-                    align={'left'}
                     onClick={() => setTechnology(previousTechnology)}
-                  >
-                    <div>Previous</div>
-                    <Link
-                      to={`/technology/${previousCategory}/${previousTechnology.replace(
-                        /\s/g,
-                        '-'
-                      )}`.toLowerCase()}
-                    >
-                      {getPrevItem(technology)}
-                    </Link>
-                  </ContentNavButton>
+                    previousTechnology={previousTechnology}
+                    nextTechnology={nextTechnology}
+                    previousCategory={previousCategory}
+                    nextCategory={nextCategory}
+                    next={false}
+                  />
                   <ContentNavButton
-                    align={'right'}
                     onClick={() => setTechnology(nextTechnology)}
-                  >
-                    <div>Next</div>
-                    <Link
-                      to={`/technology/${nextCategory}/${nextTechnology.replace(
-                        /\s/g,
-                        '-'
-                      )}`.toLowerCase()}
-                    >
-                      {getNextItem(technology)}
-                    </Link>
-                  </ContentNavButton>
+                    previousTechnology={previousTechnology}
+                    nextTechnology={nextTechnology}
+                    previousCategory={previousCategory}
+                    nextCategory={nextCategory}
+                    next={true}
+                  />
                 </div>
               </ContentBody>
             </div>
           </StyledContent>
         )}
       </Wrapper>
+      <Footer />
     </>
   );
 };
