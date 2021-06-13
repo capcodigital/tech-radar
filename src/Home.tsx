@@ -25,15 +25,7 @@ const Wrapper = styled.div`
     }
   }
 
-  .footer {
-    position: fixed;
-    @media screen and (max-width: 1000px) {
-      position: inherit;
-    }
-  }
-
   @media screen and (min-width: 1000px) {
-    padding: 0 16px 16px 16px;
     .mobile-icons {
       display: none;
     }
@@ -45,28 +37,39 @@ const Wrapper = styled.div`
     }
   }
 `;
+const OutterWrapper = styled.div`
+  .footer {
+    position: absolute;
+    top:${window.innerHeight}px;
+    @media screen and (max-width: 1000px) {
+      position: inherit;
+    }
+  }
+`;
 
 const Home = () => {
   return (
-    <Wrapper>
-      <RadarKey />
-      <Radar />
-      <MobileRadarBackground />
-      <Grid container spacing={1} className='mobile-icons'>
-        {Object.entries(images).map(([name, image]) => (
-          <Grid item xs={6}>
-            <Link to={`/category/${name}`.toLowerCase()}>
-              <img height={90} src={image} alt={name} />
-              <div className='text'>
-                {name}
-                <ArrowForwardIosIcon />
-              </div>
-            </Link>
-          </Grid>
-        ))}
-      </Grid>
+    <OutterWrapper>
+      <Wrapper>
+        <RadarKey />
+        <Radar />
+        <MobileRadarBackground />
+        <Grid container spacing={1} className='mobile-icons'>
+          {Object.entries(images).map(([name, image]) => (
+            <Grid item xs={6}>
+              <Link to={`/category/${name}`.toLowerCase()}>
+                <img height={90} src={image} alt={name} />
+                <div className='text'>
+                  {name}
+                  <ArrowForwardIosIcon />
+                </div>
+              </Link>
+            </Grid>
+          ))}
+        </Grid>
+      </Wrapper>
       <Footer />
-    </Wrapper>
+    </OutterWrapper>
   );
 };
 
