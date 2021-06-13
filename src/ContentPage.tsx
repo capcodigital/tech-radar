@@ -68,9 +68,6 @@ const StyledContent = styled.div`
       width: 50px;
       height: 50px;
     }
-    a:first-child {
-      display: none;
-    }
   }
 `;
 
