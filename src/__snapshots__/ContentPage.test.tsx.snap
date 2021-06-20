@@ -42,7 +42,7 @@ exports[`ContentPage should render ContentPage component 1`] = `
         </a>
       </div>
       <div
-        class="ContentPage__Title-sc-1uhhvyt-3 dqEcef"
+        class="ContentPage__Title-sc-1uhhvyt-3 dqEcef title-GitHub"
       >
         GitHub
       </div>
