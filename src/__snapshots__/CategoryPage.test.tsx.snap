@@ -1,0 +1,1534 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CategoryPage should render CategoryPage component 1`] = `
+<div
+  class="CategoryPage__Wrapper-sc-1lo89a8-0 gJujHL"
+>
+  <img
+    alt="DevOps"
+    class="background"
+    height="650"
+    src="devops.svg"
+    width="650"
+  />
+  <div
+    class="MobileRadarBackground__Wrapper-sc-11qhyr-0 hSa-dtw"
+  >
+    <svg
+      viewBox="0 0 700 700"
+    >
+      <g
+        transform="translate(700 700)"
+      >
+        <path
+          class="arc"
+          d="M3.6739403974420595e-14,600A600,600,0,1,1,-1.1021821192326178e-13,-600L0,0Z"
+          fill="rgba(255,255,255,0.05"
+        />
+        <path
+          class="arc"
+          d="M2.4492935982947064e-14,400A400,400,0,1,1,-7.347880794884119e-14,-400L0,0Z"
+          fill="rgba(255,255,255,0.05"
+        />
+        <path
+          class="arc"
+          d="M1.2246467991473532e-14,200A200,200,0,1,1,-3.6739403974420595e-14,-200L0,0Z"
+          fill="rgba(255,255,255,0.05"
+        />
+      </g>
+    </svg>
+  </div>
+  <div
+    class="grid-wrapper"
+  >
+    <div
+      class="mobile-category"
+    >
+      <div
+        class="CategoryPage__MobileTitle-sc-1lo89a8-2 jLvGZJ"
+      >
+        DevOps
+      </div>
+      <img
+        alt="DevOps"
+        class="category-icon"
+        height="126"
+        src="devops.svg"
+        width="126"
+      />
+      <div
+        class="first-row-wrapper"
+      >
+        <div>
+          <hr />
+          <div
+            class="title"
+          >
+            Preferred
+          </div>
+          <div
+            class="technology false"
+            data-testid="preferred-GitHub"
+          >
+            <a
+              href="/technology/devops/github"
+            >
+              GitHub
+            </a>
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+              />
+            </svg>
+          </div>
+          <div
+            class="technology false"
+            data-testid="preferred-CircleCI"
+          >
+            <a
+              href="/technology/devops/circleci"
+            >
+              CircleCI
+            </a>
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+              />
+            </svg>
+          </div>
+          <div
+            class="technology false"
+            data-testid="preferred-Terraform"
+          >
+            <a
+              href="/technology/devops/terraform"
+            >
+              Terraform
+            </a>
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+              />
+            </svg>
+          </div>
+          <div
+            class="technology false"
+            data-testid="preferred-Valut"
+          >
+            <a
+              href="/technology/devops/valut"
+            >
+              Valut
+            </a>
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+              />
+            </svg>
+          </div>
+          <div
+            class="technology false"
+            data-testid="preferred-SonarQube"
+          >
+            <a
+              href="/technology/devops/sonarqube"
+            >
+              SonarQube
+            </a>
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+              />
+            </svg>
+          </div>
+          <div
+            class="technology false"
+            data-testid="preferred-Elastic"
+          >
+            <a
+              href="/technology/devops/elastic"
+            >
+              Elastic
+            </a>
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div>
+          <hr />
+          <div
+            class="title"
+          >
+            Skilled
+          </div>
+          <div
+            class="technology false"
+            data-testid="skilled-Bitbucket"
+          >
+            <a
+              href="/technology/devops/bitbucket"
+            >
+              Bitbucket
+            </a>
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+              />
+            </svg>
+          </div>
+          <div
+            class="technology false"
+            data-testid="skilled-Jenkins"
+          >
+            <a
+              href="/technology/devops/jenkins"
+            >
+              Jenkins
+            </a>
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+              />
+            </svg>
+          </div>
+          <div
+            class="technology false"
+            data-testid="skilled-TeamCity"
+          >
+            <a
+              href="/technology/devops/teamcity"
+            >
+              TeamCity
+            </a>
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+              />
+            </svg>
+          </div>
+          <div
+            class="technology false"
+            data-testid="skilled-Istio"
+          >
+            <a
+              href="/technology/devops/istio"
+            >
+              Istio
+            </a>
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+              />
+            </svg>
+          </div>
+          <div
+            class="technology false"
+            data-testid="skilled-Ansible"
+          >
+            <a
+              href="/technology/devops/ansible"
+            >
+              Ansible
+            </a>
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+              />
+            </svg>
+          </div>
+          <div
+            class="technology false"
+            data-testid="skilled-Packer"
+          >
+            <a
+              href="/technology/devops/packer"
+            >
+              Packer
+            </a>
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div>
+        <hr />
+        <div
+          class="title"
+        >
+          Scaling
+        </div>
+        <div
+          class="technology false"
+          data-testid="scaling-Twistlock"
+        >
+          <a
+            href="/technology/devops/twistlock"
+          >
+            Twistlock
+          </a>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+            />
+          </svg>
+        </div>
+        <div
+          class="technology false"
+          data-testid="scaling-Kiali"
+        >
+          <a
+            href="/technology/devops/kiali"
+          >
+            Kiali
+          </a>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+            />
+          </svg>
+        </div>
+        <div
+          class="technology false"
+          data-testid="scaling-ConcourseCl"
+        >
+          <a
+            href="/technology/devops/concoursecl"
+          >
+            ConcourseCl
+          </a>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+            />
+          </svg>
+        </div>
+        <div
+          class="technology false"
+          data-testid="scaling-Consul"
+        >
+          <a
+            href="/technology/devops/consul"
+          >
+            Consul
+          </a>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+            />
+          </svg>
+        </div>
+      </div>
+      <div>
+        <div
+          class="subheader-mobile"
+        >
+          Other Categories
+        </div>
+        <span>
+          <a
+            href="/category/mobile"
+          >
+            <div
+              class="StyledButton__ButtonWrapper-hgym72-0 bAvJkG"
+            >
+              <img
+                alt="Mobile"
+                height="54"
+                src="mobile.svg"
+                width="54"
+              />
+              <span>
+                Mobile
+              </span>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                />
+              </svg>
+            </div>
+          </a>
+          <a
+            href="/category/frontend"
+          >
+            <div
+              class="StyledButton__ButtonWrapper-hgym72-0 bAvJkG"
+            >
+              <img
+                alt="Frontend"
+                height="54"
+                src="frontend.svg"
+                width="54"
+              />
+              <span>
+                Frontend
+              </span>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                />
+              </svg>
+            </div>
+          </a>
+          <a
+            href="/category/backend"
+          >
+            <div
+              class="StyledButton__ButtonWrapper-hgym72-0 bAvJkG"
+            >
+              <img
+                alt="Backend"
+                height="54"
+                src="backend.svg"
+                width="54"
+              />
+              <span>
+                Backend
+              </span>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                />
+              </svg>
+            </div>
+          </a>
+          <a
+            href="/category/integration"
+          >
+            <div
+              class="StyledButton__ButtonWrapper-hgym72-0 bAvJkG"
+            >
+              <img
+                alt="Integration"
+                height="54"
+                src="integration.svg"
+                width="54"
+              />
+              <span>
+                Integration
+              </span>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                />
+              </svg>
+            </div>
+          </a>
+        </span>
+        <span>
+          <a
+            href="/category/cloud"
+          >
+            <div
+              class="StyledButton__ButtonWrapper-hgym72-0 bAvJkG"
+            >
+              <img
+                alt="Cloud"
+                height="54"
+                src="cloud.svg"
+                width="54"
+              />
+              <span>
+                Cloud
+              </span>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                />
+              </svg>
+            </div>
+          </a>
+          <a
+            href="/category/hosting"
+          >
+            <div
+              class="StyledButton__ButtonWrapper-hgym72-0 bAvJkG"
+            >
+              <img
+                alt="Hosting"
+                height="54"
+                src="hosting.svg"
+                width="54"
+              />
+              <span>
+                Hosting
+              </span>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                />
+              </svg>
+            </div>
+          </a>
+          <a
+            href="/category/databases"
+          >
+            <div
+              class="StyledButton__ButtonWrapper-hgym72-0 bAvJkG"
+            >
+              <img
+                alt="Databases"
+                height="54"
+                src="databases.svg"
+                width="54"
+              />
+              <span>
+                Databases
+              </span>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                />
+              </svg>
+            </div>
+          </a>
+        </span>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root desktop-grid MuiGrid-container"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+      >
+        <div
+          class="CategoryPage__Title-sc-1lo89a8-1 jYTuCW"
+        >
+          DevOps
+        </div>
+        <img
+          alt="DevOps"
+          class="category-icon"
+          height="126"
+          src="devops.svg"
+          width="126"
+        />
+      </div>
+      <div
+        class="MuiGrid-root large-screen MuiGrid-item MuiGrid-grid-xs-4"
+      >
+        <hr />
+        <div
+          class="title"
+        >
+          Preferred
+        </div>
+        <div
+          class="technology false"
+        >
+          <a
+            href="/technology/devops/github"
+          >
+            GitHub
+          </a>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+            />
+          </svg>
+        </div>
+        <div
+          class="technology false"
+        >
+          <a
+            href="/technology/devops/circleci"
+          >
+            CircleCI
+          </a>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+            />
+          </svg>
+        </div>
+        <div
+          class="technology false"
+        >
+          <a
+            href="/technology/devops/terraform"
+          >
+            Terraform
+          </a>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+            />
+          </svg>
+        </div>
+        <div
+          class="technology false"
+        >
+          <a
+            href="/technology/devops/valut"
+          >
+            Valut
+          </a>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+            />
+          </svg>
+        </div>
+        <div
+          class="technology false"
+        >
+          <a
+            href="/technology/devops/sonarqube"
+          >
+            SonarQube
+          </a>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+            />
+          </svg>
+        </div>
+        <div
+          class="technology false"
+        >
+          <a
+            href="/technology/devops/elastic"
+          >
+            Elastic
+          </a>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root large-screen MuiGrid-item MuiGrid-grid-xs-4"
+      >
+        <hr />
+        <div
+          class="title"
+        >
+          Skilled
+        </div>
+        <div
+          class="technology false"
+        >
+          <a
+            href="/technology/devops/bitbucket"
+          >
+            Bitbucket
+          </a>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+            />
+          </svg>
+        </div>
+        <div
+          class="technology false"
+        >
+          <a
+            href="/technology/devops/jenkins"
+          >
+            Jenkins
+          </a>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+            />
+          </svg>
+        </div>
+        <div
+          class="technology false"
+        >
+          <a
+            href="/technology/devops/teamcity"
+          >
+            TeamCity
+          </a>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+            />
+          </svg>
+        </div>
+        <div
+          class="technology false"
+        >
+          <a
+            href="/technology/devops/istio"
+          >
+            Istio
+          </a>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+            />
+          </svg>
+        </div>
+        <div
+          class="technology false"
+        >
+          <a
+            href="/technology/devops/ansible"
+          >
+            Ansible
+          </a>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+            />
+          </svg>
+        </div>
+        <div
+          class="technology false"
+        >
+          <a
+            href="/technology/devops/packer"
+          >
+            Packer
+          </a>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root large-screen MuiGrid-item MuiGrid-grid-xs-4"
+      >
+        <hr />
+        <div
+          class="title"
+        >
+          Scaling
+        </div>
+        <div
+          class="technology false"
+        >
+          <a
+            href="/technology/devops/twistlock"
+          >
+            Twistlock
+          </a>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+            />
+          </svg>
+        </div>
+        <div
+          class="technology false"
+        >
+          <a
+            href="/technology/devops/kiali"
+          >
+            Kiali
+          </a>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+            />
+          </svg>
+        </div>
+        <div
+          class="technology false"
+        >
+          <a
+            href="/technology/devops/concoursecl"
+          >
+            ConcourseCl
+          </a>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+            />
+          </svg>
+        </div>
+        <div
+          class="technology false"
+        >
+          <a
+            href="/technology/devops/consul"
+          >
+            Consul
+          </a>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        class="subheader"
+      >
+        Other Categories
+      </div>
+      <div
+        class="MuiGrid-root categories-grid MuiGrid-item MuiGrid-grid-xs-12"
+      >
+        <span>
+          <a
+            href="/category/mobile"
+          >
+            <div
+              class="StyledButton__ButtonWrapper-hgym72-0 bAvJkG"
+            >
+              <img
+                alt="Mobile"
+                height="54"
+                src="mobile.svg"
+                width="54"
+              />
+              <span>
+                Mobile
+              </span>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                />
+              </svg>
+            </div>
+          </a>
+          <a
+            href="/category/frontend"
+          >
+            <div
+              class="StyledButton__ButtonWrapper-hgym72-0 bAvJkG"
+            >
+              <img
+                alt="Frontend"
+                height="54"
+                src="frontend.svg"
+                width="54"
+              />
+              <span>
+                Frontend
+              </span>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                />
+              </svg>
+            </div>
+          </a>
+          <a
+            href="/category/backend"
+          >
+            <div
+              class="StyledButton__ButtonWrapper-hgym72-0 bAvJkG"
+            >
+              <img
+                alt="Backend"
+                height="54"
+                src="backend.svg"
+                width="54"
+              />
+              <span>
+                Backend
+              </span>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                />
+              </svg>
+            </div>
+          </a>
+          <a
+            href="/category/integration"
+          >
+            <div
+              class="StyledButton__ButtonWrapper-hgym72-0 bAvJkG"
+            >
+              <img
+                alt="Integration"
+                height="54"
+                src="integration.svg"
+                width="54"
+              />
+              <span>
+                Integration
+              </span>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                />
+              </svg>
+            </div>
+          </a>
+        </span>
+        <span>
+          <a
+            href="/category/cloud"
+          >
+            <div
+              class="StyledButton__ButtonWrapper-hgym72-0 bAvJkG"
+            >
+              <img
+                alt="Cloud"
+                height="54"
+                src="cloud.svg"
+                width="54"
+              />
+              <span>
+                Cloud
+              </span>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                />
+              </svg>
+            </div>
+          </a>
+          <a
+            href="/category/hosting"
+          >
+            <div
+              class="StyledButton__ButtonWrapper-hgym72-0 bAvJkG"
+            >
+              <img
+                alt="Hosting"
+                height="54"
+                src="hosting.svg"
+                width="54"
+              />
+              <span>
+                Hosting
+              </span>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                />
+              </svg>
+            </div>
+          </a>
+          <a
+            href="/category/databases"
+          >
+            <div
+              class="StyledButton__ButtonWrapper-hgym72-0 bAvJkG"
+            >
+              <img
+                alt="Databases"
+                height="54"
+                src="databases.svg"
+                width="54"
+              />
+              <span>
+                Databases
+              </span>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                />
+              </svg>
+            </div>
+          </a>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="CategoryRadar__Wrapper-sc-1wfcfm0-0 fbOQYD"
+  >
+    <svg
+      height="800"
+      width="400"
+    >
+      <g
+        transform="translate(400 400)"
+      >
+        <path
+          class="arc"
+          d="M2.4492935982947064e-14,400A400,400,0,1,1,-7.347880794884119e-14,-400L0,0Z"
+          fill="#ffffff"
+          opacity="0.03"
+          stroke="lightgrey"
+        />
+        <path
+          class="arc"
+          d="M1.6328623988631378e-14,266.6666666666667A266.6666666666667,266.6666666666667,0,1,1,-4.898587196589413e-14,-266.6666666666667L0,0Z"
+          fill="#ffffff"
+          opacity="0.03"
+        />
+        <path
+          class="arc"
+          d="M8.164311994315689e-15,133.33333333333334A133.33333333333334,133.33333333333334,0,1,1,-2.4492935982947064e-14,-133.33333333333334L0,0Z"
+          fill="#ffffff"
+          opacity="0.05"
+        />
+        <g>
+          <g
+            aria-label="GitHub"
+            class=""
+            title="GitHub"
+          >
+            <circle
+              cx="-294.4486372867092"
+              cy="169.99999999999997"
+              fill="white"
+              r="24"
+            />
+            <image
+              height="33.941125496954285"
+              href="https://img.icons8.com/fluent/452/github.png"
+              width="33.941125496954285"
+              x="-311.41920003518635"
+              y="153.02943725152284"
+            />
+          </g>
+        </g>
+        <g>
+          <g
+            aria-label="CircleCI"
+            class=""
+            title="CircleCI"
+          >
+            <circle
+              cx="-332.57018424949393"
+              cy="70.68997487803817"
+              fill="white"
+              r="24"
+            />
+            <image
+              height="33.941125496954285"
+              href="https://img.icons8.com/color/452/circleci.png"
+              width="33.941125496954285"
+              x="-349.5407469979711"
+              y="53.71941212956103"
+            />
+          </g>
+        </g>
+        <g>
+          <g
+            aria-label="Terraform"
+            class=""
+            title="Terraform"
+          >
+            <circle
+              cx="-338.1374444252129"
+              cy="-35.53967751100219"
+              fill="white"
+              r="24"
+            />
+            <image
+              height="33.941125496954285"
+              href="https://symbols.getvecta.com/stencil_97/45_terraform-icon.d8dd637866.svg"
+              width="33.941125496954285"
+              x="-355.10800717369005"
+              y="-52.51024025947933"
+            />
+          </g>
+        </g>
+        <g>
+          <g
+            aria-label="Valut"
+            class=""
+            title="Valut"
+          >
+            <circle
+              cx="-310.6054555984843"
+              cy="-138.29045864577208"
+              fill="white"
+              r="24"
+            />
+            <image
+              height="33.941125496954285"
+              href="https://symbols.getvecta.com/stencil_100/11_vault-icon.469c5366cc.svg"
+              width="33.941125496954285"
+              x="-327.57601834696146"
+              y="-155.2610213942492"
+            />
+          </g>
+        </g>
+        <g>
+          <g
+            aria-label="SonarQube"
+            class=""
+            title="SonarQube"
+          >
+            <circle
+              cx="-252.66924066231405"
+              cy="-227.5044061620118"
+              fill="white"
+              r="24"
+            />
+            <image
+              height="33.941125496954285"
+              href="https://pbs.twimg.com/profile_images/1224335491899760641/h404B5dU_400x400.jpg"
+              width="33.941125496954285"
+              x="-269.6398034107912"
+              y="-244.47496891048894"
+            />
+          </g>
+        </g>
+        <g>
+          <g
+            aria-label="Elastic"
+            class=""
+            title="Elastic"
+          >
+            <circle
+              cx="-170.00000000000014"
+              cy="-294.4486372867091"
+              fill="white"
+              r="24"
+            />
+            <image
+              height="33.941125496954285"
+              href="https://symbols.getvecta.com/stencil_79/34_elastic-search-icon.bdaf397325.svg"
+              width="33.941125496954285"
+              x="-186.97056274847728"
+              y="-311.41920003518624"
+            />
+          </g>
+        </g>
+        <g>
+          <g
+            aria-label="Bitbucket"
+            class=""
+            title="Bitbucket"
+          >
+            <circle
+              cx="-178.978583448784"
+              cy="103.33333333333333"
+              fill="white"
+              r="24"
+            />
+            <image
+              height="33.941125496954285"
+              href="https://cdn.worldvectorlogo.com/logos/bitbucket-icon.svg"
+              width="33.941125496954285"
+              x="-195.94914619726114"
+              y="86.36277058485618"
+            />
+          </g>
+        </g>
+        <g>
+          <g
+            aria-label="Jenkins"
+            class=""
+            title="Jenkins"
+          >
+            <circle
+              cx="-202.1505041516532"
+              cy="42.96841610233693"
+              fill="white"
+              r="24"
+            />
+            <image
+              height="33.941125496954285"
+              href="https://symbols.getvecta.com/stencil_97/67_the-jenkins-project-icon.0141f64fe7.svg"
+              width="33.941125496954285"
+              x="-219.12106690013033"
+              y="25.99785335385979"
+            />
+          </g>
+        </g>
+        <g>
+          <g
+            aria-label="TeamCity"
+            class=""
+            title="TeamCity"
+          >
+            <circle
+              cx="-205.5345250427765"
+              cy="-21.602549075315057"
+              fill="white"
+              r="24"
+            />
+            <image
+              height="33.941125496954285"
+              href="https://cdn.worldvectorlogo.com/logos/teamcity-icon.svg"
+              width="33.941125496954285"
+              x="-222.50508779125363"
+              y="-38.5731118237922"
+            />
+          </g>
+        </g>
+        <g>
+          <g
+            aria-label="Istio"
+            class=""
+            title="Istio"
+          >
+            <circle
+              cx="-188.79939457947086"
+              cy="-84.05890623566539"
+              fill="white"
+              r="24"
+            />
+            <image
+              height="33.941125496954285"
+              href="https://symbols.getvecta.com/stencil_84/70_istio-icon.9d92202138.svg"
+              width="33.941125496954285"
+              x="-205.769957327948"
+              y="-101.02946898414254"
+            />
+          </g>
+        </g>
+        <g>
+          <g
+            aria-label="Ansible"
+            class=""
+            title="Ansible"
+          >
+            <circle
+              cx="-153.58326393199482"
+              cy="-138.28699198083072"
+              fill="white"
+              r="24"
+            />
+            <image
+              height="33.941125496954285"
+              href="https://symbols.getvecta.com/stencil_73/122_ansible-icon.e1db432c74.svg"
+              width="33.941125496954285"
+              x="-170.55382668047196"
+              y="-155.25755472930786"
+            />
+          </g>
+        </g>
+        <g>
+          <g
+            aria-label="Packer"
+            class=""
+            title="Packer"
+          >
+            <circle
+              cx="-103.33333333333343"
+              cy="-178.97858344878398"
+              fill="white"
+              r="24"
+            />
+            <image
+              height="33.941125496954285"
+              href="https://symbols.getvecta.com/stencil_91/3_packer-icon.53584ee287.svg"
+              width="33.941125496954285"
+              x="-120.30389608181056"
+              y="-195.94914619726111"
+            />
+          </g>
+        </g>
+        <g>
+          <g
+            aria-label="Twistlock"
+            class=""
+            title="Twistlock"
+          >
+            <circle
+              cx="-28.06345170677325"
+              cy="67.75116571749437"
+              fill="white"
+              r="24"
+            />
+            <image
+              height="33.941125496954285"
+              href="https://symbols.getvecta.com/stencil_98/71_twistlock-icon.8db1b813dd.svg"
+              width="33.941125496954285"
+              x="-45.03401445525039"
+              y="50.78060296901723"
+            />
+          </g>
+        </g>
+        <g>
+          <g
+            aria-label="Kiali"
+            class=""
+            title="Kiali"
+          >
+            <circle
+              cx="-67.75116571749437"
+              cy="28.06345170677326"
+              fill="white"
+              r="24"
+            />
+            <image
+              height="33.941125496954285"
+              href="https://design.jboss.org/kiali/logo/final/PNG/kiali_icon_darkbkg_1280px.png"
+              width="33.941125496954285"
+              x="-84.72172846597152"
+              y="11.092888958296118"
+            />
+          </g>
+        </g>
+        <g>
+          <g
+            aria-label="ConcourseCl"
+            class=""
+            title="ConcourseCl"
+          >
+            <circle
+              cx="-67.75116571749437"
+              cy="-28.063451706773247"
+              fill="white"
+              r="24"
+            />
+            <image
+              height="33.941125496954285"
+              href="https://cdn.worldvectorlogo.com/logos/concourse-1.svg"
+              width="33.941125496954285"
+              x="-84.72172846597152"
+              y="-45.034014455250386"
+            />
+          </g>
+        </g>
+        <g>
+          <g
+            aria-label="Consul"
+            class=""
+            title="Consul"
+          >
+            <circle
+              cx="-28.063451706773296"
+              cy="-67.75116571749436"
+              fill="white"
+              r="24"
+            />
+            <image
+              height="33.941125496954285"
+              href="https://symbols.getvecta.com/stencil_77/63_consul-icon.0452948395.svg"
+              width="33.941125496954285"
+              x="-45.03401445525044"
+              y="-84.7217284659715"
+            />
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
+</div>
+`;

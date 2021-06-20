@@ -1,14 +1,15 @@
-import React, { useContext, useEffect, useState } from 'react';
-import { RadarContextType, RadarContext } from './RadarContextProvider';
-import BackLink from './BackLink';
-import Footer from './Footer';
-import { icons, technologies, technologyList } from './data/data';
-import { SubContent, ExampleContent } from './Content';
-import { TechContentType } from './data/content';
-import techContent from './data/content';
-import images from './images';
-import styled from 'styled-components/macro';
-import ContentNavButton from './ContentNavButton';
+import React, { useContext, useEffect, useState } from "react";
+import { RadarContextType, RadarContext } from "./RadarContextProvider";
+import BackLink from "./BackLink";
+import Footer from "./Footer";
+import { icons, technologies } from "./data/data";
+import { SubContent, ExampleContent } from "./Content";
+import { TechContentType } from "./data/content";
+import techContent from "./data/content";
+import images from "./images";
+import styled from "styled-components/macro";
+import ContentNavButton from "./ContentNavButton";
+import { getNextItem, getPrevItem } from "./helpers";
 
 type WrapperProps = {
   category: string;
@@ -71,19 +72,6 @@ const StyledContent = styled.div`
   }
 `;
 
-const Title = styled.div`
-  font-size: 120px;
-  font-weight: 700;
-  text-align: left;
-  display: inline-block;
-  vertical-align: middle;
-  padding-right: 50px;
-  @media screen and (max-width: 1000px) {
-    font-size: 52px;
-    padding-right: 30px;
-  }
-`;
-
 const ContentBody = styled.div`
   width: 700px;
   margin: 0 auto;
@@ -105,36 +93,40 @@ const ContentBody = styled.div`
   }
 `;
 
-const getNextItem = (currentItem: string) => {
-  const currentIndex = technologyList.indexOf(currentItem);
-  const nextIndex = (currentIndex + 1) % technologyList.length;
-  return technologyList[nextIndex];
-};
-
-const getPrevItem = (currentItem: string) => {
-  const currentIndex = technologyList.indexOf(currentItem);
-  const prevIndex = (currentIndex - 1) % technologyList.length;
-  return technologyList[prevIndex < 0 ? technologyList.length - 1 : prevIndex];
-};
+const Title = styled.div`
+  font-size: 120px;
+  font-weight: 700;
+  text-align: left;
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 50px;
+  @media screen and (max-width: 1000px) {
+    font-size: 52px;
+    padding-right: 30px;
+  }
+`;
 
 const CategoryPage = () => {
   const { category, technology, setCategory, setTechnology } =
     useContext<RadarContextType>(RadarContext);
 
   const [content, setContent] = useState<TechContentType | null>(null);
-  const [imageLink, setImageLink] = useState('');
+  const [imageLink, setImageLink] = useState("");
 
   useEffect(() => {
-    let url = window.location.pathname.split('/');
+    let url = window.location.pathname.split("/");
 
     // Find category and tech name in technologies data
-    let categoriesAndTechnologies = technologies.filter(
-      ({ categoryName }) => categoryName.toLowerCase() === url[2]
-    )[0];
+    let categoriesAndTechnologies =
+      technologies.filter(
+        ({ categoryName }) => categoryName.toLowerCase() === url[2]
+      )[0] || technologies[0];
 
-    let technologyFromUrl = categoriesAndTechnologies.technologies.filter(
-      (tech: string) => tech.toLowerCase() === url[3].replace(/-/g, ' ')
-    )[0];
+    let technologyFromUrl =
+      categoriesAndTechnologies.technologies.filter(
+        (tech: string) =>
+          url[3] && tech.toLowerCase() === url[3].replace(/-/g, " ")
+      )[0] || technologies[0].technologies[0];
 
     let categoryFromUrl = categoriesAndTechnologies.categoryName;
 
@@ -155,7 +147,7 @@ const CategoryPage = () => {
 
     window.scroll({
       top: 0,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   }, [technology, category, setCategory, setTechnology]);
 
@@ -168,20 +160,20 @@ const CategoryPage = () => {
     technologies.filter(({ technologies }) =>
       technologies.includes(nextTechnology)
     )[0];
-  let nextCategory = filteredNext ? filteredNext.categoryName : 'Devops';
+  let nextCategory = filteredNext ? filteredNext.categoryName : "Devops";
 
   let filteredPrev =
     technology &&
     technologies.filter(({ technologies }) =>
       technologies.includes(previousTechnology)
     )[0];
-  let previousCategory = filteredPrev ? filteredPrev.categoryName : 'Mobile';
+  let previousCategory = filteredPrev ? filteredPrev.categoryName : "Mobile";
 
   return (
     <>
       <Wrapper category={category}>
         <img
-          className='background'
+          className="background"
           src={(images as any)[category]}
           alt={category}
           width={650}
@@ -191,10 +183,10 @@ const CategoryPage = () => {
           <StyledContent>
             <div>
               <BackLink category={category} />
-              <Title>{technology}</Title>
-              <a href={content.docsLink} target='_blank' rel='noreferrer'>
-                <svg className='icon' viewBox={'0 0 80 80'}>
-                  <circle cx={40} cy={40} r={40} fill={'white'} />
+              <Title className={`title-${technology}`}>{technology}</Title>
+              <a href={content.docsLink} target="_blank" rel="noreferrer">
+                <svg className="icon" viewBox={"0 0 80 80"}>
+                  <circle cx={40} cy={40} r={40} fill={"white"} />
                   <image
                     x={15}
                     y={15}
@@ -206,13 +198,13 @@ const CategoryPage = () => {
               </a>
               <ContentBody>
                 <div
-                  className='content-intro'
+                  className="content-intro"
                   dangerouslySetInnerHTML={{ __html: content.intro }}
                 />
                 <SubContent contentData={content.content} />
                 <ExampleContent contentData={content.examples} />
                 <hr />
-                <div className='content-nav'>
+                <div className="content-nav">
                   <ContentNavButton
                     onClick={() => setTechnology(previousTechnology)}
                     previousTechnology={previousTechnology}

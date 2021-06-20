@@ -1,13 +1,13 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
-import Footer from './Footer';
-import Grid from '@material-ui/core/Grid';
-import MobileRadarBackground from './MobileRadarBackground';
-import Radar from './Radar';
-import RadarKey from './RadarKey';
-import images from './images';
-import styled from 'styled-components/macro';
+import React from "react";
+import { Link } from "react-router-dom";
+import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
+import Footer from "./Footer";
+import Grid from "@material-ui/core/Grid";
+import MobileRadarBackground from "./MobileRadarBackground";
+import Radar from "./Radar";
+import RadarKey from "./RadarKey";
+import images from "./images";
+import styled from "styled-components/macro";
 
 const Wrapper = styled.div`
   position: relative;
@@ -40,7 +40,7 @@ const Wrapper = styled.div`
 const OutterWrapper = styled.div`
   .footer {
     position: absolute;
-    top:${window.innerHeight}px;
+    top: ${window.innerHeight}px;
     @media screen and (max-width: 1000px) {
       position: inherit;
     }
@@ -54,12 +54,12 @@ const Home = () => {
         <RadarKey />
         <Radar />
         <MobileRadarBackground />
-        <Grid container spacing={1} className='mobile-icons'>
+        <Grid container spacing={1} className="mobile-icons">
           {Object.entries(images).map(([name, image]) => (
-            <Grid item xs={6}>
+            <Grid item xs={6} key={name}>
               <Link to={`/category/${name}`.toLowerCase()}>
                 <img height={90} src={image} alt={name} />
-                <div className='text'>
+                <div className="text">
                   {name}
                   <ArrowForwardIosIcon />
                 </div>

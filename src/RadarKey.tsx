@@ -1,6 +1,7 @@
-import React, { FC } from 'react';
-import styled from 'styled-components/macro';
-import { KeyTooltip } from './StyledTooltip';
+import React, { FC } from "react";
+import styled from "styled-components/macro";
+import { KeyTooltip } from "./StyledTooltip";
+import { radarKeysText } from "./data/data";
 
 const StyledRadarKey = styled.div`
   margin-left: 90px;
@@ -28,6 +29,16 @@ const StyledRadarKey = styled.div`
   }
 `;
 
+const TooltipTitle = styled.div`
+  font-size: 20px;
+  color: #e6236d;
+  padding-bottom: 10px;
+`;
+
+const TooltipContent = styled.div`
+  font-family: Poppins, sans-serif;
+`;
+
 type KeyCircleProps = {
   color1: string;
   color2: string;
@@ -42,15 +53,6 @@ const KeyCircle: FC<KeyCircleProps> = ({ color1, color2, color3 }) => (
   </svg>
 );
 
-const TooltipTitle: FC = ({ children }) => (
-  <div style={{ fontSize: 20, color: '#e6236d', paddingBottom: 10 }}>
-    {children}
-  </div>
-);
-const TooltipContent: FC = ({ children }) => (
-  <div style={{ fontFamily: 'Poppins, sans-serif' }}>{children}</div>
-);
-
 const RadarKey = () => (
   <StyledRadarKey>
     <div>Key</div>
@@ -58,22 +60,18 @@ const RadarKey = () => (
       title={
         <>
           <TooltipTitle>Scaling</TooltipTitle>
-          <TooltipContent>
-            The team are actively scaling the usage and skills for this
-            technology or tool. These technologies are driven by both client
-            demand and industry trends, therefore they are subject to change.
-          </TooltipContent>
+          <TooltipContent>{radarKeysText.scaling}</TooltipContent>
         </>
       }
-      aria-label={'Scaling'}
-      placement='right'
+      aria-label={"Scaling"}
+      placement="right"
       arrow
     >
       <div>
         <KeyCircle
-          color1={'#c4c4c41a'}
-          color2={'#c4c4c41a'}
-          color3={'#e6236d'}
+          color1={"#c4c4c41a"}
+          color2={"#c4c4c41a"}
+          color3={"#e6236d"}
         />
         <span>Scaling</span>
       </div>
@@ -82,18 +80,15 @@ const RadarKey = () => (
       title={
         <>
           <TooltipTitle>Skilled</TooltipTitle>
-          <TooltipContent>
-            If a client asked for these technologies Capco can confidently
-            deliver production solutions using them.
-          </TooltipContent>
+          <TooltipContent>{radarKeysText.skilled}</TooltipContent>
         </>
       }
-      aria-label={'Skilled'}
-      placement='right'
+      aria-label={"Skilled"}
+      placement="right"
       arrow
     >
       <div>
-        <KeyCircle color1={'#c4c4c41a'} color2={'#e6236d'} color3={'#222222'} />
+        <KeyCircle color1={"#c4c4c41a"} color2={"#e6236d"} color3={"#222222"} />
         <span>Skilled</span>
       </div>
     </KeyTooltip>
@@ -101,18 +96,15 @@ const RadarKey = () => (
       title={
         <>
           <TooltipTitle>Preferred</TooltipTitle>
-          <TooltipContent>
-            If Capco has full architecture and DevOps responsibility, these are
-            the current technology choices.
-          </TooltipContent>
+          <TooltipContent>{radarKeysText.preferred}</TooltipContent>
         </>
       }
-      aria-label={'Preferred'}
-      placement='right'
+      aria-label={"Preferred"}
+      placement="right"
       arrow
     >
       <div>
-        <KeyCircle color1={'#e6236d'} color2={'#290738'} color3={'#391A46'} />
+        <KeyCircle color1={"#e6236d"} color2={"#290738"} color3={"#391A46"} />
         <span>Preferred</span>
       </div>
     </KeyTooltip>

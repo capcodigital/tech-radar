@@ -1,23 +1,15 @@
-import React, { FC, useState, useContext } from 'react';
-import { useHistory } from 'react-router-dom';
-import { RadarContextType, RadarContext } from './RadarContextProvider';
-import * as d3 from 'd3';
-import styled from 'styled-components/macro';
-import { data } from './data/data';
-import images from './images';
-import StyledGroup from './StyledGroup';
-import { RadarTooltip } from './StyledTooltip';
+import React, { FC, useState, useContext } from "react";
+import { useHistory } from "react-router-dom";
+import { RadarContextType, RadarContext } from "./RadarContextProvider";
+import * as d3 from "d3";
+import styled from "styled-components/macro";
+import { data, categoryList } from "./data/data";
+import images from "./images";
+import StyledGroup from "./StyledGroup";
+import { RadarTooltip } from "./StyledTooltip";
+import { getRowLength } from "./helpers";
 
-const labels = [
-  'DevOps',
-  'Databases',
-  'Hosting',
-  'Cloud',
-  'Integration',
-  'Backend',
-  'Frontend',
-  'Mobile',
-];
+const labels = categoryList.reverse();
 
 const size = 900;
 const outterRadius = size / 2 - 100;
@@ -79,18 +71,10 @@ const StyledNav = styled.g`
   }
 `;
 
-const getRowLength = (dataNum: number, idx: number) => {
-  if (dataNum <= 3) return dataNum;
-  else if (dataNum > 3 || dataNum < 6) {
-    return idx < 3 ? 3 : dataNum - 3;
-  } else if (dataNum === 6) return dataNum / 2;
-  else return 0;
-};
-
 const Radar: FC = () => {
   let history = useHistory();
   const { setCategory } = useContext<RadarContextType>(RadarContext);
-  const [hovered, setHovered] = useState('DevOps');
+  const [hovered, setHovered] = useState("DevOps");
 
   const handleClick = (categoryName: string) => {
     setCategory(categoryName);
@@ -99,29 +83,29 @@ const Radar: FC = () => {
 
   return (
     <Wrapper>
-      <svg viewBox={'0 0 900 900'} style={{ overflow: 'visible' }}>
+      <svg viewBox={"0 0 900 900"} style={{ overflow: "visible" }}>
         <g transform={`translate(${size / 2} ${size / 2})`}>
           {/* 3 main rings */}
           <circle
             cx={0}
             cy={0}
             r={outterRadius}
-            fill={'#ffffff'}
-            stroke={'lightgrey'}
+            fill={"#ffffff"}
+            stroke={"lightgrey"}
             opacity={0.03}
           />
           <circle
             cx={0}
             cy={0}
             r={middleRadius}
-            fill={'#ffffff'}
+            fill={"#ffffff"}
             opacity={0.03}
           />
           <circle
             cx={0}
             cy={0}
             r={innerCircleRadius}
-            fill={'#ffffff'}
+            fill={"#ffffff"}
             opacity={0.05}
           />
 
@@ -132,7 +116,7 @@ const Radar: FC = () => {
               x1={0}
               y1={0}
               y2={outterRadius}
-              stroke={'white'}
+              stroke={"white"}
               strokeWidth={0.2}
             />
           ))}
@@ -166,37 +150,37 @@ const Radar: FC = () => {
                 />
                 <text
                   className={name}
-                  textAnchor='start'
+                  textAnchor="start"
                   x={60}
                   y={30}
                   fontSize={20}
                   fontWeight={700}
-                  fill={'white'}
+                  fill={"white"}
                 >
                   {labels[idx]}
                 </text>
                 <path
                   scale={0.5}
                   transform={`translate(${name.length * 9 + 60},17) scale(0.6)`}
-                  d='M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z'
-                  fill={'white'}
+                  d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                  fill={"white"}
                 />
               </StyledNav>
             );
           })}
           {/* labels for rings */}
           {[-1, 1].map((side: number) =>
-            ['scaling', 'skilled', 'preferred'].map(
+            ["scaling", "skilled", "preferred"].map(
               (segmentName: string, idx: number) => (
                 <g key={`${segmentName}-line`} transform={``}>
                   <text
-                    textAnchor='middle'
+                    textAnchor="middle"
                     y={
                       side *
                       (innerCircleRadius * (idx + 1) - innerCircleRadius / 2)
                     }
                     fontSize={12}
-                    fill={'white'}
+                    fill={"white"}
                     opacity={0.5}
                   >
                     {segmentName}
@@ -206,18 +190,18 @@ const Radar: FC = () => {
             )
           )}
           {[-1, 1].map((side: number) =>
-            ['scaling', 'skilled', 'preferred'].map(
+            ["scaling", "skilled", "preferred"].map(
               (segmentName: string, idx: number) => (
                 <g key={`${idx}-line`}>
                   <text
-                    textAnchor='middle'
+                    textAnchor="middle"
                     y={0}
                     x={
                       side *
                       (innerCircleRadius * (idx + 1) - innerCircleRadius / 2)
                     }
                     fontSize={12}
-                    fill={'white'}
+                    fill={"white"}
                     opacity={0.5}
                   >
                     {segmentName}
@@ -230,7 +214,8 @@ const Radar: FC = () => {
           {labels.map((tech: string, idx: number) => (
             <path
               key={`${tech}-arc`}
-              className={`arc`}
+              className={`arc ${tech}-segment`}
+              data-testid={`${tech}-arc`}
               d={
                 createArc({
                   startAngle: -Math.PI / 8 + (Math.PI / 8) * 2 * idx,
@@ -239,7 +224,7 @@ const Radar: FC = () => {
                   outerRadius: outterRadius,
                 })!
               }
-              fill={tech === hovered ? 'rgb(235, 35, 109, 0.3)' : 'transparent'}
+              fill={tech === hovered ? "rgb(235, 35, 109, 0.3)" : "transparent"}
               onMouseOver={() => setHovered(tech)}
               onClick={() => handleClick(tech)}
             />
@@ -247,7 +232,7 @@ const Radar: FC = () => {
 
           {data.map((tech: any) => {
             techIdx += 2;
-            return ['preferred', 'skilled', 'scaling'].map(
+            return ["preferred", "skilled", "scaling"].map(
               (category: any, catIdx: number) =>
                 tech.data[category].map((dataPoint: any, idx: number) => {
                   // split data into 2 rows if more than 3 data point
@@ -265,10 +250,10 @@ const Radar: FC = () => {
                       <RadarTooltip
                         title={dataPoint.name}
                         aria-label={dataPoint.name}
-                        placement='top'
+                        placement="top"
                         arrow
                       >
-                        <g>
+                        <g className={`techIcon-${dataPoint.name}`}>
                           {/* background circle for icons */}
                           <circle
                             key={`preferred-${dataPoint.name}-${idx}`}
@@ -298,7 +283,7 @@ const Radar: FC = () => {
                               )
                             }`}
                             r={dataPointCircleRadius}
-                            fill={'white'}
+                            fill={"white"}
                           />
 
                           <image
