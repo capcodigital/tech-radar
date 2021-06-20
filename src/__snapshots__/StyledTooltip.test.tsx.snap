@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tooltips should render CategoryRadarTooltip component 1`] = `
+<div
+  aria-label="Test"
+  class=""
+>
+  Test
+</div>
+`;
+
+exports[`Tooltips should render KeyTooltip component 1`] = `
+<div
+  aria-label="Test"
+  class=""
+>
+  Test
+</div>
+`;
+
+exports[`Tooltips should render RadarTooltip component 1`] = `
+<div
+  aria-label="Test"
+  class=""
+>
+  Test
+</div>
+`;

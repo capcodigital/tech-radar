@@ -1,15 +1,15 @@
-import React, { useContext, useEffect, useState } from 'react';
-import { RadarContextType, RadarContext } from './RadarContextProvider';
-import { Link } from 'react-router-dom';
-import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
-import CategoryRadar from './CategoryRadar';
-import Footer from './Footer';
-import Grid from '@material-ui/core/Grid';
-import MobileRadarBackground from './MobileRadarBackground';
-import StyledButton from './StyledButton';
-import { data, technologies, categoryList } from './data/data';
-import images from './images';
-import styled from 'styled-components/macro';
+import React, { useContext, useEffect, useState } from "react";
+import { RadarContextType, RadarContext } from "./RadarContextProvider";
+import { Link } from "react-router-dom";
+import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
+import CategoryRadar from "./CategoryRadar";
+import Footer from "./Footer";
+import Grid from "@material-ui/core/Grid";
+import MobileRadarBackground from "./MobileRadarBackground";
+import StyledButton from "./StyledButton";
+import { data, technologies, categoryList } from "./data/data";
+import images from "./images";
+import styled from "styled-components/macro";
 
 type WrapperProps = {
   category: string;
@@ -170,16 +170,19 @@ const CategoryPage = () => {
   const { category, setCategory, setTechnology } =
     useContext<RadarContextType>(RadarContext);
 
-  const [hovered, setHovered] = useState('');
+  const [hovered, setHovered] = useState("");
 
-  const [content, setContent] =
-    useState<{ name: string; data: ContentType } | null>(null);
+  const [content, setContent] = useState<{
+    name: string;
+    data: ContentType;
+  } | null>(null);
 
   useEffect(() => {
-    let url = window.location.pathname.split('/');
-    let categoriesAndTechnologies = technologies.filter(
-      ({ categoryName }) => categoryName.toLowerCase() === url[2]
-    )[0];
+    let url = window.location.pathname.split("/");
+    let categoriesAndTechnologies =
+      technologies.filter(
+        ({ categoryName }) => categoryName.toLowerCase() === url[2]
+      )[0] || technologies[0];
 
     let categoryName = categoriesAndTechnologies.categoryName;
 
@@ -188,7 +191,7 @@ const CategoryPage = () => {
 
     window.scroll({
       top: 0,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   }, [category, setCategory]);
 
@@ -199,36 +202,37 @@ const CategoryPage = () => {
       {content && (
         <Wrapper category={category}>
           <img
-            className='background'
+            className="background"
             src={(images as any)[category]}
             alt={category}
             width={650}
             height={650}
           />
           <MobileRadarBackground />
-          <div className='grid-wrapper'>
-            <div className='mobile-category'>
+          <div className="grid-wrapper">
+            <div className="mobile-category">
               <MobileTitle>{content.name}</MobileTitle>
               <img
-                className='category-icon'
+                className="category-icon"
                 src={(images as any)[category]}
                 alt={category}
                 width={126}
                 height={126}
               />
-              <div className='first-row-wrapper'>
+              <div className="first-row-wrapper">
                 <div>
                   <hr />
-                  <div className='title'>Preferred</div>
+                  <div className="title">Preferred</div>
                   {content.data.preferred.map(({ name }) => (
                     <div
                       key={name}
-                      className={`technology ${hovered === name && 'hovered'}`}
+                      className={`technology ${hovered === name && "hovered"}`}
                       onClick={() => setTechnology(name)}
+                      data-testid={`preferred-${name}`}
                     >
                       <Link
                         to={`/technology/${category.toLowerCase()}/${name
-                          .replace(' ', '-')
+                          .replace(" ", "-")
                           .toLowerCase()}`}
                       >
                         {name}
@@ -239,16 +243,17 @@ const CategoryPage = () => {
                 </div>
                 <div>
                   <hr />
-                  <div className='title'>Skilled</div>
+                  <div className="title">Skilled</div>
                   {content.data.skilled.map(({ name }) => (
                     <div
                       key={name}
-                      className={`technology ${hovered === name && 'hovered'}`}
+                      className={`technology ${hovered === name && "hovered"}`}
                       onClick={() => setTechnology(name)}
+                      data-testid={`skilled-${name}`}
                     >
                       <Link
                         to={`/technology/${category.toLowerCase()}/${name
-                          .replace(' ', '-')
+                          .replace(" ", "-")
                           .toLowerCase()}`}
                       >
                         {name}
@@ -260,16 +265,17 @@ const CategoryPage = () => {
               </div>
               <div>
                 <hr />
-                <div className='title'>Scaling</div>
+                <div className="title">Scaling</div>
                 {content.data.scaling.map(({ name }) => (
                   <div
                     key={name}
-                    className={`technology ${hovered === name && 'hovered'}`}
+                    className={`technology ${hovered === name && "hovered"}`}
                     onClick={() => setTechnology(name)}
+                    data-testid={`scaling-${name}`}
                   >
                     <Link
                       to={`/technology/${category.toLowerCase()}/${name
-                        .replace(' ', '-')
+                        .replace(" ", "-")
                         .toLowerCase()}`}
                     >
                       {name}
@@ -279,7 +285,7 @@ const CategoryPage = () => {
                 ))}
               </div>
               <div>
-                <div className='subheader-mobile'>Other Categories</div>
+                <div className="subheader-mobile">Other Categories</div>
                 <span>
                   {buttonText.slice(0, 4).map((text: string) => (
                     <StyledButton
@@ -301,29 +307,29 @@ const CategoryPage = () => {
               </div>
             </div>
 
-            <Grid container className='desktop-grid'>
+            <Grid container className="desktop-grid">
               <Grid item xs={12}>
                 <Title>{content.name}</Title>
                 <img
-                  className='category-icon'
+                  className="category-icon"
                   src={(images as any)[category]}
                   alt={category}
                   width={126}
                   height={126}
                 />
               </Grid>
-              <Grid item xs={4} className='large-screen'>
+              <Grid item xs={4} className="large-screen">
                 <hr />
-                <div className='title'>Preferred</div>
+                <div className="title">Preferred</div>
                 {content.data.preferred.map(({ name }) => (
                   <div
                     key={name}
-                    className={`technology ${hovered === name && 'hovered'}`}
+                    className={`technology ${hovered === name && "hovered"}`}
                     onClick={() => setTechnology(name)}
                   >
                     <Link
                       to={`/technology/${category.toLowerCase()}/${name
-                        .replace(' ', '-')
+                        .replace(" ", "-")
                         .toLowerCase()}`}
                     >
                       {name}
@@ -332,18 +338,18 @@ const CategoryPage = () => {
                   </div>
                 ))}
               </Grid>
-              <Grid item xs={4} className='large-screen'>
+              <Grid item xs={4} className="large-screen">
                 <hr />
-                <div className='title'>Skilled</div>
+                <div className="title">Skilled</div>
                 {content.data.skilled.map(({ name }) => (
                   <div
                     key={name}
-                    className={`technology ${hovered === name && 'hovered'}`}
+                    className={`technology ${hovered === name && "hovered"}`}
                     onClick={() => setTechnology(name)}
                   >
                     <Link
                       to={`/technology/${category.toLowerCase()}/${name
-                        .replace(' ', '-')
+                        .replace(" ", "-")
                         .toLowerCase()}`}
                     >
                       {name}
@@ -352,18 +358,18 @@ const CategoryPage = () => {
                   </div>
                 ))}
               </Grid>
-              <Grid item xs={4} className='large-screen'>
+              <Grid item xs={4} className="large-screen">
                 <hr />
-                <div className='title'>Scaling</div>
+                <div className="title">Scaling</div>
                 {content.data.scaling.map(({ name }) => (
                   <div
                     key={name}
-                    className={`technology ${hovered === name && 'hovered'}`}
+                    className={`technology ${hovered === name && "hovered"}`}
                     onClick={() => setTechnology(name)}
                   >
                     <Link
                       to={`/technology/${category.toLowerCase()}/${name
-                        .replace(' ', '-')
+                        .replace(" ", "-")
                         .toLowerCase()}`}
                     >
                       {name}
@@ -373,8 +379,8 @@ const CategoryPage = () => {
                 ))}
               </Grid>
 
-              <div className='subheader'>Other Categories</div>
-              <Grid className='categories-grid' item xs={12}>
+              <div className="subheader">Other Categories</div>
+              <Grid className="categories-grid" item xs={12}>
                 <span>
                   {buttonText.slice(0, 4).map((text: string) => (
                     <StyledButton

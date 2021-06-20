@@ -1,6 +1,6 @@
-import React, { FC, MouseEventHandler } from 'react';
-import { Link } from 'react-router-dom';
-import styled from 'styled-components/macro';
+import React, { FC, MouseEventHandler } from "react";
+import { Link } from "react-router-dom";
+import styled from "styled-components/macro";
 
 type StyledContentNavButtonProps = {
   align: string;
@@ -51,13 +51,17 @@ const ContentNavButton: FC<ContentNavButtonProps> = ({
   next,
 }) => {
   return (
-    <StyledContentNavButton align={next ? 'right' : 'left'} onClick={onClick}>
-      <div>{next ? 'Next' : 'Previous'}</div>
+    <StyledContentNavButton
+      align={next ? "right" : "left"}
+      onClick={onClick}
+      data-testid={next ? "Next" : "Previous"}
+    >
+      <div>{next ? "Next" : "Previous"}</div>
       {next ? (
         <Link
           to={`/technology/${nextCategory}/${nextTechnology.replace(
             /\s/g,
-            '-'
+            "-"
           )}`.toLowerCase()}
         >
           {nextTechnology}
@@ -66,7 +70,7 @@ const ContentNavButton: FC<ContentNavButtonProps> = ({
         <Link
           to={`/technology/${previousCategory}/${previousTechnology.replace(
             /\s/g,
-            '-'
+            "-"
           )}`.toLowerCase()}
         >
           {previousTechnology}

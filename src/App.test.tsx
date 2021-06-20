@@ -1,9 +1,13 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import React from "react";
+import { render, screen } from "@testing-library/react";
+import App from "./App";
+import { BrowserRouter as Router } from "react-router-dom";
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+it("should render App component and check for capco logo", () => {
+  render(
+    <Router>
+      <App />
+    </Router>
+  );
+  expect(screen.getByAltText("Large Logo")).toBeInTheDocument();
 });

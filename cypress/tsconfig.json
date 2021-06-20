@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "noEmit": true,
+    "types": ["cypress"],
+    "isolatedModules": false,
+    "jsx": "react"
+  },
+  "include": ["../node_modules/cypress", "./**/*.ts"]
+}

@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer should render Footer component 1`] = `
+<div
+  class="Footer__StyledFooter-r5mrbp-0 fVpWnk footer"
+>
+  <img
+    alt="Logo"
+    height="44"
+    src="logo.png"
+  />
+  <a
+    href="https://www.capco.com/"
+    rel="noreferrer"
+    target="_blank"
+  >
+    Capco @2021
+  </a>
+  <div>
+    All Rights Reserved
+  </div>
+</div>
+`;
