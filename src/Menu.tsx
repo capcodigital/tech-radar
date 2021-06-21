@@ -145,7 +145,7 @@ const Menu = () => {
                 key={`menu-${name}`}
                 button
                 component={Link}
-                to={`/category/${name.toLowerCase()}`}
+                to={`/category/${name.replace(/\s/g, "-").toLowerCase()}`}
                 onClick={() => handleClick(name)}
               >
                 {name}

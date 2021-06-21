@@ -1,11 +1,11 @@
-import React, { FC, MouseEventHandler } from 'react';
-import { Link } from 'react-router-dom';
-import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
-import images from './images';
-import styled from 'styled-components/macro';
+import React, { FC, MouseEventHandler } from "react";
+import { Link } from "react-router-dom";
+import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
+import images from "./images";
+import styled from "styled-components/macro";
 
 const ButtonWrapper = styled.div`
-  width: 300px;
+  width: 320px;
   height: 70px;
   font-size: 30px;
   border: 1px solid white;
@@ -32,7 +32,7 @@ type StyledButtonProps = {
 };
 
 export const StyledButton: FC<StyledButtonProps> = ({ name, onClick }) => (
-  <Link to={`/category/${name.toLowerCase()}`}>
+  <Link to={`/category/${name.replace(/\s/g, "-").toLowerCase()}`}>
     <ButtonWrapper onClick={onClick}>
       <img src={(images as any)[name]} alt={name} width={54} height={54} />
       <span>{name}</span>

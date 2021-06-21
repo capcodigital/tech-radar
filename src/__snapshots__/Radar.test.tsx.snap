@@ -123,7 +123,7 @@ exports[`Radar should render Radar component 1`] = `
           d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
           fill="white"
           scale="0.5"
-          transform="translate(114,17) scale(0.6)"
+          transform="translate(110,17) scale(0.6)"
         />
       </g>
       <g
@@ -152,7 +152,7 @@ exports[`Radar should render Radar component 1`] = `
           d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
           fill="white"
           scale="0.5"
-          transform="translate(141,17) scale(0.6)"
+          transform="translate(140,17) scale(0.6)"
         />
       </g>
       <g
@@ -161,13 +161,13 @@ exports[`Radar should render Radar component 1`] = `
       >
         <image
           height="50"
-          href="hosting.svg"
+          href="quality.svg"
           width="50"
           x="0"
           y="0"
         />
         <text
-          class="Hosting"
+          class="Quality Engineering"
           fill="white"
           font-size="20"
           font-weight="700"
@@ -175,13 +175,13 @@ exports[`Radar should render Radar component 1`] = `
           x="60"
           y="30"
         >
-          Hosting
+          Quality Engineering
         </text>
         <path
           d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
           fill="white"
           scale="0.5"
-          transform="translate(123,17) scale(0.6)"
+          transform="translate(200,17) scale(0.6)"
         />
       </g>
       <g
@@ -196,7 +196,7 @@ exports[`Radar should render Radar component 1`] = `
           y="0"
         />
         <text
-          class="Cloud"
+          class="Cloud & Platforms"
           fill="white"
           font-size="20"
           font-weight="700"
@@ -204,13 +204,13 @@ exports[`Radar should render Radar component 1`] = `
           x="60"
           y="30"
         >
-          Cloud
+          Cloud & Platforms
         </text>
         <path
           d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
           fill="white"
           scale="0.5"
-          transform="translate(105,17) scale(0.6)"
+          transform="translate(180,17) scale(0.6)"
         />
       </g>
       <g
@@ -239,7 +239,7 @@ exports[`Radar should render Radar component 1`] = `
           d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
           fill="white"
           scale="0.5"
-          transform="translate(159,17) scale(0.6)"
+          transform="translate(160,17) scale(0.6)"
         />
       </g>
       <g
@@ -268,7 +268,7 @@ exports[`Radar should render Radar component 1`] = `
           d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
           fill="white"
           scale="0.5"
-          transform="translate(123,17) scale(0.6)"
+          transform="translate(120,17) scale(0.6)"
         />
       </g>
       <g
@@ -297,7 +297,7 @@ exports[`Radar should render Radar component 1`] = `
           d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
           fill="white"
           scale="0.5"
-          transform="translate(132,17) scale(0.6)"
+          transform="translate(130,17) scale(0.6)"
         />
       </g>
       <g
@@ -326,7 +326,7 @@ exports[`Radar should render Radar component 1`] = `
           d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
           fill="white"
           scale="0.5"
-          transform="translate(114,17) scale(0.6)"
+          transform="translate(110,17) scale(0.6)"
         />
       </g>
       <g
@@ -492,15 +492,15 @@ exports[`Radar should render Radar component 1`] = `
         fill="transparent"
       />
       <path
-        class="arc Hosting-segment"
+        class="arc Quality Engineering-segment"
         d="M323.35783637895037,-133.93920132778143A350,350,0,0,1,323.35783637895037,133.93920132778143L0,0Z"
-        data-testid="Hosting-arc"
+        data-testid="Quality Engineering-arc"
         fill="transparent"
       />
       <path
-        class="arc Cloud-segment"
+        class="arc Cloud & Platforms-segment"
         d="M323.35783637895037,133.93920132778143A350,350,0,0,1,133.93920132778143,323.35783637895037L0,0Z"
-        data-testid="Cloud-arc"
+        data-testid="Cloud & Platforms-arc"
         fill="transparent"
       />
       <path
@@ -1065,8 +1065,8 @@ exports[`Radar should render Radar component 1`] = `
           title="BigQuery"
         >
           <circle
-            cx="61.282587702834164"
-            cy="-61.28258770283408"
+            cx="43.33333333333334"
+            cy="-75.05553499465135"
             fill="white"
             r="14"
           />
@@ -1074,8 +1074,8 @@ exports[`Radar should render Radar component 1`] = `
             height="19.79898987322333"
             href="https://symbols.getvecta.com/stencil_75/69_bigquery-icon.eb9185e8d2.svg"
             width="19.79898987322333"
-            x="51.3830927662225"
-            y="-71.18208263944574"
+            x="33.433838396721676"
+            y="-84.95502993126301"
           />
         </g>
       </g>
@@ -1084,9 +1084,57 @@ exports[`Radar should render Radar component 1`] = `
         opacity="0.3"
       >
         <g
-          aria-label="Kubernetes"
-          class="techIcon-Kubernetes"
-          title="Kubernetes"
+          aria-label="Snowflake"
+          class="techIcon-Snowflake"
+          title="Snowflake"
+        >
+          <circle
+            cx="61.28258770283411"
+            cy="-61.282587702834135"
+            fill="white"
+            r="14"
+          />
+          <image
+            height="19.79898987322333"
+            href="https://avatars.githubusercontent.com/u/6453780?s=280&v=4"
+            width="19.79898987322333"
+            x="51.38309276622244"
+            y="-71.1820826394458"
+          />
+        </g>
+      </g>
+      <g
+        class="StyledGroup-sc-4t6qtu-0 exblDQ"
+        opacity="0.3"
+      >
+        <g
+          aria-label="Liquibase"
+          class="techIcon-Liquibase"
+          title="Liquibase"
+        >
+          <circle
+            cx="75.05553499465137"
+            cy="-43.33333333333331"
+            fill="white"
+            r="14"
+          />
+          <image
+            height="19.79898987322333"
+            href="https://avatars.githubusercontent.com/u/438548?s=280&v=4"
+            width="19.79898987322333"
+            x="65.15604005803971"
+            y="-53.232828269944974"
+          />
+        </g>
+      </g>
+      <g
+        class="StyledGroup-sc-4t6qtu-0 exblDQ"
+        opacity="0.3"
+      >
+        <g
+          aria-label="Selenium"
+          class="techIcon-Selenium"
+          title="Selenium"
         >
           <circle
             cx="309.0962644125018"
@@ -1096,7 +1144,7 @@ exports[`Radar should render Radar component 1`] = `
           />
           <image
             height="19.79898987322333"
-            href="https://img.icons8.com/color/452/kubernetes.png"
+            href="https://static-00.iconduck.com/assets.00/selenium-icon-512x496-obrnvg2v.png"
             width="19.79898987322333"
             x="299.1967694758901"
             y="-92.72158936941857"
@@ -1108,9 +1156,9 @@ exports[`Radar should render Radar component 1`] = `
         opacity="0.3"
       >
         <g
-          aria-label="Serverless"
-          class="techIcon-Serverless"
-          title="Serverless"
+          aria-label="Cucumber"
+          class="techIcon-Cucumber"
+          title="Cucumber"
         >
           <circle
             cx="320"
@@ -1120,7 +1168,7 @@ exports[`Radar should render Radar component 1`] = `
           />
           <image
             height="19.79898987322333"
-            href="https://symbols.getvecta.com/stencil_95/69_serverless-icon.b1abb9b824.svg"
+            href="https://banner2.cleanpng.com/20180806/xkl/kisspng-cucumber-behavior-driven-development-software-test-cucumber-logo-svg-vector-amp-png-transparent-v-5b68353a7fad14.236653821533556026523.jpg"
             width="19.79898987322333"
             x="310.1005050633883"
             y="-9.899494936612028"
@@ -1132,9 +1180,9 @@ exports[`Radar should render Radar component 1`] = `
         opacity="0.3"
       >
         <g
-          aria-label="OpenShift"
-          class="techIcon-OpenShift"
-          title="OpenShift"
+          aria-label="Appium"
+          class="techIcon-Appium"
+          title="Appium"
         >
           <circle
             cx="309.0962644125019"
@@ -1144,7 +1192,7 @@ exports[`Radar should render Radar component 1`] = `
           />
           <image
             height="19.79898987322333"
-            href="https://symbols.getvecta.com/stencil_90/47_openshift-icon.e98513fd69.svg"
+            href="https://e7.pngegg.com/pngimages/366/527/png-clipart-appium-test-automation-software-testing-selenium-ios-logo-purple-violet.png"
             width="19.79898987322333"
             x="299.1967694758902"
             y="72.92259949619482"
@@ -1156,22 +1204,22 @@ exports[`Radar should render Radar component 1`] = `
         opacity="0.3"
       >
         <g
-          aria-label="PCF"
-          class="techIcon-PCF"
-          title="PCF"
+          aria-label="Restassured"
+          class="techIcon-Restassured"
+          title="Restassured"
         >
           <circle
-            cx="203.33333333333334"
-            cy="-4.9802303165325696e-14"
+            cx="251.1407148351577"
+            cy="-67.2929517266556"
             fill="white"
             r="14"
           />
           <image
             height="19.79898987322333"
-            href="https://avatars.githubusercontent.com/u/5497370?s=200&v=4"
+            href="https://i2.wp.com/www.entrofi.net/wp-content/uploads/2020/01/rest-assured-logo.png?fit=400%2C400&ssl=1"
             width="19.79898987322333"
-            x="193.43383839672168"
-            y="-9.899494936611715"
+            x="241.24121989854603"
+            y="-77.19244666326726"
           />
         </g>
       </g>
@@ -1180,22 +1228,214 @@ exports[`Radar should render Radar component 1`] = `
         opacity="0.3"
       >
         <g
-          aria-label="PKS"
-          class="techIcon-PKS"
-          title="PKS"
+          aria-label="Browserstack"
+          class="techIcon-Browserstack"
+          title="Browserstack"
         >
           <circle
-            cx="86.66666666666667"
-            cy="-2.122721118522079e-14"
+            cx="260"
+            cy="-2.9460802267769494e-13"
             fill="white"
             r="14"
           />
           <image
             height="19.79898987322333"
-            href="https://blogs.vmware.com/virtualblocks/files/2018/08/PKS-2.png"
+            href="https://www.browserstack.com/blog/favicon.png"
             width="19.79898987322333"
-            x="76.76717173005501"
-            y="-9.899494936611687"
+            x="250.10050506338834"
+            y="-9.89949493661196"
+          />
+        </g>
+      </g>
+      <g
+        class="StyledGroup-sc-4t6qtu-0 exblDQ"
+        opacity="0.3"
+      >
+        <g
+          aria-label="Sauce Labs"
+          class="techIcon-Sauce Labs"
+          title="Sauce Labs"
+        >
+          <circle
+            cx="251.14071483515778"
+            cy="67.29295172665526"
+            fill="white"
+            r="14"
+          />
+          <image
+            height="19.79898987322333"
+            href="https://symbols.getvecta.com/stencil_95/21_sauce-labs-icon.3db8e81715.svg"
+            width="19.79898987322333"
+            x="241.24121989854612"
+            y="57.393456790043594"
+          />
+        </g>
+      </g>
+      <g
+        class="StyledGroup-sc-4t6qtu-0 exblDQ"
+        opacity="0.3"
+      >
+        <g
+          aria-label="Wiremock"
+          class="techIcon-Wiremock"
+          title="Wiremock"
+        >
+          <circle
+            cx="196.40491801211053"
+            cy="-52.62653917084606"
+            fill="white"
+            r="14"
+          />
+          <image
+            height="19.79898987322333"
+            href="https://lh3.googleusercontent.com/proxy/TImAeIQiFveDA7nFR0i5Y9YgV7og9T5y3tjeaA4K_djJWQFPy7oKv1JAjX4MmZWSEy99drD1BlgHWHEkW22lY3IGtIqLpt6XVcJilOz0pA"
+            width="19.79898987322333"
+            x="186.50542307549887"
+            y="-62.526034107457725"
+          />
+        </g>
+      </g>
+      <g
+        class="StyledGroup-sc-4t6qtu-0 exblDQ"
+        opacity="0.3"
+      >
+        <g
+          aria-label="Applitools"
+          class="techIcon-Applitools"
+          title="Applitools"
+        >
+          <circle
+            cx="203.33333333333334"
+            cy="-2.303985818376845e-13"
+            fill="white"
+            r="14"
+          />
+          <image
+            height="19.79898987322333"
+            href="https://www.nuget.org/profiles/applitools/avatar?imageSize=512"
+            width="19.79898987322333"
+            x="193.43383839672168"
+            y="-9.899494936611896"
+          />
+        </g>
+      </g>
+      <g
+        class="StyledGroup-sc-4t6qtu-0 exblDQ"
+        opacity="0.3"
+      >
+        <g
+          aria-label="JMeter"
+          class="techIcon-JMeter"
+          title="JMeter"
+        >
+          <circle
+            cx="196.40491801211058"
+            cy="52.62653917084578"
+            fill="white"
+            r="14"
+          />
+          <image
+            height="19.79898987322333"
+            href="https://svn.apache.org/repos/asf/jmeter/trunk/xdocs/images/asf-logo.svg"
+            width="19.79898987322333"
+            x="186.50542307549892"
+            y="42.727044234234114"
+          />
+        </g>
+      </g>
+      <g
+        class="StyledGroup-sc-4t6qtu-0 exblDQ"
+        opacity="0.3"
+      >
+        <g
+          aria-label="Axe"
+          class="techIcon-Axe"
+          title="Axe"
+        >
+          <circle
+            cx="140.57922352446303"
+            cy="-27.962946155645117"
+            fill="white"
+            r="14"
+          />
+          <image
+            height="19.79898987322333"
+            href="https://www.deque.com/wp-content/uploads/2018/03/DQ_SecondaryLogo_HeroBlue_RGB-1.png"
+            width="19.79898987322333"
+            x="130.67972858785137"
+            y="-37.86244109225678"
+          />
+        </g>
+      </g>
+      <g
+        class="StyledGroup-sc-4t6qtu-0 exblDQ"
+        opacity="0.3"
+      >
+        <g
+          aria-label="Cypress"
+          class="techIcon-Cypress"
+          title="Cypress"
+        >
+          <circle
+            cx="140.57922352446303"
+            cy="27.96294615564505"
+            fill="white"
+            r="14"
+          />
+          <image
+            height="19.79898987322333"
+            href="https://icons-for-free.com/iconfiles/png/512/cypress-1324440144114984250.png"
+            width="19.79898987322333"
+            x="130.67972858785137"
+            y="18.063451219033382"
+          />
+        </g>
+      </g>
+      <g
+        class="StyledGroup-sc-4t6qtu-0 exblDQ"
+        opacity="0.3"
+      >
+        <g
+          aria-label="Gatling"
+          class="techIcon-Gatling"
+          title="Gatling"
+        >
+          <circle
+            cx="85.00139096827996"
+            cy="-16.90782790806449"
+            fill="white"
+            r="14"
+          />
+          <image
+            height="19.79898987322333"
+            href="https://assets-global.website-files.com/5dfb2c5f5b18187014b68b84/5e2e0ec72ca1f70c12148ea4_CR5gILun.png"
+            width="19.79898987322333"
+            x="75.1018960316683"
+            y="-26.807322844676158"
+          />
+        </g>
+      </g>
+      <g
+        class="StyledGroup-sc-4t6qtu-0 exblDQ"
+        opacity="0.3"
+      >
+        <g
+          aria-label="PACT"
+          class="techIcon-PACT"
+          title="PACT"
+        >
+          <circle
+            cx="85.00139096827998"
+            cy="16.907827908064448"
+            fill="white"
+            r="14"
+          />
+          <image
+            height="19.79898987322333"
+            href="https://pbs.twimg.com/profile_images/1326371726301798402/WxukgT47.png"
+            width="19.79898987322333"
+            x="75.10189603166832"
+            y="7.0083329714527824"
           />
         </g>
       </g>
@@ -1209,8 +1449,8 @@ exports[`Radar should render Radar component 1`] = `
           title="GCP"
         >
           <circle
-            cx="226.27416997969507"
-            cy="226.27416997969536"
+            cx="277.12812921102034"
+            cy="160"
             fill="white"
             r="14"
           />
@@ -1218,8 +1458,104 @@ exports[`Radar should render Radar component 1`] = `
             height="19.79898987322333"
             href="https://img.icons8.com/color/452/google-cloud.png"
             width="19.79898987322333"
-            x="216.3746750430834"
-            y="216.3746750430837"
+            x="267.22863427440865"
+            y="150.10050506338834"
+          />
+        </g>
+      </g>
+      <g
+        class="StyledGroup-sc-4t6qtu-0 exblDQ"
+        opacity="0.3"
+      >
+        <g
+          aria-label="Kubernetes"
+          class="techIcon-Kubernetes"
+          title="Kubernetes"
+        >
+          <circle
+            cx="226.27416997969527"
+            cy="226.27416997969516"
+            fill="white"
+            r="14"
+          />
+          <image
+            height="19.79898987322333"
+            href="https://img.icons8.com/color/452/kubernetes.png"
+            width="19.79898987322333"
+            x="216.3746750430836"
+            y="216.3746750430835"
+          />
+        </g>
+      </g>
+      <g
+        class="StyledGroup-sc-4t6qtu-0 exblDQ"
+        opacity="0.3"
+      >
+        <g
+          aria-label="Serverless"
+          class="techIcon-Serverless"
+          title="Serverless"
+        >
+          <circle
+            cx="159.99999999999991"
+            cy="277.12812921102045"
+            fill="white"
+            r="14"
+          />
+          <image
+            height="19.79898987322333"
+            href="https://symbols.getvecta.com/stencil_95/69_serverless-icon.b1abb9b824.svg"
+            width="19.79898987322333"
+            x="150.10050506338825"
+            y="267.22863427440876"
+          />
+        </g>
+      </g>
+      <g
+        class="StyledGroup-sc-4t6qtu-0 exblDQ"
+        opacity="0.3"
+      >
+        <g
+          aria-label="OpenShift"
+          class="techIcon-OpenShift"
+          title="OpenShift"
+        >
+          <circle
+            cx="216.18209919866172"
+            cy="144.44826058509665"
+            fill="white"
+            r="14"
+          />
+          <image
+            height="19.79898987322333"
+            href="https://symbols.getvecta.com/stencil_90/47_openshift-icon.e98513fd69.svg"
+            width="19.79898987322333"
+            x="206.28260426205006"
+            y="134.548765648485"
+          />
+        </g>
+      </g>
+      <g
+        class="StyledGroup-sc-4t6qtu-0 exblDQ"
+        opacity="0.3"
+      >
+        <g
+          aria-label="Grafana"
+          class="techIcon-Grafana"
+          title="Grafana"
+        >
+          <circle
+            cx="144.4482605850964"
+            cy="216.1820991986619"
+            fill="white"
+            r="14"
+          />
+          <image
+            height="19.79898987322333"
+            href="https://pics.freeicons.io/uploads/icons/png/8135670941548141941-512.png"
+            width="19.79898987322333"
+            x="134.54876564848473"
+            y="206.28260426205023"
           />
         </g>
       </g>
@@ -1233,8 +1569,8 @@ exports[`Radar should render Radar component 1`] = `
           title="AWS"
         >
           <circle
-            cx="169.0654878348508"
-            cy="112.96594738065252"
+            cx="176.09183210283587"
+            cy="101.66666666666667"
             fill="white"
             r="14"
           />
@@ -1242,8 +1578,8 @@ exports[`Radar should render Radar component 1`] = `
             height="19.79898987322333"
             href="https://img.icons8.com/color/452/amazon-web-services.png"
             width="19.79898987322333"
-            x="159.16599289823915"
-            y="103.06645244404086"
+            x="166.1923371662242"
+            y="91.76717173005501"
           />
         </g>
       </g>
@@ -1257,8 +1593,8 @@ exports[`Radar should render Radar component 1`] = `
           title="Azure"
         >
           <circle
-            cx="112.96594738065231"
-            cy="169.06548783485096"
+            cx="143.7783788412647"
+            cy="143.77837884126464"
             fill="white"
             r="14"
           />
@@ -1266,8 +1602,32 @@ exports[`Radar should render Radar component 1`] = `
             height="19.79898987322333"
             href="https://img.icons8.com/color/452/azure-1.png"
             width="19.79898987322333"
-            x="103.06645244404065"
-            y="159.1659928982393"
+            x="133.87888390465304"
+            y="133.87888390465298"
+          />
+        </g>
+      </g>
+      <g
+        class="StyledGroup-sc-4t6qtu-0 exblDQ"
+        opacity="0.3"
+      >
+        <g
+          aria-label="PCF"
+          class="techIcon-PCF"
+          title="PCF"
+        >
+          <circle
+            cx="101.66666666666661"
+            cy="176.0918321028359"
+            fill="white"
+            r="14"
+          />
+          <image
+            height="19.79898987322333"
+            href="https://avatars.githubusercontent.com/u/5497370?s=200&v=4"
+            width="19.79898987322333"
+            x="91.76717173005495"
+            y="166.19233716622423"
           />
         </g>
       </g>
@@ -1281,8 +1641,8 @@ exports[`Radar should render Radar component 1`] = `
           title="Digital Ocean"
         >
           <circle
-            cx="61.282587702834086"
-            cy="61.282587702834164"
+            cx="72.06069973288724"
+            cy="48.14942019503222"
             fill="white"
             r="14"
           />
@@ -1290,8 +1650,32 @@ exports[`Radar should render Radar component 1`] = `
             height="19.79898987322333"
             href="https://symbols.getvecta.com/stencil_78/61_digital-ocean-icon.0d013f7d26.svg"
             width="19.79898987322333"
-            x="51.38309276622242"
-            y="51.3830927662225"
+            x="62.16120479627558"
+            y="38.249925258420554"
+          />
+        </g>
+      </g>
+      <g
+        class="StyledGroup-sc-4t6qtu-0 exblDQ"
+        opacity="0.3"
+      >
+        <g
+          aria-label="PKS"
+          class="techIcon-PKS"
+          title="PKS"
+        >
+          <circle
+            cx="48.149420195032135"
+            cy="72.0606997328873"
+            fill="white"
+            r="14"
+          />
+          <image
+            height="19.79898987322333"
+            href="https://blogs.vmware.com/virtualblocks/files/2018/08/PKS-2.png"
+            width="19.79898987322333"
+            x="38.24992525842047"
+            y="62.161204796275634"
           />
         </g>
       </g>
@@ -1540,13 +1924,61 @@ exports[`Radar should render Radar component 1`] = `
         opacity="0.3"
       >
         <g
+          aria-label="Scala"
+          class="techIcon-Scala"
+          title="Scala"
+        >
+          <circle
+            cx="-144.44826058509645"
+            cy="216.18209919866186"
+            fill="white"
+            r="14"
+          />
+          <image
+            height="19.79898987322333"
+            href="https://www.scala-lang.org/resources/img/frontpage/scala-spiral.png"
+            width="19.79898987322333"
+            x="-154.3477555217081"
+            y="206.2826042620502"
+          />
+        </g>
+      </g>
+      <g
+        class="StyledGroup-sc-4t6qtu-0 exblDQ"
+        opacity="0.3"
+      >
+        <g
+          aria-label="Gradle"
+          class="techIcon-Gradle"
+          title="Gradle"
+        >
+          <circle
+            cx="-216.18209919866175"
+            cy="144.4482605850966"
+            fill="white"
+            r="14"
+          />
+          <image
+            height="19.79898987322333"
+            href="https://gradle.org/images/gradle-knowledge-graph-logo.png?20170228"
+            width="19.79898987322333"
+            x="-226.0815941352734"
+            y="134.54876564848493"
+          />
+        </g>
+      </g>
+      <g
+        class="StyledGroup-sc-4t6qtu-0 exblDQ"
+        opacity="0.3"
+      >
+        <g
           aria-label="Python"
           class="techIcon-Python"
           title="Python"
         >
           <circle
-            cx="-143.77837884126475"
-            cy="143.77837884126458"
+            cx="-112.96594738065235"
+            cy="169.06548783485093"
             fill="white"
             r="14"
           />
@@ -1554,8 +1986,32 @@ exports[`Radar should render Radar component 1`] = `
             height="19.79898987322333"
             href="https://img.icons8.com/color/452/python.png"
             width="19.79898987322333"
-            x="-153.6778737778764"
-            y="133.87888390465292"
+            x="-122.86544231726401"
+            y="159.16599289823927"
+          />
+        </g>
+      </g>
+      <g
+        class="StyledGroup-sc-4t6qtu-0 exblDQ"
+        opacity="0.3"
+      >
+        <g
+          aria-label="Groovy"
+          class="techIcon-Groovy"
+          title="Groovy"
+        >
+          <circle
+            cx="-169.06548783485084"
+            cy="112.96594738065247"
+            fill="white"
+            r="14"
+          />
+          <image
+            height="19.79898987322333"
+            href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Groovy-logo.svg/445px-Groovy-logo.svg.png"
+            width="19.79898987322333"
+            x="-178.9649827714625"
+            y="103.0664524440408"
           />
         </g>
       </g>
@@ -1593,8 +2049,8 @@ exports[`Radar should render Radar component 1`] = `
           title="React"
         >
           <circle
-            cx="-313.8512897290337"
-            cy="62.42890304516151"
+            cx="-309.09626441250185"
+            cy="82.82209443280665"
             fill="white"
             r="14"
           />
@@ -1602,8 +2058,8 @@ exports[`Radar should render Radar component 1`] = `
             height="19.79898987322333"
             href="https://img.icons8.com/color/452/react-native.png"
             width="19.79898987322333"
-            x="-323.75078466564537"
-            y="52.529408108549845"
+            x="-318.99575934911354"
+            y="72.92259949619499"
           />
         </g>
       </g>
@@ -1617,8 +2073,8 @@ exports[`Radar should render Radar component 1`] = `
           title="Angular"
         >
           <circle
-            cx="-313.8512897290338"
-            cy="-62.42890304516072"
+            cx="-320"
+            cy="1.175660927181459e-13"
             fill="white"
             r="14"
           />
@@ -1626,8 +2082,32 @@ exports[`Radar should render Radar component 1`] = `
             height="19.79898987322333"
             href="https://img.icons8.com/color/452/angularjs.png"
             width="19.79898987322333"
-            x="-323.7507846656455"
-            y="-72.32839798177238"
+            x="-329.8994949366117"
+            y="-9.899494936611548"
+          />
+        </g>
+      </g>
+      <g
+        class="StyledGroup-sc-4t6qtu-0 exblDQ"
+        opacity="0.3"
+      >
+        <g
+          aria-label="TypeScript"
+          class="techIcon-TypeScript"
+          title="TypeScript"
+        >
+          <circle
+            cx="-309.0962644125019"
+            cy="-82.82209443280644"
+            fill="white"
+            r="14"
+          />
+          <image
+            height="19.79898987322333"
+            href="https://img.icons8.com/color/452/typescript.png"
+            width="19.79898987322333"
+            x="-318.9957593491136"
+            y="-92.7215893694181"
           />
         </g>
       </g>
@@ -1689,8 +2169,8 @@ exports[`Radar should render Radar component 1`] = `
           title="React Native"
         >
           <circle
-            cx="-226.27416997969507"
-            cy="-226.27416997969533"
+            cx="-266.0702759368146"
+            cy="-177.78247456627255"
             fill="white"
             r="14"
           />
@@ -1698,8 +2178,32 @@ exports[`Radar should render Radar component 1`] = `
             height="19.79898987322333"
             href="https://img.icons8.com/color/452/react-native.png"
             width="19.79898987322333"
-            x="-236.17366491630673"
-            y="-236.173664916307"
+            x="-275.9697708734263"
+            y="-187.68196950288421"
+          />
+        </g>
+      </g>
+      <g
+        class="StyledGroup-sc-4t6qtu-0 exblDQ"
+        opacity="0.3"
+      >
+        <g
+          aria-label="Gradle"
+          class="techIcon-Gradle"
+          title="Gradle"
+        >
+          <circle
+            cx="-177.78247456627275"
+            cy="-266.0702759368144"
+            fill="white"
+            r="14"
+          />
+          <image
+            height="19.79898987322333"
+            href="https://gradle.org/images/gradle-knowledge-graph-logo.png?20170228"
+            width="19.79898987322333"
+            x="-187.6819695028844"
+            y="-275.9697708734261"
           />
         </g>
       </g>

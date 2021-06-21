@@ -102,7 +102,7 @@ const Wrapper = styled.div<WrapperProps>`
     text-align: left;
     .mobile-category {
       display: block;
-      margin-bottom: 100px;
+      margin: auto;
     }
     .grid-wrapper {
       display: flex;
@@ -141,16 +141,17 @@ const Wrapper = styled.div<WrapperProps>`
 `;
 
 const Title = styled.div`
-  font-size: 120px;
+  font-size: 90px;
   margin-bottom: 20px;
   font-weight: 700;
   text-align: left;
   display: inline-block;
   vertical-align: middle;
-  padding-right: 20px;
+  padding-right: 30px;
 `;
 
 const MobileTitle = styled.div`
+  width: 210px;
   font-size: 52px;
   padding-right: 20px;
   font-weight: 700;
@@ -179,9 +180,11 @@ const CategoryPage = () => {
 
   useEffect(() => {
     let url = window.location.pathname.split("/");
+
     let categoriesAndTechnologies =
       technologies.filter(
-        ({ categoryName }) => categoryName.toLowerCase() === url[2]
+        ({ categoryName }) =>
+          url[2] && categoryName.toLowerCase() === url[2].replace(/-/g, " ")
       )[0] || technologies[0];
 
     let categoryName = categoriesAndTechnologies.categoryName;
@@ -231,7 +234,9 @@ const CategoryPage = () => {
                       data-testid={`preferred-${name}`}
                     >
                       <Link
-                        to={`/technology/${category.toLowerCase()}/${name
+                        to={`/technology/${category
+                          .replace(/\s/g, "-")
+                          .toLowerCase()}/${name
                           .replace(" ", "-")
                           .toLowerCase()}`}
                       >
@@ -252,7 +257,9 @@ const CategoryPage = () => {
                       data-testid={`skilled-${name}`}
                     >
                       <Link
-                        to={`/technology/${category.toLowerCase()}/${name
+                        to={`/technology/${category
+                          .replace(/\s/g, "-")
+                          .toLowerCase()}/${name
                           .replace(" ", "-")
                           .toLowerCase()}`}
                       >
@@ -274,7 +281,9 @@ const CategoryPage = () => {
                     data-testid={`scaling-${name}`}
                   >
                     <Link
-                      to={`/technology/${category.toLowerCase()}/${name
+                      to={`/technology/${category
+                        .replace(/\s/g, "-")
+                        .toLowerCase()}/${name
                         .replace(" ", "-")
                         .toLowerCase()}`}
                     >
@@ -328,7 +337,9 @@ const CategoryPage = () => {
                     onClick={() => setTechnology(name)}
                   >
                     <Link
-                      to={`/technology/${category.toLowerCase()}/${name
+                      to={`/technology/${category
+                        .replace(/\s/g, "-")
+                        .toLowerCase()}/${name
                         .replace(" ", "-")
                         .toLowerCase()}`}
                     >
@@ -348,8 +359,10 @@ const CategoryPage = () => {
                     onClick={() => setTechnology(name)}
                   >
                     <Link
-                      to={`/technology/${category.toLowerCase()}/${name
-                        .replace(" ", "-")
+                      to={`/technology/${category
+                        .replace(/\s/g, "-")
+                        .toLowerCase()}/${name
+                        .replace(/\s/g, "-")
                         .toLowerCase()}`}
                     >
                       {name}
@@ -368,8 +381,10 @@ const CategoryPage = () => {
                     onClick={() => setTechnology(name)}
                   >
                     <Link
-                      to={`/technology/${category.toLowerCase()}/${name
-                        .replace(" ", "-")
+                      to={`/technology/${category
+                        .replace(/\s/g, "-")
+                        .toLowerCase()}/${name
+                        .replace(/\s/g, "-")
                         .toLowerCase()}`}
                     >
                       {name}

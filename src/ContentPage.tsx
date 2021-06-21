@@ -119,7 +119,8 @@ const CategoryPage = () => {
     // Find category and tech name in technologies data
     let categoriesAndTechnologies =
       technologies.filter(
-        ({ categoryName }) => categoryName.toLowerCase() === url[2]
+        ({ categoryName }) =>
+          url[2] && categoryName.toLowerCase() === url[2].replace(/-/g, " ")
       )[0] || technologies[0];
 
     let technologyFromUrl =

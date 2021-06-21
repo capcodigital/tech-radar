@@ -3,13 +3,22 @@ import { useHistory } from "react-router-dom";
 import { RadarContextType, RadarContext } from "./RadarContextProvider";
 import * as d3 from "d3";
 import styled from "styled-components/macro";
-import { data, categoryList } from "./data/data";
+import { data } from "./data/data";
 import images from "./images";
 import StyledGroup from "./StyledGroup";
 import { RadarTooltip } from "./StyledTooltip";
 import { getRowLength } from "./helpers";
 
-const labels = categoryList.reverse();
+const labels = [
+  "DevOps",
+  "Databases",
+  "Quality Engineering",
+  "Cloud & Platforms",
+  "Integration",
+  "Backend",
+  "Frontend",
+  "Mobile",
+];
 
 const size = 900;
 const outterRadius = size / 2 - 100;
@@ -78,7 +87,7 @@ const Radar: FC = () => {
 
   const handleClick = (categoryName: string) => {
     setCategory(categoryName);
-    history.push(`/category/${categoryName}`.toLowerCase());
+    history.push(`/category/${categoryName.replace(/\s/g, "-")}`.toLowerCase());
   };
 
   return (
@@ -161,7 +170,11 @@ const Radar: FC = () => {
                 </text>
                 <path
                   scale={0.5}
-                  transform={`translate(${name.length * 9 + 60},17) scale(0.6)`}
+                  transform={`translate(${
+                    name.length > 11
+                      ? name.length * 10 + 10
+                      : name.length * 10 + 50
+                  },17) scale(0.6)`}
                   d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
                   fill={"white"}
                 />
