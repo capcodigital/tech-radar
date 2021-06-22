@@ -28,7 +28,7 @@ const StyledContentNavButton = styled.div<StyledContentNavButtonProps>`
       font-size: 19px;
     }
     a:nth-child(2) {
-      font-size: 44px;
+      font-size: 40px;
     }
   }
 `;
@@ -59,19 +59,19 @@ const ContentNavButton: FC<ContentNavButtonProps> = ({
       <div>{next ? "Next" : "Previous"}</div>
       {next ? (
         <Link
-          to={`/technology/${nextCategory}/${nextTechnology.replace(
+          to={`/technology/${nextCategory.replace(
             /\s/g,
             "-"
-          )}`.toLowerCase()}
+          )}/${nextTechnology.replace(/\s/g, "-")}`.toLowerCase()}
         >
           {nextTechnology}
         </Link>
       ) : (
         <Link
-          to={`/technology/${previousCategory}/${previousTechnology.replace(
+          to={`/technology/${previousCategory.replace(
             /\s/g,
             "-"
-          )}`.toLowerCase()}
+          )}/${previousTechnology.replace(/\s/g, "-")}`.toLowerCase()}
         >
           {previousTechnology}
         </Link>

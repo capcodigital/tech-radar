@@ -9,7 +9,9 @@ describe("Category Page", () => {
     return it(`should click ${label} button and check that user is redirected to the correct category page`, () => {
       cy.contains("a", label).click({ force: true });
       cy.location().should((location) => {
-        expect(location.pathname).to.eq(`/category/${label.toLowerCase()}`);
+        expect(location.pathname).to.eq(
+          `/category/${label.replace(/-/g, " ").toLowerCase()}`
+        );
       });
     });
   });

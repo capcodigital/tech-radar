@@ -3,13 +3,22 @@ import { useHistory } from "react-router-dom";
 import { RadarContextType, RadarContext } from "./RadarContextProvider";
 import * as d3 from "d3";
 import styled from "styled-components/macro";
-import { data, categoryList } from "./data/data";
+import { data } from "./data/data";
 import images from "./images";
 import StyledGroup from "./StyledGroup";
 import { RadarTooltip } from "./StyledTooltip";
 import { getRowLength } from "./helpers";
 
-const labels = categoryList.reverse();
+const labels = [
+  "DevOps",
+  "Databases",
+  "Quality Engineering",
+  "Cloud & Platforms",
+  "Integration",
+  "Backend",
+  "Frontend",
+  "Mobile",
+];
 
 const size = 900;
 const outterRadius = size / 2 - 100;
@@ -73,12 +82,24 @@ const StyledNav = styled.g`
 
 const Radar: FC = () => {
   let history = useHistory();
-  const { setCategory } = useContext<RadarContextType>(RadarContext);
+  const { setCategory, setTechnology } =
+    useContext<RadarContextType>(RadarContext);
   const [hovered, setHovered] = useState("DevOps");
 
   const handleClick = (categoryName: string) => {
     setCategory(categoryName);
-    history.push(`/category/${categoryName}`.toLowerCase());
+    history.push(`/category/${categoryName.replace(/\s/g, "-")}`.toLowerCase());
+  };
+
+  const handleClickIcon = (categoryName: string, technologyName: string) => {
+    setCategory(categoryName);
+    setTechnology(technologyName);
+
+    history.push(
+      `/technology/${categoryName}/${technologyName}`
+        .replace(/\s/g, "-")
+        .toLowerCase()
+    );
   };
 
   return (
@@ -161,7 +182,11 @@ const Radar: FC = () => {
                 </text>
                 <path
                   scale={0.5}
-                  transform={`translate(${name.length * 9 + 60},17) scale(0.6)`}
+                  transform={`translate(${
+                    name.length > 11
+                      ? name.length * 10 + 10
+                      : name.length * 10 + 50
+                  },17) scale(0.6)`}
                   d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
                   fill={"white"}
                 />
@@ -230,22 +255,25 @@ const Radar: FC = () => {
             />
           ))}
 
-          {data.map((tech: any) => {
+          {data.map((segment: any) => {
             techIdx += 2;
             return ["preferred", "skilled", "scaling"].map(
               (category: any, catIdx: number) =>
-                tech.data[category].map((dataPoint: any, idx: number) => {
+                segment.data[category].map((dataPoint: any, idx: number) => {
                   // split data into 2 rows if more than 3 data point
                   let r = idx > 2 ? radius[catIdx] - 90 : radius[catIdx] - 30;
                   let dataLengthPerRow = getRowLength(
-                    tech.data[category].length,
+                    segment.data[category].length,
                     idx
                   );
 
                   return (
                     <StyledGroup
                       key={`preferred-${idx}`}
-                      opacity={hovered === tech.name ? 1 : 0.3}
+                      opacity={hovered === segment.name ? 1 : 0.3}
+                      onClick={() =>
+                        handleClickIcon(segment.name, dataPoint.name)
+                      }
                     >
                       <RadarTooltip
                         title={dataPoint.name}

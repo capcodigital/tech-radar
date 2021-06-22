@@ -16,7 +16,7 @@ exports[`ContentPage should render ContentPage component 1`] = `
   >
     <div>
       <div
-        class="BackLink__StyledBackLink-cr2dtx-0 kmXpKe"
+        class="BackLink__StyledBackLink-cr2dtx-0 hkDCpP"
       >
         <a
           href="/category/devops"
@@ -389,7 +389,7 @@ exports[`ContentPage should render ContentPage component 1`] = `
           class="content-nav"
         >
           <div
-            class="ContentNavButton__StyledContentNavButton-sxnsax-0 kfJhiI"
+            class="ContentNavButton__StyledContentNavButton-sxnsax-0 fXGzKw"
             data-testid="Previous"
           >
             <div>
@@ -402,7 +402,7 @@ exports[`ContentPage should render ContentPage component 1`] = `
             </a>
           </div>
           <div
-            class="ContentNavButton__StyledContentNavButton-sxnsax-0 gliDNn"
+            class="ContentNavButton__StyledContentNavButton-sxnsax-0 cdfWpb"
             data-testid="Next"
           >
             <div>

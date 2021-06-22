@@ -1,8 +1,8 @@
-import React, { FC } from 'react';
-import { Link } from 'react-router-dom';
-import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
-import styled from 'styled-components/macro';
-import images from './images';
+import React, { FC } from "react";
+import { Link } from "react-router-dom";
+import NavigateBeforeIcon from "@material-ui/icons/NavigateBefore";
+import styled from "styled-components/macro";
+import images from "./images";
 type BackLinkType = {
   category: string;
 };
@@ -10,9 +10,10 @@ type BackLinkType = {
 const StyledBackLink = styled.div`
   font-size: 17px;
   a {
-    width: 160px;
-    display: flex;
     color: inherit;
+    img {
+      margin-left: 10px;
+    }
   }
   :hover {
     a {
@@ -24,7 +25,7 @@ const StyledBackLink = styled.div`
 
 const BackLink: FC<BackLinkType> = ({ category }) => (
   <StyledBackLink>
-    <Link to={`/category/${category.toLowerCase()}`}>
+    <Link to={`/category/${category.replace(/\s/g, "-").toLowerCase()}`}>
       <NavigateBeforeIcon />
       Back to {category}
       <img

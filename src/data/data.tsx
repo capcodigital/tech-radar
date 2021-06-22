@@ -117,13 +117,88 @@ export const data: Array<{ name: string; data: techType }> = [
           name: "BigQuery",
           link: "https://symbols.getvecta.com/stencil_75/69_bigquery-icon.eb9185e8d2.svg",
         },
+        {
+          name: "Snowflake",
+          link: "https://avatars.githubusercontent.com/u/6453780?s=280&v=4",
+        },
+        {
+          name: "Liquibase",
+          link: "https://avatars.githubusercontent.com/u/438548?s=280&v=4",
+        },
       ],
     },
   },
   {
-    name: "Hosting",
+    name: "Quality Engineering",
     data: {
       preferred: [
+        {
+          name: "Selenium",
+          link: "https://static-00.iconduck.com/assets.00/selenium-icon-512x496-obrnvg2v.png",
+        },
+        {
+          name: "Cucumber",
+          link: "https://banner2.cleanpng.com/20180806/xkl/kisspng-cucumber-behavior-driven-development-software-test-cucumber-logo-svg-vector-amp-png-transparent-v-5b68353a7fad14.236653821533556026523.jpg",
+        },
+        {
+          name: "Appium",
+          link: "https://e7.pngegg.com/pngimages/366/527/png-clipart-appium-test-automation-software-testing-selenium-ios-logo-purple-violet.png",
+        },
+        {
+          name: "REST Assured",
+          link: "https://i2.wp.com/www.entrofi.net/wp-content/uploads/2020/01/rest-assured-logo.png?fit=400%2C400&ssl=1",
+        },
+        {
+          name: "BrowserStack",
+          link: "https://www.browserstack.com/blog/favicon.png",
+        },
+        {
+          name: "Sauce Labs",
+          link: "https://symbols.getvecta.com/stencil_95/21_sauce-labs-icon.3db8e81715.svg",
+        },
+      ],
+      skilled: [
+        {
+          name: "Wiremock",
+          link: "https://lh3.googleusercontent.com/proxy/TImAeIQiFveDA7nFR0i5Y9YgV7og9T5y3tjeaA4K_djJWQFPy7oKv1JAjX4MmZWSEy99drD1BlgHWHEkW22lY3IGtIqLpt6XVcJilOz0pA",
+        },
+        {
+          name: "Applitools",
+          link: "https://www.nuget.org/profiles/applitools/avatar?imageSize=512",
+        },
+        {
+          name: "JMeter",
+          link: "https://svn.apache.org/repos/asf/jmeter/trunk/xdocs/images/asf-logo.svg",
+        },
+        {
+          name: "Axe",
+          link: "https://www.deque.com/wp-content/uploads/2018/03/DQ_SecondaryLogo_HeroBlue_RGB-1.png",
+        },
+        {
+          name: "Cypress",
+          link: "https://icons-for-free.com/iconfiles/png/512/cypress-1324440144114984250.png",
+        },
+      ],
+      scaling: [
+        {
+          name: "Gatling",
+          link: "https://assets-global.website-files.com/5dfb2c5f5b18187014b68b84/5e2e0ec72ca1f70c12148ea4_CR5gILun.png",
+        },
+        {
+          name: "PACT",
+          link: "https://pbs.twimg.com/profile_images/1326371726301798402/WxukgT47.png",
+        },
+      ],
+    },
+  },
+  {
+    name: "Cloud & Platforms",
+    data: {
+      preferred: [
+        {
+          name: "GCP",
+          link: "https://img.icons8.com/color/452/google-cloud.png",
+        },
         {
           name: "Kubernetes",
           link: "https://img.icons8.com/color/452/kubernetes.png",
@@ -136,28 +211,9 @@ export const data: Array<{ name: string; data: techType }> = [
           name: "OpenShift",
           link: "https://symbols.getvecta.com/stencil_90/47_openshift-icon.e98513fd69.svg",
         },
-      ],
-      skilled: [
         {
-          name: "PCF",
-          link: "https://avatars.githubusercontent.com/u/5497370?s=200&v=4",
-        },
-      ],
-      scaling: [
-        {
-          name: "PKS",
-          link: "https://blogs.vmware.com/virtualblocks/files/2018/08/PKS-2.png",
-        },
-      ],
-    },
-  },
-  {
-    name: "Cloud",
-    data: {
-      preferred: [
-        {
-          name: "GCP",
-          link: "https://img.icons8.com/color/452/google-cloud.png",
+          name: "Grafana",
+          link: "https://pics.freeicons.io/uploads/icons/png/8135670941548141941-512.png",
         },
       ],
       skilled: [
@@ -166,11 +222,19 @@ export const data: Array<{ name: string; data: techType }> = [
           link: "https://img.icons8.com/color/452/amazon-web-services.png",
         },
         { name: "Azure", link: "https://img.icons8.com/color/452/azure-1.png" },
+        {
+          name: "PCF",
+          link: "https://avatars.githubusercontent.com/u/5497370?s=200&v=4",
+        },
       ],
       scaling: [
         {
           name: "Digital Ocean",
           link: "https://symbols.getvecta.com/stencil_78/61_digital-ocean-icon.0d013f7d26.svg",
+        },
+        {
+          name: "PKS",
+          link: "https://blogs.vmware.com/virtualblocks/files/2018/08/PKS-2.png",
         },
       ],
     },
@@ -224,9 +288,21 @@ export const data: Array<{ name: string; data: techType }> = [
           link: "https://www.iamsteveni.com/static/img/nodejs.png",
         },
         { name: "Go", link: "https://img.icons8.com/color/344/golang.png" },
+        {
+          name: "Scala",
+          link: "https://www.scala-lang.org/resources/img/frontpage/scala-spiral.png",
+        },
+        {
+          name: "Gradle",
+          link: "https://gradle.org/images/gradle-knowledge-graph-logo.png?20170228",
+        },
       ],
       skilled: [
         { name: "Python", link: "https://img.icons8.com/color/452/python.png" },
+        {
+          name: "Groovy",
+          link: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Groovy-logo.svg/445px-Groovy-logo.svg.png",
+        },
       ],
       scaling: [
         { name: "Kotlin", link: "https://img.icons8.com/color/344/kotlin.png" },
@@ -244,6 +320,10 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Angular",
           link: "https://img.icons8.com/color/452/angularjs.png",
+        },
+        {
+          name: "TypeScript",
+          link: "https://img.icons8.com/color/452/typescript.png",
         },
       ],
       skilled: [],
@@ -263,6 +343,10 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "React Native",
           link: "https://img.icons8.com/color/452/react-native.png",
+        },
+        {
+          name: "Gradle",
+          link: "https://gradle.org/images/gradle-knowledge-graph-logo.png?20170228",
         },
       ],
       skilled: [
@@ -381,6 +465,66 @@ export const icons: Array<{ name: string; link: string }> = [
     link: "https://symbols.getvecta.com/stencil_75/69_bigquery-icon.eb9185e8d2.svg",
   },
   {
+    name: "Snowflake",
+    link: "https://avatars.githubusercontent.com/u/6453780?s=280&v=4",
+  },
+  {
+    name: "Liquibase",
+    link: "https://avatars.githubusercontent.com/u/438548?s=280&v=4",
+  },
+  {
+    name: "Selenium",
+    link: "https://static-00.iconduck.com/assets.00/selenium-icon-512x496-obrnvg2v.png",
+  },
+  {
+    name: "Cucumber",
+    link: "https://banner2.cleanpng.com/20180806/xkl/kisspng-cucumber-behavior-driven-development-software-test-cucumber-logo-svg-vector-amp-png-transparent-v-5b68353a7fad14.236653821533556026523.jpg",
+  },
+  {
+    name: "Appium",
+    link: "https://e7.pngegg.com/pngimages/366/527/png-clipart-appium-test-automation-software-testing-selenium-ios-logo-purple-violet.png",
+  },
+  {
+    name: "REST Assured",
+    link: "https://i2.wp.com/www.entrofi.net/wp-content/uploads/2020/01/rest-assured-logo.png?fit=400%2C400&ssl=1",
+  },
+  {
+    name: "BrowserStack",
+    link: "https://www.browserstack.com/blog/favicon.png",
+  },
+  {
+    name: "Sauce Labs",
+    link: "https://symbols.getvecta.com/stencil_95/21_sauce-labs-icon.3db8e81715.svg",
+  },
+  {
+    name: "Wiremock",
+    link: "https://lh3.googleusercontent.com/proxy/TImAeIQiFveDA7nFR0i5Y9YgV7og9T5y3tjeaA4K_djJWQFPy7oKv1JAjX4MmZWSEy99drD1BlgHWHEkW22lY3IGtIqLpt6XVcJilOz0pA",
+  },
+  {
+    name: "Applitools",
+    link: "https://www.nuget.org/profiles/applitools/avatar?imageSize=512",
+  },
+  {
+    name: "JMeter",
+    link: "https://svn.apache.org/repos/asf/jmeter/trunk/xdocs/images/asf-logo.svg",
+  },
+  {
+    name: "Axe",
+    link: "https://www.deque.com/wp-content/uploads/2018/03/DQ_SecondaryLogo_HeroBlue_RGB-1.png",
+  },
+  {
+    name: "Cypress",
+    link: "https://icons-for-free.com/iconfiles/png/512/cypress-1324440144114984250.png",
+  },
+  {
+    name: "Gatling",
+    link: "https://assets-global.website-files.com/5dfb2c5f5b18187014b68b84/5e2e0ec72ca1f70c12148ea4_CR5gILun.png",
+  },
+  {
+    name: "PACT",
+    link: "https://pbs.twimg.com/profile_images/1326371726301798402/WxukgT47.png",
+  },
+  {
     name: "Kubernetes",
     link: "https://img.icons8.com/color/452/kubernetes.png",
   },
@@ -409,7 +553,10 @@ export const icons: Array<{ name: string; link: string }> = [
     link: "https://img.icons8.com/color/452/amazon-web-services.png",
   },
   { name: "Azure", link: "https://img.icons8.com/color/452/azure-1.png" },
-
+  {
+    name: "Grafana",
+    link: "https://pics.freeicons.io/uploads/icons/png/8135670941548141941-512.png",
+  },
   {
     name: "Digital Ocean",
     link: "https://symbols.getvecta.com/stencil_78/61_digital-ocean-icon.0d013f7d26.svg",
@@ -427,7 +574,6 @@ export const icons: Array<{ name: string; link: string }> = [
     name: "Kafka",
     link: "https://symbols.getvecta.com/stencil_74/14_apache-kafka-icon.96e46bbe3a.svg",
   },
-
   {
     name: "ActiveM",
     link: "https://symbols.getvecta.com/stencil_73/17_activemq-icon.66dcff47ad.svg",
@@ -436,12 +582,10 @@ export const icons: Array<{ name: string; link: string }> = [
     name: "IBM MQ",
     link: "https://anypoint.mulesoft.com/exchange/organizations/68ef9520-24e9-4cf2-b2f5-620025690913/assets/com.mulesoft.connectors/mule-ibm-mq-connector/icon/svg/?sha=97c7ca8fde33f64f5da710f17de072de73f67b11",
   },
-
   {
     name: "GraphQL",
     link: "https://symbols.getvecta.com/stencil_82/66_graphql-icon.291fc05a38.svg",
   },
-
   {
     name: "Java",
     link: "https://img.icons8.com/color/452/java-coffee-cup-logo.png",
@@ -453,7 +597,14 @@ export const icons: Array<{ name: string; link: string }> = [
   { name: "Go", link: "https://img.icons8.com/color/344/golang.png" },
 
   { name: "Python", link: "https://img.icons8.com/color/452/python.png" },
-
+  {
+    name: "Scala",
+    link: "https://www.scala-lang.org/resources/img/frontpage/scala-spiral.png",
+  },
+  {
+    name: "Gradle",
+    link: "https://gradle.org/images/gradle-knowledge-graph-logo.png?20170228",
+  },
   { name: "Kotlin", link: "https://img.icons8.com/color/344/kotlin.png" },
   {
     name: "React",
@@ -464,8 +615,8 @@ export const icons: Array<{ name: string; link: string }> = [
     link: "https://img.icons8.com/color/452/angularjs.png",
   },
   {
-    name: "Flutter",
-    link: "https://img.icons8.com/color/452/flutter.png",
+    name: "TypeScript",
+    link: "https://img.icons8.com/color/452/typescript.png",
   },
   { name: "Vue", link: "https://img.icons8.com/color/344/vue-js.png" },
   {
@@ -521,15 +672,42 @@ export const technologies = [
       "Oracle",
       "SQL Server",
       "BigQuery",
+      "Snowflake",
+      "Liquibase",
     ],
   },
   {
-    categoryName: "Hosting",
-    technologies: ["Kubernetes", "Serverless", "OpenShift", "PCF", "PKS"],
+    categoryName: "Quality Engineering",
+    technologies: [
+      "Selenium",
+      "Cucumber",
+      "Appium",
+      "REST Assured",
+      "BrowserStack",
+      "Sauce Labs",
+      "Wiremock",
+      "Applitools",
+      "JMeter",
+      "Axe",
+      "Cypress",
+      "Gatling",
+      "PACT",
+    ],
   },
   {
-    categoryName: "Cloud",
-    technologies: ["GCP", "AWS", "Azure", "Digital Ocean"],
+    categoryName: "Cloud & Platforms",
+    technologies: [
+      "GCP",
+      "AWS",
+      "Azure",
+      "Digital Ocean",
+      "Kubernetes",
+      "Serverless",
+      "OpenShift",
+      "PCF",
+      "PKS",
+      "Grafana",
+    ],
   },
   {
     categoryName: "Integration",
@@ -545,11 +723,20 @@ export const technologies = [
   },
   {
     categoryName: "Backend",
-    technologies: ["Java", "Node", "Go", "Python", "Kotlin"],
+    technologies: [
+      "Java",
+      "Node",
+      "Go",
+      "Python",
+      "Kotlin",
+      "Scala",
+      "Gradle",
+      "Groovy",
+    ],
   },
   {
     categoryName: "Frontend",
-    technologies: ["React", "Angular", "Flutter", "Vue"],
+    technologies: ["React", "Angular", "Flutter", "Vue", "TypeScript"],
   },
   {
     categoryName: "Mobile",
@@ -560,6 +747,7 @@ export const technologies = [
       "Java",
       "Ionic",
       "Flutter",
+      "Gradle",
     ],
   },
 ];
@@ -569,8 +757,8 @@ export const categoryList = [
   "Frontend",
   "Backend",
   "Integration",
-  "Cloud",
-  "Hosting",
+  "Cloud & Platforms",
+  "Quality Engineering",
   "Databases",
   "DevOps",
 ];
@@ -599,6 +787,20 @@ export const technologyList = [
   "Oracle",
   "SQL Server",
   "BigQuery",
+  "Snowflake",
+  "Selenium",
+  "Cucumber",
+  "Appium",
+  "REST Assured",
+  "BrowserStack",
+  "Sauce Labs",
+  "Wiremock",
+  "Applitools",
+  "JMeter ",
+  "Axe",
+  "Cypress",
+  "Gatling",
+  "PACT",
   "Kubernetes",
   "Serverless",
   "OpenShift",
@@ -606,6 +808,7 @@ export const technologyList = [
   "PKS",
   "GCP",
   "AWS",
+  "Grafana",
   "Azure",
   "Digital Ocean",
   "Rest",
@@ -624,6 +827,7 @@ export const technologyList = [
   "Angular",
   "Flutter",
   "Vue",
+  "TypeScript",
   "React Native",
   "Swift",
   "Kotlin",

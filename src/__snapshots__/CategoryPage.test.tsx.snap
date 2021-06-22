@@ -2,7 +2,7 @@
 
 exports[`CategoryPage should render CategoryPage component 1`] = `
 <div
-  class="CategoryPage__Wrapper-sc-1lo89a8-0 gJujHL"
+  class="CategoryPage__Wrapper-sc-1lo89a8-0 HNblX"
 >
   <img
     alt="DevOps"
@@ -45,7 +45,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
       class="mobile-category"
     >
       <div
-        class="CategoryPage__MobileTitle-sc-1lo89a8-2 jLvGZJ"
+        class="CategoryPage__MobileTitle-sc-1lo89a8-2 bNTWdN"
       >
         DevOps
       </div>
@@ -415,7 +415,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/mobile"
           >
             <div
-              class="StyledButton__ButtonWrapper-hgym72-0 bAvJkG"
+              class="StyledButton__ButtonWrapper-hgym72-0 fBAjiQ"
             >
               <img
                 alt="Mobile"
@@ -442,7 +442,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/frontend"
           >
             <div
-              class="StyledButton__ButtonWrapper-hgym72-0 bAvJkG"
+              class="StyledButton__ButtonWrapper-hgym72-0 fBAjiQ"
             >
               <img
                 alt="Frontend"
@@ -469,7 +469,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/backend"
           >
             <div
-              class="StyledButton__ButtonWrapper-hgym72-0 bAvJkG"
+              class="StyledButton__ButtonWrapper-hgym72-0 fBAjiQ"
             >
               <img
                 alt="Backend"
@@ -496,7 +496,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/integration"
           >
             <div
-              class="StyledButton__ButtonWrapper-hgym72-0 bAvJkG"
+              class="StyledButton__ButtonWrapper-hgym72-0 fBAjiQ"
             >
               <img
                 alt="Integration"
@@ -522,19 +522,19 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
         </span>
         <span>
           <a
-            href="/category/cloud"
+            href="/category/cloud-&-platforms"
           >
             <div
-              class="StyledButton__ButtonWrapper-hgym72-0 bAvJkG"
+              class="StyledButton__ButtonWrapper-hgym72-0 fBAjiQ"
             >
               <img
-                alt="Cloud"
+                alt="Cloud & Platforms"
                 height="54"
                 src="cloud.svg"
                 width="54"
               />
               <span>
-                Cloud
+                Cloud & Platforms
               </span>
               <svg
                 aria-hidden="true"
@@ -549,19 +549,19 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </div>
           </a>
           <a
-            href="/category/hosting"
+            href="/category/quality-engineering"
           >
             <div
-              class="StyledButton__ButtonWrapper-hgym72-0 bAvJkG"
+              class="StyledButton__ButtonWrapper-hgym72-0 fBAjiQ"
             >
               <img
-                alt="Hosting"
+                alt="Quality Engineering"
                 height="54"
-                src="hosting.svg"
+                src="quality.svg"
                 width="54"
               />
               <span>
-                Hosting
+                Quality Engineering
               </span>
               <svg
                 aria-hidden="true"
@@ -579,7 +579,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/databases"
           >
             <div
-              class="StyledButton__ButtonWrapper-hgym72-0 bAvJkG"
+              class="StyledButton__ButtonWrapper-hgym72-0 fBAjiQ"
             >
               <img
                 alt="Databases"
@@ -612,7 +612,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
         class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
       >
         <div
-          class="CategoryPage__Title-sc-1lo89a8-1 jYTuCW"
+          class="CategoryPage__Title-sc-1lo89a8-1 cpEYkt"
         >
           DevOps
         </div>
@@ -971,7 +971,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/mobile"
           >
             <div
-              class="StyledButton__ButtonWrapper-hgym72-0 bAvJkG"
+              class="StyledButton__ButtonWrapper-hgym72-0 fBAjiQ"
             >
               <img
                 alt="Mobile"
@@ -998,7 +998,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/frontend"
           >
             <div
-              class="StyledButton__ButtonWrapper-hgym72-0 bAvJkG"
+              class="StyledButton__ButtonWrapper-hgym72-0 fBAjiQ"
             >
               <img
                 alt="Frontend"
@@ -1025,7 +1025,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/backend"
           >
             <div
-              class="StyledButton__ButtonWrapper-hgym72-0 bAvJkG"
+              class="StyledButton__ButtonWrapper-hgym72-0 fBAjiQ"
             >
               <img
                 alt="Backend"
@@ -1052,7 +1052,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/integration"
           >
             <div
-              class="StyledButton__ButtonWrapper-hgym72-0 bAvJkG"
+              class="StyledButton__ButtonWrapper-hgym72-0 fBAjiQ"
             >
               <img
                 alt="Integration"
@@ -1078,19 +1078,19 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
         </span>
         <span>
           <a
-            href="/category/cloud"
+            href="/category/cloud-&-platforms"
           >
             <div
-              class="StyledButton__ButtonWrapper-hgym72-0 bAvJkG"
+              class="StyledButton__ButtonWrapper-hgym72-0 fBAjiQ"
             >
               <img
-                alt="Cloud"
+                alt="Cloud & Platforms"
                 height="54"
                 src="cloud.svg"
                 width="54"
               />
               <span>
-                Cloud
+                Cloud & Platforms
               </span>
               <svg
                 aria-hidden="true"
@@ -1105,19 +1105,19 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </div>
           </a>
           <a
-            href="/category/hosting"
+            href="/category/quality-engineering"
           >
             <div
-              class="StyledButton__ButtonWrapper-hgym72-0 bAvJkG"
+              class="StyledButton__ButtonWrapper-hgym72-0 fBAjiQ"
             >
               <img
-                alt="Hosting"
+                alt="Quality Engineering"
                 height="54"
-                src="hosting.svg"
+                src="quality.svg"
                 width="54"
               />
               <span>
-                Hosting
+                Quality Engineering
               </span>
               <svg
                 aria-hidden="true"
@@ -1135,7 +1135,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/databases"
           >
             <div
-              class="StyledButton__ButtonWrapper-hgym72-0 bAvJkG"
+              class="StyledButton__ButtonWrapper-hgym72-0 fBAjiQ"
             >
               <img
                 alt="Databases"

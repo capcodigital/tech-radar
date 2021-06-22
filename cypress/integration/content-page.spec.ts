@@ -3,7 +3,7 @@ describe("Content Page", () => {
     cy.visit("/technology/devops/github");
   });
 
-  it("should click the bacnk link and check that user is redirected to DevOps category page", () => {
+  it("should click the back link and check that user is redirected to DevOps category page", () => {
     cy.contains("a", "Back to DevOps").click({ force: true });
     cy.location().should((location) => {
       expect(location.pathname).to.eq("/category/devops");
