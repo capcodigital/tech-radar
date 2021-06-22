@@ -28,7 +28,7 @@ const StyledContentNavButton = styled.div<StyledContentNavButtonProps>`
       font-size: 19px;
     }
     a:nth-child(2) {
-      font-size: 44px;
+      font-size: 40px;
     }
   }
 `;

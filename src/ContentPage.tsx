@@ -130,7 +130,7 @@ const CategoryPage = () => {
       )[0] || technologies[0].technologies[0];
 
     let categoryFromUrl = categoriesAndTechnologies.categoryName;
-
+    console.log(categoriesAndTechnologies);
     let icon = icons.filter(
       (el: any) => el.name.toLowerCase() === technologyFromUrl.toLowerCase()
     )[0]!;

@@ -234,11 +234,10 @@ const CategoryPage = () => {
                       data-testid={`preferred-${name}`}
                     >
                       <Link
-                        to={`/technology/${category
-                          .replace(/\s/g, "-")
-                          .toLowerCase()}/${name
-                          .replace(" ", "-")
-                          .toLowerCase()}`}
+                        to={`/technology/${category.replace(
+                          /\s/g,
+                          "-"
+                        )}/${name.replace(" ", "-")}`.toLowerCase()}
                       >
                         {name}
                       </Link>
@@ -257,11 +256,10 @@ const CategoryPage = () => {
                       data-testid={`skilled-${name}`}
                     >
                       <Link
-                        to={`/technology/${category
-                          .replace(/\s/g, "-")
-                          .toLowerCase()}/${name
-                          .replace(" ", "-")
-                          .toLowerCase()}`}
+                        to={`/technology/${category.replace(
+                          /\s/g,
+                          "-"
+                        )}/${name.replace(" ", "-")}`.toLowerCase()}
                       >
                         {name}
                       </Link>
@@ -281,11 +279,10 @@ const CategoryPage = () => {
                     data-testid={`scaling-${name}`}
                   >
                     <Link
-                      to={`/technology/${category
-                        .replace(/\s/g, "-")
-                        .toLowerCase()}/${name
-                        .replace(" ", "-")
-                        .toLowerCase()}`}
+                      to={`/technology/${category.replace(
+                        /\s/g,
+                        "-"
+                      )}/${name.replace(" ", "-")}`.toLowerCase()}
                     >
                       {name}
                     </Link>
@@ -337,11 +334,10 @@ const CategoryPage = () => {
                     onClick={() => setTechnology(name)}
                   >
                     <Link
-                      to={`/technology/${category
-                        .replace(/\s/g, "-")
-                        .toLowerCase()}/${name
-                        .replace(" ", "-")
-                        .toLowerCase()}`}
+                      to={`/technology/${category.replace(
+                        /\s/g,
+                        "-"
+                      )}/${name.replace(" ", "-")}`.toLowerCase()}
                     >
                       {name}
                     </Link>
@@ -359,11 +355,10 @@ const CategoryPage = () => {
                     onClick={() => setTechnology(name)}
                   >
                     <Link
-                      to={`/technology/${category
-                        .replace(/\s/g, "-")
-                        .toLowerCase()}/${name
-                        .replace(/\s/g, "-")
-                        .toLowerCase()}`}
+                      to={`/technology/${category.replace(
+                        /\s/g,
+                        "-"
+                      )}/${name.replace(" ", "-")}`.toLowerCase()}
                     >
                       {name}
                     </Link>
@@ -381,11 +376,10 @@ const CategoryPage = () => {
                     onClick={() => setTechnology(name)}
                   >
                     <Link
-                      to={`/technology/${category
-                        .replace(/\s/g, "-")
-                        .toLowerCase()}/${name
-                        .replace(/\s/g, "-")
-                        .toLowerCase()}`}
+                      to={`/technology/${category.replace(
+                        /\s/g,
+                        "-"
+                      )}/${name.replace(" ", "-")}`.toLowerCase()}
                     >
                       {name}
                     </Link>

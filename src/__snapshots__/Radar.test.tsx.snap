@@ -1204,9 +1204,9 @@ exports[`Radar should render Radar component 1`] = `
         opacity="0.3"
       >
         <g
-          aria-label="Restassured"
-          class="techIcon-Restassured"
-          title="Restassured"
+          aria-label="REST Assured"
+          class="techIcon-REST Assured"
+          title="REST Assured"
         >
           <circle
             cx="251.1407148351577"
@@ -1228,9 +1228,9 @@ exports[`Radar should render Radar component 1`] = `
         opacity="0.3"
       >
         <g
-          aria-label="Browserstack"
-          class="techIcon-Browserstack"
-          title="Browserstack"
+          aria-label="BrowserStack"
+          class="techIcon-BrowserStack"
+          title="BrowserStack"
         >
           <circle
             cx="260"

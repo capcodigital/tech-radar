@@ -82,12 +82,24 @@ const StyledNav = styled.g`
 
 const Radar: FC = () => {
   let history = useHistory();
-  const { setCategory } = useContext<RadarContextType>(RadarContext);
+  const { setCategory, setTechnology } =
+    useContext<RadarContextType>(RadarContext);
   const [hovered, setHovered] = useState("DevOps");
 
   const handleClick = (categoryName: string) => {
     setCategory(categoryName);
     history.push(`/category/${categoryName.replace(/\s/g, "-")}`.toLowerCase());
+  };
+
+  const handleClickIcon = (categoryName: string, technologyName: string) => {
+    setCategory(categoryName);
+    setTechnology(technologyName);
+
+    history.push(
+      `/technology/${categoryName}/${technologyName}`
+        .replace(/\s/g, "-")
+        .toLowerCase()
+    );
   };
 
   return (
@@ -243,22 +255,25 @@ const Radar: FC = () => {
             />
           ))}
 
-          {data.map((tech: any) => {
+          {data.map((segment: any) => {
             techIdx += 2;
             return ["preferred", "skilled", "scaling"].map(
               (category: any, catIdx: number) =>
-                tech.data[category].map((dataPoint: any, idx: number) => {
+                segment.data[category].map((dataPoint: any, idx: number) => {
                   // split data into 2 rows if more than 3 data point
                   let r = idx > 2 ? radius[catIdx] - 90 : radius[catIdx] - 30;
                   let dataLengthPerRow = getRowLength(
-                    tech.data[category].length,
+                    segment.data[category].length,
                     idx
                   );
 
                   return (
                     <StyledGroup
                       key={`preferred-${idx}`}
-                      opacity={hovered === tech.name ? 1 : 0.3}
+                      opacity={hovered === segment.name ? 1 : 0.3}
+                      onClick={() =>
+                        handleClickIcon(segment.name, dataPoint.name)
+                      }
                     >
                       <RadarTooltip
                         title={dataPoint.name}
