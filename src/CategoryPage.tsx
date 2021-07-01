@@ -7,6 +7,7 @@ import Footer from "./Footer";
 import Grid from "@material-ui/core/Grid";
 import MobileRadarBackground from "./MobileRadarBackground";
 import StyledButton from "./StyledButton";
+import { BackButton } from "./BackLink";
 import { data, technologies, categoryList } from "./data/data";
 import images from "./images";
 import styled from "styled-components/macro";
@@ -39,6 +40,7 @@ const Wrapper = styled.div<WrapperProps>`
       text-align: left;
       width: 790px;
       margin: auto;
+      margin-top: 40px;
     }
   }
   .categories-grid {
@@ -315,6 +317,7 @@ const CategoryPage = () => {
 
             <Grid container className="desktop-grid">
               <Grid item xs={12}>
+                <BackButton />
                 <Title>{content.name}</Title>
                 <img
                   className="category-icon"

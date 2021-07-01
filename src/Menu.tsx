@@ -9,6 +9,7 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Grid from "@material-ui/core/Grid";
 import logo from "./images/logo.png";
+import robot from "./images/robot.svg";
 import { ListItem } from "@material-ui/core";
 import { RadarContext } from "./RadarContextProvider";
 import { categoryList } from "./data/data";
@@ -19,6 +20,11 @@ const StyledAppBar = styled(AppBar)`
     background: transparent;
     padding-top: 20px;
     box-shadow: none;
+    #purpose {
+      :hover {
+        text-decoration: underline;
+      }
+    }
   }
 `;
 
@@ -78,6 +84,22 @@ const StyledDrawer = styled(Drawer)`
   }
 `;
 
+const StyledLink = styled(Link)`
+  display: inline-block;
+  color: white;
+  font-size: 20px;
+  margin-right: 60px;
+  :hover {
+    color: white;
+  }
+  img {
+    margin-right: 10px;
+  }
+  @media screen and (max-width: 1000px) {
+    display: none;
+  }
+`;
+
 const Menu = () => {
   const [open, setOpen] = useState(false);
   const { setCategory } = useContext(RadarContext);
@@ -102,24 +124,29 @@ const Menu = () => {
         <Toolbar>
           <Grid justify="space-between" container>
             <LogoGridItem item>
-              <Link to="/">
+              <Link to="/home">
                 <img height={46} src={logo} alt="Large Logo" />
                 <div>TECH RADAR 2021</div>
               </Link>
             </LogoGridItem>
 
             <Grid item>
-              <div>
-                <IconButton
-                  onClick={toggleDrawer(true)}
-                  onKeyDown={toggleDrawer(true)}
-                  edge="start"
-                  color="inherit"
-                  aria-label="menu"
-                >
-                  <MenuIcon fontSize="large" />
-                </IconButton>
-              </div>
+              {window.location.pathname !== "/" && (
+                <StyledLink id="purpose" to="/">
+                  <img src={robot} alt="robot" width={28} height={26} />
+                  Radar Purpose
+                </StyledLink>
+              )}
+
+              <IconButton
+                onClick={toggleDrawer(true)}
+                onKeyDown={toggleDrawer(true)}
+                edge="start"
+                color="inherit"
+                aria-label="menu"
+              >
+                <MenuIcon fontSize="large" />
+              </IconButton>
             </Grid>
           </Grid>
         </Toolbar>
