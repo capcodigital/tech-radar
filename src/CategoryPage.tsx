@@ -7,6 +7,7 @@ import Footer from "./Footer";
 import Grid from "@material-ui/core/Grid";
 import MobileRadarBackground from "./MobileRadarBackground";
 import StyledButton from "./StyledButton";
+import { BackButton } from "./BackLink";
 import { data, technologies, categoryList } from "./data/data";
 import images from "./images";
 import styled from "styled-components/macro";
@@ -39,6 +40,7 @@ const Wrapper = styled.div<WrapperProps>`
       text-align: left;
       width: 790px;
       margin: auto;
+      margin-top: 40px;
     }
   }
   .categories-grid {
@@ -237,7 +239,7 @@ const CategoryPage = () => {
                         to={`/technology/${category.replace(
                           /\s/g,
                           "-"
-                        )}/${name.replace(" ", "-")}`.toLowerCase()}
+                        )}/${name.replace(/\s/g, "-")}`.toLowerCase()}
                       >
                         {name}
                       </Link>
@@ -259,7 +261,7 @@ const CategoryPage = () => {
                         to={`/technology/${category.replace(
                           /\s/g,
                           "-"
-                        )}/${name.replace(" ", "-")}`.toLowerCase()}
+                        )}/${name.replace(/\s/g, "-")}`.toLowerCase()}
                       >
                         {name}
                       </Link>
@@ -282,7 +284,7 @@ const CategoryPage = () => {
                       to={`/technology/${category.replace(
                         /\s/g,
                         "-"
-                      )}/${name.replace(" ", "-")}`.toLowerCase()}
+                      )}/${name.replace(/\s/g, "-")}`.toLowerCase()}
                     >
                       {name}
                     </Link>
@@ -315,6 +317,7 @@ const CategoryPage = () => {
 
             <Grid container className="desktop-grid">
               <Grid item xs={12}>
+                <BackButton />
                 <Title>{content.name}</Title>
                 <img
                   className="category-icon"
@@ -337,7 +340,7 @@ const CategoryPage = () => {
                       to={`/technology/${category.replace(
                         /\s/g,
                         "-"
-                      )}/${name.replace(" ", "-")}`.toLowerCase()}
+                      )}/${name.replace(/\s/g, "-")}`.toLowerCase()}
                     >
                       {name}
                     </Link>
@@ -358,7 +361,7 @@ const CategoryPage = () => {
                       to={`/technology/${category.replace(
                         /\s/g,
                         "-"
-                      )}/${name.replace(" ", "-")}`.toLowerCase()}
+                      )}/${name.replace(/\s/g, "-")}`.toLowerCase()}
                     >
                       {name}
                     </Link>
@@ -379,7 +382,7 @@ const CategoryPage = () => {
                       to={`/technology/${category.replace(
                         /\s/g,
                         "-"
-                      )}/${name.replace(" ", "-")}`.toLowerCase()}
+                      )}/${name.replace(/\s/g, "-")}`.toLowerCase()}
                     >
                       {name}
                     </Link>

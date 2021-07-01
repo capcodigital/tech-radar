@@ -38,4 +38,13 @@ const BackLink: FC<BackLinkType> = ({ category }) => (
   </StyledBackLink>
 );
 
+export const BackButton = () => (
+  <StyledBackLink>
+    <Link to={"/home"}>
+      <NavigateBeforeIcon />
+      Back
+    </Link>
+  </StyledBackLink>
+);
+
 export default BackLink;
