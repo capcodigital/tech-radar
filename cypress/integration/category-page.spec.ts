@@ -10,7 +10,7 @@ describe("Category Page", () => {
       cy.contains("a", label).click({ force: true });
       cy.location().should((location) => {
         expect(location.pathname).to.eq(
-          `/category/${label.replace(/-/g, " ").toLowerCase()}`
+          `/category/${label.replace(/\s/g, "-").toLowerCase()}`
         );
       });
     });

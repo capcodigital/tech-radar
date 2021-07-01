@@ -2,7 +2,7 @@
 
 exports[`CategoryPage should render CategoryPage component 1`] = `
 <div
-  class="CategoryPage__Wrapper-sc-1lo89a8-0 HNblX"
+  class="CategoryPage__Wrapper-sc-1lo89a8-0 iGRHWy"
 >
   <img
     alt="DevOps"
@@ -611,6 +611,25 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
       <div
         class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
       >
+        <div
+          class="BackLink__StyledBackLink-cr2dtx-0 hkDCpP"
+        >
+          <a
+            href="/home"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+              />
+            </svg>
+            Back
+          </a>
+        </div>
         <div
           class="CategoryPage__Title-sc-1lo89a8-1 cpEYkt"
         >

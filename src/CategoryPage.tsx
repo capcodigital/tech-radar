@@ -239,7 +239,7 @@ const CategoryPage = () => {
                         to={`/technology/${category.replace(
                           /\s/g,
                           "-"
-                        )}/${name.replace(" ", "-")}`.toLowerCase()}
+                        )}/${name.replace(/\s/g, "-")}`.toLowerCase()}
                       >
                         {name}
                       </Link>
@@ -261,7 +261,7 @@ const CategoryPage = () => {
                         to={`/technology/${category.replace(
                           /\s/g,
                           "-"
-                        )}/${name.replace(" ", "-")}`.toLowerCase()}
+                        )}/${name.replace(/\s/g, "-")}`.toLowerCase()}
                       >
                         {name}
                       </Link>
@@ -284,7 +284,7 @@ const CategoryPage = () => {
                       to={`/technology/${category.replace(
                         /\s/g,
                         "-"
-                      )}/${name.replace(" ", "-")}`.toLowerCase()}
+                      )}/${name.replace(/\s/g, "-")}`.toLowerCase()}
                     >
                       {name}
                     </Link>
@@ -340,7 +340,7 @@ const CategoryPage = () => {
                       to={`/technology/${category.replace(
                         /\s/g,
                         "-"
-                      )}/${name.replace(" ", "-")}`.toLowerCase()}
+                      )}/${name.replace(/\s/g, "-")}`.toLowerCase()}
                     >
                       {name}
                     </Link>
@@ -361,7 +361,7 @@ const CategoryPage = () => {
                       to={`/technology/${category.replace(
                         /\s/g,
                         "-"
-                      )}/${name.replace(" ", "-")}`.toLowerCase()}
+                      )}/${name.replace(/\s/g, "-")}`.toLowerCase()}
                     >
                       {name}
                     </Link>
@@ -382,7 +382,7 @@ const CategoryPage = () => {
                       to={`/technology/${category.replace(
                         /\s/g,
                         "-"
-                      )}/${name.replace(" ", "-")}`.toLowerCase()}
+                      )}/${name.replace(/\s/g, "-")}`.toLowerCase()}
                     >
                       {name}
                     </Link>
