@@ -20,7 +20,7 @@ const Wrapper = styled.div`
 const OutterWrapper = styled.div`
   .footer {
     position: absolute;
-    top: calc(${window.innerHeight}px + 5vh);
+    top: calc(${window.innerHeight}px + 10vh);
     @media screen and (max-width: 1000px) {
       position: unset;
       margin-top: 100px;
