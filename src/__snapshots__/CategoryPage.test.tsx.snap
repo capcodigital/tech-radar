@@ -2,7 +2,7 @@
 
 exports[`CategoryPage should render CategoryPage component 1`] = `
 <div
-  class="CategoryPage__Wrapper-sc-1lo89a8-0 iGRHWy"
+  class="CategoryPage__Wrapper-sc-1lo89a8-0 iMYdNs"
 >
   <img
     alt="DevOps"
@@ -60,348 +60,194 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
         class="first-row-wrapper"
       >
         <div>
-          <hr />
+          <hr
+            class="CategoryPage__Divider-sc-1lo89a8-3 iyPLFj"
+          />
           <div
             class="title"
           >
             Preferred
           </div>
           <div
-            class="technology false"
-            data-testid="preferred-GitHub"
+            class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
           >
             <a
               href="/technology/devops/github"
+              style="pointer-events: none;"
             >
               GitHub
             </a>
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
-              />
-            </svg>
           </div>
           <div
-            class="technology false"
-            data-testid="preferred-CircleCI"
+            class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
           >
             <a
               href="/technology/devops/circleci"
+              style="pointer-events: none;"
             >
               CircleCI
             </a>
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
-              />
-            </svg>
           </div>
           <div
-            class="technology false"
-            data-testid="preferred-Terraform"
+            class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
           >
             <a
               href="/technology/devops/terraform"
+              style="pointer-events: none;"
             >
               Terraform
             </a>
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
-              />
-            </svg>
           </div>
           <div
-            class="technology false"
-            data-testid="preferred-Valut"
+            class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
           >
             <a
               href="/technology/devops/valut"
+              style="pointer-events: none;"
             >
               Valut
             </a>
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
-              />
-            </svg>
           </div>
           <div
-            class="technology false"
-            data-testid="preferred-SonarQube"
+            class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
           >
             <a
               href="/technology/devops/sonarqube"
+              style="pointer-events: none;"
             >
               SonarQube
             </a>
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
-              />
-            </svg>
           </div>
           <div
-            class="technology false"
-            data-testid="preferred-Elastic"
+            class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
           >
             <a
               href="/technology/devops/elastic"
+              style="pointer-events: none;"
             >
               Elastic
             </a>
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
-              />
-            </svg>
           </div>
         </div>
         <div>
-          <hr />
+          <hr
+            class="CategoryPage__Divider-sc-1lo89a8-3 iyPLFj"
+          />
           <div
             class="title"
           >
             Skilled
           </div>
           <div
-            class="technology false"
-            data-testid="skilled-Bitbucket"
+            class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
           >
             <a
               href="/technology/devops/bitbucket"
+              style="pointer-events: none;"
             >
               Bitbucket
             </a>
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
-              />
-            </svg>
           </div>
           <div
-            class="technology false"
-            data-testid="skilled-Jenkins"
+            class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
           >
             <a
               href="/technology/devops/jenkins"
+              style="pointer-events: none;"
             >
               Jenkins
             </a>
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
-              />
-            </svg>
           </div>
           <div
-            class="technology false"
-            data-testid="skilled-TeamCity"
+            class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
           >
             <a
               href="/technology/devops/teamcity"
+              style="pointer-events: none;"
             >
               TeamCity
             </a>
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
-              />
-            </svg>
           </div>
           <div
-            class="technology false"
-            data-testid="skilled-Istio"
+            class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
           >
             <a
               href="/technology/devops/istio"
+              style="pointer-events: none;"
             >
               Istio
             </a>
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
-              />
-            </svg>
           </div>
           <div
-            class="technology false"
-            data-testid="skilled-Ansible"
+            class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
           >
             <a
               href="/technology/devops/ansible"
+              style="pointer-events: none;"
             >
               Ansible
             </a>
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
-              />
-            </svg>
           </div>
           <div
-            class="technology false"
-            data-testid="skilled-Packer"
+            class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
           >
             <a
               href="/technology/devops/packer"
+              style="pointer-events: none;"
             >
               Packer
             </a>
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
-              />
-            </svg>
           </div>
         </div>
       </div>
       <div>
-        <hr />
+        <hr
+          class="CategoryPage__Divider-sc-1lo89a8-3 iyPLFj"
+        />
         <div
           class="title"
         >
           Scaling
         </div>
         <div
-          class="technology false"
-          data-testid="scaling-Twistlock"
+          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
         >
           <a
             href="/technology/devops/twistlock"
+            style="pointer-events: none;"
           >
             Twistlock
           </a>
-          <svg
-            aria-hidden="true"
-            class="MuiSvgIcon-root"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
-            />
-          </svg>
         </div>
         <div
-          class="technology false"
-          data-testid="scaling-Kiali"
+          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
         >
           <a
             href="/technology/devops/kiali"
+            style="pointer-events: none;"
           >
             Kiali
           </a>
-          <svg
-            aria-hidden="true"
-            class="MuiSvgIcon-root"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
-            />
-          </svg>
         </div>
         <div
-          class="technology false"
-          data-testid="scaling-ConcourseCl"
+          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
         >
           <a
             href="/technology/devops/concoursecl"
+            style="pointer-events: none;"
           >
             ConcourseCl
           </a>
-          <svg
-            aria-hidden="true"
-            class="MuiSvgIcon-root"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
-            />
-          </svg>
         </div>
         <div
-          class="technology false"
-          data-testid="scaling-Consul"
+          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
         >
           <a
             href="/technology/devops/consul"
+            style="pointer-events: none;"
           >
             Consul
           </a>
-          <svg
-            aria-hidden="true"
-            class="MuiSvgIcon-root"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
-            />
-          </svg>
         </div>
       </div>
       <div>
@@ -646,335 +492,197 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
       <div
         class="MuiGrid-root large-screen MuiGrid-item MuiGrid-grid-xs-4"
       >
-        <hr />
+        <hr
+          class="CategoryPage__Divider-sc-1lo89a8-3 iyPLFj"
+        />
         <div
           class="title"
         >
           Preferred
         </div>
         <div
-          class="technology false"
+          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
         >
           <a
             href="/technology/devops/github"
+            style="pointer-events: none;"
           >
             GitHub
           </a>
-          <svg
-            aria-hidden="true"
-            class="MuiSvgIcon-root"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
-            />
-          </svg>
         </div>
         <div
-          class="technology false"
+          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
         >
           <a
             href="/technology/devops/circleci"
+            style="pointer-events: none;"
           >
             CircleCI
           </a>
-          <svg
-            aria-hidden="true"
-            class="MuiSvgIcon-root"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
-            />
-          </svg>
         </div>
         <div
-          class="technology false"
+          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
         >
           <a
             href="/technology/devops/terraform"
+            style="pointer-events: none;"
           >
             Terraform
           </a>
-          <svg
-            aria-hidden="true"
-            class="MuiSvgIcon-root"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
-            />
-          </svg>
         </div>
         <div
-          class="technology false"
+          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
         >
           <a
             href="/technology/devops/valut"
+            style="pointer-events: none;"
           >
             Valut
           </a>
-          <svg
-            aria-hidden="true"
-            class="MuiSvgIcon-root"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
-            />
-          </svg>
         </div>
         <div
-          class="technology false"
+          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
         >
           <a
             href="/technology/devops/sonarqube"
+            style="pointer-events: none;"
           >
             SonarQube
           </a>
-          <svg
-            aria-hidden="true"
-            class="MuiSvgIcon-root"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
-            />
-          </svg>
         </div>
         <div
-          class="technology false"
+          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
         >
           <a
             href="/technology/devops/elastic"
+            style="pointer-events: none;"
           >
             Elastic
           </a>
-          <svg
-            aria-hidden="true"
-            class="MuiSvgIcon-root"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
-            />
-          </svg>
         </div>
       </div>
       <div
         class="MuiGrid-root large-screen MuiGrid-item MuiGrid-grid-xs-4"
       >
-        <hr />
+        <hr
+          class="CategoryPage__Divider-sc-1lo89a8-3 iyPLFj"
+        />
         <div
           class="title"
         >
           Skilled
         </div>
         <div
-          class="technology false"
+          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
         >
           <a
             href="/technology/devops/bitbucket"
+            style="pointer-events: none;"
           >
             Bitbucket
           </a>
-          <svg
-            aria-hidden="true"
-            class="MuiSvgIcon-root"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
-            />
-          </svg>
         </div>
         <div
-          class="technology false"
+          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
         >
           <a
             href="/technology/devops/jenkins"
+            style="pointer-events: none;"
           >
             Jenkins
           </a>
-          <svg
-            aria-hidden="true"
-            class="MuiSvgIcon-root"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
-            />
-          </svg>
         </div>
         <div
-          class="technology false"
+          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
         >
           <a
             href="/technology/devops/teamcity"
+            style="pointer-events: none;"
           >
             TeamCity
           </a>
-          <svg
-            aria-hidden="true"
-            class="MuiSvgIcon-root"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
-            />
-          </svg>
         </div>
         <div
-          class="technology false"
+          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
         >
           <a
             href="/technology/devops/istio"
+            style="pointer-events: none;"
           >
             Istio
           </a>
-          <svg
-            aria-hidden="true"
-            class="MuiSvgIcon-root"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
-            />
-          </svg>
         </div>
         <div
-          class="technology false"
+          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
         >
           <a
             href="/technology/devops/ansible"
+            style="pointer-events: none;"
           >
             Ansible
           </a>
-          <svg
-            aria-hidden="true"
-            class="MuiSvgIcon-root"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
-            />
-          </svg>
         </div>
         <div
-          class="technology false"
+          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
         >
           <a
             href="/technology/devops/packer"
+            style="pointer-events: none;"
           >
             Packer
           </a>
-          <svg
-            aria-hidden="true"
-            class="MuiSvgIcon-root"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
-            />
-          </svg>
         </div>
       </div>
       <div
         class="MuiGrid-root large-screen MuiGrid-item MuiGrid-grid-xs-4"
       >
-        <hr />
+        <hr
+          class="CategoryPage__Divider-sc-1lo89a8-3 iyPLFj"
+        />
         <div
           class="title"
         >
           Scaling
         </div>
         <div
-          class="technology false"
+          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
         >
           <a
             href="/technology/devops/twistlock"
+            style="pointer-events: none;"
           >
             Twistlock
           </a>
-          <svg
-            aria-hidden="true"
-            class="MuiSvgIcon-root"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
-            />
-          </svg>
         </div>
         <div
-          class="technology false"
+          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
         >
           <a
             href="/technology/devops/kiali"
+            style="pointer-events: none;"
           >
             Kiali
           </a>
-          <svg
-            aria-hidden="true"
-            class="MuiSvgIcon-root"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
-            />
-          </svg>
         </div>
         <div
-          class="technology false"
+          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
         >
           <a
             href="/technology/devops/concoursecl"
+            style="pointer-events: none;"
           >
             ConcourseCl
           </a>
-          <svg
-            aria-hidden="true"
-            class="MuiSvgIcon-root"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
-            />
-          </svg>
         </div>
         <div
-          class="technology false"
+          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
         >
           <a
             href="/technology/devops/consul"
+            style="pointer-events: none;"
           >
             Consul
           </a>
-          <svg
-            aria-hidden="true"
-            class="MuiSvgIcon-root"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
-            />
-          </svg>
         </div>
       </div>
       <div

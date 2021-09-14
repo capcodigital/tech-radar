@@ -1,0 +1,73 @@
+const techContent = [
+  {
+    technology: "Kubernetes",
+    docsLink: "https://kubernetes.io/docs/home/",
+    intro: "Content coming soon.",
+    content: [],
+    examples: [],
+  },
+  {
+    technology: "Serverless",
+    docsLink: "https://www.serverless.com/framework/docs/",
+    intro: "Content coming soon.",
+    content: [],
+    examples: [],
+  },
+  {
+    technology: "OpenShift",
+    docsLink: "https://docs.openshift.com/",
+    intro: "Content coming soon.",
+    content: [],
+    examples: [],
+  },
+  {
+    technology: "PCF",
+    docsLink: "/",
+    intro: "Content coming soon.",
+    content: [],
+    examples: [],
+  },
+  {
+    technology: "PKS",
+    docsLink: "/",
+    intro: "Content coming soon.",
+    content: [],
+    examples: [],
+  },
+  {
+    technology: "GCP",
+    docsLink: "https://cloud.google.com/docs",
+    intro: "Content coming soon.",
+    content: [],
+    examples: [],
+  },
+  {
+    technology: "AWS",
+    docsLink: "https://docs.aws.amazon.com/",
+    intro: "Content coming soon.",
+    content: [],
+    examples: [],
+  },
+  {
+    technology: "Grafana",
+    docsLink: "https://grafana.com/docs/",
+    intro: "Content coming soon.",
+    content: [],
+    examples: [],
+  },
+  {
+    technology: "Azure",
+    docsLink: "https://docs.microsoft.com/en-us/azure/?product=featured",
+    intro: "Content coming soon.",
+    content: [],
+    examples: [],
+  },
+  {
+    technology: "Digital Ocean",
+    docsLink: "https://docs.digitalocean.com/products/",
+    intro: "Content coming soon.",
+    content: [],
+    examples: [],
+  },
+];
+export default techContent;

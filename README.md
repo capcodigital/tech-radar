@@ -64,6 +64,7 @@ An application that allows Engineers to explore the Engineering performance mana
 
 ![typescript](https://img.shields.io/badge/-TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)
 ![react](https://img.shields.io/badge/-React-45b8d8?style=flat-square&logo=react&logoColor=white)
+![d3.js](https://img.shields.io/badge/-D3.js-F9A03C?style=flat-square&logo=d3.js&logoColor=black)
 ![styled](https://img.shields.io/badge/-Styled_Components-db7092?style=flat-square&logo=styled-components&logoColor=white)
 
 | Description                                                                | Link                                                  |

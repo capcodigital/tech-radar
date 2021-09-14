@@ -1,14 +1,13 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect, useState, FC } from "react";
 import { RadarContextType, RadarContext } from "./RadarContextProvider";
-import { Link } from "react-router-dom";
-import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import CategoryRadar from "./CategoryRadar";
 import Footer from "./Footer";
 import Grid from "@material-ui/core/Grid";
 import MobileRadarBackground from "./MobileRadarBackground";
 import StyledButton from "./StyledButton";
+import CategoryListItem from "./CategoryListItem";
 import { BackButton } from "./BackLink";
-import { data, technologies, categoryList } from "./data/data";
+import { data, technologies, categoryList, techType } from "./data/data";
 import images from "./images";
 import styled from "styled-components/macro";
 
@@ -55,36 +54,9 @@ const Wrapper = styled.div<WrapperProps>`
     top: -80px;
     left: -300px;
   }
-  hr {
-    background: white;
-    margin: 0;
-    width: 20px;
-    border-width: 5px;
-    margin-bottom: 15px;
-  }
   .title {
     font-size: 32px;
   }
-  .technology {
-    padding-top: 12px;
-    font-family: poppins, sans-serif;
-    font-size: 19px;
-    font-weight: 300;
-    transform all 3s;
-    transition: 0.3s;
-    svg.MuiSvgIcon-root {
-      font-size: 12px;
-      margin-left: 10px;
-    }
-    a {
-      color: inherit;
-      :hover {
-        border-bottom: 1px solid white;   
-      }
-    }
-    &.hovered {
-      color: #e6236d;
-    }
   }
   .small-screen {
     display: none;
@@ -93,10 +65,10 @@ const Wrapper = styled.div<WrapperProps>`
     ${SubheaderStyle}
     margin: 100px 0 20px 0;
   }
-  .subheader-mobile{
+  .subheader-mobile {
     display: none;
   }
-  .mobile-category{
+  .mobile-category {
     display: none;
   }
 
@@ -123,9 +95,6 @@ const Wrapper = styled.div<WrapperProps>`
     .category-icon {
       width: 64px;
       height: 64px;
-    }
-    .technology {
-      font-size: 18px;
     }
     .title {
       font-size: 30px;
@@ -163,11 +132,13 @@ const MobileTitle = styled.div`
   margin: 20px 0 20px 0;
 `;
 
-type ContentType = {
-  preferred: Array<{ name: string; link: string }>;
-  skilled: Array<{ name: string; link: string }>;
-  scaling: Array<{ name: string; link: string }>;
-};
+const Divider = styled.hr`
+  background: white;
+  margin: 0;
+  width: 20px;
+  border-width: 5px;
+  margin-bottom: 15px;
+`;
 
 const CategoryPage = () => {
   const { category, setCategory, setTechnology } =
@@ -177,7 +148,7 @@ const CategoryPage = () => {
 
   const [content, setContent] = useState<{
     name: string;
-    data: ContentType;
+    data: techType;
   } | null>(null);
 
   useEffect(() => {
@@ -226,70 +197,49 @@ const CategoryPage = () => {
               />
               <div className="first-row-wrapper">
                 <div>
-                  <hr />
+                  <Divider />
                   <div className="title">Preferred</div>
-                  {content.data.preferred.map(({ name }) => (
-                    <div
+                  {content.data.preferred.map(({ name, enabled }) => (
+                    <CategoryListItem
                       key={name}
-                      className={`technology ${hovered === name && "hovered"}`}
+                      hovered={hovered === name}
+                      category={category}
+                      techName={name}
+                      enabled={enabled}
                       onClick={() => setTechnology(name)}
                       data-testid={`preferred-${name}`}
-                    >
-                      <Link
-                        to={`/technology/${category.replace(
-                          /\s/g,
-                          "-"
-                        )}/${name.replace(/\s/g, "-")}`.toLowerCase()}
-                      >
-                        {name}
-                      </Link>
-                      <ArrowForwardIosIcon />
-                    </div>
+                    />
                   ))}
                 </div>
                 <div>
-                  <hr />
+                  <Divider />
                   <div className="title">Skilled</div>
-                  {content.data.skilled.map(({ name }) => (
-                    <div
+                  {content.data.skilled.map(({ name, enabled }) => (
+                    <CategoryListItem
                       key={name}
-                      className={`technology ${hovered === name && "hovered"}`}
+                      hovered={hovered === name}
+                      category={category}
+                      techName={name}
+                      enabled={enabled}
                       onClick={() => setTechnology(name)}
                       data-testid={`skilled-${name}`}
-                    >
-                      <Link
-                        to={`/technology/${category.replace(
-                          /\s/g,
-                          "-"
-                        )}/${name.replace(/\s/g, "-")}`.toLowerCase()}
-                      >
-                        {name}
-                      </Link>
-                      <ArrowForwardIosIcon />
-                    </div>
+                    />
                   ))}
                 </div>
               </div>
               <div>
-                <hr />
+                <Divider />
                 <div className="title">Scaling</div>
-                {content.data.scaling.map(({ name }) => (
-                  <div
+                {content.data.scaling.map(({ name, enabled }) => (
+                  <CategoryListItem
                     key={name}
-                    className={`technology ${hovered === name && "hovered"}`}
+                    hovered={hovered === name}
+                    category={category}
+                    techName={name}
+                    enabled={enabled}
                     onClick={() => setTechnology(name)}
                     data-testid={`scaling-${name}`}
-                  >
-                    <Link
-                      to={`/technology/${category.replace(
-                        /\s/g,
-                        "-"
-                      )}/${name.replace(/\s/g, "-")}`.toLowerCase()}
-                    >
-                      {name}
-                    </Link>
-                    <ArrowForwardIosIcon />
-                  </div>
+                  />
                 ))}
               </div>
               <div>
@@ -328,66 +278,48 @@ const CategoryPage = () => {
                 />
               </Grid>
               <Grid item xs={4} className="large-screen">
-                <hr />
+                <Divider />
                 <div className="title">Preferred</div>
-                {content.data.preferred.map(({ name }) => (
-                  <div
+                {content.data.preferred.map(({ name, enabled }) => (
+                  <CategoryListItem
                     key={name}
-                    className={`technology ${hovered === name && "hovered"}`}
+                    hovered={hovered === name}
+                    category={category}
+                    techName={name}
+                    enabled={enabled}
                     onClick={() => setTechnology(name)}
-                  >
-                    <Link
-                      to={`/technology/${category.replace(
-                        /\s/g,
-                        "-"
-                      )}/${name.replace(/\s/g, "-")}`.toLowerCase()}
-                    >
-                      {name}
-                    </Link>
-                    <ArrowForwardIosIcon />
-                  </div>
+                    data-testid={`preferred-${name}`}
+                  />
                 ))}
               </Grid>
               <Grid item xs={4} className="large-screen">
-                <hr />
+                <Divider />
                 <div className="title">Skilled</div>
-                {content.data.skilled.map(({ name }) => (
-                  <div
+                {content.data.skilled.map(({ name, enabled }) => (
+                  <CategoryListItem
                     key={name}
-                    className={`technology ${hovered === name && "hovered"}`}
+                    hovered={hovered === name}
+                    category={category}
+                    techName={name}
+                    enabled={enabled}
                     onClick={() => setTechnology(name)}
-                  >
-                    <Link
-                      to={`/technology/${category.replace(
-                        /\s/g,
-                        "-"
-                      )}/${name.replace(/\s/g, "-")}`.toLowerCase()}
-                    >
-                      {name}
-                    </Link>
-                    <ArrowForwardIosIcon />
-                  </div>
+                    data-testid={`preferred-${name}`}
+                  />
                 ))}
               </Grid>
               <Grid item xs={4} className="large-screen">
-                <hr />
+                <Divider />
                 <div className="title">Scaling</div>
-                {content.data.scaling.map(({ name }) => (
-                  <div
+                {content.data.scaling.map(({ name, enabled }) => (
+                  <CategoryListItem
                     key={name}
-                    className={`technology ${hovered === name && "hovered"}`}
+                    hovered={hovered === name}
+                    category={category}
+                    techName={name}
+                    enabled={enabled}
                     onClick={() => setTechnology(name)}
-                  >
-                    <Link
-                      to={`/technology/${category.replace(
-                        /\s/g,
-                        "-"
-                      )}/${name.replace(/\s/g, "-")}`.toLowerCase()}
-                    >
-                      {name}
-                    </Link>
-                    <ArrowForwardIosIcon />
-                  </div>
+                    data-testid={`preferred-${name}`}
+                  />
                 ))}
               </Grid>
 

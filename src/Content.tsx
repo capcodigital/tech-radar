@@ -1,5 +1,5 @@
-import React, { FC } from 'react';
-import styled from 'styled-components/macro';
+import React, { FC } from "react";
+import styled from "styled-components/macro";
 
 type SubContentType = {
   contentData: Array<{
@@ -60,10 +60,17 @@ export const SubContent: FC<SubContentType> = ({ contentData }) => (
   <>
     {contentData.map(({ name, intro, data }) => (
       <StyledSubContent key={name}>
-        <div className='title'>{name}</div>
-        {intro && <div className='intro'>{intro}</div>}
+        {name && <div className="title">{name}</div>}
+        {intro && (
+          <div
+            className="intro"
+            dangerouslySetInnerHTML={{
+              __html: intro,
+            }}
+          />
+        )}
         {data.map(({ name, description }) => (
-          <div className={'content'} key={name}>
+          <div className={"content"} key={name}>
             <div>{name}</div>
             <div
               dangerouslySetInnerHTML={{
@@ -82,9 +89,9 @@ export const SubContent: FC<SubContentType> = ({ contentData }) => (
 
 export const ExampleContent: FC<ExampleContentType> = ({ contentData }) => (
   <StyledSubContent>
-    <div className='title'>Use Cases</div>
+    <div className="title">Use Cases</div>
     {contentData.map(({ name, description, imageUrl }) => (
-      <div className={'content'} key={name}>
+      <div className={"content"} key={name}>
         <div>{name}</div>
         <div
           dangerouslySetInnerHTML={{
@@ -94,7 +101,7 @@ export const ExampleContent: FC<ExampleContentType> = ({ contentData }) => (
             ),
           }}
         />
-        <img src={imageUrl} width={'100%'} alt={'demo'} />
+        <img src={imageUrl} width={"100%"} alt={"demo"} />
       </div>
     ))}
   </StyledSubContent>

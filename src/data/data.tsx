@@ -1,8 +1,8 @@
-interface techType {
-  [k: string]: Array<{ name: string; link: string }>;
-  preferred: Array<{ name: string; link: string }>;
-  skilled: Array<{ name: string; link: string }>;
-  scaling: Array<{ name: string; link: string }>;
+export interface techType {
+  [k: string]: Array<{ name: string; link: string; enabled: boolean }>;
+  preferred: Array<{ name: string; link: string; enabled: boolean }>;
+  skilled: Array<{ name: string; link: string; enabled: boolean }>;
+  scaling: Array<{ name: string; link: string; enabled: boolean }>;
 }
 
 export const data: Array<{ name: string; data: techType }> = [
@@ -13,70 +13,86 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "GitHub",
           link: "https://img.icons8.com/fluent/452/github.png",
+          enabled: false,
         },
         {
           name: "CircleCI",
           link: "https://img.icons8.com/color/452/circleci.png",
+          enabled: false,
         },
         {
           name: "Terraform",
           link: "https://symbols.getvecta.com/stencil_97/45_terraform-icon.d8dd637866.svg",
+          enabled: false,
         },
         {
           name: "Valut",
           link: "https://symbols.getvecta.com/stencil_100/11_vault-icon.469c5366cc.svg",
+          enabled: false,
         },
         {
           name: "SonarQube",
           link: "https://pbs.twimg.com/profile_images/1224335491899760641/h404B5dU_400x400.jpg",
+          enabled: false,
         },
         {
           name: "Elastic",
           link: "https://symbols.getvecta.com/stencil_79/34_elastic-search-icon.bdaf397325.svg",
+          enabled: false,
         },
       ],
       skilled: [
         {
           name: "Bitbucket",
           link: "https://cdn.worldvectorlogo.com/logos/bitbucket-icon.svg",
+          enabled: false,
         },
         {
           name: "Jenkins",
           link: "https://symbols.getvecta.com/stencil_97/67_the-jenkins-project-icon.0141f64fe7.svg",
+          enabled: false,
         },
         {
           name: "TeamCity",
           link: "https://cdn.worldvectorlogo.com/logos/teamcity-icon.svg",
+          enabled: false,
         },
         {
           name: "Istio",
           link: "https://symbols.getvecta.com/stencil_84/70_istio-icon.9d92202138.svg",
+          enabled: false,
         },
         {
           name: "Ansible",
           link: "https://symbols.getvecta.com/stencil_73/122_ansible-icon.e1db432c74.svg",
+          enabled: false,
         },
         {
           name: "Packer",
           link: "https://symbols.getvecta.com/stencil_91/3_packer-icon.53584ee287.svg",
+          enabled: false,
         },
       ],
       scaling: [
         {
           name: "Twistlock",
           link: "https://symbols.getvecta.com/stencil_98/71_twistlock-icon.8db1b813dd.svg",
+          enabled: false,
         },
         {
           name: "Kiali",
           link: "https://design.jboss.org/kiali/logo/final/PNG/kiali_icon_darkbkg_1280px.png",
+          enabled: false,
         },
         {
           name: "ConcourseCl",
           link: "https://cdn.worldvectorlogo.com/logos/concourse-1.svg",
+          enabled: false,
         },
         {
           name: "Consul",
           link: "https://symbols.getvecta.com/stencil_77/63_consul-icon.0452948395.svg",
+          enabled: false,
         },
       ],
     },
@@ -88,42 +104,51 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Postgres",
           link: "https://img.icons8.com/color/452/postgreesql.png",
+          enabled: false,
         },
         {
           name: "Neo4J",
           link: "https://symbols.getvecta.com/stencil_261/28_neo4j.404372b29e.svg",
+          enabled: false,
         },
         {
           name: "MongoDB",
           link: "https://www.iamsteveni.com/static/img/mongodb.png",
+          enabled: false,
         },
       ],
       skilled: [
         {
           name: "MySQL",
           link: "https://www.iamsteveni.com/static/img/mysql.png",
+          enabled: false,
         },
         {
           name: "Oracle",
           link: "https://img.icons8.com/color/452/oracle-logo.png",
+          enabled: false,
         },
         {
           name: "SQL Server",
           link: "https://img.icons8.com/color/452/microsoft-sql-server.png",
+          enabled: false,
         },
       ],
       scaling: [
         {
           name: "BigQuery",
           link: "https://symbols.getvecta.com/stencil_75/69_bigquery-icon.eb9185e8d2.svg",
+          enabled: false,
         },
         {
           name: "Snowflake",
           link: "https://avatars.githubusercontent.com/u/6453780?s=280&v=4",
+          enabled: false,
         },
         {
           name: "Liquibase",
           link: "https://avatars.githubusercontent.com/u/438548?s=280&v=4",
+          enabled: false,
         },
       ],
     },
@@ -135,58 +160,71 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Selenium",
           link: "https://static-00.iconduck.com/assets.00/selenium-icon-512x496-obrnvg2v.png",
+          enabled: true,
         },
         {
           name: "Cucumber",
           link: "https://banner2.cleanpng.com/20180806/xkl/kisspng-cucumber-behavior-driven-development-software-test-cucumber-logo-svg-vector-amp-png-transparent-v-5b68353a7fad14.236653821533556026523.jpg",
+          enabled: false,
         },
         {
           name: "Appium",
           link: "https://e7.pngegg.com/pngimages/366/527/png-clipart-appium-test-automation-software-testing-selenium-ios-logo-purple-violet.png",
+          enabled: false,
         },
         {
           name: "REST Assured",
           link: "https://i2.wp.com/www.entrofi.net/wp-content/uploads/2020/01/rest-assured-logo.png?fit=400%2C400&ssl=1",
+          enabled: false,
         },
         {
           name: "BrowserStack",
           link: "https://www.browserstack.com/blog/favicon.png",
+          enabled: false,
         },
         {
           name: "Sauce Labs",
           link: "https://symbols.getvecta.com/stencil_95/21_sauce-labs-icon.3db8e81715.svg",
+          enabled: false,
         },
       ],
       skilled: [
         {
           name: "Wiremock",
           link: "https://lh3.googleusercontent.com/proxy/TImAeIQiFveDA7nFR0i5Y9YgV7og9T5y3tjeaA4K_djJWQFPy7oKv1JAjX4MmZWSEy99drD1BlgHWHEkW22lY3IGtIqLpt6XVcJilOz0pA",
+          enabled: false,
         },
         {
           name: "Applitools",
           link: "https://www.nuget.org/profiles/applitools/avatar?imageSize=512",
+          enabled: false,
         },
         {
           name: "JMeter",
           link: "https://svn.apache.org/repos/asf/jmeter/trunk/xdocs/images/asf-logo.svg",
+          enabled: false,
         },
         {
           name: "Axe",
           link: "https://www.deque.com/wp-content/uploads/2018/03/DQ_SecondaryLogo_HeroBlue_RGB-1.png",
+          enabled: false,
         },
         {
           name: "Cypress",
           link: "https://icons-for-free.com/iconfiles/png/512/cypress-1324440144114984250.png",
+          enabled: false,
         },
       ],
       scaling: [
         {
           name: "Gatling",
           link: "https://assets-global.website-files.com/5dfb2c5f5b18187014b68b84/5e2e0ec72ca1f70c12148ea4_CR5gILun.png",
+          enabled: false,
         },
         {
           name: "PACT",
           link: "https://pbs.twimg.com/profile_images/1326371726301798402/WxukgT47.png",
+          enabled: false,
         },
       ],
     },
@@ -198,43 +236,56 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "GCP",
           link: "https://img.icons8.com/color/452/google-cloud.png",
+          enabled: false,
         },
         {
           name: "Kubernetes",
           link: "https://img.icons8.com/color/452/kubernetes.png",
+          enabled: false,
         },
         {
           name: "Serverless",
           link: "https://symbols.getvecta.com/stencil_95/69_serverless-icon.b1abb9b824.svg",
+          enabled: false,
         },
         {
           name: "OpenShift",
           link: "https://symbols.getvecta.com/stencil_90/47_openshift-icon.e98513fd69.svg",
+          enabled: false,
         },
         {
           name: "Grafana",
           link: "https://pics.freeicons.io/uploads/icons/png/8135670941548141941-512.png",
+          enabled: false,
         },
       ],
       skilled: [
         {
           name: "AWS",
           link: "https://img.icons8.com/color/452/amazon-web-services.png",
+          enabled: false,
         },
-        { name: "Azure", link: "https://img.icons8.com/color/452/azure-1.png" },
+        {
+          name: "Azure",
+          link: "https://img.icons8.com/color/452/azure-1.png",
+          enabled: false,
+        },
         {
           name: "PCF",
           link: "https://avatars.githubusercontent.com/u/5497370?s=200&v=4",
+          enabled: false,
         },
       ],
       scaling: [
         {
           name: "Digital Ocean",
           link: "https://symbols.getvecta.com/stencil_78/61_digital-ocean-icon.0d013f7d26.svg",
+          enabled: false,
         },
         {
           name: "PKS",
           link: "https://blogs.vmware.com/virtualblocks/files/2018/08/PKS-2.png",
+          enabled: false,
         },
       ],
     },
@@ -246,31 +297,41 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Rest",
           link: "https://miro.medium.com/max/300/1*1RDFnS8FgAOQFegtuynxWw.png",
+          enabled: false,
         },
-        { name: "Camel", link: "https://camel.apache.org/_/img/logo-d.svg" },
+        {
+          name: "Camel",
+          link: "https://camel.apache.org/_/img/logo-d.svg",
+          enabled: false,
+        },
         {
           name: "gRPC",
           link: "https://docs.konghq.com/assets/images/icons/hub/kong-inc_grpc-gateway.png",
+          enabled: false,
         },
         {
           name: "Kafka",
           link: "https://symbols.getvecta.com/stencil_74/14_apache-kafka-icon.96e46bbe3a.svg",
+          enabled: false,
         },
       ],
       skilled: [
         {
           name: "ActiveM",
           link: "https://symbols.getvecta.com/stencil_73/17_activemq-icon.66dcff47ad.svg",
+          enabled: false,
         },
         {
           name: "IBM MQ",
           link: "https://anypoint.mulesoft.com/exchange/organizations/68ef9520-24e9-4cf2-b2f5-620025690913/assets/com.mulesoft.connectors/mule-ibm-mq-connector/icon/svg/?sha=97c7ca8fde33f64f5da710f17de072de73f67b11",
+          enabled: false,
         },
       ],
       scaling: [
         {
           name: "GraphQL",
           link: "https://symbols.getvecta.com/stencil_82/66_graphql-icon.291fc05a38.svg",
+          enabled: false,
         },
       ],
     },
@@ -282,30 +343,47 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Java",
           link: "https://img.icons8.com/color/452/java-coffee-cup-logo.png",
+          enabled: false,
         },
         {
           name: "Node",
           link: "https://www.iamsteveni.com/static/img/nodejs.png",
+          enabled: false,
         },
-        { name: "Go", link: "https://img.icons8.com/color/344/golang.png" },
+        {
+          name: "Go",
+          link: "https://img.icons8.com/color/344/golang.png",
+          enabled: false,
+        },
         {
           name: "Scala",
           link: "https://www.scala-lang.org/resources/img/frontpage/scala-spiral.png",
+          enabled: true,
         },
         {
           name: "Gradle",
           link: "https://gradle.org/images/gradle-knowledge-graph-logo.png?20170228",
+          enabled: false,
         },
       ],
       skilled: [
-        { name: "Python", link: "https://img.icons8.com/color/452/python.png" },
+        {
+          name: "Python",
+          link: "https://img.icons8.com/color/452/python.png",
+          enabled: false,
+        },
         {
           name: "Groovy",
           link: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Groovy-logo.svg/445px-Groovy-logo.svg.png",
+          enabled: false,
         },
       ],
       scaling: [
-        { name: "Kotlin", link: "https://img.icons8.com/color/344/kotlin.png" },
+        {
+          name: "Kotlin",
+          link: "https://img.icons8.com/color/344/kotlin.png",
+          enabled: false,
+        },
       ],
     },
   },
@@ -316,14 +394,17 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "React",
           link: "https://img.icons8.com/color/452/react-native.png",
+          enabled: true,
         },
         {
           name: "Angular",
           link: "https://img.icons8.com/color/452/angularjs.png",
+          enabled: false,
         },
         {
           name: "TypeScript",
           link: "https://img.icons8.com/color/452/typescript.png",
+          enabled: false,
         },
       ],
       skilled: [],
@@ -331,8 +412,13 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Flutter",
           link: "https://img.icons8.com/color/452/flutter.png",
+          enabled: false,
         },
-        { name: "Vue", link: "https://img.icons8.com/color/344/vue-js.png" },
+        {
+          name: "Vue",
+          link: "https://img.icons8.com/color/344/vue-js.png",
+          enabled: false,
+        },
       ],
     },
   },
@@ -343,28 +429,41 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "React Native",
           link: "https://img.icons8.com/color/452/react-native.png",
+          enabled: false,
         },
         {
           name: "Gradle",
           link: "https://gradle.org/images/gradle-knowledge-graph-logo.png?20170228",
+          enabled: false,
         },
       ],
       skilled: [
-        { name: "Swift", link: "https://img.icons8.com/fluent/452/swift.png" },
-        { name: "Kotlin", link: "https://img.icons8.com/color/344/kotlin.png" },
+        {
+          name: "Swift",
+          link: "https://img.icons8.com/fluent/452/swift.png",
+          enabled: false,
+        },
+        {
+          name: "Kotlin",
+          link: "https://img.icons8.com/color/344/kotlin.png",
+          enabled: false,
+        },
         {
           name: "Java",
           link: "https://img.icons8.com/color/452/java-coffee-cup-logo.png",
+          enabled: false,
         },
         {
           name: "Ionic",
           link: "https://img.icons8.com/ios-filled/452/ionic.png",
+          enabled: false,
         },
       ],
       scaling: [
         {
           name: "Flutter",
           link: "https://img.icons8.com/color/452/flutter.png",
+          enabled: false,
         },
       ],
     },
@@ -819,6 +918,7 @@ export const technologyList = [
   "IBM MQ",
   "GraphQL",
   "Java",
+  "Scala",
   "Node",
   "Go",
   "Python",

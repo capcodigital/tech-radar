@@ -5,7 +5,7 @@ import Footer from "./Footer";
 import { icons, technologies } from "./data/data";
 import { SubContent, ExampleContent } from "./Content";
 import { TechContentType } from "./data/content";
-import techContent from "./data/content";
+import techContent from "./data/content/index";
 import images from "./images";
 import styled from "styled-components/macro";
 import ContentNavButton from "./ContentNavButton";
@@ -130,21 +130,19 @@ const CategoryPage = () => {
       )[0] || technologies[0].technologies[0];
 
     let categoryFromUrl = categoriesAndTechnologies.categoryName;
-    console.log(categoriesAndTechnologies);
+
     let icon = icons.filter(
       (el: any) => el.name.toLowerCase() === technologyFromUrl.toLowerCase()
     )[0]!;
 
-    // Once we have content for every technology enable filtering the content for specific tech
-    // let content = techContent.filter(
-    //   ({ technology }) => technology === technologyFromUrl
-    // )[0];
-    // setContent(content);
-
+    // Filter the content for specific tech
+    let content = techContent.filter(
+      ({ technology }) => technology === technologyFromUrl
+    )[0];
+    setContent(content);
     setImageLink(icon.link);
     setTechnology(technologyFromUrl);
     setCategory(categoryFromUrl);
-    setContent(techContent[0]);
 
     window.scroll({
       top: 0,
@@ -203,7 +201,9 @@ const CategoryPage = () => {
                   dangerouslySetInnerHTML={{ __html: content.intro }}
                 />
                 <SubContent contentData={content.content} />
-                <ExampleContent contentData={content.examples} />
+                {content.examples.length > 0 && (
+                  <ExampleContent contentData={content.examples} />
+                )}
                 <hr />
                 <div className="content-nav">
                   <ContentNavButton
