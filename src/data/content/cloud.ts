@@ -5,6 +5,7 @@ const techContent = [
     intro: "Content coming soon.",
     content: [],
     examples: [],
+    reference: [],
   },
   {
     technology: "Serverless",
@@ -12,6 +13,7 @@ const techContent = [
     intro: "Content coming soon.",
     content: [],
     examples: [],
+    reference: [],
   },
   {
     technology: "OpenShift",
@@ -19,6 +21,7 @@ const techContent = [
     intro: "Content coming soon.",
     content: [],
     examples: [],
+    reference: [],
   },
   {
     technology: "PCF",
@@ -26,6 +29,7 @@ const techContent = [
     intro: "Content coming soon.",
     content: [],
     examples: [],
+    reference: [],
   },
   {
     technology: "PKS",
@@ -33,6 +37,7 @@ const techContent = [
     intro: "Content coming soon.",
     content: [],
     examples: [],
+    reference: [],
   },
   {
     technology: "GCP",
@@ -40,6 +45,7 @@ const techContent = [
     intro: "Content coming soon.",
     content: [],
     examples: [],
+    reference: [],
   },
   {
     technology: "AWS",
@@ -47,6 +53,7 @@ const techContent = [
     intro: "Content coming soon.",
     content: [],
     examples: [],
+    reference: [],
   },
   {
     technology: "Grafana",
@@ -54,6 +61,7 @@ const techContent = [
     intro: "Content coming soon.",
     content: [],
     examples: [],
+    reference: [],
   },
   {
     technology: "Azure",
@@ -61,6 +69,7 @@ const techContent = [
     intro: "Content coming soon.",
     content: [],
     examples: [],
+    reference: [],
   },
   {
     technology: "Digital Ocean",
@@ -68,6 +77,7 @@ const techContent = [
     intro: "Content coming soon.",
     content: [],
     examples: [],
+    reference: [],
   },
 ];
 export default techContent;

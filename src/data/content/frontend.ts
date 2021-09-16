@@ -107,6 +107,7 @@ const techContent = [
           'A React, TypeScript web application that provides a more readable format of our Engineering Competency Framework to help explain performance expectations. Unit tests are written in Jest and React Testing Library, E2E tests are written in Cypress and are automated via <a href="https://github.com/features/actions">GitHub Actions</a>.',
       },
     ],
+    reference: ["https://reactjs.org/", "https://redux.js.org/"],
   },
   {
     technology: "Angular",
@@ -114,6 +115,7 @@ const techContent = [
     intro: "Content coming soon.",
     content: [],
     examples: [],
+    reference: [],
   },
   {
     technology: "Flutter",
@@ -121,6 +123,7 @@ const techContent = [
     intro: "Content coming soon.",
     content: [],
     examples: [],
+    reference: [],
   },
   {
     technology: "Vue",
@@ -128,6 +131,7 @@ const techContent = [
     intro: "Content coming soon.",
     content: [],
     examples: [],
+    reference: [],
   },
   {
     technology: "TypeScript",
@@ -135,6 +139,7 @@ const techContent = [
     intro: "Content coming soon.",
     content: [],
     examples: [],
+    reference: [],
   },
 ];
 export default techContent;

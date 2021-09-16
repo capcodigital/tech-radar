@@ -5,6 +5,7 @@ const techContent = [
     intro: "Content coming soon.",
     content: [],
     examples: [],
+    reference: [],
   },
   {
     technology: "Camel",
@@ -12,6 +13,7 @@ const techContent = [
     intro: "Content coming soon.",
     content: [],
     examples: [],
+    reference: [],
   },
   {
     technology: "gRPC",
@@ -19,6 +21,7 @@ const techContent = [
     intro: "Content coming soon.",
     content: [],
     examples: [],
+    reference: [],
   },
   {
     technology: "Kafka",
@@ -26,6 +29,7 @@ const techContent = [
     intro: "Content coming soon.",
     content: [],
     examples: [],
+    reference: [],
   },
   {
     technology: "ActiveM",
@@ -33,6 +37,7 @@ const techContent = [
     intro: "Content coming soon.",
     content: [],
     examples: [],
+    reference: [],
   },
   {
     technology: "IBM MQ",
@@ -40,6 +45,7 @@ const techContent = [
     intro: "Content coming soon.",
     content: [],
     examples: [],
+    reference: [],
   },
   {
     technology: "GraphQL",
@@ -47,6 +53,7 @@ const techContent = [
     intro: "Content coming soon.",
     content: [],
     examples: [],
+    reference: [],
   },
 ];
 export default techContent;

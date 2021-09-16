@@ -5,6 +5,7 @@ const techContent = [
     intro: "Content coming soon.",
     content: [],
     examples: [],
+    reference: [],
   },
   {
     technology: "Cucumber",
@@ -12,6 +13,7 @@ const techContent = [
     intro: "Content coming soon.",
     content: [],
     examples: [],
+    reference: [],
   },
   {
     technology: "Appium",
@@ -19,6 +21,7 @@ const techContent = [
     intro: "Content coming soon.",
     content: [],
     examples: [],
+    reference: [],
   },
   {
     technology: "REST Assured",
@@ -26,6 +29,7 @@ const techContent = [
     intro: "Content coming soon.",
     content: [],
     examples: [],
+    reference: [],
   },
   {
     technology: "BrowserStack",
@@ -33,6 +37,7 @@ const techContent = [
     intro: "Content coming soon.",
     content: [],
     examples: [],
+    reference: [],
   },
   {
     technology: "Sauce Labs",
@@ -40,6 +45,7 @@ const techContent = [
     intro: "Content coming soon.",
     content: [],
     examples: [],
+    reference: [],
   },
   {
     technology: "Wiremock",
@@ -47,6 +53,7 @@ const techContent = [
     intro: "Content coming soon.",
     content: [],
     examples: [],
+    reference: [],
   },
   {
     technology: "Applitools",
@@ -54,6 +61,7 @@ const techContent = [
     intro: "Content coming soon.",
     content: [],
     examples: [],
+    reference: [],
   },
   {
     technology: "JMeter",
@@ -61,6 +69,7 @@ const techContent = [
     intro: "Content coming soon.",
     content: [],
     examples: [],
+    reference: [],
   },
   {
     technology: "Axe",
@@ -68,6 +77,7 @@ const techContent = [
     intro: "Content coming soon.",
     content: [],
     examples: [],
+    reference: [],
   },
   {
     technology: "Cypress",
@@ -75,6 +85,7 @@ const techContent = [
     intro: "Content coming soon.",
     content: [],
     examples: [],
+    reference: [],
   },
   {
     technology: "Gatling",
@@ -82,6 +93,7 @@ const techContent = [
     intro: "Content coming soon.",
     content: [],
     examples: [],
+    reference: [],
   },
   {
     technology: "PACT",
@@ -89,6 +101,7 @@ const techContent = [
     intro: "Content coming soon.",
     content: [],
     examples: [],
+    reference: [],
   },
 ];
 export default techContent;

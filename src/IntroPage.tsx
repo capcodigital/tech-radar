@@ -67,7 +67,7 @@ const StyledButton = styled(Link)`
   font-family: bebas-neue-pro, sans-serif;
   padding: 10px 30px;
   text-align: center;
-  border 2px solid #e6236d;
+  border 2px solid ${({ theme }) => theme.pink};;
   border-radius: 40px;
   transition: 0.3s;
   :hover {

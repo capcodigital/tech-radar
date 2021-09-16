@@ -17,6 +17,7 @@ export type TechContentType = {
     data: Array<{ name: string; description: string }>;
   }>;
   examples: Array<{ name: string; description: string }>;
+  reference: Array<string>;
 };
 
 const content = [

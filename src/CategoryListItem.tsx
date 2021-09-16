@@ -19,7 +19,7 @@ const StyledListItem = styled.div`
     }
   }
   &.hovered {
-    color: #e6236d;
+    color: ${({ theme }) => theme.pink};
   }
   @media screen and (max-width: 1000px) {
     font-size: 18px;

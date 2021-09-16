@@ -5,6 +5,7 @@ const techContent = [
     intro: "Content coming soon.",
     content: [],
     examples: [],
+    reference: [],
   },
   {
     technology: "Neo4J",
@@ -12,6 +13,7 @@ const techContent = [
     intro: "Content coming soon.",
     content: [],
     examples: [],
+    reference: [],
   },
   {
     technology: "MongoDB",
@@ -19,6 +21,7 @@ const techContent = [
     intro: "Content coming soon.",
     content: [],
     examples: [],
+    reference: [],
   },
   {
     technology: "MySQL",
@@ -26,6 +29,7 @@ const techContent = [
     intro: "Content coming soon.",
     content: [],
     examples: [],
+    reference: [],
   },
   {
     technology: "Oracle",
@@ -33,6 +37,7 @@ const techContent = [
     intro: "Content coming soon.",
     content: [],
     examples: [],
+    reference: [],
   },
   {
     technology: "SQL Server",
@@ -41,6 +46,7 @@ const techContent = [
     intro: "Content coming soon.",
     content: [],
     examples: [],
+    reference: [],
   },
   {
     technology: "BigQuery",
@@ -48,6 +54,7 @@ const techContent = [
     intro: "Content coming soon.",
     content: [],
     examples: [],
+    reference: [],
   },
   {
     technology: "Snowflake",
@@ -55,6 +62,7 @@ const techContent = [
     intro: "Content coming soon.",
     content: [],
     examples: [],
+    reference: [],
   },
 ];
 

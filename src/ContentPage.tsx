@@ -3,7 +3,7 @@ import { RadarContextType, RadarContext } from "./RadarContextProvider";
 import BackLink from "./BackLink";
 import Footer from "./Footer";
 import { icons, technologies } from "./data/data";
-import { SubContent, ExampleContent } from "./Content";
+import { SubContent, ExampleContent, ReferenceContent } from "./Content";
 import { TechContentType } from "./data/content";
 import techContent from "./data/content/index";
 import images from "./images";
@@ -81,7 +81,7 @@ const ContentBody = styled.div`
     margin-bottom: 34px;
     a {
       color: inherit;
-      border-bottom: 1px solid #e6236d;
+      border-bottom: 1px solid ${({ theme }) => theme.pink};
       text-decoration: none;
     }
   }
@@ -203,6 +203,10 @@ const CategoryPage = () => {
                 <SubContent contentData={content.content} />
                 {content.examples.length > 0 && (
                   <ExampleContent contentData={content.examples} />
+                )}
+
+                {content.reference.length > 0 && (
+                  <ReferenceContent contentData={content.reference} />
                 )}
                 <hr />
                 <div className="content-nav">

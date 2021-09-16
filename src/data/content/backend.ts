@@ -5,6 +5,7 @@ const techContent = [
     intro: "Content coming soon.",
     content: [],
     examples: [],
+    reference: [],
   },
   {
     technology: "Scala",
@@ -81,6 +82,7 @@ const techContent = [
       },
     ],
     examples: [],
+    reference: [],
   },
   {
     technology: "Node",
@@ -88,6 +90,7 @@ const techContent = [
     intro: "Content coming soon.",
     content: [],
     examples: [],
+    reference: [],
   },
   {
     technology: "Go",
@@ -95,6 +98,7 @@ const techContent = [
     intro: "Content coming soon.",
     content: [],
     examples: [],
+    reference: [],
   },
   {
     technology: "Python",
@@ -102,6 +106,7 @@ const techContent = [
     intro: "Content coming soon.",
     content: [],
     examples: [],
+    reference: [],
   },
   {
     technology: "Kotlin",
@@ -109,6 +114,7 @@ const techContent = [
     intro: "Content coming soon.",
     content: [],
     examples: [],
+    reference: [],
   },
 ];
 export default techContent;

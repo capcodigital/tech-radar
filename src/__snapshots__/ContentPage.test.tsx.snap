@@ -71,7 +71,7 @@ exports[`ContentPage should render ContentPage component 1`] = `
         </svg>
       </a>
       <div
-        class="ContentPage__ContentBody-sc-1uhhvyt-2 bMA-dYU"
+        class="ContentPage__ContentBody-sc-1uhhvyt-2 ejiXfs"
       >
         <div
           class="content-intro"

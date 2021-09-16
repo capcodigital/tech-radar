@@ -69,7 +69,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             Preferred
           </div>
           <div
-            class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
+            class="CategoryListItem__StyledListItem-sc-7i4wsk-0 mmUYs"
           >
             <a
               data-testid="category-item-GitHub"
@@ -80,7 +80,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </a>
           </div>
           <div
-            class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
+            class="CategoryListItem__StyledListItem-sc-7i4wsk-0 mmUYs"
           >
             <a
               data-testid="category-item-CircleCI"
@@ -91,7 +91,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </a>
           </div>
           <div
-            class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
+            class="CategoryListItem__StyledListItem-sc-7i4wsk-0 mmUYs"
           >
             <a
               data-testid="category-item-Terraform"
@@ -102,7 +102,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </a>
           </div>
           <div
-            class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
+            class="CategoryListItem__StyledListItem-sc-7i4wsk-0 mmUYs"
           >
             <a
               data-testid="category-item-Valut"
@@ -113,7 +113,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </a>
           </div>
           <div
-            class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
+            class="CategoryListItem__StyledListItem-sc-7i4wsk-0 mmUYs"
           >
             <a
               data-testid="category-item-SonarQube"
@@ -124,7 +124,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </a>
           </div>
           <div
-            class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
+            class="CategoryListItem__StyledListItem-sc-7i4wsk-0 mmUYs"
           >
             <a
               data-testid="category-item-Elastic"
@@ -145,7 +145,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             Skilled
           </div>
           <div
-            class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
+            class="CategoryListItem__StyledListItem-sc-7i4wsk-0 mmUYs"
           >
             <a
               data-testid="category-item-Bitbucket"
@@ -156,7 +156,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </a>
           </div>
           <div
-            class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
+            class="CategoryListItem__StyledListItem-sc-7i4wsk-0 mmUYs"
           >
             <a
               data-testid="category-item-Jenkins"
@@ -167,7 +167,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </a>
           </div>
           <div
-            class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
+            class="CategoryListItem__StyledListItem-sc-7i4wsk-0 mmUYs"
           >
             <a
               data-testid="category-item-TeamCity"
@@ -178,7 +178,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </a>
           </div>
           <div
-            class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
+            class="CategoryListItem__StyledListItem-sc-7i4wsk-0 mmUYs"
           >
             <a
               data-testid="category-item-Istio"
@@ -189,7 +189,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </a>
           </div>
           <div
-            class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
+            class="CategoryListItem__StyledListItem-sc-7i4wsk-0 mmUYs"
           >
             <a
               data-testid="category-item-Ansible"
@@ -200,7 +200,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </a>
           </div>
           <div
-            class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
+            class="CategoryListItem__StyledListItem-sc-7i4wsk-0 mmUYs"
           >
             <a
               data-testid="category-item-Packer"
@@ -222,7 +222,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           Scaling
         </div>
         <div
-          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
+          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 mmUYs"
         >
           <a
             data-testid="category-item-Twistlock"
@@ -233,7 +233,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </a>
         </div>
         <div
-          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
+          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 mmUYs"
         >
           <a
             data-testid="category-item-Kiali"
@@ -244,7 +244,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </a>
         </div>
         <div
-          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
+          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 mmUYs"
         >
           <a
             data-testid="category-item-ConcourseCl"
@@ -255,7 +255,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </a>
         </div>
         <div
-          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
+          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 mmUYs"
         >
           <a
             data-testid="category-item-Consul"
@@ -517,7 +517,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           Preferred
         </div>
         <div
-          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
+          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 mmUYs"
         >
           <a
             data-testid="category-item-GitHub"
@@ -528,7 +528,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </a>
         </div>
         <div
-          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
+          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 mmUYs"
         >
           <a
             data-testid="category-item-CircleCI"
@@ -539,7 +539,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </a>
         </div>
         <div
-          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
+          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 mmUYs"
         >
           <a
             data-testid="category-item-Terraform"
@@ -550,7 +550,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </a>
         </div>
         <div
-          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
+          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 mmUYs"
         >
           <a
             data-testid="category-item-Valut"
@@ -561,7 +561,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </a>
         </div>
         <div
-          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
+          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 mmUYs"
         >
           <a
             data-testid="category-item-SonarQube"
@@ -572,7 +572,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </a>
         </div>
         <div
-          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
+          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 mmUYs"
         >
           <a
             data-testid="category-item-Elastic"
@@ -595,7 +595,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           Skilled
         </div>
         <div
-          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
+          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 mmUYs"
         >
           <a
             data-testid="category-item-Bitbucket"
@@ -606,7 +606,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </a>
         </div>
         <div
-          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
+          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 mmUYs"
         >
           <a
             data-testid="category-item-Jenkins"
@@ -617,7 +617,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </a>
         </div>
         <div
-          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
+          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 mmUYs"
         >
           <a
             data-testid="category-item-TeamCity"
@@ -628,7 +628,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </a>
         </div>
         <div
-          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
+          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 mmUYs"
         >
           <a
             data-testid="category-item-Istio"
@@ -639,7 +639,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </a>
         </div>
         <div
-          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
+          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 mmUYs"
         >
           <a
             data-testid="category-item-Ansible"
@@ -650,7 +650,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </a>
         </div>
         <div
-          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
+          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 mmUYs"
         >
           <a
             data-testid="category-item-Packer"
@@ -673,7 +673,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           Scaling
         </div>
         <div
-          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
+          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 mmUYs"
         >
           <a
             data-testid="category-item-Twistlock"
@@ -684,7 +684,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </a>
         </div>
         <div
-          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
+          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 mmUYs"
         >
           <a
             data-testid="category-item-Kiali"
@@ -695,7 +695,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </a>
         </div>
         <div
-          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
+          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 mmUYs"
         >
           <a
             data-testid="category-item-ConcourseCl"
@@ -706,7 +706,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </a>
         </div>
         <div
-          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
+          class="CategoryListItem__StyledListItem-sc-7i4wsk-0 mmUYs"
         >
           <a
             data-testid="category-item-Consul"
