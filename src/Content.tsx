@@ -67,7 +67,6 @@ const SourceLink = styled.a`
   color: inherit;
   border-bottom: none!;
   font-size: 16px;
-  display: block;
   :hover {
     color: ${({ theme }) => theme.pink};
     border-bottom: 1px solid ${({ theme }) => theme.pink};

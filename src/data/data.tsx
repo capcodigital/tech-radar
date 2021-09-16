@@ -456,7 +456,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Ionic",
           link: "https://img.icons8.com/ios-filled/452/ionic.png",
-          enabled: false,
+          enabled: true,
         },
       ],
       scaling: [
