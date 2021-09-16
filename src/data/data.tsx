@@ -370,7 +370,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Python",
           link: "https://img.icons8.com/color/452/python.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "Groovy",
@@ -404,7 +404,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "TypeScript",
           link: "https://img.icons8.com/color/452/typescript.png",
-          enabled: false,
+          enabled: true,
         },
       ],
       skilled: [],
@@ -434,14 +434,14 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Gradle",
           link: "https://gradle.org/images/gradle-knowledge-graph-logo.png?20170228",
-          enabled: false,
+          enabled: true,
         },
       ],
       skilled: [
         {
           name: "Swift",
           link: "https://img.icons8.com/fluent/452/swift.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "Kotlin",
@@ -449,7 +449,7 @@ export const data: Array<{ name: string; data: techType }> = [
           enabled: false,
         },
         {
-          name: "Java",
+          name: "Java Mobile",
           link: "https://img.icons8.com/color/452/java-coffee-cup-logo.png",
           enabled: false,
         },
@@ -463,7 +463,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Flutter",
           link: "https://img.icons8.com/color/452/flutter.png",
-          enabled: false,
+          enabled: true,
         },
       ],
     },
@@ -725,7 +725,7 @@ export const icons: Array<{ name: string; link: string }> = [
   { name: "Swift", link: "https://img.icons8.com/fluent/452/swift.png" },
   { name: "Kotlin", link: "https://img.icons8.com/color/344/kotlin.png" },
   {
-    name: "Java",
+    name: "Java Mobile",
     link: "https://img.icons8.com/color/452/java-coffee-cup-logo.png",
   },
   {
@@ -843,7 +843,7 @@ export const technologies = [
       "React Native",
       "Swift",
       "Kotlin",
-      "Java",
+      "Java Mobile",
       "Ionic",
       "Flutter",
       "Gradle",
@@ -931,7 +931,7 @@ export const technologyList = [
   "React Native",
   "Swift",
   "Kotlin",
-  "Java",
+  "Java Mobile",
   "Ionic",
   "Flutter",
 ];

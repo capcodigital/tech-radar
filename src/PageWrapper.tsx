@@ -1,5 +1,5 @@
-import React, { FC } from 'react';
-import styled from 'styled-components/macro';
+import React, { FC } from "react";
+import styled from "styled-components/macro";
 
 const StyledPageWrapper = styled.div`
   width: 100%;

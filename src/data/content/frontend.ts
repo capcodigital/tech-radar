@@ -118,14 +118,6 @@ const techContent = [
     reference: [],
   },
   {
-    technology: "Flutter",
-    docsLink: "https://flutter.dev/docs",
-    intro: "Content coming soon.",
-    content: [],
-    examples: [],
-    reference: [],
-  },
-  {
     technology: "Vue",
     docsLink: "https://vuejs.org/v2/guide/",
     intro: "Content coming soon.",
@@ -136,9 +128,74 @@ const techContent = [
   {
     technology: "TypeScript",
     docsLink: "https://www.typescriptlang.org/docs/",
-    intro: "Content coming soon.",
-    content: [],
-    examples: [],
+    intro:
+      '<a href="https://www.typescriptlang.org/docs/">TypeScript</a> is an object-oriented scripting language invented and maintained by Microsoft. It is a well-structured and concise language which makes it a perfect choice for large and complex projects. TypeScript is a superset of JavaScript with optional static typing and compiles to plain JavaScript. Therefore, it can used on frontend for both desktop and mobile applications, in automation testing, on backend in Node.js as well as create and provision AWS infrastructure deployments via AWS CDK.<br/><br/><p style="max-width:600px; font-size:18px; font-style: italic; text-align: center">“TypeScript saves you time catching errors and providing fixes before you run code.”</p> <br/><span style="font-style:normal; font-size: 16px; float:right">Official TypeScript Documentation</span>',
+    content: [
+      {
+        name: "Types",
+        intro:
+          "Types enhances code quality with meaning fewer bugs which helps teams achieve better performance and faster software releases",
+        data: [
+          {
+            name: "Everyday Types",
+            description:
+              "Boolean, String, Number, Array, Object, any, function, interface, null, undefined, void ",
+          },
+          {
+            name: "Other Interesting Types",
+            description:
+              "<ul><li>Unknown: The type-safe counterpart of any. </li><li>Never: Indicates the values that will never occur. </li><li>Union: Combines existing types to build a new one using a variety of operators. </li><li>Type Aliases: Allows developers to define custom types. </li> </ul>",
+          },
+        ],
+      },
+      {
+        name: "Benefits of TypeScript",
+        intro: "",
+        data: [
+          {
+            name: "Type Checking",
+            description:
+              "Checking types at compile time helps developers find bugs before their code runs in the browser saving the time spent on debugging errors that would normally appear only at run time if they used plain JavaScript. ",
+          },
+          {
+            name: "Easier Code Management",
+            description:
+              "Defining types can serve as a form of documentation for data structures. This helps teams to introduce new developers to the project faster as new engineers can get all the information directly from the development environment. ",
+          },
+        ],
+      },
+      {
+        name: "Testing",
+        intro:
+          "The first purpose of testing is to prevent bugs from releasing to production. Testing ensures the features are functioning correctly for complex components and modular applications and is required for the effective performance of a software application or product making it more robust and less prone to error. ",
+        data: [
+          {
+            name: "Jest",
+            description:
+              '<a href="https://jestjs.io/">Jest</a> is an open-source testing framework. It comes with built-in mocking and assertion libraries, which also runs your tests concurrently in parallel, providing faster test execution.',
+          },
+          {
+            name: "Mocha",
+            description:
+              '<a href="https://mochajs.org/">Mocha</a> is a JavaScript test framework running on Node.js and in the browser. It is often used with external assertion libraries such as <a href="https://www.chaijs.com/">chai</a>.',
+          },
+          {
+            name: "Jasmine",
+            description:
+              '<a href="https://jasmine.github.io/">Jasmine</a> is a popular Behaviour Driven Development testing framework for JavaScript/TypeScript. It’s great for websites and Node.js applications ',
+          },
+        ],
+      },
+    ],
+    examples: [
+      {
+        name: "Digital Engineering Framework",
+        imageUrl:
+          "https://general-gif-bucket.s3.eu-west-2.amazonaws.com/demo.gif",
+        description:
+          'A React, TypeScript web application that provides a more readable format of our Engineering Competency Framework to help explain performance expectations. Unit tests are written in Jest and React Testing Library, E2E tests are written in Cypress and are automated via <a href="https://github.com/features/actions">GitHub Actions</a>.',
+      },
+    ],
     reference: [],
   },
 ];

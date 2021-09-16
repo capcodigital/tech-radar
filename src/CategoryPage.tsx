@@ -57,17 +57,11 @@ const Wrapper = styled.div<WrapperProps>`
   .title {
     font-size: 32px;
   }
-  }
-  .small-screen {
-    display: none;
-  }
   .subheader {
     ${SubheaderStyle}
     margin: 100px 0 20px 0;
   }
-  .subheader-mobile {
-    display: none;
-  }
+  .small-screen .subheader-mobile,
   .mobile-category {
     display: none;
   }
@@ -124,11 +118,11 @@ const Title = styled.div`
 const MobileTitle = styled.div`
   width: 210px;
   font-size: 52px;
-  padding-right: 20px;
   font-weight: 700;
   text-align: left;
-  display: inline-block;
+  padding-right: 20px;
   vertical-align: middle;
+  display: inline-block;
   margin: 20px 0 20px 0;
 `;
 

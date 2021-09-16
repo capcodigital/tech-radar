@@ -118,7 +118,7 @@ export const ExampleContent: FC<ExampleContentType> = ({ contentData }) => (
             ),
           }}
         />
-        <img src={imageUrl} width={"100%"} alt={"demo"} />
+        {imageUrl && <img src={imageUrl} width={"100%"} alt={"demo"} />}
       </div>
     ))}
   </StyledSubContent>

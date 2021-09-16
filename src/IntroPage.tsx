@@ -10,14 +10,6 @@ const middleRadius = (outterRadius * 2) / 3;
 const innerCircleRadius = outterRadius / 3;
 
 const Wrapper = styled.div`
-  margin-top: -80px;
-  width: 50vw;
-  display: inline-block;
-  @media screen and (max-width: 1000px) {
-    display: none;
-  }
-`;
-const OutterWrapper = styled.div`
   .footer {
     position: absolute;
     top: calc(${window.innerHeight}px + 20vh);
@@ -25,6 +17,21 @@ const OutterWrapper = styled.div`
       position: unset;
       margin-top: 100px;
     }
+  }
+  a {
+    color: white;
+    :hover {
+      border-bottom: 1px solid white;
+    }
+  }
+`;
+
+const RadarWrapper = styled.div`
+  margin-top: -80px;
+  width: 50vw;
+  display: inline-block;
+  @media screen and (max-width: 1000px) {
+    display: none;
   }
 `;
 
@@ -34,6 +41,7 @@ const Title = styled.div`
     margin: 20px 0 50px 0;
   }
 `;
+
 const IntroText = styled.div`
   font-size: 34px;
   font-family: Poppins;
@@ -67,7 +75,7 @@ const StyledButton = styled(Link)`
   font-family: bebas-neue-pro, sans-serif;
   padding: 10px 30px;
   text-align: center;
-  border 2px solid ${({ theme }) => theme.pink};;
+  border 2px solid ${({ theme }) => theme.pink} !important;
   border-radius: 40px;
   transition: 0.3s;
   :hover {
@@ -77,7 +85,7 @@ const StyledButton = styled(Link)`
 `;
 const IntroPage = () => {
   return (
-    <OutterWrapper>
+    <Wrapper>
       <IntroText>
         <Title>
           <img
@@ -98,10 +106,14 @@ const IntroPage = () => {
           The technologies and tools are organised into Preferred, Skilled and
           Scaling and whilst it provides a good overview we can support clients
           if they have specific requirements outside of the technologies listed.
+          The Capco Technology Radar has been inspired by the excellent{" "}
+          <a href="https://www.thoughtworks.com/radar">
+            Thoughtworks Technology Radar.
+          </a>
         </div>
         <StyledButton to={"/home"}>View Our Tech Radar</StyledButton>
       </IntroText>
-      <Wrapper>
+      <RadarWrapper>
         <div>
           <svg viewBox={"0 0 600 600"} style={{ overflow: "visible" }}>
             <g transform={`translate(${300} ${300})`}>
@@ -143,9 +155,9 @@ const IntroPage = () => {
             </g>
           </svg>
         </div>
-      </Wrapper>
+      </RadarWrapper>
       <Footer />
-    </OutterWrapper>
+    </Wrapper>
   );
 };
 
