@@ -207,7 +207,6 @@ const CategoryPage = () => {
                       techName={name}
                       enabled={enabled}
                       onClick={() => setTechnology(name)}
-                      data-testid={`preferred-${name}`}
                     />
                   ))}
                 </div>
@@ -222,7 +221,6 @@ const CategoryPage = () => {
                       techName={name}
                       enabled={enabled}
                       onClick={() => setTechnology(name)}
-                      data-testid={`skilled-${name}`}
                     />
                   ))}
                 </div>
@@ -238,7 +236,6 @@ const CategoryPage = () => {
                     techName={name}
                     enabled={enabled}
                     onClick={() => setTechnology(name)}
-                    data-testid={`scaling-${name}`}
                   />
                 ))}
               </div>
@@ -288,7 +285,6 @@ const CategoryPage = () => {
                     techName={name}
                     enabled={enabled}
                     onClick={() => setTechnology(name)}
-                    data-testid={`preferred-${name}`}
                   />
                 ))}
               </Grid>
@@ -303,7 +299,6 @@ const CategoryPage = () => {
                     techName={name}
                     enabled={enabled}
                     onClick={() => setTechnology(name)}
-                    data-testid={`preferred-${name}`}
                   />
                 ))}
               </Grid>
@@ -318,7 +313,6 @@ const CategoryPage = () => {
                     techName={name}
                     enabled={enabled}
                     onClick={() => setTechnology(name)}
-                    data-testid={`preferred-${name}`}
                   />
                 ))}
               </Grid>

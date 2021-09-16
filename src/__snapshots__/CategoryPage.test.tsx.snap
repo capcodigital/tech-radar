@@ -72,6 +72,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
           >
             <a
+              data-testid="category-item-GitHub"
               href="/technology/devops/github"
               style="pointer-events: none;"
             >
@@ -82,6 +83,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
           >
             <a
+              data-testid="category-item-CircleCI"
               href="/technology/devops/circleci"
               style="pointer-events: none;"
             >
@@ -92,6 +94,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
           >
             <a
+              data-testid="category-item-Terraform"
               href="/technology/devops/terraform"
               style="pointer-events: none;"
             >
@@ -102,6 +105,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
           >
             <a
+              data-testid="category-item-Valut"
               href="/technology/devops/valut"
               style="pointer-events: none;"
             >
@@ -112,6 +116,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
           >
             <a
+              data-testid="category-item-SonarQube"
               href="/technology/devops/sonarqube"
               style="pointer-events: none;"
             >
@@ -122,6 +127,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
           >
             <a
+              data-testid="category-item-Elastic"
               href="/technology/devops/elastic"
               style="pointer-events: none;"
             >
@@ -142,6 +148,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
           >
             <a
+              data-testid="category-item-Bitbucket"
               href="/technology/devops/bitbucket"
               style="pointer-events: none;"
             >
@@ -152,6 +159,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
           >
             <a
+              data-testid="category-item-Jenkins"
               href="/technology/devops/jenkins"
               style="pointer-events: none;"
             >
@@ -162,6 +170,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
           >
             <a
+              data-testid="category-item-TeamCity"
               href="/technology/devops/teamcity"
               style="pointer-events: none;"
             >
@@ -172,6 +181,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
           >
             <a
+              data-testid="category-item-Istio"
               href="/technology/devops/istio"
               style="pointer-events: none;"
             >
@@ -182,6 +192,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
           >
             <a
+              data-testid="category-item-Ansible"
               href="/technology/devops/ansible"
               style="pointer-events: none;"
             >
@@ -192,6 +203,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
           >
             <a
+              data-testid="category-item-Packer"
               href="/technology/devops/packer"
               style="pointer-events: none;"
             >
@@ -213,6 +225,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
         >
           <a
+            data-testid="category-item-Twistlock"
             href="/technology/devops/twistlock"
             style="pointer-events: none;"
           >
@@ -223,6 +236,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
         >
           <a
+            data-testid="category-item-Kiali"
             href="/technology/devops/kiali"
             style="pointer-events: none;"
           >
@@ -233,6 +247,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
         >
           <a
+            data-testid="category-item-ConcourseCl"
             href="/technology/devops/concoursecl"
             style="pointer-events: none;"
           >
@@ -243,6 +258,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
         >
           <a
+            data-testid="category-item-Consul"
             href="/technology/devops/consul"
             style="pointer-events: none;"
           >
@@ -504,6 +520,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
         >
           <a
+            data-testid="category-item-GitHub"
             href="/technology/devops/github"
             style="pointer-events: none;"
           >
@@ -514,6 +531,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
         >
           <a
+            data-testid="category-item-CircleCI"
             href="/technology/devops/circleci"
             style="pointer-events: none;"
           >
@@ -524,6 +542,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
         >
           <a
+            data-testid="category-item-Terraform"
             href="/technology/devops/terraform"
             style="pointer-events: none;"
           >
@@ -534,6 +553,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
         >
           <a
+            data-testid="category-item-Valut"
             href="/technology/devops/valut"
             style="pointer-events: none;"
           >
@@ -544,6 +564,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
         >
           <a
+            data-testid="category-item-SonarQube"
             href="/technology/devops/sonarqube"
             style="pointer-events: none;"
           >
@@ -554,6 +575,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
         >
           <a
+            data-testid="category-item-Elastic"
             href="/technology/devops/elastic"
             style="pointer-events: none;"
           >
@@ -576,6 +598,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
         >
           <a
+            data-testid="category-item-Bitbucket"
             href="/technology/devops/bitbucket"
             style="pointer-events: none;"
           >
@@ -586,6 +609,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
         >
           <a
+            data-testid="category-item-Jenkins"
             href="/technology/devops/jenkins"
             style="pointer-events: none;"
           >
@@ -596,6 +620,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
         >
           <a
+            data-testid="category-item-TeamCity"
             href="/technology/devops/teamcity"
             style="pointer-events: none;"
           >
@@ -606,6 +631,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
         >
           <a
+            data-testid="category-item-Istio"
             href="/technology/devops/istio"
             style="pointer-events: none;"
           >
@@ -616,6 +642,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
         >
           <a
+            data-testid="category-item-Ansible"
             href="/technology/devops/ansible"
             style="pointer-events: none;"
           >
@@ -626,6 +653,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
         >
           <a
+            data-testid="category-item-Packer"
             href="/technology/devops/packer"
             style="pointer-events: none;"
           >
@@ -648,6 +676,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
         >
           <a
+            data-testid="category-item-Twistlock"
             href="/technology/devops/twistlock"
             style="pointer-events: none;"
           >
@@ -658,6 +687,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
         >
           <a
+            data-testid="category-item-Kiali"
             href="/technology/devops/kiali"
             style="pointer-events: none;"
           >
@@ -668,6 +698,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
         >
           <a
+            data-testid="category-item-ConcourseCl"
             href="/technology/devops/concoursecl"
             style="pointer-events: none;"
           >
@@ -678,6 +709,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           class="CategoryListItem__StyledListItem-sc-7i4wsk-0 fFLfLT"
         >
           <a
+            data-testid="category-item-Consul"
             href="/technology/devops/consul"
             style="pointer-events: none;"
           >

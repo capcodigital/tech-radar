@@ -48,6 +48,7 @@ const CategoryListItem: FC<ListItemProps> = ({
         "-"
       )}`.toLowerCase()}
       style={{ pointerEvents: enabled ? undefined : "none" }}
+      data-testid={`category-item-${techName}`}
     >
       {techName}
     </Link>
