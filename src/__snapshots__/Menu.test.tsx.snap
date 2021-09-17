@@ -11,7 +11,7 @@ exports[`Menu should render Menu component 1`] = `
       class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-space-between"
     >
       <div
-        class="MuiGrid-root Menu__LogoGridItem-sc-1bokw2z-1 cABFdn MuiGrid-item"
+        class="MuiGrid-root Menu__LogoGridItem-sc-1bokw2z-1 rCVOj MuiGrid-item"
       >
         <a
           href="/home"

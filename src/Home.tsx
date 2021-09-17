@@ -57,11 +57,7 @@ const Home = () => {
         <Grid container spacing={1} className="mobile-icons">
           {Object.entries(images).map(([name, image]) => (
             <Grid item xs={6} key={name}>
-              <Link
-                to={`/category/${name
-                  .replace(/\s/g, "-")
-                  .toLowerCase()}`.toLowerCase()}
-              >
+              <Link to={`/category/${name.replace(/\s/g, "-")}`.toLowerCase()}>
                 <img height={90} src={image} alt={name} />
                 <div className="text">
                   {name}

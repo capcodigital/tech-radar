@@ -34,7 +34,7 @@ const LogoGridItem = styled(Grid)`
     margin-left: 60px;
 
     div {
-      color: #e6236d;
+      color: ${({ theme }) => theme.pink};
       font-weight: 700;
       font-size: 24px;
     }

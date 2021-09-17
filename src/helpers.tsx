@@ -9,6 +9,7 @@ export const getNextItem = (currentItem: string) => {
 export const getPrevItem = (currentItem: string) => {
   const currentIndex = technologyList.indexOf(currentItem);
   const prevIndex = (currentIndex - 1) % technologyList.length;
+
   return technologyList[prevIndex < 0 ? technologyList.length - 1 : prevIndex];
 };
 

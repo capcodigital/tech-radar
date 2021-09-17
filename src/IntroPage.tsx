@@ -10,6 +10,23 @@ const middleRadius = (outterRadius * 2) / 3;
 const innerCircleRadius = outterRadius / 3;
 
 const Wrapper = styled.div`
+  .footer {
+    position: absolute;
+    top: calc(${window.innerHeight}px + 20vh);
+    @media screen and (max-width: 1000px) {
+      position: unset;
+      margin-top: 100px;
+    }
+  }
+  a {
+    color: white;
+    :hover {
+      border-bottom: 1px solid white;
+    }
+  }
+`;
+
+const RadarWrapper = styled.div`
   margin-top: -80px;
   width: 50vw;
   display: inline-block;
@@ -17,27 +34,14 @@ const Wrapper = styled.div`
     display: none;
   }
 `;
-const OutterWrapper = styled.div`
-  .footer {
-    position: absolute;
-    top: calc(${window.innerHeight}px + 10vh);
-    @media screen and (max-width: 1000px) {
-      position: unset;
-      margin-top: 100px;
-    }
-  }
-`;
 
 const Title = styled.div`
   font-size: 20px;
-  div {
-    margin: 20px 0 50px 0;
-  }
+  margin: 20px 0 50px 0;
 `;
+
 const IntroText = styled.div`
-  font-size: 34px;
-  font-family: Poppins;
-  font-weight: 300;
+  font: 300 34px Poppins;
   position: absolute;
   display: inline-block;
   width: 50vw;
@@ -63,11 +67,10 @@ const IntroText = styled.div`
 const StyledButton = styled(Link)`
   height: 56px;
   color: white;
-  font-size: 21px;
-  font-family: bebas-neue-pro, sans-serif;
+  font: 21px bebas-neue-pro, sans-serif;
   padding: 10px 30px;
   text-align: center;
-  border 2px solid #e6236d;
+  border 2px solid ${({ theme }) => theme.pink} !important;
   border-radius: 40px;
   transition: 0.3s;
   :hover {
@@ -75,11 +78,12 @@ const StyledButton = styled(Link)`
       background: rgb(255, 255, 255, 0.1);
   }
 `;
+
 const IntroPage = () => {
   return (
-    <OutterWrapper>
+    <Wrapper>
       <IntroText>
-        <Title>
+        <div>
           <img
             className="category-icon"
             src={robot}
@@ -87,8 +91,8 @@ const IntroPage = () => {
             width={68}
             height={66}
           />
-          <div>Radar Purpose</div>
-        </Title>
+          <Title>Radar Purpose</Title>
+        </div>
         <div>
           The purpose of this Tech Radar is to provide a view of the current
           technology coverage of Capco Digital Engineering.
@@ -98,10 +102,14 @@ const IntroPage = () => {
           The technologies and tools are organised into Preferred, Skilled and
           Scaling and whilst it provides a good overview we can support clients
           if they have specific requirements outside of the technologies listed.
+          The Capco Technology Radar has been inspired by the excellent{" "}
+          <a href="https://www.thoughtworks.com/radar">
+            Thoughtworks Technology Radar.
+          </a>
         </div>
         <StyledButton to={"/home"}>View Our Tech Radar</StyledButton>
       </IntroText>
-      <Wrapper>
+      <RadarWrapper>
         <div>
           <svg viewBox={"0 0 600 600"} style={{ overflow: "visible" }}>
             <g transform={`translate(${300} ${300})`}>
@@ -143,9 +151,9 @@ const IntroPage = () => {
             </g>
           </svg>
         </div>
-      </Wrapper>
+      </RadarWrapper>
       <Footer />
-    </OutterWrapper>
+    </Wrapper>
   );
 };
 

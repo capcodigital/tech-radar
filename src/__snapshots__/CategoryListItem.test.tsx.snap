@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CategoryListItem should render CategoryListItem component 1`] = `
+<div
+  class="CategoryListItem__StyledListItem-sc-7i4wsk-0 kshgbl"
+>
+  <a
+    data-testid="category-item-GitHub"
+    href="/technology/devops/github"
+    style="pointer-events: none;"
+  >
+    GitHub
+  </a>
+</div>
+`;

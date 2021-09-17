@@ -1,5 +1,5 @@
-import React, { FC } from 'react';
-import styled from 'styled-components/macro';
+import React, { FC } from "react";
+import styled from "styled-components/macro";
 
 type SubContentType = {
   contentData: Array<{
@@ -8,17 +8,18 @@ type SubContentType = {
     data: Array<{ name: string; description: string }>;
   }>;
 };
+
 type ExampleContentType = {
   contentData: Array<{ name: string; description: string; imageUrl?: string }>;
 };
 
+type ReferenceContentType = {
+  contentData: Array<string>;
+};
+
 const StyledSubContent = styled.div`
   margin-bottom: 40px;
-  .title {
-    font-size: 24px;
-    font-weight: 700;
-    padding-bottom: 14px;
-  }
+
   .intro {
     font-size: 18px;
     font-weight: 500;
@@ -27,11 +28,10 @@ const StyledSubContent = styled.div`
 
   .content {
     font-size: 16px;
-
     div:first-child {
       font-size: 18px;
       padding-bottom: 8px;
-      color: #e6236d;
+      color: ${({ theme }) => theme.pink};
       font-weight: 700;
     }
     font-weight: 300;
@@ -39,7 +39,7 @@ const StyledSubContent = styled.div`
   }
   a {
     color: inherit;
-    border-bottom: 1px solid #e6236d;
+    border-bottom: 1px solid ${({ theme }) => theme.pink};
   }
   img {
     padding: 20px 0;
@@ -56,15 +56,38 @@ const StyledSubContent = styled.div`
   }
 `;
 
+const Title = styled.div`
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 14px;
+`;
+
+const SourceLink = styled.a`
+  color: inherit;
+  border-bottom: none!;
+  font-size: 16px;
+  :hover {
+    color: ${({ theme }) => theme.pink};
+    border-bottom: 1px solid ${({ theme }) => theme.pink};
+  }
+`;
+
 export const SubContent: FC<SubContentType> = ({ contentData }) => (
   <>
-    {contentData.map(({ name, intro, data }) => (
-      <StyledSubContent key={name}>
-        <div className='title'>{name}</div>
-        {intro && <div className='intro'>{intro}</div>}
-        {data.map(({ name, description }) => (
-          <div className={'content'} key={name}>
-            <div>{name}</div>
+    {contentData.map(({ name, intro, data }, idx) => (
+      <StyledSubContent key={`subcontent-${idx}`}>
+        {name && <Title>{name}</Title>}
+        {intro && (
+          <div
+            className="intro"
+            dangerouslySetInnerHTML={{
+              __html: intro,
+            }}
+          />
+        )}
+        {data.map(({ name, description }, idx) => (
+          <div className={"content"} key={`data-content-${idx}`}>
+            {name && <div>{name}</div>}
             <div
               dangerouslySetInnerHTML={{
                 __html: description.replace(
@@ -82,9 +105,9 @@ export const SubContent: FC<SubContentType> = ({ contentData }) => (
 
 export const ExampleContent: FC<ExampleContentType> = ({ contentData }) => (
   <StyledSubContent>
-    <div className='title'>Use Cases</div>
+    <Title>Use Cases</Title>
     {contentData.map(({ name, description, imageUrl }) => (
-      <div className={'content'} key={name}>
+      <div className={"content"} key={name}>
         <div>{name}</div>
         <div
           dangerouslySetInnerHTML={{
@@ -94,7 +117,20 @@ export const ExampleContent: FC<ExampleContentType> = ({ contentData }) => (
             ),
           }}
         />
-        <img src={imageUrl} width={'100%'} alt={'demo'} />
+        {imageUrl && <img src={imageUrl} width={"100%"} alt={"demo"} />}
+      </div>
+    ))}
+  </StyledSubContent>
+);
+
+export const ReferenceContent: FC<ReferenceContentType> = ({ contentData }) => (
+  <StyledSubContent>
+    <Title>Sources</Title>
+    {contentData.map((link, idx) => (
+      <div key={`source-${idx}`} className="content">
+        <SourceLink href={link} rel="noreferrer" target="_blank">
+          {link}
+        </SourceLink>
       </div>
     ))}
   </StyledSubContent>

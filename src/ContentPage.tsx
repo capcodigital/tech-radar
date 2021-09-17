@@ -3,9 +3,9 @@ import { RadarContextType, RadarContext } from "./RadarContextProvider";
 import BackLink from "./BackLink";
 import Footer from "./Footer";
 import { icons, technologies } from "./data/data";
-import { SubContent, ExampleContent } from "./Content";
+import { SubContent, ExampleContent, ReferenceContent } from "./Content";
 import { TechContentType } from "./data/content";
-import techContent from "./data/content";
+import techContent from "./data/content/index";
 import images from "./images";
 import styled from "styled-components/macro";
 import ContentNavButton from "./ContentNavButton";
@@ -30,18 +30,6 @@ const Wrapper = styled.div<WrapperProps>`
   img {
     margin: auto;
   }
-  hr {
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 0),
-      rgba(255, 255, 255, 0.75),
-      rgba(255, 255, 255, 0)
-    );
-  }
-  .conent-nav {
-  }
   @media screen and (max-width: 1000px) {
     margin-top: 30px;
     padding: 0 25px 0 25px;
@@ -51,7 +39,7 @@ const Wrapper = styled.div<WrapperProps>`
   }
 `;
 
-const StyledContent = styled.div`
+const ContentWrapper = styled.div`
   text-align: left;
   width: 1060px;
   margin: auto;
@@ -81,7 +69,7 @@ const ContentBody = styled.div`
     margin-bottom: 34px;
     a {
       color: inherit;
-      border-bottom: 1px solid #e6236d;
+      border-bottom: 1px solid ${({ theme }) => theme.pink};
       text-decoration: none;
     }
   }
@@ -104,6 +92,17 @@ const Title = styled.div`
     font-size: 52px;
     padding-right: 30px;
   }
+`;
+
+const Divider = styled.hr`
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.75),
+    rgba(255, 255, 255, 0)
+  );
 `;
 
 const CategoryPage = () => {
@@ -130,21 +129,19 @@ const CategoryPage = () => {
       )[0] || technologies[0].technologies[0];
 
     let categoryFromUrl = categoriesAndTechnologies.categoryName;
-    console.log(categoriesAndTechnologies);
+
     let icon = icons.filter(
       (el: any) => el.name.toLowerCase() === technologyFromUrl.toLowerCase()
     )[0]!;
 
-    // Once we have content for every technology enable filtering the content for specific tech
-    // let content = techContent.filter(
-    //   ({ technology }) => technology === technologyFromUrl
-    // )[0];
-    // setContent(content);
-
+    // Filter the content for specific tech
+    let content = techContent.filter(
+      ({ technology }) => technology === technologyFromUrl
+    )[0];
+    setContent(content);
     setImageLink(icon.link);
     setTechnology(technologyFromUrl);
     setCategory(categoryFromUrl);
-    setContent(techContent[0]);
 
     window.scroll({
       top: 0,
@@ -181,7 +178,7 @@ const CategoryPage = () => {
           height={650}
         />
         {content && (
-          <StyledContent>
+          <ContentWrapper>
             <div>
               <BackLink category={category} />
               <Title className={`title-${technology}`}>{technology}</Title>
@@ -203,29 +200,33 @@ const CategoryPage = () => {
                   dangerouslySetInnerHTML={{ __html: content.intro }}
                 />
                 <SubContent contentData={content.content} />
-                <ExampleContent contentData={content.examples} />
-                <hr />
-                <div className="content-nav">
-                  <ContentNavButton
-                    onClick={() => setTechnology(previousTechnology)}
-                    previousTechnology={previousTechnology}
-                    nextTechnology={nextTechnology}
-                    previousCategory={previousCategory}
-                    nextCategory={nextCategory}
-                    next={false}
-                  />
-                  <ContentNavButton
-                    onClick={() => setTechnology(nextTechnology)}
-                    previousTechnology={previousTechnology}
-                    nextTechnology={nextTechnology}
-                    previousCategory={previousCategory}
-                    nextCategory={nextCategory}
-                    next={true}
-                  />
-                </div>
+                {content.examples.length > 0 && (
+                  <ExampleContent contentData={content.examples} />
+                )}
+
+                {content.reference.length > 0 && (
+                  <ReferenceContent contentData={content.reference} />
+                )}
+                <Divider />
+                <ContentNavButton
+                  onClick={() => setTechnology(previousTechnology)}
+                  previousTechnology={previousTechnology}
+                  nextTechnology={nextTechnology}
+                  previousCategory={previousCategory}
+                  nextCategory={nextCategory}
+                  next={false}
+                />
+                <ContentNavButton
+                  onClick={() => setTechnology(nextTechnology)}
+                  previousTechnology={previousTechnology}
+                  nextTechnology={nextTechnology}
+                  previousCategory={previousCategory}
+                  nextCategory={nextCategory}
+                  next={true}
+                />
               </ContentBody>
             </div>
-          </StyledContent>
+          </ContentWrapper>
         )}
       </Wrapper>
       <Footer />
