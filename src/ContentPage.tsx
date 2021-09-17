@@ -1,7 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { RadarContextType, RadarContext } from "./RadarContextProvider";
 import BackLink from "./BackLink";
-import Footer from "./Footer";
 import { icons, technologies } from "./data/data";
 import { SubContent, ExampleContent, ReferenceContent } from "./Content";
 import { TechContentType } from "./data/content";
@@ -168,69 +167,60 @@ const CategoryPage = () => {
   let previousCategory = filteredPrev ? filteredPrev.categoryName : "Mobile";
 
   return (
-    <>
-      <Wrapper category={category}>
-        <img
-          className="background"
-          src={(images as any)[category]}
-          alt={category}
-          width={650}
-          height={650}
-        />
-        {content && (
-          <ContentWrapper>
-            <div>
-              <BackLink category={category} />
-              <Title className={`title-${technology}`}>{technology}</Title>
-              <a href={content.docsLink} target="_blank" rel="noreferrer">
-                <svg className="icon" viewBox={"0 0 80 80"}>
-                  <circle cx={40} cy={40} r={40} fill={"white"} />
-                  <image
-                    x={15}
-                    y={15}
-                    href={imageLink}
-                    height={50}
-                    width={50}
-                  />
-                </svg>
-              </a>
-              <ContentBody>
-                <div
-                  className="content-intro"
-                  dangerouslySetInnerHTML={{ __html: content.intro }}
-                />
-                <SubContent contentData={content.content} />
-                {content.examples.length > 0 && (
-                  <ExampleContent contentData={content.examples} />
-                )}
+    <Wrapper category={category}>
+      <img
+        className="background"
+        src={(images as any)[category]}
+        alt={category}
+        width={650}
+        height={650}
+      />
+      {content && (
+        <ContentWrapper>
+          <div>
+            <BackLink category={category} />
+            <Title className={`title-${technology}`}>{technology}</Title>
+            <a href={content.docsLink} target="_blank" rel="noreferrer">
+              <svg className="icon" viewBox={"0 0 80 80"}>
+                <circle cx={40} cy={40} r={40} fill={"white"} />
+                <image x={15} y={15} href={imageLink} height={50} width={50} />
+              </svg>
+            </a>
+            <ContentBody>
+              <div
+                className="content-intro"
+                dangerouslySetInnerHTML={{ __html: content.intro }}
+              />
+              <SubContent contentData={content.content} />
+              {content.examples.length > 0 && (
+                <ExampleContent contentData={content.examples} />
+              )}
 
-                {content.reference.length > 0 && (
-                  <ReferenceContent contentData={content.reference} />
-                )}
-                <Divider />
-                <ContentNavButton
-                  onClick={() => setTechnology(previousTechnology)}
-                  previousTechnology={previousTechnology}
-                  nextTechnology={nextTechnology}
-                  previousCategory={previousCategory}
-                  nextCategory={nextCategory}
-                  next={false}
-                />
-                <ContentNavButton
-                  onClick={() => setTechnology(nextTechnology)}
-                  previousTechnology={previousTechnology}
-                  nextTechnology={nextTechnology}
-                  previousCategory={previousCategory}
-                  nextCategory={nextCategory}
-                  next={true}
-                />
-              </ContentBody>
-            </div>
-          </ContentWrapper>
-        )}
-      </Wrapper>
-      <Footer />
-    </>
+              {content.reference.length > 0 && (
+                <ReferenceContent contentData={content.reference} />
+              )}
+              <Divider />
+              <ContentNavButton
+                onClick={() => setTechnology(previousTechnology)}
+                previousTechnology={previousTechnology}
+                nextTechnology={nextTechnology}
+                previousCategory={previousCategory}
+                nextCategory={nextCategory}
+                next={false}
+              />
+              <ContentNavButton
+                onClick={() => setTechnology(nextTechnology)}
+                previousTechnology={previousTechnology}
+                nextTechnology={nextTechnology}
+                previousCategory={previousCategory}
+                nextCategory={nextCategory}
+                next={true}
+              />
+            </ContentBody>
+          </div>
+        </ContentWrapper>
+      )}
+    </Wrapper>
   );
 };
 

@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Footer from "./Footer";
 import robot from "./images/robot.svg";
 import styled from "styled-components/macro";
 
@@ -152,7 +151,6 @@ const IntroPage = () => {
           </svg>
         </div>
       </RadarWrapper>
-      <Footer />
     </Wrapper>
   );
 };

@@ -87,7 +87,7 @@ export const SubContent: FC<SubContentType> = ({ contentData }) => (
         )}
         {data.map(({ name, description }, idx) => (
           <div className={"content"} key={`data-content-${idx}`}>
-            {name && <div>{name}</div>}
+            <div>{name}</div>
             <div
               dangerouslySetInnerHTML={{
                 __html: description.replace(
