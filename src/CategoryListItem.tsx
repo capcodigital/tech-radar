@@ -5,9 +5,7 @@ import styled from "styled-components/macro";
 
 const StyledListItem = styled.div`
   padding-top: 12px;
-  font-family: poppins, sans-serif;
-  font-size: 19px;
-  font-weight: 300;
+  font: 300 19px poppins, sans-serif;
   svg.MuiSvgIcon-root {
     font-size: 12px;
     margin-left: 10px;

@@ -30,18 +30,6 @@ const Wrapper = styled.div<WrapperProps>`
   img {
     margin: auto;
   }
-  hr {
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 0),
-      rgba(255, 255, 255, 0.75),
-      rgba(255, 255, 255, 0)
-    );
-  }
-  .conent-nav {
-  }
   @media screen and (max-width: 1000px) {
     margin-top: 30px;
     padding: 0 25px 0 25px;
@@ -51,7 +39,7 @@ const Wrapper = styled.div<WrapperProps>`
   }
 `;
 
-const StyledContent = styled.div`
+const ContentWrapper = styled.div`
   text-align: left;
   width: 1060px;
   margin: auto;
@@ -106,6 +94,17 @@ const Title = styled.div`
   }
 `;
 
+const Divider = styled.hr`
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.75),
+    rgba(255, 255, 255, 0)
+  );
+`;
+
 const CategoryPage = () => {
   const { category, technology, setCategory, setTechnology } =
     useContext<RadarContextType>(RadarContext);
@@ -139,7 +138,6 @@ const CategoryPage = () => {
     let content = techContent.filter(
       ({ technology }) => technology === technologyFromUrl
     )[0];
-    console.log(icons);
     setContent(content);
     setImageLink(icon.link);
     setTechnology(technologyFromUrl);
@@ -180,7 +178,7 @@ const CategoryPage = () => {
           height={650}
         />
         {content && (
-          <StyledContent>
+          <ContentWrapper>
             <div>
               <BackLink category={category} />
               <Title className={`title-${technology}`}>{technology}</Title>
@@ -209,28 +207,26 @@ const CategoryPage = () => {
                 {content.reference.length > 0 && (
                   <ReferenceContent contentData={content.reference} />
                 )}
-                <hr />
-                <div className="content-nav">
-                  <ContentNavButton
-                    onClick={() => setTechnology(previousTechnology)}
-                    previousTechnology={previousTechnology}
-                    nextTechnology={nextTechnology}
-                    previousCategory={previousCategory}
-                    nextCategory={nextCategory}
-                    next={false}
-                  />
-                  <ContentNavButton
-                    onClick={() => setTechnology(nextTechnology)}
-                    previousTechnology={previousTechnology}
-                    nextTechnology={nextTechnology}
-                    previousCategory={previousCategory}
-                    nextCategory={nextCategory}
-                    next={true}
-                  />
-                </div>
+                <Divider />
+                <ContentNavButton
+                  onClick={() => setTechnology(previousTechnology)}
+                  previousTechnology={previousTechnology}
+                  nextTechnology={nextTechnology}
+                  previousCategory={previousCategory}
+                  nextCategory={nextCategory}
+                  next={false}
+                />
+                <ContentNavButton
+                  onClick={() => setTechnology(nextTechnology)}
+                  previousTechnology={previousTechnology}
+                  nextTechnology={nextTechnology}
+                  previousCategory={previousCategory}
+                  nextCategory={nextCategory}
+                  next={true}
+                />
               </ContentBody>
             </div>
-          </StyledContent>
+          </ContentWrapper>
         )}
       </Wrapper>
       <Footer />

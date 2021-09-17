@@ -28,7 +28,6 @@ const StyledSubContent = styled.div`
 
   .content {
     font-size: 16px;
-
     div:first-child {
       font-size: 18px;
       padding-bottom: 8px;
@@ -75,8 +74,8 @@ const SourceLink = styled.a`
 
 export const SubContent: FC<SubContentType> = ({ contentData }) => (
   <>
-    {contentData.map(({ name, intro, data }) => (
-      <StyledSubContent key={name}>
+    {contentData.map(({ name, intro, data }, idx) => (
+      <StyledSubContent key={`subcontent-${idx}`}>
         {name && <Title>{name}</Title>}
         {intro && (
           <div
@@ -86,9 +85,9 @@ export const SubContent: FC<SubContentType> = ({ contentData }) => (
             }}
           />
         )}
-        {data.map(({ name, description }) => (
-          <div className={"content"} key={name}>
-            <div>{name}</div>
+        {data.map(({ name, description }, idx) => (
+          <div className={"content"} key={`data-content-${idx}`}>
+            {name && <div>{name}</div>}
             <div
               dangerouslySetInnerHTML={{
                 __html: description.replace(

@@ -2,7 +2,7 @@
 
 exports[`ContentPage should render ContentPage component 1`] = `
 <div
-  class="ContentPage__Wrapper-sc-1uhhvyt-0 gkkJPy"
+  class="ContentPage__Wrapper-sc-1uhhvyt-0 glvyVF"
 >
   <img
     alt="DevOps"
@@ -12,35 +12,32 @@ exports[`ContentPage should render ContentPage component 1`] = `
     width="650"
   />
   <div
-    class="ContentPage__StyledContent-sc-1uhhvyt-1 gIDSeF"
+    class="ContentPage__ContentWrapper-sc-1uhhvyt-1 jlFIQN"
   >
     <div>
-      <div
-        class="BackLink__StyledBackLink-cr2dtx-0 hkDCpP"
+      <a
+        class="BackLink__StyledBackLink-cr2dtx-0 qSYbS"
+        href="/category/devops"
       >
-        <a
-          href="/category/devops"
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root"
+          focusable="false"
+          viewBox="0 0 24 24"
         >
-          <svg
-            aria-hidden="true"
-            class="MuiSvgIcon-root"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
-            />
-          </svg>
-          Back to 
-          DevOps
-          <img
-            alt="DevOps"
-            height="24"
-            src="devops.svg"
-            width="24"
+          <path
+            d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
           />
-        </a>
-      </div>
+        </svg>
+        Back to 
+        DevOps
+        <img
+          alt="DevOps"
+          height="24"
+          src="devops.svg"
+          width="24"
+        />
+      </a>
       <div
         class="ContentPage__Title-sc-1uhhvyt-3 dqEcef title-GitHub"
       >
@@ -78,36 +75,34 @@ exports[`ContentPage should render ContentPage component 1`] = `
         >
           Content coming soon.
         </div>
-        <hr />
+        <hr
+          class="ContentPage__Divider-sc-1uhhvyt-4 Cpehy"
+        />
         <div
-          class="content-nav"
+          class="ContentNavButton__StyledContentNavButton-sxnsax-0 dwWhGz"
+          data-testid="Previous"
         >
-          <div
-            class="ContentNavButton__StyledContentNavButton-sxnsax-0 fXGzKw"
-            data-testid="Previous"
-          >
-            <div>
-              Previous
-            </div>
-            <a
-              href="/technology/frontend/flutter"
-            >
-              Flutter
-            </a>
+          <div>
+            Previous
           </div>
-          <div
-            class="ContentNavButton__StyledContentNavButton-sxnsax-0 cdfWpb"
-            data-testid="Next"
+          <a
+            href="/technology/frontend/flutter"
           >
-            <div>
-              Next
-            </div>
-            <a
-              href="/technology/devops/circleci"
-            >
-              CircleCI
-            </a>
+            Flutter
+          </a>
+        </div>
+        <div
+          class="ContentNavButton__StyledContentNavButton-sxnsax-0 evGUOY"
+          data-testid="Next"
+        >
+          <div>
+            Next
           </div>
+          <a
+            href="/technology/devops/circleci"
+          >
+            CircleCI
+          </a>
         </div>
       </div>
     </div>

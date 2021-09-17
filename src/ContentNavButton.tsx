@@ -10,17 +10,14 @@ const StyledContentNavButton = styled.div<StyledContentNavButtonProps>`
   margin-top: 75px;
   float: ${({ align }) => align};
   div:first-child {
-    font-family: poppins, sans-serif;
-    font-size: 19px;
-    font-weight: 300;
+    font: 300 19px poppins, sans-serif;
     opacity: 0.5;
   }
   a:nth-child(2) {
     :hover {
       text-decoration: underline;
     }
-    font-family: bebas-neue-pro, sans-serif;
-    font-size: 59px;
+    font: 59px bebas-neue-pro, sans-serif;
     color: inherit;
   }
   @media screen and (max-width: 1000px) {

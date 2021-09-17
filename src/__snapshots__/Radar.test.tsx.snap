@@ -2260,9 +2260,9 @@ exports[`Radar should render Radar component 1`] = `
         opacity="0.3"
       >
         <g
-          aria-label="Java"
-          class="techIcon-Java"
-          title="Java"
+          aria-label="Java Mobile"
+          class="techIcon-Java Mobile"
+          title="Java Mobile"
         >
           <circle
             cx="-101.66666666666664"

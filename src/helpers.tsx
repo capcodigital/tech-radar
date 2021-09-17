@@ -1,4 +1,4 @@
-import { technologyList, data } from "./data/data";
+import { technologyList } from "./data/data";
 
 export const getNextItem = (currentItem: string) => {
   const currentIndex = technologyList.indexOf(currentItem);

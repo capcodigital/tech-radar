@@ -37,15 +37,11 @@ const RadarWrapper = styled.div`
 
 const Title = styled.div`
   font-size: 20px;
-  div {
-    margin: 20px 0 50px 0;
-  }
+  margin: 20px 0 50px 0;
 `;
 
 const IntroText = styled.div`
-  font-size: 34px;
-  font-family: Poppins;
-  font-weight: 300;
+  font: 300 34px Poppins;
   position: absolute;
   display: inline-block;
   width: 50vw;
@@ -71,8 +67,7 @@ const IntroText = styled.div`
 const StyledButton = styled(Link)`
   height: 56px;
   color: white;
-  font-size: 21px;
-  font-family: bebas-neue-pro, sans-serif;
+  font: 21px bebas-neue-pro, sans-serif;
   padding: 10px 30px;
   text-align: center;
   border 2px solid ${({ theme }) => theme.pink} !important;
@@ -83,11 +78,12 @@ const StyledButton = styled(Link)`
       background: rgb(255, 255, 255, 0.1);
   }
 `;
+
 const IntroPage = () => {
   return (
     <Wrapper>
       <IntroText>
-        <Title>
+        <div>
           <img
             className="category-icon"
             src={robot}
@@ -95,8 +91,8 @@ const IntroPage = () => {
             width={68}
             height={66}
           />
-          <div>Radar Purpose</div>
-        </Title>
+          <Title>Radar Purpose</Title>
+        </div>
         <div>
           The purpose of this Tech Radar is to provide a view of the current
           technology coverage of Capco Digital Engineering.
