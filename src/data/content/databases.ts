@@ -126,10 +126,145 @@ const techContent = [
   {
     technology: "MySQL",
     docsLink: "https://dev.mysql.com/doc/",
-    intro: "Content coming soon.",
-    content: [],
+    intro: `Created in 1995, MySQL is the most popular open-source relational database management system. Its name is a combination of "My", the name of co-founder Michael Widenius's daughter, and "SQL", the abbreviation for Structured Query Language.<br/><br/>A relational database is where data is organised from one table and split into multiple tables whereby each data type within the table is related to another. SQL is a language programmers use to create, modify, and extract data from the relational database, as well as control user access to the database. <br/><br/>Today MySQL has become the leading database choice for web-based applications, used by high profile web properties including Facebook, Twitter, YouTube, Yahoo! and many more. `,
+    content: [
+      {
+        name: "Features",
+        intro:
+          "At its core, MySQL offers web database management, however the features and capabilities available go beyond this. Below are just some of the key features of MySQL. ",
+        data: [
+          {
+            name: "Security",
+            description:
+              "MySQL offers authentication for passwords, authorization for privilege management, encryption for sensitive data, firewalls to block database attacks such as SQL injection and frequent audits to maintain compliance. ",
+          },
+          {
+            name: "Scalability",
+            description:
+              "MySQL supports business to scale up swiftly and meet the demand of users and data through a vertical and hybrid approach. It can handle almost any amount of data, up to as much as 50 million rows or more.",
+          },
+          {
+            name: "Flexible",
+            description:
+              "MySQL supports many embedded applications, which makes MySQL very flexible.",
+          },
+          {
+            name: "Compatible across platforms",
+            description:
+              "MySQL is compatible to run on many operating systems, like Novell NetWare, Windows* Linux*, many varieties of UNIX* (such as Sun* Solaris*, AIX, and DEC* UNIX), OS/2, FreeBSD*, and others. ",
+          },
+          {
+            name: "High Performance & Productivity ",
+            description:
+              "MySQL is faster, more reliable, and cheaper because of its unique storage engine architecture. It provides very high-performance results in comparison to other databases without losing an essential functionality of the software. It has fast loading utilities because of the different cache memory.",
+          },
+          {
+            name: "GUI Support",
+            description:
+              "MySQL Workbench is a visual database graphical user interface tool that integrates SQL development, admin, database design and creation into a single development environment.",
+          },
+        ],
+      },
+      {
+        name: "Data Types",
+        intro:
+          "MySQL supports SQL data types in several categories: numeric types, date and time types, string (character and byte) types, spatial types, and the JSON data type. ",
+        data: [
+          {
+            name: "Numeric",
+            description:
+              "MySQL supports all standard SQL numeric data types. These types include the exact numeric data types (INTEGER, SMALLINT, DECIMAL, and NUMERIC), as well as the approximate numeric data types (FLOAT, REAL, and DOUBLE PRECISION). ",
+          },
+          {
+            name: "Date and Time",
+            description:
+              "The date and time data types for representing temporal values are DATE, TIME, DATETIME, TIMESTAMP, and YEAR. The TIMESTAMP and DATETIME types have special automatic updating behaviour, which is that they are automatically initialised and updated to the current date and time. You can assign the current timestamp as the default value, the auto-update value, or both. ",
+          },
+          {
+            name: "String",
+            description:
+              "The string data types are CHAR, VARCHAR, BINARY, VARBINARY, BLOB, TEXT, ENUM and SET. For each of the string types, there are specific storage requirements. For example VARCHAR, VARBINARY, BLOB and TEXT are variable length types which means that the storage required depend on the below: <ul><li>The actual length of the column value and max possible length </li><li>The character set used for the column, as some character sets contain multibyte characters. </li></ul>",
+          },
+          {
+            name: "JSON",
+            description:
+              "MySQL supports a native JSON data type that enables efficient access to data in JSON (JavaScript Object Notation) documents. The JSON data type provides these advantages over storing JSON-format strings in a string column: <ul><li>Automatic validation of JSON documents stored in JSON columns, invalid documents produce an error. </li><li>Optimized storage format - JSON documents stored in JSON columns are converted to an internal format that permits quick read access to document elements. </li></ul>",
+          },
+          {
+            name: "Spatial",
+            description:
+              "Spatial data types can be single value geometry values, or a collection of values. <ul><li>Single Value: geometry, point, linestring, polygon</li><li>Collection: geometrycollection, multipoint, multilinestring, multipolygon </li></ul>",
+          },
+        ],
+      },
+      {
+        name: "Schemas",
+        intro:
+          "Schema is a collection of tables with rows and columns, and a separate query can be written for the schemas like databases. They define size, type, a grouping of information. The schemas have database objects like views, tables, and privileges, which include data types, functions, and operators. <br/><br/>MySQL inspects with default schemas which are information schema, performance schema, and sys: ",
+        data: [
+          {
+            name: "Information schemas",
+            description:
+              "They provide access to metadata, stores information about other databases. The tables here are stored in the memory storage engine. ",
+          },
+          {
+            name: "Performance MySQL schema",
+            description:
+              "They acts as a storage engine that operates on a table under a schema database. Performance schema collects exact data in the MySQL database server. The configuration is done by three major roles namely actors, instruments and allows collecting statistical data. ",
+          },
+          {
+            name: "Sys",
+            description:
+              "An object helps in collecting performance schemas data. We have a MySQL schema design that helps in analysing and tuning query optimization. A proper designing in schema requires entities, relationships, Scalability. ",
+          },
+        ],
+      },
+      {
+        name: "MySQL Workbench ",
+        intro: "MySQL Workbench functionality covers five main topics: ",
+        data: [
+          {
+            name: "SQL Development",
+            description:
+              "Enables you to create and manage connections to database servers. Along with enabling you to configure connection parameters, MySQL Workbench provides the capability to execute SQL queries on the database connections using the built-in SQL Editor. ",
+          },
+          {
+            name: "Data Modelling (Design)",
+            description:
+              "Enables you to create models of your database schema graphically, reverse and forward engineer between a schema and a live database, and edit all aspects of your database using the comprehensive Table Editor. The Table Editor provides easy-to-use facilities for editing Tables, Columns, Indexes, Triggers, Partitioning, Options, Inserts and Privileges, Routines and Views. ",
+          },
+          {
+            name: "Server Administration",
+            description:
+              "Enables you to administer MySQL server instances by administering users, performing backup and recovery, inspecting audit data, viewing database health, and monitoring the MySQL server performance.  ",
+          },
+          {
+            name: "Data Migration",
+            description:
+              "Allows you to migrate from Microsoft SQL Server, Microsoft Access, Sybase ASE, SQLite, SQL Anywhere, PostgreSQL, and other RDBMS tables, objects and data to MySQL. Migration also supports migrating from earlier versions of MySQL to the latest releases.",
+          },
+          {
+            name: "MySQL Enterprise Support",
+            description:
+              "Support for Enterprise products such as MySQL Enterprise Backup, MySQL Firewall, and MySQL Audit.",
+          },
+        ],
+      },
+      {
+        name: "Testing",
+        intro:
+          "Database testing helps us to find out such vulnerabilities in a database system to protect a database from an unstable state. <br/><br/>MySQL comes with a built-in test framework, which consists of programs that run tests, and directories and files used by those programs. <br/><br/>The MySQL test framework uses several programs: ",
+        data: [
+          {
+            name: "",
+            description:
+              "<ul><li>The mysql-test-run.pl Perl script is the main application used to run the test suite. It invokes mysqltest to run individual test cases.</li><li>mysqltest runs test cases.</li><li>the mysql_client_test program is used for testing aspects of the MySQL client API that cannot be tested using mysqltest and its test language.</li><li>the mysql-stress-test.pl Perl script performs stress-testing of the MySQL server.</li><li>unit-testing facility is provided so that individual unit test programs can be created for storage engines and plugins.</li></ul> ",
+          },
+        ],
+      },
+    ],
     examples: [],
-    reference: [],
+    reference: ["https://dev.mysql.com/doc/"],
   },
   {
     technology: "Oracle",

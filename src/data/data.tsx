@@ -121,7 +121,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "MySQL",
           link: "https://www.iamsteveni.com/static/img/mysql.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "Oracle",
@@ -343,7 +343,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Java",
           link: "https://img.icons8.com/color/452/java-coffee-cup-logo.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "Node",
@@ -451,7 +451,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Java Mobile",
           link: "https://img.icons8.com/color/452/java-coffee-cup-logo.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "Ionic",
