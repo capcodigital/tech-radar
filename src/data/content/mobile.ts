@@ -8,7 +8,7 @@ const techContent = [
     reference: [],
   },
   {
-    technology: "Gradle",
+    technology: "Gradle Mobile",
     docsLink: "https://docs.gradle.org/current/userguide/userguide.html",
     intro:
       "<a href='https://docs.gradle.org/current/userguide/userguide.html'>Gradle</a> is an open-source build automation tool capable of building almost any type of software. The following are some of its most important advantages & features: ",

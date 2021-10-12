@@ -86,9 +86,9 @@ exports[`ContentPage should render ContentPage component 1`] = `
             Previous
           </div>
           <a
-            href="/technology/frontend/flutter"
+            href="/technology/mobile/gradle-mobile"
           >
-            Flutter
+            Gradle Mobile
           </a>
         </div>
         <div

@@ -2,7 +2,7 @@
 
 exports[`Footer should render Footer component 1`] = `
 <div
-  class="Footer__StyledFooter-r5mrbp-0 fVpWnk footer"
+  class="Footer__StyledFooter-r5mrbp-0 CImHe footer"
 >
   <img
     alt="Logo"

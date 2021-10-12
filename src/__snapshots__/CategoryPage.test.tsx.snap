@@ -118,10 +118,19 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             <a
               data-testid="category-item-SonarQube"
               href="/technology/devops/sonarqube"
-              style="pointer-events: none;"
             >
               SonarQube
             </a>
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+              />
+            </svg>
           </div>
           <div
             class="CategoryListItem__StyledListItem-sc-7i4wsk-0 kshgbl"
@@ -161,10 +170,19 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             <a
               data-testid="category-item-Jenkins"
               href="/technology/devops/jenkins"
-              style="pointer-events: none;"
             >
               Jenkins
             </a>
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+              />
+            </svg>
           </div>
           <div
             class="CategoryListItem__StyledListItem-sc-7i4wsk-0 kshgbl"
@@ -563,10 +581,19 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           <a
             data-testid="category-item-SonarQube"
             href="/technology/devops/sonarqube"
-            style="pointer-events: none;"
           >
             SonarQube
           </a>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+            />
+          </svg>
         </div>
         <div
           class="CategoryListItem__StyledListItem-sc-7i4wsk-0 kshgbl"
@@ -608,10 +635,19 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           <a
             data-testid="category-item-Jenkins"
             href="/technology/devops/jenkins"
-            style="pointer-events: none;"
           >
             Jenkins
           </a>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+            />
+          </svg>
         </div>
         <div
           class="CategoryListItem__StyledListItem-sc-7i4wsk-0 kshgbl"
