@@ -1,8 +1,9 @@
-import React from 'react';
-import logo from './images/logo.png';
-import styled from 'styled-components/macro';
+import React from "react";
+import logo from "./images/logo.png";
+import styled from "styled-components/macro";
 
 const StyledFooter = styled.div`
+  margin-top: auto;
   height: 70px;
   width: 100%;
   background: #00000026;
@@ -38,9 +39,9 @@ const StyledFooter = styled.div`
 `;
 
 const Footer = () => (
-  <StyledFooter className='footer'>
-    <img height={44} src={logo} alt='Logo' />
-    <a href='https://www.capco.com/' target='_blank' rel='noreferrer'>
+  <StyledFooter className="footer">
+    <img height={44} src={logo} alt="Logo" />
+    <a href="https://www.capco.com/" target="_blank" rel="noreferrer">
       Capco @2021
     </a>
     <div>All Rights Reserved</div>

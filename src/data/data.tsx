@@ -33,7 +33,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "SonarQube",
           link: "https://pbs.twimg.com/profile_images/1224335491899760641/h404B5dU_400x400.jpg",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "Elastic",
@@ -50,7 +50,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Jenkins",
           link: "https://symbols.getvecta.com/stencil_97/67_the-jenkins-project-icon.0141f64fe7.svg",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "TeamCity",
@@ -104,7 +104,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Postgres",
           link: "https://img.icons8.com/color/452/postgreesql.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "Neo4J",
@@ -114,14 +114,14 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "MongoDB",
           link: "https://www.iamsteveni.com/static/img/mongodb.png",
-          enabled: false,
+          enabled: true,
         },
       ],
       skilled: [
         {
           name: "MySQL",
           link: "https://www.iamsteveni.com/static/img/mysql.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "Oracle",
@@ -255,7 +255,7 @@ export const data: Array<{ name: string; data: techType }> = [
         },
         {
           name: "Grafana",
-          link: "https://pics.freeicons.io/uploads/icons/png/8135670941548141941-512.png",
+          link: "https://docs.checkmk.com/latest/images/grafana_logo.png",
           enabled: false,
         },
       ],
@@ -263,7 +263,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "AWS",
           link: "https://img.icons8.com/color/452/amazon-web-services.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "Azure",
@@ -343,12 +343,12 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Java",
           link: "https://img.icons8.com/color/452/java-coffee-cup-logo.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "Node",
           link: "https://www.iamsteveni.com/static/img/nodejs.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "Go",
@@ -432,7 +432,7 @@ export const data: Array<{ name: string; data: techType }> = [
           enabled: false,
         },
         {
-          name: "Gradle",
+          name: "Gradle Mobile",
           link: "https://gradle.org/images/gradle-knowledge-graph-logo.png?20170228",
           enabled: true,
         },
@@ -451,7 +451,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Java Mobile",
           link: "https://img.icons8.com/color/452/java-coffee-cup-logo.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "Ionic",
@@ -654,7 +654,7 @@ export const icons: Array<{ name: string; link: string }> = [
   { name: "Azure", link: "https://img.icons8.com/color/452/azure-1.png" },
   {
     name: "Grafana",
-    link: "https://pics.freeicons.io/uploads/icons/png/8135670941548141941-512.png",
+    link: "https://docs.checkmk.com/latest/images/grafana_logo.png",
   },
   {
     name: "Digital Ocean",
@@ -735,6 +735,10 @@ export const icons: Array<{ name: string; link: string }> = [
   {
     name: "Flutter",
     link: "https://img.icons8.com/color/452/flutter.png",
+  },
+  {
+    name: "Gradle Mobile",
+    link: "https://gradle.org/images/gradle-knowledge-graph-logo.png?20170228",
   },
 ];
 
@@ -846,7 +850,7 @@ export const technologies = [
       "Java Mobile",
       "Ionic",
       "Flutter",
-      "Gradle",
+      "Gradle Mobile",
     ],
   },
 ];
@@ -934,6 +938,7 @@ export const technologyList = [
   "Java Mobile",
   "Ionic",
   "Flutter",
+  "Gradle Mobile",
 ];
 
 export const radarKeysText = {

@@ -68,7 +68,6 @@ const Home = () => {
           ))}
         </Grid>
       </Wrapper>
-      <Footer />
     </OutterWrapper>
   );
 };

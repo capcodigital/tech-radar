@@ -9,7 +9,7 @@ import PageWrapper from "./PageWrapper";
 import Menu from "./Menu";
 import { ThemeProvider } from "styled-components";
 import { radarTheme } from "./theme";
-
+import Footer from "./Footer";
 const App = () => {
   return (
     <Router>
@@ -31,6 +31,7 @@ const App = () => {
                 <ContentPage />
               </Route>
             </PageWrapper>
+            <Footer />
           </RadarContextProvider>
         </ThemeProvider>
       </Switch>

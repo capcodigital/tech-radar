@@ -1552,7 +1552,7 @@ exports[`Radar should render Radar component 1`] = `
           />
           <image
             height="19.79898987322333"
-            href="https://pics.freeicons.io/uploads/icons/png/8135670941548141941-512.png"
+            href="https://docs.checkmk.com/latest/images/grafana_logo.png"
             width="19.79898987322333"
             x="134.54876564848473"
             y="206.28260426205023"
@@ -2188,9 +2188,9 @@ exports[`Radar should render Radar component 1`] = `
         opacity="0.3"
       >
         <g
-          aria-label="Gradle"
-          class="techIcon-Gradle"
-          title="Gradle"
+          aria-label="Gradle Mobile"
+          class="techIcon-Gradle Mobile"
+          title="Gradle Mobile"
         >
           <circle
             cx="-177.78247456627275"

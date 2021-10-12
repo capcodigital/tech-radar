@@ -1,7 +1,6 @@
 import React, { useContext, useEffect, useState, FC } from "react";
 import { RadarContextType, RadarContext } from "./RadarContextProvider";
 import CategoryRadar from "./CategoryRadar";
-import Footer from "./Footer";
 import Grid from "@material-ui/core/Grid";
 import MobileRadarBackground from "./MobileRadarBackground";
 import StyledButton from "./StyledButton";
@@ -337,7 +336,6 @@ const CategoryPage = () => {
           <CategoryRadar data={content.data} setHovered={setHovered} />
         </Wrapper>
       )}
-      <Footer />
     </>
   );
 };
