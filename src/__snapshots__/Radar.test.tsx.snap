@@ -604,9 +604,9 @@ exports[`Radar should render Radar component 1`] = `
         opacity="1"
       >
         <g
-          aria-label="Valut"
-          class="techIcon-Valut"
-          title="Valut"
+          aria-label="Vault"
+          class="techIcon-Vault"
+          title="Vault"
         >
           <circle
             cx="-67.29295172665559"
@@ -616,7 +616,7 @@ exports[`Radar should render Radar component 1`] = `
           />
           <image
             height="19.79898987322333"
-            href="https://symbols.getvecta.com/stencil_100/11_vault-icon.469c5366cc.svg"
+            href="https://www.pngitem.com/pimgs/m/329-3299659_hashicorp-vault-logo-hd-png-download.png"
             width="19.79898987322333"
             x="-77.19244666326725"
             y="-261.04020977176936"
@@ -712,7 +712,7 @@ exports[`Radar should render Radar component 1`] = `
           />
           <image
             height="19.79898987322333"
-            href="https://symbols.getvecta.com/stencil_97/67_the-jenkins-project-icon.0141f64fe7.svg"
+            href="https://avidlearnerinprogress.github.io/assets/images/tools/jenkins.jpg"
             width="19.79898987322333"
             x="-9.899494936611884"
             y="-213.232828269945"
@@ -760,7 +760,7 @@ exports[`Radar should render Radar component 1`] = `
           />
           <image
             height="19.79898987322333"
-            href="https://symbols.getvecta.com/stencil_84/70_istio-icon.9d92202138.svg"
+            href="https://istio.io/latest/img/istio-bluelogo-whitebackground-unframed.svg"
             width="19.79898987322333"
             x="-46.99689140130642"
             y="-148.3488633713781"
@@ -784,7 +784,7 @@ exports[`Radar should render Radar component 1`] = `
           />
           <image
             height="19.79898987322333"
-            href="https://symbols.getvecta.com/stencil_73/122_ansible-icon.e1db432c74.svg"
+            href="https://upload.wikimedia.org/wikipedia/commons/0/05/Ansible_Logo.png"
             width="19.79898987322333"
             x="-9.899494936611818"
             y="-153.232828269945"
@@ -808,7 +808,7 @@ exports[`Radar should render Radar component 1`] = `
           />
           <image
             height="19.79898987322333"
-            href="https://symbols.getvecta.com/stencil_91/3_packer-icon.53584ee287.svg"
+            href="https://seeklogo.com/images/P/packer-logo-732D5F5529-seeklogo.com.png"
             width="19.79898987322333"
             x="27.19790152808291"
             y="-148.34886337137814"
@@ -832,7 +832,7 @@ exports[`Radar should render Radar component 1`] = `
           />
           <image
             height="19.79898987322333"
-            href="https://symbols.getvecta.com/stencil_98/71_twistlock-icon.8db1b813dd.svg"
+            href="https://cdn.icon-icons.com/icons2/2699/PNG/512/twistlock_logo_icon_168400.png"
             width="19.79898987322333"
             x="-32.33047884549686"
             y="-93.6130665483309"
@@ -904,7 +904,7 @@ exports[`Radar should render Radar component 1`] = `
           />
           <image
             height="19.79898987322333"
-            href="https://symbols.getvecta.com/stencil_77/63_consul-icon.0452948395.svg"
+            href="https://d7umqicpi7263.cloudfront.net/img/product/4c3eb104-ebd1-42be-9bd4-de25ef6918df/84c590de-f853-4d50-a314-d92f104ec3a9.png"
             width="19.79898987322333"
             x="-9.89949493661167"
             y="-36.56616160327834"
@@ -952,7 +952,7 @@ exports[`Radar should render Radar component 1`] = `
           />
           <image
             height="19.79898987322333"
-            href="https://symbols.getvecta.com/stencil_261/28_neo4j.404372b29e.svg"
+            href="https://dist.neo4j.com/wp-content/uploads/neo4j_logo_globe1.png"
             width="19.79898987322333"
             x="216.3746750430835"
             y="-236.17366491630693"
@@ -1288,7 +1288,7 @@ exports[`Radar should render Radar component 1`] = `
           />
           <image
             height="19.79898987322333"
-            href="https://lh3.googleusercontent.com/proxy/TImAeIQiFveDA7nFR0i5Y9YgV7og9T5y3tjeaA4K_djJWQFPy7oKv1JAjX4MmZWSEy99drD1BlgHWHEkW22lY3IGtIqLpt6XVcJilOz0pA"
+            href="https://www.saashub.com/images/app/service_logos/49/f7c4bb5006b5/large.png?1557747621"
             width="19.79898987322333"
             x="186.50542307549887"
             y="-62.526034107457725"
@@ -1648,7 +1648,7 @@ exports[`Radar should render Radar component 1`] = `
           />
           <image
             height="19.79898987322333"
-            href="https://symbols.getvecta.com/stencil_78/61_digital-ocean-icon.0d013f7d26.svg"
+            href="https://pbs.twimg.com/profile_images/1410636343944880136/w8dxKEmg_400x400.jpg"
             width="19.79898987322333"
             x="62.16120479627558"
             y="38.249925258420554"
@@ -1768,7 +1768,7 @@ exports[`Radar should render Radar component 1`] = `
           />
           <image
             height="19.79898987322333"
-            href="https://symbols.getvecta.com/stencil_74/14_apache-kafka-icon.96e46bbe3a.svg"
+            href="https://e7.pngegg.com/pngimages/435/297/png-clipart-kafka-logo-icons-logos-emojis-tech-companies-thumbnail.png"
             width="19.79898987322333"
             x="-9.899494936611585"
             y="250.10050506338834"
@@ -1780,9 +1780,9 @@ exports[`Radar should render Radar component 1`] = `
         opacity="0.3"
       >
         <g
-          aria-label="ActiveM"
-          class="techIcon-ActiveM"
-          title="ActiveM"
+          aria-label="ActiveMQ"
+          class="techIcon-ActiveMQ"
+          title="ActiveMQ"
         >
           <circle
             cx="39.668365476612856"
@@ -1792,7 +1792,7 @@ exports[`Radar should render Radar component 1`] = `
           />
           <image
             height="19.79898987322333"
-            href="https://symbols.getvecta.com/stencil_73/17_activemq-icon.66dcff47ad.svg"
+            href="https://img.stackshare.io/service/1062/vlz__1_.png"
             width="19.79898987322333"
             x="29.76887054000119"
             y="189.5268454120452"
@@ -1840,7 +1840,7 @@ exports[`Radar should render Radar component 1`] = `
           />
           <image
             height="19.79898987322333"
-            href="https://symbols.getvecta.com/stencil_82/66_graphql-icon.291fc05a38.svg"
+            href="https://i0.wp.com/storage.googleapis.com/blog-images-backup/1*rmWsDg6J6PtLVOhXb3zr7w.png"
             width="19.79898987322333"
             x="-9.899494936611639"
             y="76.76717173005501"

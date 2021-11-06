@@ -105,11 +105,11 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             class="CategoryListItem__StyledListItem-sc-7i4wsk-0 kshgbl"
           >
             <a
-              data-testid="category-item-Valut"
-              href="/technology/devops/valut"
+              data-testid="category-item-Vault"
+              href="/technology/devops/vault"
               style="pointer-events: none;"
             >
-              Valut
+              Vault
             </a>
           </div>
           <div
@@ -568,11 +568,11 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           class="CategoryListItem__StyledListItem-sc-7i4wsk-0 kshgbl"
         >
           <a
-            data-testid="category-item-Valut"
-            href="/technology/devops/valut"
+            data-testid="category-item-Vault"
+            href="/technology/devops/vault"
             style="pointer-events: none;"
           >
-            Valut
+            Vault
           </a>
         </div>
         <div
@@ -1048,9 +1048,9 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
         </g>
         <g>
           <g
-            aria-label="Valut"
+            aria-label="Vault"
             class=""
-            title="Valut"
+            title="Vault"
           >
             <circle
               cx="-310.6054555984843"
@@ -1060,7 +1060,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             />
             <image
               height="33.941125496954285"
-              href="https://symbols.getvecta.com/stencil_100/11_vault-icon.469c5366cc.svg"
+              href="https://www.pngitem.com/pimgs/m/329-3299659_hashicorp-vault-logo-hd-png-download.png"
               width="33.941125496954285"
               x="-327.57601834696146"
               y="-155.2610213942492"
@@ -1144,7 +1144,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             />
             <image
               height="33.941125496954285"
-              href="https://symbols.getvecta.com/stencil_97/67_the-jenkins-project-icon.0141f64fe7.svg"
+              href="https://avidlearnerinprogress.github.io/assets/images/tools/jenkins.jpg"
               width="33.941125496954285"
               x="-219.12106690013033"
               y="25.99785335385979"
@@ -1186,7 +1186,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             />
             <image
               height="33.941125496954285"
-              href="https://symbols.getvecta.com/stencil_84/70_istio-icon.9d92202138.svg"
+              href="https://istio.io/latest/img/istio-bluelogo-whitebackground-unframed.svg"
               width="33.941125496954285"
               x="-205.769957327948"
               y="-101.02946898414254"
@@ -1207,7 +1207,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             />
             <image
               height="33.941125496954285"
-              href="https://symbols.getvecta.com/stencil_73/122_ansible-icon.e1db432c74.svg"
+              href="https://upload.wikimedia.org/wikipedia/commons/0/05/Ansible_Logo.png"
               width="33.941125496954285"
               x="-170.55382668047196"
               y="-155.25755472930786"
@@ -1228,7 +1228,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             />
             <image
               height="33.941125496954285"
-              href="https://symbols.getvecta.com/stencil_91/3_packer-icon.53584ee287.svg"
+              href="https://seeklogo.com/images/P/packer-logo-732D5F5529-seeklogo.com.png"
               width="33.941125496954285"
               x="-120.30389608181056"
               y="-195.94914619726111"
@@ -1249,7 +1249,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             />
             <image
               height="33.941125496954285"
-              href="https://symbols.getvecta.com/stencil_98/71_twistlock-icon.8db1b813dd.svg"
+              href="https://cdn.icon-icons.com/icons2/2699/PNG/512/twistlock_logo_icon_168400.png"
               width="33.941125496954285"
               x="-45.03401445525039"
               y="50.78060296901723"
@@ -1312,7 +1312,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             />
             <image
               height="33.941125496954285"
-              href="https://symbols.getvecta.com/stencil_77/63_consul-icon.0452948395.svg"
+              href="https://d7umqicpi7263.cloudfront.net/img/product/4c3eb104-ebd1-42be-9bd4-de25ef6918df/84c590de-f853-4d50-a314-d92f104ec3a9.png"
               width="33.941125496954285"
               x="-45.03401445525044"
               y="-84.7217284659715"
