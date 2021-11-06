@@ -22,7 +22,7 @@ export const data: Array<{ name: string; data: techType }> = [
         },
         {
           name: "Terraform",
-          link: "https://symbols.getvecta.com/stencil_97/45_terraform-icon.d8dd637866.svg",
+          link: "https://raw.githubusercontent.com/mauve/vscode-terraform/master/terraform.png",
           enabled: false,
         },
         {
@@ -37,14 +37,14 @@ export const data: Array<{ name: string; data: techType }> = [
         },
         {
           name: "Elastic",
-          link: "https://symbols.getvecta.com/stencil_79/34_elastic-search-icon.bdaf397325.svg",
+          link: "https://www.finsmes.com/wp-content/uploads/2019/06/elastic.png",
           enabled: false,
         },
       ],
       skilled: [
         {
           name: "Bitbucket",
-          link: "https://cdn.worldvectorlogo.com/logos/bitbucket-icon.svg",
+          link: "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_2ea5f7178028686921161d65d4be481a/bitbucket.png",
           enabled: false,
         },
         {
@@ -137,7 +137,7 @@ export const data: Array<{ name: string; data: techType }> = [
       scaling: [
         {
           name: "BigQuery",
-          link: "https://symbols.getvecta.com/stencil_75/69_bigquery-icon.eb9185e8d2.svg",
+          link: "https://www.intelligencepartner.com/wp-content/uploads/2017/05/bigdata_bigquery.png",
           enabled: false,
         },
         {
@@ -184,7 +184,7 @@ export const data: Array<{ name: string; data: techType }> = [
         },
         {
           name: "Sauce Labs",
-          link: "https://symbols.getvecta.com/stencil_95/21_sauce-labs-icon.3db8e81715.svg",
+          link: "https://jobicy.com/data/server-nyc0409/galaxy/mercury/2021/08/a480442d1aa1af938633df95f8e02bf6.jpeg",
           enabled: false,
         },
       ],
@@ -245,7 +245,7 @@ export const data: Array<{ name: string; data: techType }> = [
         },
         {
           name: "Serverless",
-          link: "https://symbols.getvecta.com/stencil_95/69_serverless-icon.b1abb9b824.svg",
+          link: "https://getcommandeer.com/_nuxt/img/4a7600a.png",
           enabled: false,
         },
         {
@@ -481,7 +481,7 @@ export const icons: Array<{ name: string; link: string }> = [
   },
   {
     name: "Terraform",
-    link: "https://symbols.getvecta.com/stencil_97/45_terraform-icon.d8dd637866.svg",
+    link: "https://raw.githubusercontent.com/mauve/vscode-terraform/master/terraform.png",
   },
   {
     name: "Vault",
@@ -497,7 +497,7 @@ export const icons: Array<{ name: string; link: string }> = [
   },
   {
     name: "Bitbucket",
-    link: "https://cdn.worldvectorlogo.com/logos/bitbucket-icon.svg",
+    link: "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_2ea5f7178028686921161d65d4be481a/bitbucket.png",
   },
   {
     name: "Jenkins",
@@ -561,7 +561,7 @@ export const icons: Array<{ name: string; link: string }> = [
   },
   {
     name: "BigQuery",
-    link: "https://cdn.worldvectorlogo.com/logos/google-bigquery-logo-1.svg",
+    link: "https://www.intelligencepartner.com/wp-content/uploads/2017/05/bigdata_bigquery.png",
   },
   {
     name: "Snowflake",

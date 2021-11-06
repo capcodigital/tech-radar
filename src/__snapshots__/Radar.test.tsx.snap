@@ -592,7 +592,7 @@ exports[`Radar should render Radar component 1`] = `
           />
           <image
             height="19.79898987322333"
-            href="https://symbols.getvecta.com/stencil_97/45_terraform-icon.d8dd637866.svg"
+            href="https://raw.githubusercontent.com/mauve/vscode-terraform/master/terraform.png"
             width="19.79898987322333"
             x="72.92259949619483"
             y="-318.9957593491136"
@@ -664,7 +664,7 @@ exports[`Radar should render Radar component 1`] = `
           />
           <image
             height="19.79898987322333"
-            href="https://symbols.getvecta.com/stencil_79/34_elastic-search-icon.bdaf397325.svg"
+            href="https://www.finsmes.com/wp-content/uploads/2019/06/elastic.png"
             width="19.79898987322333"
             x="57.39345679004361"
             y="-261.04020977176947"
@@ -688,7 +688,7 @@ exports[`Radar should render Radar component 1`] = `
           />
           <image
             height="19.79898987322333"
-            href="https://cdn.worldvectorlogo.com/logos/bitbucket-icon.svg"
+            href="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_2ea5f7178028686921161d65d4be481a/bitbucket.png"
             width="19.79898987322333"
             x="-62.52603410745771"
             y="-206.3044129487222"
@@ -1072,7 +1072,7 @@ exports[`Radar should render Radar component 1`] = `
           />
           <image
             height="19.79898987322333"
-            href="https://symbols.getvecta.com/stencil_75/69_bigquery-icon.eb9185e8d2.svg"
+            href="https://www.intelligencepartner.com/wp-content/uploads/2017/05/bigdata_bigquery.png"
             width="19.79898987322333"
             x="33.433838396721676"
             y="-84.95502993126301"
@@ -1264,7 +1264,7 @@ exports[`Radar should render Radar component 1`] = `
           />
           <image
             height="19.79898987322333"
-            href="https://symbols.getvecta.com/stencil_95/21_sauce-labs-icon.3db8e81715.svg"
+            href="https://jobicy.com/data/server-nyc0409/galaxy/mercury/2021/08/a480442d1aa1af938633df95f8e02bf6.jpeg"
             width="19.79898987322333"
             x="241.24121989854612"
             y="57.393456790043594"
@@ -1504,7 +1504,7 @@ exports[`Radar should render Radar component 1`] = `
           />
           <image
             height="19.79898987322333"
-            href="https://symbols.getvecta.com/stencil_95/69_serverless-icon.b1abb9b824.svg"
+            href="https://getcommandeer.com/_nuxt/img/4a7600a.png"
             width="19.79898987322333"
             x="150.10050506338825"
             y="267.22863427440876"

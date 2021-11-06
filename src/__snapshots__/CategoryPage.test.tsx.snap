@@ -1039,7 +1039,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             />
             <image
               height="33.941125496954285"
-              href="https://symbols.getvecta.com/stencil_97/45_terraform-icon.d8dd637866.svg"
+              href="https://raw.githubusercontent.com/mauve/vscode-terraform/master/terraform.png"
               width="33.941125496954285"
               x="-355.10800717369005"
               y="-52.51024025947933"
@@ -1102,7 +1102,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             />
             <image
               height="33.941125496954285"
-              href="https://symbols.getvecta.com/stencil_79/34_elastic-search-icon.bdaf397325.svg"
+              href="https://www.finsmes.com/wp-content/uploads/2019/06/elastic.png"
               width="33.941125496954285"
               x="-186.97056274847728"
               y="-311.41920003518624"
@@ -1123,7 +1123,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             />
             <image
               height="33.941125496954285"
-              href="https://cdn.worldvectorlogo.com/logos/bitbucket-icon.svg"
+              href="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_2ea5f7178028686921161d65d4be481a/bitbucket.png"
               width="33.941125496954285"
               x="-195.94914619726114"
               y="86.36277058485618"
