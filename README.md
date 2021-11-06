@@ -14,14 +14,14 @@
   <h3 align="center">Engineering Tech Radar</h3>
 
   <p align="center">
-    Performance management framework designed by Engineers for Engineers at Capco
+    A visual guide to provide a view of the current technology coverage of Capco Digital Engineering
     <br />
     <br />
-    <a href="https://framework.capco.io">View Demo</a>
+    <a href="https://radar.capco.io">View Demo</a>
     ·
-    <a href="https://github.com/capcodigital/engineering-framework/issues">Report Bug</a>
+    <a href="https://github.com/capcodigital/tech-radar/issues">Report Bug</a>
     ·
-    <a href="https://github.com/capcodigital/engineering-framework/issues">Request Feature</a>
+    <a href="https://github.com/capcodigital/tech-radar/issues">Request Feature</a>
   </p>
 </p>
 
@@ -54,7 +54,7 @@
 
 ## About The Project
 
-[![Unit and E2E Tests](https://github.com/capcodigital/tech-radar/actions/workflows/tests.yml/badge.svg)](https://github.com/capcodigital/tech-radar/actions/workflows/tests.yml)
+[![Unit and E2E Tests](https://github.com/capcodigital/tech-radar/actions/workflows/main.yml/badge.svg)](https://github.com/capcodigital/tech-radar/actions/workflows/main.yml)
 
 ![Tech Radar](./demo.gif)
 
@@ -142,13 +142,13 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/capcodigital/engineering-framework.svg?style=for-the-badge
-[contributors-url]: https://github.com/capcodigital/engineering-framework/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/capcodigital/engineering-framework.svg?style=for-the-badge
-[forks-url]: https://github.com/capcodigital/engineering-framework/network/members
-[stars-shield]: https://img.shields.io/github/stars/capcodigital/engineering-framework.svg?style=for-the-badge
-[stars-url]: https://github.com/capcodigital/engineering-framework/stargazers
-[issues-shield]: https://img.shields.io/github/issues/capcodigital/engineering-framework.svg?style=for-the-badge
-[issues-url]: https://github.com/capcodigital/engineering-framework/issues
-[license-shield]: https://img.shields.io/github/license/capcodigital/engineering-framework.svg?style=for-the-badge
-[license-url]: https://github.com/capcodigital/engineering-framework/blob/master/LICENSE
+[contributors-shield]: https://img.shields.io/github/contributors/capcodigital/tech-radar.svg?style=for-the-badge
+[contributors-url]: https://github.com/capcodigital/tech-radar/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/capcodigital/tech-radar.svg?style=for-the-badge
+[forks-url]: https://github.com/capcodigital/tech-radar/network/members
+[stars-shield]: https://img.shields.io/github/stars/capcodigital/tech-radar.svg?style=for-the-badge
+[stars-url]: https://github.com/capcodigital/tech-radar/stargazers
+[issues-shield]: https://img.shields.io/github/issues/capcodigital/tech-radar.svg?style=for-the-badge
+[issues-url]: https://github.com/capcodigital/tech-radar/issues
+[license-shield]: https://img.shields.io/github/license/capcodigital/tech-radar.svg?style=for-the-badge
+[license-url]: https://github.com/capcodigital/tech-radar/blob/master/LICENSE
