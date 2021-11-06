@@ -250,7 +250,7 @@ export const data: Array<{ name: string; data: techType }> = [
         },
         {
           name: "OpenShift",
-          link: "https://symbols.getvecta.com/stencil_90/47_openshift-icon.e98513fd69.svg",
+          link: "https://banner2.cleanpng.com/20181107/zw/kisspng-openshift-logo-red-hat-software-minishift-computer-5be36e7bd474f7.2753397215416316118702.jpg",
           enabled: false,
         },
         {
