@@ -58,7 +58,7 @@
 
 ![Tech Radar](./demo.gif)
 
-An application that allows Engineers to explore the Engineering performance management framework used in Digital Engineering at Capco.
+A visual guide to provide a view of the current technology coverage of Capco Digital Engineering.
 
 ### Built With
 
