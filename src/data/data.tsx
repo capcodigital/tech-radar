@@ -26,8 +26,8 @@ export const data: Array<{ name: string; data: techType }> = [
           enabled: false,
         },
         {
-          name: "Valut",
-          link: "https://symbols.getvecta.com/stencil_100/11_vault-icon.469c5366cc.svg",
+          name: "Vault",
+          link: "https://www.pngitem.com/pimgs/m/329-3299659_hashicorp-vault-logo-hd-png-download.png",
           enabled: false,
         },
         {
@@ -49,7 +49,7 @@ export const data: Array<{ name: string; data: techType }> = [
         },
         {
           name: "Jenkins",
-          link: "https://symbols.getvecta.com/stencil_97/67_the-jenkins-project-icon.0141f64fe7.svg",
+          link: "https://avidlearnerinprogress.github.io/assets/images/tools/jenkins.jpg",
           enabled: true,
         },
         {
@@ -59,24 +59,24 @@ export const data: Array<{ name: string; data: techType }> = [
         },
         {
           name: "Istio",
-          link: "https://symbols.getvecta.com/stencil_84/70_istio-icon.9d92202138.svg",
+          link: "https://istio.io/latest/img/istio-bluelogo-whitebackground-unframed.svg",
           enabled: false,
         },
         {
           name: "Ansible",
-          link: "https://symbols.getvecta.com/stencil_73/122_ansible-icon.e1db432c74.svg",
+          link: "https://upload.wikimedia.org/wikipedia/commons/0/05/Ansible_Logo.png",
           enabled: false,
         },
         {
           name: "Packer",
-          link: "https://symbols.getvecta.com/stencil_91/3_packer-icon.53584ee287.svg",
+          link: "https://seeklogo.com/images/P/packer-logo-732D5F5529-seeklogo.com.png",
           enabled: false,
         },
       ],
       scaling: [
         {
           name: "Twistlock",
-          link: "https://symbols.getvecta.com/stencil_98/71_twistlock-icon.8db1b813dd.svg",
+          link: "https://cdn.icon-icons.com/icons2/2699/PNG/512/twistlock_logo_icon_168400.png",
           enabled: false,
         },
         {
@@ -91,7 +91,7 @@ export const data: Array<{ name: string; data: techType }> = [
         },
         {
           name: "Consul",
-          link: "https://symbols.getvecta.com/stencil_77/63_consul-icon.0452948395.svg",
+          link: "https://d7umqicpi7263.cloudfront.net/img/product/4c3eb104-ebd1-42be-9bd4-de25ef6918df/84c590de-f853-4d50-a314-d92f104ec3a9.png",
           enabled: false,
         },
       ],
@@ -108,7 +108,7 @@ export const data: Array<{ name: string; data: techType }> = [
         },
         {
           name: "Neo4J",
-          link: "https://symbols.getvecta.com/stencil_261/28_neo4j.404372b29e.svg",
+          link: "https://dist.neo4j.com/wp-content/uploads/neo4j_logo_globe1.png",
           enabled: false,
         },
         {
@@ -191,7 +191,7 @@ export const data: Array<{ name: string; data: techType }> = [
       skilled: [
         {
           name: "Wiremock",
-          link: "https://lh3.googleusercontent.com/proxy/TImAeIQiFveDA7nFR0i5Y9YgV7og9T5y3tjeaA4K_djJWQFPy7oKv1JAjX4MmZWSEy99drD1BlgHWHEkW22lY3IGtIqLpt6XVcJilOz0pA",
+          link: "https://www.saashub.com/images/app/service_logos/49/f7c4bb5006b5/large.png?1557747621",
           enabled: false,
         },
         {
@@ -279,7 +279,7 @@ export const data: Array<{ name: string; data: techType }> = [
       scaling: [
         {
           name: "Digital Ocean",
-          link: "https://symbols.getvecta.com/stencil_78/61_digital-ocean-icon.0d013f7d26.svg",
+          link: "https://pbs.twimg.com/profile_images/1410636343944880136/w8dxKEmg_400x400.jpg",
           enabled: false,
         },
         {
@@ -311,14 +311,14 @@ export const data: Array<{ name: string; data: techType }> = [
         },
         {
           name: "Kafka",
-          link: "https://symbols.getvecta.com/stencil_74/14_apache-kafka-icon.96e46bbe3a.svg",
+          link: "https://e7.pngegg.com/pngimages/435/297/png-clipart-kafka-logo-icons-logos-emojis-tech-companies-thumbnail.png",
           enabled: false,
         },
       ],
       skilled: [
         {
-          name: "ActiveM",
-          link: "https://symbols.getvecta.com/stencil_73/17_activemq-icon.66dcff47ad.svg",
+          name: "ActiveMQ",
+          link: "https://img.stackshare.io/service/1062/vlz__1_.png",
           enabled: false,
         },
         {
@@ -330,7 +330,7 @@ export const data: Array<{ name: string; data: techType }> = [
       scaling: [
         {
           name: "GraphQL",
-          link: "https://symbols.getvecta.com/stencil_82/66_graphql-icon.291fc05a38.svg",
+          link: "https://i0.wp.com/storage.googleapis.com/blog-images-backup/1*rmWsDg6J6PtLVOhXb3zr7w.png",
           enabled: false,
         },
       ],
@@ -484,8 +484,8 @@ export const icons: Array<{ name: string; link: string }> = [
     link: "https://symbols.getvecta.com/stencil_97/45_terraform-icon.d8dd637866.svg",
   },
   {
-    name: "Valut",
-    link: "https://symbols.getvecta.com/stencil_100/11_vault-icon.469c5366cc.svg",
+    name: "Vault",
+    link: "https://miro.medium.com/max/1200/1*giyQTAngfrbaEkaJ277oxQ.png",
   },
   {
     name: "SonarQube",
@@ -561,7 +561,7 @@ export const icons: Array<{ name: string; link: string }> = [
   },
   {
     name: "BigQuery",
-    link: "https://symbols.getvecta.com/stencil_75/69_bigquery-icon.eb9185e8d2.svg",
+    link: "https://cdn.worldvectorlogo.com/logos/google-bigquery-logo-1.svg",
   },
   {
     name: "Snowflake",
@@ -593,7 +593,7 @@ export const icons: Array<{ name: string; link: string }> = [
   },
   {
     name: "Sauce Labs",
-    link: "https://symbols.getvecta.com/stencil_95/21_sauce-labs-icon.3db8e81715.svg",
+    link: "https://seeklogo.com/images/S/sauce-labs-logo-413E1BDE63-seeklogo.com.png",
   },
   {
     name: "Wiremock",
@@ -671,10 +671,10 @@ export const icons: Array<{ name: string; link: string }> = [
   },
   {
     name: "Kafka",
-    link: "https://symbols.getvecta.com/stencil_74/14_apache-kafka-icon.96e46bbe3a.svg",
+    link: "https://symbols.getvecta.com/stencil_74/14_apache-kafka-icon.59d5c11ca8.jpg",
   },
   {
-    name: "ActiveM",
+    name: "ActiveMQ",
     link: "https://symbols.getvecta.com/stencil_73/17_activemq-icon.66dcff47ad.svg",
   },
   {
@@ -749,7 +749,7 @@ export const technologies = [
       "GitHub",
       "CircleCI",
       "Terraform",
-      "Valut",
+      "Vault",
       "SonarQube",
       "Elastic",
       "Bitbucket",
@@ -819,7 +819,7 @@ export const technologies = [
       "Camel",
       "gRPC",
       "Kafka",
-      "ActiveM",
+      "ActiveMQ",
       "IBM MQ",
       "GraphQL",
     ],
@@ -870,7 +870,7 @@ export const technologyList = [
   "GitHub",
   "CircleCI",
   "Terraform",
-  "Valut",
+  "Vault",
   "SonarQube",
   "Elastic",
   "Bitbucket",
@@ -918,7 +918,7 @@ export const technologyList = [
   "Camel",
   "gRPC",
   "Kafka",
-  "ActiveM",
+  "ActiveMQ",
   "IBM MQ",
   "GraphQL",
   "Java",

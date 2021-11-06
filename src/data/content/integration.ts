@@ -32,7 +32,7 @@ const techContent = [
     reference: [],
   },
   {
-    technology: "ActiveM",
+    technology: "ActiveMQ",
     docsLink: "https://reactnative.dev/docs/getting-started",
     intro: "Content coming soon.",
     content: [],

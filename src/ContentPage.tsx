@@ -132,7 +132,6 @@ const CategoryPage = () => {
     let icon = icons.filter(
       (el: any) => el.name.toLowerCase() === technologyFromUrl.toLowerCase()
     )[0]!;
-
     // Filter the content for specific tech
     let content = techContent.filter(
       ({ technology }) => technology === technologyFromUrl

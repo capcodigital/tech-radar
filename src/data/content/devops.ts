@@ -24,7 +24,7 @@ const techContent = [
     reference: [],
   },
   {
-    technology: "Valut",
+    technology: "Vault",
     docsLink: "https://www.vaultproject.io/docs",
     intro: "Content coming soon.",
     content: [],
