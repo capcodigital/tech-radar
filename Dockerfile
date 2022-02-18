@@ -9,7 +9,7 @@ ENV PATH="./node_modules/.bin:$PATH"
 COPY . ./
 RUN npm run build
 
-FROM nginx:1.21.0-alpine AS production
+FROM nginx:1.21.4-alpine AS production
 RUN apk --no-cache add curl
 RUN curl -L https://github.com/a8m/envsubst/releases/download/v1.2.0/envsubst-`uname -s`-`uname -m` -o envsubst && \
     chmod +x envsubst && \
