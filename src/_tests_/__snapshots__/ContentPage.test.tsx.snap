@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContentPage should render ContentPage component 1`] = `
+<div
+  class="ContentPage__Wrapper-sc-1hove6d-0 hbWwbp"
+>
+  <img
+    alt="DevOps"
+    class="background"
+    height="650"
+    src="devops.svg"
+    width="650"
+  />
+  <div
+    class="ContentPage__ContentWrapper-sc-1hove6d-1 fJVwrZ"
+  >
+    <div>
+      <a
+        class="BackLink__StyledBackLink-sc-1ku5n9h-0 eXNkbF"
+        href="/category/devops"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+          />
+        </svg>
+        Back to 
+        DevOps
+        <img
+          alt="DevOps"
+          height="24"
+          src="devops.svg"
+          width="24"
+        />
+      </a>
+      <div
+        class="ContentPage__Title-sc-1hove6d-3 ONBgv title-GitHub"
+      >
+        GitHub
+      </div>
+      <a
+        href="https://docs.github.com/en"
+        rel="noreferrer"
+        target="_blank"
+      >
+        <svg
+          class="icon"
+          viewBox="0 0 80 80"
+        >
+          <circle
+            cx="40"
+            cy="40"
+            fill="white"
+            r="40"
+          />
+          <image
+            height="50"
+            href="https://img.icons8.com/fluent/452/github.png"
+            width="50"
+            x="15"
+            y="15"
+          />
+        </svg>
+      </a>
+      <div
+        class="ContentPage__ContentBody-sc-1hove6d-2 eyrVVY"
+      >
+        <div
+          class="content-intro"
+        >
+          Content coming soon.
+        </div>
+        <hr
+          class="ContentPage__Divider-sc-1hove6d-4 hrtbSm"
+        />
+        <div
+          class="ContentNavButton__StyledContentNavButton-oldbk9-0 wRFRL"
+          data-testid="Previous"
+        >
+          <div>
+            Previous
+          </div>
+          <a
+            href="/technology/mobile/gradle-mobile"
+          >
+            Gradle Mobile
+          </a>
+        </div>
+        <div
+          class="ContentNavButton__StyledContentNavButton-oldbk9-0 hOSLsY"
+          data-testid="Next"
+        >
+          <div>
+            Next
+          </div>
+          <a
+            href="/technology/devops/circleci"
+          >
+            CircleCI
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
