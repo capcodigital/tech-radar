@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StyledButton should render StyledButton component 1`] = `
+<a
+  href="/category/test"
+>
+  <div
+    class="StyledButton__ButtonWrapper-sc-5xbrg2-0 gPSqaX"
+  >
+    <img
+      alt="Test"
+      height="54"
+      width="54"
+    />
+    <span>
+      Test
+    </span>
+    <svg
+      aria-hidden="true"
+      class="MuiSvgIcon-root"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+      />
+    </svg>
+  </div>
+</a>
+`;
