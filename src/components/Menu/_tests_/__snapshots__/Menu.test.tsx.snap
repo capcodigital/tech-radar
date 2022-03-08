@@ -2,16 +2,16 @@
 
 exports[`Menu should render Menu component 1`] = `
 <header
-  class="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorPrimary Menu__StyledAppBar-sc-3g6r0z-0 iuSeco MuiPaper-elevation4"
+  class="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorPrimary Menu__StyledAppBar-sc-3g6r0z-0 kdjDJP MuiPaper-elevation4"
 >
   <div
     class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
   >
     <div
-      class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-space-between"
+      class="MuiGrid-root MuiGrid-container MuiGrid-justify-content-xs-space-between"
     >
       <div
-        class="MuiGrid-root Menu__LogoGridItem-sc-3g6r0z-1 fgQvUJ MuiGrid-item"
+        class="MuiGrid-root Menu__LogoGridItem-sc-3g6r0z-1 gDWphS MuiGrid-item"
       >
         <a
           href="/home"

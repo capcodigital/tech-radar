@@ -5,7 +5,7 @@ exports[`StyledButton should render StyledButton component 1`] = `
   href="/category/test"
 >
   <div
-    class="StyledButton__ButtonWrapper-sc-15v8lia-0 bYKZOh"
+    class="styles__ButtonWrapper-sc-hfvpn3-0 eJdYSE"
   >
     <img
       alt="Test"
