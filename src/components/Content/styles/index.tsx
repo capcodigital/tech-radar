@@ -3,6 +3,9 @@ import styled from "styled-components/macro";
 export const Wrapper = styled.div`
   width: 700px;
   margin: 0 auto;
+  @media screen and (max-width: 1000px) {
+    width: 100%;
+  }
 `;
 
 export const StyledSubContent = styled.div`
