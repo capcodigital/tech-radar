@@ -126,7 +126,7 @@ const Menu = () => {
             <LogoGridItem item>
               <Link to="/home">
                 <img height={46} src={logo} alt="Large Logo" />
-                <div>TECH RADAR 2021</div>
+                <div>TECH RADAR {new Date().getFullYear()}</div>
               </Link>
             </LogoGridItem>
 

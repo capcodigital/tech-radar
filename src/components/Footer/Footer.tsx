@@ -42,7 +42,7 @@ const Footer = () => (
   <StyledFooter className="footer">
     <img height={44} src={logo} alt="Logo" />
     <a href="https://www.capco.com/" target="_blank" rel="noreferrer">
-      Capco @2021
+      Capco @{new Date().getFullYear()}
     </a>
     <div>All Rights Reserved</div>
   </StyledFooter>
