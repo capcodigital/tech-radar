@@ -72,15 +72,6 @@ export const SubContent: FC<SubContentType> = ({ contentData }) => {
                   </AccordionDetails>
                 </Accordion>
               </Wrapper>
-              {/* <div>{name}</div>
-            <div
-              dangerouslySetInnerHTML={{
-                __html: description.replace(
-                  /href=/g,
-                  'rel="noreferrer" target="_blank" href='
-                ),
-              }}
-            /> */}
             </div>
           ))}
         </StyledSubContent>
