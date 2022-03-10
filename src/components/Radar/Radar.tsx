@@ -114,7 +114,7 @@ const Radar: FC = () => {
             cx={0}
             cy={0}
             r={outterRadius}
-            fill={"#ffffff"}
+            fill={"#000"}
             stroke={"lightgrey"}
             opacity={0.03}
           />
