@@ -47,7 +47,6 @@ export const StyledDrawer = styled(Drawer)`
     color: white;
     @media screen and (max-width: 768px) {
       width: 100%;
-      align-content: items;
     }
   }
   .MuiIconButton-root {
@@ -66,9 +65,10 @@ export const StyledDrawer = styled(Drawer)`
       :hover {
         text-decoration: underline;
       }
-    }
-    @media screen and (max-width: 768px) {
-      text-align: center;
+      @media screen and (max-width: 768px) {
+        display: inline-block;
+        text-align: center;
+      }
     }
     @media screen and (max-width: 1000px) {
       padding: 100px 0 0 20px;
