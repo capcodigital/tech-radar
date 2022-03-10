@@ -42,9 +42,13 @@ export const LogoGridItem = styled(Grid)`
 
 export const StyledDrawer = styled(Drawer)`
   div.MuiPaper-root {
-    width: 100%;
+    width: 40%;
     background-color: #0e0330;
     color: white;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      align-content: items;
+    }
   }
   .MuiIconButton-root {
     margin: 20px;
@@ -62,6 +66,9 @@ export const StyledDrawer = styled(Drawer)`
       :hover {
         text-decoration: underline;
       }
+    }
+    @media screen and (max-width: 768px) {
+      text-align: center;
     }
     @media screen and (max-width: 1000px) {
       padding: 100px 0 0 20px;
