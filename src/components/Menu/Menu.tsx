@@ -122,7 +122,7 @@ const Menu = () => {
     <>
       <StyledAppBar position="static">
         <Toolbar>
-          <Grid justify="space-between" container>
+          <Grid justifyContent="space-between" container>
             <LogoGridItem item>
               <Link to="/home">
                 <img height={46} src={logo} alt="Large Logo" />
