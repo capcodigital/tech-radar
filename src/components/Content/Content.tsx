@@ -23,11 +23,6 @@ type ReferenceContentType = {
 };
 
 export const SubContent: FC<SubContentType> = ({ contentData }) => {
-  const [expanded, setExpanded] = React.useState<string | false>(false);
-  const handleChange =
-    (panel: string) => (event: React.SyntheticEvent, isExpanded: boolean) => {
-      setExpanded(isExpanded ? panel : false);
-    };
   return (
     <>
       {contentData.map(({ name, intro, data }, idx) => (
@@ -44,7 +39,7 @@ export const SubContent: FC<SubContentType> = ({ contentData }) => {
           {data.map(({ name, description }, idx) => (
             <div className={"content"} key={`data-content-${idx}`}>
               <Wrapper>
-                <Accordion onChange={handleChange("panel1")}>
+                <Accordion>
                   <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel1bh-content"
