@@ -64,6 +64,10 @@ export const StyledDrawer = styled(Drawer)`
       color: inherit;
       :hover {
         text-decoration: underline;
+        path {
+          opacity: 1;
+          transform-origin: 0% 0%;
+        }
       }
       @media screen and (max-width: 768px) {
         display: inline-block;
