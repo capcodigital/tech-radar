@@ -1,11 +1,6 @@
 import React, { FC } from "react";
-import Accordion from "@mui/material/Accordion";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import Typography from "@mui/material/Typography";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import AccordionComponent from "../Accordion/Accordion";
-import { Wrapper, StyledSubContent, Title, SourceLink } from "./styles";
+import { StyledSubContent, Title, SourceLink } from "./styles";
 
 type SubContentType = {
   contentData: Array<{
