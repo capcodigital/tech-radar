@@ -54,7 +54,7 @@ export const SubContent: FC<SubContentType> = ({ contentData }) => {
                       <div
                         style={{
                           fontWeight: "300",
-                          color: "#000",
+                          color: "#fff",
                         }}
                         dangerouslySetInnerHTML={{
                           __html: description.replace(

@@ -6,6 +6,24 @@ export const Wrapper = styled.div`
   @media screen and (max-width: 1000px) {
     width: 100%;
   }
+
+  .css-1elwnq4-MuiPaper-root-MuiAccordion-root {
+    background-color: transparent;
+    border: #fff 2px solid;
+    position: relative;
+    transition: margin 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    overflow-anchor: none;
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 0%),
+      0px 1px 1px 0px rgb(0 0 0 / 0%), 0px 1px 3px 0px rgb(0 0 0 / 0%);
+  }
+
+  .css-i4bv87-MuiSvgIcon-root {
+    color: #fff;
+  }
+
+  .css-1m4ljmh-MuiTypography-root {
+    width: 58%;
+  }
 `;
 
 export const StyledSubContent = styled.div`
