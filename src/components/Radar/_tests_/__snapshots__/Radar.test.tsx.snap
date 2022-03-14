@@ -14,24 +14,37 @@ exports[`Radar should render Radar component 1`] = `
       <circle
         cx="0"
         cy="0"
-        fill="#ffffff"
-        opacity="0.03"
-        r="350"
-        stroke="lightgrey"
+        fill="#e6236d"
+        opacity="1"
+        r="116.66666666666667"
       />
       <circle
         cx="0"
         cy="0"
-        fill="#ffffff"
-        opacity="0.03"
+        fill="#e6236d"
+        opacity="1"
         r="233.33333333333334"
       />
       <circle
         cx="0"
         cy="0"
-        fill="#ffffff"
-        opacity="0.05"
+        fill="#c90851"
+        opacity="0.9"
         r="116.66666666666667"
+      />
+      <circle
+        cx="0"
+        cy="0"
+        fill="#e6236d"
+        opacity="0.9"
+        r="350"
+      />
+      <circle
+        cx="0"
+        cy="0"
+        fill="#c90851"
+        opacity="0.9"
+        r="233.33333333333334"
       />
       <line
         stroke="white"

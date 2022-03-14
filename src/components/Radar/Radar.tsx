@@ -34,6 +34,8 @@ const imageSize = Math.sqrt(2) * dataPointCircleRadius; //square inside circle
 const navBtnRadius = size / 2 - 50;
 const navImageSize = 50;
 
+const arcGenerator = d3.arc().innerRadius(100).outerRadius(250);
+
 const createArc = d3.arc().padAngle(0);
 
 let techIdx = 9;
@@ -82,8 +84,17 @@ const StyledNav = styled.g`
     }
   }
 `;
+interface Props {
+  scalingClicked: boolean;
+  skilledClicked: boolean;
+  preferredClicked: boolean;
+}
 
-const Radar: FC = () => {
+const Radar: FC<Props> = ({
+  scalingClicked,
+  skilledClicked,
+  preferredClicked,
+}) => {
   let history = useHistory();
   const { setCategory, setTechnology } =
     useContext<RadarContextType>(RadarContext);
@@ -110,29 +121,76 @@ const Radar: FC = () => {
       <svg viewBox={"0 0 900 900"} style={{ overflow: "visible" }}>
         <g transform={`translate(${size / 2} ${size / 2})`}>
           {/* 3 main rings */}
-          <circle
-            cx={0}
-            cy={0}
-            r={outterRadius}
-            fill={"#ffffff"}
-            stroke={"lightgrey"}
-            opacity={0.03}
-          />
-          <circle
-            cx={0}
-            cy={0}
-            r={middleRadius}
-            fill={"#ffffff"}
-            opacity={0.03}
-          />
-          <circle
-            cx={0}
-            cy={0}
-            r={innerCircleRadius}
-            fill={"#ffffff"}
-            opacity={0.05}
-          />
-
+          {scalingClicked === true ? (
+            <circle
+              cx={0}
+              cy={0}
+              r={innerCircleRadius}
+              fill={"#e6236d"}
+              opacity={1}
+            />
+          ) : (
+            <circle
+              cx={0}
+              cy={0}
+              r={innerCircleRadius}
+              fill={"#ffffff"}
+              opacity={0.05}
+            />
+          )}
+          {skilledClicked === true ? (
+            <>
+              <circle
+                cx={0}
+                cy={0}
+                r={middleRadius}
+                fill={"#e6236d"}
+                opacity={1}
+              />
+              <circle
+                cx={0}
+                cy={0}
+                r={innerCircleRadius}
+                fill={"#c90851"}
+                opacity={0.9}
+              />
+            </>
+          ) : (
+            <circle
+              cx={0}
+              cy={0}
+              r={middleRadius}
+              fill={"#ffffff"}
+              opacity={0.03}
+            />
+          )}
+          {preferredClicked === true ? (
+            <>
+              <circle
+                cx={0}
+                cy={0}
+                r={outterRadius}
+                fill={"#e6236d"}
+                opacity={0.9}
+              />
+              <circle
+                cx={0}
+                cy={0}
+                r={middleRadius}
+                fill={"#c90851"}
+                opacity={0.9}
+              />
+            </>
+          ) : (
+            <circle
+              cx={0}
+              cy={0}
+              r={outterRadius}
+              fill={"#ffffff"}
+              stroke={"lightgrey"}
+              opacity={0.03}
+            />
+          )}
           {new Array(8).fill(0).map((d: any, idx: number) => (
             <line
               key={`tech-line-${idx}`}
