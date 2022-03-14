@@ -4,6 +4,7 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import AccordionComponent from "../Accordion/Accordion";
 import { Wrapper, StyledSubContent, Title, SourceLink } from "./styles";
 
 type SubContentType = {
@@ -25,6 +26,7 @@ type ReferenceContentType = {
 export const SubContent: FC<SubContentType> = ({ contentData }) => {
   return (
     <>
+      {/* <DropDown contentData={contentData} /> */}
       {contentData.map(({ name, intro, data }, idx) => (
         <StyledSubContent key={`subcontent-${idx}`}>
           {name && <Title>{name}</Title>}
@@ -38,35 +40,7 @@ export const SubContent: FC<SubContentType> = ({ contentData }) => {
           )}
           {data.map(({ name, description }, idx) => (
             <div className={"content"} key={`data-content-${idx}`}>
-              <Wrapper>
-                <Accordion>
-                  <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel1bh-content"
-                    id="panel1bh-header"
-                  >
-                    <Typography sx={{ width: "33%", flexShrink: 0 }}>
-                      <div>{name}</div>
-                    </Typography>
-                  </AccordionSummary>
-                  <AccordionDetails>
-                    <Typography>
-                      <div
-                        style={{
-                          fontWeight: "300",
-                          color: "#fff",
-                        }}
-                        dangerouslySetInnerHTML={{
-                          __html: description.replace(
-                            /href=/g,
-                            'rel="noreferrer" target="_blank" href='
-                          ),
-                        }}
-                      />
-                    </Typography>
-                  </AccordionDetails>
-                </Accordion>
-              </Wrapper>
+              <AccordionComponent name={name} description={description} />
             </div>
           ))}
         </StyledSubContent>
