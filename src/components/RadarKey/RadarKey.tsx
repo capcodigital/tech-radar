@@ -1,11 +1,6 @@
 import React, { FC } from "react";
 import { KeyTooltip } from "../RadarStyledComponents/StyledTooltip";
-import {
-  StyledRadarKey,
-  TooltipTitle,
-  TooltipContent,
-  KeyBorder,
-} from "./styles/";
+import { StyledRadarKey, TooltipTitle, TooltipContent } from "./styles/";
 import { radarKeysText } from "../../data/data";
 
 interface KeyCircleProps {
@@ -15,9 +10,6 @@ interface KeyCircleProps {
 }
 
 interface Props {
-  scalingClicked: boolean;
-  skilledClicked: boolean;
-  preferredClicked: boolean;
   setScalingClicked: React.Dispatch<React.SetStateAction<boolean>>;
   setSkilledClicked: React.Dispatch<React.SetStateAction<boolean>>;
   setPreferredClicked: React.Dispatch<React.SetStateAction<boolean>>;
@@ -32,49 +24,10 @@ const KeyCircle: FC<KeyCircleProps> = ({ color1, color2, color3 }) => (
 );
 
 const RadarKey: FC<Props> = ({
-  scalingClicked,
-  skilledClicked,
-  preferredClicked,
   setScalingClicked,
   setSkilledClicked,
   setPreferredClicked,
 }) => {
-  const handleClickScaling = () => {
-    if (scalingClicked === false) {
-      setScalingClicked(true);
-      setSkilledClicked(false);
-      setPreferredClicked(false);
-    } else if (scalingClicked === true) {
-      setScalingClicked(false);
-      setSkilledClicked(false);
-      setPreferredClicked(false);
-    }
-  };
-
-  const handleClickSkilled = () => {
-    if (skilledClicked === false) {
-      setSkilledClicked(true);
-      setScalingClicked(false);
-      setPreferredClicked(false);
-    } else if (skilledClicked === true) {
-      setSkilledClicked(false);
-      setScalingClicked(false);
-      setPreferredClicked(false);
-    }
-  };
-
-  const handleClickPreferred = () => {
-    if (preferredClicked === false) {
-      setPreferredClicked(true);
-      setSkilledClicked(false);
-      setScalingClicked(false);
-    } else if (preferredClicked === true) {
-      setPreferredClicked(false);
-      setSkilledClicked(false);
-      setScalingClicked(false);
-    }
-  };
-
   return (
     <StyledRadarKey>
       <div>Key</div>
@@ -89,13 +42,16 @@ const RadarKey: FC<Props> = ({
         placement="right"
         arrow
       >
-        <div onClick={handleClickScaling}>
+        <div
+          onMouseEnter={() => setScalingClicked(true)}
+          onMouseLeave={() => setScalingClicked(false)}
+        >
           <KeyCircle
             color1={"#c4c4c41a"}
             color2={"#c4c4c41a"}
             color3={"#e6236d"}
           />
-          <span onMouseOver={handleClickScaling}>Scaling</span>
+          <span>Scaling</span>
         </div>
       </KeyTooltip>
       <KeyTooltip
@@ -109,7 +65,10 @@ const RadarKey: FC<Props> = ({
         placement="right"
         arrow
       >
-        <div onClick={handleClickSkilled}>
+        <div
+          onMouseEnter={() => setSkilledClicked(true)}
+          onMouseLeave={() => setSkilledClicked(false)}
+        >
           <KeyCircle
             color1={"#c4c4c41a"}
             color2={"#e6236d"}
@@ -129,7 +88,10 @@ const RadarKey: FC<Props> = ({
         placement="right"
         arrow
       >
-        <div onClick={handleClickPreferred}>
+        <div
+          onMouseEnter={() => setPreferredClicked(true)}
+          onMouseLeave={() => setPreferredClicked(false)}
+        >
           <KeyCircle color1={"#e6236d"} color2={"#290738"} color3={"#391A46"} />
           <span>Preferred</span>
         </div>

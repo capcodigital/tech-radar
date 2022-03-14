@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import Grid from "@material-ui/core/Grid";
@@ -16,9 +16,6 @@ const Home = () => {
     <OutterWrapper>
       <Wrapper>
         <RadarKey
-          scalingClicked={scalingClicked}
-          skilledClicked={skilledClicked}
-          preferredClicked={preferredClicked}
           setScalingClicked={setScalingClicked}
           setSkilledClicked={setSkilledClicked}
           setPreferredClicked={setPreferredClicked}

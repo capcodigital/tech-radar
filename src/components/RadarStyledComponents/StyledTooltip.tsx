@@ -1,10 +1,6 @@
 import Tooltip from "@material-ui/core/Tooltip";
 import { withStyles } from "@material-ui/core/styles";
 
-interface Props {
-  color: string;
-}
-
 export const KeyTooltip = withStyles(() => ({
   tooltip: {
     backgroundColor: "white",
