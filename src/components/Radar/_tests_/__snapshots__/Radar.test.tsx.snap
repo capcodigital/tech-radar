@@ -14,7 +14,7 @@ exports[`Radar should render Radar component 1`] = `
       <circle
         cx="0"
         cy="0"
-        fill="#ffffff"
+        fill="#000"
         opacity="0.03"
         r="350"
         stroke="lightgrey"
