@@ -22,7 +22,8 @@ exports[`Menu should render Menu component 1`] = `
             src="logo.png"
           />
           <div>
-            TECH RADAR 2021
+            TECH RADAR 
+            2022
           </div>
         </a>
       </div>
