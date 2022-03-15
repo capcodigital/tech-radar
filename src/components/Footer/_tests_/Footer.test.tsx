@@ -22,7 +22,7 @@ describe("Footer", () => {
     );
 
     expect(container.firstChild).toHaveTextContent(
-      "Capco @2021All Rights Reserved"
+      `Capco @${new Date().getFullYear()}All Rights Reserved`
     );
   });
 });

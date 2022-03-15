@@ -14,7 +14,8 @@ exports[`Footer should render Footer component 1`] = `
     rel="noreferrer"
     target="_blank"
   >
-    Capco @2021
+    Capco @
+    2022
   </a>
   <div>
     All Rights Reserved
