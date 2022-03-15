@@ -106,7 +106,7 @@ const Radar: FC<Props> = ({
                 cx={0}
                 cy={0}
                 r={innerCircleRadius}
-                fill={"#c90851"}
+                fill={"#850334"}
                 opacity={0.9}
               />
             </>
@@ -132,7 +132,7 @@ const Radar: FC<Props> = ({
                 cx={0}
                 cy={0}
                 r={middleRadius}
-                fill={"#c90851"}
+                fill={"#850334"}
                 opacity={0.9}
               />
             </>

@@ -28,7 +28,7 @@ exports[`Radar should render Radar component 1`] = `
       <circle
         cx="0"
         cy="0"
-        fill="#c90851"
+        fill="#850334"
         opacity="0.9"
         r="116.66666666666667"
       />
@@ -42,7 +42,7 @@ exports[`Radar should render Radar component 1`] = `
       <circle
         cx="0"
         cy="0"
-        fill="#c90851"
+        fill="#850334"
         opacity="0.9"
         r="233.33333333333334"
       />
