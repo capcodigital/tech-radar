@@ -111,7 +111,7 @@ const techContent = [
     technology: "Jenkins",
     docsLink: "https://www.jenkins.io/doc/",
     intro:
-      "Jenkins is a leading opensource automation server. It provides an extensive marketplace of plugins to support building, deploying and automating any project as per your specific needs.",
+      "Jenkins is a leading open source automation server. It provides an extensive marketplace of plugins to support building, deploying and automating any project as per your specific needs.",
     content: [
       {
         name: "",
@@ -137,7 +137,7 @@ const techContent = [
           {
             name: "Easy Configuration",
             description:
-              "enkins is easily set up and configured using its web interface, featuring error checks and a built-in help function.",
+              "Jenkins is easily set up and configured using its web interface, featuring error checks and a built-in help function.",
           },
           {
             name: "Available Plugins",
@@ -178,7 +178,7 @@ const techContent = [
           {
             name: "Align with Agile Dev & DevOps",
             description:
-              "Jenkins CI/CD pipeline aligns with the Agile deliveries and Agile DevOps mindset which is a must have in today’s everchanging environment. A great CI/CD pipeline ensures that requirements like quality, code coverage, code analysis, stability, performance, end to end testing etc can be set up and executed once and repeated forever. This also impacts the time to market which is a game changer in today’s world.",
+              "Jenkins CI/CD pipeline aligns with the Agile deliveries and Agile DevOps mindset which is a must have in today’s ever-changing environment. A great CI/CD pipeline ensures that requirements like quality, code coverage, code analysis, stability, performance, end to end testing etc can be set up and executed once and repeated forever. This also impacts the time to market which is a game changer in today’s world.",
           },
           {
             name: "Process Improvement",
