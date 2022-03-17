@@ -20,6 +20,7 @@ const AccordionComponent: FC<Props> = ({ name, description }) => {
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel1bh-content"
             id="panel1bh-header"
+            data-test-id={name}
           >
             <Typography sx={{ width: "33%", flexShrink: 0 }}>
               <div>{name}</div>
@@ -28,6 +29,7 @@ const AccordionComponent: FC<Props> = ({ name, description }) => {
           <AccordionDetails>
             <Typography>
               <div
+                data-test-id={`${name}-content`}
                 style={{
                   fontWeight: "300",
                   color: "#fff",

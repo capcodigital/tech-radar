@@ -482,49 +482,49 @@ exports[`Radar should render Radar component 1`] = `
       <path
         class="arc DevOps-segment"
         d="M-133.9392013277814,-323.35783637895037A350,350,0,0,1,133.93920132778143,-323.35783637895037L0,0Z"
-        data-testid="DevOps-arc"
+        data-test-id="DevOps-arc"
         fill="rgb(235, 35, 109, 0.3)"
       />
       <path
         class="arc Databases-segment"
         d="M133.93920132778143,-323.35783637895037A350,350,0,0,1,323.35783637895037,-133.93920132778143L0,0Z"
-        data-testid="Databases-arc"
+        data-test-id="Databases-arc"
         fill="transparent"
       />
       <path
         class="arc Quality Engineering-segment"
         d="M323.35783637895037,-133.93920132778143A350,350,0,0,1,323.35783637895037,133.93920132778143L0,0Z"
-        data-testid="Quality Engineering-arc"
+        data-test-id="Quality Engineering-arc"
         fill="transparent"
       />
       <path
         class="arc Cloud & Platforms-segment"
         d="M323.35783637895037,133.93920132778143A350,350,0,0,1,133.93920132778143,323.35783637895037L0,0Z"
-        data-testid="Cloud & Platforms-arc"
+        data-test-id="Cloud & Platforms-arc"
         fill="transparent"
       />
       <path
         class="arc Integration-segment"
         d="M133.93920132778143,323.35783637895037A350,350,0,0,1,-133.9392013277814,323.35783637895037L0,0Z"
-        data-testid="Integration-arc"
+        data-test-id="Integration-arc"
         fill="transparent"
       />
       <path
         class="arc Backend-segment"
         d="M-133.9392013277814,323.35783637895037A350,350,0,0,1,-323.35783637895025,133.9392013277816L0,0Z"
-        data-testid="Backend-arc"
+        data-test-id="Backend-arc"
         fill="transparent"
       />
       <path
         class="arc Frontend-segment"
         d="M-323.35783637895025,133.9392013277816A350,350,0,0,1,-323.3578363789503,-133.93920132778152L0,0Z"
-        data-testid="Frontend-arc"
+        data-test-id="Frontend-arc"
         fill="transparent"
       />
       <path
         class="arc Mobile-segment"
         d="M-323.3578363789503,-133.93920132778152A350,350,0,0,1,-133.93920132778163,-323.35783637895025L0,0Z"
-        data-testid="Mobile-arc"
+        data-test-id="Mobile-arc"
         fill="transparent"
       />
       <g

@@ -243,7 +243,7 @@ const Radar: FC = () => {
             <path
               key={`${tech}-arc`}
               className={`arc ${tech}-segment`}
-              data-testid={`${tech}-arc`}
+              data-test-id={`${tech}-arc`}
               d={
                 createArc({
                   startAngle: -Math.PI / 8 + (Math.PI / 8) * 2 * idx,

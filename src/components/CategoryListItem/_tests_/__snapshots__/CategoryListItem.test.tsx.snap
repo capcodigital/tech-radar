@@ -5,7 +5,7 @@ exports[`CategoryListItem should render CategoryListItem component 1`] = `
   class="styles__StyledListItem-sc-19ijf8-0 kOASXB"
 >
   <a
-    data-testid="category-item-GitHub"
+    data-test-id="category-item-GitHub"
     href="/technology/devops/github"
     style="pointer-events: none;"
   >

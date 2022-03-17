@@ -33,7 +33,7 @@ exports[`StyledButton should render StyledButton component 1`] = `
         <svg
           aria-hidden="true"
           class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
-          data-testid="ExpandMoreIcon"
+          data-test-id="ExpandMoreIcon"
           focusable="false"
           viewBox="0 0 24 24"
         >
