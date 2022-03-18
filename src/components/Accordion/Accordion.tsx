@@ -21,12 +21,12 @@ const AccordionComponent: FC<Props> = ({ name, description }) => {
             aria-controls="panel1bh-content"
             id="panel1bh-header"
           >
-            <Typography sx={{ width: "33%", flexShrink: 0 }}>
+            <Typography sx={{ width: "33%", flexShrink: 0 }} component={"span"}>
               <div>{name}</div>
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography>
+            <Typography component={"span"}>
               <div
                 style={{
                   fontWeight: "300",
