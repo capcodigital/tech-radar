@@ -7,7 +7,11 @@ describe("Radar", () => {
   it("should render Radar component", () => {
     const { container } = render(
       <Router>
-        <Radar />
+        <Radar
+          scalingClicked={true}
+          skilledClicked={true}
+          preferredClicked={true}
+        />
       </Router>
     );
     expect(container.firstChild).toMatchSnapshot();
@@ -16,7 +20,11 @@ describe("Radar", () => {
   it("should click DevOps on Radar and check that url is /category/devops", () => {
     render(
       <Router>
-        <Radar />
+        <Radar
+          scalingClicked={true}
+          skilledClicked={true}
+          preferredClicked={true}
+        />
       </Router>
     );
     fireEvent.click(screen.getByText("DevOps"));
@@ -26,7 +34,11 @@ describe("Radar", () => {
   it("should click DevOps segment on Radar and check that url is /category/devops", () => {
     const { container } = render(
       <Router>
-        <Radar />
+        <Radar
+          scalingClicked={true}
+          skilledClicked={true}
+          preferredClicked={true}
+        />
       </Router>
     );
     fireEvent.click(screen.getByTestId("DevOps-arc"));

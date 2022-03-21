@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import React, { FC, useState, useContext } from "react";
 import { useHistory } from "react-router-dom";
 import {
@@ -5,10 +6,10 @@ import {
   RadarContext,
 } from "../RadarContextProvider/RadarContextProvider";
 import * as d3 from "d3";
-import styled from "styled-components/macro";
 import { data } from "../../data/data";
 import images from "../../images";
 import StyledGroup from "../RadarStyledComponents/StyledGroup";
+import { Wrapper, StyledNav } from "./styles/";
 import { RadarTooltip } from "../RadarStyledComponents/StyledTooltip";
 import { getRowLength } from "../../helpers/helpers";
 
@@ -38,52 +39,17 @@ const createArc = d3.arc().padAngle(0);
 
 let techIdx = 9;
 
-const Wrapper = styled.div`
-  margin-top: -110px;
-  width: 50vw;
-  display: inline-block;
-  .arc {
-    :hover {
-      cursor: pointer;
-      transition: 0.7s;
-    }
-  }
-  @media screen and (max-width: 1000px) {
-    display: none;
-  }
-`;
+interface Props {
+  scalingClicked: boolean;
+  skilledClicked: boolean;
+  preferredClicked: boolean;
+}
 
-const StyledNav = styled.g`
-  cursor: pointer;
-
-  animation: fadeIn 5s;
-  -webkit-animation: fadeIn 4s;
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-  path {
-    transition: all 0.3s ease-in-out;
-    opacity: 0;
-    transform-origin: -10% 0%;
-  }
-  :hover {
-    path {
-      opacity: 1;
-      transform-origin: 0% 0%;
-    }
-    text {
-      text-decoration: underline;
-    }
-  }
-`;
-
-const Radar: FC = () => {
+const Radar: FC<Props> = ({
+  scalingClicked,
+  skilledClicked,
+  preferredClicked,
+}) => {
   let history = useHistory();
   const { setCategory, setTechnology } =
     useContext<RadarContextType>(RadarContext);
@@ -110,29 +76,76 @@ const Radar: FC = () => {
       <svg viewBox={"0 0 900 900"} style={{ overflow: "visible" }}>
         <g transform={`translate(${size / 2} ${size / 2})`}>
           {/* 3 main rings */}
-          <circle
-            cx={0}
-            cy={0}
-            r={outterRadius}
-            fill={"#000"}
-            stroke={"lightgrey"}
-            opacity={0.03}
-          />
-          <circle
-            cx={0}
-            cy={0}
-            r={middleRadius}
-            fill={"#ffffff"}
-            opacity={0.03}
-          />
-          <circle
-            cx={0}
-            cy={0}
-            r={innerCircleRadius}
-            fill={"#ffffff"}
-            opacity={0.05}
-          />
-
+          {scalingClicked === true ? (
+            <circle
+              cx={0}
+              cy={0}
+              r={innerCircleRadius}
+              fill={"#e6236d"}
+              opacity={1}
+            />
+          ) : (
+            <circle
+              cx={0}
+              cy={0}
+              r={innerCircleRadius}
+              fill={"#ffffff"}
+              opacity={0.05}
+            />
+          )}
+          {skilledClicked === true ? (
+            <>
+              <circle
+                cx={0}
+                cy={0}
+                r={middleRadius}
+                fill={"#e6236d"}
+                opacity={1}
+              />
+              <circle
+                cx={0}
+                cy={0}
+                r={innerCircleRadius}
+                fill={"#850334"}
+                opacity={0.9}
+              />
+            </>
+          ) : (
+            <circle
+              cx={0}
+              cy={0}
+              r={middleRadius}
+              fill={"#ffffff"}
+              opacity={0.03}
+            />
+          )}
+          {preferredClicked === true ? (
+            <>
+              <circle
+                cx={0}
+                cy={0}
+                r={outterRadius}
+                fill={"#e6236d"}
+                opacity={0.9}
+              />
+              <circle
+                cx={0}
+                cy={0}
+                r={middleRadius}
+                fill={"#850334"}
+                opacity={0.9}
+              />
+            </>
+          ) : (
+            <circle
+              cx={0}
+              cy={0}
+              r={outterRadius}
+              fill={"#ffffff"}
+              stroke={"lightgrey"}
+              opacity={0.03}
+            />
+          )}
           {new Array(8).fill(0).map((d: any, idx: number) => (
             <line
               key={`tech-line-${idx}`}
@@ -201,18 +214,42 @@ const Radar: FC = () => {
             ["scaling", "skilled", "preferred"].map(
               (segmentName: string, idx: number) => (
                 <g key={`${segmentName}-line`} transform={``}>
-                  <text
-                    textAnchor="middle"
-                    y={
-                      side *
-                      (innerCircleRadius * (idx + 1) - innerCircleRadius / 2)
-                    }
-                    fontSize={12}
-                    fill={"white"}
-                    opacity={0.5}
-                  >
-                    {segmentName}
-                  </text>
+                  {(scalingClicked && segmentName === "scaling") ||
+                  (skilledClicked && segmentName === "skilled") ||
+                  (preferredClicked && segmentName === "preferred") ? (
+                    <>
+                      <text
+                        textAnchor="middle"
+                        y={
+                          side *
+                          (innerCircleRadius * (idx + 1) -
+                            innerCircleRadius / 2)
+                        }
+                        fontSize={16}
+                        fontWeight="bold"
+                        fill={"white"}
+                        opacity={1}
+                      >
+                        {segmentName}
+                      </text>
+                    </>
+                  ) : (
+                    <>
+                      <text
+                        textAnchor="middle"
+                        y={
+                          side *
+                          (innerCircleRadius * (idx + 1) -
+                            innerCircleRadius / 2)
+                        }
+                        fontSize={12}
+                        fill={"white"}
+                        opacity={0.5}
+                      >
+                        {segmentName}
+                      </text>
+                    </>
+                  )}
                 </g>
               )
             )
@@ -221,19 +258,44 @@ const Radar: FC = () => {
             ["scaling", "skilled", "preferred"].map(
               (segmentName: string, idx: number) => (
                 <g key={`${idx}-line`}>
-                  <text
-                    textAnchor="middle"
-                    y={0}
-                    x={
-                      side *
-                      (innerCircleRadius * (idx + 1) - innerCircleRadius / 2)
-                    }
-                    fontSize={12}
-                    fill={"white"}
-                    opacity={0.5}
-                  >
-                    {segmentName}
-                  </text>
+                  {(scalingClicked && segmentName === "scaling") ||
+                  (skilledClicked && segmentName === "skilled") ||
+                  (preferredClicked && segmentName === "preferred") ? (
+                    <>
+                      <text
+                        textAnchor="middle"
+                        y={0}
+                        x={
+                          side *
+                          (innerCircleRadius * (idx + 1) -
+                            innerCircleRadius / 2)
+                        }
+                        fontSize={16}
+                        fontWeight="bold"
+                        fill={"white"}
+                        opacity={1}
+                      >
+                        {segmentName}
+                      </text>
+                    </>
+                  ) : (
+                    <>
+                      <text
+                        textAnchor="middle"
+                        y={0}
+                        x={
+                          side *
+                          (innerCircleRadius * (idx + 1) -
+                            innerCircleRadius / 2)
+                        }
+                        fontSize={12}
+                        fill={"white"}
+                        opacity={0.5}
+                      >
+                        {segmentName}
+                      </text>
+                    </>
+                  )}
                 </g>
               )
             )

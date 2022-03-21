@@ -2,7 +2,7 @@
 
 exports[`Radar should render Radar component 1`] = `
 <div
-  class="Radar__Wrapper-sc-rhg75-0 eJakoR"
+  class="styles__Wrapper-sc-2tg2y4-0 iHnvvU"
 >
   <svg
     style="overflow: visible;"
@@ -14,24 +14,37 @@ exports[`Radar should render Radar component 1`] = `
       <circle
         cx="0"
         cy="0"
-        fill="#000"
-        opacity="0.03"
-        r="350"
-        stroke="lightgrey"
+        fill="#e6236d"
+        opacity="1"
+        r="116.66666666666667"
       />
       <circle
         cx="0"
         cy="0"
-        fill="#ffffff"
-        opacity="0.03"
+        fill="#e6236d"
+        opacity="1"
         r="233.33333333333334"
       />
       <circle
         cx="0"
         cy="0"
-        fill="#ffffff"
-        opacity="0.05"
+        fill="#850334"
+        opacity="0.9"
         r="116.66666666666667"
+      />
+      <circle
+        cx="0"
+        cy="0"
+        fill="#e6236d"
+        opacity="0.9"
+        r="350"
+      />
+      <circle
+        cx="0"
+        cy="0"
+        fill="#850334"
+        opacity="0.9"
+        r="233.33333333333334"
       />
       <line
         stroke="white"
@@ -98,7 +111,7 @@ exports[`Radar should render Radar component 1`] = `
         y2="350"
       />
       <g
-        class="Radar__StyledNav-sc-rhg75-1 cOMqNl"
+        class="styles__StyledNav-sc-2tg2y4-1 gVZlIE"
         transform="translate(-69.99999999999997, -410)"
       >
         <image
@@ -127,7 +140,7 @@ exports[`Radar should render Radar component 1`] = `
         />
       </g>
       <g
-        class="Radar__StyledNav-sc-rhg75-1 cOMqNl"
+        class="styles__StyledNav-sc-2tg2y4-1 gVZlIE"
         transform="translate(262.842712474619, -282.84271247461896)"
       >
         <image
@@ -156,7 +169,7 @@ exports[`Radar should render Radar component 1`] = `
         />
       </g>
       <g
-        class="Radar__StyledNav-sc-rhg75-1 cOMqNl"
+        class="styles__StyledNav-sc-2tg2y4-1 gVZlIE"
         transform="translate(380, 0)"
       >
         <image
@@ -185,7 +198,7 @@ exports[`Radar should render Radar component 1`] = `
         />
       </g>
       <g
-        class="Radar__StyledNav-sc-rhg75-1 cOMqNl"
+        class="styles__StyledNav-sc-2tg2y4-1 gVZlIE"
         transform="translate(262.842712474619, 282.84271247461896)"
       >
         <image
@@ -214,7 +227,7 @@ exports[`Radar should render Radar component 1`] = `
         />
       </g>
       <g
-        class="Radar__StyledNav-sc-rhg75-1 cOMqNl"
+        class="styles__StyledNav-sc-2tg2y4-1 gVZlIE"
         transform="translate(-89.99999999999997, 360)"
       >
         <image
@@ -243,7 +256,7 @@ exports[`Radar should render Radar component 1`] = `
         />
       </g>
       <g
-        class="Radar__StyledNav-sc-rhg75-1 cOMqNl"
+        class="styles__StyledNav-sc-2tg2y4-1 gVZlIE"
         transform="translate(-402.84271247461896, 282.842712474619)"
       >
         <image
@@ -272,7 +285,7 @@ exports[`Radar should render Radar component 1`] = `
         />
       </g>
       <g
-        class="Radar__StyledNav-sc-rhg75-1 cOMqNl"
+        class="styles__StyledNav-sc-2tg2y4-1 gVZlIE"
         transform="translate(-520, 4.898587196589413e-14)"
       >
         <image
@@ -301,7 +314,7 @@ exports[`Radar should render Radar component 1`] = `
         />
       </g>
       <g
-        class="Radar__StyledNav-sc-rhg75-1 cOMqNl"
+        class="styles__StyledNav-sc-2tg2y4-1 gVZlIE"
         transform="translate(-402.8427124746191, -282.84271247461896)"
       >
         <image
@@ -334,8 +347,9 @@ exports[`Radar should render Radar component 1`] = `
       >
         <text
           fill="white"
-          font-size="12"
-          opacity="0.5"
+          font-size="16"
+          font-weight="bold"
+          opacity="1"
           text-anchor="middle"
           y="-58.333333333333336"
         >
@@ -347,8 +361,9 @@ exports[`Radar should render Radar component 1`] = `
       >
         <text
           fill="white"
-          font-size="12"
-          opacity="0.5"
+          font-size="16"
+          font-weight="bold"
+          opacity="1"
           text-anchor="middle"
           y="-175"
         >
@@ -360,8 +375,9 @@ exports[`Radar should render Radar component 1`] = `
       >
         <text
           fill="white"
-          font-size="12"
-          opacity="0.5"
+          font-size="16"
+          font-weight="bold"
+          opacity="1"
           text-anchor="middle"
           y="-291.6666666666667"
         >
@@ -373,8 +389,9 @@ exports[`Radar should render Radar component 1`] = `
       >
         <text
           fill="white"
-          font-size="12"
-          opacity="0.5"
+          font-size="16"
+          font-weight="bold"
+          opacity="1"
           text-anchor="middle"
           y="58.333333333333336"
         >
@@ -386,8 +403,9 @@ exports[`Radar should render Radar component 1`] = `
       >
         <text
           fill="white"
-          font-size="12"
-          opacity="0.5"
+          font-size="16"
+          font-weight="bold"
+          opacity="1"
           text-anchor="middle"
           y="175"
         >
@@ -399,8 +417,9 @@ exports[`Radar should render Radar component 1`] = `
       >
         <text
           fill="white"
-          font-size="12"
-          opacity="0.5"
+          font-size="16"
+          font-weight="bold"
+          opacity="1"
           text-anchor="middle"
           y="291.6666666666667"
         >
@@ -410,8 +429,9 @@ exports[`Radar should render Radar component 1`] = `
       <g>
         <text
           fill="white"
-          font-size="12"
-          opacity="0.5"
+          font-size="16"
+          font-weight="bold"
+          opacity="1"
           text-anchor="middle"
           x="-58.333333333333336"
           y="0"
@@ -422,8 +442,9 @@ exports[`Radar should render Radar component 1`] = `
       <g>
         <text
           fill="white"
-          font-size="12"
-          opacity="0.5"
+          font-size="16"
+          font-weight="bold"
+          opacity="1"
           text-anchor="middle"
           x="-175"
           y="0"
@@ -434,8 +455,9 @@ exports[`Radar should render Radar component 1`] = `
       <g>
         <text
           fill="white"
-          font-size="12"
-          opacity="0.5"
+          font-size="16"
+          font-weight="bold"
+          opacity="1"
           text-anchor="middle"
           x="-291.6666666666667"
           y="0"
@@ -446,8 +468,9 @@ exports[`Radar should render Radar component 1`] = `
       <g>
         <text
           fill="white"
-          font-size="12"
-          opacity="0.5"
+          font-size="16"
+          font-weight="bold"
+          opacity="1"
           text-anchor="middle"
           x="58.333333333333336"
           y="0"
@@ -458,8 +481,9 @@ exports[`Radar should render Radar component 1`] = `
       <g>
         <text
           fill="white"
-          font-size="12"
-          opacity="0.5"
+          font-size="16"
+          font-weight="bold"
+          opacity="1"
           text-anchor="middle"
           x="175"
           y="0"
@@ -470,8 +494,9 @@ exports[`Radar should render Radar component 1`] = `
       <g>
         <text
           fill="white"
-          font-size="12"
-          opacity="0.5"
+          font-size="16"
+          font-weight="bold"
+          opacity="1"
           text-anchor="middle"
           x="291.6666666666667"
           y="0"
