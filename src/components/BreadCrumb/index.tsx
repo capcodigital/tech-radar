@@ -1,8 +1,9 @@
 import React, { FC } from "react";
+import { withRouter, RouteComponentProps } from "react-router-dom";
 import Typography from "@mui/material/Typography";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Link from "@mui/material/Link";
-import { withRouter, RouteComponentProps } from "react-router-dom";
+import BreadcrumbStyles from "./styles/";
 
 const BreadcrumbComponent: FC<RouteComponentProps> = ({
   history,
@@ -21,13 +22,16 @@ const BreadcrumbComponent: FC<RouteComponentProps> = ({
       }}
     >
       {pathnames.length > 0 ? (
-        <Link
-          color="#fff"
-          style={{ textDecoration: "none", fontWeight: "bold" }}
-          onClick={() => history.push("/home")}
-        >
-          TECH RADAR
-        </Link>
+        <BreadcrumbStyles>
+          <Link
+            color="#fff"
+            className="breadcrumb-nav"
+            style={{ fontWeight: "bold" }}
+            onClick={() => history.push("/home")}
+          >
+            TECH RADAR
+          </Link>
+        </BreadcrumbStyles>
       ) : (
         <Typography style={{ color: "grey", fontSize: "12px" }}></Typography>
       )}
@@ -41,13 +45,15 @@ const BreadcrumbComponent: FC<RouteComponentProps> = ({
             {Name}
           </Typography>
         ) : (
-          <Link
-            color="#fff"
-            style={{ textDecoration: "none" }}
-            onClick={() => history.push(routeTo)}
-          >
-            {Name}
-          </Link>
+          <BreadcrumbStyles>
+            <Link
+              color="#fff"
+              className="breadcrumb-nav"
+              onClick={() => history.push(routeTo)}
+            >
+              {Name}
+            </Link>
+          </BreadcrumbStyles>
         );
       })}
     </Breadcrumbs>
