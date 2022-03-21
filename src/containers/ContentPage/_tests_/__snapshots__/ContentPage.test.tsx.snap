@@ -80,7 +80,7 @@ exports[`ContentPage should render ContentPage component 1`] = `
         />
         <div
           class="ContentNavButton__StyledContentNavButton-sc-17243nr-0 dwbIYp"
-          data-testid="Previous"
+          data-test-id="Previous"
         >
           <div>
             Previous
@@ -93,7 +93,7 @@ exports[`ContentPage should render ContentPage component 1`] = `
         </div>
         <div
           class="ContentNavButton__StyledContentNavButton-sc-17243nr-0 tZwby"
-          data-testid="Next"
+          data-test-id="Next"
         >
           <div>
             Next

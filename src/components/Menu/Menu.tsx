@@ -87,6 +87,7 @@ const Menu = () => {
           <List>
             {categoryList.map((name: string) => (
               <ListItem
+                id={`menu${name.replace(/\s/g, "-")}`}
                 key={`menu-${name}`}
                 button
                 component={Link}
