@@ -51,7 +51,7 @@ const ContentNavButton: FC<ContentNavButtonProps> = ({
     <StyledContentNavButton
       align={next ? "right" : "left"}
       onClick={onClick}
-      data-testid={next ? "Next" : "Previous"}
+      data-test-id={next ? "Next" : "Previous"}
     >
       <div>{next ? "Next" : "Previous"}</div>
       {next ? (

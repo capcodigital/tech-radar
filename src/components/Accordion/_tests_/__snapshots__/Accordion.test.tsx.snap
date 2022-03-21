@@ -12,6 +12,7 @@ exports[`StyledButton should render StyledButton component 1`] = `
       aria-controls="panel1bh-content"
       aria-expanded="false"
       class="MuiButtonBase-root MuiAccordionSummary-root MuiAccordionSummary-gutters css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root"
+      data-test-id="Test"
       id="panel1bh-header"
       role="button"
       tabindex="0"
@@ -66,6 +67,7 @@ exports[`StyledButton should render StyledButton component 1`] = `
                 class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
               >
                 <div
+                  data-test-id="Test-content"
                   style="font-weight: 300; color: rgb(255, 255, 255);"
                 >
                   test

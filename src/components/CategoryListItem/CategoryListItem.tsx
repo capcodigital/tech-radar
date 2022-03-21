@@ -24,7 +24,7 @@ const CategoryListItem: FC<ListItemProps> = ({
         "-"
       )}`.toLowerCase()}
       style={{ pointerEvents: enabled ? undefined : "none" }}
-      data-testid={`category-item-${techName}`}
+      data-test-id={`category-item-${techName}`}
     >
       {techName}
     </Link>
