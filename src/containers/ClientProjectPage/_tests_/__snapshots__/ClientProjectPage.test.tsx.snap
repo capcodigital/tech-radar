@@ -1,0 +1,196 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ClientProjectPage when techology is React it should render ClientProjectPage component 1`] = `
+<div
+  class="ClientProjectPage__Wrapper-sc-1ynhv3s-0 iLkMRw"
+>
+  <div
+    class="MuiContainer-root MuiContainer-maxWidthMd"
+  >
+    <button
+      class="styles__StyledBackButton-sc-1t7dby2-1 kEMgqC"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+        />
+      </svg>
+      Back
+    </button>
+    <div
+      class="MuiGrid-root MuiGrid-container"
+    >
+      <div
+        class="MuiGrid-root styles__StyledGrid-sc-x6vi32-0 bktYD MuiGrid-item MuiGrid-grid-xs-12"
+        data-test-id="project-0"
+      >
+        <div>
+          <div>
+            <img
+              alt="computer screen"
+              height="80"
+              src="CL3.png"
+            />
+          </div>
+          <div>
+            Mobile Banking Remediation
+          </div>
+          <div>
+            Global Tier 1 Bank
+          </div>
+          <div>
+            Capco performed a holistic assessment of the client’s current mobile applications, architectures, development standards and implementation.  Our team set new standards, implemented coding design principles, deployed a new DevOps pipeline, implemented automation testing and restructured and refactored the current applications, reducing development time/cost which significantly increased customer app ratings.
+          </div>
+          <div>
+            <span>
+              <a
+                class="projectTech-link"
+                href="/technology/mobile/swift"
+              >
+                <svg
+                  class="icon"
+                  viewBox="0 0 80 80"
+                >
+                  <circle
+                    cx="40"
+                    cy="40"
+                    fill="white"
+                    r="40"
+                  />
+                  <image
+                    height="50"
+                    href="https://img.icons8.com/fluent/452/swift.png"
+                    width="50"
+                    x="15"
+                    y="15"
+                  />
+                </svg>
+                <div>
+                  Swift
+                </div>
+              </a>
+            </span>
+            <span>
+              <a
+                class="projectTech-link"
+                href="/technology/backend/kotlin"
+              >
+                <svg
+                  class="icon"
+                  viewBox="0 0 80 80"
+                >
+                  <circle
+                    cx="40"
+                    cy="40"
+                    fill="white"
+                    r="40"
+                  />
+                  <image
+                    height="50"
+                    href="https://img.icons8.com/color/344/kotlin.png"
+                    width="50"
+                    x="15"
+                    y="15"
+                  />
+                </svg>
+                <div>
+                  Kotlin
+                </div>
+              </a>
+            </span>
+            <span>
+              <a
+                class="projectTech-link"
+                href="/technology//hockeyapp"
+              >
+                <svg
+                  class="icon"
+                  viewBox="0 0 80 80"
+                >
+                  <circle
+                    cx="40"
+                    cy="40"
+                    fill="white"
+                    r="40"
+                  />
+                  <image
+                    height="50"
+                    href=""
+                    width="50"
+                    x="15"
+                    y="15"
+                  />
+                </svg>
+                <div>
+                  HockeyApp
+                </div>
+              </a>
+            </span>
+            <span>
+              <a
+                class="projectTech-link"
+                href="/technology/devops/jenkins"
+              >
+                <svg
+                  class="icon"
+                  viewBox="0 0 80 80"
+                >
+                  <circle
+                    cx="40"
+                    cy="40"
+                    fill="white"
+                    r="40"
+                  />
+                  <image
+                    height="50"
+                    href="https://symbols.getvecta.com/stencil_97/67_the-jenkins-project-icon.0141f64fe7.svg"
+                    width="50"
+                    x="15"
+                    y="15"
+                  />
+                </svg>
+                <div>
+                  Jenkins
+                </div>
+              </a>
+            </span>
+            <span>
+              <a
+                class="projectTech-link"
+                href="/technology//fastlane"
+              >
+                <svg
+                  class="icon"
+                  viewBox="0 0 80 80"
+                >
+                  <circle
+                    cx="40"
+                    cy="40"
+                    fill="white"
+                    r="40"
+                  />
+                  <image
+                    height="50"
+                    href=""
+                    width="50"
+                    x="15"
+                    y="15"
+                  />
+                </svg>
+                <div>
+                  Fastlane
+                </div>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

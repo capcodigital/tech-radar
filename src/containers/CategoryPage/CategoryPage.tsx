@@ -137,8 +137,6 @@ const Divider = styled.hr`
 `;
 
 const CategoryPage = () => {
-  // let history = useHistory();
-
   const { category, setCategory, setTechnology } =
     useContext<RadarContextType>(RadarContext);
 
@@ -148,14 +146,6 @@ const CategoryPage = () => {
     name: string;
     data: techType;
   } | null>(null);
-
-  // const technologyClickHandler = (name: string) => {
-  //   setTechnology(name);
-  //   history.push(`/technology/${category.replace(/\s/g, "-")}/${name.replace(
-  //     /\s/g,
-  //     "-"
-  //   )}`.toLowerCase());
-  // };
 
   useEffect(() => {
     let url = window.location.pathname.split("/");
