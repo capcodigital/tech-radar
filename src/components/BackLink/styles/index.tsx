@@ -14,4 +14,20 @@ const StyledBackLink = styled(Link)`
   }
 `;
 
+export const StyledBackButton = styled.button`
+  font-size: 17px;
+  display: block;
+  color: inherit;
+  background: transparent;
+  border: none;
+  padding: 0;
+  img {
+    margin-left: 10px !important;
+  }
+  :hover {
+    color: inherit;
+    text-decoration: underline;
+  }
+`;
+
 export default StyledBackLink;

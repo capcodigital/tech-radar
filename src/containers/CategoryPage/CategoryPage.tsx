@@ -8,7 +8,7 @@ import Grid from "@material-ui/core/Grid";
 import MobileRadarBackground from "../../components/MobileRadarBackground/MobileRadarBackground";
 import Button from "../../components/Button/Button";
 import CategoryListItem from "../../components/CategoryListItem/CategoryListItem";
-import { BackButton } from "../../components/BackLink/BackLink";
+import { BackToHomeButton } from "../../components/BackLink/BackLink";
 import { data, technologies, categoryList, techType } from "../../data/data";
 import images from "../../images";
 import styled from "styled-components/macro";
@@ -137,6 +137,8 @@ const Divider = styled.hr`
 `;
 
 const CategoryPage = () => {
+  // let history = useHistory();
+
   const { category, setCategory, setTechnology } =
     useContext<RadarContextType>(RadarContext);
 
@@ -146,6 +148,14 @@ const CategoryPage = () => {
     name: string;
     data: techType;
   } | null>(null);
+
+  // const technologyClickHandler = (name: string) => {
+  //   setTechnology(name);
+  //   history.push(`/technology/${category.replace(/\s/g, "-")}/${name.replace(
+  //     /\s/g,
+  //     "-"
+  //   )}`.toLowerCase());
+  // };
 
   useEffect(() => {
     let url = window.location.pathname.split("/");
@@ -260,7 +270,7 @@ const CategoryPage = () => {
 
             <Grid container className="desktop-grid">
               <Grid item xs={12}>
-                <BackButton />
+                <BackToHomeButton />
                 <Title>{content.name}</Title>
                 <img
                   className="category-icon"

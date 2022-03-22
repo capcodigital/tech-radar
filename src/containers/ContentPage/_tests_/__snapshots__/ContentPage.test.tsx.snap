@@ -75,6 +75,28 @@ exports[`ContentPage should render ContentPage component 1`] = `
         >
           Content coming soon.
         </div>
+        <div
+          class="styles__Title-sc-pzbvc3-1 WEZMD"
+        >
+          Demo client projects
+        </div>
+        <a
+          class="styles__StyledLink-sc-pzbvc3-0 iqqexZ"
+          href="/demo/devops/github"
+        >
+          View client projects using 
+          GitHub
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+            />
+          </svg>
+        </a>
         <hr
           class="ContentPage__Divider-sc-zuv8bi-4 dovDEk"
         />
