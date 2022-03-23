@@ -3,7 +3,7 @@ Feature: Gradle Mobile content page
 Background: Navigate to the home page
     Given the user navigates to "http://localhost:3000/"
 
-Scenario: Successfully search for pokemon
+Scenario: Gradle Mobile content appears as expected
     When the user clicks "View Our Tech Radar"
     And the user clicks the hamburger menu
     And the user navigates to "Mobile" via the hamburger menu

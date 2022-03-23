@@ -40,10 +40,6 @@ Then("the user can see accordion {string} description {string}", {timeout: 60 * 
 
 Then("the user can see accordion {string} description", {timeout: 60 * 1000}, async function(accordionId, docString) {
     const accordionText = await this.page.locator('//div[@data-test-id="'+accordionId+'-content"]').innerText().then(value => { return value;});
-    console.log("\n")
-    console.log(accordionText);
-    console.log("-----------------------------------------------------------------------------");
-    console.log(docString);
     assert.strictEqual(docString.trim() == accordionText.trim(), true, "The accordion content is not as expected");
 
     // await this.page.screenshot({ path: 'screenshot.png', fullPage: true });
