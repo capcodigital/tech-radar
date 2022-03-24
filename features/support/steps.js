@@ -18,7 +18,7 @@ When("the user navigates to {string} via the hamburger menu", {timeout: 60 * 100
 });
 
 When("the user navigates to category {string}", {timeout: 60 * 1000}, async function(subCategory) {
-    await this.page.locator("text=BackMobilePreferredReact NativeGradle MobileSkilledSwiftKotlinJava MobileIonicSc >> [data-test-id='category-item-"+subCategory+"']").click();
+    await this.page.locator("[data-test-id='category-item-"+subCategory+"'] >> nth=1").click();
 });
 
 Then("the user should see {string}", {timeout: 60 * 1000}, async function(text) {
