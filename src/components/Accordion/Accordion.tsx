@@ -22,12 +22,12 @@ const AccordionComponent: FC<Props> = ({ name, description }) => {
             id="panel1bh-header"
             data-test-id={name}
           >
-            <Typography sx={{ width: "33%", flexShrink: 0 }}>
+            <Typography sx={{ width: "33%", flexShrink: 0 }} component={"span"}>
               <div>{name}</div>
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography>
+            <Typography component={"span"}>
               <div
                 data-test-id={`${name}-content`}
                 style={{
