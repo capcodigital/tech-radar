@@ -8,13 +8,15 @@ class CustomWorld {
         })
         const context = await browser.newContext();
         this.page = await context.newPage();
+        global.browser = browser;
+        this.context = context;
         await this.page.goto(url);
     }
 }
 
 // Cleanup after each scenario
 After(async function () {
-    await this.page.close();
-  });
+    await global.browser.close();
+});
 
 setWorldConstructor(CustomWorld);

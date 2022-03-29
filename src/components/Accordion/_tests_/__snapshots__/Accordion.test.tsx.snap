@@ -20,13 +20,13 @@ exports[`StyledButton should render StyledButton component 1`] = `
       <div
         class="MuiAccordionSummary-content MuiAccordionSummary-contentGutters css-o4b71y-MuiAccordionSummary-content"
       >
-        <p
+        <span
           class="MuiTypography-root MuiTypography-body1 css-1m4ljmh-MuiTypography-root"
         >
           <div>
             Test
           </div>
-        </p>
+        </span>
       </div>
       <div
         class="MuiAccordionSummary-expandIconWrapper css-yw020d-MuiAccordionSummary-expandIconWrapper"
@@ -63,7 +63,7 @@ exports[`StyledButton should render StyledButton component 1`] = `
             <div
               class="MuiAccordionDetails-root css-15v22id-MuiAccordionDetails-root"
             >
-              <p
+              <span
                 class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
               >
                 <div
@@ -72,7 +72,7 @@ exports[`StyledButton should render StyledButton component 1`] = `
                 >
                   test
                 </div>
-              </p>
+              </span>
             </div>
           </div>
         </div>
