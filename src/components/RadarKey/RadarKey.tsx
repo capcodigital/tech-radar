@@ -1,6 +1,11 @@
 import React, { FC } from "react";
 import { KeyTooltip } from "../RadarStyledComponents/StyledTooltip";
-import { StyledRadarKey, TooltipTitle, TooltipContent } from "./styles/";
+import {
+  StyledRadarKey,
+  TooltipTitle,
+  TooltipContent,
+  KeyBorder,
+} from "./styles/";
 import { radarKeysText } from "../../data/data";
 
 interface KeyCircleProps {
@@ -31,71 +36,77 @@ const RadarKey: FC<Props> = ({
   return (
     <StyledRadarKey>
       <div>Key</div>
-      <KeyTooltip
-        title={
-          <>
-            <TooltipTitle>Scaling</TooltipTitle>
-            <TooltipContent>{radarKeysText.scaling}</TooltipContent>
-          </>
-        }
-        aria-label={"Scaling"}
-        placement="right"
-        arrow
-      >
-        <div
-          onMouseEnter={() => setScalingClicked(true)}
-          onMouseLeave={() => setScalingClicked(false)}
+      <KeyBorder>
+        <KeyTooltip
+          title={
+            <>
+              <TooltipTitle>Scaling</TooltipTitle>
+              <TooltipContent>{radarKeysText.scaling}</TooltipContent>
+            </>
+          }
+          aria-label={"Scaling"}
+          placement="right"
+          arrow
         >
-          <KeyCircle
-            color1={"#c4c4c41a"}
-            color2={"#c4c4c41a"}
-            color3={"#e6236d"}
-          />
-          <span>Scaling</span>
-        </div>
-      </KeyTooltip>
-      <KeyTooltip
-        title={
-          <>
-            <TooltipTitle>Skilled</TooltipTitle>
-            <TooltipContent>{radarKeysText.skilled}</TooltipContent>
-          </>
-        }
-        aria-label={"Skilled"}
-        placement="right"
-        arrow
-      >
-        <div
-          onMouseEnter={() => setSkilledClicked(true)}
-          onMouseLeave={() => setSkilledClicked(false)}
+          <div
+            onMouseEnter={() => setScalingClicked(true)}
+            onMouseLeave={() => setScalingClicked(false)}
+          >
+            <KeyCircle
+              color1={"#c4c4c41a"}
+              color2={"#c4c4c41a"}
+              color3={"#e6236d"}
+            />
+            <span className="key-text">Scaling</span>
+          </div>
+        </KeyTooltip>
+        <KeyTooltip
+          title={
+            <>
+              <TooltipTitle>Skilled</TooltipTitle>
+              <TooltipContent>{radarKeysText.skilled}</TooltipContent>
+            </>
+          }
+          aria-label={"Skilled"}
+          placement="right"
+          arrow
         >
-          <KeyCircle
-            color1={"#c4c4c41a"}
-            color2={"#e6236d"}
-            color3={"#222222"}
-          />
-          <span>Skilled</span>
-        </div>
-      </KeyTooltip>
-      <KeyTooltip
-        title={
-          <>
-            <TooltipTitle>Preferred</TooltipTitle>
-            <TooltipContent>{radarKeysText.preferred}</TooltipContent>
-          </>
-        }
-        aria-label={"Preferred"}
-        placement="right"
-        arrow
-      >
-        <div
-          onMouseEnter={() => setPreferredClicked(true)}
-          onMouseLeave={() => setPreferredClicked(false)}
+          <div
+            onMouseEnter={() => setSkilledClicked(true)}
+            onMouseLeave={() => setSkilledClicked(false)}
+          >
+            <KeyCircle
+              color1={"#c4c4c41a"}
+              color2={"#e6236d"}
+              color3={"#222222"}
+            />
+            <span className="key-text">Skilled</span>
+          </div>
+        </KeyTooltip>
+        <KeyTooltip
+          title={
+            <>
+              <TooltipTitle>Preferred</TooltipTitle>
+              <TooltipContent>{radarKeysText.preferred}</TooltipContent>
+            </>
+          }
+          aria-label={"Preferred"}
+          placement="right"
+          arrow
         >
-          <KeyCircle color1={"#e6236d"} color2={"#290738"} color3={"#391A46"} />
-          <span>Preferred</span>
-        </div>
-      </KeyTooltip>
+          <div
+            onMouseEnter={() => setPreferredClicked(true)}
+            onMouseLeave={() => setPreferredClicked(false)}
+          >
+            <KeyCircle
+              color1={"#e6236d"}
+              color2={"#290738"}
+              color3={"#391A46"}
+            />
+            <span className="key-text">Preferred</span>
+          </div>
+        </KeyTooltip>
+      </KeyBorder>
     </StyledRadarKey>
   );
 };

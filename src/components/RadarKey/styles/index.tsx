@@ -9,7 +9,7 @@ export const StyledRadarKey = styled.div`
   font-size: 16px;
   div:first-child {
     font-size: 20px;
-    border-bottom: 0.1px solid #c9c6c657;
+    // border-bottom: 0.1px solid #c9c6c657;
   }
   div {
     padding-bottom: 8px;
@@ -36,4 +36,15 @@ export const TooltipContent = styled.div`
   font-family: Poppins, sans-serif;
 `;
 
-export const KeyBorder = styled.div``;
+export const KeyBorder = styled.div`
+  .key-text {
+    font-size: 16px;
+    border-bottom: none;
+    cursor: pointer;
+  }
+
+  .key-text:hover {
+    color: #e6236d;
+    -webkit-transition: color 1.2s;
+  }
+`;
