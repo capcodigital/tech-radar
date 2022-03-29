@@ -3,23 +3,13 @@ import {
   RadarContextType,
   RadarContext,
 } from "../../components/RadarContextProvider/RadarContextProvider";
-import styled from "styled-components/macro";
-import ClientProjectItem from "../../components/ClientProjectItem/ClientProjectItem";
+import ProjectItem from "../../components/ProjectItem/ProjectItem";
+import { icons } from "../../data/data";
 import ClientProjects from "../../data/projects/ClientProjects";
-import { Grid, Container } from "@material-ui/core";
+import { Container } from "@material-ui/core";
 import { BackButton } from "../../components/BackLink/BackLink";
-
-const Wrapper = styled.div`
-  width: 100%;
-  display: flex;
-  position: relative;
-  .MuiContainer-root {
-    text-align: left;
-    .MuiGrid-container {
-      margin: 35px 0;
-    }
-  }
-`;
+import Tabs from "../../components/Tabs/Tabs";
+import { Wrapper, ContentBody, Title } from "./styles/";
 
 type Project = {
   project: string;
@@ -34,13 +24,21 @@ const ClientProjectPage = () => {
     useContext<RadarContextType>(RadarContext);
 
   const [demoProjects, setDemoProjects] = useState<Project[]>([]);
-  const [gridSize, setGridSize] = useState<number>(0);
+  const [clientProjectCount, setClientProjectCount] = useState<number>(0);
+  const [oSSProjectCount, setOSSProjectCount] = useState<number>(0);
   const [isAvailable, setIsAvailable] = useState<boolean>(false);
+  const [iconRef, setIconRef] = useState<string>("");
 
   useEffect(() => {
     let demo: Project[] = [];
     let url = window.location.pathname.split("/");
-    let size = 0;
+
+    let count = 0;
+    let iconResult = icons.filter(
+      (icon: any) => icon.name.toLowerCase() === url[3]
+    )[0];
+    let ref = iconResult ? iconResult.link : "";
+    setIconRef(ref);
 
     demo = technology
       ? ClientProjects.filter(({ technologies }) =>
@@ -54,25 +52,35 @@ const ClientProjectPage = () => {
 
     if (demo.length) {
       setIsAvailable(true);
-      setTechnology(url[3]);
-      size = demo.length < 4 ? 12 / demo.length : 4;
+      count = demo.length;
     }
-
     setDemoProjects(demo);
-    setGridSize(Number(size));
+    setClientProjectCount(Number(count));
   }, [technology, setTechnology]);
 
   return (
     <Wrapper>
       <Container maxWidth="md">
         <BackButton />
-        <Grid container>
-          {isAvailable ? (
-            <ClientProjectItem data={demoProjects} gridSize={gridSize} />
-          ) : (
-            <p>Content coming soon...</p>
-          )}
-        </Grid>
+        <Title>Projects</Title>
+        <svg className="tech-icon" viewBox={"0 0 80 80"}>
+          <circle cx={40} cy={40} r={40} fill={"white"} />
+          <image x={15} y={15} href={iconRef} height={50} width={50} />
+        </svg>
+        <ContentBody>
+          <Tabs
+            ossProjectCount={oSSProjectCount}
+            clientProjectCount={clientProjectCount}
+            panelOne={
+              isAvailable ? (
+                <ProjectItem data={demoProjects} githubLink="" />
+              ) : (
+                <p>Content coming soon...</p>
+              )
+            }
+            panelTwo={<p>Content coming soon...</p>}
+          ></Tabs>
+        </ContentBody>
       </Container>
     </Wrapper>
   );

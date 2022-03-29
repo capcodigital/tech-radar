@@ -1,8 +1,7 @@
 import React, { FC } from "react";
-import { GridSize } from "@material-ui/core";
 import ProjectTechnologyLink from "../ClinetProjectLink/ProjectTechnologyLink";
 import images from "../../images/ClientProjects";
-import StyledGrid from "./styles/";
+import StyledWrapper from "./styles";
 
 type ProjectItemProps = {
   data: Array<{
@@ -12,34 +11,39 @@ type ProjectItemProps = {
     description: string;
     technologies: Array<string>;
   }>;
-  gridSize: number;
+  githubLink: string;
 };
 
-const ClientProjectItem: FC<ProjectItemProps> = ({ data, gridSize }) => (
+const ProjectItem: FC<ProjectItemProps> = ({ data }) => (
   <>
     {data.map(
       (
         { project, clientName, clientImage, description, technologies },
         index
       ) => (
-        <StyledGrid
-          item
-          xs={Number(gridSize) as GridSize}
+        <StyledWrapper
           key={`project-${index}`}
           data-test-id={`project-${index}`}
         >
           <div>
-            <div>
+            <div className="project-image-wrapper">
               <img
-                height={80}
+                className="project-image"
                 src={(images as any)[clientImage]}
                 alt="computer screen"
               />
             </div>
-            <div>{project}</div>
-            <div>{clientName}</div>
-            <div>{description}</div>
-            <div>
+            <div className="row-wrapper">
+              <div className="heading">{project}</div>
+              <a href="#" className="link">
+                Github Link
+              </a>
+              <div className="project-tag">Internal</div>
+            </div>
+            <div className="text">{clientName}</div>
+            <div className="text">{description}</div>
+            <div className="heading">Key Technologies</div>
+            <div className="technologies">
               {technologies.map((tech: string, idx: number) => (
                 <span key={`tech-${idx}`}>
                   <ProjectTechnologyLink techName={tech} />
@@ -47,10 +51,10 @@ const ClientProjectItem: FC<ProjectItemProps> = ({ data, gridSize }) => (
               ))}
             </div>
           </div>
-        </StyledGrid>
+        </StyledWrapper>
       )
     )}
   </>
 );
 
-export default ClientProjectItem;
+export default ProjectItem;
