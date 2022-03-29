@@ -2,7 +2,7 @@
 
 exports[`Radar should render Radar component 1`] = `
 <div
-  class="styles__Wrapper-sc-2tg2y4-0 iHnvvU"
+  class="styles__Wrapper-sc-2tg2y4-0 fGwopy"
 >
   <svg
     style="overflow: visible;"
@@ -111,7 +111,7 @@ exports[`Radar should render Radar component 1`] = `
         y2="350"
       />
       <g
-        class="styles__StyledNav-sc-2tg2y4-1 gVZlIE"
+        class="styles__StyledNav-sc-2tg2y4-1 iEdYQi"
         transform="translate(-69.99999999999997, -410)"
       >
         <image
@@ -140,7 +140,7 @@ exports[`Radar should render Radar component 1`] = `
         />
       </g>
       <g
-        class="styles__StyledNav-sc-2tg2y4-1 gVZlIE"
+        class="styles__StyledNav-sc-2tg2y4-1 iEdYQi"
         transform="translate(262.842712474619, -282.84271247461896)"
       >
         <image
@@ -169,7 +169,7 @@ exports[`Radar should render Radar component 1`] = `
         />
       </g>
       <g
-        class="styles__StyledNav-sc-2tg2y4-1 gVZlIE"
+        class="styles__StyledNav-sc-2tg2y4-1 iEdYQi"
         transform="translate(380, 0)"
       >
         <image
@@ -198,7 +198,7 @@ exports[`Radar should render Radar component 1`] = `
         />
       </g>
       <g
-        class="styles__StyledNav-sc-2tg2y4-1 gVZlIE"
+        class="styles__StyledNav-sc-2tg2y4-1 iEdYQi"
         transform="translate(262.842712474619, 282.84271247461896)"
       >
         <image
@@ -227,7 +227,7 @@ exports[`Radar should render Radar component 1`] = `
         />
       </g>
       <g
-        class="styles__StyledNav-sc-2tg2y4-1 gVZlIE"
+        class="styles__StyledNav-sc-2tg2y4-1 iEdYQi"
         transform="translate(-89.99999999999997, 360)"
       >
         <image
@@ -256,7 +256,7 @@ exports[`Radar should render Radar component 1`] = `
         />
       </g>
       <g
-        class="styles__StyledNav-sc-2tg2y4-1 gVZlIE"
+        class="styles__StyledNav-sc-2tg2y4-1 iEdYQi"
         transform="translate(-402.84271247461896, 282.842712474619)"
       >
         <image
@@ -285,7 +285,7 @@ exports[`Radar should render Radar component 1`] = `
         />
       </g>
       <g
-        class="styles__StyledNav-sc-2tg2y4-1 gVZlIE"
+        class="styles__StyledNav-sc-2tg2y4-1 iEdYQi"
         transform="translate(-520, 4.898587196589413e-14)"
       >
         <image
@@ -314,7 +314,7 @@ exports[`Radar should render Radar component 1`] = `
         />
       </g>
       <g
-        class="styles__StyledNav-sc-2tg2y4-1 gVZlIE"
+        class="styles__StyledNav-sc-2tg2y4-1 iEdYQi"
         transform="translate(-402.8427124746191, -282.84271247461896)"
       >
         <image
@@ -553,7 +553,7 @@ exports[`Radar should render Radar component 1`] = `
         fill="transparent"
       />
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -577,7 +577,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -601,7 +601,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -625,7 +625,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -649,7 +649,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -673,7 +673,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -697,7 +697,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -721,7 +721,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -745,7 +745,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -769,7 +769,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -793,7 +793,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -817,7 +817,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -841,7 +841,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -865,7 +865,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -889,7 +889,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -913,7 +913,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -937,7 +937,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -961,7 +961,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -985,7 +985,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -1009,7 +1009,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -1033,7 +1033,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -1057,7 +1057,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -1081,7 +1081,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -1105,7 +1105,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -1129,7 +1129,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -1153,7 +1153,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -1177,7 +1177,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -1201,7 +1201,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -1225,7 +1225,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -1249,7 +1249,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -1273,7 +1273,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -1297,7 +1297,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -1321,7 +1321,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -1345,7 +1345,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -1369,7 +1369,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -1393,7 +1393,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -1417,7 +1417,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -1441,7 +1441,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -1465,7 +1465,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -1489,7 +1489,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -1513,7 +1513,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -1537,7 +1537,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -1561,7 +1561,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -1585,7 +1585,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -1609,7 +1609,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -1633,7 +1633,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -1657,7 +1657,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -1681,7 +1681,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -1705,7 +1705,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -1729,7 +1729,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -1753,7 +1753,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -1777,7 +1777,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -1801,7 +1801,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -1825,7 +1825,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -1849,7 +1849,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -1873,7 +1873,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -1897,7 +1897,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -1921,7 +1921,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -1945,7 +1945,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -1969,7 +1969,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -1993,7 +1993,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -2017,7 +2017,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -2041,7 +2041,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -2065,7 +2065,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -2089,7 +2089,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -2113,7 +2113,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -2137,7 +2137,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -2161,7 +2161,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -2185,7 +2185,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -2209,7 +2209,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -2233,7 +2233,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -2257,7 +2257,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -2281,7 +2281,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -2305,7 +2305,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g
@@ -2329,7 +2329,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 kqiJZC"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="0.3"
       >
         <g

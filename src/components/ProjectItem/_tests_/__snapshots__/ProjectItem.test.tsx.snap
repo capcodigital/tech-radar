@@ -2,27 +2,57 @@
 
 exports[`ClientProjectItem should render ClientProjectItem component 1`] = `
 <div
-  class="MuiGrid-root styles__StyledGrid-sc-x6vi32-0 bktYD MuiGrid-item MuiGrid-grid-xs-1"
+  class="MuiGrid-root styles__StyledGrid-sc-1pgv985-0 bJCbXV MuiGrid-item"
   data-test-id="project-0"
 >
   <div>
-    <div>
+    <div
+      class="project-image-wrapper"
+    >
       <img
         alt="computer screen"
-        height="80"
+        class="project-image"
         src="CL1.png"
       />
     </div>
-    <div>
-      GLOBAL DevOpS Acceleration
+    <div
+      class="row-wrapper"
+    >
+      <div
+        class="heading"
+      >
+        GLOBAL DevOpS Acceleration
+      </div>
+      <a
+        class="link"
+        href="#"
+      >
+        Github Link
+      </a>
+      <div
+        class="project-tag"
+      >
+        Internal
+      </div>
     </div>
-    <div>
+    <div
+      class="text"
+    >
       Global Tier 1 Private Bank
     </div>
-    <div>
+    <div
+      class="text"
+    >
       Capco delivered a DevOps acceleration program focused on improving delivery quality and speed.  This included integrating existing tools to improve developer experience, simplifying consumption of existing internal Kubernetes services, cloud migration, uplifting the platforms observability and monitoring maturity, re-engineering for containerization, building a single pane of glass portal, and training global teams e.g., India, China.
     </div>
-    <div>
+    <div
+      class="heading"
+    >
+      Key Technologies
+    </div>
+    <div
+      class="technologies"
+    >
       <span>
         <a
           class="projectTech-link"

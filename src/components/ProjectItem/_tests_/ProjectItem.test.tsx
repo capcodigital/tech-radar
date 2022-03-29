@@ -1,7 +1,7 @@
 import * as React from "react";
 import { render, screen } from "@testing-library/react";
 import { RadarContextProvider } from "../../RadarContextProvider/RadarContextProvider";
-import ClientProjectItem from "../ClientProjectItem";
+import ProjectItem from "../ProjectItem";
 import { BrowserRouter as Router } from "react-router-dom";
 
 window.scroll = jest.fn();
@@ -20,7 +20,7 @@ describe("ClientProjectItem", () => {
     const { container } = render(
       <Router>
         <RadarContextProvider>
-          <ClientProjectItem data={mockValue} gridSize={1} />
+          <ProjectItem data={mockValue} githubLink={"github link"} />
         </RadarContextProvider>
       </Router>
     );
@@ -31,7 +31,7 @@ describe("ClientProjectItem", () => {
     render(
       <Router>
         <RadarContextProvider>
-          <ClientProjectItem data={mockValue} gridSize={1} />
+          <ProjectItem data={mockValue} githubLink={"github link"} />
         </RadarContextProvider>
       </Router>
     );

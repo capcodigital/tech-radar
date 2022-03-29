@@ -2,7 +2,7 @@
 
 exports[`CategoryListItem should render CategoryListItem component 1`] = `
 <div
-  class="styles__StyledListItem-sc-19ijf8-0 kOASXB"
+  class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
 >
   <a
     data-test-id="category-item-GitHub"

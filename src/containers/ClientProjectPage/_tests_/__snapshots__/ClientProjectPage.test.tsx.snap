@@ -2,13 +2,13 @@
 
 exports[`ClientProjectPage when techology is React it should render ClientProjectPage component 1`] = `
 <div
-  class="ClientProjectPage__Wrapper-sc-1ynhv3s-0 iLkMRw"
+  class="ClientProjectPage__Wrapper-sc-1ynhv3s-0 iWUPzq"
 >
   <div
     class="MuiContainer-root MuiContainer-maxWidthMd"
   >
     <button
-      class="styles__StyledBackButton-sc-1t7dby2-1 kEMgqC"
+      class="styles__StyledBackButton-sc-1t7dby2-1 eUhvKA"
     >
       <svg
         aria-hidden="true"
@@ -26,27 +26,57 @@ exports[`ClientProjectPage when techology is React it should render ClientProjec
       class="MuiGrid-root MuiGrid-container"
     >
       <div
-        class="MuiGrid-root styles__StyledGrid-sc-x6vi32-0 bktYD MuiGrid-item MuiGrid-grid-xs-12"
+        class="MuiGrid-root styles__StyledGrid-sc-1pgv985-0 bJCbXV MuiGrid-item"
         data-test-id="project-0"
       >
         <div>
-          <div>
+          <div
+            class="project-image-wrapper"
+          >
             <img
               alt="computer screen"
-              height="80"
+              class="project-image"
               src="CL3.png"
             />
           </div>
-          <div>
-            Mobile Banking Remediation
+          <div
+            class="row-wrapper"
+          >
+            <div
+              class="heading"
+            >
+              Mobile Banking Remediation
+            </div>
+            <a
+              class="link"
+              href="#"
+            >
+              Github Link
+            </a>
+            <div
+              class="project-tag"
+            >
+              Internal
+            </div>
           </div>
-          <div>
+          <div
+            class="text"
+          >
             Global Tier 1 Bank
           </div>
-          <div>
+          <div
+            class="text"
+          >
             Capco performed a holistic assessment of the client’s current mobile applications, architectures, development standards and implementation.  Our team set new standards, implemented coding design principles, deployed a new DevOps pipeline, implemented automation testing and restructured and refactored the current applications, reducing development time/cost which significantly increased customer app ratings.
           </div>
-          <div>
+          <div
+            class="heading"
+          >
+            Key Technologies
+          </div>
+          <div
+            class="technologies"
+          >
             <span>
               <a
                 class="projectTech-link"

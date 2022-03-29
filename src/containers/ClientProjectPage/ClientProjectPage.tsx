@@ -4,7 +4,7 @@ import {
   RadarContext,
 } from "../../components/RadarContextProvider/RadarContextProvider";
 import styled from "styled-components/macro";
-import ClientProjectItem from "../../components/ClientProjectItem/ClientProjectItem";
+import ProjectItem from "../../components/ProjectItem/ProjectItem";
 import ClientProjects from "../../data/projects/ClientProjects";
 import { Grid, Container } from "@material-ui/core";
 import { BackButton } from "../../components/BackLink/BackLink";
@@ -34,13 +34,11 @@ const ClientProjectPage = () => {
     useContext<RadarContextType>(RadarContext);
 
   const [demoProjects, setDemoProjects] = useState<Project[]>([]);
-  const [gridSize, setGridSize] = useState<number>(0);
   const [isAvailable, setIsAvailable] = useState<boolean>(false);
 
   useEffect(() => {
     let demo: Project[] = [];
     let url = window.location.pathname.split("/");
-    let size = 0;
 
     demo = technology
       ? ClientProjects.filter(({ technologies }) =>
@@ -54,12 +52,9 @@ const ClientProjectPage = () => {
 
     if (demo.length) {
       setIsAvailable(true);
-      setTechnology(url[3]);
-      size = demo.length < 4 ? 12 / demo.length : 4;
     }
 
     setDemoProjects(demo);
-    setGridSize(Number(size));
   }, [technology, setTechnology]);
 
   return (
@@ -68,7 +63,7 @@ const ClientProjectPage = () => {
         <BackButton />
         <Grid container>
           {isAvailable ? (
-            <ClientProjectItem data={demoProjects} gridSize={gridSize} />
+            <ProjectItem data={demoProjects} githubLink={"github link"} />
           ) : (
             <p>Content coming soon...</p>
           )}
