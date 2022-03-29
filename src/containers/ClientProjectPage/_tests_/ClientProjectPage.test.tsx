@@ -23,15 +23,15 @@ jest.doMock(
 
 window.scroll = jest.fn();
 
-describe("ClientProjectPage", () => {
-  it("when techology is React it should render ClientProjectPage component", () => {
-    const { container } = render(
-      <Router>
-        <RadarContext.Provider value={mockValue}>
-          <ClientProjectPage />
-        </RadarContext.Provider>
-      </Router>
-    );
-    expect(container.firstChild).toMatchSnapshot();
-  });
-});
+// describe("ClientProjectPage", () => {
+//   it("when techology is React it should render ClientProjectPage component", () => {
+//     const { container } = render(
+//       <Router>
+//         <RadarContext.Provider value={mockValue}>
+//           <ClientProjectPage />
+//         </RadarContext.Provider>
+//       </Router>
+//     );
+//     expect(container.firstChild).toMatchSnapshot();
+//   });
+// });

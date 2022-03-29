@@ -14,7 +14,7 @@ type ProjectItemProps = {
   githubLink: string;
 };
 
-const ProjectItem: FC<ProjectItemProps> = ({ data }) => (
+const ProjectItem: FC<ProjectItemProps> = ({ data, githubLink }) => (
   <>
     {data.map(
       (
@@ -35,9 +35,11 @@ const ProjectItem: FC<ProjectItemProps> = ({ data }) => (
             </div>
             <div className="row-wrapper">
               <div className="heading">{project}</div>
-              <a href="#" className="link">
-                Github Link
-              </a>
+              {githubLink && (
+                <a href="#" className="link">
+                  Github Link
+                </a>
+              )}
               <div className="project-tag">Internal</div>
             </div>
             <div className="text">{clientName}</div>

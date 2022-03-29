@@ -46,6 +46,7 @@ const StyledWrapper = styled.div`
     cursor: pointer;
   }
   .project-tag {
+    grid-column: 1 / span 1;
     background-color: rgba(230, 35, 109, 0.5);
     border-radius: 40px;
     width: min-content;
