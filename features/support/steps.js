@@ -28,6 +28,13 @@ Then("the user should see {string}", {timeout: 60 * 1000}, async function(text) 
     assert.strictEqual(doesTheTextExistOnPage, true, "The expected text is not on the page");
 });
 
+Then("the user should see", {timeout: 60 * 1000}, async function(text) {
+    const pageText = await this.page.content().then(value => { return value;});
+    const mutatedText = removeTags(pageText).replaceAll("&amp;","&").replaceAll('<.*?>','');
+    const doesTheTextExistOnPage = mutatedText.includes(text);
+    assert.strictEqual(doesTheTextExistOnPage, true, "The expected text is not on the page");
+});
+
 Then("the user clicks accordion {string}", {timeout: 60 * 1000}, async function(testId) {
     await this.page.locator('//div[@data-test-id="'+testId+'"]').click();
 });
