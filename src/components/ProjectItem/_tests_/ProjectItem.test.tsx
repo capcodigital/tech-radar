@@ -20,7 +20,7 @@ describe("ProjectItem", () => {
     const { container } = render(
       <Router>
         <RadarContextProvider>
-          <ProjectItem data={mockValue} githubLink="" />
+          <ProjectItem data={mockValue} />
         </RadarContextProvider>
       </Router>
     );
@@ -31,7 +31,7 @@ describe("ProjectItem", () => {
     render(
       <Router>
         <RadarContextProvider>
-          <ProjectItem data={mockValue} githubLink="" />
+          <ProjectItem data={mockValue} />
         </RadarContextProvider>
       </Router>
     );
