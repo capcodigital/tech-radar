@@ -5,7 +5,6 @@ import { BrowserRouter as Router } from "react-router-dom";
 
 describe("BreadCrumb", () => {
   it("should render StyledButton component", () => {
-    // const mockCallBack = jest.fn();
     const { container } = render(
       <Router>
         <BreadCrumb />

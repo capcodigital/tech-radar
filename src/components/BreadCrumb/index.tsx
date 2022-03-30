@@ -10,7 +10,6 @@ const BreadcrumbComponent: FC<RouteComponentProps> = ({
   location: { pathname },
 }) => {
   const pathnames = pathname.split("/").filter((x) => x);
-  console.log(pathnames);
 
   return (
     <Breadcrumbs

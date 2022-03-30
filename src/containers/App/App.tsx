@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { RadarContextProvider } from "../../components/RadarContextProvider/RadarContextProvider";
-import Breadcrumbs from "@mui/material/Breadcrumbs";
 import IntroPage from "../IntroPage/IntroPage";
 import Home from "../HomePage/Home";
 import CategoryPage from "../CategoryPage/CategoryPage";
