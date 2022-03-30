@@ -114,7 +114,6 @@ const Divider = styled.hr`
 const CategoryPage = () => {
   const { category, technology, setCategory, setTechnology } =
     useContext<RadarContextType>(RadarContext);
-
   const [content, setContent] = useState<TechContentType | null>(null);
   const [imageLink, setImageLink] = useState("");
 
