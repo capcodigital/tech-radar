@@ -2,7 +2,7 @@
 
 exports[`ClientProjectItem should render ClientProjectItem component 1`] = `
 <div
-  class="styles__StyledWrapper-sc-1pgv985-0 jLGWrf"
+  class="styles__StyledWrapper-sc-1pgv985-0 rxkTS"
   data-test-id="project-0"
 >
   <div>
@@ -32,13 +32,8 @@ exports[`ClientProjectItem should render ClientProjectItem component 1`] = `
       <div
         class="project-tag"
       >
-        Internal
+        Global Tier 1 Private Bank
       </div>
-    </div>
-    <div
-      class="text"
-    >
-      Global Tier 1 Private Bank
     </div>
     <div
       class="text"

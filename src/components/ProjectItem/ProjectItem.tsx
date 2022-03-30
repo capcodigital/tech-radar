@@ -6,12 +6,12 @@ import StyledWrapper from "./styles";
 type ProjectItemProps = {
   data: Array<{
     project: string;
-    clientName: string;
+    clientName?: string;
     clientImage: string;
     description: string;
     technologies: Array<string>;
   }>;
-  githubLink: string;
+  githubLink?: string;
 };
 
 const ProjectItem: FC<ProjectItemProps> = ({ data, githubLink }) => (
@@ -40,9 +40,12 @@ const ProjectItem: FC<ProjectItemProps> = ({ data, githubLink }) => (
                   Github Link
                 </a>
               )}
-              <div className="project-tag">Internal</div>
+              {clientName ? (
+                <div className="project-tag">{clientName}</div>
+              ) : (
+                <div className="project-tag">Internal</div>
+              )}
             </div>
-            <div className="text">{clientName}</div>
             <div className="text">{description}</div>
             <div className="heading">Key Technologies</div>
             <div className="technologies">

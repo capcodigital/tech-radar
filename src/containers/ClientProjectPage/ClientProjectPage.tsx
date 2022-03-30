@@ -73,7 +73,7 @@ const ClientProjectPage = () => {
             clientProjectCount={clientProjectCount}
             panelOne={
               isAvailable ? (
-                <ProjectItem data={demoProjects} githubLink="" />
+                <ProjectItem data={demoProjects} />
               ) : (
                 <p>Content coming soon...</p>
               )

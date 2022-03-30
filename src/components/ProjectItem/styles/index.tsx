@@ -49,7 +49,8 @@ const StyledWrapper = styled.div`
     grid-column: 1 / span 1;
     background-color: rgba(230, 35, 109, 0.5);
     border-radius: 40px;
-    width: min-content;
+    min-width: min-content;
+    max-width: max-content;
     padding: 4px 16px;
     text-align: center;
     align-self: center;
