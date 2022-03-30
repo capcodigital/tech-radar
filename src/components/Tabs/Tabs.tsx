@@ -29,11 +29,7 @@ const Tabs: FC<TabsProps> = ({
     <StyledTabs>
       <TabContext value={value}>
         <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-          <TabList
-            onChange={handleChange}
-            aria-label="lab API tabs example"
-            centered
-          >
+          <TabList onChange={handleChange} aria-label="Project tabs" centered>
             <Tab label={`Client Projects (${clientProjectCount})`} value="1" />
             <Tab label={`Capco OSS Projects (${ossProjectCount})`} value="2" />
           </TabList>

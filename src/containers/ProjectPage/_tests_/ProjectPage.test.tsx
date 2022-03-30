@@ -1,7 +1,7 @@
 import * as React from "react";
 import { render } from "@testing-library/react";
 import { RadarContext } from "../../../components/RadarContextProvider/RadarContextProvider";
-import ClientProjectPage from "../ClientProjectPage";
+import ProjectPage from "../ProjectPage";
 import { BrowserRouter as Router } from "react-router-dom";
 
 const mockValue = {
@@ -23,15 +23,15 @@ jest.doMock(
 
 window.scroll = jest.fn();
 
-// describe("ClientProjectPage", () => {
-//   it("when techology is React it should render ClientProjectPage component", () => {
-//     const { container } = render(
-//       <Router>
-//         <RadarContext.Provider value={mockValue}>
-//           <ClientProjectPage />
-//         </RadarContext.Provider>
-//       </Router>
-//     );
-//     expect(container.firstChild).toMatchSnapshot();
-//   });
-// });
+describe("ProjectPage", () => {
+  it("when techology is React it should render ProjectPage component", () => {
+    const { container } = render(
+      <Router>
+        <RadarContext.Provider value={mockValue}>
+          <ProjectPage />
+        </RadarContext.Provider>
+      </Router>
+    );
+    expect(container.firstChild).toMatchSnapshot();
+  });
+});

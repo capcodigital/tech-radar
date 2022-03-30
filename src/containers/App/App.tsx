@@ -5,7 +5,7 @@ import IntroPage from "../IntroPage/IntroPage";
 import Home from "../HomePage/Home";
 import CategoryPage from "../CategoryPage/CategoryPage";
 import ContentPage from "../ContentPage/ContentPage";
-import ClientProjectPage from "../ClientProjectPage/ClientProjectPage";
+import ProjectPage from "../ProjectPage/ProjectPage";
 import PageWrapper from "../../components/PageWrapper/PageWrapper";
 import Menu from "../../components/Menu/Menu";
 import { ThemeProvider } from "styled-components";
@@ -32,7 +32,7 @@ const App = () => {
                 <ContentPage />
               </Route>
               <Route path="/demo">
-                <ClientProjectPage />
+                <ProjectPage />
               </Route>
             </PageWrapper>
             <Footer />

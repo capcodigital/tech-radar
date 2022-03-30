@@ -19,7 +19,7 @@ type Project = {
   technologies: Array<string>;
 };
 
-const ClientProjectPage = () => {
+const ProjectPage = () => {
   const { technology, setTechnology } =
     useContext<RadarContextType>(RadarContext);
 
@@ -86,4 +86,4 @@ const ClientProjectPage = () => {
   );
 };
 
-export default ClientProjectPage;
+export default ProjectPage;
