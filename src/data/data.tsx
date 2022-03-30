@@ -76,7 +76,7 @@ export const data: Array<{ name: string; data: techType }> = [
       scaling: [
         {
           name: "Twistlock",
-          link: "https://cdn.icon-icons.com/icons2/2699/PNG/512/twistlock_logo_icon_168400.png",
+          link: "https://symbols.getvecta.com/stencil_98/71_twistlock-icon.a467faf956.svg",
           enabled: false,
         },
         {
@@ -113,14 +113,14 @@ export const data: Array<{ name: string; data: techType }> = [
         },
         {
           name: "MongoDB",
-          link: "https://www.iamsteveni.com/static/img/mongodb.png",
+          link: "https://symbols.getvecta.com/stencil_88/103_mongodb.d91e0a5f7c.svg",
           enabled: true,
         },
       ],
       skilled: [
         {
           name: "MySQL",
-          link: "https://www.iamsteveni.com/static/img/mysql.png",
+          link: "https://symbols.getvecta.com/stencil_261/27_mysql.4e2ff8ff6c.svg",
           enabled: true,
         },
         {
@@ -179,7 +179,7 @@ export const data: Array<{ name: string; data: techType }> = [
         },
         {
           name: "BrowserStack",
-          link: "https://www.browserstack.com/blog/favicon.png",
+          link: "https://symbols.getvecta.com/stencil_75/145_browserstack-icon.21eace67de.svg",
           enabled: false,
         },
         {
@@ -318,7 +318,7 @@ export const data: Array<{ name: string; data: techType }> = [
       skilled: [
         {
           name: "ActiveMQ",
-          link: "https://img.stackshare.io/service/1062/vlz__1_.png",
+          link: "https://symbols.getvecta.com/stencil_73/17_activemq-icon.998ecace10.svg",
           enabled: false,
         },
         {
@@ -347,7 +347,7 @@ export const data: Array<{ name: string; data: techType }> = [
         },
         {
           name: "Node",
-          link: "https://www.iamsteveni.com/static/img/nodejs.png",
+          link: "https://img.icons8.com/fluency/48/000000/node-js.png",
           enabled: true,
         },
         {
@@ -521,7 +521,7 @@ export const icons: Array<{ name: string; link: string }> = [
   },
   {
     name: "Twistlock",
-    link: "https://symbols.getvecta.com/stencil_98/71_twistlock-icon.8db1b813dd.svg",
+    link: "https://symbols.getvecta.com/stencil_98/71_twistlock-icon.a467faf956.svg",
   },
   {
     name: "Kiali",
@@ -545,11 +545,11 @@ export const icons: Array<{ name: string; link: string }> = [
   },
   {
     name: "MongoDB",
-    link: "https://www.iamsteveni.com/static/img/mongodb.png",
+    link: "https://symbols.getvecta.com/stencil_88/103_mongodb.d91e0a5f7c.svg",
   },
   {
     name: "MySQL",
-    link: "https://www.iamsteveni.com/static/img/mysql.png",
+    link: "https://symbols.getvecta.com/stencil_261/27_mysql.4e2ff8ff6c.svg",
   },
   {
     name: "Oracle",
@@ -589,7 +589,7 @@ export const icons: Array<{ name: string; link: string }> = [
   },
   {
     name: "BrowserStack",
-    link: "https://www.browserstack.com/blog/favicon.png",
+    link: "https://symbols.getvecta.com/stencil_75/145_browserstack-icon.21eace67de.svg",
   },
   {
     name: "Sauce Labs",
@@ -675,7 +675,7 @@ export const icons: Array<{ name: string; link: string }> = [
   },
   {
     name: "ActiveMQ",
-    link: "https://symbols.getvecta.com/stencil_73/17_activemq-icon.66dcff47ad.svg",
+    link: "https://symbols.getvecta.com/stencil_73/17_activemq-icon.998ecace10.svg",
   },
   {
     name: "IBM MQ",
@@ -691,7 +691,7 @@ export const icons: Array<{ name: string; link: string }> = [
   },
   {
     name: "Node",
-    link: "https://www.iamsteveni.com/static/img/nodejs.png",
+    link: "https://img.icons8.com/fluency/48/000000/node-js.png",
   },
   { name: "Go", link: "https://img.icons8.com/color/344/golang.png" },
 
