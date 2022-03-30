@@ -11,9 +11,12 @@ import Menu from "../../components/Menu/Menu";
 import { ThemeProvider } from "styled-components";
 import { radarTheme } from "../../theme";
 import Footer from "../../components/Footer/Footer";
+import BreadCrumbs from "../../components/BreadCrumb/";
+
 const App = () => {
   return (
     <Router>
+      <BreadCrumbs />
       <Switch>
         <ThemeProvider theme={radarTheme}>
           <RadarContextProvider>
