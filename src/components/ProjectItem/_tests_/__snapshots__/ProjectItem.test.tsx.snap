@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ClientProjectItem should render ClientProjectItem component 1`] = `
+exports[`ProjectItem should render ProjectItem component 1`] = `
 <div
-  class="styles__StyledWrapper-sc-1pgv985-0 rxkTS"
+  class="styles__StyledWrapper-sc-1pgv985-0 epNGpQ"
   data-test-id="project-0"
 >
   <div>
@@ -23,12 +23,7 @@ exports[`ClientProjectItem should render ClientProjectItem component 1`] = `
       >
         GLOBAL DevOpS Acceleration
       </div>
-      <a
-        class="link"
-        href="#"
-      >
-        Github Link
-      </a>
+      
       <div
         class="project-tag"
       >

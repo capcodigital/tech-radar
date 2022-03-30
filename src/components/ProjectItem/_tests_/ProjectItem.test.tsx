@@ -15,8 +15,8 @@ const mockValue = [
     technologies: ["Go", "Docker", "AWS", "Kubernetes", "Datadog"],
   },
 ];
-describe("ClientProjectItem", () => {
-  it("should render ClientProjectItem component", () => {
+describe("ProjectItem", () => {
+  it("should render ProjectItem component", () => {
     const { container } = render(
       <Router>
         <RadarContextProvider>
@@ -27,7 +27,7 @@ describe("ClientProjectItem", () => {
     expect(container.firstChild).toMatchSnapshot();
   });
 
-  it("should render GitHub ClientProjectItem component and check the correct text is displayed", () => {
+  it("should render GitHub ProjectItem component and check the correct text is displayed", () => {
     render(
       <Router>
         <RadarContextProvider>
