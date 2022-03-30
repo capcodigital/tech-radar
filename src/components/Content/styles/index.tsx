@@ -6,7 +6,6 @@ export const Wrapper = styled.div`
   @media screen and (max-width: 1000px) {
     width: 100%;
   }
-
   .css-1elwnq4-MuiPaper-root-MuiAccordion-root {
     background-color: transparent;
     border: #fff 2px solid;
@@ -16,35 +15,39 @@ export const Wrapper = styled.div`
     box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 0%),
       0px 1px 1px 0px rgb(0 0 0 / 0%), 0px 1px 3px 0px rgb(0 0 0 / 0%);
   }
-
   .css-i4bv87-MuiSvgIcon-root {
     color: #fff;
+    float: right;
+  }
+  .css-1m4ljmh-MuiTypography-root {
+    width: 100%;
+    // padding-left: 15px;
   }
 
-  .css-1m4ljmh-MuiTypography-root {
-    width: 58%;
+  .jJwSaC .content div:first-child {
+    padding: 20px;
+    width: 100%;
   }
 `;
 
 export const StyledSubContent = styled.div`
   margin-bottom: 40px;
-
   .intro {
     font-size: 18px;
     font-weight: 500;
     padding-bottom: 14px;
   }
-
   .content {
     font-size: 16px;
     div:first-child {
       font-size: 18px;
-      padding-bottom: 2px;
+      padding: 3px;
+      margin: 2px;
+      width: 100%;
       color: ${({ theme }) => theme.pink};
       font-weight: 700;
     }
     font-weight: 300;
-    padding-bottom: 12px;
   }
   a {
     color: inherit;
