@@ -3,8 +3,8 @@ import { render } from "@testing-library/react";
 import AccordionComponent from "../Accordion";
 import { BrowserRouter as Router } from "react-router-dom";
 
-describe("StyledButton", () => {
-  it("should render StyledButton component", () => {
+describe("Accordion", () => {
+  it("should render Accordion component", () => {
     const mockCallBack = jest.fn();
     const { container } = render(
       <Router>
