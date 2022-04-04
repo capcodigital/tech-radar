@@ -2,7 +2,7 @@
 
 exports[`ContentPage should render ContentPage component 1`] = `
 <div
-  class="ContentPage__Wrapper-sc-zuv8bi-0 hZfqAt"
+  class="styles__Wrapper-sc-17b28va-0 eMGyw"
 >
   <img
     alt="DevOps"
@@ -12,120 +12,108 @@ exports[`ContentPage should render ContentPage component 1`] = `
     width="650"
   />
   <div
-    class="ContentPage__ContentWrapper-sc-zuv8bi-1 dkxkJJ"
+    class="styles__ContentWrapper-sc-17b28va-1 cKzHYA"
   >
-    <div>
-      <a
-        class="styles__StyledBackLink-sc-1t7dby2-0 cAfEuZ"
-        href="/category/devops"
+    <a
+      class="styles__StyledBackLink-sc-1t7dby2-0 cAfEuZ"
+      href="/category/devops"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root"
+        focusable="false"
+        viewBox="0 0 24 24"
       >
-        <svg
-          aria-hidden="true"
-          class="MuiSvgIcon-root"
-          focusable="false"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
-          />
-        </svg>
-        Back to 
-        DevOps
-        <img
-          alt="DevOps"
-          height="24"
-          src="devops.svg"
-          width="24"
+        <path
+          d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
         />
-      </a>
-      <div
-        class="ContentPage__Title-sc-zuv8bi-3 gjkCHX title-GitHub"
-      >
-        GitHub
-      </div>
-      <a
-        href="https://docs.github.com/en"
-        rel="noreferrer"
-        target="_blank"
-      >
-        <svg
-          class="icon"
-          viewBox="0 0 80 80"
-        >
-          <circle
-            cx="40"
-            cy="40"
-            fill="white"
-            r="40"
-          />
-          <image
-            height="50"
-            href="https://img.icons8.com/fluent/452/github.png"
-            width="50"
-            x="15"
-            y="15"
-          />
-        </svg>
-      </a>
-      <div
-        class="ContentPage__ContentBody-sc-zuv8bi-2 dsWGCM"
-      >
+      </svg>
+      Back to 
+      DevOps
+      <img
+        alt="DevOps"
+        height="24"
+        src="devops.svg"
+        width="24"
+      />
+    </a>
+    <div
+      class="content-head"
+    >
+      <div>
         <div
-          class="content-intro"
+          class="styles__Title-sc-17b28va-3 kKhnmO title-GitHub"
         >
-          Content coming soon.
-        </div>
-        <div
-          class="styles__Title-sc-pzbvc3-1 tDODF"
-        >
-          Demo client projects
+          GitHub
         </div>
         <a
-          class="styles__StyledLink-sc-pzbvc3-0 kJTxEr"
-          href="/demo/devops/github"
+          href="https://docs.github.com/en"
+          rel="noreferrer"
+          target="_blank"
         >
-          View client projects using 
-          GitHub
           <svg
-            aria-hidden="true"
-            class="MuiSvgIcon-root"
-            focusable="false"
-            viewBox="0 0 24 24"
+            class="icon"
+            viewBox="0 0 80 80"
           >
-            <path
-              d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+            <circle
+              cx="40"
+              cy="40"
+              fill="white"
+              r="40"
+            />
+            <image
+              height="50"
+              href="https://img.icons8.com/fluent/452/github.png"
+              width="50"
+              x="15"
+              y="15"
             />
           </svg>
         </a>
-        <hr
-          class="ContentPage__Divider-sc-zuv8bi-4 dncRES"
-        />
-        <div
-          class="ContentNavButton__StyledContentNavButton-sc-17243nr-0 iBCBoj"
-          data-test-id="Previous"
-        >
-          <div>
-            Previous
-          </div>
-          <a
-            href="/technology/mobile/gradle-mobile"
-          >
-            Gradle Mobile
-          </a>
+      </div>
+      <a
+        class="styles__StyledLink-sc-rz9yta-0 gshMkH"
+        href="/demo/devops/github"
+      >
+        View Projects
+      </a>
+    </div>
+    <div
+      class="styles__ContentBody-sc-17b28va-2 lmMEmR"
+    >
+      <div
+        class="content-intro"
+      >
+        Content coming soon.
+      </div>
+      <hr
+        class="styles__Divider-sc-17b28va-4 dXhftT"
+      />
+      <div
+        class="ContentNavButton__StyledContentNavButton-sc-17243nr-0 iBCBoj"
+        data-test-id="Previous"
+      >
+        <div>
+          Previous
         </div>
-        <div
-          class="ContentNavButton__StyledContentNavButton-sc-17243nr-0 dIoxgc"
-          data-test-id="Next"
+        <a
+          href="/technology/mobile/gradle-mobile"
         >
-          <div>
-            Next
-          </div>
-          <a
-            href="/technology/devops/circleci"
-          >
-            CircleCI
-          </a>
+          Gradle Mobile
+        </a>
+      </div>
+      <div
+        class="ContentNavButton__StyledContentNavButton-sc-17243nr-0 dIoxgc"
+        data-test-id="Next"
+      >
+        <div>
+          Next
         </div>
+        <a
+          href="/technology/devops/circleci"
+        >
+          CircleCI
+        </a>
       </div>
     </div>
   </div>

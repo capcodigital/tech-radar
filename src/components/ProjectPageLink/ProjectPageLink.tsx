@@ -1,20 +1,18 @@
 import React, { FC, useContext } from "react";
-import { StyledLink, Title } from "./styles/";
-import NavigateNextIcon from "@material-ui/icons/NavigateNext";
+import { StyledLink } from "./styles";
 import {
   RadarContextType,
   RadarContext,
-} from "../../components/RadarContextProvider/RadarContextProvider";
+} from "../RadarContextProvider/RadarContextProvider";
 
 type LinkProps = {
   onClick: any;
 };
 
-const ClientProjectLink: FC<LinkProps> = ({ onClick }) => {
+const ProjectPageLink: FC<LinkProps> = ({ onClick }) => {
   const { category, technology } = useContext<RadarContextType>(RadarContext);
   return (
     <>
-      <Title>Demo client projects</Title>
       <StyledLink
         onClick={onClick}
         to={`/demo/${category.replace(/\s/g, "-")}/${technology.replace(
@@ -22,11 +20,10 @@ const ClientProjectLink: FC<LinkProps> = ({ onClick }) => {
           "-"
         )}`.toLowerCase()}
       >
-        View client projects using {technology}
-        <NavigateNextIcon />
+        View Projects
       </StyledLink>
     </>
   );
 };
 
-export default ClientProjectLink;
+export default ProjectPageLink;
