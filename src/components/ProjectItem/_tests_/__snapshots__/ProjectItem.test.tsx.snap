@@ -1,0 +1,188 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProjectItem should render ProjectItem component 1`] = `
+<div
+  class="styles__StyledWrapper-sc-1pgv985-0 rxkTS"
+  data-test-id="project-0"
+>
+  <div>
+    <div
+      class="project-image-wrapper"
+    >
+      <img
+        alt="computer screen"
+        class="project-image"
+        src="CL1.png"
+      />
+    </div>
+    <div
+      class="row-wrapper"
+    >
+      <div
+        class="heading"
+      >
+        GLOBAL DevOpS Acceleration
+      </div>
+      <div
+        class="project-tag"
+      >
+        Global Tier 1 Private Bank
+      </div>
+    </div>
+    <div
+      class="text"
+    >
+      Capco delivered a DevOps acceleration program focused on improving delivery quality and speed.  This included integrating existing tools to improve developer experience, simplifying consumption of existing internal Kubernetes services, cloud migration, uplifting the platforms observability and monitoring maturity, re-engineering for containerization, building a single pane of glass portal, and training global teams e.g., India, China.
+    </div>
+    <div
+      class="heading"
+    >
+      Key Technologies
+    </div>
+    <div
+      class="technologies"
+    >
+      <span>
+        <a
+          class="projectTech-link"
+          href="/technology/backend/go"
+        >
+          <svg
+            class="icon"
+            viewBox="0 0 80 80"
+          >
+            <circle
+              cx="40"
+              cy="40"
+              fill="white"
+              r="40"
+            />
+            <image
+              height="50"
+              href="https://img.icons8.com/color/344/golang.png"
+              width="50"
+              x="15"
+              y="15"
+            />
+          </svg>
+          <div>
+            Go
+          </div>
+        </a>
+      </span>
+      <span>
+        <a
+          class="projectTech-link"
+          href="/technology//docker"
+        >
+          <svg
+            class="icon"
+            viewBox="0 0 80 80"
+          >
+            <circle
+              cx="40"
+              cy="40"
+              fill="white"
+              r="40"
+            />
+            <image
+              height="50"
+              href=""
+              width="50"
+              x="15"
+              y="15"
+            />
+          </svg>
+          <div>
+            Docker
+          </div>
+        </a>
+      </span>
+      <span>
+        <a
+          class="projectTech-link"
+          href="/technology/cloud-&-platforms/aws"
+        >
+          <svg
+            class="icon"
+            viewBox="0 0 80 80"
+          >
+            <circle
+              cx="40"
+              cy="40"
+              fill="white"
+              r="40"
+            />
+            <image
+              height="50"
+              href="https://img.icons8.com/color/452/amazon-web-services.png"
+              width="50"
+              x="15"
+              y="15"
+            />
+          </svg>
+          <div>
+            AWS
+          </div>
+        </a>
+      </span>
+      <span>
+        <a
+          class="projectTech-link"
+          href="/technology/cloud-&-platforms/kubernetes"
+        >
+          <svg
+            class="icon"
+            viewBox="0 0 80 80"
+          >
+            <circle
+              cx="40"
+              cy="40"
+              fill="white"
+              r="40"
+            />
+            <image
+              height="50"
+              href="https://img.icons8.com/color/452/kubernetes.png"
+              width="50"
+              x="15"
+              y="15"
+            />
+          </svg>
+          <div>
+            Kubernetes
+          </div>
+        </a>
+      </span>
+      <span>
+        <a
+          class="projectTech-link"
+          href="/technology//datadog"
+        >
+          <svg
+            class="icon"
+            viewBox="0 0 80 80"
+          >
+            <circle
+              cx="40"
+              cy="40"
+              fill="white"
+              r="40"
+            />
+            <image
+              height="50"
+              href=""
+              width="50"
+              x="15"
+              y="15"
+            />
+          </svg>
+          <div>
+            Datadog
+          </div>
+        </a>
+      </span>
+    </div>
+  </div>
+</div>
+`;

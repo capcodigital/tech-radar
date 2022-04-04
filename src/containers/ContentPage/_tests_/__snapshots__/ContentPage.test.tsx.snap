@@ -2,7 +2,7 @@
 
 exports[`ContentPage should render ContentPage component 1`] = `
 <div
-  class="ContentPage__Wrapper-sc-zuv8bi-0 hISriT"
+  class="ContentPage__Wrapper-sc-zuv8bi-0 hZfqAt"
 >
   <img
     alt="DevOps"
@@ -12,11 +12,11 @@ exports[`ContentPage should render ContentPage component 1`] = `
     width="650"
   />
   <div
-    class="ContentPage__ContentWrapper-sc-zuv8bi-1 jqSYVT"
+    class="ContentPage__ContentWrapper-sc-zuv8bi-1 dkxkJJ"
   >
     <div>
       <a
-        class="styles__StyledBackLink-sc-1t7dby2-0 heytsn"
+        class="styles__StyledBackLink-sc-1t7dby2-0 cAfEuZ"
         href="/category/devops"
       >
         <svg
@@ -39,7 +39,7 @@ exports[`ContentPage should render ContentPage component 1`] = `
         />
       </a>
       <div
-        class="ContentPage__Title-sc-zuv8bi-3 cLDaQB title-GitHub"
+        class="ContentPage__Title-sc-zuv8bi-3 gjkCHX title-GitHub"
       >
         GitHub
       </div>
@@ -68,18 +68,40 @@ exports[`ContentPage should render ContentPage component 1`] = `
         </svg>
       </a>
       <div
-        class="ContentPage__ContentBody-sc-zuv8bi-2 ejqAZu"
+        class="ContentPage__ContentBody-sc-zuv8bi-2 dsWGCM"
       >
         <div
           class="content-intro"
         >
           Content coming soon.
         </div>
+        <div
+          class="styles__Title-sc-pzbvc3-1 tDODF"
+        >
+          Demo client projects
+        </div>
+        <a
+          class="styles__StyledLink-sc-pzbvc3-0 kJTxEr"
+          href="/demo/devops/github"
+        >
+          View client projects using 
+          GitHub
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+            />
+          </svg>
+        </a>
         <hr
-          class="ContentPage__Divider-sc-zuv8bi-4 dovDEk"
+          class="ContentPage__Divider-sc-zuv8bi-4 dncRES"
         />
         <div
-          class="ContentNavButton__StyledContentNavButton-sc-17243nr-0 dwbIYp"
+          class="ContentNavButton__StyledContentNavButton-sc-17243nr-0 iBCBoj"
           data-test-id="Previous"
         >
           <div>
@@ -92,7 +114,7 @@ exports[`ContentPage should render ContentPage component 1`] = `
           </a>
         </div>
         <div
-          class="ContentNavButton__StyledContentNavButton-sc-17243nr-0 tZwby"
+          class="ContentNavButton__StyledContentNavButton-sc-17243nr-0 dIoxgc"
           data-test-id="Next"
         >
           <div>

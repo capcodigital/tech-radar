@@ -1,7 +1,8 @@
 import React, { FC } from "react";
 import NavigateBeforeIcon from "@material-ui/icons/NavigateBefore";
-import StyledBackLink from "./styles/";
+import StyledBackLink, { StyledBackButton } from "./styles/";
 import images from "../../images";
+import { useHistory } from "react-router-dom";
 
 type BackLinkType = {
   category: string;
@@ -22,11 +23,21 @@ const BackLink: FC<BackLinkType> = ({ category }) => (
   </StyledBackLink>
 );
 
-export const BackButton = () => (
+export const BackToHomeButton = () => (
   <StyledBackLink to={"/home"}>
     <NavigateBeforeIcon />
     Back
   </StyledBackLink>
 );
+
+export const BackButton: FC = () => {
+  let history = useHistory();
+  return (
+    <StyledBackButton onClick={(e) => history.goBack()}>
+      <NavigateBeforeIcon />
+      Back
+    </StyledBackButton>
+  );
+};
 
 export default BackLink;

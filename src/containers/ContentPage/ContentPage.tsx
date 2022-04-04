@@ -16,6 +16,7 @@ import images from "../../images";
 import styled from "styled-components/macro";
 import ContentNavButton from "../../components/ComponentNavButton/ContentNavButton";
 import { getNextItem, getPrevItem } from "../../helpers/helpers";
+import ClientProjectLink from "../../components/ClinetProjectLink/ClientProjectLink";
 
 type WrapperProps = {
   category: string;
@@ -117,6 +118,11 @@ const CategoryPage = () => {
   const [content, setContent] = useState<TechContentType | null>(null);
   const [imageLink, setImageLink] = useState("");
 
+  const handleClick = (categoryName: string, techName: string) => {
+    setCategory(categoryName);
+    setTechnology(techName);
+  };
+
   useEffect(() => {
     let url = window.location.pathname.split("/");
 
@@ -204,6 +210,11 @@ const CategoryPage = () => {
               {content.reference.length > 0 && (
                 <ReferenceContent contentData={content.reference} />
               )}
+
+              <ClientProjectLink
+                onClick={() => handleClick(category, technology)}
+              />
+
               <Divider />
               <ContentNavButton
                 onClick={() => setTechnology(previousTechnology)}
