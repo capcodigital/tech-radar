@@ -28,7 +28,7 @@ const techContent = [
           {
             name: "Platform Independent & Portable",
             description:
-              "ava code is compiled into a bytecode which is platform independent as it runs on the Java Virtual Machine (JVM). The same Java applications can run on any platform with a JVM. ",
+              "Java code is compiled into a bytecode which is platform independent as it runs on the Java Virtual Machine (JVM). The same Java applications can run on any platform with a JVM. ",
           },
           {
             name: "Secure",
