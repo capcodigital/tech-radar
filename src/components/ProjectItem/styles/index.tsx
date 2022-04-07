@@ -30,6 +30,7 @@ const StyledWrapper = styled.div`
     font-size: 18px;
     line-height: 27px;
     margin-bottom: 12px;
+    text-transform: capitalize;
   }
   .link {
     grid-column: 2 / span 1;
@@ -41,6 +42,7 @@ const StyledWrapper = styled.div`
     line-height: 24px;
     border-bottom: 1px solid #e6236d;
     padding-bottom: 4px;
+    text-transform: capitalize;
   }
   .link:hover {
     cursor: pointer;
@@ -65,6 +67,7 @@ const StyledWrapper = styled.div`
   }
   .technologies {
     margin-bottom: 100px;
+    text-transform: capitalize;
   }
   .row-wrapper {
     display: grid;
