@@ -20,3 +20,7 @@ export const getRowLength = (dataNum: number, idx: number) => {
   } else if (dataNum === 6) return dataNum / 2;
   else return 0;
 };
+
+export const capitalizeFirstCharacter = (string: string) => {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+};

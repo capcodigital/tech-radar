@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import AccordionComponent from "../Accordion/Accordion";
 import { StyledSubContent, Title, SourceLink } from "./styles";
+import { capitalizeFirstCharacter } from "../../helpers/helpers";
 
 type SubContentType = {
   contentData: Array<{
@@ -35,7 +36,10 @@ export const SubContent: FC<SubContentType> = ({ contentData }) => {
           )}
           {data.map(({ name, description }, idx) => (
             <div className={"content"} key={`data-content-${idx}`}>
-              <AccordionComponent name={name} description={description} />
+              <AccordionComponent
+                name={name}
+                description={capitalizeFirstCharacter(description)}
+              />
             </div>
           ))}
         </StyledSubContent>
