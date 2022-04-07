@@ -448,7 +448,7 @@ const techContent = [
               "A mock library inspired by the popular <a href='https://github.com/mockito/mockito'>mocking framework for Java</a>. <a href='https://pub.dev/packages/mockito'>Mockito</a> generates mocks whose behaviour and responses can be defined when specific methods are called.",
           },
           {
-            name: "Bloc_test",
+            name: "Bloc",
             description:
               "A common testing framework used to test <a href='https://pub.dev/packages/bloc_test'>BLoCs</a>. It works by allowing you to create a mock of your BLoC and then stubbing the state stream to compare expected results.",
           },
