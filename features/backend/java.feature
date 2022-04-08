@@ -16,7 +16,7 @@ Scenario: Java content appears as expected
     And the user clicks accordion "Object Oriented"
     And the user can see accordion "Object Oriented" description "This allows large applications to be broken down into smaller, logical constituents, allowing for reuse of code and reducing dependencies."
     And the user clicks accordion "Platform Independent & Portable"
-    And the user can see accordion "Platform Independent & Portable" description "ava code is compiled into a bytecode which is platform independent as it runs on the Java Virtual Machine (JVM). The same Java applications can run on any platform with a JVM."
+    And the user can see accordion "Platform Independent & Portable" description "Java code is compiled into a bytecode which is platform independent as it runs on the Java Virtual Machine (JVM). The same Java applications can run on any platform with a JVM."
     And the user clicks accordion "Secure"
     And the user can see accordion "Secure" description "Java applications run on the JVM, a virtual machine sandbox which restricts access to system resources."
     And the user clicks accordion "Robust"
