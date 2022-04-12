@@ -40,11 +40,11 @@ const BreadcrumbComponent: FC<RouteComponentProps> = ({
         const Name = name.toUpperCase();
 
         return isLast ? (
-          <Typography style={{ color: "grey", fontSize: "12px" }}>
+          <Typography key={index} style={{ color: "grey", fontSize: "12px" }}>
             {Name}
           </Typography>
         ) : (
-          <BreadcrumbStyles>
+          <BreadcrumbStyles key={index}>
             <Link
               color="#fff"
               className="breadcrumb-nav"

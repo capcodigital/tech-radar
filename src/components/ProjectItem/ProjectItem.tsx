@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import ProjectTechnologyLink from "../ClinetProjectLink/ProjectTechnologyLink";
+import ProjectTechnologyLink from "../ProjectPageLink/ProjectTechnologyLink";
 import images from "../../images/ClientProjects";
 import StyledWrapper from "./styles";
 
