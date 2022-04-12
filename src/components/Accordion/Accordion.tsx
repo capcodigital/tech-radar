@@ -13,39 +13,37 @@ type Props = {
 
 const AccordionComponent: FC<Props> = ({ name, description }) => {
   return (
-    <>
-      <Wrapper>
-        <Accordion id="accordion-component">
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel1bh-content"
-            id="panel1bh-header"
-            data-test-id={name}
-          >
-            <Typography sx={{ width: "33%", flexShrink: 0 }} component={"span"}>
-              <div>{name}</div>
-            </Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography component={"span"}>
-              <div
-                data-test-id={`${name}-content`}
-                style={{
-                  fontWeight: "300",
-                  color: "#fff",
-                }}
-                dangerouslySetInnerHTML={{
-                  __html: description.replace(
-                    /href=/g,
-                    'rel="noreferrer" target="_blank" href='
-                  ),
-                }}
-              />
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
-      </Wrapper>
-    </>
+    <Wrapper>
+      <Accordion id="accordion-component">
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1bh-content"
+          id="panel1bh-header"
+          data-test-id={name}
+        >
+          <Typography sx={{ width: "33%", flexShrink: 0 }} component={"span"}>
+            <div className="content-title">{name}</div>
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography component={"span"}>
+            <div
+              data-test-id={`${name}-content`}
+              style={{
+                fontWeight: "300",
+                color: "#fff",
+              }}
+              dangerouslySetInnerHTML={{
+                __html: description.replace(
+                  /href=/g,
+                  'rel="noreferrer" target="_blank" href='
+                ),
+              }}
+            />
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+    </Wrapper>
   );
 };
 

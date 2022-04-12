@@ -22,7 +22,6 @@ type ReferenceContentType = {
 export const SubContent: FC<SubContentType> = ({ contentData }) => {
   return (
     <>
-      {/* <DropDown contentData={contentData} /> */}
       {contentData.map(({ name, intro, data }, idx) => (
         <StyledSubContent key={`subcontent-${idx}`}>
           {name && <Title>{name}</Title>}
@@ -34,14 +33,32 @@ export const SubContent: FC<SubContentType> = ({ contentData }) => {
               }}
             />
           )}
-          {data.map(({ name, description }, idx) => (
-            <div className={"content"} key={`data-content-${idx}`}>
-              <AccordionComponent
-                name={name}
-                description={capitalizeFirstCharacter(description)}
-              />
-            </div>
-          ))}
+          {data.map(({ name, description }, idx) => {
+            return (
+              <>
+                {!name && (
+                  <div className="content" key={`data-content-${idx}`}>
+                    <div
+                      dangerouslySetInnerHTML={{
+                        __html: description.replace(
+                          /href=/g,
+                          'rel="noreferrer" target="_blank" href='
+                        ),
+                      }}
+                    />
+                  </div>
+                )}
+                {name && (
+                  <div className="content" key={`data-content-${idx}`}>
+                    <AccordionComponent
+                      name={name}
+                      description={capitalizeFirstCharacter(description)}
+                    />
+                  </div>
+                )}
+              </>
+            );
+          })}
         </StyledSubContent>
       ))}
     </>

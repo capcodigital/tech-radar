@@ -21,7 +21,6 @@ export const Wrapper = styled.div`
   }
   .css-1m4ljmh-MuiTypography-root {
     width: 100%;
-    // padding-left: 15px;
   }
 
   .jJwSaC .content div:first-child {
@@ -40,10 +39,12 @@ export const StyledSubContent = styled.div`
   .content {
     font-size: 16px;
     div:first-child {
-      font-size: 18px;
       padding: 3px;
       margin: 2px;
       width: 100%;
+    }
+    .content-title {
+      font-size: 18px;
       color: ${({ theme }) => theme.pink};
       font-weight: 700;
     }
@@ -83,5 +84,3 @@ export const SourceLink = styled.a`
     border-bottom: 1px solid ${({ theme }) => theme.pink};
   }
 `;
-
-// export default Wrapper;
