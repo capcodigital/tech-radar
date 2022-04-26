@@ -23,13 +23,9 @@ exports[`Accordion should render Accordion component 1`] = `
         <span
           class="MuiTypography-root MuiTypography-body1 css-1m4ljmh-MuiTypography-root"
         >
-<<<<<<< HEAD
-          <div>
-=======
           <div
             class="content-title"
           >
->>>>>>> 23cc9bc (add accordion snapshot)
             Test
           </div>
         </span>
