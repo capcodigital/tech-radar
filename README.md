@@ -100,10 +100,6 @@ npm install
 - `npm test` - run unit tests
 - `npm run cypress` - run e2e ui tests
 
-### CI/CD
-
-Unit and E2E UI tests are automated via [GitHub Actions](https://github.com/capcodigital/tech-radar/actions).
-
 <!-- ROADMAP -->
 
 ## Roadmap
