@@ -7,10 +7,14 @@ type TechnologyLinkProps = {
 };
 
 const ProjectTechnologyLink: FC<TechnologyLinkProps> = ({ techName }) => {
-  let iconResult = icons.filter((icon: any) => icon.name === techName)[0];
+  let iconResult = icons.filter(
+    (icon: any) => icon.name.toLowerCase() === techName.toLowerCase()
+  )[0];
   let iconRef = iconResult ? iconResult.link : "";
   let result = technologies.filter((el: any) =>
-    el.technologies.includes(techName)
+    el.technologies.some((element: any) => {
+      return element.toLowerCase() === techName.toLowerCase();
+    })
   );
   let category = result[0] ? result[0].categoryName : "";
 
