@@ -74,7 +74,10 @@ const Radar: FC<Props> = ({
   return (
     <Wrapper>
       <svg viewBox={"0 0 900 900"} style={{ overflow: "visible" }}>
-        <g transform={`translate(${size / 2} ${size / 2})`}>
+        <g
+          transform={`translate(${size / 2} ${size / 2})`}
+          onMouseLeave={() => setHovered("")}
+        >
           {/* 3 main rings */}
           {scalingClicked === true ? (
             <circle
