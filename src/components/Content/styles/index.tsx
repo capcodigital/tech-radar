@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
   @media screen and (max-width: 1000px) {
     width: 100%;
   }
-  .css-1elwnq4-MuiPaper-root-MuiAccordion-root {
+  .MuiAccordion-root {
     background-color: transparent;
     border: #fff 2px solid;
     position: relative;
@@ -15,16 +15,11 @@ export const Wrapper = styled.div`
     box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 0%),
       0px 1px 1px 0px rgb(0 0 0 / 0%), 0px 1px 3px 0px rgb(0 0 0 / 0%);
   }
-  .css-i4bv87-MuiSvgIcon-root {
+  .MuiSvgIcon-root {
     color: #fff;
     float: right;
   }
-  .css-1m4ljmh-MuiTypography-root {
-    width: 100%;
-  }
-
-  .jJwSaC .content div:first-child {
-    padding: 20px;
+  .MuiTypography-root {
     width: 100%;
   }
 `;
