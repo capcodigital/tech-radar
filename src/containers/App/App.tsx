@@ -34,7 +34,7 @@ const App = () => {
               <Route path="/technology">
                 <ContentPage />
               </Route>
-              <Route path="/demo">
+              <Route path="/projects">
                 <ProjectPage />
               </Route>
             </PageWrapper>

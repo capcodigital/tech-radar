@@ -15,7 +15,7 @@ const ProjectPageLink: FC<LinkProps> = ({ onClick }) => {
     <>
       <StyledLink
         onClick={onClick}
-        to={`/demo/${category.replace(/\s/g, "-")}/${technology.replace(
+        to={`/projects/${category.replace(/\s/g, "-")}/${technology.replace(
           /\s/g,
           "-"
         )}`.toLowerCase()}
