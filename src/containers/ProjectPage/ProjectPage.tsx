@@ -4,7 +4,7 @@ import {
   RadarContext,
 } from "../../components/RadarContextProvider/RadarContextProvider";
 import ProjectItem from "../../components/ProjectItem/ProjectItem";
-import { data, icons } from "../../data/data";
+import { icons } from "../../data/data";
 import ClientProjects from "../../data/projects/ClientProjects";
 import { Container } from "@material-ui/core";
 import { BackButton } from "../../components/BackLink/BackLink";
