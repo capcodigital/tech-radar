@@ -289,7 +289,7 @@ const techContent = [
           {
             name: "",
             description:
-              "<div style='text-align: center;display: block;'><img width='20%'src='https://miro.medium.com/max/499/0*WpXBkrfgR2g9dw2T.png'/><img style='margin-left:10px;' width='10%' src='https://seeklogo.com/images/J/jest-logo-F9901EBBF7-seeklogo.com.png'/> </div>",
+              "<div style='text-align: center;display: block;'><img width='20%'src='https://miro.medium.com/max/499/0*WpXBkrfgR2g9dw2T.png'/><img style='margin-left:10px;' width='10%' src='https://images.opencollective.com/jest/d327d66/logo.png'/> </div>",
           },
         ],
       },
