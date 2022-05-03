@@ -14,11 +14,11 @@ const StyledContentNavButton = styled.div<StyledContentNavButtonProps>`
     opacity: 0.5;
   }
   a:nth-child(2) {
+    font: 59px bebas-neue-pro, sans-serif;
+    color: inherit;
     :hover {
       text-decoration: underline;
     }
-    font: 59px bebas-neue-pro, sans-serif;
-    color: inherit;
   }
   @media screen and (max-width: 1000px) {
     div:first-child {
@@ -31,7 +31,7 @@ const StyledContentNavButton = styled.div<StyledContentNavButtonProps>`
 `;
 
 type ContentNavButtonProps = {
-  onClick: MouseEventHandler<HTMLDivElement>;
+  onClick: MouseEventHandler<HTMLAnchorElement>;
   previousTechnology: string;
   nextTechnology: string;
   previousCategory: string;
@@ -50,12 +50,12 @@ const ContentNavButton: FC<ContentNavButtonProps> = ({
   return (
     <StyledContentNavButton
       align={next ? "right" : "left"}
-      onClick={onClick}
       data-test-id={next ? "Next" : "Previous"}
     >
       <div>{next ? "Next" : "Previous"}</div>
       {next ? (
         <Link
+          onClick={onClick}
           to={`/technology/${nextCategory.replace(
             /\s/g,
             "-"
@@ -65,6 +65,7 @@ const ContentNavButton: FC<ContentNavButtonProps> = ({
         </Link>
       ) : (
         <Link
+          onClick={onClick}
           to={`/technology/${previousCategory.replace(
             /\s/g,
             "-"
