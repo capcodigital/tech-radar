@@ -24,77 +24,59 @@ const ProjectPage = () => {
   const { technology, setTechnology } =
     useContext<RadarContextType>(RadarContext);
 
-  const [demoProjects, setDemoProjects] = useState<Project[]>([]);
+  const [clientProjects, setClientProjects] = useState<Project[]>([]);
   const [clientProjectCount, setClientProjectCount] = useState<number>(0);
   const [ossProjectCount, setOssProjectCount] = useState<number>(0);
-  const [isAvailable, setIsAvailable] = useState<boolean>(false);
   const [iconRef, setIconRef] = useState<string>("");
   const [ossProjects, setOssProjects] = useState<any>([]);
 
-  const fetchOssProject = async (technology: string) => {
+  const fetchOssProject = async (techName: string) => {
     const response = await Axios.get(
       "https://api.github.com/orgs/capcodigital/repos"
     );
     const data = await response.data;
-    const results = data.filter(({ topics }: any) =>
-      topics.includes(technology)
-    );
-    const picked = [] as any[];
+    const results = data.filter(({ topics }: any) => topics.includes(techName));
 
-    results.forEach((result: any, idx: number) => {
-      picked.push(
-        (({ name, description, html_url, topics }) => ({
-          name,
-          description,
-          html_url,
-          topics,
-        }))(result)
-      );
-      picked[idx]["project"] = picked[idx]["name"].replace("-", " ");
-      delete picked[idx]["name"];
-      picked[idx]["githubLink"] = picked[idx]["html_url"];
-      delete picked[idx]["html_url"];
-      picked[idx]["technologies"] = picked[idx]["topics"];
-      delete picked[idx]["topics"];
+    const picked =
+      results &&
+      results.map(({ name, topics, html_url, description }: any) => ({
+        project: name.replace("-", " "),
+        technologies: topics.flatMap((technology: any) =>
+          technology.replaceAll("-", " ")
+        ),
+        githubLink: html_url,
+        description: description,
+      }));
 
-      let refactoredTechnologies = picked[idx]["technologies"].flatMap(
-        (technology: any) => technology.replaceAll("-", " ")
-      );
-
-      picked[idx]["technologies"] = refactoredTechnologies;
-    });
     setOssProjects(picked);
     setOssProjectCount(results.length);
   };
 
-  useEffect(() => {
-    let demo: Project[] = [];
-    let url = window.location.pathname.split("/");
-
-    let count = 0;
+  const fetchClientProjects = (techName: string) => {
+    let results: Project[] = [];
     let iconResult = icons.filter(
-      (icon: any) => icon.name.toLowerCase() === url[3]
+      (icon: any) => icon.name.toLowerCase() === techName
     )[0];
     let ref = iconResult ? iconResult.link : "";
     setIconRef(ref);
 
-    demo = technology
+    results = technology
       ? ClientProjects.filter(({ technologies }) =>
           technologies.includes(technology)
         )
       : ClientProjects.filter(({ technologies }) =>
           technologies.some((element) => {
-            return element.toLowerCase() === url[3].toLowerCase();
+            return element.toLowerCase() === techName.toLowerCase();
           })
         );
 
-    if (demo.length) {
-      setIsAvailable(true);
-      count = demo.length;
-    }
+    setClientProjects(results);
+    setClientProjectCount(results.length);
+  };
+  useEffect(() => {
+    let url = window.location.pathname.split("/");
+    fetchClientProjects(url[3]);
     fetchOssProject(url[3]);
-    setDemoProjects(demo);
-    setClientProjectCount(Number(count));
   }, [technology, setTechnology]);
 
   return (
@@ -111,19 +93,13 @@ const ProjectPage = () => {
             ossProjectCount={ossProjectCount}
             clientProjectCount={clientProjectCount}
             panelOne={
-              isAvailable ? (
-                <ProjectItem data={demoProjects} />
+              clientProjectCount > 0 ? (
+                <ProjectItem data={clientProjects} />
               ) : (
-                <p>Content coming soon...</p>
+                <p>Projects not available</p>
               )
             }
-            panelTwo={
-              ossProjectCount > 0 ? (
-                <ProjectItem data={ossProjects} />
-              ) : (
-                <p>Content coming soon...</p>
-              )
-            }
+            panelTwo={ossProjectCount > 0 && <ProjectItem data={ossProjects} />}
           ></Tabs>
         </ContentBody>
       </Container>

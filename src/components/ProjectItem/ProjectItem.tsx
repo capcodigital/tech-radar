@@ -34,19 +34,17 @@ const ProjectItem: FC<ProjectItemProps> = ({ data }) => (
           data-test-id={`project-${index}`}
         >
           <div>
-            {
-              <div className="project-image-wrapper">
-                <img
-                  className="project-image"
-                  src={
-                    clientImage
-                      ? (images as any)[clientImage]
-                      : require("../../images/ClientProjects/CL2.png")
-                  }
-                  alt="computer screen"
-                />
-              </div>
-            }
+            <div className="project-image-wrapper">
+              <img
+                className="project-image"
+                src={
+                  clientImage
+                    ? (images as any)[clientImage]
+                    : require("../../images/ClientProjects/CL2.png")
+                }
+                alt="computer screen"
+              />
+            </div>
             <div className="row-wrapper">
               <div className="heading">{project}</div>
               {githubLink && (

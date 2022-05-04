@@ -40,7 +40,7 @@ const StyledWrapper = styled.div`
     color: white;
     font-size: 16px;
     line-height: 24px;
-    border-bottom: 1px solid #e6236d;
+    border-bottom: 2px solid #e6236d;
     padding-bottom: 4px;
     text-transform: capitalize;
   }
