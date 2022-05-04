@@ -90,7 +90,7 @@ exports[`ContentPage should render ContentPage component 1`] = `
         class="styles__Divider-sc-17b28va-4 dXhftT"
       />
       <div
-        class="ContentNavButton__StyledContentNavButton-sc-17243nr-0 iBCBoj"
+        class="ContentNavButton__StyledContentNavButton-sc-17243nr-0 ePA-dBL"
         data-test-id="Previous"
       >
         <div>
@@ -103,7 +103,7 @@ exports[`ContentPage should render ContentPage component 1`] = `
         </a>
       </div>
       <div
-        class="ContentNavButton__StyledContentNavButton-sc-17243nr-0 dIoxgc"
+        class="ContentNavButton__StyledContentNavButton-sc-17243nr-0 dqzYiQ"
         data-test-id="Next"
       >
         <div>
