@@ -12,6 +12,7 @@ import StyledGroup from "../RadarStyledComponents/StyledGroup";
 import { Wrapper, StyledNav } from "./styles/";
 import { RadarTooltip } from "../RadarStyledComponents/StyledTooltip";
 import { getRowLength } from "../../helpers/helpers";
+import techContent from "../../data/content/index";
 
 const labels = [
   "DevOps",
@@ -55,6 +56,13 @@ const Radar: FC<Props> = ({
     useContext<RadarContextType>(RadarContext);
   const [hovered, setHovered] = useState("DevOps");
 
+  const technologyHasNoContent = (technologyName: string) =>
+    techContent.find(
+      (item) =>
+        item.technology === technologyName &&
+        (item.content === undefined || item.content.length == 0)
+    );
+
   const handleClick = (categoryName: string) => {
     setCategory(categoryName);
     history.push(`/category/${categoryName.replace(/\s/g, "-")}`.toLowerCase());
@@ -63,6 +71,8 @@ const Radar: FC<Props> = ({
   const handleClickIcon = (categoryName: string, technologyName: string) => {
     setCategory(categoryName);
     setTechnology(technologyName);
+
+    if (technologyHasNoContent(technologyName)) return;
 
     history.push(
       `/technology/${categoryName}/${technologyName}`
