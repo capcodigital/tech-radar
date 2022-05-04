@@ -73,7 +73,7 @@ exports[`ContentPage should render ContentPage component 1`] = `
       </div>
       <a
         class="styles__StyledLink-sc-rz9yta-0 gshMkH"
-        href="/demo/devops/github"
+        href="/projects/devops/github"
       >
         View Projects
       </a>

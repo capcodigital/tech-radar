@@ -11,6 +11,9 @@ const StyledTabs = styled.div`
       color: #fff;
       font-weight: 700;
     }
+    &.Mui-disabled {
+      color: rgb(228, 228, 228, 0.45);
+    }
   }
   .MuiTabs-indicator {
     background-color: ${({ theme }) => theme.pink};
