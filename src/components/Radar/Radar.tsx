@@ -359,7 +359,12 @@ const Radar: FC<Props> = ({
                         placement="top"
                         arrow
                       >
-                        <g className={`techIcon-${dataPoint.name}`}>
+                        <g
+                          className={`techIcon-${dataPoint.name} ${
+                            technologyHasNoContent(dataPoint.name) &&
+                            "no-content"
+                          }`}
+                        >
                           {/* background circle for icons */}
                           <circle
                             key={`preferred-${dataPoint.name}-${idx}`}
