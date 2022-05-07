@@ -52,29 +52,29 @@ const ProjectPage = () => {
     setOssProjectCount(results.length);
   };
 
-  const fetchClientProjects = (techName: string) => {
-    let results: Project[] = [];
-    let iconResult = icons.filter(
-      (icon: any) => icon.name.toLowerCase() === techName
-    )[0];
-    let ref = iconResult ? iconResult.link : "";
-    setIconRef(ref);
-
-    results = technology
-      ? ClientProjects.filter(({ technologies }) =>
-          technologies.includes(technology)
-        )
-      : ClientProjects.filter(({ technologies }) =>
-          technologies.some((element) => {
-            return element.toLowerCase() === techName.toLowerCase();
-          })
-        );
-
-    setClientProjects(results);
-    setClientProjectCount(results.length);
-  };
   useEffect(() => {
     let url = window.location.pathname.split("/");
+    const fetchClientProjects = (techName: string) => {
+      let results: Project[] = [];
+      let iconResult = icons.filter(
+        (icon: any) => icon.name.toLowerCase() === techName
+      )[0];
+      let ref = iconResult ? iconResult.link : "";
+      setIconRef(ref);
+
+      results = technology
+        ? ClientProjects.filter(({ technologies }) =>
+            technologies.includes(technology)
+          )
+        : ClientProjects.filter(({ technologies }) =>
+            technologies.some((element) => {
+              return element.toLowerCase() === techName.toLowerCase();
+            })
+          );
+
+      setClientProjects(results);
+      setClientProjectCount(results.length);
+    };
     fetchClientProjects(url[3]);
     fetchOssProject(url[3]);
   }, [technology, setTechnology]);

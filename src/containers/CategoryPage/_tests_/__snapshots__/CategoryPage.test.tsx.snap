@@ -957,6 +957,9 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
   <div
     class="CategoryRadar__Wrapper-sc-45bajh-0 cDuyzK"
   >
+    <div>
+      hello test kayode
+    </div>
     <svg
       height="800"
       width="400"

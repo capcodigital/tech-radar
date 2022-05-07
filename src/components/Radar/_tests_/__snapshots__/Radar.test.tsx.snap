@@ -938,7 +938,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="Postgres"
@@ -962,7 +962,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="Neo4J"
@@ -986,7 +986,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="MongoDB"
@@ -1010,7 +1010,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="MySQL"
@@ -1034,7 +1034,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="Oracle"
@@ -1058,7 +1058,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="SQL Server"
@@ -1082,7 +1082,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="BigQuery"
@@ -1106,7 +1106,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="Snowflake"
@@ -1130,7 +1130,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="Liquibase"
@@ -1154,7 +1154,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="Selenium"
@@ -1178,7 +1178,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="Cucumber"
@@ -1202,7 +1202,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="Appium"
@@ -1226,7 +1226,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="REST Assured"
@@ -1250,7 +1250,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="BrowserStack"
@@ -1274,7 +1274,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="Sauce Labs"
@@ -1298,7 +1298,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="Wiremock"
@@ -1322,7 +1322,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="Applitools"
@@ -1346,7 +1346,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="JMeter"
@@ -1370,7 +1370,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="Axe"
@@ -1394,7 +1394,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="Cypress"
@@ -1418,7 +1418,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="Gatling"
@@ -1442,7 +1442,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="PACT"
@@ -1466,7 +1466,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="GCP"
@@ -1490,7 +1490,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="Kubernetes"
@@ -1514,7 +1514,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="Serverless"
@@ -1538,7 +1538,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="OpenShift"
@@ -1562,7 +1562,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="Grafana"
@@ -1586,7 +1586,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="AWS"
@@ -1610,7 +1610,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="Azure"
@@ -1634,7 +1634,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="PCF"
@@ -1658,7 +1658,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="Digital Ocean"
@@ -1682,7 +1682,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="PKS"
@@ -1706,7 +1706,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="Rest"
@@ -1730,7 +1730,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="Camel"
@@ -1754,7 +1754,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="gRPC"
@@ -1778,7 +1778,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="Kafka"
@@ -1802,7 +1802,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="ActiveMQ"
@@ -1826,7 +1826,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="IBM MQ"
@@ -1850,7 +1850,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="GraphQL"
@@ -1874,7 +1874,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="Java"
@@ -1898,7 +1898,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="Node"
@@ -1922,7 +1922,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="Go"
@@ -1946,7 +1946,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="Scala"
@@ -1970,7 +1970,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="Gradle"
@@ -1994,7 +1994,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="Python"
@@ -2018,7 +2018,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="Groovy"
@@ -2042,7 +2042,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="Kotlin"
@@ -2066,7 +2066,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="React"
@@ -2090,7 +2090,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="Angular"
@@ -2114,7 +2114,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="TypeScript"
@@ -2138,7 +2138,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="Flutter"
@@ -2162,7 +2162,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="Vue"
@@ -2186,7 +2186,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="React Native"
@@ -2210,7 +2210,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="Gradle Mobile"
@@ -2234,7 +2234,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="Swift"
@@ -2258,7 +2258,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="Kotlin"
@@ -2282,7 +2282,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="Java Mobile"
@@ -2306,7 +2306,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="Ionic"
@@ -2330,7 +2330,7 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <g
         class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="0.3"
+        opacity="1"
       >
         <g
           aria-label="Flutter"
