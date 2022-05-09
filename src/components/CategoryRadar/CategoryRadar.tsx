@@ -38,7 +38,6 @@ const createArc = d3.arc().padAngle(0);
 const CategoryRadar: FC<CategoryRadarType> = ({ data, setHovered }) => {
   return (
     <Wrapper>
-      <div>hello test kayode</div>
       <svg width={400} height={800}>
         <g transform={`translate(${width} ${height / 2})`}>
           {/* 3 main rings */}
