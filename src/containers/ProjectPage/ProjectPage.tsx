@@ -46,6 +46,7 @@ const ProjectPage = () => {
         ),
         githubLink: html_url,
         description: description,
+        projectRepoName: name,
       }));
 
     setOssProjects(picked);

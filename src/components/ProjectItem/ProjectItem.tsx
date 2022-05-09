@@ -12,6 +12,7 @@ type ProjectItemProps = {
     description: string;
     technologies: Array<string>;
     githubLink?: string;
+    projectRepoName?: string;
   }>;
 };
 
@@ -26,6 +27,7 @@ const ProjectItem: FC<ProjectItemProps> = ({ data }) => (
           description,
           technologies,
           githubLink,
+          projectRepoName,
         },
         index
       ) => (
@@ -40,7 +42,7 @@ const ProjectItem: FC<ProjectItemProps> = ({ data }) => (
                 src={
                   clientImage
                     ? (images as any)[clientImage]
-                    : require("../../images/ClientProjects/CL2.png")
+                    : `https://raw.githubusercontent.com/capcodigital/${projectRepoName}/master/images/project-snapshot.png`
                 }
                 alt="computer screen"
               />
