@@ -3,7 +3,7 @@ const techContent = [
     technology: "React",
     docsLink: "https://reactjs.org/",
     intro:
-      '<a href="https://reactjs.org">React</a> is the world’s most popular JavaScript library that uses components to change content of a single-page Mobile and Web application without refreshing.',
+      '<a href="https://reactjs.org">React</a> is the world’s most popular JavaScript library that uses components to change content of a single-pae Mobile and Web application without refreshing.',
     content: [
       {
         name: "State Management",

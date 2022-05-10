@@ -60,6 +60,7 @@ const CategoryPage = () => {
     let content = techContent.filter(
       ({ technology }) => technology === technologyFromUrl
     )[0];
+
     setContent(content);
     setImageLink(icon.link);
     setTechnology(technologyFromUrl);
