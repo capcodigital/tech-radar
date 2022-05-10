@@ -1,5 +1,13 @@
 import { technologyList } from "../data/data";
 
+export type Project = {
+  project: string;
+  clientName: string;
+  clientImage: string;
+  description: string;
+  technologies: Array<string>;
+};
+
 export const getNextItem = (currentItem: string) => {
   const currentIndex = technologyList.indexOf(currentItem);
   const nextIndex = (currentIndex + 1) % technologyList.length;
@@ -24,3 +32,13 @@ export const getRowLength = (dataNum: number, idx: number) => {
 export const capitalizeFirstCharacter = (string: string) => {
   return string.charAt(0).toUpperCase() + string.slice(1);
 };
+
+export const filterClientProjects = (
+  clientProjects: Project[],
+  techName: string
+) =>
+  clientProjects.filter(({ technologies }) =>
+    technologies.some(
+      (element) => element.toLowerCase() === techName.toLowerCase()
+    )
+  );

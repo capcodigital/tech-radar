@@ -21,18 +21,40 @@ import {
   Divider,
 } from "./styles/";
 import ContentNavButton from "../../components/ComponentNavButton/ContentNavButton";
-import { getNextItem, getPrevItem } from "../../helpers/helpers";
+import {
+  getNextItem,
+  getPrevItem,
+  filterClientProjects,
+} from "../../helpers/helpers";
 import ClientProjectLink from "../../components/ProjectPageLink/ProjectPageLink";
+import Axios from "axios";
+import ClientProjects from "../../data/projects/ClientProjects";
 
 const CategoryPage = () => {
   const { category, technology, setCategory, setTechnology } =
     useContext<RadarContextType>(RadarContext);
   const [content, setContent] = useState<TechContentType | null>(null);
   const [imageLink, setImageLink] = useState("");
+  const [ossProjectCount, setOssProjectCount] = useState<number>(0);
+  const [clientProjectCount, setClientProjectCount] = useState<number>(0);
 
   const handleClick = (categoryName: string, techName: string) => {
     setCategory(categoryName);
     setTechnology(techName);
+  };
+
+  const fetchOssProject = async (techName: string) => {
+    const response = await Axios.get(
+      "https://api.github.com/orgs/capcodigital/repos"
+    );
+    const data = await response.data;
+    const results = data.filter(({ topics }: any) => topics.includes(techName));
+    setOssProjectCount(results.length);
+  };
+
+  const getClientProjects = (techName: string) => {
+    const results = filterClientProjects(ClientProjects, techName);
+    setClientProjectCount(results.length);
   };
 
   useEffect(() => {
@@ -64,6 +86,8 @@ const CategoryPage = () => {
     setImageLink(icon.link);
     setTechnology(technologyFromUrl);
     setCategory(categoryFromUrl);
+    fetchOssProject(technologyFromUrl.toLowerCase());
+    getClientProjects(technologyFromUrl.toLowerCase());
 
     window.scroll({
       top: 0,
@@ -117,9 +141,11 @@ const CategoryPage = () => {
                 </svg>
               </a>
             </div>
-            <ClientProjectLink
-              onClick={() => handleClick(category, technology)}
-            />
+            {(ossProjectCount !== 0 || clientProjectCount !== 0) && (
+              <ClientProjectLink
+                onClick={() => handleClick(category, technology)}
+              />
+            )}
           </div>
           <ContentBody>
             <div
