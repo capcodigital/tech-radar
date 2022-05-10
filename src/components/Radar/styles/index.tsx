@@ -13,6 +13,14 @@ export const Wrapper = styled.div`
   @media screen and (max-width: 1000px) {
     display: none;
   }
+
+  g {
+    cursor: pointer;
+  }
+
+  g.no-content {
+    cursor: default;
+  }
 `;
 
 export const StyledNav = styled.g`
