@@ -9,7 +9,11 @@ const BreadcrumbComponent: FC<RouteComponentProps> = ({
   history,
   location: { pathname },
 }) => {
-  const pathnames = pathname.split("/").filter((x) => x);
+  const pathnames = pathname
+    .replaceAll("technology", "category")
+    .split("/")
+    .filter((x) => x);
+  console.log(pathnames);
 
   return (
     <Breadcrumbs
@@ -18,6 +22,7 @@ const BreadcrumbComponent: FC<RouteComponentProps> = ({
         margin: "25px 0 0 90px",
         color: "#fff",
         fontSize: "12px",
+        cursor: "pointer",
       }}
     >
       {pathnames.length > 0 ? (
@@ -26,7 +31,9 @@ const BreadcrumbComponent: FC<RouteComponentProps> = ({
             color="#fff"
             className="breadcrumb-nav"
             style={{ fontWeight: "bold" }}
-            onClick={() => history.push("/home")}
+            onClick={() => {
+              history.push("/home");
+            }}
           >
             TECH RADAR
           </Link>
@@ -39,17 +46,34 @@ const BreadcrumbComponent: FC<RouteComponentProps> = ({
         const isLast = index === pathnames.length;
         const Name = name.toUpperCase();
 
+        const HandleClick = () => {
+          if (
+            pathnames.indexOf(
+              "mobile" ||
+                "frontend" ||
+                "backend" ||
+                "integrtion" ||
+                "cloud-&-platforms" ||
+                "quality-engineering" ||
+                "databases" ||
+                "devops"
+            )
+          ) {
+            history.push(`/${pathnames.slice(0, index++).join("/")}`);
+            console.log(routeTo);
+          }
+        };
+
         return isLast ? (
-          <Typography key={index} style={{ color: "grey", fontSize: "12px" }}>
+          <Typography
+            key={index}
+            style={{ color: "grey", fontSize: "12px", cursor: "not-allowed" }}
+          >
             {Name}
           </Typography>
         ) : (
           <BreadcrumbStyles key={index}>
-            <Link
-              color="#fff"
-              className="breadcrumb-nav"
-              onClick={() => history.push(routeTo)}
-            >
+            <Link color="#fff" className="breadcrumb-nav" onClick={HandleClick}>
               {Name}
             </Link>
           </BreadcrumbStyles>
