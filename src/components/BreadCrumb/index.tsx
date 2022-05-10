@@ -13,7 +13,6 @@ const BreadcrumbComponent: FC<RouteComponentProps> = ({
     .replaceAll("technology", "category")
     .split("/")
     .filter((x) => x);
-  console.log(pathnames);
 
   return (
     <Breadcrumbs
