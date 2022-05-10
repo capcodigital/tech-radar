@@ -29,6 +29,7 @@ const ProjectPage = () => {
   const [ossProjectCount, setOssProjectCount] = useState<number>(0);
   const [iconRef, setIconRef] = useState<string>("");
   const [ossProjects, setOssProjects] = useState<any>([]);
+  const [projectImageUrl, setProjectImageUrl] = useState<any>([]);
 
   const fetchOssProject = async (techName: string) => {
     const response = await Axios.get(
@@ -46,9 +47,8 @@ const ProjectPage = () => {
         ),
         githubLink: html_url,
         description: description,
-        projectRepoName: name,
+        projectImageUrl: `https://raw.githubusercontent.com/capcodigital/${name}/master/images/logo.png`,
       }));
-
     setOssProjects(picked);
     setOssProjectCount(results.length);
   };

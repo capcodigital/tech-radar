@@ -13,8 +13,12 @@ type ProjectItemProps = {
     technologies: Array<string>;
     githubLink?: string;
     projectRepoName?: string;
+    projectImageUrl?: string;
   }>;
 };
+
+const defaultImage = (event: any) =>
+  (event.target.src = require("../../images/ClientProjects/CL2.png"));
 
 const ProjectItem: FC<ProjectItemProps> = ({ data }) => (
   <>
@@ -28,6 +32,7 @@ const ProjectItem: FC<ProjectItemProps> = ({ data }) => (
           technologies,
           githubLink,
           projectRepoName,
+          projectImageUrl,
         },
         index
       ) => (
@@ -37,15 +42,16 @@ const ProjectItem: FC<ProjectItemProps> = ({ data }) => (
         >
           <div>
             <div className="project-image-wrapper">
-              <img
-                className="project-image"
-                src={
-                  clientImage
-                    ? (images as any)[clientImage]
-                    : `https://raw.githubusercontent.com/capcodigital/${projectRepoName}/master/images/project-snapshot.png`
-                }
-                alt="computer screen"
-              />
+              {
+                <img
+                  className="project-image"
+                  src={
+                    clientImage ? (images as any)[clientImage] : projectImageUrl
+                  }
+                  onError={defaultImage}
+                  alt="computer screen"
+                />
+              }
             </div>
             <div className="row-wrapper">
               <div className="heading">{project}</div>
