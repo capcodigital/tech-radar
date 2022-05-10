@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import ProjectTechnologyLink from "../ProjectPageLink/ProjectTechnologyLink";
 import images from "../../images/ClientProjects";
 import StyledWrapper from "./styles";
+import externallink from "../../images/externallink.svg";
 
 type ProjectItemProps = {
   data: Array<{
@@ -48,7 +49,8 @@ const ProjectItem: FC<ProjectItemProps> = ({ data }) => (
               <div className="heading">{project}</div>
               {githubLink && (
                 <a href={githubLink} className="link">
-                  GitHub Repo
+                  GitHub Repo{" "}
+                  <img src={externallink} alt="" height={20} width={20} />
                 </a>
               )}
               {clientName ? (

@@ -98,7 +98,7 @@ npm install
 
 - `npm start` - start the react app
 - `npm test` - run unit tests
-- `npm run cypress` - run e2e ui tests
+- `npm run cucumberTest` - run e2e ui tests
 
 <!-- ROADMAP -->
 
@@ -124,6 +124,10 @@ If you would like to contribute to any Capco Digital OSS projects please read:
 - [Contributing Guidelines](https://github.com/capcodigital/.github/blob/master/CONTRIBUTING.md)
 
 <!-- LICENSE -->
+
+## Setup pre-commit automation test execution
+
+https://ilabs-capco.atlassian.net/wiki/spaces/BPG/pages/3085402129/Testing+in+Tech+Radar#Setting-up-tests-to-run-with-Pre-Commit%5BhardBreak%5D
 
 ## License
 
