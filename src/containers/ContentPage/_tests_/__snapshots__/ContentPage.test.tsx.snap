@@ -71,6 +71,12 @@ exports[`ContentPage should render ContentPage component 1`] = `
           </svg>
         </a>
       </div>
+      <a
+        class="styles__StyledLink-sc-rz9yta-0 gshMkH"
+        href="/projects/devops/github"
+      >
+        View Projects
+      </a>
     </div>
     <div
       class="styles__ContentBody-sc-17b28va-2 lmMEmR"
@@ -84,7 +90,7 @@ exports[`ContentPage should render ContentPage component 1`] = `
         class="styles__Divider-sc-17b28va-4 dXhftT"
       />
       <div
-        class="ContentNavButton__StyledContentNavButton-sc-17243nr-0 kujLCr"
+        class="ContentNavButton__StyledContentNavButton-sc-17243nr-0 ePA-dBL"
         data-test-id="Previous"
       >
         <div>
@@ -97,7 +103,7 @@ exports[`ContentPage should render ContentPage component 1`] = `
         </a>
       </div>
       <div
-        class="ContentNavButton__StyledContentNavButton-sc-17243nr-0 kxcIRo"
+        class="ContentNavButton__StyledContentNavButton-sc-17243nr-0 dqzYiQ"
         data-test-id="Next"
       >
         <div>

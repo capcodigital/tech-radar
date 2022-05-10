@@ -1,8 +1,4 @@
-import {
-  getRowLength,
-  capitalizeFirstCharacter,
-  filterClientProjects,
-} from "../helpers";
+import { getRowLength, capitalizeFirstCharacter } from "../helpers";
 
 describe("helpers functions", () => {
   it("should get row length for less than 3 items and check that the result is the number of items", () => {
@@ -35,34 +31,5 @@ describe("capitalizeFirstCharacter", () => {
       "<a href='https://redux.js.org/'>Redux</a> is like a cat in a box";
     const result = capitalizeFirstCharacter(string);
     expect(result).toBe(string);
-  });
-});
-
-describe("filterClientProjects", () => {
-  const mockClientProjects = [
-    {
-      project: "GLOBAL DevOpS Acceleration",
-      clientName: "Global Tier 1 Private Bank",
-      clientImage: "CL1",
-      description: "Capco...",
-      technologies: ["Go", "Docker", "AWS", "Kubernetes", "Datadog"],
-    },
-    {
-      project: "Agency Bank Payment APIs",
-      clientName: "UK Tier 1 Corporate Bank",
-      clientImage: "CL2",
-      description: "Capco...",
-      technologies: ["Angular", "React"],
-    },
-  ];
-
-  it("should return client project object if techName is found", () => {
-    const result = filterClientProjects(mockClientProjects, "Go");
-    expect(result).toStrictEqual([mockClientProjects[0]]);
-  });
-
-  it("should not return client project object if techName is not found", () => {
-    const result = filterClientProjects(mockClientProjects, "Terraform");
-    expect(result).toStrictEqual([]);
   });
 });
