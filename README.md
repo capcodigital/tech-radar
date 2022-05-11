@@ -70,7 +70,7 @@ A visual guide to provide a view of the current technology coverage of Capco Dig
 | Description                                                                | Link                                                  |
 | :------------------------------------------------------------------------- | :---------------------------------------------------- |
 | React - JavaScript library for building user interfaces                    | [React](https://github.com/facebook/create-react-app) |
-| Cypress - JavaScript E2E Testing Framework                                 | [Cypress](https://www.cypress.io/)                    |
+| PlayWright - JavaScript E2E Testing Framework                              | [PlayWright](https://playwright.dev/)                 |
 | React Testing Library - light-weight solution for testing React components | [React Testing Library](https://www.cypress.io/)      |
 | Library that utilises tagged template literals to style React components   | [Styled Components](https://styled-components.com/)   |
 
