@@ -126,7 +126,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Oracle",
           link: "https://img.icons8.com/color/452/oracle-logo.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "SQL Server",
@@ -268,7 +268,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Azure",
           link: "https://img.icons8.com/color/452/azure-1.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "PCF",
@@ -429,7 +429,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "React Native",
           link: "https://img.icons8.com/color/452/react-native.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "Gradle Mobile",

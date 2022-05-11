@@ -1,3 +1,4 @@
+import AzureMap from "../../images/Azuremap.png";
 const techContent = [
   {
     technology: "Kubernetes",
@@ -101,8 +102,55 @@ const techContent = [
   {
     technology: "Azure",
     docsLink: "https://docs.microsoft.com/en-us/azure/?product=featured",
-    intro: "Content coming soon.",
-    content: [],
+    intro:
+      "Azure is Microsoft’s cloud computing platform offering many products and services across compute, storage, and networking. Azure provides customers the ability to host their applications and data through Infrastructure as a Service (IaaS), Platform as a Service (PaaS) and Software as a Service (SaaS) models. <br/><br/>Azure was officially released at the Microsoft Professional Developers Conference in 2008. In the last five years Azure has seen considerable growth leading it to be the 2nd largest cloud provider. ",
+    content: [
+      {
+        name: "Global footprint ",
+        intro: `<img width='100%' src=${AzureMap} /><br/><br/>Azure has a global footprint that comprises of: <br/><br/><ul><li>Regional data centres across global geographies </li><li>Points of presence and edge locations</li></ul> <br/><br/>Azure data centres can be found in geographies across the globe. As of writing there are more than 30 distinct geographies available, and others coming online. Within each geography there are regional data centres connected to one another through low latency network links. For example, within the UK geography there are two regional data centres called UK South and UK West. `,
+        data: [],
+      },
+      {
+        name: "Redundancy ",
+        intro:
+          "Azure data centres are physical facilities designed to meet specific requirements of resiliency, redundancy as well as conforming to regional data residency requirements within a specified geography. <br/><br/>Key to this is the concept of Availability zones. Availability zones are distinct separate facilities within a region. <br/><br/>Azure regions that support availability zones enable replication of applications and data to protect against single points of failure. <img width='100%' src='https://petri-media.s3.amazonaws.com/2020/09/Figure1.jpg' /> ",
+        data: [],
+      },
+      {
+        name: "Availability Zones ",
+        intro:
+          "Availability zones allow the design of high availability and redundancy in your applictations. By not leveraging this feature your applications and data are at risk of single points of failure during an outage.",
+        data: [],
+      },
+      {
+        name: "Consumption models ",
+        intro:
+          "Cloud computing considerably changes the way businesses view IT operational costs. Traditional IT and on-premises data centres concentrated on upfront capital expenditure to invest in hardware and software to support the business yearly budgetary cycles. However, with cloud computing there is a considerable shift towards pay as you go consumption models. <br/><br/> The term “utility” or “elastic computing” is often used to describe public cloud usage. Your consumption shifts based on the demand for your application and services. The ability to metre your usage allows customers to experiment and do proof of concepts with temporary environments. ",
+        data: [],
+      },
+      {
+        name: "Services",
+        intro:
+          "Azure offers a wide range service split across computer, storage, and networking. Some of the most popular services in demand in 2021 include: ",
+        data: [
+          {
+            name: "Azure SQL Database ",
+            description:
+              "A fully managed PaaS service. Azure SQL Database allows developers to build born in the cloud applications without managing the associated infrastructure of on-premises SQL Server ",
+          },
+          {
+            name: "Azure Kubernetes Service ",
+            description:
+              "A managed Kubernetes offering hosted in Azure. Concentrate on developing your cloud native applications hosted in containers. Removes significant management headache in building, maintaining your Kubernetes cluster. ",
+          },
+          {
+            name: "Azure Virtual desktop ",
+            description:
+              "With the shift towards hybrid ways of working, organizations can leverage Virtual Desktop Infrastructure hosted in Azure to securely deliver VDI solutions to end users. <br/><br/> The above examples are a small snapshot of the services and use cases that Azure offers.  ",
+          },
+        ],
+      },
+    ],
     examples: [],
     reference: [],
   },
