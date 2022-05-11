@@ -160,7 +160,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Selenium",
           link: "https://static-00.iconduck.com/assets.00/selenium-icon-512x496-obrnvg2v.png",
-          enabled: true,
+          enabled: false,
         },
         {
           name: "Cucumber",
@@ -412,7 +412,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Flutter",
           link: "https://img.icons8.com/color/452/flutter.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "Vue",
