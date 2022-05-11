@@ -1038,7 +1038,7 @@ exports[`Radar should render Radar component 1`] = `
       >
         <g
           aria-label="Oracle"
-          class="techIcon-Oracle no-content"
+          class="techIcon-Oracle undefined"
           title="Oracle"
         >
           <circle
@@ -1614,7 +1614,7 @@ exports[`Radar should render Radar component 1`] = `
       >
         <g
           aria-label="Azure"
-          class="techIcon-Azure no-content"
+          class="techIcon-Azure undefined"
           title="Azure"
         >
           <circle
@@ -2190,7 +2190,7 @@ exports[`Radar should render Radar component 1`] = `
       >
         <g
           aria-label="React Native"
-          class="techIcon-React Native no-content"
+          class="techIcon-React Native undefined"
           title="React Native"
         >
           <circle

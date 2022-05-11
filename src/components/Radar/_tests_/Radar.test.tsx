@@ -55,7 +55,7 @@ describe("Radar", () => {
       }
     });
     expect(window.location.href).toBe(
-      "http://localhost/technology/frontend/react"
+      "http://localhost/technology/mobile/react-native"
     );
   });
 
