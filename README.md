@@ -54,8 +54,6 @@
 
 ## About The Project
 
-[![Unit and E2E Tests](https://github.com/capcodigital/tech-radar/actions/workflows/main.yml/badge.svg)](https://github.com/capcodigital/tech-radar/actions/workflows/main.yml)
-
 ![Tech Radar](./demo.gif)
 
 A visual guide to provide a view of the current technology coverage of Capco Digital Engineering.
