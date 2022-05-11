@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC, useEffect } from "react";
 import { withRouter, RouteComponentProps } from "react-router-dom";
 import Typography from "@mui/material/Typography";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
@@ -47,11 +47,11 @@ const BreadcrumbComponent: FC<RouteComponentProps> = ({
 
         const HandleClick = () => {
           if (
-            pathnames.indexOf(
+            routeTo.indexOf(
               "mobile" ||
                 "frontend" ||
                 "backend" ||
-                "integrtion" ||
+                "integration" ||
                 "cloud-&-platforms" ||
                 "quality-engineering" ||
                 "databases" ||
@@ -59,10 +59,8 @@ const BreadcrumbComponent: FC<RouteComponentProps> = ({
             )
           ) {
             history.push(`/${pathnames.slice(0, index++).join("/")}`);
-            console.log(routeTo);
           }
         };
-
         return isLast ? (
           <Typography
             key={index}
