@@ -47,7 +47,7 @@ const ProjectPage = () => {
         ),
         githubLink: html_url,
         description: description,
-        projectImageUrl: `https://raw.githubusercontent.com/capcodigital/${name}/master/images/logo.png`,
+        projectImageUrl: `https://raw.githubusercontent.com/capcodigital/${name}/master/images/project-snapshot.png`,
       }));
     setOssProjects(picked);
     setOssProjectCount(results.length);
