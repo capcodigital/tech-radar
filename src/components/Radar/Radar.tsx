@@ -60,7 +60,7 @@ const Radar: FC<Props> = ({
     techContent.find(
       (item) =>
         item.technology === technologyName &&
-        (item.content === undefined || item.content.length == 0)
+        (item.content === undefined || item.content.length === 0)
     );
 
   const handleClick = (categoryName: string) => {
@@ -89,7 +89,7 @@ const Radar: FC<Props> = ({
           onMouseLeave={() => setHovered("")}
         >
           {/* 3 main rings */}
-          {scalingClicked === true ? (
+          {scalingClicked ? (
             <circle
               cx={0}
               cy={0}
@@ -106,7 +106,7 @@ const Radar: FC<Props> = ({
               opacity={0.05}
             />
           )}
-          {skilledClicked === true ? (
+          {skilledClicked ? (
             <>
               <circle
                 cx={0}
@@ -132,7 +132,7 @@ const Radar: FC<Props> = ({
               opacity={0.03}
             />
           )}
-          {preferredClicked === true ? (
+          {preferredClicked ? (
             <>
               <circle
                 cx={0}
@@ -348,7 +348,14 @@ const Radar: FC<Props> = ({
                   return (
                     <StyledGroup
                       key={`preferred-${idx}`}
-                      opacity={hovered === segment.name ? 1 : 0.3}
+                      opacity={
+                        hovered === segment.name ||
+                        scalingClicked ||
+                        skilledClicked ||
+                        preferredClicked
+                          ? 1
+                          : 0.3
+                      }
                       onClick={() =>
                         handleClickIcon(segment.name, dataPoint.name)
                       }

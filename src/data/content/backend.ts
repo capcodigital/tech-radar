@@ -131,7 +131,7 @@ const techContent = [
               "A partial function is a function applicable to a subset of the data it has been defined for.",
           },
           {
-            name: "Pattern matching",
+            name: "Pattern Matching",
             description:
               "Pattern matching is the act of checking a given sequence of tokens for the presence of the constituents of some pattern.",
           },
