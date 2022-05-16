@@ -149,7 +149,7 @@ const techContent = [
               "MySQL supports many embedded applications, which makes MySQL very flexible.",
           },
           {
-            name: "Compatible across platforms",
+            name: "Compatible Across Platforms",
             description:
               "MySQL is compatible to run on many operating systems, like Novell NetWare, Windows* Linux*, many varieties of UNIX* (such as Sun* Solaris*, AIX, and DEC* UNIX), OS/2, FreeBSD*, and others. ",
           },
@@ -203,12 +203,12 @@ const techContent = [
           "Schema is a collection of tables with rows and columns, and a separate query can be written for the schemas like databases. They define size, type, a grouping of information. The schemas have database objects like views, tables, and privileges, which include data types, functions, and operators. <br/><br/>MySQL inspects with default schemas which are information schema, performance schema, and sys: ",
         data: [
           {
-            name: "Information schemas",
+            name: "Information Schemas",
             description:
               "They provide access to metadata, stores information about other databases. The tables here are stored in the memory storage engine. ",
           },
           {
-            name: "Performance MySQL schema",
+            name: "Performance MySQL Schema",
             description:
               "They acts as a storage engine that operates on a table under a schema database. Performance schema collects exact data in the MySQL database server. The configuration is done by three major roles namely actors, instruments and allows collecting statistical data. ",
           },

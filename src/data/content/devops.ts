@@ -81,7 +81,7 @@ const techContent = [
               "A Majority of the major build tools are supported by SonarQube, so you don’t need to change your existing setup to introduce SonarQube. ",
           },
           {
-            name: "Deploy with confidence",
+            name: "Deploy with Confidence",
             description:
               "Having configured the Quality Gates within your CI & Version Control System, you can rest assured of the quality of the code before it reaches to your customers. This automation is very effective than compared to traditional manual human code review. With SonarQube, those code reviews may now focus more on the functional aspect of the code. ",
           },
