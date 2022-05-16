@@ -149,7 +149,7 @@ const techContent = [
               "MySQL supports many embedded applications, which makes MySQL very flexible.",
           },
           {
-            name: "Compatible across platforms",
+            name: "Compatible Across Platforms",
             description:
               "MySQL is compatible to run on many operating systems, like Novell NetWare, Windows* Linux*, many varieties of UNIX* (such as Sun* Solaris*, AIX, and DEC* UNIX), OS/2, FreeBSD*, and others. ",
           },
@@ -203,12 +203,12 @@ const techContent = [
           "Schema is a collection of tables with rows and columns, and a separate query can be written for the schemas like databases. They define size, type, a grouping of information. The schemas have database objects like views, tables, and privileges, which include data types, functions, and operators. <br/><br/>MySQL inspects with default schemas which are information schema, performance schema, and sys: ",
         data: [
           {
-            name: "Information schemas",
+            name: "Information Schemas",
             description:
               "They provide access to metadata, stores information about other databases. The tables here are stored in the memory storage engine. ",
           },
           {
-            name: "Performance MySQL schema",
+            name: "Performance MySQL Schema",
             description:
               "They acts as a storage engine that operates on a table under a schema database. Performance schema collects exact data in the MySQL database server. The configuration is done by three major roles namely actors, instruments and allows collecting statistical data. ",
           },
@@ -269,8 +269,57 @@ const techContent = [
   {
     technology: "Oracle",
     docsLink: "https://docs.oracle.com/en/",
-    intro: "Content coming soon.",
-    content: [],
+    intro:
+      "Oracle is the world's first commercially available Relational Database Management System. <br/><br/>In 1977, Larry Ellison, Bob Miner, and Ed Oates started the consultancy Software Development Laboratories, which became Relational Software, Inc. (RSI). In 1983, RSI became Oracle Systems Corporation and then later Oracle Corporation.  ",
+    content: [
+      {
+        name: "What is RDBMS? ",
+        intro:
+          "An RDBMS moves data into a database, stores the data, and retrieves it so that applications can manipulate it.",
+        data: [],
+      },
+      {
+        name: "Basic Concepts of an Oracle RDBMS",
+        intro: "",
+        data: [],
+      },
+      {
+        name: "How Data is Stored? ",
+        intro:
+          "Schema objects are user-created structures that directly refer to the data in the database. The database supports many types of schema objects, the most important of which are tables. ",
+        data: [],
+      },
+      {
+        name: "Tables ",
+        intro:
+          "A table is the basic unit of data organization in an Oracle database. <br/><br/> A table describes an entity, which is something of significance about which information must be recorded. For example, an employee could be an entity. <br/><br/> A table definition includes a table name and set of columns. <br/><br/> A column identifies an attribute of the entity described by the table. For example, the column employee_id in the employees table refers to the employee ID attribute of an employee entity. <br/><br/> In general, each column has a name and a data type, which is associated with a specific storage format, constraints, and valid range of values. The data type of a value associates a fixed set of properties with the value. For example, the data type for employee_id is NUMBER(6), indicating that this column can only contain numeric data up to 6 digits in width. The width can be predetermined by the data type, as with DATE. <br/><br/> A row is a collection of column information corresponding to a record in a table. For example, a row in the employees table describes the attributes of a specific employee: employee ID, last name, first name, and so on. After you create a table, you can insert, query, delete, and update rows using SQL or PL/SQL. ",
+        data: [],
+      },
+      {
+        name: "How Data is Manipulated?",
+        intro:
+          "In Oracle Databases, data can be manipulated using SQL or PL/SQL.",
+        data: [],
+      },
+      {
+        name: "Structured Query Language (SQL)",
+        intro:
+          "SQL is a set-based declarative language that provides an interface to an RDBMS such as Oracle Database.<br/><br/> Procedural languages such as C describe how things should be done. SQL is nonprocedural and describes what should be done. <br/><br/> SQL is the ANSI standard language for relational databases. All operations on the data in an Oracle database are performed using SQL statements. For example, you use SQL to create tables and query and modify data in tables. <br/><br/> SQL statements enable you to perform the following tasks: <ul><li>Query data</li><li>Insert, update, and delete rows in a table </li><li>Create, replace, alter, and drop objects </li><li>Control access to the database and its objects </li><li> Guarantee database consistency and integrity </li><li>SQL unifies the preceding tasks in one consistent language. Oracle SQL is an implementation of the ANSI standard. Oracle SQL supports numerous features that extend beyond standard SQL.</li></ul>",
+        data: [],
+      },
+      {
+        name: "PL/SQL ",
+        intro:
+          "PL/SQL is a procedural extension to Oracle SQL. <br/><br/> PL/SQL is integrated with Oracle Database, enabling you to use all of the Oracle Database SQL statements, functions, and data types. You can use PL/SQL to control the flow of a SQL program, use variables, and write error-handling procedures. <br/><br/> A primary benefit of PL/SQL is the ability to store application logic in the database itself. A PL/SQL procedure or function is a schema object that consists of a set of SQL statements and other PL/SQL constructs, grouped together, stored in the database, and run as a unit to solve a specific problem or to perform a set of related tasks. <br/><br/> The principal benefit of server-side programming is that built-in functionality can be deployed anywhere. Oracle Database can also store program units written in Java. A Java stored procedure is a Java method published to SQL and stored in the database for general use. You can call existing PL/SQL programs from Java and Java programs from PL/SQL.",
+        data: [],
+      },
+      {
+        name: "Tools",
+        intro:
+          "In order to run SQL and PL/SQL we have various available tools: <br/><br/>Oracle SQL Developer <ul><li>Pricing: Free </li><li>Vendor: Oracle </li><li>Targets: Development and Testing </li></ul> Toad for Oracle <ul><li>Pricing: License </li><li>Vendor: Quest Software </li><li>Targets: Development and Testing </li></ul>Data Grip <ul><li>Pricing: License </li><li>Vendor: JetBrains </li><li>Targets: Development and Testing </li></ul> utPLSQL <ul><li>Pricing: Free </li><li>Vendor: utPLSQL Project </li><li>Targets: Testing </li></ul>",
+        data: [],
+      },
+    ],
     examples: [],
     reference: [],
   },

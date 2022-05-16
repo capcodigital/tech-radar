@@ -1,3 +1,4 @@
+import AzureMap from "../../images/Azuremap.png";
 const techContent = [
   {
     technology: "Kubernetes",
@@ -54,7 +55,7 @@ const techContent = [
       "In 2006, Amazon Web Services (AWS) began offering IT infrastructure services to businesses in the form of web services - now commonly known as cloud computing. One of the key benefits of cloud computing is the opportunity to replace up-front capital infrastructure expenses with low variable costs that scale with your business. With the Cloud, businesses no longer need to plan for and procure servers and other IT infrastructure weeks or months in advance. Instead, they can instantly spin up hundreds or thousands of servers in minutes and deliver results faster. <br/><br/>Today, Amazon Web Services provides a highly reliable, scalable, low-cost infrastructure platform in the cloud that powers hundreds of thousands of businesses in 190 countries around the world. ",
     content: [
       {
-        name: "Global footprint and Redundancy ",
+        name: "Global Footprint and Redundancy ",
         intro:
           "The AWS Global Cloud Infrastructure is the most secure, extensive, and reliable cloud platform, offering over 200 fully featured services from data centers globally. Whether you need to deploy your application workloads across the globe in a single click, or you want to build and deploy specific applications closer to your end-users with single-digit millisecond latency, AWS provides you the cloud infrastructure where and when you need it. <img width='100%' src='https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2020/03/17/aws_regions-1.png'/>AWS data centres are physical facilities designed to meet specific requirements of resiliency, redundancy as well as conform to regional data residency requirements within a specified geography. Key to this is the concept of Availability zones. <br/> <br/>Availability zones are distinct separate facilities within a region. AWS availability zones enable replication of applications and data to protect against single points of failure. This allows the design of high availability and redundancy in your applications. <br/><br/>Today the AWS Cloud spans 81 Availability Zones within 25 geographic regions around the world, with announced plans for 21 more Availability Zones and 7 more AWS Regions in Australia, India, Indonesia, Israel, Spain, Switzerland, and United Arab Emirates (UAE). <img width='100%' src='https://digitalcloud.training/wp-content/uploads/2021/04/aws-global-infrastructure.png'/>With millions of active customers and tens of thousands of partners globally, AWS has the largest and most dynamic ecosystem. Customers across virtually every industry and of every size, including start-ups, enterprises, and public sector organizations, are running every imaginable use case on AWS.  ",
         data: [],
@@ -101,8 +102,55 @@ const techContent = [
   {
     technology: "Azure",
     docsLink: "https://docs.microsoft.com/en-us/azure/?product=featured",
-    intro: "Content coming soon.",
-    content: [],
+    intro:
+      "Azure is Microsoft’s cloud computing platform offering many products and services across compute, storage, and networking. Azure provides customers the ability to host their applications and data through Infrastructure as a Service (IaaS), Platform as a Service (PaaS) and Software as a Service (SaaS) models. <br/><br/>Azure was officially released at the Microsoft Professional Developers Conference in 2008. In the last five years Azure has seen considerable growth leading it to be the 2nd largest cloud provider. ",
+    content: [
+      {
+        name: "Global Footprint ",
+        intro: `<img width='100%' src=${AzureMap} /><br/><br/>Azure has a global footprint that comprises of: <br/><br/><ul><li>Regional data centres across global geographies </li><li>Points of presence and edge locations</li></ul> <br/><br/>Azure data centres can be found in geographies across the globe. As of writing there are more than 30 distinct geographies available, and others coming online. Within each geography there are regional data centres connected to one another through low latency network links. For example, within the UK geography there are two regional data centres called UK South and UK West. `,
+        data: [],
+      },
+      {
+        name: "Redundancy ",
+        intro:
+          "Azure data centres are physical facilities designed to meet specific requirements of resiliency, redundancy as well as conforming to regional data residency requirements within a specified geography. <br/><br/>Key to this is the concept of Availability zones. Availability zones are distinct separate facilities within a region. <br/><br/>Azure regions that support availability zones enable replication of applications and data to protect against single points of failure. <img width='100%' src='https://petri-media.s3.amazonaws.com/2020/09/Figure1.jpg' /> ",
+        data: [],
+      },
+      {
+        name: "Availability Zones ",
+        intro:
+          "Availability zones allow the design of high availability and redundancy in your applictations. By not leveraging this feature your applications and data are at risk of single points of failure during an outage.",
+        data: [],
+      },
+      {
+        name: "Consumption Models ",
+        intro:
+          "Cloud computing considerably changes the way businesses view IT operational costs. Traditional IT and on-premises data centres concentrated on upfront capital expenditure to invest in hardware and software to support the business yearly budgetary cycles. However, with cloud computing there is a considerable shift towards pay as you go consumption models. <br/><br/> The term “utility” or “elastic computing” is often used to describe public cloud usage. Your consumption shifts based on the demand for your application and services. The ability to metre your usage allows customers to experiment and do proof of concepts with temporary environments. ",
+        data: [],
+      },
+      {
+        name: "Services",
+        intro:
+          "Azure offers a wide range service split across computer, storage, and networking. Some of the most popular services in demand in 2021 include: ",
+        data: [
+          {
+            name: "Azure SQL Database ",
+            description:
+              "A fully managed PaaS service. Azure SQL Database allows developers to build born in the cloud applications without managing the associated infrastructure of on-premises SQL Server ",
+          },
+          {
+            name: "Azure Kubernetes Service ",
+            description:
+              "A managed Kubernetes offering hosted in Azure. Concentrate on developing your cloud native applications hosted in containers. Removes significant management headache in building, maintaining your Kubernetes cluster. ",
+          },
+          {
+            name: "Azure Virtual Desktop ",
+            description:
+              "With the shift towards hybrid ways of working, organizations can leverage Virtual Desktop Infrastructure hosted in Azure to securely deliver VDI solutions to end users. <br/><br/> The above examples are a small snapshot of the services and use cases that Azure offers.  ",
+          },
+        ],
+      },
+    ],
     examples: [],
     reference: [],
   },

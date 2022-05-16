@@ -1,11 +1,101 @@
+import NativeDevelopment from "../../images/NativeDevelopment.png";
 const techContent = [
   {
     technology: "React Native",
     docsLink: "https://reactnative.dev/docs/getting-started",
-    intro: "Content coming soon.",
-    content: [],
+    intro:
+      "React Native was created in 2015 by Facebook and runs on React, the framework is a popular open-source library for building user interfaces with JavaScript. This framework is UI focused and helps to create real and exciting mobile apps, which is supportable for both android and iOS platforms, making it currently the most popular cross platform technology. ",
+    content: [
+      {
+        name: "Features",
+        intro:
+          "The biggest feature and benefit is the short development time. Developers only need to write one set of code in JavaScript which provides an opportunity to share the codebase not only between mobile platforms but also React web applications. React Native also supports platforms such as android TV, macOS, tvOS, Web, Windows and UWP. <br/><br/> Other features and benefits include:",
+        data: [
+          {
+            name: "Community Support",
+            description:
+              "as this is an open-source framework, developers have loads of resources at their disposal and a huge community to get information from.",
+          },
+          {
+            name: "Code Reusability ",
+            description:
+              "React Native offers pre-developed components and re-usable native code, which saves time and money when build projects. ",
+          },
+          {
+            name: "Cost Effective",
+            description:
+              "based on the re-useability of code and the fact that React Native supports iOS and android, less people and time is needed to build and deploy apps. ",
+          },
+          {
+            name: "Live Reloading",
+            description:
+              "React Native allows you to make changes in the code and see the result live on the app screen",
+          },
+          {
+            name: "Simplified UI",
+            description:
+              "The aim of React Native is to provide a simplified and uncomplicated user interface through high-speed responsiveness. ",
+          },
+        ],
+      },
+      {
+        name: "",
+        intro: `<img width='100%' src=${NativeDevelopment} /> `,
+        data: [],
+      },
+      {
+        name: "Pre-developed Components",
+        intro: "",
+        data: [
+          {
+            name: "Basic Components",
+            description:
+              "including view layouts, a component for displaying text and one for showing images. The basic components also include Text Input, Scroll View, and Stylesheet.",
+          },
+          {
+            name: "User Interface",
+            description:
+              "React Native’s user interface controls will render on any platform.",
+          },
+          {
+            name: "List Views",
+            description:
+              "unlike Scroll View, list view components only render elements currently",
+          },
+          {
+            name: "Android Components and APIs",
+            description:
+              "including Back Handler, Drawer Layout Android, Toast Android, and Permissions Android.",
+          },
+        ],
+      },
+      {
+        name: "Considerations ",
+        intro: "",
+        data: [
+          {
+            name: "Continuous Improvements",
+            description:
+              "the framework is evolving rapidly, with new updates being released weekly. The changes can be extensive meaning more time spent on updating existing modules and features. ",
+          },
+          {
+            name: "The Competition",
+            description:
+              "whilst the benefit of RN is having one codebase for multiple platforms, the trade-off is the performance. There are traditional native languages such as Java, Kotlin, Swift and Objective –C that provide a higher level of performance, which is particularly important for apps using 3D/AR/VR technology and data or animation-heavy applications. ",
+          },
+          {
+            name: "Add on PWA for max reach",
+            description:
+              "Combining native apps with progressive web app allows the application to have the max reach possible. ",
+          },
+        ],
+      },
+    ],
     examples: [],
-    reference: [],
+    reference: [
+      "https://trio.dev/blog/companies-use-react-native ",
+      "https://www.ideamotive.co/blog/react-native-companies-mobile-apps ",
+    ],
   },
   {
     technology: "Gradle Mobile",
@@ -18,12 +108,12 @@ const techContent = [
         intro: "",
         data: [
           {
-            name: "High performance",
+            name: "High Performance",
             description:
               "Gradle avoids unnecessary work by only running the tasks that need to run because their inputs or outputs have changed. A build cache can be used to enable the reuse of task outputs from previous runs or even from a different machine (with a shared build cache). ",
           },
           {
-            name: "JVM foundation",
+            name: "JVM Foundation",
             description:
               "Gradle runs on the JVM and requires a Java Development Kit (JDK) installed to use it. This is a bonus for users familiar with the Java platform as you can use the standard Java APIs in your build logic, such as custom task types and plugins. It also makes it easy to run Gradle on different platforms. Note that Gradle is not limited to building just JVM projects. ",
           },
@@ -69,7 +159,7 @@ const techContent = [
               "Gradle evaluates and executes build scripts in 3 phases which form Gradle’s Build Lifecycle:<br/><strong>Initialization:</strong> Sets up the environment for the build and determine which projects will take part in it.<br/><strong>Configuration:</strong> Constructs and configures the task graph for the build and then determines which tasks need to run and in which order, based on the task the user wants to run. Everything involved in the configuration phase is evaluated on each build run. That is why we should avoid expensive work during the configuration phase.<br/><strong>Execution:</strong> Runs the tasks selected at the end of the configuration phase.",
           },
           {
-            name: "4. High Extensibility",
+            name: "4. High extensibility",
             description:
               "It’s rarely possible to build your project using only the build logic bundled with Gradle. Most builds have special requirements, so we need to add custom build logic by using Gradle’s several mechanisms:<br/><strong>Custom task types:</strong> When you want the build to do some work that an existing task can’t do, we can write a custom task type. Then we can use the custom task type just like the Gradle-provided ones.<br/><strong>Custom task actions:</strong> We can attach custom build logic that executes before or after a task.<br/><strong>Extra properties on projects and tasks:</strong> These allows us to add our own properties to a project or task that we can then use from your own custom actions or any other build logic.<br/> <strong>Custom conventions:</strong> Conventions are a powerful way to simplify builds so that users can understand and use them more easily. We can write your own plugins that provide conventions.<br/> <strong>A custom model:</strong> Gradle allows introduction of new concepts into a build beyond tasks, files, and dependency configurations. We can see this with most language plugins, which add the concept of source sets to a build. Appropriate modelling can greatly improve a build’s ease of use and efficiency.<br/>",
           },
@@ -106,7 +196,7 @@ const techContent = [
               "<strong>4.</strong> The packager uses the zipalign tool to optimize your app to use less memory when running on a device. <br/> When build ends we have a debug or release APK or AAB of our app that we can deploy, test, or release. ",
           },
           {
-            name: "Kotlin script (KTS)",
+            name: "Kotlin Script (KTS)",
             description:
               "Android Gradle plugin 4.0 added support for using Kotlin script <a href='https://developer.android.com/studio/build/migrate-to-kts'>(KTS)</a> in a Gradle build configuration instead of <a href='https://groovy-lang.org/'>Groovy</a>, which is traditionally used in Gradle. In the future KTS will be preferred over Groovy for writing Gradle scripts as Kotlin is more readable and offers better compile-time checking and IDE support. Currently KTS offers better integration in Android Studio’s code editor compared to Groovy but builds using KTS are slower, so migrating to KTS should be considered with build performance in mind. ",
           },
@@ -357,7 +447,7 @@ const techContent = [
               "Test in the simulator using the Cordova commands <code>ionic cordova build ios</code> followed by <code>ionic cordova emulate ios</code>. To test android then replace ‘iOS’ with android.  Once changes have been made to the folder, run command <code>ionic cordova prepare ios</code>, which will update the ios specific project with the code from the www folder.  ",
           },
           {
-            name: "Mobile browser testing",
+            name: "Mobile Browser Testing",
             description:
               "Testing and debugging directly in mobile browser, for iOS users through web inspector in Safari, and for android through chrome dev tools. One caveat of mobile browser testing is that it you may not get the truest app experience. Mobile apps are meant for browsing not testing, and sometimes when testing it then adds functionality that conflicts with the app.",
           },
