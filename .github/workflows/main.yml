@@ -25,7 +25,7 @@ jobs:
       - uses: actions/checkout@v3
       - run: sleep 45
       - name: cloudflare-preview-url
-        uses: zentered/cloudflare-preview-url@v1.0.0
+        uses: zentered/cloudflare-preview-url@v1.3.0
         id: cloudflare_preview_url
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
