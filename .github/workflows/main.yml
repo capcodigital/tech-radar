@@ -33,7 +33,7 @@ jobs:
           CLOUDFLARE_ACCOUNT_EMAIL: ${{ secrets.CLOUDFLARE_ACCOUNT_EMAIL }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         with:
-          cloudflare_project_id: 'capcodigital/tech-radar'
+          cloudflare_project_id: 'tech-radar'
           wait_until_ready: true
       - name: Get URL
         run: echo "https://${{ steps.cloudflare_preview_url.outputs.preview_url }}"
