@@ -4,9 +4,10 @@ name: CI
 
 # Controls when the workflow will run
 on:
-  pull_request:
+  push:
     branches:
-      - 'master'
+      - '**'
+      - '!master'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -23,7 +24,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-      - run: sleep 45
+      - run: sleep 30
       - name: cloudflare-preview-url
         uses: zentered/cloudflare-preview-url@v1.3.0
         id: cloudflare_preview_url
