@@ -23,11 +23,6 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
       - run: sleep 30
       - name: cloudflare-preview-url
         uses: zentered/cloudflare-preview-url@v1.0.0
@@ -37,7 +32,7 @@ jobs:
           CLOUDFLARE_ACCOUNT_EMAIL: ${{ secrets.CLOUDFLARE_ACCOUNT_EMAIL }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         with:
-          cloudflare_project_id: 'tech-radar'
+          cloudflare_project_id: 'capcodigital/tech-radar'
           wait_until_ready: true
       - name: Get URL
         run: echo "https://${{ steps.cloudflare_preview_url.outputs.preview_url }}"
