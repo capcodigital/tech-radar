@@ -42,6 +42,7 @@ jobs:
 
   e2e-tests:
     name: Run Cucumber tests
+    needs: build
     runs-on: ubuntu-latest
     
     steps:
