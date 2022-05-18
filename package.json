@@ -23,7 +23,7 @@
     "@types/react-dom": "^17.0.1",
     "@types/styled-components": "^5.1.7",
     "antd": "^4.19.1",
-    "axios": "^0.26.1",
+    "axios": "^0.27.2",
     "bootstrap": "^4.6.0",
     "d3": "^6.5.0",
     "playwright": "^1.21.1",
