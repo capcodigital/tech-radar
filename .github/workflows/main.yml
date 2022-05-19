@@ -41,11 +41,13 @@ jobs:
           TEST_URL: https://${{ steps.cloudflare_preview_url.outputs.preview_url }}
 
   e2e-tests:
-    name: Run Cucumber tests
     needs: build
     runs-on: ubuntu-latest
     
     steps:
-      - run: npm run cucumberTest
+      - name: Install
+        run: npm install
+      - name: Run Cucumber Tests 
+        run: npm run cucumberTest
         env:
           url: TEST_URL
