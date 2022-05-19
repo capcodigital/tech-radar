@@ -38,7 +38,7 @@ jobs:
       - name: Get URL
         run: echo "https://${{ steps.cloudflare_preview_url.outputs.preview_url }}"
         env: 
-          TEST_URL: https://${{ steps.cloudflare_preview_url.outputs.preview_url }}
+          TEST_EXEC_URL: https://${{ steps.cloudflare_preview_url.outputs.preview_url }}
 
   e2e-tests:
     name: Run Cucumber tests
@@ -47,4 +47,4 @@ jobs:
     
     steps:
       - name: Cucumber Run
-        run: npm run cucumberTest --env=TEST_URL
+        run: TEST_URL=TEST_EXEC_URL npm run cucumberTest

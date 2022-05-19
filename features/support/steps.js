@@ -3,7 +3,6 @@ const assert = require("assert");
 require('dotenv').config();
 
 Given("the user navigates to {string}", {timeout: 60 * 1000}, async function(url) {
-    console.log(process.env.TEST_URL);
     await this.openUrl(process.env.TEST_URL);
 });
 
