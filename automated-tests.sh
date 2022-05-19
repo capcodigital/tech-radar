@@ -1,1 +1,0 @@
-# TEST_URL="http://localhost:3000/" npm run cucumberTest
