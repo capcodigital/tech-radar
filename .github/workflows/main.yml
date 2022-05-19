@@ -41,10 +41,12 @@ jobs:
           TEST_URL: https://${{ steps.cloudflare_preview_url.outputs.preview_url }}
 
   e2e-tests:
+    name: Run Cucumber tests
     needs: build
     runs-on: ubuntu-latest
     
     steps:
+      - name: Cucumber Run
       - uses: actions/checkout@v2
       - name: Use Node.js ${{ matrix.node-version}}
         uses: actions/setup-node@v2
