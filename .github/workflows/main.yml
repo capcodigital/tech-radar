@@ -46,5 +46,6 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - name: Cucumber Run
-        run: npm run cucumberTest --env=TEST_URL
+      - run: npm run cucumberTest
+        env:
+          url: TEST_URL
