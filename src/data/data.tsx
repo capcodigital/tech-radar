@@ -158,32 +158,32 @@ export const data: Array<{ name: string; data: techType }> = [
     data: {
       preferred: [
         {
-          name: "Selenium",
+          name: "Selenium", //not found
           link: "https://static-00.iconduck.com/assets.00/selenium-icon-512x496-obrnvg2v.png",
           enabled: false,
         },
         {
-          name: "Cucumber",
+          name: "Cucumber", //not found
           link: "https://banner2.cleanpng.com/20180806/xkl/kisspng-cucumber-behavior-driven-development-software-test-cucumber-logo-svg-vector-amp-png-transparent-v-5b68353a7fad14.236653821533556026523.jpg",
           enabled: false,
         },
         {
-          name: "Appium",
+          name: "Appium", // not found
           link: "https://e7.pngegg.com/pngimages/366/527/png-clipart-appium-test-automation-software-testing-selenium-ios-logo-purple-violet.png",
           enabled: false,
         },
         {
-          name: "REST Assured",
+          name: "REST Assured", //not found
           link: "https://i2.wp.com/www.entrofi.net/wp-content/uploads/2020/01/rest-assured-logo.png?fit=400%2C400&ssl=1",
           enabled: false,
         },
         {
-          name: "BrowserStack",
+          name: "BrowserStack", //not found
           link: "https://symbols.getvecta.com/stencil_75/145_browserstack-icon.21eace67de.svg",
           enabled: false,
         },
         {
-          name: "Sauce Labs",
+          name: "Sauce Labs", //not found
           link: "https://jobicy.com/data/server-nyc0409/galaxy/mercury/2021/08/a480442d1aa1af938633df95f8e02bf6.jpeg",
           enabled: false,
         },
@@ -191,38 +191,38 @@ export const data: Array<{ name: string; data: techType }> = [
       skilled: [
         {
           name: "Wiremock",
-          link: "https://www.saashub.com/images/app/service_logos/49/f7c4bb5006b5/large.png?1557747621",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/wiremock_square.png",
           enabled: false,
         },
         {
-          name: "Applitools",
+          name: "Applitools", //not found
           link: "https://www.nuget.org/profiles/applitools/avatar?imageSize=512",
           enabled: false,
         },
         {
-          name: "JMeter",
+          name: "JMeter", //not found
           link: "https://svn.apache.org/repos/asf/jmeter/trunk/xdocs/images/asf-logo.svg",
           enabled: false,
         },
         {
-          name: "Axe",
+          name: "Axe", //not found
           link: "https://www.deque.com/wp-content/uploads/2018/03/DQ_SecondaryLogo_HeroBlue_RGB-1.png",
           enabled: false,
         },
         {
-          name: "Cypress",
+          name: "Cypress", //not found
           link: "https://icons-for-free.com/iconfiles/png/512/cypress-1324440144114984250.png",
           enabled: false,
         },
       ],
       scaling: [
         {
-          name: "Gatling",
+          name: "Gatling", //not found
           link: "https://assets-global.website-files.com/5dfb2c5f5b18187014b68b84/5e2e0ec72ca1f70c12148ea4_CR5gILun.png",
           enabled: false,
         },
         {
-          name: "PACT",
+          name: "PACT", //not found
           link: "https://pbs.twimg.com/profile_images/1326371726301798402/WxukgT47.png",
           enabled: false,
         },
