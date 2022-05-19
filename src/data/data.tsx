@@ -12,7 +12,7 @@ export const data: Array<{ name: string; data: techType }> = [
       preferred: [
         {
           name: "GitHub",
-          link: "https://img.icons8.com/fluent/452/github.png",
+          link: "https://github.com/capcodigital/presentation-logos/tech-radar/github.png",
           enabled: false,
         },
         {
