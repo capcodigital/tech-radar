@@ -1,8 +1,10 @@
 const { Given, When, Then } = require("@cucumber/cucumber");
 const assert = require("assert");
+require('dotenv').config()
 
 Given("the user navigates to {string}", {timeout: 60 * 1000}, async function(url) {
-    await this.openUrl(url);
+    console.log(s3.getBucketCors({Bucket: process.env.TEST_URL}, function(err, data) {}))
+    await this.openUrl(process.env.TEST_URL);
 });
 
 When("the user clicks {string}", {timeout: 60 * 1000}, async function(clickLocator) {
