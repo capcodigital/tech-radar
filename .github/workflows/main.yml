@@ -54,4 +54,4 @@ jobs:
       - name: Install
         run: npm install
       - name: Run Cucumber Tests 
-        run: npm run cucumberTest --world-parameters '{"appUrl":$TEST_URL}'
+        run: TEST_URL=$TEST_URL npm run cucumberTest
