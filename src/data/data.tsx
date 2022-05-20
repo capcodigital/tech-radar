@@ -12,86 +12,86 @@ export const data: Array<{ name: string; data: techType }> = [
       preferred: [
         {
           name: "GitHub",
-          link: "https://github.com/capcodigital/presentation-logos/tech-radar/github.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/github_square.png",
           enabled: false,
         },
         {
           name: "CircleCI",
-          link: "https://img.icons8.com/color/452/circleci.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/circleci_square.png",
           enabled: false,
         },
         {
           name: "Terraform",
-          link: "https://raw.githubusercontent.com/mauve/vscode-terraform/master/terraform.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/terraform_square.png",
           enabled: false,
         },
         {
           name: "Vault",
-          link: "https://www.pngitem.com/pimgs/m/329-3299659_hashicorp-vault-logo-hd-png-download.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/vault_square.png",
           enabled: false,
         },
         {
           name: "SonarQube",
-          link: "https://pbs.twimg.com/profile_images/1224335491899760641/h404B5dU_400x400.jpg",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/sonarqube_square.png",
           enabled: true,
         },
         {
           name: "Elastic",
-          link: "https://www.finsmes.com/wp-content/uploads/2019/06/elastic.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/elastic_stack_square.png",
           enabled: false,
         },
       ],
       skilled: [
         {
           name: "Bitbucket",
-          link: "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_2ea5f7178028686921161d65d4be481a/bitbucket.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/bitbucket_square.png",
           enabled: false,
         },
         {
           name: "Jenkins",
-          link: "https://avidlearnerinprogress.github.io/assets/images/tools/jenkins.jpg",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/jenkins_square.png",
           enabled: true,
         },
         {
           name: "TeamCity",
-          link: "https://cdn.worldvectorlogo.com/logos/teamcity-icon.svg",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/teamcity_square.png",
           enabled: false,
         },
         {
           name: "Istio",
-          link: "https://istio.io/latest/img/istio-bluelogo-whitebackground-unframed.svg",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/istio_square.png",
           enabled: false,
         },
         {
           name: "Ansible",
-          link: "https://upload.wikimedia.org/wikipedia/commons/0/05/Ansible_Logo.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/ansible_square.png",
           enabled: false,
         },
         {
           name: "Packer",
-          link: "https://seeklogo.com/images/P/packer-logo-732D5F5529-seeklogo.com.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/packer_square.png",
           enabled: false,
         },
       ],
       scaling: [
         {
           name: "Twistlock",
-          link: "https://symbols.getvecta.com/stencil_98/71_twistlock-icon.a467faf956.svg",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/twistlock_square.png",
           enabled: false,
         },
         {
           name: "Kiali",
-          link: "https://design.jboss.org/kiali/logo/final/PNG/kiali_icon_darkbkg_1280px.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/kiali_square.png",
           enabled: false,
         },
         {
           name: "ConcourseCl",
-          link: "https://cdn.worldvectorlogo.com/logos/concourse-1.svg",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/concourse_square.png",
           enabled: false,
         },
         {
           name: "Consul",
-          link: "https://d7umqicpi7263.cloudfront.net/img/product/4c3eb104-ebd1-42be-9bd4-de25ef6918df/84c590de-f853-4d50-a314-d92f104ec3a9.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/consul_square.png",
           enabled: false,
         },
       ],
@@ -103,51 +103,51 @@ export const data: Array<{ name: string; data: techType }> = [
       preferred: [
         {
           name: "Postgres",
-          link: "https://img.icons8.com/color/452/postgreesql.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/postgres_square.png",
           enabled: true,
         },
         {
           name: "Neo4J",
-          link: "https://dist.neo4j.com/wp-content/uploads/neo4j_logo_globe1.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/neo4j_square.png",
           enabled: false,
         },
         {
           name: "MongoDB",
-          link: "https://symbols.getvecta.com/stencil_88/103_mongodb.d91e0a5f7c.svg",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/mongodb_square_2.png",
           enabled: true,
         },
       ],
       skilled: [
         {
           name: "MySQL",
-          link: "https://symbols.getvecta.com/stencil_261/27_mysql.4e2ff8ff6c.svg",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/mysql_square.png",
           enabled: true,
         },
         {
           name: "Oracle",
-          link: "https://img.icons8.com/color/452/oracle-logo.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/oracle_square.png",
           enabled: true,
         },
         {
           name: "SQL Server",
-          link: "https://img.icons8.com/color/452/microsoft-sql-server.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/sqlserver_square.png",
           enabled: false,
         },
       ],
       scaling: [
         {
           name: "BigQuery",
-          link: "https://www.intelligencepartner.com/wp-content/uploads/2017/05/bigdata_bigquery.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/bigquery_square.png",
           enabled: false,
         },
         {
           name: "Snowflake",
-          link: "https://avatars.githubusercontent.com/u/6453780?s=280&v=4",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/snowflake_square.png",
           enabled: false,
         },
         {
           name: "Liquibase",
-          link: "https://avatars.githubusercontent.com/u/438548?s=280&v=4",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/liquibase_square.png",
           enabled: false,
         },
       ],
@@ -159,71 +159,71 @@ export const data: Array<{ name: string; data: techType }> = [
       preferred: [
         {
           name: "Selenium",
-          link: "https://static-00.iconduck.com/assets.00/selenium-icon-512x496-obrnvg2v.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/selenium_square.png",
           enabled: false,
         },
         {
           name: "Cucumber",
-          link: "https://banner2.cleanpng.com/20180806/xkl/kisspng-cucumber-behavior-driven-development-software-test-cucumber-logo-svg-vector-amp-png-transparent-v-5b68353a7fad14.236653821533556026523.jpg",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/cucumber_square.png",
           enabled: false,
         },
         {
           name: "Appium",
-          link: "https://e7.pngegg.com/pngimages/366/527/png-clipart-appium-test-automation-software-testing-selenium-ios-logo-purple-violet.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/appium_square.png",
           enabled: false,
         },
         {
           name: "REST Assured",
-          link: "https://i2.wp.com/www.entrofi.net/wp-content/uploads/2020/01/rest-assured-logo.png?fit=400%2C400&ssl=1",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/rest-assured_square.png",
           enabled: false,
         },
         {
           name: "BrowserStack",
-          link: "https://symbols.getvecta.com/stencil_75/145_browserstack-icon.21eace67de.svg",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/browserstack_square.png",
           enabled: false,
         },
         {
           name: "Sauce Labs",
-          link: "https://jobicy.com/data/server-nyc0409/galaxy/mercury/2021/08/a480442d1aa1af938633df95f8e02bf6.jpeg",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/saucelabs_square.png",
           enabled: false,
         },
       ],
       skilled: [
         {
           name: "Wiremock",
-          link: "https://www.saashub.com/images/app/service_logos/49/f7c4bb5006b5/large.png?1557747621",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/wiremock_square.png",
           enabled: false,
         },
         {
           name: "Applitools",
-          link: "https://www.nuget.org/profiles/applitools/avatar?imageSize=512",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/applitools_square.png",
           enabled: false,
         },
         {
           name: "JMeter",
-          link: "https://svn.apache.org/repos/asf/jmeter/trunk/xdocs/images/asf-logo.svg",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/jmeter_square.png",
           enabled: false,
         },
         {
           name: "Axe",
-          link: "https://www.deque.com/wp-content/uploads/2018/03/DQ_SecondaryLogo_HeroBlue_RGB-1.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/axe_square.png",
           enabled: false,
         },
         {
           name: "Cypress",
-          link: "https://icons-for-free.com/iconfiles/png/512/cypress-1324440144114984250.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/cypress_square.png",
           enabled: false,
         },
       ],
       scaling: [
         {
           name: "Gatling",
-          link: "https://assets-global.website-files.com/5dfb2c5f5b18187014b68b84/5e2e0ec72ca1f70c12148ea4_CR5gILun.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/gatling_square.png",
           enabled: false,
         },
         {
           name: "PACT",
-          link: "https://pbs.twimg.com/profile_images/1326371726301798402/WxukgT47.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/pact_square.png",
           enabled: false,
         },
       ],
@@ -235,39 +235,39 @@ export const data: Array<{ name: string; data: techType }> = [
       preferred: [
         {
           name: "GCP",
-          link: "https://img.icons8.com/color/452/google-cloud.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/gcp_square.png",
           enabled: false,
         },
         {
           name: "Kubernetes",
-          link: "https://img.icons8.com/color/452/kubernetes.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/k8s_square.png",
           enabled: false,
         },
         {
           name: "Serverless",
-          link: "https://getcommandeer.com/_nuxt/img/4a7600a.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/serverless_square.png",
           enabled: false,
         },
         {
           name: "OpenShift",
-          link: "https://banner2.cleanpng.com/20181107/zw/kisspng-openshift-logo-red-hat-software-minishift-computer-5be36e7bd474f7.2753397215416316118702.jpg",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/openshift_square.png",
           enabled: false,
         },
         {
           name: "Grafana",
-          link: "https://docs.checkmk.com/latest/images/grafana_logo.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/grafana_square.png",
           enabled: false,
         },
       ],
       skilled: [
         {
           name: "AWS",
-          link: "https://img.icons8.com/color/452/amazon-web-services.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/aws_square_1.png",
           enabled: true,
         },
         {
           name: "Azure",
-          link: "https://img.icons8.com/color/452/azure-1.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/azure_square.png",
           enabled: true,
         },
         {
@@ -279,12 +279,12 @@ export const data: Array<{ name: string; data: techType }> = [
       scaling: [
         {
           name: "Digital Ocean",
-          link: "https://pbs.twimg.com/profile_images/1410636343944880136/w8dxKEmg_400x400.jpg",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/digitalocean_square.png",
           enabled: false,
         },
         {
           name: "PKS",
-          link: "https://blogs.vmware.com/virtualblocks/files/2018/08/PKS-2.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/pks_square.png",
           enabled: false,
         },
       ],
@@ -296,41 +296,41 @@ export const data: Array<{ name: string; data: techType }> = [
       preferred: [
         {
           name: "Rest",
-          link: "https://miro.medium.com/max/300/1*1RDFnS8FgAOQFegtuynxWw.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/integration/rest_square.png",
           enabled: false,
         },
         {
           name: "Camel",
-          link: "https://camel.apache.org/_/img/logo-d.svg",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/integration/camelcase_square.png",
           enabled: false,
         },
         {
           name: "gRPC",
-          link: "https://docs.konghq.com/assets/images/icons/hub/kong-inc_grpc-gateway.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/integration/grpc_square.png",
           enabled: false,
         },
         {
           name: "Kafka",
-          link: "https://e7.pngegg.com/pngimages/435/297/png-clipart-kafka-logo-icons-logos-emojis-tech-companies-thumbnail.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/integration/kafka_square.png",
           enabled: false,
         },
       ],
       skilled: [
         {
           name: "ActiveMQ",
-          link: "https://symbols.getvecta.com/stencil_73/17_activemq-icon.998ecace10.svg",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/integration/activemq_square.png",
           enabled: false,
         },
         {
           name: "IBM MQ",
-          link: "https://anypoint.mulesoft.com/exchange/organizations/68ef9520-24e9-4cf2-b2f5-620025690913/assets/com.mulesoft.connectors/mule-ibm-mq-connector/icon/svg/?sha=97c7ca8fde33f64f5da710f17de072de73f67b11",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/integration/ibm-mq_square.png",
           enabled: false,
         },
       ],
       scaling: [
         {
           name: "GraphQL",
-          link: "https://i0.wp.com/storage.googleapis.com/blog-images-backup/1*rmWsDg6J6PtLVOhXb3zr7w.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/integration/graphql_square.png",
           enabled: false,
         },
       ],
@@ -342,46 +342,46 @@ export const data: Array<{ name: string; data: techType }> = [
       preferred: [
         {
           name: "Java",
-          link: "https://img.icons8.com/color/452/java-coffee-cup-logo.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/backend/java_square.png",
           enabled: true,
         },
         {
           name: "Node",
-          link: "https://img.icons8.com/fluency/48/000000/node-js.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/backend/node_square.png",
           enabled: true,
         },
         {
           name: "Go",
-          link: "https://img.icons8.com/color/344/golang.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/backend/go_square.png",
           enabled: false,
         },
         {
           name: "Scala",
-          link: "https://www.scala-lang.org/resources/img/frontpage/scala-spiral.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/backend/scala_square.png",
           enabled: true,
         },
         {
           name: "Gradle",
-          link: "https://gradle.org/images/gradle-knowledge-graph-logo.png?20170228",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/backend/gradle_square.png",
           enabled: false,
         },
       ],
       skilled: [
         {
           name: "Python",
-          link: "https://img.icons8.com/color/452/python.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/backend/python_square.png",
           enabled: true,
         },
         {
           name: "Groovy",
-          link: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Groovy-logo.svg/445px-Groovy-logo.svg.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/backend/groovy_square.png",
           enabled: false,
         },
       ],
       scaling: [
         {
           name: "Kotlin",
-          link: "https://img.icons8.com/color/344/kotlin.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/backend/kotlin_square.png",
           enabled: false,
         },
       ],
@@ -393,17 +393,17 @@ export const data: Array<{ name: string; data: techType }> = [
       preferred: [
         {
           name: "React",
-          link: "https://img.icons8.com/color/452/react-native.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/frontend/react_square.png",
           enabled: true,
         },
         {
           name: "Angular",
-          link: "https://img.icons8.com/color/452/angularjs.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/frontend/angular_square.png",
           enabled: false,
         },
         {
           name: "TypeScript",
-          link: "https://img.icons8.com/color/452/typescript.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/frontend/typescript_square.png",
           enabled: true,
         },
       ],
@@ -411,12 +411,12 @@ export const data: Array<{ name: string; data: techType }> = [
       scaling: [
         {
           name: "Flutter",
-          link: "https://img.icons8.com/color/452/flutter.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/frontend/flutter_sqaure.png",
           enabled: true,
         },
         {
           name: "Vue",
-          link: "https://img.icons8.com/color/344/vue-js.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/frontend/vue_square.png",
           enabled: false,
         },
       ],
@@ -428,41 +428,41 @@ export const data: Array<{ name: string; data: techType }> = [
       preferred: [
         {
           name: "React Native",
-          link: "https://img.icons8.com/color/452/react-native.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/mobile/react_square.png",
           enabled: true,
         },
         {
           name: "Gradle Mobile",
-          link: "https://gradle.org/images/gradle-knowledge-graph-logo.png?20170228",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/mobile/gradle_square.png",
           enabled: true,
         },
       ],
       skilled: [
         {
           name: "Swift",
-          link: "https://img.icons8.com/fluent/452/swift.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/mobile/swift_square.png",
           enabled: true,
         },
         {
           name: "Kotlin",
-          link: "https://img.icons8.com/color/344/kotlin.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/mobile/kotlin_square.png",
           enabled: false,
         },
         {
           name: "Java Mobile",
-          link: "https://img.icons8.com/color/452/java-coffee-cup-logo.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/mobile/java_square.png",
           enabled: true,
         },
         {
           name: "Ionic",
-          link: "https://img.icons8.com/ios-filled/452/ionic.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/mobile/Ionic_square.png",
           enabled: true,
         },
       ],
       scaling: [
         {
           name: "Flutter",
-          link: "https://img.icons8.com/color/452/flutter.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/mobile/flutter_square.png",
           enabled: true,
         },
       ],
