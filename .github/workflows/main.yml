@@ -44,7 +44,7 @@ jobs:
     name: Run Cucumber tests
     needs: build
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Cucumber Run
         uses: actions/checkout@v2
@@ -56,4 +56,4 @@ jobs:
       - name: Install
         run: npm install
       - name: Run Cucumber Tests 
-        run: TEST_URL=https://${{ steps.get-url.env.TEST_URL }} npm run cucumberTest
+        run: TEST_URL=https://${{ jobs.build.steps.get-url.env.TEST_URL }} npm run cucumberTest
