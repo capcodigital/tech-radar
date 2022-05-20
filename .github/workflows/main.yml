@@ -48,21 +48,3 @@ jobs:
         run: npm install
       - name: Run Cucumber Tests 
         run: TEST_URL=${{ steps.cloudflare_preview_url.outputs.preview_url }} npm run cucumberTest    
-
-  # e2e-tests:
-  #   name: Run Cucumber tests
-  #   needs: build
-  #   runs-on: ubuntu-latest
-
-  #   steps:
-  #     - name: Cucumber Run
-  #       uses: actions/checkout@v2
-  #     - name: Use Node.js ${{ matrix.node-version}}
-  #       uses: actions/setup-node@v2
-  #       with:
-  #         node-version: ${{ matrix.node-version }}
-  #         check-latest: true
-  #     - name: Install
-  #       run: npm install
-  #     - name: Run Cucumber Tests 
-  #       run: TEST_URL=https://${{ steps.get-url.env.TEST_URL }} npm run cucumberTest

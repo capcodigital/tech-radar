@@ -2,8 +2,7 @@ const { Given, When, Then } = require("@cucumber/cucumber");
 const assert = require("assert");
 require('dotenv').config();
 
-Given("the user navigates to {string}", {timeout: 60 * 1000}, async function(url) {
-    console.log(process.env.TEST_URL);
+Given("the user navigates to Tech Radar", {timeout: 60 * 1000}, async function() {
     await this.openUrl(process.env.TEST_URL);
 });
 

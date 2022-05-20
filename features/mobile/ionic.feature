@@ -1,7 +1,7 @@
 Feature: Ionic content page
 
 Background: Navigate to the home page
-    Given the user navigates to "http://localhost:3000/"
+    Given the user navigates to Tech Radar
 
 Scenario: Ionic content page appears as expected
     When the user clicks "View Our Tech Radar"
