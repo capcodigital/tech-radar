@@ -56,4 +56,4 @@ jobs:
       - name: Install
         run: npm install
       - name: Run Cucumber Tests 
-        run: TEST_URL=https://${{ build.steps.get-url.env.TEST_URL }} npm run cucumberTest
+        run: TEST_URL=https://${{ steps.get-url.env.TEST_URL }} npm run cucumberTest
