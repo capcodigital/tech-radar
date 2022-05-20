@@ -24,7 +24,7 @@ When("the user navigates to category {string}", {timeout: 60 * 1000}, async func
 });
 
 Then("the user should see {string}", {timeout: 60 * 1000}, async function(text) {
-    const pageText = await this.page.content().then(value => { return value;});
+    const pageText = await this.page.content().then(value => { return value;})
     const mutatedText = removeTags(pageText).replaceAll("&amp;","&").replaceAll('<.*?>','');
     const doesTheTextExistOnPage = mutatedText.includes(text);
     assert.strictEqual(doesTheTextExistOnPage, true, "The expected text is not on the page");
