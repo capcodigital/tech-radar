@@ -26,6 +26,7 @@
     "axios": "^0.26.1",
     "bootstrap": "^4.6.0",
     "d3": "^6.5.0",
+    "dotenv": "^16.0.1",
     "playwright": "^1.21.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -39,7 +40,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "cucumberTest": "./node_modules/.bin/cucumber-js --exit",
+    "cucumberTest": "./node_modules/.bin/cucumber-js --publish --exit",
     "cypress": "cypress open",
     "eject": "react-scripts eject"
   },

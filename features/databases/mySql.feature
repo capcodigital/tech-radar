@@ -1,7 +1,7 @@
 Feature: MySQL content page
 
 Background: Navigate to the home page
-    Given the user navigates to "http://localhost:3000/"
+    Given the user navigates to Tech Radar
 
 Scenario: MySQL content appears as expected
     When the user clicks "View Our Tech Radar"
@@ -18,8 +18,8 @@ Scenario: MySQL content appears as expected
     And the user can see accordion "Scalability" description "MySQL supports business to scale up swiftly and meet the demand of users and data through a vertical and hybrid approach. It can handle almost any amount of data, up to as much as 50 million rows or more."
     And the user clicks accordion "Flexible"
     And the user can see accordion "Flexible" description "MySQL supports many embedded applications, which makes MySQL very flexible."
-    And the user clicks accordion "Compatible across platforms"
-    And the user can see accordion "Compatible across platforms" description "MySQL is compatible to run on many operating systems, like Novell NetWare, Windows* Linux*, many varieties of UNIX* (such as Sun* Solaris*, AIX, and DEC* UNIX), OS/2, FreeBSD*, and others."
+    And the user clicks accordion "Compatible Across Platforms"
+    And the user can see accordion "Compatible Across Platforms" description "MySQL is compatible to run on many operating systems, like Novell NetWare, Windows* Linux*, many varieties of UNIX* (such as Sun* Solaris*, AIX, and DEC* UNIX), OS/2, FreeBSD*, and others."
     And the user clicks accordion "High Performance & Productivity "
     And the user can see accordion "High Performance & Productivity " description "MySQL is faster, more reliable, and cheaper because of its unique storage engine architecture. It provides very high-performance results in comparison to other databases without losing an essential functionality of the software. It has fast loading utilities because of the different cache memory."
     And the user clicks accordion "GUI Support"
@@ -53,10 +53,10 @@ Scenario: MySQL content appears as expected
     """
     
     And the user should see "Schema is a collection of tables with rows and columns, and a separate query can be written for the schemas like databases. They define size, type, a grouping of information. The schemas have database objects like views, tables, and privileges, which include data types, functions, and operators."
-    And the user clicks accordion "Information schemas"
-    And the user can see accordion "Information schemas" description "They provide access to metadata, stores information about other databases. The tables here are stored in the memory storage engine."
-    And the user clicks accordion "Performance MySQL schema"
-    And the user can see accordion "Performance MySQL schema" description "They acts as a storage engine that operates on a table under a schema database. Performance schema collects exact data in the MySQL database server. The configuration is done by three major roles namely actors, instruments and allows collecting statistical data. "
+    And the user clicks accordion "Information Schemas"
+    And the user can see accordion "Information Schemas" description "They provide access to metadata, stores information about other databases. The tables here are stored in the memory storage engine."
+    And the user clicks accordion "Performance MySQL Schema"
+    And the user can see accordion "Performance MySQL Schema" description "They acts as a storage engine that operates on a table under a schema database. Performance schema collects exact data in the MySQL database server. The configuration is done by three major roles namely actors, instruments and allows collecting statistical data. "
     And the user clicks accordion "Sys"
     And the user can see accordion "Sys" description "An object helps in collecting performance schemas data. We have a MySQL schema design that helps in analysing and tuning query optimization. A proper designing in schema requires entities, relationships, Scalability."
 

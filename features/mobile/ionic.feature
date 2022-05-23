@@ -1,7 +1,7 @@
 Feature: Ionic content page
 
 Background: Navigate to the home page
-    Given the user navigates to "http://localhost:3000/"
+    Given the user navigates to Tech Radar
 
 Scenario: Ionic content page appears as expected
     When the user clicks "View Our Tech Radar"
@@ -25,7 +25,7 @@ Scenario: Ionic content page appears as expected
     And the user can see accordion "Desktop Browser Testing" description "Run the command ionic serve in the root terminal - This will start a live-reload server for your project. When changes are made to any HTML, CSS, or JavaScript files, the browser will automatically reload when the files are saved."
     And the user clicks accordion "Simulator Testing "
     And the user can see accordion "Simulator Testing " description "Test in the simulator using the Cordova commands ionic cordova build ios followed by ionic cordova emulate ios. To test android then replace ‘iOS’ with android. Once changes have been made to the folder, run command ionic cordova prepare ios, which will update the ios specific project with the code from the www folder."
-    And the user clicks accordion "Mobile browser testing"
-    And the user can see accordion "Mobile browser testing" description "Testing and debugging directly in mobile browser, for iOS users through web inspector in Safari, and for android through chrome dev tools. One caveat of mobile browser testing is that it you may not get the truest app experience. Mobile apps are meant for browsing not testing, and sometimes when testing it then adds functionality that conflicts with the app."
+    And the user clicks accordion "Mobile Browser Testing"
+    And the user can see accordion "Mobile Browser Testing" description "Testing and debugging directly in mobile browser, for iOS users through web inspector in Safari, and for android through chrome dev tools. One caveat of mobile browser testing is that it you may not get the truest app experience. Mobile apps are meant for browsing not testing, and sometimes when testing it then adds functionality that conflicts with the app."
     And the user clicks accordion "Native App"
     And the user can see accordion "Native App" description "To test as a native app. For iOS apps, to test via dev tools such as Xcode there is a premium charge. For android apps, you can run the tests using the Cordova command ionic cordova run android ."
