@@ -1,7 +1,7 @@
 Feature: Flutter content page
 
 Background: Navigate to the home page
-    Given the user navigates to "http://localhost:3000/"
+    Given the user navigates to Tech Radar
 
 Scenario: Flutter content appears as expected
     When the user clicks "View Our Tech Radar"
