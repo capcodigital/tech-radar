@@ -46,4 +46,4 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Run Cucumber Tests 
-        run: TEST_URL=${{ steps.cloudflare_preview_url.outputs.preview_url }} npm run cucumberTest --publish    
+        run: TEST_URL=${{ steps.cloudflare_preview_url.outputs.preview_url }} npm run cucumberTest   
