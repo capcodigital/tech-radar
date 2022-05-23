@@ -36,15 +36,14 @@ jobs:
           cloudflare_project_id: 'tech-radar'
           wait_until_ready: true
       - name: get-url
-        run: echo "https://${{ steps.cloudflare_preview_url.outputs.preview_url }}"
-      - name: Cucumber Run
-        uses: actions/checkout@v2
+        run: echo "${{ steps.cloudflare_preview_url.outputs.preview_url }}"
+      - uses: actions/checkout@v2
       - name: Use Node.js ${{ matrix.node-version}}
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
           check-latest: true
-      - name: Install
+      - name: Install dependencies
         run: npm install
       - name: Run Cucumber Tests 
         run: TEST_URL=${{ steps.cloudflare_preview_url.outputs.preview_url }} npm run cucumberTest    
