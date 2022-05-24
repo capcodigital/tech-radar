@@ -170,16 +170,6 @@ const techContent = [
         ],
       },
       {
-        name: "",
-        intro: `<img width='100%' src=${cypressExample} />`,
-        data: [],
-      },
-      {
-        name: "",
-        intro: `<img width='100%' src=${cypressFlow} />`,
-        data: [],
-      },
-      {
         name: "Cypress Architecture ",
         intro:
           "Most testing tools (like Selenium) operate by running outside of the browser and executing remote commands across the network. But Cypress engine directly operates inside the browser. In other words, it is the browser that is executing your test code. </br></br>This enables Cypress to listen and modify the browser behaviour at run time by manipulating DOM and altering Network requests and responses on the fly. ",
