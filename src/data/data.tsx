@@ -473,143 +473,143 @@ export const data: Array<{ name: string; data: techType }> = [
 export const icons: Array<{ name: string; link: string }> = [
   {
     name: "GitHub",
-    link: "https://img.icons8.com/fluent/452/github.png",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/github_square.png",
   },
   {
     name: "CircleCI",
-    link: "https://img.icons8.com/color/452/circleci.png",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/circleci_square.png",
   },
   {
     name: "Terraform",
-    link: "https://raw.githubusercontent.com/mauve/vscode-terraform/master/terraform.png",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/terraform_square.png",
   },
   {
     name: "Vault",
-    link: "https://miro.medium.com/max/1200/1*giyQTAngfrbaEkaJ277oxQ.png",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/vault_square.png",
   },
   {
     name: "SonarQube",
-    link: "https://pbs.twimg.com/profile_images/1224335491899760641/h404B5dU_400x400.jpg",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/sonarqube_square.png",
   },
   {
     name: "Elastic",
-    link: "https://symbols.getvecta.com/stencil_79/34_elastic-search-icon.bdaf397325.svg",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/elastic_stack_square.png",
   },
   {
     name: "Bitbucket",
-    link: "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_2ea5f7178028686921161d65d4be481a/bitbucket.png",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/bitbucket_square.png",
   },
   {
     name: "Jenkins",
-    link: "https://symbols.getvecta.com/stencil_97/67_the-jenkins-project-icon.0141f64fe7.svg",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/jenkins_square.png",
   },
   {
     name: "TeamCity",
-    link: "https://cdn.worldvectorlogo.com/logos/teamcity-icon.svg",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/teamcity_square.png",
   },
   {
     name: "Istio",
-    link: "https://symbols.getvecta.com/stencil_84/70_istio-icon.9d92202138.svg",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/istio_square.png",
   },
   {
     name: "Ansible",
-    link: "https://symbols.getvecta.com/stencil_73/122_ansible-icon.e1db432c74.svg",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/ansible_square.png",
   },
   {
     name: "Packer",
-    link: "https://symbols.getvecta.com/stencil_91/3_packer-icon.53584ee287.svg",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/packer_square.png",
   },
   {
     name: "Twistlock",
-    link: "https://symbols.getvecta.com/stencil_98/71_twistlock-icon.a467faf956.svg",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/twistlock_square.png",
   },
   {
     name: "Kiali",
-    link: "https://design.jboss.org/kiali/logo/final/PNG/kiali_icon_darkbkg_1280px.png",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/kiali_square.png",
   },
   {
     name: "ConcourseCl",
-    link: "https://cdn.worldvectorlogo.com/logos/concourse-1.svg",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/concourse_square.png",
   },
   {
     name: "Consul",
-    link: "https://symbols.getvecta.com/stencil_77/63_consul-icon.0452948395.svg",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/consul_square.png",
   },
   {
     name: "Postgres",
-    link: "https://img.icons8.com/color/452/postgreesql.png",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/postgres_square.png",
   },
   {
     name: "Neo4J",
-    link: "https://symbols.getvecta.com/stencil_261/28_neo4j.404372b29e.svg",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/neo4j_square.png",
   },
   {
     name: "MongoDB",
-    link: "https://symbols.getvecta.com/stencil_88/103_mongodb.d91e0a5f7c.svg",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/mongodb_square_2.png",
   },
   {
     name: "MySQL",
-    link: "https://symbols.getvecta.com/stencil_261/27_mysql.4e2ff8ff6c.svg",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/mysql_square.png",
   },
   {
     name: "Oracle",
-    link: "https://img.icons8.com/color/452/oracle-logo.png",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/oracle_square.png",
   },
   {
     name: "SQL Server",
-    link: "https://img.icons8.com/color/452/microsoft-sql-server.png",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/sqlserver_square.png",
   },
   {
     name: "BigQuery",
-    link: "https://www.intelligencepartner.com/wp-content/uploads/2017/05/bigdata_bigquery.png",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/bigquery_square.png",
   },
   {
     name: "Snowflake",
-    link: "https://avatars.githubusercontent.com/u/6453780?s=280&v=4",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/snowflake_square.png",
   },
   {
     name: "Liquibase",
-    link: "https://avatars.githubusercontent.com/u/438548?s=280&v=4",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/liquibase_square.png",
   },
   {
     name: "Selenium",
-    link: "https://static-00.iconduck.com/assets.00/selenium-icon-512x496-obrnvg2v.png",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/selenium_square.png",
   },
   {
     name: "Cucumber",
-    link: "https://banner2.cleanpng.com/20180806/xkl/kisspng-cucumber-behavior-driven-development-software-test-cucumber-logo-svg-vector-amp-png-transparent-v-5b68353a7fad14.236653821533556026523.jpg",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/cucumber_square.png",
   },
   {
     name: "Appium",
-    link: "https://e7.pngegg.com/pngimages/366/527/png-clipart-appium-test-automation-software-testing-selenium-ios-logo-purple-violet.png",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/appium_square.png",
   },
   {
     name: "REST Assured",
-    link: "https://i2.wp.com/www.entrofi.net/wp-content/uploads/2020/01/rest-assured-logo.png?fit=400%2C400&ssl=1",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/rest-assured_square.png",
   },
   {
     name: "BrowserStack",
-    link: "https://symbols.getvecta.com/stencil_75/145_browserstack-icon.21eace67de.svg",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/browserstack_square.png",
   },
   {
     name: "Sauce Labs",
-    link: "https://seeklogo.com/images/S/sauce-labs-logo-413E1BDE63-seeklogo.com.png",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/saucelabs_square.png",
   },
   {
     name: "Wiremock",
-    link: "https://lh3.googleusercontent.com/proxy/TImAeIQiFveDA7nFR0i5Y9YgV7og9T5y3tjeaA4K_djJWQFPy7oKv1JAjX4MmZWSEy99drD1BlgHWHEkW22lY3IGtIqLpt6XVcJilOz0pA",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/wiremock_square.png",
   },
   {
     name: "Applitools",
-    link: "https://www.nuget.org/profiles/applitools/avatar?imageSize=512",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/applitools_square.png",
   },
   {
     name: "JMeter",
-    link: "https://svn.apache.org/repos/asf/jmeter/trunk/xdocs/images/asf-logo.svg",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/jmeter_square.png",
   },
   {
     name: "Axe",
-    link: "https://www.deque.com/wp-content/uploads/2018/03/DQ_SecondaryLogo_HeroBlue_RGB-1.png",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/axe_square.png",
   },
   {
     name: "Cypress",
@@ -617,23 +617,23 @@ export const icons: Array<{ name: string; link: string }> = [
   },
   {
     name: "Gatling",
-    link: "https://assets-global.website-files.com/5dfb2c5f5b18187014b68b84/5e2e0ec72ca1f70c12148ea4_CR5gILun.png",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/gatling_square.png",
   },
   {
     name: "PACT",
-    link: "https://pbs.twimg.com/profile_images/1326371726301798402/WxukgT47.png",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/pact_square.png",
   },
   {
     name: "Kubernetes",
-    link: "https://img.icons8.com/color/452/kubernetes.png",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/k8s_square.png",
   },
   {
     name: "Serverless",
-    link: "https://symbols.getvecta.com/stencil_95/69_serverless-icon.b1abb9b824.svg",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/serverless_square.png",
   },
   {
     name: "OpenShift",
-    link: "https://symbols.getvecta.com/stencil_90/47_openshift-icon.e98513fd69.svg",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/openshift_square.png",
   },
   {
     name: "PCF",
@@ -641,70 +641,85 @@ export const icons: Array<{ name: string; link: string }> = [
   },
   {
     name: "PKS",
-    link: "https://blogs.vmware.com/virtualblocks/files/2018/08/PKS-2.png",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/pks_square.png",
   },
   {
     name: "GCP",
-    link: "https://img.icons8.com/color/452/google-cloud.png",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/gcp_square.png",
   },
   {
     name: "AWS",
-    link: "https://img.icons8.com/color/452/amazon-web-services.png",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/aws_square_1.png",
   },
-  { name: "Azure", link: "https://img.icons8.com/color/452/azure-1.png" },
+  {
+    name: "Azure",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/azure_square.png",
+  },
   {
     name: "Grafana",
-    link: "https://docs.checkmk.com/latest/images/grafana_logo.png",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/grafana_square.png",
   },
   {
     name: "Digital Ocean",
-    link: "https://symbols.getvecta.com/stencil_78/61_digital-ocean-icon.0d013f7d26.svg",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/digitalocean_square.png",
   },
   {
     name: "Rest",
-    link: "https://miro.medium.com/max/300/1*1RDFnS8FgAOQFegtuynxWw.png",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/integration/rest_square.png",
   },
-  { name: "Camel", link: "https://camel.apache.org/_/img/logo-d.svg" },
+  {
+    name: "Camel",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/integration/camelcase_square.png",
+  },
   {
     name: "gRPC",
-    link: "https://docs.konghq.com/assets/images/icons/hub/kong-inc_grpc-gateway.png",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/integration/grpc_square.png",
   },
   {
     name: "Kafka",
-    link: "https://symbols.getvecta.com/stencil_74/14_apache-kafka-icon.59d5c11ca8.jpg",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/integration/kafka_square.png",
   },
   {
     name: "ActiveMQ",
-    link: "https://symbols.getvecta.com/stencil_73/17_activemq-icon.998ecace10.svg",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/integration/activemq_square.png",
   },
   {
     name: "IBM MQ",
-    link: "https://anypoint.mulesoft.com/exchange/organizations/68ef9520-24e9-4cf2-b2f5-620025690913/assets/com.mulesoft.connectors/mule-ibm-mq-connector/icon/svg/?sha=97c7ca8fde33f64f5da710f17de072de73f67b11",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/integration/ibm-mq_square.png",
   },
   {
     name: "GraphQL",
-    link: "https://symbols.getvecta.com/stencil_82/66_graphql-icon.291fc05a38.svg",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/integration/graphql_square.png",
   },
   {
     name: "Java",
-    link: "https://img.icons8.com/color/452/java-coffee-cup-logo.png",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/backend/java_square.png",
   },
   {
     name: "Node",
-    link: "https://img.icons8.com/fluency/48/000000/node-js.png",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/backend/node_square.png",
   },
-  { name: "Go", link: "https://img.icons8.com/color/344/golang.png" },
+  {
+    name: "Go",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/backend/go_square.png",
+  },
 
-  { name: "Python", link: "https://img.icons8.com/color/452/python.png" },
+  {
+    name: "Python",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/backend/python_square.png",
+  },
   {
     name: "Scala",
-    link: "https://www.scala-lang.org/resources/img/frontpage/scala-spiral.png",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/backend/scala_square.png",
   },
   {
     name: "Gradle",
-    link: "https://gradle.org/images/gradle-knowledge-graph-logo.png?20170228",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/backend/gradle_square.png",
   },
-  { name: "Kotlin", link: "https://img.icons8.com/color/344/kotlin.png" },
+  {
+    name: "Kotlin",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/backend/kotlin_square.png",
+  },
   {
     name: "React",
     link: "https://img.icons8.com/color/452/react-native.png",
@@ -726,15 +741,15 @@ export const icons: Array<{ name: string; link: string }> = [
   { name: "Kotlin", link: "https://img.icons8.com/color/344/kotlin.png" },
   {
     name: "Java Mobile",
-    link: "https://img.icons8.com/color/452/java-coffee-cup-logo.png",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/mobile/java_square.png",
   },
   {
     name: "Ionic",
-    link: "https://img.icons8.com/ios-filled/452/ionic.png",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/mobile/Ionic_square.png",
   },
   {
     name: "Flutter",
-    link: "https://img.icons8.com/color/452/flutter.png",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/mobile/flutter_square.png",
   },
   {
     name: "Gradle Mobile",
