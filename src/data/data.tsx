@@ -613,7 +613,7 @@ export const icons: Array<{ name: string; link: string }> = [
   },
   {
     name: "Cypress",
-    link: "https://icons-for-free.com/iconfiles/png/512/cypress-1324440144114984250.png",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/cypress_square.png",
   },
   {
     name: "Gatling",
