@@ -212,7 +212,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Cypress",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/cypress_square.png",
-          enabled: false,
+          enabled: true,
         },
       ],
       scaling: [
