@@ -63,7 +63,7 @@ exports[`ContentPage should render ContentPage component 1`] = `
             />
             <image
               height="50"
-              href="https://img.icons8.com/fluent/452/github.png"
+              href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/github_square.png"
               width="50"
               x="15"
               y="15"
