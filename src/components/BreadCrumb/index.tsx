@@ -1,4 +1,4 @@
-import React, { FC, useEffect } from "react";
+import { FC } from "react";
 import { withRouter, RouteComponentProps } from "react-router-dom";
 import Typography from "@mui/material/Typography";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
@@ -11,6 +11,7 @@ const BreadcrumbComponent: FC<RouteComponentProps> = ({
 }) => {
   const pathnames = pathname
     .replaceAll("technology", "category")
+    .replaceAll("projects", "category")
     .split("/")
     .filter((x) => x);
 
@@ -24,7 +25,7 @@ const BreadcrumbComponent: FC<RouteComponentProps> = ({
         cursor: "pointer",
       }}
     >
-      {pathnames.length > 0 ? (
+      {pathnames.length > 0 && (
         <BreadcrumbStyles>
           <Link
             color="#fff"
@@ -37,15 +38,13 @@ const BreadcrumbComponent: FC<RouteComponentProps> = ({
             TECH RADAR
           </Link>
         </BreadcrumbStyles>
-      ) : (
-        <Typography style={{ color: "grey", fontSize: "12px" }}></Typography>
       )}
       {pathnames.map((name, index) => {
         const routeTo = `/${pathnames.slice(0, index++).join("/")}`;
         const isLast = index === pathnames.length;
         const Name = name.toUpperCase();
 
-        const HandleClick = () => {
+        const HandleClick = (event: any) => {
           if (
             routeTo.indexOf(
               "mobile" ||
@@ -58,6 +57,10 @@ const BreadcrumbComponent: FC<RouteComponentProps> = ({
                 "devops"
             )
           ) {
+            if (event.target.innerText === "CATEGORY") {
+              history.push(`/category/${pathnames[index]}`);
+              return;
+            }
             history.push(`/${pathnames.slice(0, index++).join("/")}`);
           }
         };
