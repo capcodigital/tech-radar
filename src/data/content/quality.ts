@@ -150,16 +150,6 @@ const techContent = [
           },
         ],
       },
-      {
-        name: "Use Cases",
-        intro: "",
-        data: [
-          {
-            name: "Quality Engineering Framework Tech Test",
-            description: `An example of axe core library integration with Java Gradle Selenium Project which demonstrates the ability to use automation test for accessibility testing of online booking website can be found in repo <a href="https://github.com/camg-capco/tech-test">https://github.com/camg-capco/tech-test</a> Please request access if you want to see the detail as it not yet made public. `,
-          },
-        ],
-      },
     ],
     examples: [],
     reference: [],
