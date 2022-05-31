@@ -14,12 +14,12 @@ When("the user clicks the hamburger menu", {timeout: 60 * 1000}, async function(
     await this.page.locator('button[aria-label="menu"]').click();
 });
 
-When("the user navigates to {string} via the hamburger menu", {timeout: 60 * 1000}, async function(hamburgerCategory) {
-    await this.page.locator('//a[@id="menu'+hamburgerCategory+'"]').click();
+Given(/^the user navigates to (.*) via the hamburger menu$/, async function (hamburgerCategory) {
+    await this.page.locator('//a[@id="menu'+replaceAll(hamburgerCategory,"\"","")+'"]').click();
 });
 
-When("the user navigates to category {string}", {timeout: 60 * 1000}, async function(subCategory) {
-    await this.page.locator("[data-test-id='category-item-"+subCategory+"'] >> nth=1").click();
+Given(/^the user navigates to category (.*)$/, async function (subCategory) {
+    await this.page.locator("[data-test-id='category-item-"+replaceAll(subCategory,"\"","")+"'] >> nth=1").click();
 });
 
 Then("the user should see {string}", {timeout: 60 * 1000}, async function(text) {
@@ -38,6 +38,10 @@ Then("the user should see", {timeout: 60 * 1000}, async function(text) {
 
 Then("the user clicks accordion {string}", {timeout: 60 * 1000}, async function(testId) {
     await this.page.locator('//div[@data-test-id="'+testId+'"]').click();
+});
+
+Then(/^the following url (.*) should appear$/, async function (partialUrl) {
+    assert.strictEqual(await this.page.url().includes(partialUrl), true, "The url is not correct");
 });
 
 Then("the user can see accordion {string} description {string}", {timeout: 60 * 1000}, async function(accordionId, text) {
@@ -64,3 +68,7 @@ function removeTags(str) {
     // HTML tag with a null string.
     return str.replace( /(<([^>]+)>)/ig, '');
 }
+
+function replaceAll(str, find, replace) {
+    return str.replace(new RegExp(find, 'g'), replace);
+  }
