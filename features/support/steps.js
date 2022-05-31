@@ -15,6 +15,7 @@ When("the user clicks the hamburger menu", {timeout: 60 * 1000}, async function(
 });
 
 Given(/^the user navigates to (.*) via the hamburger menu$/, async function (hamburgerCategory) {
+    hamburgerCategory = replaceAll(hamburgerCategory," ","-");
     await this.page.locator('//a[@id="menu'+replaceAll(hamburgerCategory,"\"","")+'"]').click();
 });
 
@@ -41,7 +42,7 @@ Then("the user clicks accordion {string}", {timeout: 60 * 1000}, async function(
 });
 
 Then(/^the following url (.*) should appear$/, async function (partialUrl) {
-    assert.strictEqual(await this.page.url().includes(partialUrl), true, "The url is not correct");
+    assert.strictEqual(await this.page.url().includes(replaceAll(partialUrl,"\"","")), true, "The partial url is not included actual: " + this.page.url() + " Expected: " +replaceAll(partialUrl,"\"",""));
 });
 
 Then("the user can see accordion {string} description {string}", {timeout: 60 * 1000}, async function(accordionId, text) {

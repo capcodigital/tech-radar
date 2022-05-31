@@ -123,10 +123,6 @@ If you would like to contribute to any Capco Digital OSS projects please read:
 
 <!-- LICENSE -->
 
-## Setup pre-commit automation test execution
-
-https://ilabs-capco.atlassian.net/wiki/spaces/BPG/pages/3085402129/Testing+in+Tech+Radar#Setting-up-tests-to-run-with-Pre-Commit%5BhardBreak%5D
-
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
