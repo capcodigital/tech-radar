@@ -1,5 +1,6 @@
 import cypressExample from "../../images/technologies/cypress-example.png";
 import cypressFlow from "../../images/technologies/cypress-flow.png";
+import SeleniumImg from "../../images/technologies/selenium-img.png";
 
 const techContent = [
   {
@@ -33,6 +34,11 @@ const techContent = [
               "Selenium supports multiple browsers like chrome, firefox, safari, IE, Edge.",
           },
         ],
+      },
+      {
+        name: "",
+        intro: `<img width='100%' src="https://3fxtqy18kygf3on3bu39kh93-wpengine.netdna-ssl.com/wp-content/uploads/2021/09/Selenium-WebDriver-for-Automation-Testing@2x.webp" />`,
+        data: [],
       },
       {
         name: "Basic Steps in a Selenium WebDriver Script",
@@ -183,15 +189,13 @@ const techContent = [
           },
         ],
       },
-    ],
-    examples: [
       {
         name: "",
-        imageUrl:
-          "https://3fxtqy18kygf3on3bu39kh93-wpengine.netdna-ssl.com/wp-content/uploads/2021/09/Selenium-WebDriver-for-Automation-Testing@2x.webp",
-        description: "",
+        intro: `<img width='100%' src=${SeleniumImg} />`,
+        data: [],
       },
     ],
+    examples: [],
     reference: [],
   },
   {
