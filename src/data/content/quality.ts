@@ -134,7 +134,7 @@ const techContent = [
         intro: "",
         data: [
           {
-            name: "Browser Manipulation",
+            name: "Selenium WebDriver",
             description: `Selenium WebDriver enables you to perform various commands on the browser such as navigate to browser, get current page title, navigate forward and back, refresh page etc. For details of most of the commands you can use see <a href="https://www.selenium.dev/documentation/webdriver/elements/finders/">Browser Command.</a>`,
           },
         ],
