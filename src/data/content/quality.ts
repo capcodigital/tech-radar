@@ -116,7 +116,7 @@ const techContent = [
         ],
       },
       {
-        name: "Web Element",
+        name: "",
         intro: "",
         data: [
           {
@@ -126,7 +126,7 @@ const techContent = [
         ],
       },
       {
-        name: "Locating Elements",
+        name: "",
         intro: "",
         data: [
           {
@@ -136,17 +136,17 @@ const techContent = [
         ],
       },
       {
-        name: "Browser Manipulation",
+        name: "",
         intro: "",
         data: [
           {
-            name: "Selenium WebDriver",
+            name: "Browser Manipulation",
             description: `Selenium WebDriver enables you to perform various commands on the browser such as navigate to browser, get current page title, navigate forward and back, refresh page etc. For details of most of the commands you can use see <a href="https://www.selenium.dev/documentation/webdriver/elements/finders/">Browser Command.</a>`,
           },
         ],
       },
       {
-        name: "Page Object Models",
+        name: "",
         intro: "",
         data: [
           {
