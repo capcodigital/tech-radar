@@ -77,8 +77,80 @@ const techContent = [
   {
     technology: "Axe",
     docsLink: "https://www.deque.com/axe/core-documentation/",
-    intro: "Content coming soon.",
-    content: [],
+    intro:
+      "Axe is an open source leading digital accessibility testing toolkit for websites, iOS and Android web app and other HTML-based user interfaces. It is fast, secure, lightweight, and was built to seamlessly integrate with any existing test environment so you can automate accessibility testing alongside your regular functional testing. ",
+    content: [
+      {
+        name: "",
+        intro: "",
+        data: [
+          {
+            name: "Facts About Axe",
+            description:
+              "<ul><li>Axe is open source.</li><li>It returns zero false positives (bugs notwithstanding).</li><li>It is designed to work on all modern browsers and with whatever tools, frameworks, libraries and environments you use today.</li><li>It integrates with your existing functional/acceptance automated tests.</li><li>It automatically determines which rules to run based on the evaluation context.</li><li>Axe supports in-memory fixtures, static fixtures, integration tests and iframes of infinite depth.</li><li>Axe is highly configurable.</li></ul>",
+          },
+        ],
+      },
+      {
+        name: "Supported Browsers",
+        intro: "The axe-core API fully supports the following browsers: ",
+        data: [
+          {
+            name: "Browsers",
+            description:
+              "<ul><li>Microsoft Edge v40 and above</li><li>Google Chrome v42 and above</li><li>Mozilla Firefox v38 and above</li><li>Apple Safari v7 and above</li><li>Internet Explorer v11</li></ul>",
+          },
+        ],
+      },
+      {
+        name: "Contents of the API Package",
+        intro: "The axe-core API package consists of: ",
+        data: [
+          {
+            name: "API Package",
+            description:
+              "<ul><li>axe.js - the JavaScript file that should be included in your web site under test (API)</li><li>axe.min.js - a minified version of the above file</li></ul>",
+          },
+        ],
+      },
+      {
+        name: "The Accessibility Rules ",
+        intro: "",
+        data: [
+          {
+            name: "",
+            description: `Axe-core has different types of rules, for WCAG 2.0 and 2.1 on level A and AA, as well as a number of best practices that help you identify common accessibility practices like ensuring every page has an h1 heading, and to help you avoid "gotchas" in ARIA like where an ARIA attribute you used will get ignored.<br><br> With axe-core, you can find on average 57% of WCAG issues automatically. Additionally, axe-core will return elements as "incomplete" where axe-core could not be certain, and manual review is needed.<br><br> To catch bugs earlier in the development cycle it is recommended using the axe-linter vscode extension.<br><br> To improve test coverage even further we recommend the intelligent guided tests in the axe Extension. The complete list of rules, grouped WCAG level and best practice, can found in doc/rule-descriptions.md. For more info about these rules please see <a href="https://github.com/dequelabs/axe-core/blob/develop/doc/rule-descriptions.md ">https://github.com/dequelabs/axe-core/blob/develop/doc/rule-descriptions.md</a>  `,
+          },
+        ],
+      },
+      {
+        name: "Automation Testing",
+        intro:
+          "The first purpose of testing is to prevent bugs from releasing to production. Testing ensures the features are functioning correctly for complex components and modular applications and is required for the effective performance of a software application or product making it more robust and less prone to error. Axe-core Integrations can be used with all modern testing frameworks as listed below. ",
+        data: [
+          {
+            name: "Selenium Webdriver",
+            description: `Selenium is an open-source testing framework. It comes with built-in libraries for web and mobile app testing. Axe core can be integrated with selenium test written with Java, Python, and Ruby. Example selenium implementation can be found here:<br><br><a href="https://github.com/dequelabs/axe-core-maven-html/tree/develop">https://github.com/dequelabs/axe-core-maven-html/tree/develop/</a>`,
+          },
+          {
+            name: "Jasmine",
+            description: `Jasmine is an open-source unit testing framework for JavaScript. Axe can be integrated with Jasmin unit test framework. The example can be found here:<br><br><a href="https://github.com/dequelabs/axe-core/tree/develop/doc/examples/jasmine">https://github.com/dequelabs/axe-core/tree/develop/doc/examples/jasmine</a>`,
+          },
+          {
+            name: "Mocha",
+            description: `Mocha is a JavaScript unit test framework for Node.js programs, featuring browser support, asynchronous testing, test coverage reports, and use of any assertion library. Axe can be integrated with the Mocha unit testing framework. The example on how to integrate with mocha can be found here:<br><br><a href="https://github.com/dequelabs/axe-core/tree/develop/doc/examples/mocha">https://github.com/dequelabs/axe-core/tree/develop/doc/examples/mocha</a>`,
+          },
+          {
+            name: "Cucumber Ruby",
+            description: `Automated accessibility testing using ruby can be integrated with axe. More details can be found here in the ruby example: <br><br><a href="https://github.com/dequelabs/axe-core-gems">https://github.com/dequelabs/axe-core-gems</a>`,
+          },
+          {
+            name: "QUnit Testing Framework",
+            description: `This example demonstrates how to use axe with the QUnit unit testing framework<br><br><a href="https://github.com/dequelabs/axe-core/tree/develop/doc/examples/qunit">https://github.com/dequelabs/axe-core/tree/develop/doc/examples/qunit </a>`,
+          },
+        ],
+      },
+    ],
     examples: [],
     reference: [],
   },

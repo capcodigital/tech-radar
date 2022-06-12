@@ -2,7 +2,7 @@
 
 exports[`ProjectItem should render ProjectItem component 1`] = `
 <div
-  class="styles__StyledWrapper-sc-1pgv985-0 rYhND"
+  class="styles__StyledWrapper-sc-1pgv985-0 elmUIY"
   data-test-id="project-0"
 >
   <div>
@@ -59,7 +59,7 @@ exports[`ProjectItem should render ProjectItem component 1`] = `
             />
             <image
               height="50"
-              href="https://img.icons8.com/color/344/golang.png"
+              href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/backend/go_square.png"
               width="50"
               x="15"
               y="15"
@@ -115,7 +115,7 @@ exports[`ProjectItem should render ProjectItem component 1`] = `
             />
             <image
               height="50"
-              href="https://img.icons8.com/color/452/amazon-web-services.png"
+              href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/aws_square_1.png"
               width="50"
               x="15"
               y="15"
@@ -143,7 +143,7 @@ exports[`ProjectItem should render ProjectItem component 1`] = `
             />
             <image
               height="50"
-              href="https://img.icons8.com/color/452/kubernetes.png"
+              href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/k8s_square.png"
               width="50"
               x="15"
               y="15"
