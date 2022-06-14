@@ -1374,7 +1374,7 @@ exports[`Radar should render Radar component 1`] = `
       >
         <g
           aria-label="Axe"
-          class="techIcon-Axe no-content"
+          class="techIcon-Axe undefined"
           title="Axe"
         >
           <circle
