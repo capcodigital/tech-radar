@@ -98,6 +98,11 @@ npm install
 - `npm test` - run unit tests
 - `npm run cucumberTest` - run e2e ui tests
 
+### Code security and quality
+If using VSCode, install the Snyk extension to analyse the code security and quality.
+
+
+
 <!-- ROADMAP -->
 
 ## Roadmap
