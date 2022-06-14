@@ -101,7 +101,7 @@ npm install
 ### Code security and quality
 If using VSCode, install the Snyk extension to analyse the code security and quality.
 
-
+![Screenshot](images/Snyk-vs-extension.png)
 
 <!-- ROADMAP -->
 
