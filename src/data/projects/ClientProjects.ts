@@ -77,13 +77,6 @@ const ClientProjects = [
       "Capco performed a holistic assessment of the client’s current mobile applications, architectures, development standards and implementation.  Our team set new standards, implemented coding design principles, deployed a new DevOps pipeline, implemented automation testing and restructured and refactored the current applications, reducing development time/cost which significantly increased customer app ratings.",
     technologies: ["Swift", "Kotlin", "HockeyApp", "Jenkins", "Fastlane"],
   },
-  {
-    project: "Quality Engineering Framework Tech Test",
-    clientName: "",
-    clientImage: "",
-    description: `An example of axe core library integration with Java Gradle Selenium Project which demonstrates the ability to use automation test for accessibility testing of online booking website can be found in repo https://github.com/camg-capco/tech-test Please request access if you want to see the detail as it not yet made public. `,
-    technologies: ["Axe", "Java", "Gradle", "Selenium"],
-  },
 ];
 
 export default ClientProjects;
