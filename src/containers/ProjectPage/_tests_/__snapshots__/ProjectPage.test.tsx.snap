@@ -206,34 +206,6 @@ exports[`ProjectPage when techology is React it should render ProjectPage compon
                 <span>
                   <a
                     class="projectTech-link"
-                    href="/technology//hockeyapp"
-                  >
-                    <svg
-                      class="icon"
-                      viewBox="0 0 80 80"
-                    >
-                      <circle
-                        cx="40"
-                        cy="40"
-                        fill="white"
-                        r="40"
-                      />
-                      <image
-                        height="50"
-                        href=""
-                        width="50"
-                        x="15"
-                        y="15"
-                      />
-                    </svg>
-                    <div>
-                      HockeyApp
-                    </div>
-                  </a>
-                </span>
-                <span>
-                  <a
-                    class="projectTech-link"
                     href="/technology/devops/jenkins"
                   >
                     <svg
@@ -256,34 +228,6 @@ exports[`ProjectPage when techology is React it should render ProjectPage compon
                     </svg>
                     <div>
                       Jenkins
-                    </div>
-                  </a>
-                </span>
-                <span>
-                  <a
-                    class="projectTech-link"
-                    href="/technology//fastlane"
-                  >
-                    <svg
-                      class="icon"
-                      viewBox="0 0 80 80"
-                    >
-                      <circle
-                        cx="40"
-                        cy="40"
-                        fill="white"
-                        r="40"
-                      />
-                      <image
-                        height="50"
-                        href=""
-                        width="50"
-                        x="15"
-                        y="15"
-                      />
-                    </svg>
-                    <div>
-                      Fastlane
                     </div>
                   </a>
                 </span>
