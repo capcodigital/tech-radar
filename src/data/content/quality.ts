@@ -1,12 +1,200 @@
 import cypressExample from "../../images/technologies/cypress-example.png";
 import cypressFlow from "../../images/technologies/cypress-flow.png";
+import SeleniumImg from "../../images/technologies/selenium-img.png";
 
 const techContent = [
   {
     technology: "Selenium",
     docsLink: "https://www.selenium.dev/selenium/docs/api/py/api.html",
-    intro: "Content coming soon.",
-    content: [],
+    intro:
+      "Selenium WebDriver is a web framework that permits you to execute cross-browser tests. Selenium is an umbrella project for a range of tools and libraries that enable and support the automation of web browsers.  ",
+    content: [
+      {
+        name: "Selenium WebDriver Framework Architecture",
+        intro: "WebDriver Architecture is made up of four major components:",
+        data: [
+          {
+            name: "Selenium Client library",
+            description:
+              "Selenium supports multiple libraries such as Java, Python, Ruby, CSharp, JavaScript and Kotlin. Language bindings are developed in Selenium to support multiple languages. ",
+          },
+          {
+            name: "JSON wire protocol over HTTP",
+            description:
+              "It is a REST API that acts as a mediator between client libraries and WebDrivers. It transfers data between client and server on the web over HTTP. ",
+          },
+          {
+            name: "Browser Drivers",
+            description:
+              "Each browser contains its respective browser driver for example chrome driver, firefox (gecko) driver, safari driver etc.",
+          },
+          {
+            name: "Browsers",
+            description:
+              "Selenium supports multiple browsers like chrome, firefox, safari, IE, Edge.",
+          },
+        ],
+      },
+      {
+        name: "",
+        intro: `<img width='100%' src="https://3fxtqy18kygf3on3bu39kh93-wpengine.netdna-ssl.com/wp-content/uploads/2021/09/Selenium-WebDriver-for-Automation-Testing@2x.webp" />`,
+        data: [],
+      },
+      {
+        name: "Basic Steps in a Selenium WebDriver Script",
+        intro: "",
+        data: [
+          {
+            name: "",
+            description: "1. Create a WebDriver instance.",
+          },
+          {
+            name: "",
+            description: "2. Navigate to a webpage.",
+          },
+          {
+            name: "",
+            description: `3. Locate a web element on the webpage via <a href="https://www.selenium.dev/documentation/webdriver/elements/finders/">locators in selenium</a>. `,
+          },
+          {
+            name: "",
+            description: "4. Perform one or more user actions on the element. ",
+          },
+          {
+            name: "",
+            description:
+              "5. Preload the expected output/browser response to the action.",
+          },
+          {
+            name: "",
+            description: "6. Run test.",
+          },
+          {
+            name: "",
+            description:
+              "7. Record results and compare results from them to the expected output.",
+          },
+        ],
+      },
+      {
+        name: "Benefits of Selenium WebDriver",
+        intro: "",
+        data: [
+          {
+            name: "",
+            description: `<ul><li>It is one of the most popular Open-Source tools and is easy to get started with for testing web-based applications. It also allows you to perform <a href="https://www.selenium.dev/documentation/webdriver/getting_started/install_drivers/">cross browsers testing</a>.</li></ul> `,
+          },
+          {
+            name: "",
+            description:
+              "<ul><li>Supports multiple operating systems like Windows, Mac, Linux, Unix, etc.</li></ul>",
+          },
+          {
+            name: "",
+            description: `<ul><li>It provides compatibility with a range of languages including Python, Java, JavaScript, Ruby, etc.</li></ul>`,
+          },
+          {
+            name: "",
+            description:
+              "<ul><li>Provides support for modern browsers like Chrome, Firefox, Edge, Opera, Safari, and Internet Explorer.</li></ul>",
+          },
+          {
+            name: "",
+            description:
+              "<ul><li>Selenium WebDriver completes the execution of test scripts faster when compared to other tools</li></ul>",
+          },
+          {
+            name: "",
+            description:
+              "<ul><li>More Concise API (Application Programming interface) than Selenium RC’s</li></ul>",
+          },
+          {
+            name: "",
+            description:
+              "<ul><li>It also provides compatibility with iPhoneDriver, HtmlUnitDriver, and AndroidDriver</li></ul>",
+          },
+        ],
+      },
+      {
+        name: "",
+        intro: "",
+        data: [
+          {
+            name: "Web Element",
+            description: `Selenium uses Web-Element which represents a DOM element to locate an element on the page. Web Elements can be found by searching from the document root using a WebDriver instance, or by searching under another Web Element. In order to write effective tests, one must be familiar with how to find the Web Elements which are based on different properties like ID, Name, Class, XPath, CSS Selectors, link Text, etc located on <a href="https://www.selenium.dev/documentation/webdriver/elements/">Web element.</a>`,
+          },
+        ],
+      },
+      {
+        name: "",
+        intro: "",
+        data: [
+          {
+            name: "Locating Elements",
+            description: `One of the most fundamental techniques to learn when using WebDriver is how to find elements on the page. For example, to locate element for a button on the Chrome browser is by moving your mouse above the button then right click and select inspect which will open the DOM and expose the details of web element to use when clicking on the button. For more details of how to Locate elements click on <a href="https://www.selenium.dev/documentation/webdriver/elements/finders/">Locating Elements.</a>`,
+          },
+        ],
+      },
+      {
+        name: "",
+        intro: "",
+        data: [
+          {
+            name: "Browser Manipulation",
+            description: `Selenium WebDriver enables you to perform various commands on the browser such as navigate to browser, get current page title, navigate forward and back, refresh page etc. For details of most of the commands you can use see <a href="https://www.selenium.dev/documentation/webdriver/elements/finders/">Browser Command.</a>`,
+          },
+        ],
+      },
+      {
+        name: "",
+        intro: "",
+        data: [
+          {
+            name: "Page Object Models",
+            description: `Selenium uses Page Object Design Pattern which has become popular in test automation for enhancing test maintenance and reducing code duplication. A page object is an object-oriented class that serves as an interface to a page of your application under test (AUT). The tests then use the methods of this page object class whenever they need to interact with the UI of that page. The benefit is that if the UI changes for the page, the tests themselves don’t need to change, only the code within the page object needs to change. Subsequently all changes to support that new UI are located in one place. For more details of how to write page object class clink on the link <a href="https://www.selenium.dev/documentation/test_practices/encouraged/page_object_models/">Page Object Design.</a>`,
+          },
+        ],
+      },
+      {
+        name: "Wait commands in Selenium",
+        intro:
+          "Wait commands in Selenium enable the QAs to pause the execution of test cases for a specified length time. These commands help in observing and troubleshooting errors that may arise due to time variations or any lags. There are two types of wait: ",
+        data: [
+          {
+            name: "Implicit wait",
+            description: `This command instructs the WebDriver to wait for a specified time before throwing an exception. <ul><li>Refer to the command below:<br>driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);</li><li>It can be defined globally for the driver and it will be set for the life of the WebDriver object instance. The specified time is the maximum time, if the element appears before the max time, it will perform action. Disadvantage is that it may mask performance issues of the application. </li></ul>`,
+          },
+          {
+            name: "Explicit wait commands",
+            description: `These commands instruct the WebDriver to wait until a particular condition occurs before executing further scripts. <ul><li>WebDriverWait wait = new WebDriverWait(driver,30);</li><li>Explicit wait is used to target specific condition and wait until an expected condition is met - the expected condition can be visibility of an element, element to be clickable, frame to be visible etc. with the maximum time limit until which it will wait.</li></ul>`,
+          },
+          {
+            name: "Fluent wait",
+            description: `This is used to define maximum wait time for the driver and poll for the given frequency until the condition is met. It can be configured to ignore specific type of exceptions such as 'NoSuchElementException'.`,
+          },
+        ],
+      },
+      {
+        name: "",
+        intro: `To understand the in-depth implementation of how these commands operate in Selenium, refer to this detailed guide on <a href="https://www.selenium.dev/documentation/webdriver/waits/">wait commands in Selenium WebDriver.</a> `,
+        data: [],
+      },
+      {
+        name: "How to use Selenium WebDriver: Example",
+        intro: `The code below automates the login function on a sample application (example: BrowserStack) Sign-in page in Chrome: `,
+        data: [
+          {
+            name: "",
+            description: ``,
+          },
+        ],
+      },
+      {
+        name: "",
+        intro: `<img width='100%' src=${SeleniumImg} />`,
+        data: [],
+      },
+    ],
     examples: [],
     reference: [],
   },
