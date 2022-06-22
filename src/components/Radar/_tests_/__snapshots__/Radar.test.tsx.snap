@@ -1158,7 +1158,7 @@ exports[`Radar should render Radar component 1`] = `
       >
         <g
           aria-label="Selenium"
-          class="techIcon-Selenium no-content"
+          class="techIcon-Selenium undefined"
           title="Selenium"
         >
           <circle
