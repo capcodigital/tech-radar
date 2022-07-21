@@ -115,6 +115,8 @@ See the [open issues](https://github.com/capcodigital/tech-radar/issues) for a l
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
+To contribute towards this repo, please request access to `uk-tech-radar-contributors` /  `uk-tech-radar-maintainers` GitHub team as required.
+
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
