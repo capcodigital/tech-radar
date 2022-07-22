@@ -98,6 +98,11 @@ npm install
 - `npm test` - run unit tests
 - `npm run cucumberTest` - run e2e ui tests
 
+### Code security and quality
+If using VSCode, install the Snyk extension to analyse the code security and quality.
+
+![Screenshot](images/Snyk-vs-extension.png)
+
 <!-- ROADMAP -->
 
 ## Roadmap
@@ -109,6 +114,8 @@ See the [open issues](https://github.com/capcodigital/tech-radar/issues) for a l
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+To contribute towards this repo, please request access to `uk-tech-radar-contributors` /  `uk-tech-radar-maintainers` GitHub team as required.
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
