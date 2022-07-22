@@ -3,6 +3,7 @@ import ProjectTechnologyLink from "../ProjectPageLink/ProjectTechnologyLink";
 import images from "../../images/ClientProjects";
 import StyledWrapper from "./styles";
 import externallink from "../../images/externallink.svg";
+import { technologyList } from "../../data/data";
 
 type ProjectItemProps = {
   data: Array<{
@@ -14,6 +15,11 @@ type ProjectItemProps = {
     githubLink?: string;
   }>;
 };
+
+const includesValue = (keyTech: string) =>
+  technologyList.some((tech) => {
+    return tech.toLowerCase() === keyTech.toLowerCase();
+  });
 
 const ProjectItem: FC<ProjectItemProps> = ({ data }) => (
   <>
@@ -62,11 +68,14 @@ const ProjectItem: FC<ProjectItemProps> = ({ data }) => (
             <div className="text">{description}</div>
             <div className="heading">Key Technologies</div>
             <div className="technologies">
-              {technologies.map((tech: string, idx: number) => (
-                <span key={`tech-${idx}`}>
-                  <ProjectTechnologyLink techName={tech} />
-                </span>
-              ))}
+              {technologies.map(
+                (tech: string, idx: number) =>
+                  includesValue(tech) && (
+                    <span key={`tech-${idx}`}>
+                      <ProjectTechnologyLink techName={tech} />
+                    </span>
+                  )
+              )}
             </div>
           </div>
         </StyledWrapper>
