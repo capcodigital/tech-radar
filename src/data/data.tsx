@@ -160,7 +160,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Selenium",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/selenium_square.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "Cucumber",
@@ -207,7 +207,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Axe",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/axe_square.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "Cypress",

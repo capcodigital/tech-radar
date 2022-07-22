@@ -997,7 +997,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             />
             <image
               height="33.941125496954285"
-              href="https://img.icons8.com/fluent/452/github.png"
+              href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/github_square.png"
               width="33.941125496954285"
               x="-311.41920003518635"
               y="153.02943725152284"
@@ -1018,7 +1018,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             />
             <image
               height="33.941125496954285"
-              href="https://img.icons8.com/color/452/circleci.png"
+              href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/circleci_square.png"
               width="33.941125496954285"
               x="-349.5407469979711"
               y="53.71941212956103"
@@ -1039,7 +1039,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             />
             <image
               height="33.941125496954285"
-              href="https://raw.githubusercontent.com/mauve/vscode-terraform/master/terraform.png"
+              href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/terraform_square.png"
               width="33.941125496954285"
               x="-355.10800717369005"
               y="-52.51024025947933"
@@ -1060,7 +1060,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             />
             <image
               height="33.941125496954285"
-              href="https://www.pngitem.com/pimgs/m/329-3299659_hashicorp-vault-logo-hd-png-download.png"
+              href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/vault_square.png"
               width="33.941125496954285"
               x="-327.57601834696146"
               y="-155.2610213942492"
@@ -1081,7 +1081,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             />
             <image
               height="33.941125496954285"
-              href="https://pbs.twimg.com/profile_images/1224335491899760641/h404B5dU_400x400.jpg"
+              href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/sonarqube_square.png"
               width="33.941125496954285"
               x="-269.6398034107912"
               y="-244.47496891048894"
@@ -1102,7 +1102,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             />
             <image
               height="33.941125496954285"
-              href="https://www.finsmes.com/wp-content/uploads/2019/06/elastic.png"
+              href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/elastic_stack_square.png"
               width="33.941125496954285"
               x="-186.97056274847728"
               y="-311.41920003518624"
@@ -1123,7 +1123,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             />
             <image
               height="33.941125496954285"
-              href="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_2ea5f7178028686921161d65d4be481a/bitbucket.png"
+              href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/bitbucket_square.png"
               width="33.941125496954285"
               x="-195.94914619726114"
               y="86.36277058485618"
@@ -1144,7 +1144,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             />
             <image
               height="33.941125496954285"
-              href="https://avidlearnerinprogress.github.io/assets/images/tools/jenkins.jpg"
+              href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/jenkins_square.png"
               width="33.941125496954285"
               x="-219.12106690013033"
               y="25.99785335385979"
@@ -1165,7 +1165,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             />
             <image
               height="33.941125496954285"
-              href="https://cdn.worldvectorlogo.com/logos/teamcity-icon.svg"
+              href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/teamcity_square.png"
               width="33.941125496954285"
               x="-222.50508779125363"
               y="-38.5731118237922"
@@ -1186,7 +1186,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             />
             <image
               height="33.941125496954285"
-              href="https://istio.io/latest/img/istio-bluelogo-whitebackground-unframed.svg"
+              href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/istio_square.png"
               width="33.941125496954285"
               x="-205.769957327948"
               y="-101.02946898414254"
@@ -1207,7 +1207,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             />
             <image
               height="33.941125496954285"
-              href="https://upload.wikimedia.org/wikipedia/commons/0/05/Ansible_Logo.png"
+              href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/ansible_square.png"
               width="33.941125496954285"
               x="-170.55382668047196"
               y="-155.25755472930786"
@@ -1228,7 +1228,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             />
             <image
               height="33.941125496954285"
-              href="https://seeklogo.com/images/P/packer-logo-732D5F5529-seeklogo.com.png"
+              href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/packer_square.png"
               width="33.941125496954285"
               x="-120.30389608181056"
               y="-195.94914619726111"
@@ -1249,7 +1249,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             />
             <image
               height="33.941125496954285"
-              href="https://symbols.getvecta.com/stencil_98/71_twistlock-icon.a467faf956.svg"
+              href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/twistlock_square.png"
               width="33.941125496954285"
               x="-45.03401445525039"
               y="50.78060296901723"
@@ -1270,7 +1270,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             />
             <image
               height="33.941125496954285"
-              href="https://design.jboss.org/kiali/logo/final/PNG/kiali_icon_darkbkg_1280px.png"
+              href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/kiali_square.png"
               width="33.941125496954285"
               x="-84.72172846597152"
               y="11.092888958296118"
@@ -1291,7 +1291,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             />
             <image
               height="33.941125496954285"
-              href="https://cdn.worldvectorlogo.com/logos/concourse-1.svg"
+              href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/concourse_square.png"
               width="33.941125496954285"
               x="-84.72172846597152"
               y="-45.034014455250386"
@@ -1312,7 +1312,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             />
             <image
               height="33.941125496954285"
-              href="https://d7umqicpi7263.cloudfront.net/img/product/4c3eb104-ebd1-42be-9bd4-de25ef6918df/84c590de-f853-4d50-a314-d92f104ec3a9.png"
+              href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/consul_square.png"
               width="33.941125496954285"
               x="-45.03401445525044"
               y="-84.7217284659715"
