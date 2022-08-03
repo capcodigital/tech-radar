@@ -46,6 +46,9 @@ export const ContentWrapper = styled.div`
       width: 50px;
       height: 50px;
     }
+    .content-head {
+      padding: 30px 0;
+    }
   }
   .content-head {
     display: flex;
@@ -96,4 +99,16 @@ export const Divider = styled.hr`
     rgba(255, 255, 255, 0.75),
     rgba(255, 255, 255, 0)
   );
+`;
+
+export const StyledWrapper = styled.div<{ showMobileLink?: boolean }>`
+  ${({ showMobileLink }) =>
+    showMobileLink
+      ? `
+    @media screen and (min-width: 1000px) {display: none;};
+    > a {
+      font-size: 17px;
+    }
+    `
+      : `@media screen and (max-width: 1000px) {display: none;}`}
 `;
