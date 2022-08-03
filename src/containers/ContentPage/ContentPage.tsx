@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
+import Grid from "@material-ui/core/Grid";
 import {
   RadarContextType,
   RadarContext,
@@ -19,6 +20,7 @@ import {
   ContentBody,
   Title,
   Divider,
+  StyledWrapper,
 } from "./styles/";
 import ContentNavButton from "../../components/ComponentNavButton/ContentNavButton";
 import {
@@ -125,7 +127,18 @@ const CategoryPage = () => {
       />
       {content && (
         <ContentWrapper>
-          <BackLink category={category} />
+          <Grid container justify="space-between">
+            <Grid item>
+              <BackLink category={category} />
+            </Grid>
+            <Grid item>
+              <StyledWrapper showMobileLink>
+                <ClientProjectLink
+                  onClick={() => handleClick(category, technology)}
+                />
+              </StyledWrapper>
+            </Grid>
+          </Grid>
           <div className="content-head">
             <div>
               <Title className={`title-${technology}`}>{technology}</Title>
@@ -143,9 +156,11 @@ const CategoryPage = () => {
               </a>
             </div>
             {(ossProjectCount !== 0 || clientProjectCount !== 0) && (
-              <ClientProjectLink
-                onClick={() => handleClick(category, technology)}
-              />
+              <StyledWrapper>
+                <ClientProjectLink
+                  onClick={() => handleClick(category, technology)}
+                />
+              </StyledWrapper>
             )}
           </div>
           <ContentBody>

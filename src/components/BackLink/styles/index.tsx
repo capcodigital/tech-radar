@@ -5,6 +5,7 @@ const StyledBackLink = styled(Link)`
   font-size: 17px;
   display: block;
   color: inherit;
+  margin-left: -10px;
   img {
     margin-left: 10px !important;
   }
