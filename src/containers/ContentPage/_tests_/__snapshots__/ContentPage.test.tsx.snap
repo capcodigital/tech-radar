@@ -2,7 +2,7 @@
 
 exports[`ContentPage should render ContentPage component 1`] = `
 <div
-  class="styles__Wrapper-sc-17b28va-0 eMGyw"
+  class="styles__Wrapper-sc-17b28va-0 cAqPbr"
 >
   <img
     alt="DevOps"
@@ -12,7 +12,7 @@ exports[`ContentPage should render ContentPage component 1`] = `
     width="650"
   />
   <div
-    class="styles__ContentWrapper-sc-17b28va-1 iRnpFH"
+    class="styles__ContentWrapper-sc-17b28va-1 jUKZI"
   >
     <div
       class="MuiGrid-root MuiGrid-container MuiGrid-justify-content-xs-space-between"
@@ -21,7 +21,7 @@ exports[`ContentPage should render ContentPage component 1`] = `
         class="MuiGrid-root MuiGrid-item"
       >
         <a
-          class="styles__StyledBackLink-sc-1t7dby2-0 buYLtI"
+          class="styles__StyledBackLink-sc-1t7dby2-0 eIpoUv"
           href="/category/devops"
         >
           <svg
@@ -48,10 +48,10 @@ exports[`ContentPage should render ContentPage component 1`] = `
         class="MuiGrid-root MuiGrid-item"
       >
         <div
-          class="styles__StyledWrapper-sc-17b28va-5 eAVOkG"
+          class="styles__StyledWrapper-sc-17b28va-5 kFIvTx"
         >
           <a
-            class="styles__StyledLink-sc-rz9yta-0 hZmfUA"
+            class="styles__StyledLink-sc-rz9yta-0 MjBCH"
             href="/projects/devops/github"
           >
             View Projects
@@ -64,7 +64,7 @@ exports[`ContentPage should render ContentPage component 1`] = `
     >
       <div>
         <div
-          class="styles__Title-sc-17b28va-3 kKhnmO title-GitHub"
+          class="styles__Title-sc-17b28va-3 iXyYaR title-GitHub"
         >
           GitHub
         </div>
@@ -95,7 +95,7 @@ exports[`ContentPage should render ContentPage component 1`] = `
       </div>
     </div>
     <div
-      class="styles__ContentBody-sc-17b28va-2 lmMEmR"
+      class="styles__ContentBody-sc-17b28va-2 ehYhJm"
     >
       <div
         class="content-intro"
@@ -103,10 +103,10 @@ exports[`ContentPage should render ContentPage component 1`] = `
         Content coming soon.
       </div>
       <hr
-        class="styles__Divider-sc-17b28va-4 dXhftT"
+        class="styles__Divider-sc-17b28va-4 cBNUFo"
       />
       <div
-        class="ContentNavButton__StyledContentNavButton-sc-17243nr-0 kujLCr"
+        class="ContentNavButton__StyledContentNavButton-sc-17243nr-0 iMUKvo"
         data-test-id="Previous"
       >
         <div>
@@ -119,7 +119,7 @@ exports[`ContentPage should render ContentPage component 1`] = `
         </a>
       </div>
       <div
-        class="ContentNavButton__StyledContentNavButton-sc-17243nr-0 kxcIRo"
+        class="ContentNavButton__StyledContentNavButton-sc-17243nr-0 cSdhqz"
         data-test-id="Next"
       >
         <div>
