@@ -1974,7 +1974,7 @@ exports[`Radar should render Radar component 1`] = `
       >
         <g
           aria-label="Gradle"
-          class="techIcon-Gradle undefined"
+          class="techIcon-Gradle no-content"
           title="Gradle"
         >
           <circle
@@ -2022,7 +2022,7 @@ exports[`Radar should render Radar component 1`] = `
       >
         <g
           aria-label="Groovy"
-          class="techIcon-Groovy undefined"
+          class="techIcon-Groovy no-content"
           title="Groovy"
         >
           <circle
