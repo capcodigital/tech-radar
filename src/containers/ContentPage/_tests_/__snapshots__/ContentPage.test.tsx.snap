@@ -12,31 +12,53 @@ exports[`ContentPage should render ContentPage component 1`] = `
     width="650"
   />
   <div
-    class="styles__ContentWrapper-sc-17b28va-1 cKzHYA"
+    class="styles__ContentWrapper-sc-17b28va-1 iRnpFH"
   >
-    <a
-      class="styles__StyledBackLink-sc-1t7dby2-0 cAfEuZ"
-      href="/category/devops"
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-justify-content-xs-space-between"
     >
-      <svg
-        aria-hidden="true"
-        class="MuiSvgIcon-root"
-        focusable="false"
-        viewBox="0 0 24 24"
+      <div
+        class="MuiGrid-root MuiGrid-item"
       >
-        <path
-          d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
-        />
-      </svg>
-      Back to 
-      DevOps
-      <img
-        alt="DevOps"
-        height="24"
-        src="devops.svg"
-        width="24"
-      />
-    </a>
+        <a
+          class="styles__StyledBackLink-sc-1t7dby2-0 buYLtI"
+          href="/category/devops"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+            />
+          </svg>
+          Back to 
+          DevOps
+          <img
+            alt="DevOps"
+            height="24"
+            src="devops.svg"
+            width="24"
+          />
+        </a>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item"
+      >
+        <div
+          class="styles__StyledWrapper-sc-17b28va-5 eAVOkG"
+        >
+          <a
+            class="styles__StyledLink-sc-rz9yta-0 hZmfUA"
+            href="/projects/devops/github"
+          >
+            View Projects
+          </a>
+        </div>
+      </div>
+    </div>
     <div
       class="content-head"
     >

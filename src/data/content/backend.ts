@@ -377,5 +377,21 @@ const techContent = [
     examples: [],
     reference: [],
   },
+  {
+    technology: "Groovy",
+    docsLink: "https://groovy-lang.org/index.html",
+    intro: "Content coming soon.",
+    content: [],
+    examples: [],
+    reference: [],
+  },
+  {
+    technology: "Gradle",
+    docsLink: "https://gradle.org/index.html",
+    intro: "Content coming soon.",
+    content: [],
+    examples: [],
+    reference: [],
+  },
 ];
 export default techContent;

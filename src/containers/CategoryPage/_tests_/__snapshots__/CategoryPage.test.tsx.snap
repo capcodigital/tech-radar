@@ -492,7 +492,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
         class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
       >
         <a
-          class="styles__StyledBackLink-sc-1t7dby2-0 cAfEuZ"
+          class="styles__StyledBackLink-sc-1t7dby2-0 buYLtI"
           href="/home"
         >
           <svg
