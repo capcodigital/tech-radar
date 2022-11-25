@@ -13,10 +13,15 @@ import { data, technologies, categoryList, techType } from "../../data/data";
 import images from "../../images";
 import styled from "styled-components/macro";
 
+/**
+ * WrapperProps is an object with a single property, category, which is a string.
+ * @property {string} category - The category of the component.
+ */
 type WrapperProps = {
   category: string;
 };
 
+/* It's a template literal. */
 const SubheaderStyle = `
   font-size: 32px;
   font-weight: 700;
@@ -25,6 +30,7 @@ const SubheaderStyle = `
   vertical-align: middle;
 `;
 
+/* It's a template literal. */
 const Wrapper = styled.div<WrapperProps>`
   width: 100%;
   display: flex;
@@ -107,6 +113,7 @@ const Wrapper = styled.div<WrapperProps>`
   }
 `;
 
+/* It's a template literal. */
 const Title = styled.div`
   font-size: 90px;
   margin-bottom: 20px;
@@ -117,6 +124,7 @@ const Title = styled.div`
   padding-right: 30px;
 `;
 
+/* It's a template literal. */
 const MobileTitle = styled.div`
   width: 210px;
   font-size: 52px;
@@ -128,6 +136,7 @@ const MobileTitle = styled.div`
   margin: 20px 0 20px 0;
 `;
 
+/* It's a template literal. */
 const Divider = styled.hr`
   background: white;
   margin: 0;
@@ -136,6 +145,7 @@ const Divider = styled.hr`
   margin-bottom: 15px;
 `;
 
+/* A React component that renders the category page. */
 const CategoryPage = () => {
   const { category, setCategory, setTechnology } =
     useContext<RadarContextType>(RadarContext);

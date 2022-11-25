@@ -11,6 +11,7 @@ const mockValue = {
   setTechnology: jest.fn(),
 };
 
+/* Mocking the RadarContextProvider component. */
 jest.doMock(
   "../../../components/RadarContextProvider/RadarContextProvider",
   () => {

@@ -19,6 +19,12 @@ type ReferenceContentType = {
   contentData: Array<string>;
 };
 
+/**
+ * It takes in an array of objects, and maps over each object, and maps over each object's data array,
+ * and returns a styled div with a title, intro, and accordion component
+ * @param  - `contentData` - an array of objects that contain the following properties:
+ * @returns A styled component that is a div with a class of subcontent.
+ */
 export const SubContent: FC<SubContentType> = ({ contentData }) => {
   return (
     <>
@@ -65,6 +71,7 @@ export const SubContent: FC<SubContentType> = ({ contentData }) => {
   );
 };
 
+/* A React component that takes in contentData as a prop and returns a styled subcontent component. */
 export const ExampleContent: FC<ExampleContentType> = ({ contentData }) => (
   <StyledSubContent>
     <Title>Use Cases</Title>
@@ -85,6 +92,10 @@ export const ExampleContent: FC<ExampleContentType> = ({ contentData }) => (
   </StyledSubContent>
 );
 
+/**
+ * It takes in an array of strings and returns a styled list of links
+ * @param  - `contentData` - the data that will be displayed in the content
+ */
 export const ReferenceContent: FC<ReferenceContentType> = ({ contentData }) => (
   <StyledSubContent>
     <Title>Sources</Title>
