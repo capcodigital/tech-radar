@@ -32,6 +32,7 @@ import ClientProjectLink from "../../components/ProjectPageLink/ProjectPageLink"
 import Axios from "axios";
 import ClientProjects from "../../data/projects/ClientProjects";
 
+/* CategoryPage component that is used to display the content of a technology. */
 const CategoryPage = () => {
   const { category, technology, setCategory, setTechnology } =
     useContext<RadarContextType>(RadarContext);
@@ -40,11 +41,22 @@ const CategoryPage = () => {
   const [ossProjectCount, setOssProjectCount] = useState<number>(0);
   const [clientProjectCount, setClientProjectCount] = useState<number>(0);
 
+  /**
+   * When the user clicks on a button, set the category and technology state variables to the values
+   * passed in as arguments.
+   * @param {string} categoryName - string - The name of the category that was clicked on.
+   * @param {string} techName - string - the name of the technology that was clicked
+   */
   const handleClick = (categoryName: string, techName: string) => {
     setCategory(categoryName);
     setTechnology(techName);
   };
 
+  /**
+   * It fetches data from the GitHub API, filters the data based on a given technology name, and sets
+   * the state of the number of open source projects that use that technology
+   * @param {string} techName - The name of the technology you want to search for.
+   */
   const fetchOssProject = async (techName: string) => {
     const response = await Axios.get(
       "https://api.github.com/orgs/capcodigital/repos"
@@ -54,11 +66,18 @@ const CategoryPage = () => {
     setOssProjectCount(results.length);
   };
 
+  /**
+   * Get the client projects that match the tech name and set the client project count to the length of
+   * the results.
+   * @param {string} techName - The name of the technology that you want to filter by.
+   */
   const getClientProjects = (techName: string) => {
     const results = filterClientProjects(ClientProjects, techName);
     setClientProjectCount(results.length);
   };
 
+  /* A React hook that is called after the component is mounted. It is used to set the state of the
+  component. */
   useEffect(() => {
     let url = window.location.pathname.split("/");
 
@@ -116,6 +135,7 @@ const CategoryPage = () => {
     )[0];
   let previousCategory = filteredPrev ? filteredPrev.categoryName : "Mobile";
 
+  /* Returning the JSX that is rendered on the page. */
   return (
     <Wrapper category={category}>
       <img
