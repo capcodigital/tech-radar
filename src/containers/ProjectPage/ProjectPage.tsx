@@ -21,8 +21,7 @@ type Project = {
 };
 
 const ProjectPage = () => {
-  const { technology, setTechnology } =
-    useContext<RadarContextType>(RadarContext);
+  const { technology } = useContext<RadarContextType>(RadarContext);
 
   const [clientProjects, setClientProjects] = useState<Project[]>([]);
   const [clientProjectCount, setClientProjectCount] = useState<number>(0);
@@ -73,11 +72,13 @@ const ProjectPage = () => {
     setClientProjects(results);
     setClientProjectCount(results.length);
   };
+
   useEffect(() => {
     let url = window.location.pathname.split("/");
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     fetchClientProjects(url[3]);
     fetchOssProject(url[3]);
-  }, [technology, setTechnology]);
+  }, []);
 
   return (
     <Wrapper>
