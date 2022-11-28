@@ -4,7 +4,7 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
-<!-- PROJECT LOGO -->
+<!-- PROJECT LOGO X  -->
 <br />
 <p align="center">
   <a href="https://github.com/capcodigital/tech-radar">
