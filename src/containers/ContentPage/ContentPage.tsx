@@ -127,7 +127,7 @@ const CategoryPage = () => {
       />
       {content && (
         <ContentWrapper>
-          <Grid container justify="space-between">
+          <Grid container justifyContent="space-between">
             <Grid item>
               <BackLink category={category} />
             </Grid>

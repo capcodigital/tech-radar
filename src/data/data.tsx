@@ -399,7 +399,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Angular",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/frontend/angular_square.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "TypeScript",
