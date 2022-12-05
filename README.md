@@ -42,6 +42,11 @@
       </ul>
     </li>
     <li><a href="#development">Development</a></li>
+      <ul>
+        <li><a href="#commands">Commands</a></li>
+        <li><a href="#code-security-and-quality">Code security and quality</a></li>
+        <li><a href="#deployment">Deployment</a></li>
+      </ul>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
