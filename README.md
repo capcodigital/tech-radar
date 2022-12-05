@@ -107,7 +107,9 @@ If using VSCode, install the Snyk extension to analyse the code security and qua
 
 ### Deployment
 
+The continuous integration is done by the Github Actions defined in [.github/workflows/main.yml](https://github.com/capcodigital/tech-radar/blob/master/.github/workflows/main.yml). Each commit will trigger a deployment of the test version to Cloudflare Pages and then test automation will run against the preview. The deployed URL will be shown on the PR. 
 
+Reference: https://github.com/capcodigital/tech-radar/wiki/Continuous-Integration-in-Tech-Radar
 
 ## Roadmap
 
