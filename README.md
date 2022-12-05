@@ -42,6 +42,11 @@
       </ul>
     </li>
     <li><a href="#development">Development</a></li>
+      <ul>
+        <li><a href="#commands">Commands</a></li>
+        <li><a href="#code-security-and-quality">Code security and quality</a></li>
+        <li><a href="#deployment">Deployment</a></li>
+      </ul>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -104,6 +109,12 @@ If using VSCode, install the Snyk extension to analyse the code security and qua
 ![Screenshot](images/Snyk-vs-extension.png)
 
 <!-- ROADMAP -->
+
+### Deployment
+
+The CI/CD pipline is done via the [Github Actions](https://github.com/capcodigital/tech-radar/actions) defined in [.github/workflows/main.yml](https://github.com/capcodigital/tech-radar/blob/master/.github/workflows/main.yml). Commits to all branches will trigger a deployment of the test version to Cloudflare Pages and then test automation will run against the preview. The deployed URL will be shown on the PR. 
+
+Reference: https://github.com/capcodigital/tech-radar/wiki/Continuous-Integration-in-Tech-Radar
 
 ## Roadmap
 

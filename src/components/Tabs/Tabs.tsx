@@ -6,6 +6,14 @@ import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
 import StyledTabs from "./styles/";
 
+/**
+ * `TabsProps` is an object with four properties, two of which are numbers, one of which is a React
+ * node, and one of which is a React node.
+ * @property {number} ossProjectCount - The number of open source projects you've contributed to.
+ * @property {number} clientProjectCount - The number of client projects
+ * @property panelOne - This is the first panel that will be displayed.
+ * @property panelTwo - React.ReactNode;
+ */
 type TabsProps = {
   ossProjectCount: number;
   clientProjectCount: number;
@@ -13,6 +21,7 @@ type TabsProps = {
   panelTwo: React.ReactNode;
 };
 
+/* It's Tabs component that takes in four props and returns a styled tab component. */
 const Tabs: FC<TabsProps> = ({
   ossProjectCount,
   clientProjectCount,
@@ -21,10 +30,16 @@ const Tabs: FC<TabsProps> = ({
 }) => {
   const [value, setValue] = React.useState("1");
 
+  /**
+   * handleChange takes in an event and a newValue and sets the value to the newValue.
+   * @param event - React.SyntheticEvent
+   * @param {string} newValue - The new value of the tab.
+   */
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
     setValue(newValue);
   };
 
+  /* It's returning a styled tab component. */
   return (
     <StyledTabs>
       <TabContext value={value}>
