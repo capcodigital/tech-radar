@@ -2,13 +2,13 @@
 
 exports[`ProjectPage when techology is React it should render ProjectPage component 1`] = `
 <div
-  class="styles__Wrapper-sc-azja3a-0 japROT"
+  class="styles__Wrapper-sc-azja3a-0 bzpueU"
 >
   <div
     class="MuiContainer-root MuiContainer-maxWidthMd"
   >
     <button
-      class="styles__StyledBackButton-sc-1t7dby2-1 eUhvKA"
+      class="styles__StyledBackButton-sc-1t7dby2-1 irAvQb"
     >
       <svg
         aria-hidden="true"
@@ -23,7 +23,7 @@ exports[`ProjectPage when techology is React it should render ProjectPage compon
       Back
     </button>
     <div
-      class="styles__Title-sc-azja3a-2 coJkuI"
+      class="styles__Title-sc-azja3a-2 cpmuRv"
     >
       Projects
     </div>
@@ -46,10 +46,10 @@ exports[`ProjectPage when techology is React it should render ProjectPage compon
       />
     </svg>
     <div
-      class="styles__ContentBody-sc-azja3a-1 gulMqd"
+      class="styles__ContentBody-sc-azja3a-1 fCkuSW"
     >
       <div
-        class="styles__StyledTabs-sc-gdc602-0 kXiTev"
+        class="styles__StyledTabs-sc-gdc602-0 eZgCjI"
       >
         <div
           class="MuiBox-root css-1gsv261"
@@ -107,7 +107,7 @@ exports[`ProjectPage when techology is React it should render ProjectPage compon
           role="tabpanel"
         >
           <div
-            class="styles__StyledWrapper-sc-1pgv985-0 elmUIY"
+            class="styles__StyledWrapper-sc-1pgv985-0 kuStYb"
             data-test-id="project-0"
           >
             <div>

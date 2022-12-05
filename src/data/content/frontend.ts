@@ -112,8 +112,65 @@ const techContent = [
   {
     technology: "Angular",
     docsLink: "https://angular.io/docs",
-    intro: "Content coming soon.",
-    content: [],
+    intro:
+      '<a href="https://https://angular.io/">Angular</a> is a highly popular web development framework that offers rich user experiences, fast responsiveness, and code maintainability.',
+    content: [
+      {
+        name: "State Management",
+        intro:
+          "Managing states is one of the biggest challenges in large web applications. State management is a key component when building applications. There are various approaches by which we can manage the state in an Angular application.",
+        data: [
+          {
+            name: "NgRx",
+            description:
+              '<a href="https://ngrx.io">NgRX</a> is a framework for building reactive applications in Angular, managing global and local state. NgRx is inspired by the Redux pattern. Main building parts: store, actions, reducers, selectors and effects.',
+          },
+          {
+            name: "NgXs",
+            description:
+              '<a href="https://ngxs.io">NgXs</a> is a state management pattern + library for Angular. It acts as a single source of truth for your application state, providing simple rules for predictable state mutations.',
+          },
+        ],
+      },
+      {
+        name: "UI Libraries",
+        intro: "",
+        data: [
+          {
+            name: "MaterialUI",
+            description:
+              '<a href="https://material-ui.com/">Google’s Material Design</a> is a popular Angular UI library with responsive animations and it has been adopted by the wider design community.',
+          },
+          {
+            name: "NG Bootstrap",
+            description:
+              '<a href="https://ng-bootstrap.github.io">NG Bootstrap</a> Angular widgets built from the ground up using only Bootstrap 5 CSS with APIs designed for the Angular ecosystem.',
+          },
+        ],
+      },
+      {
+        name: "Styling",
+        intro:
+          "The point of building a frontend User Interface with Angular is how flexible it can be, especially when it comes to building separate components. It is important to know that whatever styling strategy you may decide to use, you are still writing CSS. The difference is that the strategies together with the library make the process easier.",
+        data: [
+          {
+            name: "CSS and SASS",
+            description:
+              'This involves using separate stylesheets like our conventional way of styling our HTML websites either with CSS or a CSS preprocessor called <a href="https://sass-lang.com/">SASS</a>.',
+          },
+          {
+            name: "BEM - Block Element Modifier",
+            description:
+              "It's a CSS naming convention for writing cleaner and more readable CSS classes. <a href='http://getbem.com/'>BEM</a> aims to write independent CSS blocks increasing reusability.",
+          },
+          {
+            name: "CSS Modules",
+            description:
+              "A CSS Module is a CSS file in which all class names and animation names are scoped locally by default. The key words here are scoped locally. With this, your CSS class names become similar to local variables in JavaScript. It goes into the compiler, and CSS comes out the other side.",
+          },
+        ],
+      },
+    ],
     examples: [],
     reference: [],
   },
