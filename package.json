@@ -37,7 +37,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test -u",
+    "test": "react-scripts test",
     "cucumberTest": "./node_modules/.bin/cucumber-js --publish --exit",
     "cypress": "cypress open",
     "eject": "react-scripts eject"
