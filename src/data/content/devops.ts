@@ -2,8 +2,15 @@ const techContent = [
   {
     technology: "GitHub",
     docsLink: "https://docs.github.com/en",
-    intro: "Content coming soon.",
-    content: [],
+    intro:
+      "GitHub is a cloud-based hosting service that lets you manage Git repositories, Github is ubiquitously used in open source sofrware teams and very prominent within Enterprise, Github provided web based features, team manament and other capbilties on top of Git.",
+    content: [
+      {
+        name: "",
+        intro: "",
+        data: [],
+      },
+    ],
     examples: [],
     reference: [],
   },

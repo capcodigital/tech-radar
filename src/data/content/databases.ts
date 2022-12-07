@@ -327,26 +327,219 @@ const techContent = [
     technology: "SQL Server",
     docsLink:
       "https://docs.microsoft.com/en-us/sql/sql-server/?view=sql-server-ver15",
-    intro: "Content coming soon.",
+    intro:
+      "Microsoft SQL Server is a relational database management system developed by Microsoft. As a database server, it is a software product with the primary function of storing and retrieving data as requested by other software applications—which may run either on the same computer or on another computer across a network (including the Internet). Microsoft markets at least a dozen different editions of Microsoft SQL Server, aimed at different audiences and for workloads ranging from small single-machine applications to large Internet-facing applications with many concurrent users.",
     content: [],
     examples: [],
-    reference: [],
+    reference: [
+      "https://www.microsoft.com/en-gb/sql-server/sql-server-2022",
+      "https://en.wikipedia.org/wiki/Microsoft_SQL_Server",
+    ],
   },
   {
     technology: "BigQuery",
     docsLink: "https://cloud.google.com/bigquery/docs",
-    intro: "Content coming soon.",
-    content: [],
+    intro:
+      "BigQuery is a completely serverless and cost-effective enterprise data warehouse. It has built-in machine learning and BI that works across clouds, and scales with your data.",
+    content: [
+      {
+        name: "Features",
+        intro:
+          "It is a Platform as a Service (PaaS) that supports querying using ANSI SQL. It also has built-in machine learning capabilities. BigQuery was announced in May 2010 and made generally available in November 2011.",
+        data: [
+          {
+            name: "Built-in machine learning",
+            description:
+              "BigQuery ML enables data scientists and data analysts to build and operationalize ML models on planet-scale structured, semi-structured, and now unstructured data directly inside BigQuery, using simple SQL",
+          },
+          {
+            name: "Analyze at scale",
+            description:
+              "BigQuery is incredibly elastic — it scales to any size, quickly and seamlessly. In addition, BigQuery is highly cost efficient — charging you only for the resources consumed, rather than resources deployed or negotiated in a contract",
+          },
+          {
+            name: "Integration and accessibility",
+            description:
+              "Integration with Google spreadsheets, letting data analysts drive massive datasets in BigQuery directly from a spreadsheets interface • Interactive dashboards easily built with Google AppEngine, and smooth data • HTTP REST API, a web UI for interactive querying, and command-line interface",
+          },
+          {
+            name: "Security and reliability",
+            description:
+              "Customer-defined ACLs for controlling fine-grained data access • Highly available and durable data, even in extreme failure modes, with data replicated across multiple locations",
+          },
+        ],
+      },
+    ],
     examples: [],
-    reference: [],
+    reference: [
+      "https://cloud.google.com/files/BigQuery.pdf",
+      "https://cloud.google.com/bigquery",
+    ],
   },
   {
     technology: "Snowflake",
     docsLink: "https://docs.snowflake.com/en/",
-    intro: "Content coming soon.",
-    content: [],
+    intro:
+      "Snowflake a cloud native data solution,Snowflake is built on top of the Amazon Web Services, Microsoft Azure, and Google cloud infrastructure. There's no hardware or software to select, install, configure, or manage, so it's ideal for organizations that don't want to dedicate resources for setup, maintenance, and support of in-house servers. ",
+    content: [
+      {
+        name: "Architecture",
+        intro:
+          "Snowflake's architecture allows similar flexibility with big data. Snowflake decouples the storage and compute functions, which means organizations that have high storage demands but less need for CPU cycles, or vice versa, don't have to pay for an integrated bundle that requires them to pay for both. Users can scale up or down as needed and pay for only the resources they use. Storage is billed by terabytes stored per month, and computation is billed on a per-second",
+
+        data: [],
+      },
+      {
+        name: "Database storage",
+        intro:
+          "The database storage layer holds all data loaded into Snowflake, including structured and semistructured data. Snowflake automatically manages all aspects of how the data is stored: organization, file size, structure, compression, metadata, and statistics. This storage layer runs independently of compute resource",
+        data: [],
+      },
+      {
+        name: "Compute layer",
+        intro:
+          "The compute layer is made up of virtual warehouses that execute data processing tasks required for queries. Each virtual warehouse (or cluster) can access all the data in the storage layer, then work independently, so the warehouses do not share, or compete for, compute resources. This enables nondisruptive, automatic scaling, which means that while queries are running, compute resources can scale without the need to redistribute or rebalance the data in the storage layer.",
+        data: [],
+      },
+    ],
     examples: [],
-    reference: [],
+    reference: [
+      "https://www.snowflake.com/en/",
+      "https://www.stitchdata.com/resources/snowflake/",
+    ],
+  },
+  {
+    technology: "Apache Spark",
+    docsLink: "https://spark.apache.org/",
+    intro:
+      "Apache Spark™ is a multi-language engine for executing data engineering, data science, and machine learning on single-node machines or clusters",
+    content: [
+      {
+        name: "",
+        intro:
+          "The most widely-used engine for scalable computing platform used by thousands of companies, including 80% of the Fortune 500",
+
+        data: [],
+      },
+      {
+        name: "Batch/streaming data",
+        intro:
+          "Unify the processing of your data in batches and real-time streaming, using your preferred language: Python, SQL, Scala, Java or R.",
+        data: [],
+      },
+      {
+        name: "SQL analytics",
+        intro:
+          "Execute fast, distributed ANSI SQL queries for dashboarding and ad-hoc reporting. Runs faster than most data warehouses.",
+        data: [],
+      },
+      {
+        name: "Data science & Machine learning",
+        intro:
+          "Train machine learning algorithms on a laptop and use the same code to scale to fault-tolerant clusters of thousands of machines.",
+        data: [],
+      },
+      {
+        name: "Ubiquitous",
+        intro:
+          "Available on all cloud platforms and able to interact with many soorces of data Spark is a powerful framework ",
+        data: [],
+      },
+    ],
+    examples: [],
+    reference: ["https://spark.apache.org/"],
+  },
+  {
+    technology: "Apache Hadoop",
+    docsLink: "https://hadoop.apache.org/",
+    intro:
+      "The Apache™ Hadoop® project develops open-source software for reliable, scalable, distributed computing. The Apache Hadoop software library is a framework that allows for the distributed processing of large data sets across clusters of computers using simple programming models. It is designed to scale up from single servers to thousands of machines, each offering local computation and storage. Rather than rely on hardware to deliver high-availability, the library itself is designed to detect and handle failures at the application layer, so delivering a highly-available service on top of a cluster of computers, each of which may be prone to failures.",
+    content: [
+      {
+        name: "",
+        intro:
+          "The most widely-used engine for scalable computing platform used by thousands of companies, including 80% of the Fortune 500",
+
+        data: [],
+      },
+      {
+        name: "Batch/streaming data",
+        intro:
+          "Unify the processing of your data in batches and real-time streaming, using your preferred language: Python, SQL, Scala, Java or R.",
+        data: [],
+      },
+      {
+        name: "SQL analytics",
+        intro:
+          "Execute fast, distributed ANSI SQL queries for dashboarding and ad-hoc reporting. Runs faster than most data warehouses.",
+        data: [],
+      },
+      {
+        name: "Data science & Machine learning",
+        intro:
+          "Train machine learning algorithms on a laptop and use the same code to scale to fault-tolerant clusters of thousands of machines.",
+        data: [],
+      },
+      {
+        name: "Ubiquitous",
+        intro:
+          "Available on all cloud platforms and able to interact with many soorces of data Spark is a powerful framework ",
+        data: [],
+      },
+    ],
+    examples: [],
+    reference: ["https://hadoop.apache.org/"],
+  },
+  {
+    technology: "Apache Hive",
+    docsLink: "https://hive.apache.org/",
+    intro:
+      "Apache Hive is a data warehouse software project built on top of Apache Hadoop for providing data query and analysis. Hive gives an SQL-like interface to query data stored in various databases and file systems that integrate with Hadoop",
+    content: [
+      {
+        name: "",
+        intro:
+          "Different storage types such as plain text, RCFile, HBase, ORC, and others. Metadata storage in a relational database management system, significantly reducing the time to perform semantic checks during query execution. Operating on compressed data stored into the Hadoop ecosystem using algorithms including DEFLATE, BWT, snappy, etc. Built-in user-defined functions (UDFs) to manipulate dates, strings, and other data-mining tools. Hive supports extending the UDF set to handle use-cases not supported by built-in functions. SQL-like queries (HiveQL), which are implicitly converted into MapReduce or Tez, or Spark jobs.",
+
+        data: [],
+      },
+    ],
+    examples: [],
+    reference: ["https://hive.apache.org/"],
+  },
+  {
+    technology: "Liquibase",
+    docsLink: "https://www.liquibase.org/",
+    intro:
+      "Liquibase is an open-source database schema change management solution which enables you to manage revisions of your database changes easily.",
+    content: [
+      {
+        name: "",
+        intro:
+          "Liquibase uses SQL, XML, JSON, and YAML changelog files to list database changes in sequential order. Database changes have the format of changesets. Changesets contain Change Type, which are types of operations to apply to the database, such as adding a column or primary key. Context, label, and precondition changelog tags help precisely control when a database change is made and to which database environment it is deployed.  ",
+
+        data: [],
+      },
+    ],
+    examples: [],
+    reference: ["https://www.liquibase.org/"],
+  },
+  {
+    technology: "Apache Hive",
+    docsLink: "https://hive.apache.org/",
+    intro:
+      "Apache Hive is a data warehouse software project built on top of Apache Hadoop for providing data query and analysis. Hive gives an SQL-like interface to query data stored in various databases and file systems that integrate with Hadoop",
+    content: [
+      {
+        name: "",
+        intro:
+          "Different storage types such as plain text, RCFile, HBase, ORC, and others. Metadata storage in a relational database management system, significantly reducing the time to perform semantic checks during query execution. Operating on compressed data stored into the Hadoop ecosystem using algorithms including DEFLATE, BWT, snappy, etc. Built-in user-defined functions (UDFs) to manipulate dates, strings, and other data-mining tools. Hive supports extending the UDF set to handle use-cases not supported by built-in functions. SQL-like queries (HiveQL), which are implicitly converted into MapReduce or Tez, or Spark jobs.",
+
+        data: [],
+      },
+    ],
+    examples: [],
+    reference: ["https://hive.apache.org/"],
   },
 ];
 
