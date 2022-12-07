@@ -3,50 +3,224 @@ const techContent = [
   {
     technology: "Kubernetes",
     docsLink: "https://kubernetes.io/docs/home/",
-    intro: "Content coming soon.",
-    content: [],
+    intro:
+      "Kubernetes is an open-source system for automating deployment, scaling, and management of containerised applications. It groups containers that make up an application into logical units for easy management and discovery. <br><br> Kubernetes (κυβερνήτης, Greek for '<a href=’ https://en.wikipedia.org/wiki/Helmsman’>helmsman</a>' or 'pilot' or 'governor', and the etymological root of <a href=’https://en.wikipedia.org/wiki/Cybernetics’>cybernetics</a>) was founded by Ville Aikas, Joe Beda, Brendan Burns, and Craig McLuckie, who were quickly joined by other Google engineers including Brian Grant and Tim Hockin, and was first announced by Google in mid-2014. <br><br> The first unified container-management system developed at Google was a system called Borg. It was built to manage both long-running services and batch jobs, which had previously been handled by two separate systems: Babysitter and the Global Work Queue. The latter’s architecture strongly influenced Borg, but was focused on batch jobs, both predated Linux control groups. <br><br> Kubernetes 1.0 was released on July 21, 2015, after being first announced to the public at Dockercon in June 2014. Last stable version 1.21 was released on 8 April 2021. <br><br> Kubernetes is also known as <b>kube</b> or <b>k8s</b>, even you can run a Kubernetes in your local environment using <b>minikube</b>.  <br><br> There are also playgrounds with different scenarios for Kubernetes in <b>Oreilly Katakoda</b> and another one provided directly by Kubernetes in <b>labs-play-with-k8s</b>. <br><br>",
+    content: [
+      {
+        name: "Kubernetes Concepts",
+        intro: "",
+        data: [
+          {
+            name: "Basic objects",
+            description:
+              "<b>Pod:</b>  container/Set of Containers + storage resources + unique IP + local options <br><br> <b>Service:</b>  abstraction Layer on top of a set of ephemeral pods (think of this as the ‘face’ of a set of pods) <br><br> <b>Volume:</b>  sometimes shared, persistence storage <br><br> <b>Namespace:</b>  virtual cluster on top of and underlying physical cluster",
+          },
+          {
+            name: "Service Types",
+            description:
+              "<b>clusterIP:</b>  exposes services only inside the cluster (default) <br><br> <b>nodePort:</b> exposes services at the specified port on all nodes (<node-ip>:<nodePort>) <br><br> <b>loadBalancer:</b> exposes the service with a cloud-provider’s load balancer <br><br> <b>externalName:</b> maps a service to endpoints completely outside of the cluster",
+          },
+          {
+            name: "Controllers",
+            description:
+              "<b>replicaSet:</b> ensures a certain number of pods are running <br><br><b>deployment:</b> declaratively manages a replicaSet <br><br><b>statefulSet:</b> similar to a deployment, but for non-interchangeable (or stateful) underlying pods <br><br><b>daemonSet:</b> manages pods that need to run on all/some nodes <br><br><b>job:</b> manages a set of pods that run to completion and tracks the overall progress <br><br> <img width='100%' src='image here'/>",
+          },
+          {
+            name: "Control Plane",
+            description:
+              "<b>master:</b> entity responsible for managing cluster state. It consists of 3 major components: <ul><li>kube-apiserver - exposes cluster control and state</li><li>kube-controller-manager - this is where the ‘brain’ of controllers runs</li><li>kube-scheduler  - matches resources to work</li></ul> <b>node:</b> individual machines or VMs that make up the cluster. A node consists of:  <ul><li>kubelet = service that communicates with the master</li><li>Container-runtime - software is responsible for running container</li><li>kube-proxy - proxy for connecting to the cluster network</li></ul>",
+          },
+          {
+            name: "Security",
+            description:
+              "4 Cs of Cloud-Native Systems: <br><br><ul><li><b>Cloud:</b> layer refers infrastructure that run servers</li><li><b>Cluster:</b>  in terms of components, services and networking (CNI)</li><li><b>Container:</b> image secure, Trusted and proper privileges</li><li><b>Code:</b>  application security Layer, using SAST and DAST and software composition analysis</li></ul> <img width='100%' src='image here'/> ",
+          },
+          {
+            name: "Kubernetes Network Policies",
+            description:
+              "Kubernetes network policy lets developers secure access to and from their applications using the same simple language they use to deploy them. Developers can focus on their applications without understanding low-level networking concepts. Enabling developers to easily secure their applications using network policies supports a shift left DevOps environment. <br><br>There are multiple network policy providers like Antrea, Calico, Cilium, Kube-router, Romana and Weave Net.",
+          },
+        ],
+      },
+    ],
     examples: [],
-    reference: [],
+    reference: ["https://kubernetes.io/docs/home/"],
   },
   {
     technology: "Serverless",
     docsLink: "https://www.serverless.com/framework/docs/",
-    intro: "Content coming soon.",
-    content: [],
+    intro:
+      "As the cloud grows to become one of the largest industries ever, it’s also evolving.  Its next generation of services are easier, more efficient, and often described as “serverless” because they offer high-level business solutions, instead of complex, low-level infrastructure. <br><br> It’s inevitable that most future applications will be built on these new serverless services because of the high productivity and low overhead they offer. <br><br> Unlike other cloud computing models, in Serverless, the cloud provider is responsible for managing both the cloud infrastructure and the scaling of apps. Serverless apps are deployed in containers that automatically launch on demand when called.",
+    content: [
+      {
+        name: "Benefits of Serverless",
+        intro:
+          "The Serverless Framework – Build applications on AWS Lambda and other next-gen cloud services, that auto-scale and only charge you when they run. This lowers the total cost of running and operating your apps, enabling you to build more and manage less.<br><br> It is a command-line tool that uses easy and approachable YAML syntax to deploy both your code and cloud infrastructure needed to make tons of serverless application use-cases. <br><br>It's a multi-language framework that supports Node.js, Typescript, Python, Go, Java, and more. <br><br>It's also completely extensible via over 1,000 plugins that can add more serverless use-cases and workflows to the Framework.",
+        data: [],
+      },
+      {
+        name: "Features and Capabilities",
+        intro:
+          "<ul><li>Supports Node.js, Python, Java, Go, C#, Ruby, Swift, Kotlin, PHP, Scala, & F#</li> <li>Manages the lifecycle of your serverless architecture (build, deploy, update, delete)</li> <li>Safely deploy functions, events, and their required resources together via provider resource managers (e.g., AWS CloudFormation)</li> <li>Functions can be grouped ('serverless services') for easy management of code, resources & processes, across large projects & teams</li> <li>Minimal configuration and scaffolding</li> <li>Built-in support for multiple stages</li> <li>Optimised for CI/CD workflows</li> <li>Loaded with automation, optimisation, and best practices</li> <li>100% Extensible: Extend or modify the Framework and its operations via Plugins</li> <li>An ecosystem of serverless services and plugins</li></ul>",
+        data: [],
+      },
+    ],
     examples: [],
-    reference: [],
+    reference: [
+      "https://www.serverless.com/framework/docs/",
+      "https://www.datadoghq.com/state-of-serverless/",
+    ],
   },
   {
     technology: "OpenShift",
     docsLink: "https://docs.openshift.com/",
-    intro: "Content coming soon.",
-    content: [],
+    intro:
+      "Red Hat OpenShift is a leading enterprise Kubernetes platform that enables a cloud-like experience everywhere it's deployed. Whether it’s in the cloud, on-premises or at the edge, Red Hat OpenShift gives you the ability to choose where you build, deploy, and run applications through a consistent experience. Red Hat OpenShift’s full-stack automated operations and self-service provisioning for developers lets teams work together more efficiently to move ideas from development to production.<br><br>Red Hat’s open hybrid cloud strategy is built on the technological foundation of Linux, containers, and automation. An open hybrid cloud approach gives you the flexibility to run your applications anywhere you need them.",
+    content: [
+      {
+        name: "Benefits of OpenShift",
+        intro:
+          "Red Hat OpenShift delivers a complete application platform for both traditional and cloud-native applications, allowing them to run anywhere. Built on Red Hat Enterprise Linux and compatible with Red Hat Ansible Automation Platform, Red Hat OpenShift enables automation inside and outside your Kubernetes clusters. <br><br> Moreover, Red Hat OpenShift provides a common abstraction layer across any infrastructure to give both developers and operations teams commonality in how applications are packaged, deployed, and managed. This allows you to run applications where it makes the most sense, without creating different operational models because of the host environment.",
+        data: [],
+      },
+      {
+        name: "Features and Capabilities",
+        intro: "",
+        data: [
+          {
+            name: "Support Cloud-native Workloads",
+            description:
+              "OpenShift supports the most demanding workloads including AI/ML, Java, data analytics, databases, and more. It also automates deployment and life-cycle management with their vast ecosystem of technology partners.",
+          },
+          {
+            name: "Edge Computing with Red Hat OpenShift",
+            description:
+              "Get faster data-driven outcomes and better application experiences anywhere—even at your most remote locations—with Red Hat OpenShift at the edge.",
+          },
+          {
+            name: "Empower MLOps",
+            description:
+              "Accelerate AI/ML workflows and the delivery of AI-powered intelligent applications with self-managed Red Hat OpenShift, or their AI/ML cloud service.",
+          },
+          {
+            name: "Improve Security of Applications",
+            description:
+              "Decrease operational risk by shifting security left and automating DevSecOps, using built-in policy templates to enforce security and configuration best practices, and protecting application workloads at runtime.",
+          },
+          {
+            name: "Manage Multiple Users",
+            description:
+              "Extend the value of Red Hat OpenShift by deploying applications, managing multiple clusters, and enforcing policies across clusters at scale, all from a single console.",
+          },
+        ],
+      },
+    ],
     examples: [],
-    reference: [],
+    reference: ["https://docs.openshift.com/"],
   },
   {
     technology: "PCF",
-    docsLink: "/",
-    intro: "Content coming soon.",
-    content: [],
+    docsLink: "https://docs.cloudfoundry.org/",
+    intro:
+      "Pivotal Cloud Foundry (PCF), now Cloud Foundry, is an open-source cloud app platform, providing a choice of clouds, developer frameworks, and app services. Cloud Foundry makes it faster and easier to build, test, deploy, and scale apps. It is available through a variety of private cloud distributions and public cloud instances. <br><br> Moreover, not all cloud platforms are created equal. Some have limited language and framework support, lack key app services, or restrict deployment to a single cloud.<br><br> As an industry-standard cloud platform, Cloud Foundry offers the following: <br><br><ul><li><b>Open source code:</b> The platform’s openness and extensibility prevent its users from being locked into a single framework, set of app services, or cloud.</li><li><b>Deployment automation</b>: Developers can deploy their apps to Cloud Foundry using their existing tools and with zero modification to their code.</li><li><b>Flexible infrastructure</b>: You can deploy Cloud Foundry to run your apps on your own computing infrastructure, or deploy on an IaaS like vSphere, AWS, Azure, GCP, or OpenStack.</li><li><b>Commercial options</b>: You can also use a Platform as a Service (PaaS) deployed by a commercial Cloud Foundry cloud provider.</li><li><b>Community support</b>: A broad community contributes to and supports Cloud Foundry. </li></ul> Cloud Foundry is ideal for anyone interested in removing the cost and complexity of configuring infrastructure for their apps.",
+    content: [
+      {
+        name: "Benefits of Cloud Foundry",
+        intro: "",
+        data: [
+          {
+            name: "Fast and Powerful",
+            description:
+              "Spend more time on software development and less on configuration, deployment and cloud infrastructure. Get from code to running software on a Kubernetes cluster quickly and reproducibly.",
+          },
+          {
+            name: "Secure",
+            description:
+              "The open-source project teams ensure swift roll-out of security patches in response to vulnerabilities, guaranteeing Cloud Foundry is secure for even the most sensitive mission-critical application development.",
+          },
+          {
+            name: "Scalable",
+            description:
+              "Cloud Foundry supports the most demanding environments automatically and scales from small teams to global enterprises, supporting as many continuous delivery pipelines as you need to run at scale.",
+          },
+          {
+            name: "Integrates Innovation",
+            description:
+              "Cloud Foundry integrates with your environment and tools, including CI/CD and IDEs, and effortlessly brings a proven developer experience to Kubernetes with efficiency and elegance.",
+          },
+        ],
+      },
+    ],
     examples: [],
-    reference: [],
+    reference: ["https://docs.cloudfoundry.org/"],
   },
   {
     technology: "PKS",
-    docsLink: "/",
-    intro: "Content coming soon.",
-    content: [],
+    docsLink: "https://docs.pivotal.io/pks/1-4/index.html",
+    intro:
+      "Pivotal Container Service (PKS) enables developers to provision, operate, and manage Kubernetes-based container services using BOSH and Pivotal Ops Manager.<br><br> PKS uses the <a href=’ https://docs.vmware.com/en/On-Demand-Services-SDK-for-VMware-Tanzu/0.42/on-demand-services-sdk/GUID-index.html’>On-Demand Broker</a> to deploy Cloud Foundry Container Runtime, a BOSH release that offers a uniform way to instantiate, deploy, and manage highly available Kubernetes clusters on a cloud platform using BOSH. <br><br> After operators install the Enterprise PKS tile on the Ops Manager Installation Dashboard, developers can provision Kubernetes clusters using the PKS Command Line Interface (PKS CLI), and run container-based workloads on the clusters with the Kubernetes CLI, <b>kubectl</b>.",
+    content: [
+      {
+        name: "What PKS Adds to Kubernetes",
+        intro: "<img width'100%' src='image here'/>",
+        data: [],
+      },
+      {
+        name: "Features and Capabilities",
+        intro:
+          "<ul><li><b>Kubernetes compatibility</b> - constant compatibility with current stable release of Kubernetes</li><li><b>Production-ready</b> - highly available from applications to infrastructure, with no single points of failure</li><li><b>BOSH advantages</b> - built-in health checks, scaling, auto-healing and rolling upgrades</li><li><b>Fully automated operations</b>: Fully automated deploy, scale, patch, and upgrade experience</li><li><b>Multi-cloud</b>: Consistent operational experience across multiple clouds</li><li><b>GCP APIs access</b>: The Google Cloud Platform (GCP) Service Broker gives applications access to the Google Cloud APIs, and Google Container Engine (GKE) consistency enables the transfer of workloads from or to GCP</li></ul>",
+        data: [],
+      },
+    ],
     examples: [],
-    reference: [],
+    reference: ["https://docs.pivotal.io/pks/1-4/index.html"],
   },
   {
     technology: "GCP",
     docsLink: "https://cloud.google.com/docs",
-    intro: "Content coming soon.",
-    content: [],
+    intro:
+      "Google Cloud Platform, as the name implies, is a cloud computing platform that provides infrastructure tools and services for users to build applications and services on top of. It is regarded as the third biggest cloud provider in terms of revenue behind AWS in first place and Microsoft Azure in second. <br><br> GCP first came to the scene in 2008 with a product called App Engine, which is a developer tool that allow customers to run their web applications on Google infrastructure. Since its release, Google have acquired more services and products to enhance the user experience of its cloud platform.",
+    content: [
+      {
+        name: "Global Footprint",
+        intro:
+          "Today, GCP is widely used by a variety of companies, including large enterprises and small businesses. GCP is available in 35 regions and 106 zones, and are still looking to continue their expansion.",
+        data: [],
+      },
+      {
+        name: "GCP Services",
+        intro: "",
+        data: [
+          {
+            name: "Infrastructure as a service (IaaS)",
+            description:
+              "Google Compute Engine (GCE) is the name of the service that hosts the virtual machines, or operating systems. In conjunction with the on-premises services, GCP offers instances (virtual machines), persistent disks (PD), and networking. <br></br> GCP also offers 2 key pricing schemes: <br><br> <ul><li>Committed use discounts: for predictable workloads, the price for a yearly commitment is nearly 40% less than pay-as-you-go prices. </li><li>Preemptible instances: ideal for stateless and spiky workloads, it is the opportunity to buy free CPU time on the Cloud Service Provider (CSP) infrastructure. The risk is undetermined CPU time, which could end with abnormal shutdowns of the instances. </li></ul> ",
+          },
+          {
+            name: "Networking",
+            description:
+              "As a standard CSP infrastructure component, networking composed of regions, availability zones, Virtual Private Cloud (VPCs), subnet, load balancers, VPN (Virtual Private Network) connections and dedicated connections. <br><br> A <b>region</b> has approximately 2-3 data centres, which are called <b>availability zones</b>. The distance between each availability zone is enough to isolate from any natural disaster but still minimal enough for low latency network connections. <br><br> VPCs and subnets are containers to isolate and segment the services, where a VPC can span multiple zones, and a subnet can’t be stretched among multiple zones, but can reside only in one zone. VPCs can be connected to each other via VPC peering. The same type of connection is also used to access serverless, cloud native services. This type of connection is called <b>Private Service Connect</b>.  Another common VPC pattern is <b>Shared VPCs</b>. They are used as containers for common services, or an integration layer between on-prem services and cloud services. Such a network architecture is called Hub and Spoke network. <br><br> <b>Cloud VPN and Cloud interconnect</b> are the connections to link on-premises to cloud estate. VPN connections are through the internet and best-effort services and good for bulk data uploads or fallback connections. Cloud Interconnect is a dedicated connection and assures the bandwidth and privacy. <br><br> Unlike other CSPs, GCP offers <b>two levels of networking</b> for inter zone and inter-region connections: Standard and Premium. Premium level is the Google’s internal high-performance network. Typically, any traffic between different regions traverses through public internet links, but Google has its own fibre-optic infrastructure around the world, and it is offered as a service through GCP.",
+          },
+          {
+            name: "Identity Access Management",
+            description:
+              "Identity Access Management (IAM) is a key feature to any public or private cloud implementation. As cloud services are managed via a well-defined set of API resources, access to these resources is enabled through IAM. <br><br> Below are some IAM services provided by GCP: <br><br> <ul><li><b>Google Cloud IAM</b> lets administrators authorize who can act on specific resources, along with built-in auditing </li><li><b>Cloud Resource Manager</b>, a service for programmatically managing the resource containers (such as Organizations and Projects) used to group and hierarchically organize GCP resources </li><li><b>Cloud Security Scanner</b>, a web security scanner for common vulnerabilities in App Engine applications, including cross-site-scripting (XSS), Flash injection, mixed content (HTTP in HTTPS), and outdated/insecure libraries </li></ul>",
+          },
+          {
+            name: "Container as a Service (CaaS)",
+            description:
+              "<b>Google Kubernetes Engine</b> (GKE) is GCP’s managed Kubernetes offering for container orchestration. <br><br> Some of the key differences between GCP and other offerings such as Amazon Elastic Kubernetes Service (AKS) and Microsoft Azure Kubernetes Service (EKS) are: <br><br> <ul><li><b>Network endpoints</b> that enable a shorter distance between exposing load balancer and the application pods</li><li><b>Data Plane</b> that uses eBPF technology that is used for high performance networking for Kubernetes</li><li><b>Workload identity</b> is the ability to use a Kubernetes service account as a GCP service account on GCP IAM. This feature, as useful as it is, needs extensive care because connecting two isolated IAM services requires both sides should be as secure as each other, and could need extensive hardening on the GKE cluster</li><li><b>Istio</b>, out-of-the-box, Istio is the service mesh technology that is an incubation project at CNCF. Service mesh is the technology to enable security and observability in a microservices architecture</li><li><b>Anthos</b> is a product developed by Google, and a combination of Istio and Anthos operator which keeps the cluster configuration in a desired state kept in a versioned source code repository</li></ul> Primarily, Istio and Anthos are considered as the key to multi-cloud via multi-cluster federation. Just like the other managed Kubernetes service offerings, it presents a managed control plane and manage-able worker nodes, release channel enrolments and auto-upgrades, log integration with the platforms log management solution, and GCP Cloud Operations contextually. <br><br> Below is a communication diagram for a private GKE cluster. A private cluster does not have public exposure and if internet access if required, it will be provided via a controlled gateway called Cloud NAT.<br><br> <img width='100%' src='image here'/>",
+          },
+          {
+            name: "Big Data Services",
+            description:
+              "Google is the creator of big data technology, and its mission is to organise the world's information and make it universally accessible and useful. The technologies that are used at Google are mostly offered as GCP Big Data Services. Some major ones are described below: <br><br> <ul><li><b>CloudSpanner</b> is a Structured Query Language (SQL) based distributed database which supports global consistence via consensus protocols, sharding and atomic clocks. It is used by Google Ads and Spotify</li><li><b>BigQuery</b> is a data warehouse that processes and analyses large data sets using SQL queries. These services can capture and examine streaming data for real-time analytics</li><li><b>BigTable</b> is a managed NoSQL database service designed to handle massive workloads while maintaining high performance. It is commonly used for time-series, marketing, financial, IoT and graph data</li><li><b>Cloud Pub/Sub</b> is an asynchronous messaging service. It manages communication among different applications, and it serves as a foundational component for stream analytics pipelines. This is classified under Big Data Services, because it is the default method for data distribution and ingestion</li><li><b>Cloud Dataflow</b> is a serverless stream and batch processing service. Users can build a pipeline to manage and analyse data in the cloud, while Cloud Dataflow automatically manages the resources</li><li><b>Cloud DataProc</b> is a managed Apache Hadoop and Spark service for batch processing, querying, streaming and machine learning. Users can quickly spin up Hadoop or Spark clusters and resize them at any time without compromising data pipelines through automation and orchestration</li><li><b>Google Data Studio</b> offers interactive dashboards to build visual representations of data. Users can analyse data from a variety of sources, share reports and collaborate in real time</li> <img width='100%' src='https://github.com/capcodigital/presentation-logos/blob/master/tech-radar/cloud/gcp_big_data.png'/> ",
+          },
+        ],
+      },
+    ],
     examples: [],
-    reference: [],
+    reference: ["https://cloud.google.com/docs"],
   },
   {
     technology: "AWS",
@@ -94,10 +268,62 @@ const techContent = [
   {
     technology: "Grafana",
     docsLink: "https://grafana.com/docs/",
-    intro: "Content coming soon.",
-    content: [],
+    intro:
+      "Grafana is an open-source interactive data-visualisation platform, developed by Grafana Labs, which allows users to see their data via charts and graphs that are unified into one dashboard (or multiple dashboards) for easier interpretation and understanding. You can also query and set alerts on your information and metrics from wherever that information is stored, whether that’s traditional server environments, Kubernetes clusters, or various cloud services, etc. You are then more easily able to analyse the data, identify trends and inconsistencies, and ultimately make your processes more efficient. <br><br> Grafana was built on open principles and the belief that data should be accessible throughout an organization, not just to a small handful of people. This fosters a culture where data can be easily found and used by anyone who needs it, empowering teams to be more open, innovative, and collaborative.",
+    content: [
+      {
+        name: "Benefits of Grafana",
+        intro:
+          "<b>Unify your data, not your database</b> - Grafana doesn’t require you to ingest data to a backend store or vendor database. Instead, Grafana takes a unique approach to providing a “single-pane-of-glass” by unifying your existing data, wherever it lives. <br><br> With Grafana, you can take any of your existing data- be it from your Kubernetes cluster, raspberry pi, different cloud services, or even Google Sheets- and visualize it however you want, all from a single dashboard. <br><br> <b>Data everyone can see</b> - Grafana was built on the principle that data should be accessible to everyone in your organization, not just the single Ops person. <br><br> By democratizing data, Grafana helps to facilitate a culture where data can easily be used and accessed by the people that need it, helping to break down data silos and empower teams. <br><br> <b>Dashboards that anyone can use</b> - Not only do Grafana dashboards give insightful meaning to data collected from numerous sources, but you can also share the dashboards you create with other team members, allowing you to explore the data together. <br><br> With Grafana, anyone can create and share dynamic dashboards to foster collaboration and transparency. <br><br> <b>Flexibility and versatility</b> - Translate and transform any of your data into flexible and versatile dashboards. Unlike other tools, Grafana allows you to build dashboards specifically for you and your team. <br><br> With advanced querying and transformation capabilities, you can customize your panels to create visualizations that are helpful for you.",
+        data: [],
+      },
+      {
+        name: "Features and Capabilities",
+        intro: "",
+        data: [
+          {
+            name: "Panels",
+            description:
+              "From heatmaps to histograms. Graphs to geomaps. Grafana has fast and flexible visualizations that allows you to visualize your data, any way you want.",
+          },
+          {
+            name: "Plugins",
+            description:
+              "Connect your tools and your teams with Grafana plugins. Data source plugins hook into existing data sources via APIs and render the data in real time without requiring you to migrate or ingest your data.",
+          },
+          {
+            name: "Alerts",
+            description:
+              "With Grafana Alerting, you can create, manage, and silence all your alerts within one simple UI— allowing you to easily consolidate and centralize all your alerts.",
+          },
+          {
+            name: "Transformations",
+            description:
+              "Transformations allow you to rename, summarize, combine, and perform calculations across different queries and data sources.",
+          },
+          {
+            name: "Annotations",
+            description:
+              "Annotate graphs with rich events from different data sources. Hover over events shows you the full event metadata and tags.",
+          },
+          {
+            name: "Panel Editor",
+            description:
+              "The panel editor makes it easy to configure, customize and explore all your panels with a consistent UI for setting data options across all your visualizations.",
+          },
+          {
+            name: "Collaborate",
+            description:
+              "Effective collaboration is built on people having access to the same information. Allows you to easily share insights from Grafana dashboards across your company, team, and the world.",
+          },
+        ],
+      },
+    ],
     examples: [],
-    reference: [],
+    reference: [
+      "https://grafana.com/docs/",
+      "https://www.redhat.com/en/topics/data-services/what-is-grafana",
+    ],
   },
   {
     technology: "Azure",
@@ -157,10 +383,38 @@ const techContent = [
   {
     technology: "Digital Ocean",
     docsLink: "https://docs.digitalocean.com/products/",
-    intro: "Content coming soon.",
-    content: [],
+    intro:
+      "DigitalOcean’s journey began in 2012 with the mission to simplify Cloud computing and enable developers and developer teams to quickly deploy and scale applications, collaborate efficiently, and improve business performance. Their focus is on individual developers and small-scale businesses as they believe those are underserving communities. <br><br> DigitialOcean aim to eliminate complexity to enable customers to focus on testing their ideas and building their businesses.  <br><br> Today, DigitalOcean is serving more than 600K customers across 185 countries, with 15 globally distributed data centers.",
+    content: [
+      {
+        name: "Benefits of DigitalOcean",
+        intro: "",
+        data: [
+          {
+            name: "Simplicity",
+            description:
+              "DigitalOcean focuses on easy-to-use user interface to make things less complicated for new users. Unlike many other platforms, users do not need to do extensive training or get certifications to use DigitalOcean. With the simple user interface, individual software developers and small-scale businesses can easily deploy and scale their applications.",
+          },
+          {
+            name: "Performance",
+            description:
+              "DigitalOcean provides SSD-based virtual machines, known as Droplets, which have a boot time of 55 seconds. The hardware that supports the virtual machines uses Hex core machines with dedicated EEC RAM and RAID SSD storage. This enables reliable and fast performance for both IaaS and PaaS offerings.",
+          },
+          {
+            name: "Community",
+            description:
+              "DigitialOcean invest in their community and aim to grow and nurture their community of developers. To do this, DigitalOcean have a wide range of tutorials to help developers learn and grow. In addition, the platform has an active community forum where you can ask questions or start discussions on various topics. ",
+          },
+          {
+            name: "Documentation",
+            description:
+              "Official documentation for any platform, service, or technology is crucial for any new user. DigitialOcean has extensive documentation (including detailed tutorials, installation guides, how-to-guides, and walkthroughs) on all their offerings to help new users. ",
+          },
+        ],
+      },
+    ],
     examples: [],
-    reference: [],
+    reference: ["https://docs.digitalocean.com/products/"],
   },
 ];
 export default techContent;
