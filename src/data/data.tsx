@@ -13,7 +13,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "GitHub",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/github_square.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "CircleCI",
@@ -98,9 +98,24 @@ export const data: Array<{ name: string; data: techType }> = [
     },
   },
   {
-    name: "Databases",
+    name: "Data Engineering",
     data: {
       preferred: [
+        {
+          name: "Apache Spark",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/spark.png",
+          enabled: true,
+        },
+        {
+          name: "Apache Hadoop",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/hadoop.png",
+          enabled: true,
+        },
+        {
+          name: "Apache Hive",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/hive_highres.png",
+          enabled: true,
+        },
         {
           name: "Postgres",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/postgres_square.png",
@@ -131,24 +146,24 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "SQL Server",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/sqlserver_square.png",
-          enabled: false,
+          enabled: true,
         },
       ],
       scaling: [
         {
           name: "BigQuery",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/bigquery_square.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "Snowflake",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/snowflake_square.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "Liquibase",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/liquibase_square.png",
-          enabled: false,
+          enabled: true,
         },
       ],
     },
@@ -252,6 +267,11 @@ export const data: Array<{ name: string; data: techType }> = [
           name: "OpenShift",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/openshift_square.png",
           enabled: false,
+        },
+        {
+          name: "Apache Hadoop",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/hadoop.png",
+          enabled: true,
         },
         {
           name: "Grafana",
@@ -753,7 +773,19 @@ export const icons: Array<{ name: string; link: string }> = [
   },
   {
     name: "Gradle Mobile",
-    link: "https://gradle.org/images/gradle-knowledge-graph-logo.png?20170228",
+    link: "https://gradle.org/images/gradle-knowledge-graph-logo.png?2017022",
+  },
+  {
+    name: "Apache Spark",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/spark.png",
+  },
+  {
+    name: "Apache Hive",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/hive_highres.png",
+  },
+  {
+    name: "Apache Hadoop",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/hadoop",
   },
 ];
 
@@ -781,7 +813,7 @@ export const technologies = [
   },
 
   {
-    categoryName: "Databases",
+    categoryName: "Data Engineering",
     technologies: [
       "Postgres",
       "Neo4J",
@@ -792,6 +824,9 @@ export const technologies = [
       "BigQuery",
       "Snowflake",
       "Liquibase",
+      "Apache Spark",
+      "Apache Hadoop",
+      "Apache Hive",
     ],
   },
   {
@@ -824,6 +859,7 @@ export const technologies = [
       "OpenShift",
       "PCF",
       "PKS",
+      "Apache Hadoop",
       "Grafana",
     ],
   },
@@ -877,7 +913,7 @@ export const categoryList = [
   "Integration",
   "Cloud & Platforms",
   "Quality Engineering",
-  "Databases",
+  "Data Engineering",
   "DevOps",
 ];
 
@@ -954,6 +990,9 @@ export const technologyList = [
   "Ionic",
   "Flutter",
   "Gradle Mobile",
+  "Apache Spark",
+  "Apache Hadoop",
+  "Apache Hive",
 ];
 
 export const radarKeysText = {

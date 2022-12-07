@@ -6,7 +6,7 @@ Background: Navigate to the home page
 Scenario: MongoDB content appears as expected
     When the user clicks "View Our Tech Radar"
     And the user clicks the hamburger menu
-    And the user navigates to "Databases" via the hamburger menu
+    And the user navigates to "Data Engineering" via the hamburger menu
     And the user navigates to category "MongoDB"
     And the user should see "MongoDB is an open-source document-based database built on a horizontal scale-out architecture. Founded in 2007, MongoDB has a large and thriving community of developers across the open-source community, academia, among system integrators and consulting firms across the globe."
     And the user should see "Instead of storing data in tables, like SQL databases, each row in a MongoDB database is a document described in JSON, a formatting language. Not only that data can be stored to look like rows and columns, but documents can be embedded inside each other - a technique that allows complex data objects to be stored and retrieved together."

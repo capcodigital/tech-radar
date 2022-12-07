@@ -6,7 +6,7 @@ Background: Navigate to the home page
 Scenario: Postgres content appears as expected
     When the user clicks "View Our Tech Radar"
     And the user clicks the hamburger menu
-    And the user navigates to "Databases" via the hamburger menu
+    And the user navigates to "Data Engineering" via the hamburger menu
     And the user navigates to category "Postgres"
     And the user should see "PostgreSQL is a powerful, open-source object-relational database management system (ORDBMS), that uses and extends the SQL language, combined with many features that safely store and scale the most complicated data workloads."
     And the user should see "PostgreSQL has earned a strong reputation for its proven architecture, reliability, data integrity, robust feature set, extensibility and the dedication of the open-source community behind the software to consistently deliver performant and innovative solutions."

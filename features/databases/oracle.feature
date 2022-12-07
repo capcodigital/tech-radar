@@ -6,7 +6,7 @@ Background: Navigate to the home page
 Scenario: Oracle content appears as expected
     When the user clicks "View Our Tech Radar"
     And the user clicks the hamburger menu
-    And the user navigates to "Databases" via the hamburger menu
+    And the user navigates to "Data Engineering" via the hamburger menu
     And the user navigates to category "Oracle"
     And the user should see "Oracle is the world's first commercially available Relational Database Management System."
     And the user should see "In 1977, Larry Ellison, Bob Miner, and Ed Oates started the consultancy Software Development Laboratories, which became Relational Software, Inc. (RSI). In 1983, RSI became Oracle Systems Corporation and then later Oracle Corporation."

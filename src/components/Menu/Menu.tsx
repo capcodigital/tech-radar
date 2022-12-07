@@ -43,7 +43,7 @@ const Menu = () => {
           <Grid justifyContent="space-between" container>
             <LogoGridItem item>
               <Link to="/home">
-                <img height={46} src={logo} alt="Large Logo" />
+                <img height={85} src={logo} alt="Large Logo" />
                 <div>TECH RADAR {new Date().getFullYear()}</div>
               </Link>
             </LogoGridItem>

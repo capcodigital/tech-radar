@@ -16,7 +16,7 @@ import techContent from "../../data/content/index";
 
 const labels = [
   "DevOps",
-  "Databases",
+  "Data Engineering",
   "Quality Engineering",
   "Cloud & Platforms",
   "Integration",

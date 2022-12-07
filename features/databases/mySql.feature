@@ -6,7 +6,7 @@ Background: Navigate to the home page
 Scenario: MySQL content appears as expected
     When the user clicks "View Our Tech Radar"
     And the user clicks the hamburger menu
-    And the user navigates to "Databases" via the hamburger menu
+    And the user navigates to "Data Engineering" via the hamburger menu
     And the user navigates to category "MySQL"
     And the user should see "Created in 1995, MySQL is the most popular open-source relational database management system. Its name is a combination of \"My\", the name of co-founder Michael Widenius's daughter, and \"SQL\", the abbreviation for Structured Query Language."
     And the user should see "A relational database is where data is organised from one table and split into multiple tables whereby each data type within the table is related to another. SQL is a language programmers use to create, modify, and extract data from the relational database, as well as control user access to the database."

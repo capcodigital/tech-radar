@@ -53,7 +53,7 @@ const BreadcrumbComponent: FC<RouteComponentProps> = ({
                 "integration" ||
                 "cloud-&-platforms" ||
                 "quality-engineering" ||
-                "databases" ||
+                "data-engineering" ||
                 "devops"
             )
           ) {
