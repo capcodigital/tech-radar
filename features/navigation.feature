@@ -28,9 +28,9 @@ Scenario Outline: Checking Mobile category links
     | Cloud & Platforms  | AWS            | /technology/cloud-&-platforms/aws      |
     | Cloud & Platforms  | Azure          | /technology/cloud-&-platforms/azure    |
     | Quality Engineering| Cypress        | /technology/quality-engineering/cypress|
-    | Databases          | Postgres       | /technology/databases/postgres         | 
-    | Databases          | MongoDB        | /technology/databases/mongodb          | 
-    | Databases          | MySQL          | /technology/databases/mysql            | 
-    | Databases          | Oracle         | /technology/databases/oracle           | 
+    | Data Engineering   | Postgres       | /technology/data-engineering/postgres         | 
+    | Data Engineering   | MongoDB        | /technology/data-engineering/mongodb          | 
+    | Data Engineering   | MySQL          | /technology/data-engineering/mysql            | 
+    | Data Engineering   | Oracle         | /technology/data-engineering/oracle           | 
     | DevOps             | Jenkins        | /technology/devops/jenkins             | 
     | DevOps             | SonarQube      | /technology/devops/sonarqube           | 
