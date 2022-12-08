@@ -2,7 +2,7 @@
 
 exports[`Radar should render Radar component 1`] = `
 <div
-  class="styles__Wrapper-sc-2tg2y4-0 eqSJpa"
+  class="styles__Wrapper-sc-2tg2y4-0 fCBaLB"
 >
   <svg
     style="overflow: visible;"
@@ -111,7 +111,7 @@ exports[`Radar should render Radar component 1`] = `
         y2="350"
       />
       <g
-        class="styles__StyledNav-sc-2tg2y4-1 juDhoR"
+        class="styles__StyledNav-sc-2tg2y4-1 iEdYQi"
         transform="translate(-69.99999999999997, -410)"
       >
         <image
@@ -140,7 +140,7 @@ exports[`Radar should render Radar component 1`] = `
         />
       </g>
       <g
-        class="styles__StyledNav-sc-2tg2y4-1 juDhoR"
+        class="styles__StyledNav-sc-2tg2y4-1 iEdYQi"
         transform="translate(262.842712474619, -282.84271247461896)"
       >
         <image
@@ -151,7 +151,7 @@ exports[`Radar should render Radar component 1`] = `
           y="0"
         />
         <text
-          class="Databases"
+          class="Data Engineering"
           fill="white"
           font-size="20"
           font-weight="700"
@@ -159,17 +159,17 @@ exports[`Radar should render Radar component 1`] = `
           x="60"
           y="30"
         >
-          Databases
+          Data Engineering
         </text>
         <path
           d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
           fill="white"
           scale="0.5"
-          transform="translate(140,17) scale(0.6)"
+          transform="translate(170,17) scale(0.6)"
         />
       </g>
       <g
-        class="styles__StyledNav-sc-2tg2y4-1 juDhoR"
+        class="styles__StyledNav-sc-2tg2y4-1 iEdYQi"
         transform="translate(380, 0)"
       >
         <image
@@ -198,7 +198,7 @@ exports[`Radar should render Radar component 1`] = `
         />
       </g>
       <g
-        class="styles__StyledNav-sc-2tg2y4-1 juDhoR"
+        class="styles__StyledNav-sc-2tg2y4-1 iEdYQi"
         transform="translate(262.842712474619, 282.84271247461896)"
       >
         <image
@@ -227,7 +227,7 @@ exports[`Radar should render Radar component 1`] = `
         />
       </g>
       <g
-        class="styles__StyledNav-sc-2tg2y4-1 juDhoR"
+        class="styles__StyledNav-sc-2tg2y4-1 iEdYQi"
         transform="translate(-89.99999999999997, 360)"
       >
         <image
@@ -256,7 +256,7 @@ exports[`Radar should render Radar component 1`] = `
         />
       </g>
       <g
-        class="styles__StyledNav-sc-2tg2y4-1 juDhoR"
+        class="styles__StyledNav-sc-2tg2y4-1 iEdYQi"
         transform="translate(-402.84271247461896, 282.842712474619)"
       >
         <image
@@ -285,7 +285,7 @@ exports[`Radar should render Radar component 1`] = `
         />
       </g>
       <g
-        class="styles__StyledNav-sc-2tg2y4-1 juDhoR"
+        class="styles__StyledNav-sc-2tg2y4-1 iEdYQi"
         transform="translate(-520, 4.898587196589413e-14)"
       >
         <image
@@ -314,7 +314,7 @@ exports[`Radar should render Radar component 1`] = `
         />
       </g>
       <g
-        class="styles__StyledNav-sc-2tg2y4-1 juDhoR"
+        class="styles__StyledNav-sc-2tg2y4-1 iEdYQi"
         transform="translate(-402.8427124746191, -282.84271247461896)"
       >
         <image
@@ -511,9 +511,9 @@ exports[`Radar should render Radar component 1`] = `
         fill="rgb(235, 35, 109, 0.3)"
       />
       <path
-        class="arc Databases-segment"
+        class="arc Data Engineering-segment"
         d="M133.93920132778143,-323.35783637895037A350,350,0,0,1,323.35783637895037,-133.93920132778143L0,0Z"
-        data-test-id="Databases-arc"
+        data-test-id="Data Engineering-arc"
         fill="transparent"
       />
       <path
@@ -553,12 +553,12 @@ exports[`Radar should render Radar component 1`] = `
         fill="transparent"
       />
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
           aria-label="GitHub"
-          class="techIcon-GitHub no-content"
+          class="techIcon-GitHub undefined"
           title="GitHub"
         >
           <circle
@@ -577,7 +577,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -601,7 +601,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -625,7 +625,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -649,7 +649,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -673,7 +673,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -697,7 +697,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -721,7 +721,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -745,7 +745,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -769,7 +769,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -793,7 +793,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -817,7 +817,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -841,7 +841,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -865,7 +865,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -889,7 +889,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -913,7 +913,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -937,13 +937,13 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
-          aria-label="Postgres"
-          class="techIcon-Postgres undefined"
-          title="Postgres"
+          aria-label="Apache Spark"
+          class="techIcon-Apache Spark undefined"
+          title="Apache Spark"
         >
           <circle
             cx="160.00000000000003"
@@ -953,7 +953,7 @@ exports[`Radar should render Radar component 1`] = `
           />
           <image
             height="19.79898987322333"
-            href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/postgres_square.png"
+            href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/spark.png"
             width="19.79898987322333"
             x="150.10050506338837"
             y="-287.027624147632"
@@ -961,13 +961,13 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
-          aria-label="Neo4J"
-          class="techIcon-Neo4J no-content"
-          title="Neo4J"
+          aria-label="Apache Hadoop"
+          class="techIcon-Apache Hadoop undefined"
+          title="Apache Hadoop"
         >
           <circle
             cx="226.27416997969516"
@@ -977,7 +977,7 @@ exports[`Radar should render Radar component 1`] = `
           />
           <image
             height="19.79898987322333"
-            href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/neo4j_square.png"
+            href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/hadoop.png"
             width="19.79898987322333"
             x="216.3746750430835"
             y="-236.17366491630693"
@@ -985,13 +985,13 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
-          aria-label="MongoDB"
-          class="techIcon-MongoDB undefined"
-          title="MongoDB"
+          aria-label="Apache Hive"
+          class="techIcon-Apache Hive undefined"
+          title="Apache Hive"
         >
           <circle
             cx="277.12812921102045"
@@ -1001,7 +1001,7 @@ exports[`Radar should render Radar component 1`] = `
           />
           <image
             height="19.79898987322333"
-            href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/mongodb_square_2.png"
+            href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/hive_highres.png"
             width="19.79898987322333"
             x="267.22863427440876"
             y="-169.89949493661155"
@@ -1009,7 +1009,79 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
+        opacity="1"
+      >
+        <g
+          aria-label="Postgres"
+          class="techIcon-Postgres undefined"
+          title="Postgres"
+        >
+          <circle
+            cx="130.00000000000003"
+            cy="-225.16660498395404"
+            fill="white"
+            r="14"
+          />
+          <image
+            height="19.79898987322333"
+            href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/postgres_square.png"
+            width="19.79898987322333"
+            x="120.10050506338837"
+            y="-235.0660999205657"
+          />
+        </g>
+      </g>
+      <g
+        class="StyledGroup-sc-dipbco-0 jccckg"
+        opacity="1"
+      >
+        <g
+          aria-label="Neo4J"
+          class="techIcon-Neo4J no-content"
+          title="Neo4J"
+        >
+          <circle
+            cx="183.8477631085023"
+            cy="-183.8477631085024"
+            fill="white"
+            r="14"
+          />
+          <image
+            height="19.79898987322333"
+            href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/neo4j_square.png"
+            width="19.79898987322333"
+            x="173.94826817189065"
+            y="-193.74725804511405"
+          />
+        </g>
+      </g>
+      <g
+        class="StyledGroup-sc-dipbco-0 jccckg"
+        opacity="1"
+      >
+        <g
+          aria-label="MongoDB"
+          class="techIcon-MongoDB undefined"
+          title="MongoDB"
+        >
+          <circle
+            cx="225.1666049839541"
+            cy="-129.99999999999991"
+            fill="white"
+            r="14"
+          />
+          <image
+            height="19.79898987322333"
+            href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/mongodb_square_2.png"
+            width="19.79898987322333"
+            x="215.26711004734244"
+            y="-139.89949493661157"
+          />
+        </g>
+      </g>
+      <g
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -1033,7 +1105,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -1057,7 +1129,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -1081,12 +1153,12 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
           aria-label="BigQuery"
-          class="techIcon-BigQuery no-content"
+          class="techIcon-BigQuery undefined"
           title="BigQuery"
         >
           <circle
@@ -1105,12 +1177,12 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
           aria-label="Snowflake"
-          class="techIcon-Snowflake no-content"
+          class="techIcon-Snowflake undefined"
           title="Snowflake"
         >
           <circle
@@ -1129,7 +1201,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -1153,7 +1225,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -1177,7 +1249,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -1201,7 +1273,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -1225,7 +1297,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -1249,7 +1321,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -1273,7 +1345,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -1297,7 +1369,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -1321,7 +1393,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -1345,7 +1417,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -1369,7 +1441,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -1393,7 +1465,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -1417,7 +1489,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -1441,7 +1513,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -1465,12 +1537,12 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
           aria-label="GCP"
-          class="techIcon-GCP no-content"
+          class="techIcon-GCP undefined"
           title="GCP"
         >
           <circle
@@ -1489,12 +1561,12 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
           aria-label="Kubernetes"
-          class="techIcon-Kubernetes no-content"
+          class="techIcon-Kubernetes undefined"
           title="Kubernetes"
         >
           <circle
@@ -1513,12 +1585,12 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
           aria-label="Serverless"
-          class="techIcon-Serverless no-content"
+          class="techIcon-Serverless undefined"
           title="Serverless"
         >
           <circle
@@ -1537,17 +1609,17 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
           aria-label="OpenShift"
-          class="techIcon-OpenShift no-content"
+          class="techIcon-OpenShift undefined"
           title="OpenShift"
         >
           <circle
-            cx="216.18209919866172"
-            cy="144.44826058509665"
+            cx="225.16660498395404"
+            cy="130"
             fill="white"
             r="14"
           />
@@ -1555,23 +1627,47 @@ exports[`Radar should render Radar component 1`] = `
             height="19.79898987322333"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/openshift_square.png"
             width="19.79898987322333"
-            x="206.28260426205006"
-            y="134.548765648485"
+            x="215.26711004734238"
+            y="120.10050506338834"
           />
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
+        opacity="1"
+      >
+        <g
+          aria-label="Apache Hadoop"
+          class="techIcon-Apache Hadoop undefined"
+          title="Apache Hadoop"
+        >
+          <circle
+            cx="183.8477631085024"
+            cy="183.8477631085023"
+            fill="white"
+            r="14"
+          />
+          <image
+            height="19.79898987322333"
+            href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/hadoop.png"
+            width="19.79898987322333"
+            x="173.94826817189073"
+            y="173.94826817189065"
+          />
+        </g>
+      </g>
+      <g
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
           aria-label="Grafana"
-          class="techIcon-Grafana no-content"
+          class="techIcon-Grafana undefined"
           title="Grafana"
         >
           <circle
-            cx="144.4482605850964"
-            cy="216.1820991986619"
+            cx="129.99999999999991"
+            cy="225.1666049839541"
             fill="white"
             r="14"
           />
@@ -1579,13 +1675,13 @@ exports[`Radar should render Radar component 1`] = `
             height="19.79898987322333"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/grafana_square.png"
             width="19.79898987322333"
-            x="134.54876564848473"
-            y="206.28260426205023"
+            x="120.10050506338825"
+            y="215.26711004734244"
           />
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -1609,7 +1705,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -1633,12 +1729,12 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
           aria-label="PCF"
-          class="techIcon-PCF no-content"
+          class="techIcon-PCF undefined"
           title="PCF"
         >
           <circle
@@ -1657,12 +1753,12 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
           aria-label="Digital Ocean"
-          class="techIcon-Digital Ocean no-content"
+          class="techIcon-Digital Ocean undefined"
           title="Digital Ocean"
         >
           <circle
@@ -1681,12 +1777,12 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
           aria-label="PKS"
-          class="techIcon-PKS no-content"
+          class="techIcon-PKS undefined"
           title="PKS"
         >
           <circle
@@ -1705,7 +1801,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -1729,7 +1825,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -1753,7 +1849,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -1777,7 +1873,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -1801,7 +1897,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -1825,7 +1921,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -1849,7 +1945,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -1873,7 +1969,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -1897,7 +1993,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -1921,7 +2017,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -1945,7 +2041,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -1969,7 +2065,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -1993,7 +2089,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -2017,7 +2113,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -2041,7 +2137,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -2065,7 +2161,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -2089,7 +2185,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -2113,7 +2209,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -2137,7 +2233,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -2161,12 +2257,12 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
           aria-label="Vue"
-          class="techIcon-Vue no-content"
+          class="techIcon-Vue undefined"
           title="Vue"
         >
           <circle
@@ -2185,7 +2281,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -2209,7 +2305,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -2233,7 +2329,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -2257,7 +2353,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -2281,7 +2377,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -2305,7 +2401,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g
@@ -2329,7 +2425,7 @@ exports[`Radar should render Radar component 1`] = `
         </g>
       </g>
       <g
-        class="StyledGroup-sc-dipbco-0 fnwHML"
+        class="StyledGroup-sc-dipbco-0 jccckg"
         opacity="1"
       >
         <g

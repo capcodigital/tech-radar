@@ -113,7 +113,7 @@ const techContent = [
     technology: "Angular",
     docsLink: "https://angular.io/docs",
     intro:
-      '<a href="https://https://angular.io/">Angular</a> is a highly popular web development framework that offers rich user experiences, fast responsiveness, and code maintainability.',
+      '<a href="https://angular.io/">Angular</a> is a highly popular web development framework that offers rich user experiences, fast responsiveness, and code maintainability.',
     content: [
       {
         name: "State Management",
@@ -170,6 +170,28 @@ const techContent = [
           },
         ],
       },
+      {
+        name: "Testing",
+        intro:
+          "The first purpose of testing is to prevent bugs from releasing to production. Testing ensures the features are functioning correctly for complex components and modular applications and is required for the effective performance of a software application or product making it more robust and less prone to error. ",
+        data: [
+          {
+            name: "Jasmine",
+            description:
+              '<a href="https://jasmine.github.io/">Jasmine</a> is a behavior-driven development framework for testing JavaScript code. It does not depend on any other JavaScript frameworks. It does not require a DOM. And it has a clean, obvious syntax so that you can easily write tests.',
+          },
+          {
+            name: "Karma",
+            description:
+              '<a href="https://karma-runner.github.io">Karma</a> is a test-runner for javascript apps, is essentially a tool which spawns a web server that executes source code against test code for each of the browsers connected. The results of each test against each browser are examined and displayed via the command line to the developer such that they can see which browsers and tests passed or failed.',
+          },
+          {
+            name: "Protractor",
+            description:
+              '<a href="https://www.protractortest.org">Protractor</a> is a wrapper around Selenium Webdriver that provides an automation test framework, which simulates user interaction with an Angular web application for a range of browsers and mobile devices. It provides all features of Selenium WebDriver along with Angular specific features for seamless end to end testing.',
+          },
+        ],
+      },
     ],
     examples: [],
     reference: [],
@@ -177,8 +199,87 @@ const techContent = [
   {
     technology: "Vue",
     docsLink: "https://vuejs.org/v2/guide/",
-    intro: "Content coming soon.",
-    content: [],
+    intro:
+      '<a href="https://vuejs.org>Vue</a> is a JavaScript framework for building user interfaces. It builds on top of standard HTML, CSS, and JavaScript and provides a declarative and component-based programming model that helps you efficiently develop user interfaces, be they simple or complex',
+    content: [
+      {
+        name: "State Management",
+        intro:
+          "Managing states is one of the biggest challenges in large web applications. State management is a key component when building applications. There are various approaches by which we can manage the state in Vue application.",
+        data: [
+          {
+            name: "Pinia",
+            description:
+              "<a href='https://pinia.vuejs.org/'>Pinia</a> is a state management solution for Vue. js applications that's easy and intuitive to use. It's modular by default, extensible, and type-safe, making it a great choice for large scale apps.",
+          },
+          {
+            name: "Vuex",
+            description:
+              '<a href="https://vuex.vuejs.org/">Vuex</a> is the state management library officially maintained by the Vue core team. It does not have a reputation of being easy to use, but that’s mainly because of trade-offs needed for being a powerful solution.',
+          },
+        ],
+      },
+      {
+        name: "UI Libraries",
+        intro: "",
+        data: [
+          {
+            name: "Vuetify",
+            description:
+              '<a href="https://vuetifyjs.com/">Vuetify</a> is a complete UI framework built on top of Vuejs. The goal of the project is to provide developers with the tools they need to build rich and engaging user experiences.',
+          },
+          {
+            name: "Quasar",
+            description:
+              '<a href="https://quasar.dev/">Quasar</a> is Vuejs based framework, which allows you as a web developer to quickly create responsive++ websites/apps,write code once and simultaneously deploy it as a website, a Mobile App and/or an Electron App. Yes, one codebase for all of them, helping you develop an app in record time by using a state-of-the-art CLI and backed by best-practice, blazing fast Quasar web components',
+          },
+        ],
+      },
+      {
+        name: "Styling",
+        intro:
+          "The point of building a frontend User Interface with Vuejs is how flexible it can be, especially when it comes to building separate components. It is important to know that whatever styling strategy you may decide to use, you are still writing CSS. The difference is that the strategies together with the library make the process easier.",
+        data: [
+          {
+            name: "CSS and SASS",
+            description:
+              'This involves using separate stylesheets like our conventional way of styling our HTML websites either with CSS or a CSS preprocessor called <a href="https://sass-lang.com/">SASS</a>.',
+          },
+          {
+            name: "BEM - Block Element Modifier",
+            description:
+              "It's a CSS naming convention for writing cleaner and more readable CSS classes. <a href='http://getbem.com/'>BEM</a> aims to write independent CSS blocks increasing reusability.",
+          },
+          {
+            name: "CSS Modules",
+            description:
+              "A CSS Module is a CSS file in which all class names and animation names are scoped locally by default. The key words here are scoped locally. With this, your CSS class names become similar to local variables in JavaScript. It goes into the compiler, and CSS comes out the other side.",
+          },
+        ],
+      },
+      {
+        name: "Testing",
+        intro:
+          "The first purpose of testing is to prevent bugs from releasing to production. Testing ensures the features are functioning correctly for complex components and modular applications and is required for the effective performance of a software application or product making it more robust and less prone to error. ",
+        data: [
+          {
+            name: "Vitest",
+            description:
+              "<a href='https://vitest.dev'>Vitest</a> is a blazing fast unit test framework powered by Vite.Vite's out-of-the-box support for common web patterns, features like glob imports and SSR primitives, and its many plugins and integrations are fostering a vibrant ecosystem",
+          },
+          {
+            name: "Peeky",
+            description:
+              '<a href="https://peeky.dev">Peeky</a> is another fast unit test runner with first-class Vite integration. It is also created by a Vue core team member and offers a GUI-based testing interface.',
+          },
+          {
+            name: "Cypress",
+            description:
+              "<a href='https://www.cypress.io/'>Cypress</a> is a JavaScript based end-to-end testing framework that doesn't use Selenium at all. It is built on top of Mocha, which is a feature-rich JavaScript test framework, making asynchronous testing simple. Cypress also uses a BDD/TDD assertion library and a browser that can be paired with any JavaScript testing framework.",
+          },
+        ],
+      },
+    ],
     examples: [],
     reference: [],
   },
