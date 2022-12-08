@@ -2,7 +2,7 @@
 
 exports[`CategoryPage should render CategoryPage component 1`] = `
 <div
-  class="CategoryPage__Wrapper-sc-1mmonyv-0 fwzZoK"
+  class="CategoryPage__Wrapper-sc-1mmonyv-0 jNUMox"
 >
   <img
     alt="DevOps"
@@ -12,7 +12,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
     width="650"
   />
   <div
-    class="MobileRadarBackground__Wrapper-sc-199fz26-0 ehDagh"
+    class="MobileRadarBackground__Wrapper-sc-199fz26-0 kpFMji"
   >
     <svg
       viewBox="0 0 700 700"
@@ -45,7 +45,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
       class="mobile-category"
     >
       <div
-        class="CategoryPage__MobileTitle-sc-1mmonyv-2 iRdzbS"
+        class="CategoryPage__MobileTitle-sc-1mmonyv-2 fkYTqd"
       >
         DevOps
       </div>
@@ -61,7 +61,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
       >
         <div>
           <hr
-            class="CategoryPage__Divider-sc-1mmonyv-3 iYkwoE"
+            class="CategoryPage__Divider-sc-1mmonyv-3 kJmJdj"
           />
           <div
             class="title"
@@ -69,18 +69,27 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             Preferred
           </div>
           <div
-            class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+            class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
           >
             <a
               data-test-id="category-item-GitHub"
               href="/technology/devops/github"
-              style="pointer-events: none;"
             >
               GitHub
             </a>
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+              />
+            </svg>
           </div>
           <div
-            class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+            class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
           >
             <a
               data-test-id="category-item-CircleCI"
@@ -91,7 +100,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </a>
           </div>
           <div
-            class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+            class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
           >
             <a
               data-test-id="category-item-Terraform"
@@ -102,7 +111,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </a>
           </div>
           <div
-            class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+            class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
           >
             <a
               data-test-id="category-item-Vault"
@@ -113,7 +122,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </a>
           </div>
           <div
-            class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+            class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
           >
             <a
               data-test-id="category-item-SonarQube"
@@ -133,7 +142,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </svg>
           </div>
           <div
-            class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+            class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
           >
             <a
               data-test-id="category-item-Elastic"
@@ -146,7 +155,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
         </div>
         <div>
           <hr
-            class="CategoryPage__Divider-sc-1mmonyv-3 iYkwoE"
+            class="CategoryPage__Divider-sc-1mmonyv-3 kJmJdj"
           />
           <div
             class="title"
@@ -154,7 +163,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             Skilled
           </div>
           <div
-            class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+            class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
           >
             <a
               data-test-id="category-item-Bitbucket"
@@ -165,7 +174,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </a>
           </div>
           <div
-            class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+            class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
           >
             <a
               data-test-id="category-item-Jenkins"
@@ -185,7 +194,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </svg>
           </div>
           <div
-            class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+            class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
           >
             <a
               data-test-id="category-item-TeamCity"
@@ -196,7 +205,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </a>
           </div>
           <div
-            class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+            class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
           >
             <a
               data-test-id="category-item-Istio"
@@ -207,7 +216,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </a>
           </div>
           <div
-            class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+            class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
           >
             <a
               data-test-id="category-item-Ansible"
@@ -218,7 +227,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </a>
           </div>
           <div
-            class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+            class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
           >
             <a
               data-test-id="category-item-Packer"
@@ -232,7 +241,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
       </div>
       <div>
         <hr
-          class="CategoryPage__Divider-sc-1mmonyv-3 iYkwoE"
+          class="CategoryPage__Divider-sc-1mmonyv-3 kJmJdj"
         />
         <div
           class="title"
@@ -240,7 +249,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           Scaling
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+          class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
         >
           <a
             data-test-id="category-item-Twistlock"
@@ -251,7 +260,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </a>
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+          class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
         >
           <a
             data-test-id="category-item-Kiali"
@@ -262,7 +271,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </a>
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+          class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
         >
           <a
             data-test-id="category-item-ConcourseCl"
@@ -273,7 +282,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </a>
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+          class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
         >
           <a
             data-test-id="category-item-Consul"
@@ -295,7 +304,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/mobile"
           >
             <div
-              class="styles__ButtonWrapper-sc-hfvpn3-0 gmCdnx"
+              class="styles__ButtonWrapper-sc-hfvpn3-0 ftdjay"
             >
               <img
                 alt="Mobile"
@@ -322,7 +331,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/frontend"
           >
             <div
-              class="styles__ButtonWrapper-sc-hfvpn3-0 gmCdnx"
+              class="styles__ButtonWrapper-sc-hfvpn3-0 ftdjay"
             >
               <img
                 alt="Frontend"
@@ -349,7 +358,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/backend"
           >
             <div
-              class="styles__ButtonWrapper-sc-hfvpn3-0 gmCdnx"
+              class="styles__ButtonWrapper-sc-hfvpn3-0 ftdjay"
             >
               <img
                 alt="Backend"
@@ -376,7 +385,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/integration"
           >
             <div
-              class="styles__ButtonWrapper-sc-hfvpn3-0 gmCdnx"
+              class="styles__ButtonWrapper-sc-hfvpn3-0 ftdjay"
             >
               <img
                 alt="Integration"
@@ -405,7 +414,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/cloud-&-platforms"
           >
             <div
-              class="styles__ButtonWrapper-sc-hfvpn3-0 gmCdnx"
+              class="styles__ButtonWrapper-sc-hfvpn3-0 ftdjay"
             >
               <img
                 alt="Cloud & Platforms"
@@ -432,7 +441,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/quality-engineering"
           >
             <div
-              class="styles__ButtonWrapper-sc-hfvpn3-0 gmCdnx"
+              class="styles__ButtonWrapper-sc-hfvpn3-0 ftdjay"
             >
               <img
                 alt="Quality Engineering"
@@ -456,19 +465,19 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </div>
           </a>
           <a
-            href="/category/databases"
+            href="/category/data-engineering"
           >
             <div
-              class="styles__ButtonWrapper-sc-hfvpn3-0 gmCdnx"
+              class="styles__ButtonWrapper-sc-hfvpn3-0 ftdjay"
             >
               <img
-                alt="Databases"
+                alt="Data Engineering"
                 height="54"
                 src="databases.svg"
                 width="54"
               />
               <span>
-                Databases
+                Data Engineering
               </span>
               <svg
                 aria-hidden="true"
@@ -492,7 +501,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
         class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
       >
         <a
-          class="styles__StyledBackLink-sc-1t7dby2-0 eIpoUv"
+          class="styles__StyledBackLink-sc-1t7dby2-0 buYLtI"
           href="/home"
         >
           <svg
@@ -508,7 +517,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           Back
         </a>
         <div
-          class="CategoryPage__Title-sc-1mmonyv-1 fIeEHu"
+          class="CategoryPage__Title-sc-1mmonyv-1 juQmIJ"
         >
           DevOps
         </div>
@@ -524,7 +533,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
         class="MuiGrid-root large-screen MuiGrid-item MuiGrid-grid-xs-4"
       >
         <hr
-          class="CategoryPage__Divider-sc-1mmonyv-3 iYkwoE"
+          class="CategoryPage__Divider-sc-1mmonyv-3 kJmJdj"
         />
         <div
           class="title"
@@ -532,18 +541,27 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           Preferred
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+          class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
         >
           <a
             data-test-id="category-item-GitHub"
             href="/technology/devops/github"
-            style="pointer-events: none;"
           >
             GitHub
           </a>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+            />
+          </svg>
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+          class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
         >
           <a
             data-test-id="category-item-CircleCI"
@@ -554,7 +572,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </a>
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+          class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
         >
           <a
             data-test-id="category-item-Terraform"
@@ -565,7 +583,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </a>
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+          class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
         >
           <a
             data-test-id="category-item-Vault"
@@ -576,7 +594,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </a>
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+          class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
         >
           <a
             data-test-id="category-item-SonarQube"
@@ -596,7 +614,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </svg>
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+          class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
         >
           <a
             data-test-id="category-item-Elastic"
@@ -611,7 +629,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
         class="MuiGrid-root large-screen MuiGrid-item MuiGrid-grid-xs-4"
       >
         <hr
-          class="CategoryPage__Divider-sc-1mmonyv-3 iYkwoE"
+          class="CategoryPage__Divider-sc-1mmonyv-3 kJmJdj"
         />
         <div
           class="title"
@@ -619,7 +637,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           Skilled
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+          class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
         >
           <a
             data-test-id="category-item-Bitbucket"
@@ -630,7 +648,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </a>
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+          class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
         >
           <a
             data-test-id="category-item-Jenkins"
@@ -650,7 +668,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </svg>
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+          class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
         >
           <a
             data-test-id="category-item-TeamCity"
@@ -661,7 +679,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </a>
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+          class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
         >
           <a
             data-test-id="category-item-Istio"
@@ -672,7 +690,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </a>
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+          class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
         >
           <a
             data-test-id="category-item-Ansible"
@@ -683,7 +701,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </a>
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+          class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
         >
           <a
             data-test-id="category-item-Packer"
@@ -698,7 +716,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
         class="MuiGrid-root large-screen MuiGrid-item MuiGrid-grid-xs-4"
       >
         <hr
-          class="CategoryPage__Divider-sc-1mmonyv-3 iYkwoE"
+          class="CategoryPage__Divider-sc-1mmonyv-3 kJmJdj"
         />
         <div
           class="title"
@@ -706,7 +724,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           Scaling
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+          class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
         >
           <a
             data-test-id="category-item-Twistlock"
@@ -717,7 +735,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </a>
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+          class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
         >
           <a
             data-test-id="category-item-Kiali"
@@ -728,7 +746,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </a>
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+          class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
         >
           <a
             data-test-id="category-item-ConcourseCl"
@@ -739,7 +757,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </a>
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+          class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
         >
           <a
             data-test-id="category-item-Consul"
@@ -763,7 +781,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/mobile"
           >
             <div
-              class="styles__ButtonWrapper-sc-hfvpn3-0 gmCdnx"
+              class="styles__ButtonWrapper-sc-hfvpn3-0 ftdjay"
             >
               <img
                 alt="Mobile"
@@ -790,7 +808,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/frontend"
           >
             <div
-              class="styles__ButtonWrapper-sc-hfvpn3-0 gmCdnx"
+              class="styles__ButtonWrapper-sc-hfvpn3-0 ftdjay"
             >
               <img
                 alt="Frontend"
@@ -817,7 +835,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/backend"
           >
             <div
-              class="styles__ButtonWrapper-sc-hfvpn3-0 gmCdnx"
+              class="styles__ButtonWrapper-sc-hfvpn3-0 ftdjay"
             >
               <img
                 alt="Backend"
@@ -844,7 +862,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/integration"
           >
             <div
-              class="styles__ButtonWrapper-sc-hfvpn3-0 gmCdnx"
+              class="styles__ButtonWrapper-sc-hfvpn3-0 ftdjay"
             >
               <img
                 alt="Integration"
@@ -873,7 +891,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/cloud-&-platforms"
           >
             <div
-              class="styles__ButtonWrapper-sc-hfvpn3-0 gmCdnx"
+              class="styles__ButtonWrapper-sc-hfvpn3-0 ftdjay"
             >
               <img
                 alt="Cloud & Platforms"
@@ -900,7 +918,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/quality-engineering"
           >
             <div
-              class="styles__ButtonWrapper-sc-hfvpn3-0 gmCdnx"
+              class="styles__ButtonWrapper-sc-hfvpn3-0 ftdjay"
             >
               <img
                 alt="Quality Engineering"
@@ -924,19 +942,19 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </div>
           </a>
           <a
-            href="/category/databases"
+            href="/category/data-engineering"
           >
             <div
-              class="styles__ButtonWrapper-sc-hfvpn3-0 gmCdnx"
+              class="styles__ButtonWrapper-sc-hfvpn3-0 ftdjay"
             >
               <img
-                alt="Databases"
+                alt="Data Engineering"
                 height="54"
                 src="databases.svg"
                 width="54"
               />
               <span>
-                Databases
+                Data Engineering
               </span>
               <svg
                 aria-hidden="true"
@@ -955,7 +973,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
     </div>
   </div>
   <div
-    class="CategoryRadar__Wrapper-sc-45bajh-0 jKelJV"
+    class="CategoryRadar__Wrapper-sc-45bajh-0 cDuyzK"
   >
     <svg
       height="800"

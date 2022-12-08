@@ -437,7 +437,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Vue",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/frontend/vue_square.png",
-          enabled: false,
+          enabled: true,
         },
       ],
     },
