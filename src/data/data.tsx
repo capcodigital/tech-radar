@@ -236,27 +236,27 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "GCP",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/gcp_square.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "Kubernetes",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/k8s_square.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "Serverless",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/serverless_square.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "OpenShift",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/openshift_square.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "Grafana",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/grafana_square.png",
-          enabled: false,
+          enabled: true,
         },
       ],
       skilled: [
@@ -273,19 +273,19 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "PCF",
           link: "https://avatars.githubusercontent.com/u/5497370?s=200&v=4",
-          enabled: false,
+          enabled: true,
         },
       ],
       scaling: [
         {
           name: "Digital Ocean",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/digitalocean_square.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "PKS",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/pks_square.png",
-          enabled: false,
+          enabled: true,
         },
       ],
     },
