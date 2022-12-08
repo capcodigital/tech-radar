@@ -169,7 +169,7 @@ const techContent = [
       {
         name: "Features and Capabilities",
         intro:
-          "<ul><li><b>Kubernetes compatibility</b> - constant compatibility with current stable release of Kubernetes</li><li><b>Production-ready</b> - highly available from applications to infrastructure, with no single points of failure</li><li><b>BOSH advantages</b> - built-in health checks, scaling, auto-healing and rolling upgrades</li><li><b>Fully automated operations</b>: Fully automated deploy, scale, patch, and upgrade experience</li><li><b>Multi-cloud</b>: Consistent operational experience across multiple clouds</li><li><b>GCP APIs access</b>: The Google Cloud Platform (GCP) Service Broker gives applications access to the Google Cloud APIs, and Google Container Engine (GKE) consistency enables the transfer of workloads from or to GCP</li></ul>",
+          "<ul><li><b>Kubernetes compatibility</b> - constant compatibility with current stable release of Kubernetes</li><li><b>Production-ready</b> - highly available from applications to infrastructure, with no single points of failure</li><li><b>BOSH advantages</b> - built-in health checks, scaling, auto-healing and rolling upgrades</li><li><b>Fully automated operations</b> - Fully automated deploy, scale, patch, and upgrade experience</li><li><b>Multi-cloud</b> - Consistent operational experience across multiple clouds</li><li><b>GCP APIs access</b> - The Google Cloud Platform (GCP) Service Broker gives applications access to the Google Cloud APIs, and Google Container Engine (GKE) consistency enables the transfer of workloads from or to GCP</li></ul>",
         data: [],
       },
     ],
