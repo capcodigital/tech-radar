@@ -2237,6 +2237,102 @@ exports[`Radar should render Radar component 1`] = `
         opacity="1"
       >
         <g
+          aria-label="HTML"
+          class="techIcon-HTML undefined"
+          title="HTML"
+        >
+          <circle
+            cx="-196.40491801211056"
+            cy="52.626539170845895"
+            fill="white"
+            r="14"
+          />
+          <image
+            height="19.79898987322333"
+            href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/frontend/html_square.png"
+            width="19.79898987322333"
+            x="-206.30441294872222"
+            y="42.72704423423423"
+          />
+        </g>
+      </g>
+      <g
+        class="StyledGroup-sc-dipbco-0 jccckg"
+        opacity="1"
+      >
+        <g
+          aria-label="CSS"
+          class="techIcon-CSS undefined"
+          title="CSS"
+        >
+          <circle
+            cx="-203.33333333333334"
+            cy="7.470345474798854e-14"
+            fill="white"
+            r="14"
+          />
+          <image
+            height="19.79898987322333"
+            href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/frontend/css_square.png"
+            width="19.79898987322333"
+            x="-213.232828269945"
+            y="-9.89949493661159"
+          />
+        </g>
+      </g>
+      <g
+        class="StyledGroup-sc-dipbco-0 jccckg"
+        opacity="1"
+      >
+        <g
+          aria-label="JavaScript"
+          class="techIcon-JavaScript undefined"
+          title="JavaScript"
+        >
+          <circle
+            cx="-196.40491801211058"
+            cy="-52.62653917084576"
+            fill="white"
+            r="14"
+          />
+          <image
+            height="19.79898987322333"
+            href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/frontend/javascript_square.png"
+            width="19.79898987322333"
+            x="-206.30441294872224"
+            y="-62.52603410745743"
+          />
+        </g>
+      </g>
+      <g
+        class="StyledGroup-sc-dipbco-0 jccckg"
+        opacity="1"
+      >
+        <g
+          aria-label="Webpack"
+          class="techIcon-Webpack undefined"
+          title="Webpack"
+        >
+          <circle
+            cx="-143.33333333333334"
+            cy="5.265981236333619e-14"
+            fill="white"
+            r="14"
+          />
+          <image
+            height="19.79898987322333"
+            href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/frontend/webpack_square.png"
+            width="19.79898987322333"
+            x="-153.232828269945"
+            y="-9.899494936611612"
+          />
+        </g>
+      </g>
+      <g
+        class="StyledGroup-sc-dipbco-0 jccckg"
+        opacity="1"
+      >
+        <g
           aria-label="Flutter"
           class="techIcon-Flutter undefined"
           title="Flutter"

@@ -427,7 +427,28 @@ export const data: Array<{ name: string; data: techType }> = [
           enabled: true,
         },
       ],
-      skilled: [],
+      skilled: [
+        {
+          name: "HTML",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/frontend/html_square.png",
+          enabled: true,
+        },
+        {
+          name: "CSS",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/frontend/css_square.png",
+          enabled: true,
+        },
+        {
+          name: "JavaScript",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/frontend/javascript_square.png",
+          enabled: true,
+        },
+        {
+          name: "Webpack",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/frontend/webpack_square.png",
+          enabled: true,
+        },
+      ],
       scaling: [
         {
           name: "Flutter",
@@ -752,6 +773,22 @@ export const icons: Array<{ name: string; link: string }> = [
     name: "TypeScript",
     link: "https://img.icons8.com/color/452/typescript.png",
   },
+  {
+    name: "JavaScript",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/frontend/javascript_square.png",
+  },
+  {
+    name: "HTML",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/frontend/html_square.png",
+  },
+  {
+    name: "CSS",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/frontend/css_square.png",
+  },
+  {
+    name: "Webpack",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/frontend/webpack_square.png",
+  },
   { name: "Vue", link: "https://img.icons8.com/color/344/vue-js.png" },
   {
     name: "React Native",
@@ -890,7 +927,17 @@ export const technologies = [
   },
   {
     categoryName: "Frontend",
-    technologies: ["React", "Angular", "Flutter", "Vue", "TypeScript"],
+    technologies: [
+      "React",
+      "Angular",
+      "Flutter",
+      "Vue",
+      "TypeScript",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Webpack",
+    ],
   },
   {
     categoryName: "Mobile",
@@ -983,6 +1030,10 @@ export const technologyList = [
   "Flutter",
   "Vue",
   "TypeScript",
+  "Javascript",
+  "HTML",
+  "CSS",
+  "Webpack",
   "React Native",
   "Swift",
   "Kotlin",
