@@ -373,7 +373,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Go",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/backend/go_square.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "Scala",
@@ -383,7 +383,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Gradle",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/backend/gradle_square.png",
-          enabled: false,
+          enabled: true,
         },
       ],
       skilled: [
@@ -395,14 +395,14 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Groovy",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/backend/groovy_square.png",
-          enabled: false,
+          enabled: true,
         },
       ],
       scaling: [
         {
           name: "Kotlin",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/backend/kotlin_square.png",
-          enabled: false,
+          enabled: true,
         },
       ],
     },
@@ -723,7 +723,10 @@ export const icons: Array<{ name: string; link: string }> = [
     name: "Go",
     link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/backend/go_square.png",
   },
-
+  {
+    name: "Groovy",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/backend/groovy_square.png",
+  },
   {
     name: "Python",
     link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/backend/python_square.png",
