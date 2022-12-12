@@ -72,6 +72,16 @@ export const data: Array<{ name: string; data: techType }> = [
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/packer_square.png",
           enabled: false,
         },
+        {
+          name: "Docker",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/docker_square.png",
+          enabled: true,
+        },
+        {
+          name: "Datadog",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/datadog_square.png",
+          enabled: true,
+        },
       ],
       scaling: [
         {
