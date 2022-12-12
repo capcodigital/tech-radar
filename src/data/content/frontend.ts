@@ -73,7 +73,7 @@ const techContent = [
       {
         name: "Testing",
         intro:
-          "The first purpose of testing is to prevent bugs from releasing to production. Testing ensures the features are functioning correctly for complex components and modular applications and is required for the effective performance of a software application or product making it more robust and less prone to error. ",
+          "The first purpose of testing is to prevent bugs from releasing to production. Testing ensures the features are functioning correctly for complex components and modular applications and is required for the effective performance of a software application or product making it more robust and less prone to error.",
         data: [
           {
             name: "Jest",
@@ -83,12 +83,12 @@ const techContent = [
           {
             name: "Enzyme",
             description:
-              '<a href="https://enzymejs.github.io/enzyme/">Enzyme</a> is an open-source JavaScript testing utility by Airbnb and needs a testing library to provide a foundation for the tests it generates. Using Jest and Enzyme together results in cleaner testing code that’s also easier to debug when a test breaks. Jest as a test runner and assertion library, then use Enzyme to build the tests for their UI. ',
+              '<a href="https://enzymejs.github.io/enzyme/">Enzyme</a> is an open-source JavaScript testing utility by Airbnb and needs a testing library to provide a foundation for the tests it generates. Using Jest and Enzyme together results in cleaner testing code that’s also easier to debug when a test breaks. Jest as a test runner and assertion library, then use Enzyme to build the tests for their UI.',
           },
           {
             name: "React Testing Library",
             description:
-              'The <a href="https://testing-library.com/docs/react-testing-library/intro/">React Testing Library</a> is a very lightweight solution for testing React components. It provides light utility functions on top of react-dom and react-dom/test-utils, in a way that encourages better testing practices. ',
+              'The <a href="https://testing-library.com/docs/react-testing-library/intro/">React Testing Library</a> is a very lightweight solution for testing React components. It provides light utility functions on top of react-dom and react-dom/test-utils, in a way that encourages better testing practices.',
           },
           {
             name: "Cypress",
@@ -173,7 +173,7 @@ const techContent = [
       {
         name: "Testing",
         intro:
-          "The first purpose of testing is to prevent bugs from releasing to production. Testing ensures the features are functioning correctly for complex components and modular applications and is required for the effective performance of a software application or product making it more robust and less prone to error. ",
+          "The first purpose of testing is to prevent bugs from releasing to production. Testing ensures the features are functioning correctly for complex components and modular applications and is required for the effective performance of a software application or product making it more robust and less prone to error.",
         data: [
           {
             name: "Jasmine",
@@ -200,7 +200,7 @@ const techContent = [
     technology: "Vue",
     docsLink: "https://vuejs.org/v2/guide/",
     intro:
-      '<a href="https://vuejs.org>Vue</a> is a JavaScript framework for building user interfaces. It builds on top of standard HTML, CSS, and JavaScript and provides a declarative and component-based programming model that helps you efficiently develop user interfaces, be they simple or complex',
+      '<a href="https://vuejs.org>Vue</a> is a JavaScript framework for building user interfaces. It builds on top of standard HTML, CSS, and JavaScript and provides a declarative and component-based programming model that helps you efficiently develop user interfaces, be they simple or complex.',
     content: [
       {
         name: "State Management",
@@ -231,7 +231,7 @@ const techContent = [
           {
             name: "Quasar",
             description:
-              '<a href="https://quasar.dev/">Quasar</a> is Vuejs based framework, which allows you as a web developer to quickly create responsive++ websites/apps,write code once and simultaneously deploy it as a website, a Mobile App and/or an Electron App. Yes, one codebase for all of them, helping you develop an app in record time by using a state-of-the-art CLI and backed by best-practice, blazing fast Quasar web components',
+              '<a href="https://quasar.dev/">Quasar</a> is Vuejs based framework, which allows you as a web developer to quickly create responsive++ websites/apps,write code once and simultaneously deploy it as a website, a Mobile App and/or an Electron App. Yes, one codebase for all of them, helping you develop an app in record time by using a state-of-the-art CLI and backed by best-practice, blazing fast Quasar web components.',
           },
         ],
       },
@@ -260,12 +260,12 @@ const techContent = [
       {
         name: "Testing",
         intro:
-          "The first purpose of testing is to prevent bugs from releasing to production. Testing ensures the features are functioning correctly for complex components and modular applications and is required for the effective performance of a software application or product making it more robust and less prone to error. ",
+          "The first purpose of testing is to prevent bugs from releasing to production. Testing ensures the features are functioning correctly for complex components and modular applications and is required for the effective performance of a software application or product making it more robust and less prone to error.",
         data: [
           {
             name: "Vitest",
             description:
-              "<a href='https://vitest.dev'>Vitest</a> is a blazing fast unit test framework powered by Vite.Vite's out-of-the-box support for common web patterns, features like glob imports and SSR primitives, and its many plugins and integrations are fostering a vibrant ecosystem",
+              "<a href='https://vitest.dev'>Vitest</a> is a blazing fast unit test framework powered by Vite.Vite's out-of-the-box support for common web patterns, features like glob imports and SSR primitives, and its many plugins and integrations are fostering a vibrant ecosystem.",
           },
           {
             name: "Peeky",
@@ -297,7 +297,7 @@ const techContent = [
           {
             name: "Everyday Types",
             description:
-              "Boolean, String, Number, Array, Object, any, function, interface, null, undefined, void ",
+              "Boolean, String, Number, Array, Object, any, function, interface, null, undefined, void.",
           },
           {
             name: "Other Interesting Types",
@@ -313,12 +313,12 @@ const techContent = [
           {
             name: "Type Checking",
             description:
-              "Checking types at compile time helps developers find bugs before their code runs in the browser saving the time spent on debugging errors that would normally appear only at run time if they used plain JavaScript. ",
+              "Checking types at compile time helps developers find bugs before their code runs in the browser saving the time spent on debugging errors that would normally appear only at run time if they used plain JavaScript.",
           },
           {
             name: "Easier Code Management",
             description:
-              "Defining types can serve as a form of documentation for data structures. This helps teams to introduce new developers to the project faster as new engineers can get all the information directly from the development environment. ",
+              "Defining types can serve as a form of documentation for data structures. This helps teams to introduce new developers to the project faster as new engineers can get all the information directly from the development environment.",
           },
         ],
       },
@@ -340,7 +340,7 @@ const techContent = [
           {
             name: "Jasmine",
             description:
-              '<a href="https://jasmine.github.io/">Jasmine</a> is a popular Behaviour Driven Development testing framework for JavaScript/TypeScript. It’s great for websites and Node.js applications ',
+              '<a href="https://jasmine.github.io/">Jasmine</a> is a popular Behaviour Driven Development testing framework for JavaScript/TypeScript. It’s great for websites and Node.js applications.',
           },
         ],
       },
@@ -354,6 +354,256 @@ const techContent = [
           'A React, TypeScript web application that provides a more readable format of our Engineering Competency Framework to help explain performance expectations. Unit tests are written in Jest and React Testing Library, E2E tests are written in Cypress and are automated via <a href="https://github.com/features/actions">GitHub Actions</a>.',
       },
     ],
+    reference: [],
+  },
+  {
+    technology: "JavaScript",
+    docsLink: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    intro:
+      '<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a> is a scripting or programming language that allows you to implement complex features on web pages — every time a web page does more than just sit there and display static information for you to look at — displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, etc. — you can bet that JavaScript is probably involved. It is the third layer of the layer cake of standard web technologies, two of which (HTML and CSS).',
+    content: [
+      {
+        name: "Data Types",
+        intro:
+          "A data type is a set of values grouped together because certain operations apply to them. Every programming language seems to have at least numbers, strings, and booleans.",
+        data: [
+          {
+            name: "Everyday Types",
+            description:
+              "undefined, null, boolean, number, bigint, string, symbol, and object.",
+          },
+        ],
+      },
+      {
+        name: "JavaScript Best Features",
+        intro: "",
+        data: [
+          {
+            name: "Prototype",
+            description:
+              "When an object is created in JavaScript, JavaScript engine adds a __proto__ property to the newly created object which is called dunder proto. dunder proto or __proto__ points to the prototype object of the constructor function.",
+          },
+          {
+            name: "Class",
+            description:
+              "JavaScript classes, introduced in ES6, are primarily syntactical sugar over JavaScript’s existing prototype-based inheritance. The class syntax does not introduce a new object-oriented inheritance model to JavaScript.",
+          },
+          {
+            name: "IIFE",
+            description:
+              "IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined.",
+          },
+          {
+            name: "Scope",
+            description:
+              "Scope is the accessibility of variables, functions, and objects in some particular part of your code during runtime. In other words, scope determines the visibility of variables and other resources in areas of your code.",
+          },
+          {
+            name: "Closures",
+            description:
+              "A closure is an inner function that has access to the outer (enclosing) function’s variables — scope chain. The closure has three scope chains: it has access to its own scope (variables defined between its curly brackets), it has access to the outer function’s variables, and it has access to the global variables.",
+          },
+          {
+            name: "Module Pattern",
+            description:
+              "In JavaScript, a module is a small unit of independent, reusable code. Modules are the foundation of many JavaScript design patterns and are critically necessary when building any non-trivial JavaScript-based application.",
+          },
+          {
+            name: "Currying",
+            description:
+              "Currying is a technique of evaluating the function with multiple arguments, into a sequence of function with a single argument.",
+          },
+          {
+            name: "Memoization",
+            description:
+              "Memoization is a programming technique that attempts to increase a function’s performance by caching its previously computed results.",
+          },
+          {
+            name: "Callback",
+            description:
+              "A reference to executable code, or a piece of executable code, that is passed as an argument to other code.",
+          },
+          {
+            name: "Promises",
+            description:
+              "The Promise object represents the eventual completion (or failure) of an asynchronous operation, and its resulting value.",
+          },
+        ],
+      },
+      {
+        name: "Testing",
+        intro:
+          "The first purpose of testing is to prevent bugs from releasing to production. Testing ensures the features are functioning correctly for complex components and modular applications and is required for the effective performance of a software application or product making it more robust and less prone to error.",
+        data: [
+          {
+            name: "Jest",
+            description:
+              '<a href="https://jestjs.io/">Jest</a> is an open-source testing framework. It comes with built-in mocking and assertion libraries, which also runs your tests concurrently in parallel, providing faster test execution.',
+          },
+          {
+            name: "Mocha",
+            description:
+              '<a href="https://mochajs.org/">Mocha</a> is a JavaScript test framework running on Node.js and in the browser. It is often used with external assertion libraries such as <a href="https://www.chaijs.com/">chai</a>.',
+          },
+          {
+            name: "Jasmine",
+            description:
+              '<a href="https://jasmine.github.io/">Jasmine</a> is a popular Behaviour Driven Development testing framework for JavaScript/TypeScript. It’s great for websites and Node.js applications.',
+          },
+        ],
+      },
+    ],
+    examples: [],
+    reference: [],
+  },
+  {
+    technology: "HTML",
+    docsLink: "https://html.spec.whatwg.org/multipage/",
+    intro:
+      "<a href='https://html.spec.whatwg.org/multipage/'>HTML</a> is the World Wide Web's core markup language. Originally, HTML was primarily designed as a language for semantically describing scientific documents. Its general design, however, has enabled it to be adapted, over the subsequent years, to describe a number of other types of documents and even applications.",
+    content: [
+      {
+        name: "Elements",
+        intro:
+          "An element consists of the opening tag, a character, the content, and a closing tag. Some elements are empty – that is, they don't have a closing tag but instead have a source or link to content that you want to embed on the web page.",
+        data: [
+          {
+            name: "Common Elements",
+            description:
+              "Heading, Paragraph, Bulleted/unordered list, Anchor, Div.",
+          },
+          {
+            name: "HTML5 Elements",
+            description:
+              "Audio, Canvas, Article, Aside, Figure, Header, Footer, Section, Video, Time, Progress, Details.",
+          },
+        ],
+      },
+      {
+        name: "Current Elements",
+        intro: "",
+        data: [
+          {
+            name: "The Root Element",
+            description: "html",
+          },
+          {
+            name: "Document Metadata",
+            description: "head, title, base, link, meta, style.",
+          },
+          {
+            name: "Sections",
+            description:
+              "body, article, section, nav, aside, hgroup, header, footer, address.",
+          },
+          {
+            name: "Grouping Content",
+            description:
+              "p, hr, pre, blockquote, ol, ul, menu, li, dl, dt, dd, figure, figcaption, main, div.",
+          },
+          {
+            name: "Text Level Semantics",
+            description:
+              "a, em, strong, small, s, cite, q, dfn, abbr, ruby, rt, rp, data, time, code, var, samp, kbd, sub, sup, i, b, u, mark, span, br.",
+          },
+          {
+            name: "Edits",
+            description: "ins, del.",
+          },
+          {
+            name: "Embedded Content",
+            description:
+              "picture, source, img, iframe, embed, object, param, video, audio, track, map, area.",
+          },
+          {
+            name: "Tabular Data",
+            description:
+              "table, caption, colgroup, col, tbody, thead, tfoot, tr, td, th.",
+          },
+          {
+            name: "Forms",
+            description:
+              "form, label, input, button, select, datalist, optgroup, option, textarea, output, progress, meter, fieldset, legend.",
+          },
+          {
+            name: "Interactive Elements",
+            description: "details, summary, dialog.",
+          },
+          {
+            name: "Scripting",
+            description: "script, noscript, template, slot, canvas.",
+          },
+        ],
+      },
+    ],
+    examples: [],
+    reference: [],
+  },
+  {
+    technology: "CSS",
+    docsLink: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    intro:
+      '<a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a>(Cascading Style Sheets) is used to set the style in web pages that contain HTML elements. It sets the background color, font-size, font-family, color, … etc property of elements on a web page.',
+    content: [
+      {
+        name: "Types",
+        intro: "There are three types of CSS",
+        data: [
+          {
+            name: "Inline",
+            description:
+              "Inline CSS contains the CSS property in the body section attached with element is known as inline CSS. This kind of style is specified within an HTML tag using the style attribute.",
+          },
+          {
+            name: "Internal or Embedded",
+            description:
+              "This can be used when a single HTML document must be styled uniquely. The CSS rule set should be within the HTML file in the head section i.e the CSS is embedded within the HTML file.",
+          },
+          {
+            name: "External",
+            description:
+              "External CSS contains separate CSS file which contains only style property with the help of tag attributes (For example class, id, heading, … etc). CSS property written in a separate file with .css extension and should be linked to the HTML document using link tag. This means that for each element, style can be set only once and that will be applied across web pages.",
+          },
+        ],
+      },
+    ],
+    examples: [],
+    reference: [],
+  },
+  {
+    technology: "Webpack",
+    docsLink: "https://webpack.js.org",
+    intro:
+      '<a href="https://webpack.js.org">Webpack</a> is a module bundler. Webpack can take care of bundling alongside a separate task runner. However, the line between bundler and task runner has become blurred thanks to community-developed webpack plugins.',
+    content: [
+      {
+        name: "Concepts",
+        intro: "Four Key Concepts of Webpack",
+        data: [
+          {
+            name: "Entry",
+            description:
+              "Webpack creates a graph of all of your application's dependencies. The starting point of this graph is known as an entry point. The entry point tells Webpack where to start and follows the graph of dependencies to know what to bundle. You can think of your application's entry point as the contextual root or the first file to kick off your application.",
+          },
+          {
+            name: "Output",
+            description:
+              "Once you've bundled all of your assets together, we still need to tell Webpack where to bundle our application. The webpack output property describes to Webpack how to treat bundled code.",
+          },
+          {
+            name: "Loaders",
+            description:
+              "The goal is to have all of the assets in your project to be Webpack's concern and not the browser's. (This doesn't mean that they all have to be bundled together). Webpack treats every file (.css, .html, .scss, .jpg, etc.) as a module. However, Webpack only understands JavaScript.",
+          },
+          {
+            name: "Plugins",
+            description:
+              "Since Loaders only execute transforms on a per-file basis, plugins are most commonly used (but not limited to) performing actions and custom functionality on 'compilations' or 'chunks' of your bundled modules (and so much more). The Webpack Plugin system is extremely powerful and customizable.",
+          },
+        ],
+      },
+    ],
+    examples: [],
     reference: [],
   },
 ];
