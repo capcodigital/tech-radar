@@ -1003,7 +1003,6 @@ export const technologyList = [
   "Consul",
   "Docker",
   "Datadog",
-  "Datadog",
   "Postgres",
   "Neo4J",
   "MongoDB",
