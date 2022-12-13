@@ -31,4 +31,4 @@ Scenario: TypeScript content appears as expected
     And the user clicks accordion "Mocha"
     And the user can see accordion "Mocha" description "Mocha is a JavaScript test framework running on Node.js and in the browser. It is often used with external assertion libraries such as chai."
     And the user clicks accordion "Jasmine"
-    And the user can see accordion "Jasmine" description "Jasmine is a popular Behaviour Driven Development testing framework for JavaScript/TypeScript. It’s great for websites and Node.js applications"
+    And the user can see accordion "Jasmine" description "Jasmine is a popular Behaviour Driven Development testing framework for JavaScript/TypeScript. It’s great for websites and Node.js applications."
