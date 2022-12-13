@@ -487,7 +487,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Kotlin",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/mobile/kotlin_square.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "Java Mobile",

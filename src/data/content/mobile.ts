@@ -274,7 +274,8 @@ const techContent = [
   {
     technology: "Kotlin",
     docsLink: "https://kotlinlang.org/docs/home.html",
-    intro: "Content coming soon.",
+    intro:
+      "Kotlin is a general purpose, free, open source, statically typed “pragmatic” programming language initially designed for the JVM (Java Virtual Machine) and Android, and combines object-oriented and functional programming features. It is focused on interoperability, safety, clarity, and tooling support.",
     content: [],
     examples: [],
     reference: [],
