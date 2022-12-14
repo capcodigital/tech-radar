@@ -13,7 +13,7 @@ Scenario: TypeScript content appears as expected
     And the user should see "The first purpose of testing is to prevent bugs from releasing to production. Testing ensures the features are functioning correctly for complex components and modular applications and is required for the effective performance of a software application or product making it more robust and less prone to error."
     And the user should see "A React, TypeScript web application that provides a more readable format of our Engineering Competency Framework to help explain performance expectations. Unit tests are written in Jest and React Testing Library, E2E tests are written in Cypress and are automated via GitHub Actions."
     And the user clicks accordion "Everyday Types"
-    And the user can see accordion "Everyday Types" description "Boolean, String, Number, Array, Object, any, function, interface, null, undefined, void"
+    And the user can see accordion "Everyday Types" description "Boolean, String, Number, Array, Object, any, function, interface, null, undefined, void."
     And the user clicks accordion "Other Interesting Types"
     And the user can see accordion "Other Interesting Types" description 
     """
@@ -31,4 +31,4 @@ Scenario: TypeScript content appears as expected
     And the user clicks accordion "Mocha"
     And the user can see accordion "Mocha" description "Mocha is a JavaScript test framework running on Node.js and in the browser. It is often used with external assertion libraries such as chai."
     And the user clicks accordion "Jasmine"
-    And the user can see accordion "Jasmine" description "Jasmine is a popular Behaviour Driven Development testing framework for JavaScript/TypeScript. It’s great for websites and Node.js applications"
+    And the user can see accordion "Jasmine" description "Jasmine is a popular Behaviour Driven Development testing framework for JavaScript/TypeScript. It’s great for websites and Node.js applications."

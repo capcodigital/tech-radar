@@ -229,6 +229,11 @@ export const data: Array<{ name: string; data: techType }> = [
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/cypress_square.png",
           enabled: true,
         },
+        {
+          name: "Postman",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/postman_square.png",
+          enabled: true,
+        },
       ],
       scaling: [
         {
@@ -665,6 +670,10 @@ export const icons: Array<{ name: string; link: string }> = [
     link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/pact_square.png",
   },
   {
+    name: "Postman",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/postman_square.png",
+  },
+  {
     name: "Kubernetes",
     link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/k8s_square.png",
   },
@@ -882,6 +891,7 @@ export const technologies = [
       "Cypress",
       "Gatling",
       "PACT",
+      "Postman",
     ],
   },
   {
@@ -1002,6 +1012,7 @@ export const technologyList = [
   "Cypress",
   "Gatling",
   "PACT",
+  "Postman",
   "Kubernetes",
   "Serverless",
   "OpenShift",
