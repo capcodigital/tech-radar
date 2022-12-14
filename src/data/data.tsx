@@ -57,11 +57,11 @@ export const data: Array<{ name: string; data: techType }> = [
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/teamcity_square.png",
           enabled: false,
         },
-        {
-          name: "Istio",
-          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/istio_square.png",
-          enabled: false,
-        },
+        // {
+        //   name: "Istio",
+        //   link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/istio_square.png",
+        //   enabled: false,
+        // },
         {
           name: "Ansible",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/ansible_square.png",
@@ -77,11 +77,11 @@ export const data: Array<{ name: string; data: techType }> = [
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/docker_square.png",
           enabled: true,
         },
-        {
-          name: "Datadog",
-          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/datadog_square.png",
-          enabled: true,
-        },
+        // {
+        //   name: "Datadog",
+        //   link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/datadog_square.png",
+        //   enabled: true,
+        // },
       ],
       scaling: [
         {
