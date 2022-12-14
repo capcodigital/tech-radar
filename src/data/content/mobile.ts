@@ -272,15 +272,6 @@ const techContent = [
     reference: ["https://swift.org/documentation/", "https://appium.io/"],
   },
   {
-    technology: "Kotlin",
-    docsLink: "https://kotlinlang.org/docs/home.html",
-    intro:
-      "Kotlin is a general purpose, free, open source, statically typed “pragmatic” programming language initially designed for the JVM (Java Virtual Machine) and Android, and combines object-oriented and functional programming features. It is focused on interoperability, safety, clarity, and tooling support.",
-    content: [],
-    examples: [],
-    reference: [],
-  },
-  {
     technology: "Java Mobile",
     docsLink: "https://docs.oracle.com/en/java/",
     intro:

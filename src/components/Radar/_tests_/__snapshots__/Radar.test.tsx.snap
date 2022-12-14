@@ -565,14 +565,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="-82.82209443280689"
             cy="-309.0962644125018"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/github_square.png"
-            width="19.79898987322333"
-            x="-92.72158936941855"
-            y="-318.9957593491135"
+            width="16.970562748477143"
+            x="-91.30737580704546"
+            y="-317.5815457867404"
           />
         </g>
       </g>
@@ -589,14 +589,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="-3.43000140663113e-13"
             cy="-320"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/circleci_square.png"
-            width="19.79898987322333"
-            x="-9.899494936612008"
-            y="-329.8994949366117"
+            width="16.970562748477143"
+            x="-8.485281374238914"
+            y="-328.4852813742386"
           />
         </g>
       </g>
@@ -613,14 +613,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="82.8220944328065"
             cy="-309.0962644125019"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/terraform_square.png"
-            width="19.79898987322333"
-            x="72.92259949619483"
-            y="-318.9957593491136"
+            width="16.970562748477143"
+            x="74.33681305856793"
+            y="-317.5815457867405"
           />
         </g>
       </g>
@@ -637,14 +637,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="-67.29295172665559"
             cy="-251.1407148351577"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/vault_square.png"
-            width="19.79898987322333"
-            x="-77.19244666326725"
-            y="-261.04020977176936"
+            width="16.970562748477143"
+            x="-75.77823310089416"
+            y="-259.62599620939625"
           />
         </g>
       </g>
@@ -661,14 +661,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="-2.786876142887793e-13"
             cy="-260"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/sonarqube_square.png"
-            width="19.79898987322333"
-            x="-9.899494936611944"
-            y="-269.8994949366117"
+            width="16.970562748477143"
+            x="-8.48528137423885"
+            y="-268.4852813742386"
           />
         </g>
       </g>
@@ -685,14 +685,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="67.29295172665528"
             cy="-251.14071483515778"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/elastic_stack_square.png"
-            width="19.79898987322333"
-            x="57.39345679004361"
-            y="-261.04020977176947"
+            width="16.970562748477143"
+            x="58.80767035241671"
+            y="-259.62599620939636"
           />
         </g>
       </g>
@@ -709,14 +709,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="-52.626539170846044"
             cy="-196.40491801211053"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/bitbucket_square.png"
-            width="19.79898987322333"
-            x="-62.52603410745771"
-            y="-206.3044129487222"
+            width="16.970562748477143"
+            x="-61.11182054508461"
+            y="-204.8901993863491"
           />
         </g>
       </g>
@@ -733,14 +733,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="-2.1794800604635308e-13"
             cy="-203.33333333333334"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/jenkins_square.png"
-            width="19.79898987322333"
-            x="-9.899494936611884"
-            y="-213.232828269945"
+            width="16.970562748477143"
+            x="-8.48528137423879"
+            y="-211.81861470757192"
           />
         </g>
       </g>
@@ -757,14 +757,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="52.626539170845795"
             cy="-196.40491801211058"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/teamcity_square.png"
-            width="19.79898987322333"
-            x="42.72704423423413"
-            y="-206.30441294872224"
+            width="16.970562748477143"
+            x="44.14125779660722"
+            y="-204.89019938634917"
           />
         </g>
       </g>
@@ -781,14 +781,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="-37.097396464694754"
             cy="-138.44936843476643"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/istio_square.png"
-            width="19.79898987322333"
-            x="-46.99689140130642"
-            y="-148.3488633713781"
+            width="16.970562748477143"
+            x="-45.58267783893332"
+            y="-146.934649809005"
           />
         </g>
       </g>
@@ -805,14 +805,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="-1.5363547967201937e-13"
             cy="-143.33333333333334"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/ansible_square.png"
-            width="19.79898987322333"
-            x="-9.899494936611818"
-            y="-153.232828269945"
+            width="16.970562748477143"
+            x="-8.485281374238724"
+            y="-151.81861470757192"
           />
         </g>
       </g>
@@ -829,14 +829,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="37.097396464694576"
             cy="-138.44936843476648"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/packer_square.png"
-            width="19.79898987322333"
-            x="27.19790152808291"
-            y="-148.34886337137814"
+            width="16.970562748477143"
+            x="28.612115090456005"
+            y="-146.93464980900507"
           />
         </g>
       </g>
@@ -853,14 +853,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="-22.4309839088852"
             cy="-83.71357161171925"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/twistlock_square.png"
-            width="19.79898987322333"
-            x="-32.33047884549686"
-            y="-93.6130665483309"
+            width="16.970562748477143"
+            x="-30.91626528312377"
+            y="-92.19885298595781"
           />
         </g>
       </g>
@@ -877,14 +877,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="-9.28958714295931e-14"
             cy="-86.66666666666667"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/kiali_square.png"
-            width="19.79898987322333"
-            x="-9.899494936611758"
-            y="-96.56616160327833"
+            width="16.970562748477143"
+            x="-8.485281374238664"
+            y="-95.15194804090524"
           />
         </g>
       </g>
@@ -901,14 +901,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="22.430983908885093"
             cy="-83.71357161171927"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/concourse_square.png"
-            width="19.79898987322333"
-            x="12.531488972273428"
-            y="-93.61306654833093"
+            width="16.970562748477143"
+            x="13.945702534646522"
+            y="-92.19885298595784"
           />
         </g>
       </g>
@@ -925,14 +925,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="-4.898587196589413e-15"
             cy="-26.66666666666667"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/consul_square.png"
-            width="19.79898987322333"
-            x="-9.89949493661167"
-            y="-36.56616160327834"
+            width="16.970562748477143"
+            x="-8.485281374238577"
+            y="-35.15194804090524"
           />
         </g>
       </g>
@@ -949,14 +949,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="160.00000000000003"
             cy="-277.12812921102034"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/spark.png"
-            width="19.79898987322333"
-            x="150.10050506338837"
-            y="-287.027624147632"
+            width="16.970562748477143"
+            x="151.51471862576145"
+            y="-285.6134105852589"
           />
         </g>
       </g>
@@ -973,14 +973,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="226.27416997969516"
             cy="-226.27416997969527"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/hadoop.png"
-            width="19.79898987322333"
-            x="216.3746750430835"
-            y="-236.17366491630693"
+            width="16.970562748477143"
+            x="217.78888860545658"
+            y="-234.75945135393385"
           />
         </g>
       </g>
@@ -997,14 +997,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="277.12812921102045"
             cy="-159.9999999999999"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/hive_highres.png"
-            width="19.79898987322333"
-            x="267.22863427440876"
-            y="-169.89949493661155"
+            width="16.970562748477143"
+            x="268.64284783678187"
+            y="-168.48528137423847"
           />
         </g>
       </g>
@@ -1021,14 +1021,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="130.00000000000003"
             cy="-225.16660498395404"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/postgres_square.png"
-            width="19.79898987322333"
-            x="120.10050506338837"
-            y="-235.0660999205657"
+            width="16.970562748477143"
+            x="121.51471862576146"
+            y="-233.65188635819263"
           />
         </g>
       </g>
@@ -1045,14 +1045,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="183.8477631085023"
             cy="-183.8477631085024"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/neo4j_square.png"
-            width="19.79898987322333"
-            x="173.94826817189065"
-            y="-193.74725804511405"
+            width="16.970562748477143"
+            x="175.36248173426372"
+            y="-192.33304448274097"
           />
         </g>
       </g>
@@ -1069,14 +1069,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="225.1666049839541"
             cy="-129.99999999999991"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/mongodb_square_2.png"
-            width="19.79898987322333"
-            x="215.26711004734244"
-            y="-139.89949493661157"
+            width="16.970562748477143"
+            x="216.68132360971552"
+            y="-138.4852813742385"
           />
         </g>
       </g>
@@ -1093,14 +1093,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="101.6666666666667"
             cy="-176.09183210283587"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/mysql_square.png"
-            width="19.79898987322333"
-            x="91.76717173005504"
-            y="-185.99132703944753"
+            width="16.970562748477143"
+            x="93.18138529242813"
+            y="-184.57711347707445"
           />
         </g>
       </g>
@@ -1117,14 +1117,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="143.77837884126464"
             cy="-143.7783788412647"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/oracle_square.png"
-            width="19.79898987322333"
-            x="133.87888390465298"
-            y="-153.67787377787636"
+            width="16.970562748477143"
+            x="135.29309746702606"
+            y="-152.26366021550328"
           />
         </g>
       </g>
@@ -1141,14 +1141,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="176.0918321028359"
             cy="-101.6666666666666"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/sqlserver_square.png"
-            width="19.79898987322333"
-            x="166.19233716622423"
-            y="-111.56616160327826"
+            width="16.970562748477143"
+            x="167.6065507285973"
+            y="-110.15194804090517"
           />
         </g>
       </g>
@@ -1165,14 +1165,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="43.33333333333334"
             cy="-75.05553499465135"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/bigquery_square.png"
-            width="19.79898987322333"
-            x="33.433838396721676"
-            y="-84.95502993126301"
+            width="16.970562748477143"
+            x="34.848051959094775"
+            y="-83.54081636888992"
           />
         </g>
       </g>
@@ -1189,14 +1189,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="61.28258770283411"
             cy="-61.282587702834135"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/snowflake_square.png"
-            width="19.79898987322333"
-            x="51.38309276622244"
-            y="-71.1820826394458"
+            width="16.970562748477143"
+            x="52.79730632859554"
+            y="-69.7678690770727"
           />
         </g>
       </g>
@@ -1213,14 +1213,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="75.05553499465137"
             cy="-43.33333333333331"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/liquibase_square.png"
-            width="19.79898987322333"
-            x="65.15604005803971"
-            y="-53.232828269944974"
+            width="16.970562748477143"
+            x="66.5702536204128"
+            y="-51.81861470757188"
           />
         </g>
       </g>
@@ -1237,14 +1237,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="309.0962644125018"
             cy="-82.8220944328069"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/selenium_square.png"
-            width="19.79898987322333"
-            x="299.1967694758901"
-            y="-92.72158936941857"
+            width="16.970562748477143"
+            x="300.6109830382632"
+            y="-91.30737580704547"
           />
         </g>
       </g>
@@ -1261,14 +1261,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="320"
             cy="-3.6259448944947067e-13"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/cucumber_square.png"
-            width="19.79898987322333"
-            x="310.1005050633883"
-            y="-9.899494936612028"
+            width="16.970562748477143"
+            x="311.5147186257614"
+            y="-8.485281374238934"
           />
         </g>
       </g>
@@ -1285,14 +1285,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="309.0962644125019"
             cy="82.82209443280648"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/appium_square.png"
-            width="19.79898987322333"
-            x="299.1967694758902"
-            y="72.92259949619482"
+            width="16.970562748477143"
+            x="300.6109830382633"
+            y="74.33681305856791"
           />
         </g>
       </g>
@@ -1309,14 +1309,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="251.1407148351577"
             cy="-67.2929517266556"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/rest-assured_square.png"
-            width="19.79898987322333"
-            x="241.24121989854603"
-            y="-77.19244666326726"
+            width="16.970562748477143"
+            x="242.6554334609191"
+            y="-75.77823310089417"
           />
         </g>
       </g>
@@ -1333,14 +1333,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="260"
             cy="-2.9460802267769494e-13"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/browserstack_square.png"
-            width="19.79898987322333"
-            x="250.10050506338834"
-            y="-9.89949493661196"
+            width="16.970562748477143"
+            x="251.51471862576142"
+            y="-8.485281374238866"
           />
         </g>
       </g>
@@ -1357,14 +1357,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="251.14071483515778"
             cy="67.29295172665526"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/saucelabs_square.png"
-            width="19.79898987322333"
-            x="241.24121989854612"
-            y="57.393456790043594"
+            width="16.970562748477143"
+            x="242.6554334609192"
+            y="58.80767035241669"
           />
         </g>
       </g>
@@ -1381,14 +1381,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="196.40491801211053"
             cy="-52.62653917084606"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/wiremock_square.png"
-            width="19.79898987322333"
-            x="186.50542307549887"
-            y="-62.526034107457725"
+            width="16.970562748477143"
+            x="187.91963663787195"
+            y="-61.111820545084626"
           />
         </g>
       </g>
@@ -1405,14 +1405,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="203.33333333333334"
             cy="-2.303985818376845e-13"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/applitools_square.png"
-            width="19.79898987322333"
-            x="193.43383839672168"
-            y="-9.899494936611896"
+            width="16.970562748477143"
+            x="194.84805195909476"
+            y="-8.485281374238802"
           />
         </g>
       </g>
@@ -1429,14 +1429,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="196.40491801211058"
             cy="52.62653917084578"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/jmeter_square.png"
-            width="19.79898987322333"
-            x="186.50542307549892"
-            y="42.727044234234114"
+            width="16.970562748477143"
+            x="187.919636637872"
+            y="44.141257796607206"
           />
         </g>
       </g>
@@ -1453,14 +1453,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="140.57922352446303"
             cy="-27.962946155645117"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/axe_square.png"
-            width="19.79898987322333"
-            x="130.67972858785137"
-            y="-37.86244109225678"
+            width="16.970562748477143"
+            x="132.09394215022445"
+            y="-36.44822752988369"
           />
         </g>
       </g>
@@ -1477,14 +1477,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="140.57922352446303"
             cy="27.96294615564505"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/cypress_square.png"
-            width="19.79898987322333"
-            x="130.67972858785137"
-            y="18.063451219033382"
+            width="16.970562748477143"
+            x="132.09394215022445"
+            y="19.477664781406478"
           />
         </g>
       </g>
@@ -1501,14 +1501,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="85.00139096827996"
             cy="-16.90782790806449"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/gatling_square.png"
-            width="19.79898987322333"
-            x="75.1018960316683"
-            y="-26.807322844676158"
+            width="16.970562748477143"
+            x="76.5161095940414"
+            y="-25.39310928230306"
           />
         </g>
       </g>
@@ -1525,14 +1525,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="85.00139096827998"
             cy="16.907827908064448"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/pact_square.png"
-            width="19.79898987322333"
-            x="75.10189603166832"
-            y="7.0083329714527824"
+            width="16.970562748477143"
+            x="76.51610959404141"
+            y="8.422546533825876"
           />
         </g>
       </g>
@@ -1549,14 +1549,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="277.12812921102034"
             cy="160"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/gcp_square.png"
-            width="19.79898987322333"
-            x="267.22863427440865"
-            y="150.10050506338834"
+            width="16.970562748477143"
+            x="268.64284783678175"
+            y="151.51471862576142"
           />
         </g>
       </g>
@@ -1573,14 +1573,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="226.27416997969527"
             cy="226.27416997969516"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/k8s_square.png"
-            width="19.79898987322333"
-            x="216.3746750430836"
-            y="216.3746750430835"
+            width="16.970562748477143"
+            x="217.7888886054567"
+            y="217.78888860545658"
           />
         </g>
       </g>
@@ -1597,14 +1597,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="159.99999999999991"
             cy="277.12812921102045"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/serverless_square.png"
-            width="19.79898987322333"
-            x="150.10050506338825"
-            y="267.22863427440876"
+            width="16.970562748477143"
+            x="151.51471862576133"
+            y="268.64284783678187"
           />
         </g>
       </g>
@@ -1621,14 +1621,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="225.16660498395404"
             cy="130"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/openshift_square.png"
-            width="19.79898987322333"
-            x="215.26711004734238"
-            y="120.10050506338834"
+            width="16.970562748477143"
+            x="216.68132360971546"
+            y="121.51471862576143"
           />
         </g>
       </g>
@@ -1645,14 +1645,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="183.8477631085024"
             cy="183.8477631085023"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/hadoop.png"
-            width="19.79898987322333"
-            x="173.94826817189073"
-            y="173.94826817189065"
+            width="16.970562748477143"
+            x="175.3624817342638"
+            y="175.36248173426372"
           />
         </g>
       </g>
@@ -1669,14 +1669,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="129.99999999999991"
             cy="225.1666049839541"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/grafana_square.png"
-            width="19.79898987322333"
-            x="120.10050506338825"
-            y="215.26711004734244"
+            width="16.970562748477143"
+            x="121.51471862576135"
+            y="216.68132360971552"
           />
         </g>
       </g>
@@ -1693,14 +1693,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="176.09183210283587"
             cy="101.66666666666667"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/aws_square_1.png"
-            width="19.79898987322333"
-            x="166.1923371662242"
-            y="91.76717173005501"
+            width="16.970562748477143"
+            x="167.60655072859728"
+            y="93.1813852924281"
           />
         </g>
       </g>
@@ -1717,14 +1717,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="143.7783788412647"
             cy="143.77837884126464"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/azure_square.png"
-            width="19.79898987322333"
-            x="133.87888390465304"
-            y="133.87888390465298"
+            width="16.970562748477143"
+            x="135.29309746702612"
+            y="135.29309746702606"
           />
         </g>
       </g>
@@ -1741,14 +1741,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="101.66666666666661"
             cy="176.0918321028359"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://avatars.githubusercontent.com/u/5497370?s=200&v=4"
-            width="19.79898987322333"
-            x="91.76717173005495"
-            y="166.19233716622423"
+            width="16.970562748477143"
+            x="93.18138529242805"
+            y="167.6065507285973"
           />
         </g>
       </g>
@@ -1765,14 +1765,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="72.06069973288724"
             cy="48.14942019503222"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/digitalocean_square.png"
-            width="19.79898987322333"
-            x="62.16120479627558"
-            y="38.249925258420554"
+            width="16.970562748477143"
+            x="63.575418358648676"
+            y="39.66413882079365"
           />
         </g>
       </g>
@@ -1789,14 +1789,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="48.149420195032135"
             cy="72.0606997328873"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/pks_square.png"
-            width="19.79898987322333"
-            x="38.24992525842047"
-            y="62.161204796275634"
+            width="16.970562748477143"
+            x="39.66413882079357"
+            y="63.57541835864873"
           />
         </g>
       </g>
@@ -1813,14 +1813,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="82.82209443280692"
             cy="309.0962644125018"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/integration/rest_square.png"
-            width="19.79898987322333"
-            x="72.92259949619526"
-            y="299.1967694758901"
+            width="16.970562748477143"
+            x="74.33681305856835"
+            y="300.6109830382632"
           />
         </g>
       </g>
@@ -1837,14 +1837,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="3.821888382358283e-13"
             cy="320"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/integration/camelcase_square.png"
-            width="19.79898987322333"
-            x="-9.899494936611283"
-            y="310.1005050633883"
+            width="16.970562748477143"
+            x="-8.48528137423819"
+            y="311.5147186257614"
           />
         </g>
       </g>
@@ -1861,14 +1861,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="-82.82209443280647"
             cy="309.0962644125019"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/integration/grpc_square.png"
-            width="19.79898987322333"
-            x="-92.72158936941813"
-            y="299.1967694758902"
+            width="16.970562748477143"
+            x="-91.30737580704503"
+            y="300.6109830382633"
           />
         </g>
       </g>
@@ -1885,14 +1885,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="7.960204194457796e-14"
             cy="260"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/integration/kafka_square.png"
-            width="19.79898987322333"
-            x="-9.899494936611585"
-            y="250.10050506338834"
+            width="16.970562748477143"
+            x="-8.485281374238491"
+            y="251.51471862576142"
           />
         </g>
       </g>
@@ -1909,14 +1909,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="39.668365476612856"
             cy="199.42634034865685"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/integration/activemq_square.png"
-            width="19.79898987322333"
-            x="29.76887054000119"
-            y="189.5268454120452"
+            width="16.970562748477143"
+            x="31.183084102374284"
+            y="190.94105897441827"
           />
         </g>
       </g>
@@ -1933,14 +1933,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="-39.66836547661256"
             cy="199.4263403486569"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/integration/ibm-mq_square.png"
-            width="19.79898987322333"
-            x="-49.567860413224224"
-            y="189.52684541204525"
+            width="16.970562748477143"
+            x="-48.15364685085113"
+            y="190.94105897441833"
           />
         </g>
       </g>
@@ -1957,14 +1957,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="2.653401398152599e-14"
             cy="86.66666666666667"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/integration/graphql_square.png"
-            width="19.79898987322333"
-            x="-9.899494936611639"
-            y="76.76717173005501"
+            width="16.970562748477143"
+            x="-8.485281374238545"
+            y="78.1813852924281"
           />
         </g>
       </g>
@@ -1981,14 +1981,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="-160.00000000000026"
             cy="277.1281292110202"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/backend/java_square.png"
-            width="19.79898987322333"
-            x="-169.89949493661192"
-            y="267.22863427440853"
+            width="16.970562748477143"
+            x="-168.48528137423884"
+            y="268.64284783678164"
           />
         </g>
       </g>
@@ -2005,14 +2005,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="-226.27416997969533"
             cy="226.27416997969507"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/backend/node_square.png"
-            width="19.79898987322333"
-            x="-236.173664916307"
-            y="216.3746750430834"
+            width="16.970562748477143"
+            x="-234.7594513539339"
+            y="217.7888886054565"
           />
         </g>
       </g>
@@ -2029,14 +2029,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="-277.12812921102045"
             cy="159.99999999999994"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/backend/go_square.png"
-            width="19.79898987322333"
-            x="-287.02762414763214"
-            y="150.10050506338828"
+            width="16.970562748477143"
+            x="-285.61341058525903"
+            y="151.51471862576136"
           />
         </g>
       </g>
@@ -2053,14 +2053,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="-144.44826058509645"
             cy="216.18209919866186"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/backend/scala_square.png"
-            width="19.79898987322333"
-            x="-154.3477555217081"
-            y="206.2826042620502"
+            width="16.970562748477143"
+            x="-152.93354195933503"
+            y="207.69681782442328"
           />
         </g>
       </g>
@@ -2077,14 +2077,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="-216.18209919866175"
             cy="144.4482605850966"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/backend/gradle_square.png"
-            width="19.79898987322333"
-            x="-226.0815941352734"
-            y="134.54876564848493"
+            width="16.970562748477143"
+            x="-224.66738057290033"
+            y="135.962979210858"
           />
         </g>
       </g>
@@ -2101,14 +2101,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="-112.96594738065235"
             cy="169.06548783485093"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/backend/python_square.png"
-            width="19.79898987322333"
-            x="-122.86544231726401"
-            y="159.16599289823927"
+            width="16.970562748477143"
+            x="-121.45122875489092"
+            y="160.58020646061235"
           />
         </g>
       </g>
@@ -2125,14 +2125,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="-169.06548783485084"
             cy="112.96594738065247"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/backend/groovy_square.png"
-            width="19.79898987322333"
-            x="-178.9649827714625"
-            y="103.0664524440408"
+            width="16.970562748477143"
+            x="-177.55076920908942"
+            y="104.4806660064139"
           />
         </g>
       </g>
@@ -2149,14 +2149,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="-61.28258770283416"
             cy="61.282587702834086"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/backend/kotlin_square.png"
-            width="19.79898987322333"
-            x="-71.18208263944582"
-            y="51.38309276622242"
+            width="16.970562748477143"
+            x="-69.76786907707273"
+            y="52.79730632859551"
           />
         </g>
       </g>
@@ -2173,14 +2173,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="-309.09626441250185"
             cy="82.82209443280665"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/frontend/react_square.png"
-            width="19.79898987322333"
-            x="-318.99575934911354"
-            y="72.92259949619499"
+            width="16.970562748477143"
+            x="-317.58154578674043"
+            y="74.33681305856808"
           />
         </g>
       </g>
@@ -2197,14 +2197,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="-320"
             cy="1.175660927181459e-13"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/frontend/angular_square.png"
-            width="19.79898987322333"
-            x="-329.8994949366117"
-            y="-9.899494936611548"
+            width="16.970562748477143"
+            x="-328.4852813742386"
+            y="-8.485281374238454"
           />
         </g>
       </g>
@@ -2221,14 +2221,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="-309.0962644125019"
             cy="-82.82209443280644"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/frontend/typescript_square.png"
-            width="19.79898987322333"
-            x="-318.9957593491136"
-            y="-92.7215893694181"
+            width="16.970562748477143"
+            x="-317.5815457867405"
+            y="-91.307375807045"
           />
         </g>
       </g>
@@ -2245,14 +2245,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="-196.40491801211056"
             cy="52.626539170845895"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/frontend/html_square.png"
-            width="19.79898987322333"
-            x="-206.30441294872222"
-            y="42.72704423423423"
+            width="16.970562748477143"
+            x="-204.89019938634914"
+            y="44.14125779660732"
           />
         </g>
       </g>
@@ -2269,14 +2269,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="-203.33333333333334"
             cy="7.470345474798854e-14"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/frontend/css_square.png"
-            width="19.79898987322333"
-            x="-213.232828269945"
-            y="-9.89949493661159"
+            width="16.970562748477143"
+            x="-211.81861470757192"
+            y="-8.485281374238497"
           />
         </g>
       </g>
@@ -2293,14 +2293,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="-196.40491801211058"
             cy="-52.62653917084576"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/frontend/javascript_square.png"
-            width="19.79898987322333"
-            x="-206.30441294872224"
-            y="-62.52603410745743"
+            width="16.970562748477143"
+            x="-204.89019938634917"
+            y="-61.11182054508433"
           />
         </g>
       </g>
@@ -2317,14 +2317,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="-143.33333333333334"
             cy="5.265981236333619e-14"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/frontend/webpack_square.png"
-            width="19.79898987322333"
-            x="-153.232828269945"
-            y="-9.899494936611612"
+            width="16.970562748477143"
+            x="-151.81861470757192"
+            y="-8.485281374238518"
           />
         </g>
       </g>
@@ -2341,14 +2341,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="-85.00139096827995"
             cy="16.907827908064576"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/frontend/flutter_sqaure.png"
-            width="19.79898987322333"
-            x="-94.90088590489161"
-            y="7.00833297145291"
+            width="16.970562748477143"
+            x="-93.48667234251852"
+            y="8.422546533826004"
           />
         </g>
       </g>
@@ -2365,14 +2365,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="-85.00139096827999"
             cy="-16.907827908064363"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/frontend/vue_square.png"
-            width="19.79898987322333"
-            x="-94.90088590489165"
-            y="-26.80732284467603"
+            width="16.970562748477143"
+            x="-93.48667234251856"
+            y="-25.393109282302934"
           />
         </g>
       </g>
@@ -2389,14 +2389,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="-266.0702759368146"
             cy="-177.78247456627255"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/mobile/react_square.png"
-            width="19.79898987322333"
-            x="-275.9697708734263"
-            y="-187.68196950288421"
+            width="16.970562748477143"
+            x="-274.5555573110532"
+            y="-186.26775594051114"
           />
         </g>
       </g>
@@ -2413,14 +2413,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="-177.78247456627275"
             cy="-266.0702759368144"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/mobile/gradle_square.png"
-            width="19.79898987322333"
-            x="-187.6819695028844"
-            y="-275.9697708734261"
+            width="16.970562748477143"
+            x="-186.26775594051134"
+            y="-274.555557311053"
           />
         </g>
       </g>
@@ -2437,38 +2437,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="-176.09183210283578"
             cy="-101.66666666666681"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/mobile/swift_square.png"
-            width="19.79898987322333"
-            x="-185.99132703944744"
-            y="-111.56616160327847"
-          />
-        </g>
-      </g>
-      <g
-        class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="1"
-      >
-        <g
-          aria-label="Kotlin"
-          class="techIcon-Kotlin no-content"
-          title="Kotlin"
-        >
-          <circle
-            cx="-143.77837884126458"
-            cy="-143.77837884126475"
-            fill="white"
-            r="14"
-          />
-          <image
-            height="19.79898987322333"
-            href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/mobile/kotlin_square.png"
-            width="19.79898987322333"
-            x="-153.67787377787624"
-            y="-153.6778737778764"
+            width="16.970562748477143"
+            x="-184.57711347707436"
+            y="-110.15194804090538"
           />
         </g>
       </g>
@@ -2482,17 +2458,17 @@ exports[`Radar should render Radar component 1`] = `
           title="Java Mobile"
         >
           <circle
-            cx="-101.66666666666664"
-            cy="-176.09183210283587"
+            cx="-143.77837884126458"
+            cy="-143.77837884126475"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/mobile/java_square.png"
-            width="19.79898987322333"
-            x="-111.5661616032783"
-            y="-185.99132703944753"
+            width="16.970562748477143"
+            x="-152.26366021550317"
+            y="-152.26366021550334"
           />
         </g>
       </g>
@@ -2506,17 +2482,17 @@ exports[`Radar should render Radar component 1`] = `
           title="Ionic"
         >
           <circle
-            cx="-101.35197197007176"
-            cy="-101.35197197007187"
+            cx="-101.66666666666664"
+            cy="-176.09183210283587"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/mobile/Ionic_square.png"
-            width="19.79898987322333"
-            x="-111.25146690668342"
-            y="-111.25146690668353"
+            width="16.970562748477143"
+            x="-110.15194804090521"
+            y="-184.57711347707445"
           />
         </g>
       </g>
@@ -2533,14 +2509,14 @@ exports[`Radar should render Radar component 1`] = `
             cx="-61.282587702834086"
             cy="-61.28258770283416"
             fill="white"
-            r="14"
+            r="12"
           />
           <image
-            height="19.79898987322333"
+            height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/mobile/flutter_square.png"
-            width="19.79898987322333"
-            x="-71.18208263944575"
-            y="-71.18208263944582"
+            width="16.970562748477143"
+            x="-69.76786907707266"
+            y="-69.76786907707273"
           />
         </g>
       </g>
