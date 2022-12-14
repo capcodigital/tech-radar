@@ -1450,8 +1450,8 @@ exports[`Radar should render Radar component 1`] = `
           title="Axe"
         >
           <circle
-            cx="140.57922352446303"
-            cy="-27.962946155645117"
+            cx="138.44936843476643"
+            cy="-37.09739646469476"
             fill="white"
             r="12"
           />
@@ -1459,8 +1459,8 @@ exports[`Radar should render Radar component 1`] = `
             height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/axe_square.png"
             width="16.970562748477143"
-            x="132.09394215022445"
-            y="-36.44822752988369"
+            x="129.96408706052785"
+            y="-45.582677838933336"
           />
         </g>
       </g>
@@ -1474,8 +1474,8 @@ exports[`Radar should render Radar component 1`] = `
           title="Cypress"
         >
           <circle
-            cx="140.57922352446303"
-            cy="27.96294615564505"
+            cx="143.33333333333334"
+            cy="-1.6241211506590875e-13"
             fill="white"
             r="12"
           />
@@ -1483,8 +1483,32 @@ exports[`Radar should render Radar component 1`] = `
             height="16.970562748477143"
             href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/cypress_square.png"
             width="16.970562748477143"
-            x="132.09394215022445"
-            y="19.477664781406478"
+            x="134.84805195909476"
+            y="-8.485281374238733"
+          />
+        </g>
+      </g>
+      <g
+        class="StyledGroup-sc-dipbco-0 jccckg"
+        opacity="1"
+      >
+        <g
+          aria-label="Postman"
+          class="techIcon-Postman undefined"
+          title="Postman"
+        >
+          <circle
+            cx="138.44936843476648"
+            cy="37.09739646469457"
+            fill="white"
+            r="12"
+          />
+          <image
+            height="16.970562748477143"
+            href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/postman_square.png"
+            width="16.970562748477143"
+            x="129.9640870605279"
+            y="28.612115090455998"
           />
         </g>
       </g>
