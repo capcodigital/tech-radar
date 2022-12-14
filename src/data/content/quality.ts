@@ -1,6 +1,8 @@
 import cypressExample from "../../images/technologies/cypress-example.png";
 import cypressFlow from "../../images/technologies/cypress-flow.png";
 import SeleniumImg from "../../images/technologies/selenium-img.png";
+import postmanExample from "../../images/technologies/postman_snapshot.png";
+import postmanTesting from "../../images/technologies/postman_testing.png";
 
 const techContent = [
   {
@@ -486,6 +488,205 @@ const techContent = [
     content: [],
     examples: [],
     reference: [],
+  },
+  {
+    technology: "Postman",
+    docsLink: "https://learning.postman.com/docs/getting-started/introduction/",
+    intro:
+      "Postman is an Application Programming Interface (API) testing tool. API acts like an interface between a couple of applications and establishes a connection between them. Postman was designed in the year 2012 by software developer and entrepreneur Abhinav Asthana to make API development and testing straightforward. It is a tool for testing the software of an API. It can be used to design, document, verify, create, and change APIs. Postman has the feature of sending and observing the Hypertext Transfer Protocol (HTTP) requests and responses. It has a graphical user interface (GUI) and can be used in platforms like Linux, Windows, and Mac. It can build multiple HTTP requests − POST, PUT, GET, PATCH, and translate them to code.",
+    content: [
+      {
+        name: "Snapshot of Postman tool",
+        intro: `<img width='100%' src=${postmanExample} /> `,
+        data: [],
+      },
+      {
+        name: "Postman Features",
+        intro: "",
+        data: [
+          {
+            name: "",
+            description: "1. Making Requests.",
+          },
+          {
+            name: "",
+            description: "2. Testing APIs.",
+          },
+          {
+            name: "",
+            description: "3. Building and managing APIs.",
+          },
+          {
+            name: "",
+            description: "4. Publishing APIs. ",
+          },
+          {
+            name: "",
+            description: "5. Collaborating with your team.",
+          },
+          {
+            name: "",
+            description: "6. Developing with Postman.",
+          },
+          {
+            name: "",
+            description: "7. Postman flows.",
+          },
+        ],
+      },
+      {
+        name: "Need of Postman",
+        intro: "",
+        data: [
+          {
+            name: "Accessibility",
+            description:
+              "To use Postman tool, one would just need to log-in to their own accounts making it easy to access files anytime, anywhere as long as a Postman application is installed on the computer.",
+          },
+          {
+            name: "Use of Collections",
+            description:
+              "Postman lets users create collections for their Postman API calls. Each collection can create subfolders and multiple requests. This helps in organizing your test suites.",
+          },
+          {
+            name: "Collaboration",
+            description:
+              "Collections and environments can be imported or exported making it easy to share files. A direct link can also be used to share collections.",
+          },
+          {
+            name: "Creating Environments",
+            description:
+              "Having multiple environments aids in less repetition of tests as one can use the same collection but for a different environment. This is where parameterization will take place which we will discuss in further lessons.",
+          },
+          {
+            name: "Creation of Tests",
+            description:
+              "Test checkpoints such as verifying for successful HTTP response status can be added to each Postman API calls which help ensure test coverage.",
+          },
+          {
+            name: "Automation Testing",
+            description:
+              "Through the use of the Collection Runner or Newman, tests can be run in multiple iterations saving time for repetitive tests.",
+          },
+          {
+            name: "Debugging",
+            description:
+              "Postman console helps to check what data has been retrieved making it easy to debug tests.",
+          },
+          {
+            name: "Continuous Integration",
+            description:
+              "With its ability to support continuous integration, development practices are maintained.",
+          },
+        ],
+      },
+      {
+        name: "How to use Postman to execute APIs",
+        intro: `<img width='100%' src=${postmanTesting} /> `,
+        data: [],
+      },
+      {
+        name: "",
+        intro: "",
+        data: [
+          {
+            name: "1.	New",
+            description:
+              "This is where you will create a new request, collection, or environment.",
+          },
+          {
+            name: "2.	Import",
+            description:
+              "This is used to import a collection or environment. There are options such as import from file, folder, link or paste raw text.",
+          },
+          {
+            name: "3.	Runner",
+            description:
+              "Automation tests can be executed through the Collection Runner. This will be discussed further in the next lesson.",
+          },
+          {
+            name: "4.	Open New",
+            description:
+              "Open a new tab, Postman Window or Runner Window by clicking this button.",
+          },
+          {
+            name: "5.	My Workspace",
+            description:
+              "You can create a new workspace individually or as a team.",
+          },
+          {
+            name: "6.	Invite",
+            description: "Collaborate on a workspace by inviting team members.",
+          },
+          {
+            name: "7.	History",
+            description:
+              "Past requests that you have sent will be displayed in History. This makes it easy to track actions that you have done.",
+          },
+          {
+            name: "8.	Collections",
+            description:
+              "Organize your test suite by creating collections. Each collection may have subfolders and multiple requests. A request or folder can also be duplicated as well.",
+          },
+          {
+            name: "9.	Request tab",
+            description:
+              "This displays the title of the request you are working on. By default, “Untitled Request” would be displayed for requests without titles.",
+          },
+          {
+            name: "10.	HTTP Request",
+            description:
+              "Clicking this would display a dropdown list of different requests such as GET, POST, COPY, DELETE, etc. In Postman API testing, the most commonly used requests are GET and POST.",
+          },
+          {
+            name: "11.	Request URL",
+            description:
+              "Also known as an endpoint, this is where you will identify the link to where the API will communicate with.",
+          },
+          {
+            name: "12.	Save",
+            description:
+              "If there are changes to a request, clicking save is a must so that new changes will not be lost or overwritten.",
+          },
+          {
+            name: "13.	Params",
+            description:
+              "This is where you will write parameters needed for a request such as key values.",
+          },
+          {
+            name: "14.	Authorization",
+            description:
+              "In order to access APIs, proper authorization is needed. It may be in the form of a username and password, bearer token, etc.",
+          },
+          {
+            name: "15.	Headers",
+            description:
+              "You can set headers such as content type JSON depending on the needs of the organization.",
+          },
+          {
+            name: "16.	Body",
+            description:
+              "This is where one can customize details in a request commonly used in POST request.",
+          },
+          {
+            name: "17.	Pre-request Script",
+            description:
+              "These are scripts that will be executed before the request. Usually, pre-request scripts for the setting environment are used to ensure that tests will be run in the correct environment.",
+          },
+          {
+            name: "18.	Tests",
+            description:
+              "These are scripts executed during the request. It is important to have tests as it sets up checkpoints to verify if response status is ok, retrieved data is as expected and other tests.",
+          },
+        ],
+      },
+    ],
+    examples: [],
+    reference: [
+      "https://www.tutorialspoint.com/postman/postman_introduction.htm ",
+      "https://www.geeksforgeeks.org/introduction-postman-api-development/ ",
+      "https://www.toolsqa.com/postman/postman-tutorial/ ",
+    ],
   },
 ];
 export default techContent;
