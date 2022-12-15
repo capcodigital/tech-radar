@@ -57,11 +57,11 @@ export const data: Array<{ name: string; data: techType }> = [
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/teamcity_square.png",
           enabled: false,
         },
-        {
-          name: "Istio",
-          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/istio_square.png",
-          enabled: false,
-        },
+        // {
+        //   name: "Istio",
+        //   link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/istio_square.png",
+        //   enabled: false,
+        // },
         {
           name: "Ansible",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/ansible_square.png",
@@ -72,6 +72,16 @@ export const data: Array<{ name: string; data: techType }> = [
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/packer_square.png",
           enabled: false,
         },
+        {
+          name: "Docker",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/docker_square.png",
+          enabled: true,
+        },
+        // {
+        //   name: "Datadog",
+        //   link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/datadog_square.png",
+        //   enabled: true,
+        // },
       ],
       scaling: [
         {
@@ -577,6 +587,14 @@ export const icons: Array<{ name: string; link: string }> = [
     link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/consul_square.png",
   },
   {
+    name: "Docker",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/docker_square.png",
+  },
+  {
+    name: "Datadog",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/datadog_square.png",
+  },
+  {
     name: "Postgres",
     link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/postgres_square.png",
   },
@@ -850,6 +868,8 @@ export const technologies = [
       "Kiali",
       "ConcourseCl",
       "Consul",
+      "Docker",
+      "Datadog",
     ],
   },
 
@@ -985,6 +1005,8 @@ export const technologyList = [
   "Kiali",
   "ConcourseCl",
   "Consul",
+  "Docker",
+  "Datadog",
   "Postgres",
   "Neo4J",
   "MongoDB",
