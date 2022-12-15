@@ -3,6 +3,9 @@ import cypressFlow from "../../images/technologies/cypress-flow.png";
 import SeleniumImg from "../../images/technologies/selenium-img.png";
 import postmanExample from "../../images/technologies/postman_snapshot.png";
 import postmanTesting from "../../images/technologies/postman_testing.png";
+import gatlingExample1 from "../../images/technologies/gatling_example1.png";
+import gatlingExample2 from "../../images/technologies/gatling_example2.png";
+import gatlingExample3 from "../../images/technologies/gatling_example3.png";
 
 const techContent = [
   {
@@ -56,7 +59,7 @@ const techContent = [
           },
           {
             name: "",
-            description: `3. Locate a web element on the webpage via <a href="https://www.selenium.dev/documentation/webdriver/elements/finders/">locators in selenium</a>. `,
+            description: `3. Locate a web element on the webpage via <a href="https://www.selenium.dev/documentation/webdriver/elements/finders/">locators in selenium</a>. `,
           },
           {
             name: "",
@@ -178,7 +181,7 @@ const techContent = [
       },
       {
         name: "",
-        intro: `To understand the in-depth implementation of how these commands operate in Selenium, refer to this detailed guide on <a href="https://www.selenium.dev/documentation/webdriver/waits/">wait commands in Selenium WebDriver.</a> `,
+        intro: `To understand the in-depth implementation of how these commands operate in Selenium, refer to this detailed guide on <a href="https://www.selenium.dev/documentation/webdriver/waits/">wait commands in Selenium WebDriver.</a> `,
         data: [],
       },
       {
@@ -374,7 +377,7 @@ const techContent = [
           {
             name: "Automatic Waiting",
             description:
-              "Cypress automatically waits for commands and assertions without ever adding waits or sleeps to your tests. No more async issues. ",
+              "Cypress automatically waits for commands and assertions without ever adding waits or sleeps to your tests. No more async issues. ",
           },
           {
             name: "Mocking",
@@ -413,7 +416,7 @@ const techContent = [
           },
           {
             name: "Debuggability",
-            description: "Readable error messages help you to debug quickly.",
+            description: "Readable error messages help you to debug quickly.",
           },
           {
             name: "API testing",
@@ -476,10 +479,102 @@ const techContent = [
   {
     technology: "Gatling",
     docsLink: "https://gatling.io/docs/",
-    intro: "Content coming soon.",
-    content: [],
+    intro:
+      "Gatling is the ultimate open-source load testing tool for programmers. Though focused on Web applications, it can be used to analyse and measure the performance of a variety of services. As it is Scala based, it generates reports in the form of pretty graphs, from which the results can be analysed. It is backed by Scala, Akka and Netty. It works asynchronously if the underlying HTTP request is non-blocking. It uses messages for virtual user simulation rather than a thread per virtual user.<br/><br/>Key features of gatling:<br/><ul><li>Open Source</li><li>Incline to write Code-Based Testing Framework</li><li>Geared towards DevOps and pluggable to CI easily</li><li>Runs as a Java Application</li><li>Pretty HTML based report out of box</li></ul>",
+    content: [
+      {
+        name: "Key Concepts",
+        intro: "",
+        data: [
+          {
+            name: "Virtual User",
+            description:
+              "Advanced load testing tools such as Gatling can deal with virtual users, each one having its own data and maybe taking a distinct browsing path. Some other tools implement those virtual users as threads. Gatling implements them as messages, which scales much better and can deal easily with thousands of concurrent users.",
+          },
+          {
+            name: "Scenario",
+            description:
+              "A scenario represents a typical user behaviour. It's a workflow that virtual users will follow. Scenarios are represented as scripts in conjunction with a DSL (Domain Specific Language). This allows fast writing of scenarios and easy maintenance of existing scenarios. <br/><br/>",
+          },
+          {
+            name: "Pause",
+            description:
+              "Pauses are used to simulate user think time. When a real user clicks on a link, the page has to be loaded in their browser and they will, most likely, read it and then decide what to do next.",
+          },
+          {
+            name: "Simulation",
+            description:
+              "A simulation is a description of the load test. It describes how, possibly several, user populations will run: which scenario they will execute and how new virtual users will be injected.<br/><br/>",
+          },
+          {
+            name: "Session",
+            description:
+              "Each virtual user is backed by a Session. Those Sessions are the actual messages that go down the scenario workflow. A Session is basically a state placeholder, where testers can inject or capture and store data.",
+          },
+          {
+            name: "Feeders",
+            description:
+              "Feeders are a convenient API for testers to inject data from an external source into the virtual users' sessions.When the tested application offers the possibility to authenticate, tests should take this into consideration and use data to test log in, log out, actions allowed only for certain users, and so on.",
+          },
+          {
+            name: "Checks",
+            description:
+              "Each time a request is sent to the server, a response is normally sent, by the server, back to Gatling. Gatling is able to analyses this response with Checks.<br/><br/>A check is a response processor that captures some part of it and verifies that it meets some given condition(s). For example, when sending an HTTP request, you could expect a HTTP redirect; with a check, you can verify that the status of the response is actually a 30x code.<br/><br/>Checks can also be used to capture some elements and store them into the Session so that they can be reused later, for example to build the next request. ",
+          },
+          {
+            name: "Assertions",
+            description:
+              "Assertions are used to define acceptance criteria on Gatling statistics (e.g., 99th percentile response time) that would make Gatling fail and return an error status code for the test as a whole.",
+          },
+          {
+            name: "Reports",
+            description:
+              "By default, reports are automatically generated at the end of a simulation. They consist of HTML files. Therefore, they are portable, and they can be viewed on any device with a web browser.",
+          },
+        ],
+      },
+      {
+        name: "Key Benefits",
+        intro:
+          "<ul><li>Engine based on Akka and uses asynchronous computer. Reducing performance hit of having many users on a single thread. </li><li>Encourage engineers to create load tests as code / script unlike using recording or UI options which makes it light weight and easily pluggable  </li><li>Gatling supports powerful architecture. It uses advanced architecture and the Akka toolkit, which is based on the actor model that is distributed and fully asynchronous by design. Due to Akka toolkit, Gatling doesn't allocate a separate thread for each user. Instead, all multi-threading is done via messages between actors (universal primitives of concurrent computation), which allow to simulate a list of users by using just one thread. </li><li>Gatling supports human readable code which can be read or reviewed by anyone in the team say Scrum Master or Product Owners also. Gatling defines a domain-specific language that allows writing very clear and human readable tests </li><li>Gatling has Built-in Integration with Continuous Integration Pipelines</li></ul>",
+        data: [],
+      },
+      {
+        name: "Deep Look at simulation - main construct for Code in Gatling",
+        intro: "",
+        data: [
+          {
+            name: "The HTTP protocol configuration",
+            description:
+              "The first element is the configuration of the HTTP protocol. In this example, this configuration is very basic and just defines:<br/><ul><li>the baseUrl, which will be prepended to all the relative paths in the scenario definition. Here, the base URL is http://computer-database.gatling.io.</li><li>common headers, which will be added on each request.</li></ul>",
+          },
+          {
+            name: "The headers definition",
+            description: `Gatling lets you set some generic headers at the http protocol definition level with:<br/><ul><li><i>header(name: String, value: Expression[String])</i>: set a single header.</li><li><i>headers(headers: Map[String, String])</i>: set a bunch of headers.</li></ul>Also, Headers are declared as Scala Maps: <br /><img width='100%' src=${gatlingExample1} />`,
+          },
+          {
+            name: "The scenario definition",
+            description:
+              'After the headers definition comes the scenario definition. This definition has a name because you can define several scenarios in the same simulation. A scenario is usually stored in a Scala value: <br /><br /><i>val scn = scenario("ScenarioName")</i><br /><br />The scenario structure basically consists of chaining two methods: exec and pause. The first one is used to describe an action, usually a request sent to the tested application; the second one is used to simulate the think time of the user between consecutive requests.',
+          },
+          {
+            name: "The simulation definition",
+            description: `The last part of the file contains the simulation definition, this is where you define the load you want to inject to your server, e.g.:<br /><img width='100%' src=${gatlingExample2} /> <br />which correspond to: <br /> <ol><li>We inject one single user into the scn scenario</li><li>We configure httpProtocol on the setUp so that we pass the base URL and the common headers.</li></ol>`,
+          },
+          {
+            name: "Hooks",
+            description:
+              "Gatling provides two hooks: <br /><ul><li>before for executing some arbitrary code before the simulation actually runs </li><li>after for executing some arbitrary code after the simulation actually runs </li></ul>",
+          },
+          {
+            name: "Sample Simulation Construct",
+            description: `<img width='100%' src=${gatlingExample3} />`,
+          },
+        ],
+      },
+    ],
     examples: [],
-    reference: [],
+    reference: ["https://gatling.io/"],
   },
   {
     technology: "PACT",
