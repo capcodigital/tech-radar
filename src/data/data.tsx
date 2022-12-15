@@ -490,11 +490,6 @@ export const data: Array<{ name: string; data: techType }> = [
           enabled: true,
         },
         {
-          name: "Kotlin",
-          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/mobile/kotlin_square.png",
-          enabled: false,
-        },
-        {
           name: "Java Mobile",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/mobile/java_square.png",
           enabled: true,
@@ -804,7 +799,7 @@ export const icons: Array<{ name: string; link: string }> = [
     link: "https://img.icons8.com/color/452/react-native.png",
   },
   { name: "Swift", link: "https://img.icons8.com/fluent/452/swift.png" },
-  { name: "Kotlin", link: "https://img.icons8.com/color/344/kotlin.png" },
+
   {
     name: "Java Mobile",
     link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/mobile/java_square.png",
@@ -954,7 +949,6 @@ export const technologies = [
     technologies: [
       "React Native",
       "Swift",
-      "Kotlin",
       "Java Mobile",
       "Ionic",
       "Flutter",
@@ -1047,7 +1041,6 @@ export const technologyList = [
   "Webpack",
   "React Native",
   "Swift",
-  "Kotlin",
   "Java Mobile",
   "Ionic",
   "Flutter",

@@ -272,14 +272,6 @@ const techContent = [
     reference: ["https://swift.org/documentation/", "https://appium.io/"],
   },
   {
-    technology: "Kotlin",
-    docsLink: "https://kotlinlang.org/docs/home.html",
-    intro: "Content coming soon.",
-    content: [],
-    examples: [],
-    reference: [],
-  },
-  {
     technology: "Java Mobile",
     docsLink: "https://docs.oracle.com/en/java/",
     intro:
