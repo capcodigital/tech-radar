@@ -3,6 +3,7 @@ import cypressFlow from "../../images/technologies/cypress-flow.png";
 import SeleniumImg from "../../images/technologies/selenium-img.png";
 import postmanExample from "../../images/technologies/postman_snapshot.png";
 import postmanTesting from "../../images/technologies/postman_testing.png";
+import seleniumWebdriver from "../../images/technologies/SeleniumWebDriverforAutomationTesting.png"
 
 const techContent = [
   {
@@ -39,7 +40,7 @@ const techContent = [
       },
       {
         name: "",
-        intro: `<img width='100%' src="https://3fxtqy18kygf3on3bu39kh93-wpengine.netdna-ssl.com/wp-content/uploads/2021/09/Selenium-WebDriver-for-Automation-Testing@2x.webp" />`,
+        intro: `<img width='100%' src="${seleniumWebdriver}" />`,
         data: [],
       },
       {
