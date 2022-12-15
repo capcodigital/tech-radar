@@ -5,6 +5,7 @@ import postmanExample from "../../images/technologies/postman_snapshot.png";
 import postmanTesting from "../../images/technologies/postman_testing.png";
 import gatlingExample1 from "../../images/technologies/gatling_example1.png";
 import gatlingExample2 from "../../images/technologies/gatling_example2.png";
+import gatlingExample3 from "../../images/technologies/gatling_example3.png";
 
 const techContent = [
   {
@@ -549,17 +550,16 @@ const techContent = [
           },
           {
             name: "The headers definition",
-            description:
-              "Gatling lets you set some generic headers at the http protocol definition level with:<br/><ul><li>header(name: String, value: Expression[String]): set a single header.</li><li>headers(headers: Map[String, String]): set a bunch of headers.</li></ul><br/>Also, Headers are declared as Scala Maps:",
+            description: `Gatling lets you set some generic headers at the http protocol definition level with:<br/><ul><li><u>header(name: String, value: Expression[String])</u>: set a single header.</li><li><u>headers(headers: Map[String, String])</u>: set a bunch of headers.</li></ul>Also, Headers are declared as Scala Maps: <br /><img width='100%' src=${gatlingExample1} />`,
           },
           {
             name: "The scenario definition",
             description:
-              'After the headers definition comes the scenario definition. This definition has a name because you can define several scenarios in the same simulation. A scenario is usually stored in a Scala value: <br />val scn = scenario("ScenarioName") <br />The scenario structure basically consists of chaining two methods: exec and pause. The first one is used to describe an action, usually a request sent to the tested application; the second one is used to simulate the think time of the user between consecutive requests.',
+              'After the headers definition comes the scenario definition. This definition has a name because you can define several scenarios in the same simulation. A scenario is usually stored in a Scala value: <br /><br /><u>val scn = scenario("ScenarioName")</u><br /><br />The scenario structure basically consists of chaining two methods: exec and pause. The first one is used to describe an action, usually a request sent to the tested application; the second one is used to simulate the think time of the user between consecutive requests.',
           },
           {
             name: "The simulation definition",
-            description: `The last part of the file contains the simulation definition, this is where you define the load you want to inject to your server, e.g.:<br /><img width='100%' src=${gatlingExample1} /> <br />which correspond to: <br /> <ol><li>We inject one single user into the scn scenario</li><li>We configure httpProtocol on the setUp so that we pass the base URL and the common headers.</li></ol>`,
+            description: `The last part of the file contains the simulation definition, this is where you define the load you want to inject to your server, e.g.:<br /><img width='100%' src=${gatlingExample2} /> <br />which correspond to: <br /> <ol><li>We inject one single user into the scn scenario</li><li>We configure httpProtocol on the setUp so that we pass the base URL and the common headers.</li></ol>`,
           },
           {
             name: "Hooks",
@@ -568,7 +568,7 @@ const techContent = [
           },
           {
             name: "Sample Simulation Construct",
-            description: `<img width='100%' src=${gatlingExample2} />`,
+            description: `<img width='100%' src=${gatlingExample3} />`,
           },
         ],
       },
