@@ -550,12 +550,12 @@ const techContent = [
           },
           {
             name: "The headers definition",
-            description: `Gatling lets you set some generic headers at the http protocol definition level with:<br/><ul><li><u>header(name: String, value: Expression[String])</u>: set a single header.</li><li><u>headers(headers: Map[String, String])</u>: set a bunch of headers.</li></ul>Also, Headers are declared as Scala Maps: <br /><img width='100%' src=${gatlingExample1} />`,
+            description: `Gatling lets you set some generic headers at the http protocol definition level with:<br/><ul><li><i>header(name: String, value: Expression[String])</i>: set a single header.</li><li><i>headers(headers: Map[String, String])</i>: set a bunch of headers.</li></ul>Also, Headers are declared as Scala Maps: <br /><img width='100%' src=${gatlingExample1} />`,
           },
           {
             name: "The scenario definition",
             description:
-              'After the headers definition comes the scenario definition. This definition has a name because you can define several scenarios in the same simulation. A scenario is usually stored in a Scala value: <br /><br /><u>val scn = scenario("ScenarioName")</u><br /><br />The scenario structure basically consists of chaining two methods: exec and pause. The first one is used to describe an action, usually a request sent to the tested application; the second one is used to simulate the think time of the user between consecutive requests.',
+              'After the headers definition comes the scenario definition. This definition has a name because you can define several scenarios in the same simulation. A scenario is usually stored in a Scala value: <br /><br /><i>val scn = scenario("ScenarioName")</i><br /><br />The scenario structure basically consists of chaining two methods: exec and pause. The first one is used to describe an action, usually a request sent to the tested application; the second one is used to simulate the think time of the user between consecutive requests.',
           },
           {
             name: "The simulation definition",
@@ -564,7 +564,7 @@ const techContent = [
           {
             name: "Hooks",
             description:
-              "Gatling provides two hooks: <br /><ul><li>before for executing some arbitrary code before the simulation actually runs </li><li>after for executing some arbitrary code after the simulation actually runs </li></ul>",
+              "Gatling provides two hooks: <br /><ul><li>before for executing some arbitrary code before the simulation actually runs </li><li>after for executing some arbitrary code after the simulation actually runs </li></ul>",
           },
           {
             name: "Sample Simulation Construct",
