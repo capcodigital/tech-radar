@@ -1,3 +1,4 @@
+//backend.ts
 const techContent = [
   {
     technology: "Java",
@@ -300,10 +301,59 @@ const techContent = [
   {
     technology: "Go",
     docsLink: "https://golang.org/doc/",
-    intro: "Content coming soon.",
-    content: [],
+    intro:
+      "<a href='https://golang.org/doc/'>Go</a>, also known as Golang, is an open-source, compiled, and statically typed programming language created at Google. It is syntactically very similar to C and is built to be simple, high-performing, readable, and efficient.",
+    content: [
+      {
+        name: "History",
+        intro:
+          "Designed by Robert Griesemer, Rob Pike, and Ken Thompson, it was announced in 2009 with an open source release following in 2012. The main motto behind creating the programming language was to solve the issues the tech titans observed with the prevalent languages at the time, notably C++. Google’s already enormous codebase grew in the late 2000s, and the era of multicore, networked computers and the start of the cloud computing revolution came. As a result, The senior software engineers at the internet giant were unhappy with the programming languages they had to rely on.",
+        data: [],
+      },
+      {
+        name: "Use Cases",
+        intro: "",
+        data: [
+          {
+            name: "Cloud & Network Services",
+            description:
+              "With a strong ecosystem of tools and APIs on major cloud providers, it's easy to create cloud services using Go.",
+          },
+          {
+            name: "Command-line Interfaces (CLIs)",
+            description:
+              "With popular open source packages and a robust standard library, Go can be used to create fast and elegant CLIs.",
+          },
+          {
+            name: "Web Development",
+            description:
+              "With enchanced memory performance and support for several IDEs, Go can be used to power fast and scalable web applications.",
+          },
+          {
+            name: "Development Operations & Site Reliability Engineering",
+            description:
+              "With fast build times, lean syntax, an automatic formatter and doc generator, Go is built to support both DevOps and SRE.",
+          },
+        ],
+      },
+      {
+        name: "Advantages",
+        intro: "",
+        data: [
+          {
+            name: "",
+            description:
+              "<ul><li>Simplified code - Go code is less complex and borrows several concepts from other programming languages.</li><li>Powerful performance - The simplicity of Go adds up to its powerful performance. It runs faster, compiles quicker, it’s easy to maintain and support, and allows for shorter software development lifecycles. Golang compiles directly to machine code as it doesn’t use Virtual Machines, providing an even better speed advantage.</li><li>Designed for multi-core processors - Go is designed for the modern era of cloud computing and parallel processes utilized by the current processors. Other popular computer programming languages like Java, JavaScript, Python, Ruby, or C, C ++ were created before the multi-core computers were widely used. With Golang, it is easier to utilize all CPU cores without complicating development.</li><li>Designed for the internet - With the Golang standard library, developers can build complex web services without third-party libraries. It makes it perfect for web development with fewer iterations and fewer possibilities to implement the same feature.</li><li>Easy to learn - Programmers frequently see Golang as C without the inconvenient flaws. Its syntax appears familiar to developers, making it easier to learn if you are familiar with the C concepts.</li></ul>",
+          },
+        ],
+      },
+    ],
     examples: [],
-    reference: [],
+    reference: [
+      "https://www.scalefocus.com/blog/why-you-should-go-with-go-for-your-next-software-project",
+      "https://www.freecodecamp.org/news/what-is-go-programming-language/",
+      "https://go.dev",
+    ],
   },
   {
     technology: "Python",
@@ -372,24 +422,199 @@ const techContent = [
   {
     technology: "Kotlin",
     docsLink: "https://kotlinlang.org/docs/home.html",
-    intro: "Content coming soon.",
-    content: [],
+    intro:
+      "<a href='https://kotlinlang.org/docs/home.html'>Kotlin</a> is a general purpose, free, open source, statically typed “pragmatic” programming language initially designed for the JVM (Java Virtual Machine) and Android, and combines object-oriented and functional programming features. It is focused on interoperability, safety, clarity, and tooling support. Versions of Kotlin targeting JavaScript ES5.1 and native code (using LLVM) for a number of processors are in production as well.<br/><br/>Kotlin originated at JetBrains, the company behind IntelliJ IDEA, in 2010, and has been open source since 2012. The Kotlin project on GitHub has more than 770 contributors; while the majority of the team works at JetBrains, there have been nearly 100 external contributors to the Kotlin project. JetBrains uses Kotlin in many of its products including its flagship IntelliJ IDEA.",
+    content: [
+      {
+        name: "Platforms",
+        intro: "",
+        data: [
+          {
+            name: "Multiplatform Mobile",
+            description:
+              "Share the logic of your Android and iOS apps while keeping UX native.",
+          },
+          {
+            name: "Server-side",
+            description:
+              "Modern development experience with familiar JVM technology.",
+          },
+          {
+            name: "Web Frontend",
+            description: "Extend your projects to the web.",
+          },
+          {
+            name: "Android",
+            description: "Recommended by Google for building Android apps.",
+          },
+          {
+            name: "Data Science",
+            description:
+              "From building data pipelines to productionizing machine learning models, Kotlin can be a great choice for working with data.",
+          },
+        ],
+      },
+    ],
     examples: [],
     reference: [],
   },
   {
     technology: "Groovy",
     docsLink: "https://groovy-lang.org/index.html",
-    intro: "Content coming soon.",
-    content: [],
+    intro:
+      "<a href='https://groovy-lang.org/index.html'>Apache Groovy</a> is an object oriented and Java syntax compatible programming language built for the JVM platform. This dynamic language has many features which are similar to Python, Ruby, Smalltalk, and Pero. Groovy source code gets compiled into Java Bytecode so it can run on any platform that has JRE is installed. Groovy also performs a lot of tasks behind the scene that makes it more agile and dynamic.<br /><br />Groovy integrates smoothly with any Java class or library, and immediately delivers to your application powerful capabilities, including scripting support, Domain-Specific Language authoring, runtime and compile-time meta-programming and functional programming.",
+    content: [
+      {
+        name: "Features",
+        intro: "",
+        data: [
+          {
+            name: "Support for static and dynamic typing",
+            description:
+              "Statically typed languages are those in which type checking is done at the compiling stage and not during execution. Java is a general purpose statically typed language. Dynamic typing syntaxes such as Groovy are those in which the check is performed during execution. Python is another example. Groovy allows developers to introduce this typing within Java.",
+          },
+          {
+            name: "Concise, brief, direct syntax",
+            description:
+              "This allows developers that use Groovy to develop projects faster and easier.",
+          },
+          {
+            name: "Relatively short learning curve",
+            description:
+              "This is a relatively simple language like Python or Ruby. It is easy for developers to learn.",
+          },
+          {
+            name: "Support for unit testing",
+            description:
+              "Groovy is a testing-oriented development language. In fact, it is a syntax that provides support for running tests in integrated development environments (IDEs), Ant or Maven, which are all application programming tools in Java.",
+          },
+          {
+            name: "Native support for regular expressions",
+            description:
+              "The Groovy syntax for creating regular expressions is really simple. This programming language has three operators for regular expressions:<br/><ul><li>The operator regex =~.</li><li>The operator match ==~.</li><li>The pattern operator ~String.</li></ul>",
+          },
+          {
+            name: "Native syntax for lists and associative arrays",
+            description:
+              "In programming, arrays are usually assigned to variables. These variables are often associated to data. Developers sometimes associate that information through various elements of the array through a common thread called index. That way of structuring information with programming is called associative array.",
+          },
+          {
+            name: "Native support for markup languages like XML and HTML.",
+            description: "",
+          },
+          {
+            name: "Support for domain specific languages",
+            description:
+              "A domain specific language is a programming language or a specification dedicated to solving specific problems, through a specific technique. A general purpose syntax such as Java, C or C++ is the opposite. Somehow it provides general structure to solve global situations.",
+          },
+        ],
+      },
+      {
+        name: "Tools",
+        intro:
+          "<ul><li><a href='http://groovy-lang.org/groovyc.html'>groovyc - the Groovy compiler</a></li><li><a href='http://groovy-lang.org/groovysh.html'>groovysh - the Groovy repl-like shell</a></li><li><a href='http://groovy-lang.org/groovyconsole.html'>groovyConsole - the Groovy Swing console</a></li><li><a href='http://groovy-lang.org/ides.html'>IDE integration</a></li></ul>",
+        data: [],
+      },
+      {
+        name: "Versions & Governance",
+        intro:
+          "Groovy 1.0 was released on January 2, 2007, and Groovy 2.0 in July, 2012. Since version 2, Groovy can be compiled statically, offering type inference and performance near that of Java. Groovy 2.4 was the last major release under Pivotal Software's sponsorship which ended in March 2015. Groovy has since changed its governance structure to a Project Management Committee in the Apache Software Foundation.",
+        data: [],
+      },
+    ],
     examples: [],
     reference: [],
   },
   {
     technology: "Gradle",
     docsLink: "https://gradle.org/index.html",
-    intro: "Content coming soon.",
-    content: [],
+    intro:
+      "<a href='https://gradle.org/index.html'>Gradle</a> is a build automation tool for multi-language software development. It controls the development process in the tasks of compilation and packaging to testing, deployment, and publishing. Supported languages include Java (as well as Kotlin, Groovy, Scala), C/C++, and JavaScript. It also collects statistical data about the usage of software libraries around the globe. <br /> <br />The following are some of its most important advantages & features:",
+    content: [
+      {
+        name: "",
+        intro: "",
+        data: [
+          {
+            name: "High performance",
+            description:
+              "Gradle avoids unnecessary work by only running tasks that need to do work because inputs or outputs have changed. Gradle uses various caches to reuse outputs from previous builds. With a shared build cache, you can even reuse outputs from other machines.",
+          },
+          {
+            name: "JVM foundation",
+            description:
+              "Gradle runs on the JVM. This is a bonus for users familiar with Java, since build logic can use the standard Java APIs. It also makes it easy to run Gradle on different platforms.",
+          },
+          {
+            name: "Conventions",
+            description:
+              "Gradle makes common types of projects easy to build through conventions. Plugins set sensible defaults to keep build scripts minimal. But these conventions don’t limit you: you can configure settings, add your own tasks, and make many other customizations in your builds.",
+          },
+          {
+            name: "Extensibility",
+            description:
+              "Most builds have special requirements that require custom build logic. You can readily extend Gradle to provide your own build logic with custom tasks and plugins.",
+          },
+          {
+            name: "IDE support",
+            description:
+              "Several major IDEs provide interaction with Gradle builds, including Android Studio, IntelliJ IDEA, Eclipse, VSCode, and NetBeans. Gradle can also generate the solution files required to load a project into Visual Studio.",
+          },
+          {
+            name: "Insight",
+            description:
+              "Build scans provide extensive information about a build run that you can use to identify build issues. Scans can also be shared which can be very useful for e.g., if we need help fixing a build issue. ",
+          },
+        ],
+      },
+      {
+        name: "Gradle Core Principles",
+        intro: "",
+        data: [
+          {
+            name: "1. Gradle is a general-purpose build tool",
+            description:
+              "Gradle has been designed to be flexible enough to allow us to build any kind of software. However currently Gradle only supports Maven and Ivy compatible repositories as dependency management options. Gradle makes it easy to build common types of projects e.g., Java libraries by adding conventions and prebuilt functionality through plugins. Custom plugins are supported. ",
+          },
+          {
+            name: "2. The core model is based on tasks",
+            description:
+              "Gradle models its builds as Directed Acyclic Graphs (DAGs) of tasks. This means that a build configures a set of tasks and wires them together - based on their dependencies - to create a DAG. Once the task graph has been created, Gradle determines which tasks need to run in which order and then proceeds to execute them. Figure 1 shows a task graph and Figure 2 shows a build process for a typical Android app module. Almost any build process can be modelled as a graph of tasks, which is one of the reasons why Gradle is so flexible. And that task graph can be defined by both plugins and your own build scripts, with tasks linked together via the task dependency mechanism. Tasks themselves consist of Actions (pieces of work e.g., copy files, compile source etc), Inputs (values, files, and directories that the actions use or operate on) and Outputs (files and directories that the actions modify or generate). In fact, all the above are optional depending on what the task needs to do. Some tasks e.g., standard lifecycle tasks don’t have any actions but just aggregate multiple tasks together and we can choose which task to run.",
+          },
+          {
+            name: "3. Build phases ",
+            description:
+              "Gradle evaluates and executes build scripts in 3 phases which form Gradle’s Build Lifecycle:<br/><strong>Initialization:</strong> Sets up the environment for the build and determine which projects will take part in it.<br/><strong>Configuration:</strong> Constructs and configures the task graph for the build and then determines which tasks need to run and in which order, based on the task the user wants to run. Everything involved in the configuration phase is evaluated on each build run. That is why we should avoid expensive work during the configuration phase.<br/><strong>Execution:</strong> Runs the tasks selected at the end of the configuration phase.",
+          },
+          {
+            name: "4. High extensibility",
+            description:
+              "It’s rarely possible to build your project using only the build logic bundled with Gradle. Most builds have special requirements, so we need to add custom build logic by using Gradle’s several mechanisms:<br/><strong>Custom task types:</strong> When you want the build to do some work that an existing task can’t do, we can write a custom task type. Then we can use the custom task type just like the Gradle-provided ones.<br/><strong>Custom task actions:</strong> We can attach custom build logic that executes before or after a task.<br/><strong>Extra properties on projects and tasks:</strong> These allows us to add our own properties to a project or task that we can then use from your own custom actions or any other build logic.<br/> <strong>Custom conventions:</strong> Conventions are a powerful way to simplify builds so that users can understand and use them more easily. We can write your own plugins that provide conventions.<br/> <strong>A custom model:</strong> Gradle allows introduction of new concepts into a build beyond tasks, files, and dependency configurations. We can see this with most language plugins, which add the concept of source sets to a build. Appropriate modelling can greatly improve a build’s ease of use and efficiency.<br/>",
+          },
+          {
+            name: "5. Build scripts operate against an API ",
+            description:
+              "There is a common misunderstanding that Gradle’s power comes from the fact that its build scripts are code. <strong>This is far from the truth.</strong> It’s the underlying model and API that provide the power. We should avoid putting much - if any - imperative logic in build scripts. Yet there is one area in which it is useful to view a build script as executable code i.e., in understanding how the syntax of the build script maps to Gradle’s API. As Gradle runs on the JVM, build scripts can also use the standard Java API. Groovy build scripts can additionally use the Groovy APIs while Kotlin build scripts can use the Kotlin ones.",
+          },
+        ],
+      },
+      {
+        name: "Usage & History",
+        intro: "",
+        data: [
+          {
+            name: "",
+            description:
+              "Gradle is used by large projects such as Spring Projects, Hibernate Projects, and Grails Projects. Some Leading Enterprise companies like LinkedIn and Netflix use Gradle.",
+          },
+          {
+            name: "",
+            description:
+              "Gradle was initially released in 2007, and it is stably released on November 18, 2019. Gradle has taken the advantages of both Ant and Maven and remove the drawbacks of both.",
+          },
+        ],
+      },
+    ],
     examples: [],
     reference: [],
   },
