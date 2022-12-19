@@ -41,11 +41,6 @@ const techContent = [
         ],
       },
       {
-        name: "",
-        intro: `<img width='100%' src="https://3fxtqy18kygf3on3bu39kh93-wpengine.netdna-ssl.com/wp-content/uploads/2021/09/Selenium-WebDriver-for-Automation-Testing@2x.webp" />`,
-        data: [],
-      },
-      {
         name: "Basic Steps in a Selenium WebDriver Script",
         intro: "",
         data: [
