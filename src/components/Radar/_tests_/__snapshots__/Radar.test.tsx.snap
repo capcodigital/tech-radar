@@ -773,9 +773,9 @@ exports[`Radar should render Radar component 1`] = `
         opacity="1"
       >
         <g
-          aria-label="Istio"
-          class="techIcon-Istio no-content"
-          title="Istio"
+          aria-label="Ansible"
+          class="techIcon-Ansible no-content"
+          title="Ansible"
         >
           <circle
             cx="-37.097396464694754"
@@ -785,34 +785,10 @@ exports[`Radar should render Radar component 1`] = `
           />
           <image
             height="16.970562748477143"
-            href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/istio_square.png"
+            href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/ansible_square.png"
             width="16.970562748477143"
             x="-45.58267783893332"
             y="-146.934649809005"
-          />
-        </g>
-      </g>
-      <g
-        class="StyledGroup-sc-dipbco-0 jccckg"
-        opacity="1"
-      >
-        <g
-          aria-label="Ansible"
-          class="techIcon-Ansible no-content"
-          title="Ansible"
-        >
-          <circle
-            cx="-1.5363547967201937e-13"
-            cy="-143.33333333333334"
-            fill="white"
-            r="12"
-          />
-          <image
-            height="16.970562748477143"
-            href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/ansible_square.png"
-            width="16.970562748477143"
-            x="-8.485281374238724"
-            y="-151.81861470757192"
           />
         </g>
       </g>
@@ -826,6 +802,30 @@ exports[`Radar should render Radar component 1`] = `
           title="Packer"
         >
           <circle
+            cx="-1.5363547967201937e-13"
+            cy="-143.33333333333334"
+            fill="white"
+            r="12"
+          />
+          <image
+            height="16.970562748477143"
+            href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/packer_square.png"
+            width="16.970562748477143"
+            x="-8.485281374238724"
+            y="-151.81861470757192"
+          />
+        </g>
+      </g>
+      <g
+        class="StyledGroup-sc-dipbco-0 jccckg"
+        opacity="1"
+      >
+        <g
+          aria-label="Docker"
+          class="techIcon-Docker undefined"
+          title="Docker"
+        >
+          <circle
             cx="37.097396464694576"
             cy="-138.44936843476648"
             fill="white"
@@ -833,7 +833,7 @@ exports[`Radar should render Radar component 1`] = `
           />
           <image
             height="16.970562748477143"
-            href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/packer_square.png"
+            href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/docker_square.png"
             width="16.970562748477143"
             x="28.612115090456005"
             y="-146.93464980900507"
@@ -1518,7 +1518,7 @@ exports[`Radar should render Radar component 1`] = `
       >
         <g
           aria-label="Gatling"
-          class="techIcon-Gatling no-content"
+          class="techIcon-Gatling undefined"
           title="Gatling"
         >
           <circle
@@ -2046,7 +2046,7 @@ exports[`Radar should render Radar component 1`] = `
       >
         <g
           aria-label="Go"
-          class="techIcon-Go no-content"
+          class="techIcon-Go undefined"
           title="Go"
         >
           <circle
@@ -2094,7 +2094,7 @@ exports[`Radar should render Radar component 1`] = `
       >
         <g
           aria-label="Gradle"
-          class="techIcon-Gradle no-content"
+          class="techIcon-Gradle undefined"
           title="Gradle"
         >
           <circle
@@ -2142,7 +2142,7 @@ exports[`Radar should render Radar component 1`] = `
       >
         <g
           aria-label="Groovy"
-          class="techIcon-Groovy no-content"
+          class="techIcon-Groovy undefined"
           title="Groovy"
         >
           <circle
@@ -2166,7 +2166,7 @@ exports[`Radar should render Radar component 1`] = `
       >
         <g
           aria-label="Kotlin"
-          class="techIcon-Kotlin no-content"
+          class="techIcon-Kotlin undefined"
           title="Kotlin"
         >
           <circle

@@ -305,34 +305,91 @@ const techContent = [
       "<a href='https://golang.org/doc/'>Go</a>, also known as Golang, is an open-source, compiled, and statically typed programming language created at Google. It is syntactically very similar to C and is built to be simple, high-performing, readable, and efficient.",
     content: [
       {
-        name: "History",
-        intro:
-          "Designed by Robert Griesemer, Rob Pike, and Ken Thompson, it was announced in 2009 with an open source release following in 2012. The main motto behind creating the programming language was to solve the issues the tech titans observed with the prevalent languages at the time, notably C++. Google’s already enormous codebase grew in the late 2000s, and the era of multicore, networked computers and the start of the cloud computing revolution came. As a result, The senior software engineers at the internet giant were unhappy with the programming languages they had to rely on.",
-        data: [],
-      },
-      {
-        name: "Use Cases",
+        name: "Tools and Features",
         intro: "",
         data: [
           {
-            name: "Cloud & Network Services",
+            name: "Concurrency",
             description:
-              "With a strong ecosystem of tools and APIs on major cloud providers, it's easy to create cloud services using Go.",
+              "Go offers some great concurrency primitives and makes it extremely easy to implement a concurrent system. Go supports this at the language level and concurrency is a first class citizen. The fundamental unit for this in Go is a go routine.Go routines are cheap, lightweight threads of execution.",
           },
           {
-            name: "Command-line Interfaces (CLIs)",
+            name: "Simplicity and Consistency",
             description:
-              "With popular open source packages and a robust standard library, Go can be used to create fast and elegant CLIs.",
+              "Go is a relatively simple language and was designed with a very minimalistic approach.it's easy to pick up and get started with. The standard library contains most things including a web server!",
           },
           {
-            name: "Web Development",
+            name: "Go is object oriented",
             description:
-              "With enchanced memory performance and support for several IDEs, Go can be used to power fast and scalable web applications.",
+              "Coming from other languages, it may seem like Go is not object-oriented. It does not provide the class keyword and has no support for inheritance. This might seem bizarre. However, Go’s replacement for classes are structs. A struct may have any number of properties and methods defined on them.",
           },
           {
-            name: "Development Operations & Site Reliability Engineering",
+            name: "The Compiler",
             description:
-              "With fast build times, lean syntax, an automatic formatter and doc generator, Go is built to support both DevOps and SRE.",
+              "Go’s compiler is super fast. It is easily possible to compile a large Go program within a few seconds. The fact that the language syntax is so simple means that compilation is much quicker. The language was designed to be easily parseable without a symbol table.",
+          },
+          {
+            name: "Pointers",
+            description:
+              "I thought I’d never have to use pointers after my university days, learning C. Go aims to provide a modern equivalent of C in some areas and has brought back pointers. Most modern languages do not provide pointers, however pointers help solve a lot of common issues and play a far more important role when it comes to memory layout and building low level system tools.",
+          },
+          {
+            name: "GoLand",
+            description:
+              "GoLand is the Go-specific IDE from JetBrains. While JetBrains is best known for Java-centric tools, GoLand is an excellent Go development environment.",
+          },
+        ],
+      },
+      {
+        name: "Build Tools",
+        intro: "",
+        data: [
+          {
+            name: "Gödel",
+            description:
+              "Gödel is a Go build tool that provides tasks for configuring, formatting, checking, testing, building and publishing Go projects in a declarative, consistent and reproducible manner across different platforms and environments. gödel can be used in both local development environments and for verifying the correctness of project in CI environments. gödel uses declarative configuration to define the parameters for a project and provides an executable that orchestrates build tasks using standard Go commands. It centralizes project configuration and eliminates the need for custom build scripts that conflate configuration with logic. gödel is designed to be portable, fast and lightweight.",
+          },
+        ],
+      },
+      {
+        name: "Frameworks",
+        intro: "",
+        data: [
+          {
+            name: "Gin",
+            description:
+              "The gin framework tops the list of Go frameworks in terms of popularity due to its minimalist framework and performance. It is mostly used for building a REST API for the backend if the programmer wants to develop a single-page application using a frontend framework. This framework makes use of the HTTP routers for handling the Golang traffic and is ideal for beginners along with its rich documentation provided on GitHub. It supports the most essential libraries and features which makes it the most suitable Golang framework to develop high-performance REST APIs.",
+          },
+          {
+            name: "Beego",
+            description:
+              "The gin framework tops the list of Go frameworks in terms of popularity due to its minimalist framework and performance. It is mostly used for building a REST API for the backend if the programmer wants to develop a single-page application using a frontend framework. This framework makes use of the HTTP routers for handling the Golang traffic and is ideal for beginners along with its rich documentation provided on GitHub. It supports the most essential libraries and features which makes it the most suitable Golang framework to develop high-performance REST APIs.",
+          },
+          {
+            name: "Echo",
+            description:
+              "The echo framework used in Go is another high-performance, extensible, and minimalist web framework in Golang. It has a highly optimized HTTP router with zero dynamic memory allocation that smartly prioritizes routes. It is used to build robust and scalable REST APIs, which can easily be organized into groups.",
+          },
+        ],
+      },
+      {
+        name: "Testing",
+        intro: "",
+        data: [
+          {
+            name: "Go Testing",
+            description:
+              "The testing package provided by Go supports package testing and uses the go test command to automatically run these tests. It can run benchmarks as well as sub-tests and sub-benchmarks. It supports test skipping to limit scope, and it makes test setup and teardown available when preparing for and cleaning up after testing.",
+          },
+          {
+            name: "Testify",
+            description:
+              "Testify is an incredibly popular testing framework. It makes available a range of assertion functions for comparing and verifying values. It also offers mock functionality to easily mock resources. Its suite package aids in creating test suites for grouping related tests, along with offering setup and teardown functionality for test preparation and cleanup.",
+          },
+          {
+            name: "GoConvey",
+            description:
+              "GoConvey is a BDD-style testing framework that supports the go test command. It uses an expressive domain-specific language (DSL) that facilitates the creation of self-documenting, highly readable tests.",
           },
         ],
       },
@@ -426,6 +483,96 @@ const techContent = [
       "<a href='https://kotlinlang.org/docs/home.html'>Kotlin</a> is a general purpose, free, open source, statically typed “pragmatic” programming language initially designed for the JVM (Java Virtual Machine) and Android, and combines object-oriented and functional programming features. It is focused on interoperability, safety, clarity, and tooling support. Versions of Kotlin targeting JavaScript ES5.1 and native code (using LLVM) for a number of processors are in production as well.<br/><br/>Kotlin originated at JetBrains, the company behind IntelliJ IDEA, in 2010, and has been open source since 2012. The Kotlin project on GitHub has more than 770 contributors; while the majority of the team works at JetBrains, there have been nearly 100 external contributors to the Kotlin project. JetBrains uses Kotlin in many of its products including its flagship IntelliJ IDEA.",
     content: [
       {
+        name: "Tools and Features",
+        intro:
+          "Kotlin took inspiration from many programming languages. One of the main ideas behind Kotlin is being pragmatic, i.e., being a programming language useful for day-to-day development, which helps the users get the job done via its features and its tools. Thus, a lot of design decisions were and still are influenced by how beneficial these decisions are for Kotlin users. ",
+        data: [
+          {
+            name: "Open Source",
+            description:
+              "Kotlin is an open-source programming language. So a developer can leverage the advantage of high-quality app development every time and is even backed by support from the Kotlin Slack team.It also provides a single-click tool through which a developer can convert existing Java code.",
+          },
+          {
+            name: "Supports Full Java Interoperability",
+            description:
+              "Kotlin’s intense interoperability with Java is one of its attractive features. It basically runs on JVM and even supports Java libraries, tools, offering 360-degree Java interoperability.Both Java and Kotlin co-exist i.e. their bytecodes are the same - This makes it easier for app developers to be efficient. They can assemble a single android project in both languages with the help of Java interoperability easily. This saves time by just having to switch the language and not code.",
+          },
+          {
+            name: "Lazy Loading",
+            description:
+              "Loading speed is one of the key factors that decide the fate of your app. Slow loading can be a bummer but no worries - The lazy-loading feature by Kotlin will take care of this.This feature basically reduces the app startup time so that the app is loaded faster, which is very useful when using it for app development.",
+          },
+          {
+            name: "Safe And Reliable",
+            description:
+              "The language is relatively safe and you can use it without any second thoughts. For example, avoiding mistakes such as ‘NullPointException’ is possible with the Null Safe function.Furthermore, features like the Kotlin Android Extensions, continuous library size optimizations, libraries like Anko and build times reflect the commitment of JetBrains towards making Kotlin a reliable programming language for mobile app development.",
+          },
+          {
+            name: "Greater IDE",
+            description:
+              "Kotlin is fully backed and supported by its parent company JetBrains which specializes in developing the best IDEs in the world.If you need Kotlin support from the community, all you need to do is install a plugin for that. The language supports almost every IDE feature of Android Studio. ",
+          },
+        ],
+      },
+      {
+        name: "Build Tools",
+        intro: "",
+        data: [
+          {
+            name: "Maven",
+            description:
+              "A build automation tool for projects. Maven projects are configured through a project object model (POM) which is stored in a pom.xml file. The POM describes the project and its external dependencies, the build order, directories and required plug-ins. ",
+          },
+          {
+            name: "Gradle",
+            description:
+              "Another build automation tool which controls compilation, packaging, testing deployment and publishing. Gradle models its builds as directed acyclic graphs (DAGs) of tasks wired together based on their dependencies. ",
+          },
+          {
+            name: "Ant",
+            description:
+              "Ant is a build tool software program that is used to automate builds and processes. While Ant is primarily used for Java builds, it is flexible enough to be used for any automation process.",
+          },
+        ],
+      },
+      {
+        name: "Frameworks",
+        intro: "",
+        data: [
+          {
+            name: "Spring",
+            description:
+              "With its versatile set of features, Spring is the world’s most popular Java framework. When it’s paired with Kotlin, and its concise syntax, the two make the ultimate combo for application development.",
+          },
+          {
+            name: "Ktor",
+            description:
+              "Ktor is a multiplatform toolkit built by JetBrains for creating Web applications in Kotlin. It makes use of coroutines for high scalability and offers an easy-to-use API.",
+          },
+        ],
+      },
+      {
+        name: "Testing",
+        intro: "",
+        data: [
+          {
+            name: "JUnit",
+            description:
+              "This is an open-source testing framework used by developers for unit testing. It provides annotations to identify test methods and assertions to test expected results against actual results.",
+          },
+          {
+            name: "Spek",
+            description:
+              "Spek is a Kotlin-based Specification Testing framework for the JVM. It's designed to work as a JUnit 5 Test Engine. This means that we can easily plug it into any project that already uses JUnit 5 to run alongside any other tests that we might have. ",
+          },
+          {
+            name: "Kotlintest",
+            description:
+              "KotlinTest is a flexible and comprehensive testing tool for the Kotlin ecosystem based on and heavily inspired by the superb Scalatest. KotlinTest provides several ways to lay out your test so that your team can pick the style they are most happy with. It also includes many matchers which allow you to write many different types of assertions easily and in a human readable way.",
+          },
+        ],
+      },
+      {
         name: "Platforms",
         intro: "",
         data: [
@@ -465,55 +612,71 @@ const techContent = [
       "<a href='https://groovy-lang.org/index.html'>Apache Groovy</a> is an object oriented and Java syntax compatible programming language built for the JVM platform. This dynamic language has many features which are similar to Python, Ruby, Smalltalk, and Pero. Groovy source code gets compiled into Java Bytecode so it can run on any platform that has JRE is installed. Groovy also performs a lot of tasks behind the scene that makes it more agile and dynamic.<br /><br />Groovy integrates smoothly with any Java class or library, and immediately delivers to your application powerful capabilities, including scripting support, Domain-Specific Language authoring, runtime and compile-time meta-programming and functional programming.",
     content: [
       {
-        name: "Features",
+        name: "Tools And Features",
         intro: "",
         data: [
           {
-            name: "Support for static and dynamic typing",
+            name: "Static And Dynamic Typing",
             description:
               "Statically typed languages are those in which type checking is done at the compiling stage and not during execution. Java is a general purpose statically typed language. Dynamic typing syntaxes such as Groovy are those in which the check is performed during execution. Python is another example. Groovy allows developers to introduce this typing within Java.",
           },
           {
-            name: "Concise, brief, direct syntax",
+            name: "Concise, Brief, Direct Syntax",
             description:
               "This allows developers that use Groovy to develop projects faster and easier.",
           },
           {
-            name: "Relatively short learning curve",
+            name: "Relatively Short Learning Curve",
             description:
               "This is a relatively simple language like Python or Ruby. It is easy for developers to learn.",
           },
           {
-            name: "Support for unit testing",
-            description:
-              "Groovy is a testing-oriented development language. In fact, it is a syntax that provides support for running tests in integrated development environments (IDEs), Ant or Maven, which are all application programming tools in Java.",
-          },
-          {
-            name: "Native support for regular expressions",
+            name: "Support For Regular Expressions",
             description:
               "The Groovy syntax for creating regular expressions is really simple. This programming language has three operators for regular expressions:<br/><ul><li>The operator regex =~.</li><li>The operator match ==~.</li><li>The pattern operator ~String.</li></ul>",
           },
           {
-            name: "Native syntax for lists and associative arrays",
+            name: "Syntax For Lists And Associative Arrays",
             description:
               "In programming, arrays are usually assigned to variables. These variables are often associated to data. Developers sometimes associate that information through various elements of the array through a common thread called index. That way of structuring information with programming is called associative array.",
           },
           {
-            name: "Native support for markup languages like XML and HTML.",
+            name: "Support For Markup Languages",
             description: "",
           },
           {
-            name: "Support for domain specific languages",
+            name: "Support For Domain Languages",
             description:
               "A domain specific language is a programming language or a specification dedicated to solving specific problems, through a specific technique. A general purpose syntax such as Java, C or C++ is the opposite. Somehow it provides general structure to solve global situations.",
+          },
+          {
+            name: "Groovyc",
+            description:
+              "Groovyc is the Groovy compiler command line tool. It allows you to compile Groovy sources into bytecode. It plays the same role as javac in the Java world.",
           },
         ],
       },
       {
-        name: "Tools",
-        intro:
-          "<ul><li><a href='http://groovy-lang.org/groovyc.html'>groovyc - the Groovy compiler</a></li><li><a href='http://groovy-lang.org/groovysh.html'>groovysh - the Groovy repl-like shell</a></li><li><a href='http://groovy-lang.org/groovyconsole.html'>groovyConsole - the Groovy Swing console</a></li><li><a href='http://groovy-lang.org/ides.html'>IDE integration</a></li></ul>",
-        data: [],
+        name: "Frameworks",
+        intro: "",
+        data: [
+          {
+            name: "Grails",
+            description:
+              "Grails is Java and Groovy framework used when developing agile web applications. Grails implements the MVCS (Model, View, and Controller) design pattern.Grails is superb because it allows developers to concentrate more on actual application requirements and spend less time configuring the framework. Grails provide tools for development, and it is built based on tools like: Quarts, Hibernate, Spring, and Gradle for library management.",
+          },
+        ],
+      },
+      {
+        name: "Testing",
+        intro: "",
+        data: [
+          {
+            name: "Spock",
+            description:
+              "Spock is a testing and specification framework for Java and Groovy applications. What makes it stand out from the crowd is its beautiful and highly expressive specification language. Thanks to its JUnit runner, Spock is compatible with most IDEs, build tools, and continuous integration servers.",
+          },
+        ],
       },
       {
         name: "Versions & Governance",
@@ -529,10 +692,10 @@ const techContent = [
     technology: "Gradle",
     docsLink: "https://gradle.org/index.html",
     intro:
-      "<a href='https://gradle.org/index.html'>Gradle</a> is a build automation tool for multi-language software development. It controls the development process in the tasks of compilation and packaging to testing, deployment, and publishing. Supported languages include Java (as well as Kotlin, Groovy, Scala), C/C++, and JavaScript. It also collects statistical data about the usage of software libraries around the globe. <br /> <br />The following are some of its most important advantages & features:",
+      "<a href='https://gradle.org/index.html'>Gradle</a> is a build automation tool for multi-language software development. It controls the development process in the tasks of compilation and packaging to testing, deployment, and publishing. Supported languages include Java (as well as Kotlin, Groovy, Scala), C/C++, and JavaScript. It also collects statistical data about the usage of software libraries around the globe.",
     content: [
       {
-        name: "",
+        name: "Tools And Features",
         intro: "",
         data: [
           {
@@ -564,37 +727,6 @@ const techContent = [
             name: "Insight",
             description:
               "Build scans provide extensive information about a build run that you can use to identify build issues. Scans can also be shared which can be very useful for e.g., if we need help fixing a build issue. ",
-          },
-        ],
-      },
-      {
-        name: "Gradle Core Principles",
-        intro: "",
-        data: [
-          {
-            name: "1. Gradle is a general-purpose build tool",
-            description:
-              "Gradle has been designed to be flexible enough to allow us to build any kind of software. However currently Gradle only supports Maven and Ivy compatible repositories as dependency management options. Gradle makes it easy to build common types of projects e.g., Java libraries by adding conventions and prebuilt functionality through plugins. Custom plugins are supported. ",
-          },
-          {
-            name: "2. The core model is based on tasks",
-            description:
-              "Gradle models its builds as Directed Acyclic Graphs (DAGs) of tasks. This means that a build configures a set of tasks and wires them together - based on their dependencies - to create a DAG. Once the task graph has been created, Gradle determines which tasks need to run in which order and then proceeds to execute them. Figure 1 shows a task graph and Figure 2 shows a build process for a typical Android app module. Almost any build process can be modelled as a graph of tasks, which is one of the reasons why Gradle is so flexible. And that task graph can be defined by both plugins and your own build scripts, with tasks linked together via the task dependency mechanism. Tasks themselves consist of Actions (pieces of work e.g., copy files, compile source etc), Inputs (values, files, and directories that the actions use or operate on) and Outputs (files and directories that the actions modify or generate). In fact, all the above are optional depending on what the task needs to do. Some tasks e.g., standard lifecycle tasks don’t have any actions but just aggregate multiple tasks together and we can choose which task to run.",
-          },
-          {
-            name: "3. Build phases ",
-            description:
-              "Gradle evaluates and executes build scripts in 3 phases which form Gradle’s Build Lifecycle:<br/><strong>Initialization:</strong> Sets up the environment for the build and determine which projects will take part in it.<br/><strong>Configuration:</strong> Constructs and configures the task graph for the build and then determines which tasks need to run and in which order, based on the task the user wants to run. Everything involved in the configuration phase is evaluated on each build run. That is why we should avoid expensive work during the configuration phase.<br/><strong>Execution:</strong> Runs the tasks selected at the end of the configuration phase.",
-          },
-          {
-            name: "4. High extensibility",
-            description:
-              "It’s rarely possible to build your project using only the build logic bundled with Gradle. Most builds have special requirements, so we need to add custom build logic by using Gradle’s several mechanisms:<br/><strong>Custom task types:</strong> When you want the build to do some work that an existing task can’t do, we can write a custom task type. Then we can use the custom task type just like the Gradle-provided ones.<br/><strong>Custom task actions:</strong> We can attach custom build logic that executes before or after a task.<br/><strong>Extra properties on projects and tasks:</strong> These allows us to add our own properties to a project or task that we can then use from your own custom actions or any other build logic.<br/> <strong>Custom conventions:</strong> Conventions are a powerful way to simplify builds so that users can understand and use them more easily. We can write your own plugins that provide conventions.<br/> <strong>A custom model:</strong> Gradle allows introduction of new concepts into a build beyond tasks, files, and dependency configurations. We can see this with most language plugins, which add the concept of source sets to a build. Appropriate modelling can greatly improve a build’s ease of use and efficiency.<br/>",
-          },
-          {
-            name: "5. Build scripts operate against an API ",
-            description:
-              "There is a common misunderstanding that Gradle’s power comes from the fact that its build scripts are code. <strong>This is far from the truth.</strong> It’s the underlying model and API that provide the power. We should avoid putting much - if any - imperative logic in build scripts. Yet there is one area in which it is useful to view a build script as executable code i.e., in understanding how the syntax of the build script maps to Gradle’s API. As Gradle runs on the JVM, build scripts can also use the standard Java API. Groovy build scripts can additionally use the Groovy APIs while Kotlin build scripts can use the Kotlin ones.",
           },
         ],
       },
