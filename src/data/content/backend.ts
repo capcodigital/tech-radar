@@ -618,5 +618,77 @@ const techContent = [
     examples: [],
     reference: [],
   },
+  {
+    technology: "SpringBoot",
+    docsLink: "https://spring.io/projects/spring-boot",
+    intro:
+      "Spring frameworks are general structures that provide dependencies and modules (like Spring MVC) to support the development of Java applications. An extension of Spring is Spring Boot which is an open-source, Java Spring framework that facilitates the development of web applications and microservices via its features:",
+    content: [
+      {
+        name: "",
+        intro:
+          "•	Autoconfiguration •	Opinionated approach o	 pathway to building and configuring applications •	Performing diagnostics o	via health checks and metrics •	Embedded servers o	Having embedded HTTP servers e.g., Tomcat allows for integrated testing of web applications o	 minimise risks during application development o	Externalising configurations via Spring boot allows for developers to develop and work on applications within different environments via external configuration sources e.g., YAML files. ",
+        data: [],
+      },
+      {
+        name: "Prerequisites to Spring Boot",
+        intro: "Minimum required dependencies of Spring Boot to be declared:",
+        data: [
+          {
+            name: "Dependencies",
+            description:
+              "<dependency> <groupId> org.springframework.boot </groupId>  <artifactId> spring-boot-starter-web </artifactId> <version> 2.4.4 </version></dependency>",
+          },
+        ],
+      },
+      {
+        name: "Users of Springboot",
+        intro:
+          "Back-end web developers working on developing and/or optimising production-grade Java web applications ",
+        data: [],
+      },
+      {
+        name: "Benefits of Spring Boot",
+        intro: "",
+        data: [
+          {
+            name: "Dependencies",
+            description:
+              "Requires minimal dependencies to allow for a working spring application",
+          },
+          {
+            name: "Simplicity",
+            description: "Allows for minimal manual writing of complicated XML configurations, annotations, and repetitive code",
+          },
+          {
+            name: "Database connections",
+            description:
+              "Allows for quick connections to different database and queue services like Oracle and MongoDB",
+          },
+          {
+            name: "Accessiblity",
+            description:
+              "Applications can be accessed and managed via the provided admin support",
+          },
+        ],
+      },
+      {
+        name: "Why spring boot is preferred over Spring?",
+        intro:
+          "Unlike Spring, Spring Boot requires only one dependency to get a web application up and running: Generally, Spring frameworks provide capabilities like: event handling, data binding,	validation, built-in security, testing",
+         data: [],
+      },
+      {
+        name: "Useful links to learn Spring Boot",
+        intro:
+          "•	https://docs.spring.io/spring-boot/docs/current/reference/html/features.html •	https://www.baeldung.com/spring-vs-spring-boot • https://www.ibm.com/cloud/learn/java-spring-boot",
+        data: [],
+      },
+        ],
+      },
+    ],
+    examples: [],
+    reference: [],
+  },
 ];
 export default techContent;
