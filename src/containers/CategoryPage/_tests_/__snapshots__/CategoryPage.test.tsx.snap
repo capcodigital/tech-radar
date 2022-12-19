@@ -208,17 +208,6 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
           >
             <a
-              data-test-id="category-item-Istio"
-              href="/technology/devops/istio"
-              style="pointer-events: none;"
-            >
-              Istio
-            </a>
-          </div>
-          <div
-            class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
-          >
-            <a
               data-test-id="category-item-Ansible"
               href="/technology/devops/ansible"
               style="pointer-events: none;"
@@ -236,6 +225,26 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             >
               Packer
             </a>
+          </div>
+          <div
+            class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
+          >
+            <a
+              data-test-id="category-item-Docker"
+              href="/technology/devops/docker"
+            >
+              Docker
+            </a>
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+              />
+            </svg>
           </div>
         </div>
       </div>
@@ -682,17 +691,6 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
         >
           <a
-            data-test-id="category-item-Istio"
-            href="/technology/devops/istio"
-            style="pointer-events: none;"
-          >
-            Istio
-          </a>
-        </div>
-        <div
-          class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
-        >
-          <a
             data-test-id="category-item-Ansible"
             href="/technology/devops/ansible"
             style="pointer-events: none;"
@@ -710,6 +708,26 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           >
             Packer
           </a>
+        </div>
+        <div
+          class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
+        >
+          <a
+            data-test-id="category-item-Docker"
+            href="/technology/devops/docker"
+          >
+            Docker
+          </a>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+            />
+          </svg>
         </div>
       </div>
       <div
@@ -1192,9 +1210,9 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
         </g>
         <g>
           <g
-            aria-label="Istio"
+            aria-label="Ansible"
             class=""
-            title="Istio"
+            title="Ansible"
           >
             <circle
               cx="-188.79939457947086"
@@ -1204,31 +1222,10 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             />
             <image
               height="33.941125496954285"
-              href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/istio_square.png"
+              href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/ansible_square.png"
               width="33.941125496954285"
               x="-205.769957327948"
               y="-101.02946898414254"
-            />
-          </g>
-        </g>
-        <g>
-          <g
-            aria-label="Ansible"
-            class=""
-            title="Ansible"
-          >
-            <circle
-              cx="-153.58326393199482"
-              cy="-138.28699198083072"
-              fill="white"
-              r="24"
-            />
-            <image
-              height="33.941125496954285"
-              href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/ansible_square.png"
-              width="33.941125496954285"
-              x="-170.55382668047196"
-              y="-155.25755472930786"
             />
           </g>
         </g>
@@ -1239,6 +1236,27 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             title="Packer"
           >
             <circle
+              cx="-153.58326393199482"
+              cy="-138.28699198083072"
+              fill="white"
+              r="24"
+            />
+            <image
+              height="33.941125496954285"
+              href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/packer_square.png"
+              width="33.941125496954285"
+              x="-170.55382668047196"
+              y="-155.25755472930786"
+            />
+          </g>
+        </g>
+        <g>
+          <g
+            aria-label="Docker"
+            class=""
+            title="Docker"
+          >
+            <circle
               cx="-103.33333333333343"
               cy="-178.97858344878398"
               fill="white"
@@ -1246,7 +1264,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             />
             <image
               height="33.941125496954285"
-              href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/packer_square.png"
+              href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/docker_square.png"
               width="33.941125496954285"
               x="-120.30389608181056"
               y="-195.94914619726111"
