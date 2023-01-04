@@ -190,7 +190,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Cucumber",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/cucumber_square.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "Appium",
