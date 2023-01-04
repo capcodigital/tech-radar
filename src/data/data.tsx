@@ -227,7 +227,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "JMeter",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/jmeter_square.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "Axe",

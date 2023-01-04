@@ -257,10 +257,69 @@ const techContent = [
   {
     technology: "JMeter",
     docsLink: "https://jmeter.apache.org/usermanual/index.html",
-    intro: "Content coming soon.",
-    content: [],
+    intro:
+      "The Apache JMeter&trade; application is open source software, a 100% pure Java application designed to load test functional behavior and measure performance. You can use JMeter to analyze and measure the performance of web application or a variety of services. Performance Testing means testing a web application against heavy load, multiple and concurrent user traffic. JMeter originally is used for testing Web Application. Nowadays, it is expanded to other test functions like functional test, database server test.",
+    content: [
+      {
+        name: "",
+        intro: "",
+        data: [
+          {
+            name: "Advantages of JMeter",
+            description:
+              "<ul><li>Open source license -  JMeter is totally free, allows developer use the source code for the development</li><li>Friendly GUI -  JMeter is extremely easy to use and doesn't take time to get familiar with it</li><li>Platform independent -  JMeter is 100% pure Java desktop application. So it can run on multiple platforms</li><li>Full multithreading framework. JMeter allows concurrent and simultaneous sampling of different functions by a separate thread group</li><li>Visualize Test Result -  Test result can be displayed in a different format such as chart, table, tree and log file</li><li>Easy installation -  You just copy and run the *.bat file to run JMeter. No installation needed.</li><li>Highly Extensible -  You can write your own tests. JMeter also supports visualization plugins allow you to extend your testing</li><li>Multiple testing strategy -  JMeter supports many testing strategies such as Load Testing, Distributed Testing, and Functional Testing.</li><li>Simulation -  JMeter can simulate multiple users with concurrent threads, create a heavy load against web application under test</li><li>Support multi-protocol -  JMeter does not only support web application testing but also evaluate database server performance. All basic protocols such as HTTP, JDBC, LDAP, SOAP, JMS, and FTP are supported by JMeter</li><li>Record & Playback - Record the user activity on the browser and simulate them in a web application using JMeter</li><li>Script Test -  Jmeter can be integrated with Bean Shell & Selenium for automated testing.</li></ul>",
+          },
+        ],
+      },
+      {
+        name: "Components",
+        intro: "",
+        data: [
+          {
+            name: "Thread Groups",
+            description:
+              "A Thread Group defines a pool of users that will execute a particular test case against your server. In the Thread Group GUI, you can control the number of users simulated (number of threads), the ramp up time (how long it takes to start all the threads), the number of times to perform the test, and optionally, a start and stop time for the test.",
+          },
+          {
+            name: "Samplers",
+            description:
+              "Samplers perform the actual work of JMeter. Each sampler (except Flow Control Action) generates one or more sample results. The sample results have various attributes (success/fail, elapsed time, data size etc.) and can be viewed in the various listeners.",
+          },
+          {
+            name: "Timers",
+            description:
+              "When users click on your website or app, they naturally have pauses and delays. These can be simulated with different kinds of Timer, including Constant Timer, Gaussian Random Timer, Uniform Random Timer, Constant Throughput Timer, Precise Throughput Timer, Synchronizing Timer, BeanShell Timer, JSR223 Timer and Poisson Random Timer.",
+          },
+          {
+            name: "Listeners",
+            description:
+              'Most of the listeners perform several roles in addition to "listening" to the test results. They also provide means to view, save, and read saved test results.<br/><br/>The saving and reading of test results is generic. The various listeners have a panel whereby one can specify the file to which the results will be written (or read from). By default, the results are stored as XML files. Storing as CSV is the most efficient option, but is less detailed than XML (the other available option).',
+          },
+          {
+            name: "Logic Controllers",
+            description:
+              "Logic Controllers determine the order in which Samplers are processed.",
+          },
+          {
+            name: "Assertions",
+            description:
+              "Assertions are used to perform additional checks on samplers, and are processed after every sampler in the same scope. To ensure that an Assertion is applied only to a particular sampler, add it as a child of the sampler. Assertions can be applied to either the main sample, the sub-samples or both. The default is to apply the assertion to the main sample only. ",
+          },
+          {
+            name: "Pre Processors",
+            description:
+              "Preprocessors are used to modify the Samplers in their scope.",
+          },
+          {
+            name: "Post-Processors",
+            description:
+              "As the name suggests, Post-Processors are applied after samplers. Note that they are applied to all the samplers in the same scope, so to ensure that a post-processor is applied only to a particular sampler, add it as a child of the sampler. Post-Processors are run before Assertions, so they do not have access to any Assertion Results, nor will the sample status reflect the results of any Assertions. If you require access to Assertion Results, try using a Listener instead.",
+          },
+        ],
+      },
+    ],
     examples: [],
-    reference: [],
+    reference: ["https://jmeter.apache.org/"],
   },
   {
     technology: "Axe",
