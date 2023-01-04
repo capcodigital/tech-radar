@@ -6,6 +6,9 @@ import postmanTesting from "../../images/technologies/postman_testing.png";
 import gatlingExample1 from "../../images/technologies/gatling_example1.png";
 import gatlingExample2 from "../../images/technologies/gatling_example2.png";
 import gatlingExample3 from "../../images/technologies/gatling_example3.png";
+import cucumberSteps from "../../images/technologies/cucumberSteps.png";
+import cucumberSchema from "../../images/technologies/cucumberSchema.png";
+import stepDef from "../../images/technologies/stepDef.png";
 
 const techContent = [
   {
@@ -201,10 +204,33 @@ const techContent = [
   {
     technology: "Cucumber",
     docsLink: "https://cucumber.io/docs/cucumber/",
-    intro: "Content coming soon.",
-    content: [],
+    intro:
+      "Cucumber is an open-source tool written in Ruby language and developed to support Behaviour-Driven Development (BDD) software development process.",
+    content: [
+      {
+        name: "Benefits of using Cucumber",
+        intro:
+          "One of the main benefits of using Cucumber and Gherkin is that it allows non-technical stakeholders to understand and participate in the development process. This is because Gherkin is a simple, natural language that is easy to read and write. <br/><br/>Another benefit is that Cucumber can be used to automate acceptance tests. This means that you can use Cucumber to specify the behaviour of your system in plain language, and then use those specifications to test the system automatically. This can save time and effort, as you don’t have to manually test the system every time you make a change.<br/><br/>Cucumber is also available for most mainstream programming languages.",
+        data: [],
+      },
+      {
+        name: "Gherkin",
+        intro: `Gherkin is a language used to define tests in Cucumber. It makes plain text structured so Cucumber to understand it. Some benefits of Gherkin:<br/><br>•	Clear executable specification<br/><br/>•	Automated testing using Cucumber<br/><br/>•	Document how the system behaves  <br/><br/><img width='50%' src='${cucumberSchema}'/>`,
+        data: [],
+      },
+      {
+        name: "Cucumber Steps",
+        intro: `Cucumber enables running automated acceptance tests, written in plain language. By reading executable specifications written in Gherkin Syntax, it validates that the software delivers the expected results as defined. Sample Cucumber step can be seen as below. <br/><br/><img width='100%' src='${cucumberSteps}'/>`,
+        data: [],
+      },
+      {
+        name: "Step Definitions",
+        intro: `Step Definitions are the link between the programming code and Gherkin Steps. They execute the relevant action defined in the Step. So, step definitions hard-wire the specification to the implementation. Below is an example of step definition written in Java Script. <br/><br/><img width='100%' src='${stepDef}'/>`,
+        data: [],
+      },
+    ],
     examples: [],
-    reference: [],
+    reference: ["https://cucumber.io/docs/cucumber/"],
   },
   {
     technology: "Appium",
