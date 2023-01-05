@@ -21,7 +21,14 @@ const ClientProjects = [
     clientImage: "CL3",
     description:
       "Driven by market disruption and a shift in customer expectations, Capco helped NatWest to design and launch a new SME bank in just six months. We worked with FinTech partners to build a greenfield, cloud-based tech stack and set up customer operations ready to launch and scale. The solution is built fully cloud-native on AWS, using Kafka for event-driven architecture, Spring Boot microservices, and a React Native mobile app.",
-    technologies: ["React", "Spring Boot", "Docker", "Kubernetes", "AWS"],
+    technologies: [
+      "React",
+      "Spring Boot",
+      "Docker",
+      "Kubernetes",
+      "AWS",
+      "Kafka",
+    ],
   },
   {
     project: "Global Payments Platform",
