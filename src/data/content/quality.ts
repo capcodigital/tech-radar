@@ -9,7 +9,7 @@ import gatlingExample3 from "../../images/technologies/gatling_example3.png";
 import cucumberSteps from "../../images/technologies/cucumberSteps.png";
 import cucumberSchema from "../../images/technologies/cucumberSchema.png";
 import stepDef from "../../images/technologies/stepDef.png";
-import restAssuredSample from "../../images/technologies/rest-assured-sample.png.png";
+import restAssuredSample from "../../images/technologies/rest-assured-sample.png";
 
 const techContent = [
   {
