@@ -1,4 +1,8 @@
 import AzureMap from "../../images/Azuremap.png";
+import splunkWorking from "../../images/technologies/splunk_working.png";
+import splunkArchitecture from "../../images/technologies/splunk_architecture.png";
+import splunkUsage from "../../images/technologies/splunk_usages.png";
+
 const techContent = [
   {
     technology: "Kubernetes",
@@ -153,6 +157,216 @@ const techContent = [
     ],
     examples: [],
     reference: ["https://docs.cloudfoundry.org/"],
+  },
+  {
+    technology: "Splunk",
+    docsLink: "https://docs.splunk.com/Documentation/SplunkCloud",
+    intro:
+      "Splunk is a software platform to search, analyse and visualize the machine-generated data gathered from the websites, applications, sensors, devices etc. which make up your IT infrastructure and business. <br><br> Splunk Cloud Platform delivers the benefits of award-winning Splunk® Enterprise as a cloud-based service. Using Splunk Cloud Platform, you gain the functionality of Splunk Enterprise for collecting, searching, monitoring, reporting, and analysing all your real-time and historical machine data using a cloud service that is centrally and uniformly delivered by Splunk to its large number of cloud customers, from Fortune 100 companies to small and medium-size businesses. Splunk manages and updates the Splunk Cloud Platform service uniformly, so all customers of Splunk Cloud Platform receive the most current features and functionality. <br><br> If you have a machine which is generating data continuously and you want to analyse the machine state in real time, then you do it with the help of Splunk. The image below will help you relate to how Splunk collects data: ",
+    content: [
+      {
+        name: "",
+        intro: `<img width='100%' src=${splunkWorking} /> `,
+        data: [],
+      },
+      {
+        name: "Splunk Architecture",
+        intro:
+          "The Splunk Architecture comprises three main components. These components are as follows:",
+        data: [
+          {
+            name: "",
+            description: "1. Splunk Forwarder",
+          },
+          {
+            name: "",
+            description: "2. Splunk Indexer",
+          },
+          {
+            name: "",
+            description: "3. Search Head",
+          },
+        ],
+      },
+      {
+        name: "",
+        intro: `<img width='100%' src=${splunkArchitecture} /> `,
+        data: [],
+      },
+      {
+        name: "",
+        intro: "",
+        data: [
+          {
+            name: "1.	Splunk Forwarder",
+            description:
+              "The Splunk Forwarder is used to collate real-time data to enable real-time data analysis by the users. The Splunk Forwarder collects all the log’s data and sends it to the indexer. In carrying out all these activities, the Splunk Forwarder consumes less processing power than other traditional monitoring tools. There are 2 types of Splunk Forwarders. These are: <br> <ul><li>Splunk Universal Forwarder.</li><li>Splunk Heavy Forwarder.</li></ul>",
+          },
+          {
+            name: "2.	Splunk Indexer",
+            description:
+              "The Splunk Indexer is used for indexing and storing the data that is received from the Splunk Forwarder. It basically transforms data into events, stores, and adds them to an index, which in turn enhances searchability. The data received from the Splunk Forwarder is first parsed to remove any unwanted data and then the indexing is done. In this entire process, the Splunk Indexer creates the following files and later bifurcates them into various directories called buckets: <br> <ul><li>Compressed raw data.</li><li>Indexes pointing to raw data (.TSIDX files).</li><li>Metadata files.</li></ul>",
+          },
+          {
+            name: "3.	Splunk Search Head",
+            description:
+              "It is basically a graphical user interface where the user can perform various operations as per his/her requirements. In this stage, the users can easily interact with Splunk and perform search and query operations on Splunk data. The users can feed in the search keywords and get the result as per their requirement.",
+          },
+        ],
+      },
+      {
+        name: "Splunk Features",
+        intro: "",
+        data: [
+          {
+            name: "1.	Data Ingestion",
+            description:
+              "Splunk can ingest a variety of data formats like JSON, XML and unstructured machine data like web and application logs. The unstructured data can be modelled into a data structure as needed by the user.",
+          },
+          {
+            name: "2.	Data Indexing",
+            description:
+              "The ingested data is indexed by Splunk for faster searching and querying on different conditions.",
+          },
+          {
+            name: "3.	Data Searching",
+            description:
+              "Searching in Splunk involves using the indexed data for the purpose of creating metrics, predicting future trends, and identifying patterns in the data.",
+          },
+          {
+            name: "4.	Using Alerts",
+            description:
+              "Splunk alerts can be used to trigger emails or RSS feeds when some specific criteria are found in the data being analysed.",
+          },
+          {
+            name: "5.	Dashboards",
+            description:
+              "Splunk Dashboards can show the search results in the form of charts, reports, and pivots, etc.",
+          },
+          {
+            name: "6.	Data Model",
+            description:
+              "The indexed data can be modelled into one or more data sets that is based on specialized domain knowledge. This leads to easier navigation by the end users who analyse the business cases without learning the technicalities of the search processing language used by Splunk.",
+          },
+        ],
+      },
+      {
+        name: "",
+        intro: "The benefits with implementing Splunk are:",
+        data: [
+          {
+            name: "",
+            description:
+              "1. Your input data can be in any format for e.g. .csv, or json or other formats. ",
+          },
+          {
+            name: "",
+            description:
+              "2. You can configure Splunk to give Alerts / Events notification at the onset of a machine state",
+          },
+          {
+            name: "",
+            description:
+              "3. You can accurately predict the resources needed for scaling up the infrastructure.",
+          },
+          {
+            name: "",
+            description:
+              "4. You can create knowledge objects for Operational Intelligence.",
+          },
+        ],
+      },
+      {
+        name: "The infographic below mentions some of the functionalities for which Splunk can be used:",
+        intro: `<img width='100%' src=${splunkUsage} /> `,
+        data: [],
+      },
+      {
+        name: "Splunk Use Case Example",
+        intro:
+          "To give you more clarity on how Splunk works, let’s see how Bosch used Splunk for data analytics. They collected the healthcare data from the remotely located patients using IoT devices(sensors). Splunk would process this data and any abnormal activity would be reported to the doctor and patient via the patient interface. Splunk helped them achieve the following:",
+        data: [
+          {
+            name: "",
+            description:
+              "<ul><li>Reporting health conditions in real time.</li><li>Delve deeper into the patient’s health record and analyse patterns.</li><li>Alarms / Alerts to both the doctor and patient when the patient’s health degrades.</li></ul>",
+          },
+        ],
+      },
+    ],
+    examples: [],
+    reference: [
+      "https://intellipaat.com/blog/tutorial/splunk-tutorial/ ",
+      "https://www.guru99.com/splunk-tutorial.html ",
+      "https://www.tutorialspoint.com/splunk/index.htm ",
+      "https://docs.splunk.com/Documentation/SplunkCloud ",
+    ],
+  },
+  {
+    technology: "Anthos",
+    docsLink: "https://cloud.google.com/anthos",
+    intro:
+      "Google’s Anthos promises a single, consistent way of managing Kubernetes workloads across on-prem and public cloud environments. It is the leading cloud-centric container platform to run modern apps anywhere consistently at scale. It promises customers a way to run Kubernetes workloads on-premises, in the Google Cloud, and, crucially, in other major public clouds including Amazon Web Services (AWS) and Microsoft Azure. <br><br> By providing a single platform for the management of all Kubernetes workloads, Google Cloud Anthos allows customers to focus their skills on a single technology, rather than relying on certified experts in a multitude of proprietary cloud technologies. <br><br> Similarly, Anthos provides operational consistency across hybrid and public clouds, with the ability to apply common configurations across infrastructures, as well as custom security policies linked to certain workloads and namespaces, regardless of where those workloads are running. And operators can track cluster telemetry and log information from a single console.",
+    content: [
+      {
+        name: "Benefits of Anthos",
+        intro: "",
+        data: [
+          {
+            name: "1.	Modernize apps and infrastructure in place",
+            description:
+              "Anthos lets you build and deploy modern apps in your data centre, retail edge location, factory, stadium, and more. Modernize apps that need to stay on-premises with a consistent container platform anywhere.",
+          },
+          {
+            name: "2.	Scale large multi-cluster applications",
+            description:
+              "Modernize, create, deploy, and manage global fleets of container clusters with security and operational efficiency. Connect your global fleets with a service mesh for advanced networking and observability.",
+          },
+          {
+            name: "3.	Ensure consistent governance and security",
+            description:
+              "Anthos delivers unified cloud-backed management across your fleet of Kubernetes clusters. Deploy standard configurations, enforce security and compliance policies, and view fleet-wide logs and metrics.",
+          },
+        ],
+      },
+      {
+        name: "Key Features",
+        intro: "",
+        data: [
+          {
+            name: "1.	Enterprise-grade container orchestration and management service",
+            description:
+              "Anthos enables you to manage GKE clusters and workloads running on virtual machines across environments. You get consistent managed Kubernetes experience with simple installs as well as upgrades validated by Google. Anthos can run on your existing virtualized infrastructure and bare metal servers without a hypervisor layer. Anthos simplifies your application stack, reduces the costs associated with licensing a hypervisor, and decreases time spent learning new skills.",
+          },
+          {
+            name: "2.	Automate policy and security at scale",
+            description:
+              "Define, automate, and enforce policies across environments to meet your organization’s unique security and compliance requirements. Anthos Config Management evaluates changes and rolls them out to all Kubernetes clusters so that your desired state is always reflected.",
+          },
+          {
+            name: "3.	Fully managed service mesh with built-in visibility",
+            description:
+              "Anthos Service Mesh unburdens operations and development teams by empowering them to manage and secure traffic between services while monitoring, troubleshooting, and improving application performance.",
+          },
+          {
+            name: "4.	Modernizing your security for hybrid and multi-cloud deployments",
+            description:
+              "Anthos integrates security into each stage of the application life cycle—from develop to build to run—while enabling a defence-in-depth security strategy with a comprehensive portfolio of security controls across all these deployment models.",
+          },
+          {
+            name: "5.	CI/CD Anywhere: Google Cloud, on-premises, or other clouds",
+            description:
+              "Using the Anthos platform, Cloud Build hybrid pools and Cloud Deploy, both in preview, provide the advantages of cloud-native CI/CD across anywhere you can run Kubernetes, including Google Cloud, on-premises, or other public clouds.",
+          },
+        ],
+      },
+    ],
+    examples: [],
+    reference: [
+      "https://cloud.google.com/anthos ",
+      "https://cloud.google.com/anthos/docs/concepts/overview ",
+      "https://k21academy.com/google-cloud/google-cloud-anthos-overview-features-steps-to-setup-cloud-anthos/ ",
+    ],
   },
   {
     technology: "PKS",
