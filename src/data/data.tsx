@@ -200,7 +200,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "REST Assured",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/rest-assured_square.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "BrowserStack",

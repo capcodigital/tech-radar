@@ -9,6 +9,7 @@ import gatlingExample3 from "../../images/technologies/gatling_example3.png";
 import cucumberSteps from "../../images/technologies/cucumberSteps.png";
 import cucumberSchema from "../../images/technologies/cucumberSchema.png";
 import stepDef from "../../images/technologies/stepDef.png";
+import restAssuredSample from "../../images/technologies/rest-assured-sample.png.png";
 
 const techContent = [
   {
@@ -242,11 +243,114 @@ const techContent = [
   },
   {
     technology: "REST Assured",
-    docsLink: "https://rest-assured.io/",
-    intro: "Content coming soon.",
-    content: [],
+    docsLink: "https://github.com/rest-assured/rest-assured/wiki/Usage",
+    intro:
+      "REST Assured is a Java DSL for simplifying testing of REST based services built on top of HTTP Builder. It was designed to simplify the testing and validation of REST APIs and is highly influenced by testing techniques used in dynamic languages such as Ruby and Groovy. The library has solid support for HTTP, starting of course with the verbs and standard HTTP operations, but also going well beyond these basics.",
+    content: [
+      {
+        name: "Why need Rest-Assured?",
+        intro:
+          "Imagine you open your google map view and look for a place you want to go, you immediately see closeby restaurants, you see options for the commute; from some leading travel providers, and see so many options at your fingertips. We all know they are not google products, then how does Google manage to show it. They use the exposed APIs of these providers. Now, if you are asked to test this kind of setup, even before the UI is built or is under development, testing APIs becomes extremely important and testing them repeatedly, with different data combinations makes it a very suitable case for automation.",
+        data: [],
+      },
+      {
+        name: "Syntax",
+        intro: `<img width='100%' src=${restAssuredSample}>`,
+        data: [
+          {
+            name: "Given()",
+            description:
+              "'Given' keyword, lets you set a background, here, you pass the request headers, query and path param, body, cookies. This is optional if these items are not needed in the request",
+          },
+          {
+            name: "When()",
+            description:
+              "'When' keyword marks the premise of your scenario. For example, 'when' you get/post/put something, do something else.",
+          },
+          {
+            name: "Method()",
+            description:
+              "Substitute this with any of the CRUD operations(get/post/put/delete)",
+          },
+          {
+            name: "Then()",
+            description: "Your assert and matcher conditions go here",
+          },
+        ],
+      },
+      {
+        name: "Best Practices",
+        intro: "",
+        data: [
+          {
+            name: "Validate the response for every key",
+            description:
+              "The best practice is to validate the response for every key you get in JSON along with the correct STATUS code. If the entire response is as per the expected data, then everything should be working fine.",
+          },
+          {
+            name: "Write Clean Test Code",
+            description:
+              "The test code written for the API requests should be clean i.e. it should follow the proper coding standards like giving proper variable names, parameter passing, etc.",
+          },
+          {
+            name: "Create Reusable Methods",
+            description:
+              "Create a Request Specification to reuse request configurations (base URL, parameters, content type, debugging logging) that you want to use for all requests.",
+          },
+          {
+            name: "Use POJOs and Object Mapping",
+            description:
+              "90% of the time the data is sent in a form of JSON Object, so the best approach is to follow the concept of POJO classes and then send it to the request body.",
+          },
+          {
+            name: "Use JSONPath for Simple Cases",
+            description:
+              "If you are only interested in a single value of a JSON response, creating a POJO class for mapping is a little bit overkill. In this case, JSONPath can be used to extract certain values out of a JSON document. JSONPath is like XPath for JSON.",
+          },
+        ],
+      },
+      {
+        name: "Advantages of Rest Assured",
+        intro: "",
+        data: [
+          {
+            name: "Easy to use",
+            description:
+              "It supports a Given/When/Then test notation, which instantly makes your test's human-readable.",
+          },
+          {
+            name: "Easy integration with TestNG/Junit",
+            description: "Easy to integrate with JUnit and TestNG frameworks.",
+          },
+          {
+            name: "Code Reusability",
+            description:
+              "As it is a Java client, it supports the ability to reuse the code for a new function.",
+          },
+          {
+            name: "Support Data-Driven framework",
+            description:
+              "It supports the Data-Driven framework for separating the “data set” from the actual “test case” (code). The test data is fed from external sources such as an excel file, JSON file, etc.",
+          },
+          {
+            name: "CI/CD integration",
+            description:
+              "We can easily integrate with other tools like Maven, Jenkins GitHub to provide Continuous Integration and Continuous Deployment functionality.",
+          },
+          {
+            name: "Customize Reports",
+            description:
+              "Can be used with any customized/open-source reporting tool.",
+          },
+        ],
+      },
+    ],
     examples: [],
-    reference: [],
+    reference: [
+      "https://rest-assured.io/",
+      "https://www.guru99.com/rest-assured.html",
+      "https://medium.com/@assaini007/api-testing-using-rest-assured-56d21d8be762",
+    ],
   },
   {
     technology: "BrowserStack",
