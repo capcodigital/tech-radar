@@ -1,4 +1,8 @@
 import AzureMap from "../../images/Azuremap.png";
+import splunkWorking from "../../images/technologies/splunk_working.png";
+import splunkArchitecture from "../../images/technologies/splunk_architecture.png";
+import splunkUsage from "../../images/technologies/splunk_usages.png";
+
 const techContent = [
   {
     technology: "Kubernetes",
@@ -153,6 +157,150 @@ const techContent = [
     ],
     examples: [],
     reference: ["https://docs.cloudfoundry.org/"],
+  },
+  {
+    technology: "Splunk",
+    docsLink: "https://docs.splunk.com/Documentation/SplunkCloud",
+    intro:
+      "Splunk is a software platform to search, analyse and visualize the machine-generated data gathered from the websites, applications, sensors, devices etc. which make up your IT infrastructure and business. <br><br> Splunk Cloud Platform delivers the benefits of award-winning Splunk® Enterprise as a cloud-based service. Using Splunk Cloud Platform, you gain the functionality of Splunk Enterprise for collecting, searching, monitoring, reporting, and analysing all your real-time and historical machine data using a cloud service that is centrally and uniformly delivered by Splunk to its large number of cloud customers, from Fortune 100 companies to small and medium-size businesses. Splunk manages and updates the Splunk Cloud Platform service uniformly, so all customers of Splunk Cloud Platform receive the most current features and functionality. <br><br> If you have a machine which is generating data continuously and you want to analyse the machine state in real time, then you do it with the help of Splunk. The image below will help you relate to how Splunk collects data: ",
+    content: [
+      {
+        name: "",
+        intro: `<img width='100%' src=${splunkWorking} /> `,
+        data: [],
+      },
+      {
+        name: "Splunk Architecture",
+        intro:
+          "The Splunk Architecture comprises three main components. These components are as follows:",
+        data: [
+          {
+            name: "",
+            description: "1. Splunk Forwarder",
+          },
+          {
+            name: "",
+            description: "2. Splunk Indexer",
+          },
+          {
+            name: "",
+            description: "3. Search Head",
+          },
+        ],
+      },
+      {
+        name: "",
+        intro: `<img width='100%' src=${splunkArchitecture} /> `,
+        data: [],
+      },
+      {
+        name: "",
+        intro: "",
+        data: [
+          {
+            name: "1.	Splunk Forwarder",
+            description:
+              "The Splunk Forwarder is used to collate real-time data to enable real-time data analysis by the users. The Splunk Forwarder collects all the log’s data and sends it to the indexer. In carrying out all these activities, the Splunk Forwarder consumes less processing power than other traditional monitoring tools. There are 2 types of Splunk Forwarders. These are: <br> <ul><li>Splunk Universal Forwarder.</li><li>Splunk Heavy Forwarder.</li></ul>",
+          },
+          {
+            name: "2.	Splunk Indexer",
+            description:
+              "The Splunk Indexer is used for indexing and storing the data that is received from the Splunk Forwarder. It basically transforms data into events, stores, and adds them to an index, which in turn enhances searchability. The data received from the Splunk Forwarder is first parsed to remove any unwanted data and then the indexing is done. In this entire process, the Splunk Indexer creates the following files and later bifurcates them into various directories called buckets: <br> <ul><li>Compressed raw data.</li><li>Indexes pointing to raw data (.TSIDX files).</li><li>Metadata files.</li></ul>",
+          },
+          {
+            name: "3.	Splunk Search Head",
+            description:
+              "It is basically a graphical user interface where the user can perform various operations as per his/her requirements. In this stage, the users can easily interact with Splunk and perform search and query operations on Splunk data. The users can feed in the search keywords and get the result as per their requirement.",
+          },
+        ],
+      },
+      {
+        name: "Splunk Features",
+        intro: "",
+        data: [
+          {
+            name: "1.	Data Ingestion",
+            description:
+              "Splunk can ingest a variety of data formats like JSON, XML and unstructured machine data like web and application logs. The unstructured data can be modelled into a data structure as needed by the user.",
+          },
+          {
+            name: "2.	Data Indexing",
+            description:
+              "The ingested data is indexed by Splunk for faster searching and querying on different conditions.",
+          },
+          {
+            name: "3.	Data Searching",
+            description:
+              "Searching in Splunk involves using the indexed data for the purpose of creating metrics, predicting future trends, and identifying patterns in the data.",
+          },
+          {
+            name: "4.	Using Alerts",
+            description:
+              "Splunk alerts can be used to trigger emails or RSS feeds when some specific criteria are found in the data being analysed.",
+          },
+          {
+            name: "5.	Dashboards",
+            description:
+              "Splunk Dashboards can show the search results in the form of charts, reports, and pivots, etc.",
+          },
+          {
+            name: "6.	Data Model",
+            description:
+              "The indexed data can be modelled into one or more data sets that is based on specialized domain knowledge. This leads to easier navigation by the end users who analyse the business cases without learning the technicalities of the search processing language used by Splunk.",
+          },
+        ],
+      },
+      {
+        name: "",
+        intro: "The benefits with implementing Splunk are:",
+        data: [
+          {
+            name: "",
+            description:
+              "1. Your input data can be in any format for e.g. .csv, or json or other formats. ",
+          },
+          {
+            name: "",
+            description:
+              "2. You can configure Splunk to give Alerts / Events notification at the onset of a machine state",
+          },
+          {
+            name: "",
+            description:
+              "3. You can accurately predict the resources needed for scaling up the infrastructure.",
+          },
+          {
+            name: "",
+            description:
+              "4. You can create knowledge objects for Operational Intelligence.",
+          },
+        ],
+      },
+      {
+        name: "The infographic below mentions some of the functionalities for which Splunk can be used:",
+        intro: `<img width='100%' src=${splunkUsage} /> `,
+        data: [],
+      },
+      {
+        name: "Splunk Use Case Example",
+        intro:
+          "To give you more clarity on how Splunk works, let’s see how Bosch used Splunk for data analytics. They collected the healthcare data from the remotely located patients using IoT devices(sensors). Splunk would process this data and any abnormal activity would be reported to the doctor and patient via the patient interface. Splunk helped them achieve the following:",
+        data: [
+          {
+            name: "",
+            description:
+              "<ul><li>Reporting health conditions in real time.</li><li>Delve deeper into the patient’s health record and analyse patterns.</li><li>Alarms / Alerts to both the doctor and patient when the patient’s health degrades.</li></ul>",
+          },
+        ],
+      },
+    ],
+    examples: [],
+    reference: [
+      "https://intellipaat.com/blog/tutorial/splunk-tutorial/ ",
+      "https://www.guru99.com/splunk-tutorial.html ",
+      "https://www.tutorialspoint.com/splunk/index.htm ",
+      "https://docs.splunk.com/Documentation/SplunkCloud ",
+    ],
   },
   {
     technology: "PKS",

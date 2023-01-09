@@ -310,6 +310,11 @@ export const data: Array<{ name: string; data: techType }> = [
           link: "https://avatars.githubusercontent.com/u/5497370?s=200&v=4",
           enabled: true,
         },
+        {
+          name: "Splunk",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/splunk_square.png",
+          enabled: true,
+        },
       ],
       scaling: [
         {
@@ -703,6 +708,10 @@ export const icons: Array<{ name: string; link: string }> = [
     link: "https://avatars.githubusercontent.com/u/5497370?s=200&v=4",
   },
   {
+    name: "Splunk",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/splunk_square.png",
+  },
+  {
     name: "PKS",
     link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/pks_square.png",
   },
@@ -923,6 +932,7 @@ export const technologies = [
       "Serverless",
       "OpenShift",
       "PCF",
+      "Splunk",
       "PKS",
       "Apache Hadoop",
       "Grafana",
@@ -1036,6 +1046,7 @@ export const technologyList = [
   "Serverless",
   "OpenShift",
   "PCF",
+  "Splunk",
   "PKS",
   "GCP",
   "AWS",
