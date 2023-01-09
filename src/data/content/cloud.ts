@@ -303,6 +303,72 @@ const techContent = [
     ],
   },
   {
+    technology: "Anthos",
+    docsLink: "https://cloud.google.com/anthos",
+    intro:
+      "Google’s Anthos promises a single, consistent way of managing Kubernetes workloads across on-prem and public cloud environments. It is the leading cloud-centric container platform to run modern apps anywhere consistently at scale. It promises customers a way to run Kubernetes workloads on-premises, in the Google Cloud, and, crucially, in other major public clouds including Amazon Web Services (AWS) and Microsoft Azure. <br><br> By providing a single platform for the management of all Kubernetes workloads, Google Cloud Anthos allows customers to focus their skills on a single technology, rather than relying on certified experts in a multitude of proprietary cloud technologies. <br><br> Similarly, Anthos provides operational consistency across hybrid and public clouds, with the ability to apply common configurations across infrastructures, as well as custom security policies linked to certain workloads and namespaces, regardless of where those workloads are running. And operators can track cluster telemetry and log information from a single console.",
+    content: [
+      {
+        name: "Benefits of Anthos",
+        intro: "",
+        data: [
+          {
+            name: "1.	Modernize apps and infrastructure in place",
+            description:
+              "Anthos lets you build and deploy modern apps in your data centre, retail edge location, factory, stadium, and more. Modernize apps that need to stay on-premises with a consistent container platform anywhere.",
+          },
+          {
+            name: "2.	Scale large multi-cluster applications",
+            description:
+              "Modernize, create, deploy, and manage global fleets of container clusters with security and operational efficiency. Connect your global fleets with a service mesh for advanced networking and observability.",
+          },
+          {
+            name: "3.	Ensure consistent governance and security",
+            description:
+              "Anthos delivers unified cloud-backed management across your fleet of Kubernetes clusters. Deploy standard configurations, enforce security and compliance policies, and view fleet-wide logs and metrics.",
+          },
+        ],
+      },
+      {
+        name: "Key Features",
+        intro: "",
+        data: [
+          {
+            name: "1.	Enterprise-grade container orchestration and management service",
+            description:
+              "Anthos enables you to manage GKE clusters and workloads running on virtual machines across environments. You get consistent managed Kubernetes experience with simple installs as well as upgrades validated by Google. Anthos can run on your existing virtualized infrastructure and bare metal servers without a hypervisor layer. Anthos simplifies your application stack, reduces the costs associated with licensing a hypervisor, and decreases time spent learning new skills.",
+          },
+          {
+            name: "2.	Automate policy and security at scale",
+            description:
+              "Define, automate, and enforce policies across environments to meet your organization’s unique security and compliance requirements. Anthos Config Management evaluates changes and rolls them out to all Kubernetes clusters so that your desired state is always reflected.",
+          },
+          {
+            name: "3.	Fully managed service mesh with built-in visibility",
+            description:
+              "Anthos Service Mesh unburdens operations and development teams by empowering them to manage and secure traffic between services while monitoring, troubleshooting, and improving application performance.",
+          },
+          {
+            name: "4.	Modernizing your security for hybrid and multi-cloud deployments",
+            description:
+              "Anthos integrates security into each stage of the application life cycle—from develop to build to run—while enabling a defence-in-depth security strategy with a comprehensive portfolio of security controls across all these deployment models.",
+          },
+          {
+            name: "5.	CI/CD Anywhere: Google Cloud, on-premises, or other clouds",
+            description:
+              "Using the Anthos platform, Cloud Build hybrid pools and Cloud Deploy, both in preview, provide the advantages of cloud-native CI/CD across anywhere you can run Kubernetes, including Google Cloud, on-premises, or other public clouds.",
+          },
+        ],
+      },
+    ],
+    examples: [],
+    reference: [
+      "https://cloud.google.com/anthos ",
+      "https://cloud.google.com/anthos/docs/concepts/overview ",
+      "https://k21academy.com/google-cloud/google-cloud-anthos-overview-features-steps-to-setup-cloud-anthos/ ",
+    ],
+  },
+  {
     technology: "PKS",
     docsLink: "https://docs.pivotal.io/pks/1-4/index.html",
     intro:
