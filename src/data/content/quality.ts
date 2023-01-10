@@ -371,10 +371,42 @@ const techContent = [
   {
     technology: "Wiremock",
     docsLink: "http://wiremock.org/docs/",
-    intro: "Content coming soon.",
-    content: [],
+    intro:
+      "WireMock is an HTTP mock server. At its core it is web server that can be primed to serve canned responses to particular requests (stubbing) and that captures incoming requests so that they can be checked later (verification).<br/><br/>It also has an assortment of other useful features including record/playback of interactions with other APIs, injection of faults and delays, simulation of stateful behaviour.<br/><br/>It can be used as a library by any JVM application, or run as a standalone process either on the same host as the system under test or a remote server.<br/><br/>All of WireMock's features are accessible via its REST (JSON) interface and its Java API. Additionally, stubs can be configured via JSON files.",
+    content: [
+      {
+        name: "Why Should We Use WireMock?",
+        intro:
+          "WireMock has -lista rich matching system, allowing any part of an incoming request to be matched against complex and precise criteria. Responses of any complexity can be dynamically generated via the Handlebars based templating system. Finally, WireMock is easy to integrate into any workflow due to its numerous extension points and comprehensive APIs.",
+        data: [],
+      },
+      {
+        name: "When Should We Use WireMock?",
+        intro: "There are three situations when we should use WireMock:",
+        data: [
+          {
+            name: "Implement a feature which uses an HTTP API that is not ready",
+            description:
+              "This is a quite common situation if we are doing greenfield development and we have to integrate our application with other systems (either internal or external) which aren't written by us. Also, if we are using the microservices architecture, the odds are that we will run into similar situations.",
+          },
+          {
+            name: "Write unit tests for classes which use HTTP APIs",
+            description:
+              "If we are writing unit tests for a class called A which uses another class called B that uses an HTTP API, the first thing that might come to our mind is to replace the B with a mock object when we are writing unit tests for the A class.<br/><br/>This is a good choice if the API client (B class) is provided by someone else because we can assume that the author of the client has ensured that it is working correctly. However, if the API client is written by us, using a mock object isn't a good choice because it doesn't allow us to verify that our code can communicate with the HTTP API.",
+          },
+          {
+            name: "Write integration, API, or end-to-end tests for features which use external HTTP APIs",
+            description:
+              "When we write these kinds of tests, we don't want to invoke external HTTP APIs because if our tests invoke an external HTTP API:<ul><li>Our tests depend from the external HTTP API. Naturally, this means that our tests will fail if the external HTTP API is down. Also, it's very common that the external HTTP API doesn't allow us to initialize it into a known state before our tests are run. That's why we cannot write tests which use the data returned by the external HTTP API because we cannot know what kind of data will be returned.</li><li>Our tests are slower than they could be. The thing is that waiting a response from an external HTTP API takes a lot longer than getting the same response from WireMock. To make matters worse, we cannot use a short timeout because otherwise our tests could fail only because the timeout was too short and it was exceeded.</li><li>We cannot run our tests if we don't have a network connection. This is problem because there are places where we don't necessarily have a good network connection (like a train). Also, some APIs block requests which don't come from a \"known\" IP address. This means that having a working network connection might not good enough. We have to also be connected to the correct network.</li></ul>",
+          },
+        ],
+      },
+    ],
     examples: [],
-    reference: [],
+    reference: [
+      "http://wiremock.org/",
+      "https://www.petrikainulainen.net/programming/testing/wiremock-tutorial-introduction",
+    ],
   },
   {
     technology: "Applitools",

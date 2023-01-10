@@ -217,7 +217,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Wiremock",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/wiremock_square.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "Applitools",
