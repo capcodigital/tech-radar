@@ -195,7 +195,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Appium",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/appium_square.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "REST Assured",
