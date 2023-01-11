@@ -205,7 +205,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "BrowserStack",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/browserstack_square.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "Sauce Labs",

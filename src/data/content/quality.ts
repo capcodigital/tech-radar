@@ -355,8 +355,28 @@ const techContent = [
   {
     technology: "BrowserStack",
     docsLink: "https://www.browserstack.com/docs/",
-    intro: "Content coming soon.",
-    content: [],
+    intro:
+      "BrowserStack is a testing platform that provides instant access to 2,000+ real mobile devices and browsers on a highly reliable cloud infrastructure.  Using this tool, developers and testers can do the cross-browser testing of various web and mobile applications in different web browsers. It is the world's leading software testing platform powering over two million tests every day across 15 global data centers. It can scale as testing needs grow.",
+    content: [
+      {
+        name: "What Is Cross Browser Testing?",
+        intro:
+          "Cross-browser testing is functional testing. We perform this testing to check if the application is working as expected or not in different web browsers for the different operating systems. Here, we can run the test cases manually or by doing automation by specifying the various browsers in the automation scripts.",
+        data: [],
+      },
+      {
+        name: "Why BrowserStack?",
+        intro:
+          "In real-time, it is difficult to test an application in different browsers using multiple operating systems, with varying versions. It will cost a lot to buy many computer machines to install different operating systems. It is even more difficult to buy all the android and iOS mobile devices that are available in the market today. Due to this reason, it is not practical to buy and set up all the devices. Thus, we go with the BrowserStack to avoid the complexity of switching between the operating systems, browsers, and different versions.<br/><br/>When it comes to mobile application testing, we can avoid buying all the mobile devices that are available today. Browser Stack is very flexible and scalable. We can test anywhere and anytime with the help of Browser Stack.<br/><br/>We can use Browser Stack as a remote lab and can use this as Real Desktop Browsers. It gives us free Javascript unit tests and supports 750 configurations. There is no set up required for using Browser Stack. We can use it directly on any independent machine by using the Browser Stack URL and its login credentials.",
+        data: [],
+      },
+      {
+        name: "Advantages Of BrowserStack Testing",
+        intro:
+          "<ol><li>We can test all the major browsers from a single control point.</li><li>We can test the compatibility of the backward/older version of the browsers.</li><li>It supports both Manual and Automation testing.</li><li>We can test all the devices and browsers that are currently available in the market.</li><li>We can test the application in different resolutions.</li></ol>",
+        data: [],
+      },
+    ],
     examples: [],
     reference: [],
   },
