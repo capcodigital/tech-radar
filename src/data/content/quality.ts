@@ -10,6 +10,7 @@ import cucumberSteps from "../../images/technologies/cucumberSteps.png";
 import cucumberSchema from "../../images/technologies/cucumberSchema.png";
 import stepDef from "../../images/technologies/stepDef.png";
 import restAssuredSample from "../../images/technologies/rest-assured-sample.png";
+import appiumServerSample from "../../images/technologies/appium-server.png";
 
 const techContent = [
   {
@@ -235,11 +236,60 @@ const techContent = [
   },
   {
     technology: "Appium",
-    docsLink: "https://appium.io/docs/en/about-appium/api/",
-    intro: "Content coming soon.",
-    content: [],
+    docsLink: "https://appium.io/docs/en/about-appium/getting-started/",
+    intro:
+      'Appium is an open-source tool for automating native, mobile web, and hybrid applications on iOS mobile, Android mobile, and Windows desktop platforms. Native apps are those written using the iOS, Android, or Windows SDKs. Mobile web apps are web apps accessed using a mobile browser (Appium supports Safari on iOS and Chrome or the built-in \'Browser\' app on Android). Hybrid apps have a wrapper around a "webview" -- a native control that enables interaction with web content. Projects like Apache Cordova make it easy to build apps using web technologies that are then bundled into a native wrapper, creating a hybrid app.<br /><br /> Importantly, Appium is "cross-platform": it allows you to write tests against multiple platforms (iOS, Android, Windows), using the same API. This enables code reuse between iOS, Android, and Windows testsuites.',
+    content: [
+      {
+        name: "Appium Philosophy",
+        intro:
+          "Appium was designed to meet mobile automation needs according to a philosophy outlined by the following four tenets: <br /><ol><li>You shouldn't have to recompile your app or modify it in any way in order to automate it.</li><li>You shouldn't be locked into a specific language or framework to write and run your tests.</li><li>A mobile automation framework shouldn't reinvent the wheel when it comes to automation APIs.</li><li>A mobile automation framework should be open source, in spirit and practice as well as in name!</li></ol>",
+        data: [],
+      },
+      {
+        name: "Concepts",
+        intro: "",
+        data: [
+          {
+            name: "Client/Server Architecture",
+            description:
+              "Appium is at its heart a webserver that exposes a REST API. It receives connections from a client, listens for commands, executes those commands on a mobile device, and responds with an HTTP response representing the result of the command execution. The fact that we have a client/server architecture opens up a lot of possibilities: we can write our test code in any language that has a http client API, but it is easier to use one of the Appium client libraries. We can put the server on a different machine than our tests are running on. We can write test code and rely on cloud services to receive and interpret the commands.",
+          },
+          {
+            name: "Session",
+            description:
+              "Automation is always performed in the context of a session. Clients initiate a session with a server in ways specific to each library, but they all end up sending a POST /session request to the server, with a JSON object called the 'desired capabilities' object. At this point the server will start up the automation session and respond with a session ID which is used for sending further commands.",
+          },
+          {
+            name: "Desired Capabilities",
+            description:
+              "Desired capabilities are a set of keys and values (i.e., a map or hash) sent to the Appium server to tell the server what kind of automation session we're interested in starting up. There are also various capabilities which can modify the behavior of the server during automation. For example, we might set the platformName capability to iOS to tell Appium that we want an iOS session, rather than an Android or Windows one. Or we might set the safariAllowPopups capability to true in order to ensure that, during a Safari automation session, we're allowed to use JavaScript to open up new windows.",
+          },
+          {
+            name: "Appium Server",
+            description: `Appium is a server written in Node.js. It can be built and installed from source or installed directly from NPM: <br /><img src=${appiumServerSample} width='100%' />`,
+          },
+          {
+            name: "Appium Clients",
+            description:
+              "There are client libraries (in Java, Ruby, Python, PHP, JavaScript, and C#) which support Appium's extensions to the WebDriver protocol. When using Appium, you want to use these client libraries instead of your regular WebDriver client.",
+          },
+          {
+            name: "Appium Desktop",
+            description:
+              "There is a GUI wrapper around the Appium server that can be downloaded for any platform. It comes bundled with everything required to run the Appium server, so you don't need to worry about Node. It also comes with an Inspector, which enables you to check out the hierarchy of your app. This can come in handy when writing tests.",
+          },
+        ],
+      },
+      {
+        name: "Advantages of using Appium",
+        intro:
+          "<ol><li>Using the same API, Appium will allow you to write tests that are against mobile platforms.</li><li>By using any kind of test frame work or language you can write and run the tests.</li><li>Appium is an open source platform so you can contribute to it easily.</li><li>For the hybrid mobile applications and Native, Appium provides cross platform.</li><li>Appium supports JSON wire protocol.</li><li>Appium do not require recompilation of App.</li><li>Appium also supports automation test on the physical devices and also for simulator or emulator both.</li><li>Appium does not have any dependency on mobile devices.</li></ol>",
+        data: [],
+      },
+    ],
     examples: [],
-    reference: [],
+    reference: ["https://appium.io/"],
   },
   {
     technology: "REST Assured",
