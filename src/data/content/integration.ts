@@ -30,11 +30,6 @@ const techContent = [
       "Kafka is an event streaming platform, which allows for capturing data in real-time from event sources like databases, sensors, mobile devices, cloud services, and software applications in the form of streams of events. <br/><br/> Events are used to process payments and financial transactions in real-time, such as in stock exchanges, banks, and insurances. Kafka is storing these event streams durably for later retrieval, manipulation, processing, and reacting to the event streams in real-time as well as retrospectively a distributed system consisting of servers and clients that communicate via a high-performance TCP network protocol.",
     content: [
       {
-        name: "",
-        intro: "",
-        data: [],
-      },
-      {
         name: "Event Streaming Concepts",
         intro: "",
         data: [
