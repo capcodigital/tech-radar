@@ -117,11 +117,6 @@ export const data: Array<{ name: string; data: techType }> = [
           enabled: true,
         },
         {
-          name: "Apache Hadoop",
-          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/hadoop.png",
-          enabled: true,
-        },
-        {
           name: "Apache Hive",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/hive_highres.png",
           enabled: true,
@@ -285,7 +280,7 @@ export const data: Array<{ name: string; data: techType }> = [
         },
         {
           name: "Apache Hadoop",
-          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/hadoop.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/hadoop.png",
           enabled: true,
         },
         {
@@ -865,7 +860,7 @@ export const icons: Array<{ name: string; link: string }> = [
   },
   {
     name: "Apache Hadoop",
-    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/hadoop",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/hadoop.png",
   },
 ];
 
@@ -907,7 +902,6 @@ export const technologies = [
       "Snowflake",
       "Liquibase",
       "Apache Spark",
-      "Apache Hadoop",
       "Apache Hive",
     ],
   },
