@@ -84,6 +84,14 @@ const ClientProjects = [
       "Capco performed a holistic assessment of the client’s current mobile applications, architectures, development standards and implementation.  Our team set new standards, implemented coding design principles, deployed a new DevOps pipeline, implemented automation testing and restructured and refactored the current applications, reducing development time/cost which significantly increased customer app ratings.",
     technologies: ["Swift", "Kotlin", "HockeyApp", "Jenkins", "Fastlane"],
   },
+  {
+    project: "Transaction Banking",
+    clientName: "Global Tier 1 Bank",
+    clientImage: "CL10",
+    description:
+      "Capco uses Apache Hadoop echosystem as part of Cloudera distribution to run their processes in their on premises environment mainly focussed on ETL, ELT batch scenarios. They also use Apache Spark and Apache Hive as two main components of their framework but also use particulary other Apache Hadoop components like Oozie, HBase, all integrated with Kerberos security.",
+    technologies: ["Apache Hadoop", "Apache Spark", "Apache Hive"],
+  },
 ];
 
 export default ClientProjects;
