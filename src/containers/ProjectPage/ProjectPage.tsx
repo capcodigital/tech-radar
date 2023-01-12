@@ -100,7 +100,7 @@ const ProjectPage = () => {
   useEffect(() => {
     let url = window.location.pathname.split("/");
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    fetchClientProjects(url[3]);
+    fetchClientProjects(url[3].replace(/-/g, " "));
     fetchOssProject(url[3]);
   }, []);
 
