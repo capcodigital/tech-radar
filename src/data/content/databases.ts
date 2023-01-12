@@ -450,47 +450,6 @@ const techContent = [
     reference: ["https://spark.apache.org/"],
   },
   {
-    technology: "Apache Hadoop",
-    docsLink: "https://hadoop.apache.org/",
-    intro:
-      "The Apache™ Hadoop® project develops open-source software for reliable, scalable, distributed computing. The Apache Hadoop software library is a framework that allows for the distributed processing of large data sets across clusters of computers using simple programming models. It is designed to scale up from single servers to thousands of machines, each offering local computation and storage. Rather than rely on hardware to deliver high-availability, the library itself is designed to detect and handle failures at the application layer, so delivering a highly-available service on top of a cluster of computers, each of which may be prone to failures.",
-    content: [
-      {
-        name: "",
-        intro:
-          "The most widely-used engine for scalable computing platform used by thousands of companies, including 80% of the Fortune 500",
-
-        data: [],
-      },
-      {
-        name: "Batch/streaming data",
-        intro:
-          "Unify the processing of your data in batches and real-time streaming, using your preferred language: Python, SQL, Scala, Java or R.",
-        data: [],
-      },
-      {
-        name: "SQL analytics",
-        intro:
-          "Execute fast, distributed ANSI SQL queries for dashboarding and ad-hoc reporting. Runs faster than most data warehouses.",
-        data: [],
-      },
-      {
-        name: "Data science & Machine learning",
-        intro:
-          "Train machine learning algorithms on a laptop and use the same code to scale to fault-tolerant clusters of thousands of machines.",
-        data: [],
-      },
-      {
-        name: "Ubiquitous",
-        intro:
-          "Available on all cloud platforms and able to interact with many soorces of data Spark is a powerful framework ",
-        data: [],
-      },
-    ],
-    examples: [],
-    reference: ["https://hadoop.apache.org/"],
-  },
-  {
     technology: "Apache Hive",
     docsLink: "https://hive.apache.org/",
     intro:
@@ -523,23 +482,6 @@ const techContent = [
     ],
     examples: [],
     reference: ["https://www.liquibase.org/"],
-  },
-  {
-    technology: "Apache Hive",
-    docsLink: "https://hive.apache.org/",
-    intro:
-      "Apache Hive is a data warehouse software project built on top of Apache Hadoop for providing data query and analysis. Hive gives an SQL-like interface to query data stored in various databases and file systems that integrate with Hadoop",
-    content: [
-      {
-        name: "",
-        intro:
-          "Different storage types such as plain text, RCFile, HBase, ORC, and others. Metadata storage in a relational database management system, significantly reducing the time to perform semantic checks during query execution. Operating on compressed data stored into the Hadoop ecosystem using algorithms including DEFLATE, BWT, snappy, etc. Built-in user-defined functions (UDFs) to manipulate dates, strings, and other data-mining tools. Hive supports extending the UDF set to handle use-cases not supported by built-in functions. SQL-like queries (HiveQL), which are implicitly converted into MapReduce or Tez, or Spark jobs.",
-
-        data: [],
-      },
-    ],
-    examples: [],
-    reference: ["https://hive.apache.org/"],
   },
 ];
 
