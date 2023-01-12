@@ -352,7 +352,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Kafka",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/integration/kafka_square.png",
-          enabled: false,
+          enabled: true,
         },
       ],
       skilled: [
