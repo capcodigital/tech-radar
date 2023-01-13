@@ -217,7 +217,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Applitools",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/quality/applitools_square.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "JMeter",
