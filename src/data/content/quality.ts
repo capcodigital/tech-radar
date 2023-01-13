@@ -970,7 +970,7 @@ const techContent = [
       {
         name: "When to use Pact?",
         intro:
-          "Pact is most valuable for designing and testing integrations where: <br /><br /><ul><li>You (or your team/organisation/partner organisation) control the development of both the consumer and the provider.</li><li>The consumer and provider are both under active development.</li><li>The provider team can easily control the data returned in the provider's responses.</li><li>The requirements of the consumer(s) are going to be used to drive the features of the provider.</li><li>There is a small enough number of consumers for a given provider that the provider team can manage an individual relationship with each consumer team.</li></ul><br />",
+          "Pact is most valuable for designing and testing integrations where: <br /><br /><ul><li>You (or your team/organisation/partner organisation) control the development of both the consumer and the provider.</li><li>The consumer and provider are both under active development.</li><li>The provider team can easily control the data returned in the provider's responses.</li><li>The requirements of the consumer(s) are going to be used to drive the features of the provider.</li><li>There is a small enough number of consumers for a given provider that the provider team can manage an individual relationship with each consumer team.</li></ul>",
         data: [],
       },
       {
