@@ -76,8 +76,9 @@ const ProjectPage = () => {
    */
   const fetchClientProjects = (techName: string) => {
     let results: Project[] = [];
+    let splitTechName: string = techName.toLowerCase().replace(/-/g, " ");
     let iconResult = icons.filter(
-      (icon: any) => icon.name.toLowerCase() === techName
+      (icon: any) => icon.name.toLowerCase() === splitTechName
     )[0];
     let ref = iconResult ? iconResult.link : "";
     setIconRef(ref);
@@ -88,7 +89,7 @@ const ProjectPage = () => {
         )
       : ClientProjects.filter(({ technologies }) =>
           technologies.some((element) => {
-            return element.toLowerCase() === techName.toLowerCase();
+            return element.toLowerCase() === splitTechName;
           })
         );
 
