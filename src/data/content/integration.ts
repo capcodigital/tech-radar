@@ -1,3 +1,5 @@
+import camelArchitecture from "../../images/technologies/camel-architecture.png";
+
 const techContent = [
   {
     technology: "Rest",
@@ -9,11 +11,69 @@ const techContent = [
   },
   {
     technology: "Camel",
-    docsLink: "https://reactnative.dev/docs/getting-started",
-    intro: "Content coming soon.",
-    content: [],
+    docsLink: "https://camel.apache.org/docs/",
+    intro:
+      "Apache Camel&trade; is a versatile open-source integration framework based on known Enterprise Integration Patterns. Camel empowers you to define routing and mediation rules in a variety of domain-specific languages (DSL, such as Java, XML, Groovy, Kotlin, and YAML). This means you get smart completion of routing rules in your IDE, whether in a Java or XML editor. <br /><br />Apache Camel uses URIs to work directly with any kind of transport or messaging model such as HTTP, ActiveMQ, JMS, JBI, SCA, MINA or CXF, as well as pluggable Components and Data Format options. Apache Camel is a small library with minimal dependencies for easy embedding in any Java application. Apache Camel lets you work with the same API regardless which kind of transport is used — so learn the API once and you can interact with all the Components provided out-of-box.",
+    content: [
+      {
+        name: "Architecture",
+        intro: `<img src=${camelArchitecture} width="100%" /><br />At the center of the diagram you have the heart of Apache Camel; the CamelContext. The CamelContext is "Camel" …​ the runtime Camel, that contains and holds everything together. Routes are defined using one of Camel's DSLs. Processors are used to transform and manipulate messages during routing as well as to implement all the EIPs, which have corresponding names in the DSLs. Components are the extension points in Camel for adding connectivity to other systems. To expose these systems to the rest of Camel, components provide an endpoint interface.`,
+        data: [
+          {
+            name: "Context",
+            description:
+              "Camel provides a runtime engine, called the Camel Context, which runs your integrations. It's kind of like a mini-application server, embedded inside your Java application. The Camel Context runs your integrations and is generally responsible for moving data through the system.",
+          },
+          {
+            name: "Routes",
+            description:
+              "In Camel, a route is a set of processing steps that are applied to a message as it travels from a source to a destination. A route typically consists of a series of processing steps that are connected in a linear sequence. <br /><br />A Camel route is where the integration flow is defined. For example, you can write a Camel route to specify how two systems can be integrated. You can also specify how the data can be manipulated, routed, or mediated between the systems. <br /><br />The routes are typically defined using a simple, declarative syntax that is easy to read and understand.",
+          },
+          {
+            name: "Endpoints",
+            description:
+              "An Endpoint is an interface through which Camel exchanges a message with another system. Camel can receive a message from an Endpoint, or send a message to an Endpoint. It supports the Message Endpoint pattern using the Endpoint interface.",
+          },
+          {
+            name: "Components",
+            description:
+              "To allow Camel to create an Endpoint, it uses a Component. A Component is simply a specialized plug that allows you to connect to an external system, such as a file on disk, a mailbox, or an application like Dropbox or Twitter.",
+          },
+        ],
+      },
+      {
+        name: "When to use Camel",
+        intro:
+          "There are a few major drivers when you would want to use Apache Camel:",
+        data: [
+          {
+            name: "Integrating applications together",
+            description:
+              "Camel is intended for situations where you need to move data between different protocols and applications (like files, emails, APIs or web apps). <br /><br />You can use Apache Camel when you want to move data between any one of the apps and protocols supported by its 200+ components. Components in Camel generally all work in a similar way. So, once you understand how to use one component, you will find it easier to use others. Camel includes components for many different apps, from Facebook and Twitter, to Salesforce and Workday. You can also write your own custom component.",
+          },
+          {
+            name: "Pattern-based development",
+            description:
+              "Many frequent requirements for integration - like support for transactions, or transformation - would usually be complicated to plan and write in code. But Camel provides many of these, and can often be enabled with just the flick of a switch (OK, by just changing a variable!). Camel provides patterns and functionality for things like: <br /><ul><li>routing data based on its content, using Camel's content-based routing</li><li>handling errors, transactions and rollbacks</li><li>transforming data</li><li>caching frequently-accessed data</li><li>encryption and authentication</li></ul>These are examples of just some of the things that Camel can do. <br /><br />These requirements are made easier in Camel, because it provides these features as a set of patterns, called enterprise integration patterns (after the book of the same name). You can pull any of these enterprise integration patterns “off the shelf”, and use them in your code, without having to write your own solution every time you need these capabilities.",
+          },
+          {
+            name: "One high-level style for many integrations",
+            description:
+              "Once you've learned the basic patterns, and how to work with Camel components, you'll find that it becomes easy to churn out many integrations in Camel. <br /><br />This is an advantage of Camel: the ability to create many integrations fairly quickly. Camel is ideal if you are developing a set of integrations, and you would like them all to developed in a similar way. This can be really attractive option in larger companies where it helps to pick one approach which is shared and understood by the development team.",
+          },
+          {
+            name: "Working with data, and especially Java objects",
+            description:
+              "As it's a Java framework, it's especially good at working with Java objects. So if you're working with a file format that can be de-serialised into a Java object (many file formats can be converted into Java objects, like XML, JSON….) then it will be handled easily by Camel.",
+          },
+        ],
+      },
+    ],
     examples: [],
-    reference: [],
+    reference: [
+      "https://camel.apache.org/",
+      "https://tomd.xyz/camel-when-to-use/",
+    ],
   },
   {
     technology: "gRPC",
