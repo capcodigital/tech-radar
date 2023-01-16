@@ -366,6 +366,11 @@ export const data: Array<{ name: string; data: techType }> = [
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/integration/ibm-mq_square.png",
           enabled: false,
         },
+        {
+          name: "OpenAPI",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/integration/openapi_square.png",
+          enabled: true,
+        },
       ],
       scaling: [
         {
@@ -764,6 +769,10 @@ export const icons: Array<{ name: string; link: string }> = [
     link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/integration/ibm-mq_square.png",
   },
   {
+    name: "OpenAPI",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/integration/openapi_square.png",
+  },
+  {
     name: "GraphQL",
     link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/integration/graphql_square.png",
   },
@@ -952,6 +961,7 @@ export const technologies = [
       "ActiveMQ",
       "IBM MQ",
       "GraphQL",
+      "OpenAPI",
     ],
   },
   {
@@ -1064,6 +1074,7 @@ export const technologyList = [
   "Kafka",
   "ActiveMQ",
   "IBM MQ",
+  "OpenAPI",
   "GraphQL",
   "Java",
   "Scala",
