@@ -340,10 +340,6 @@ const techContent = [
             description:
               "After a machine image is built, that machine image can be quickly launched and smoke tested to verify that things appear to be working. If they are, you can be confident that any other machines launched from that image will function properly.",
           },
-          {
-            name: "",
-            description: "",
-          },
         ],
       },
       {
@@ -374,10 +370,78 @@ const techContent = [
   {
     technology: "Twistlock",
     docsLink: "https://docs.twistlock.com/docs/",
-    intro: "Content coming soon.",
-    content: [],
+    intro:
+      "TwistLock is a container security platform designed to provide DevOps teams with the tools they need to protect their containerized applications. TwistLock provides a suite of security tools including vulnerability scanning, runtime protection, and compliance monitoring. The platform also offers integration with popular CI/CD systems, allowing teams to automate security into their DevOps pipelines.",
+    content: [
+      {
+        name: "Twistlock Capabilities",
+        intro: "",
+        data: [
+          {
+            name: "Vulnerability scanning",
+            description:
+              "Identifies potential risks and weaknesses in your container environment.",
+          },
+          {
+            name: "Runtime protection",
+            description:
+              "Monitors and enforces security policies in real time to protect against malicious activities.",
+          },
+          {
+            name: "Compliance and auditing",
+            description:
+              "Ensures compliance with applicable industry standards and regulations.",
+          },
+          {
+            name: "Secure DevOps automation",
+            description:
+              "Automates security processes and reduces the risk of human error.",
+          },
+          {
+            name: "Advanced analytics and machine learning-powered threat detection",
+            description: "Quickly detect and respond to threats.",
+          },
+          {
+            name: "Container management and monitoring",
+            description:
+              "Monitors and manages containerized applications and workloads.",
+          },
+        ],
+      },
+      {
+        name: "Twistlock Advantages",
+        intro: "",
+        data: [
+          {
+            name: "Automated Security",
+            description:
+              "Twistlock automates the process of security and regulatory compliance, with real-time vulnerability scanning for container images and cloud native workloads.",
+          },
+          {
+            name: "Comprehensive Visibility",
+            description:
+              "Twistlock provides end-to-end visibility and control across the cloud native stack.",
+          },
+          {
+            name: "Cloud Native Protection",
+            description:
+              "Twistlock provides robust protection across the entire cloud native stack, including containers, serverless functions, and Kubernetes.",
+          },
+          {
+            name: "Simplified Compliance",
+            description:
+              "Twistlock simplifies compliance and governance with built-in compliance checks and automated policy enforcement.",
+          },
+          {
+            name: "Automated Incident Response",
+            description:
+              "Twistlock provides automated response and investigation tools to help identify and mitigate potential security incidents quickly and accurately.",
+          },
+        ],
+      },
+    ],
     examples: [],
-    reference: [],
+    reference: ["https://docs.twistlock.com/docs/"],
   },
   {
     technology: "Kiali",

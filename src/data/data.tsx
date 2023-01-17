@@ -87,7 +87,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Twistlock",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/twistlock_square.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "Kiali",
