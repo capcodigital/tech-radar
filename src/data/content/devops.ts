@@ -262,11 +262,42 @@ const techContent = [
   },
   {
     technology: "Consul",
-    docsLink: "https://www.consul.io/docs",
-    intro: "Content coming soon.",
-    content: [],
+    docsLink: "https://developer.hashicorp.com/consul",
+    intro:
+      "Consul is a service networking solution that enables organisations and teams to manage secure network connectivity between services and across multi-cloud environments and runtimes. The features that Consul offers are  autoamted service discovery, enabling zero trust netork security, identity-based authorization, L7 traffic management, and service-to-service encryption.",
+    content: [
+      {
+        name: "Consul Features and Architecture",
+        intro: "",
+        data: [
+          {
+            name: "Service Discovery",
+            description:
+              "Consul utilises a service registry and allows automated service discovery via DNS and HTTP, Consul will help teams to track the health statuses of services in real time.",
+          },
+          {
+            name: "Network security",
+            description:
+              "Consul ensure that all service to service communications are authorized and encrypted using mutual Transport Layer Security (TLS). ",
+          },
+          {
+            name: "Platforms",
+            description:
+              "Consul can integarte with platforms such as Nomad, Vautl, AWS ECS and AWS Lambda",
+          },
+          {
+            name: "Access Control",
+            description:
+              "Users of Consul are able to configure Access Control Lists (ACLS) to authenitcate requests and authorize access to resoources, using roles, policies and identity to provide inter services security.",
+          },
+        ],
+      },
+    ],
     examples: [],
-    reference: [],
+    reference: [
+      "https://www.consul.io/",
+      "https://www.hashicorp.com/products/consul",
+    ],
   },
   {
     technology: "Docker",
