@@ -62,7 +62,7 @@ const techContent = [
       {
         name: "",
         intro:
-          "There are many more features that can be found in the PostgreSQL documentation.  <br/><br/>PostgreSQL has also been proven to be highly scalable in both, the sheer quantity of data it can manage and the number of concurrent users it can accommodate. There are active PostgreSQL clusters in production environments that manage many terabytes of data, and specialized systems that manage petabytes. ",
+          "There are many more features that can be found in the PostgreSQL documentation.<br/><br/>PostgreSQL has also been proven to be highly scalable in both, the sheer quantity of data it can manage and the number of concurrent users it can accommodate. There are active PostgreSQL clusters in production environments that manage many terabytes of data, and specialized systems that manage petabytes. ",
         data: [],
       },
     ],
@@ -72,10 +72,65 @@ const techContent = [
   {
     technology: "Neo4J",
     docsLink: "https://neo4j.com/docs/",
-    intro: "Content coming soon.",
-    content: [],
+    intro:
+      "Neo4j is an open-source graph database management system. It is designed to store and query large amounts of data represented as graphs, with nodes and edges connecting the data. Neo4j uses a query language called Cypher, which is similar to SQL, to retrieve and manipulate data in the database. It is often used in applications such as social networks, recommendation systems, and fraud detection.",
+    content: [
+      {
+        name: "What's Graph Database?",
+        intro:
+          "A graph database is a type of NoSQL database that stores data as a collection of nodes and edges, rather than in tables with rows and columns like a relational database.<br/><br/>Each node represents an entity, such as a person, product, or organization, and each edge represents a relationship between two nodes, such as a friendship, purchase, or follows relationship. Nodes can be labeled and can have properties such as name, location, or weight. Edges can also be labeled and can have properties such as weight or strength.<br/><br/>Graph databases are optimized for querying and traversing relationships, which makes them well-suited for use cases involving complex, highly connected data, such as social network analysis, recommendation systems, and fraud detection. They are also well suited for knowledge graphs, network and IT operations, and location-based services.",
+        data: [],
+      },
+      {
+        name: "Main features of Neo4j",
+        intro:
+          "Neo4j is a highly-scalable, open-source graph database management system that is known for its ability to handle complex, highly-connected data. Some of the main features of Neo4j include:",
+        data: [
+          {
+            name: "Cypher query language",
+            description:
+              "Neo4j uses Cypher, a declarative query language that is similar to SQL and is designed to be easy to learn for developers who are familiar with relational databases.",
+          },
+          {
+            name: "Flexible data model",
+            description:
+              "Neo4j allows you to model any kind of relationship using nodes and edges, and it supports both labeled and unlabeled relationships.",
+          },
+          {
+            name: "High performance",
+            description:
+              "Neo4j is optimized for querying and traversing relationships, which makes it well-suited for use cases that involve complex, highly-connected data.",
+          },
+          {
+            name: "Scalability",
+            description:
+              "Neo4j supports horizontal scaling, which allows you to scale your database by adding more machines, and it also supports sharding and replication.",
+          },
+          {
+            name: "ACID transactions",
+            description:
+              "Neo4j supports ACID (Atomicity, Consistency, Isolation, Durability) transactions, which allows you to ensure data consistency in your database.",
+          },
+          {
+            name: "Causal Clustering",
+            description:
+              "Neo4j has a built-in clustering feature that allows multiple machines to work together as a single logical database, providing high availability and scalability.",
+          },
+          {
+            name: "Built-in procedures",
+            description:
+              "Neo4j has a wide range of built-in procedures for common tasks such as data import, export, and graph algorithms.",
+          },
+          {
+            name: "Integration with other technologies",
+            description:
+              "Neo4j can be easily integrated with other technologies such as spark, machine learning libraries and visualization tools to provide a comprehensive solution for data analysis and understanding.",
+          },
+        ],
+      },
+    ],
     examples: [],
-    reference: [],
+    reference: ["https://neo4j.com/"],
   },
   {
     technology: "MongoDB",

@@ -129,7 +129,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Neo4J",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/neo4j_square.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "MongoDB",
