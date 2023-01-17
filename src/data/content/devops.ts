@@ -231,10 +231,69 @@ const techContent = [
   {
     technology: "Packer",
     docsLink: "https://www.packer.io/docs",
-    intro: "Content coming soon.",
-    content: [],
+    intro:
+      "Packer lets you create identical machine images for multiple platforms from a single source configuration. A common use case is creating golden images for organizations to use in cloud infrastructure.",
+    content: [
+      {
+        name: "",
+        intro:
+          "A machine image is a single static unit that contains a pre-configured operating system and installed software which is used to quickly create new running machines. Machine image formats change for each platform. Some examples include AMIs for EC2, VMDK/VMX files for VMware, OVF exports for VirtualBox, etc.",
+        data: [],
+      },
+      {
+        name: "Packer Advantages",
+        intro: "",
+        data: [
+          {
+            name: "Super fast infrastructure deployment",
+            description:
+              "Packer images allow you to launch completely provisioned and configured machines in seconds, rather than several minutes or hours. This benefits not only production, but development as well, since development virtual machines can also be launched in seconds, without waiting for a typically much longer provisioning time.",
+          },
+          {
+            name: "Multi-provider portability",
+            description:
+              "Because Packer creates identical images for multiple platforms, you can run production in AWS, staging/QA in a private cloud like OpenStack, and development in desktop virtualization solutions such as VMware or VirtualBox. Each environment is running an identical machine image, giving ultimate portability.",
+          },
+          {
+            name: "Improved stability",
+            description:
+              "Packer installs and configures all the software for a machine at the time the image is built. If there are bugs in these scripts, they'll be caught early, rather than several minutes after a machine is launched.",
+          },
+          {
+            name: "Greater testability",
+            description:
+              "After a machine image is built, that machine image can be quickly launched and smoke tested to verify that things appear to be working. If they are, you can be confident that any other machines launched from that image will function properly.",
+          },
+          {
+            name: "",
+            description: "",
+          },
+        ],
+      },
+      {
+        name: "Packer Use Cases",
+        intro: "",
+        data: [
+          {
+            name: "Continuous Delivery",
+            description:
+              "Packer is lightweight, portable, and command-line driven. This makes it the perfect tool to put in the middle of your continuous delivery pipeline. Packer can be used to generate new machine images for multiple platforms on every change to Chef/Puppet. As part of this pipeline, the newly created images can then be launched and tested, verifying the infrastructure changes work. If the tests pass, you can be confident that the image will work when deployed. This brings a new level of stability and testability to infrastructure changes.",
+          },
+          {
+            name: "Dev/Prod Parity",
+            description:
+              "Packer helps keep development, staging, and production as similar as possible. Packer can be used to generate images for multiple platforms at the same time. So if you use AWS for production and VMware (perhaps with Vagrant) for development, you can generate both an AMI and a VMware machine using Packer at the same time from the same template.",
+          },
+          {
+            name: "Appliance/Demo Creation",
+            description:
+              "Since Packer creates consistent images for multiple platforms in parallel, it is perfect for creating appliances and disposable product demos. As your software changes, you can automatically create appliances with the software pre-installed. Potential users can then get started with your software by deploying it to the environment of their choice.",
+          },
+        ],
+      },
+    ],
     examples: [],
-    reference: [],
+    reference: ["https://developer.hashicorp.com/packer/docs"],
   },
   {
     technology: "Twistlock",
