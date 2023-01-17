@@ -1,5 +1,7 @@
 import camelArchitecture from "../../images/technologies/camel-architecture.png";
 import grpcArchitecture from "../../images/technologies/grpc-architecture.png";
+import activemqArchitecture from "../../images/technologies/activemq_architecture.png";
+import activemqQueuesTopics from "../../images/technologies/queues-topics.png";
 
 const techContent = [
   {
@@ -176,11 +178,212 @@ const techContent = [
   },
   {
     technology: "ActiveMQ",
-    docsLink: "https://reactnative.dev/docs/getting-started",
-    intro: "Content coming soon.",
-    content: [],
+    docsLink: "https://activemq.apache.org/components/classic/documentation",
+    intro:
+      "ActiveMQ is an open source, message-oriented middleware (MOM) written in Java that is used to handle asynchronous communication between applications. It is specifically designed to handle the transmission of data between distributed applications in a secure and reliable manner. ActiveMQ is a popular choice for enterprise messaging due to its flexibility, scalability, and reliability. It is often used in combination with other MOMs such as RabbitMQ and Apache Kafka. <br><br> ActiveMQ provides several features such as message queuing, publish and subscribe messaging, clustering, and security. It also supports a variety of different protocols, including JMS, AMQP, STOMP, MQTT, and WebSocket. Additionally, it provides a wide range of plugins for integration with other applications and services.",
+    content: [
+      {
+        name: "Features of ActiveMQ",
+        intro: "",
+        data: [
+          {
+            name: "",
+            description: "1. Highly available and scalable",
+          },
+          {
+            name: "",
+            description:
+              "2. Supports a wide range of enterprise messaging protocols",
+          },
+          {
+            name: "",
+            description:
+              "3. Supports Queues, Topics, Virtual Topics, and Durable Subscriptions",
+          },
+          {
+            name: "",
+            description: "4. Flexible routing and message filtering",
+          },
+          {
+            name: "",
+            description: "5. Clustering and distributed destinations",
+          },
+          {
+            name: "",
+            description: "6. Message groups and message prioritization",
+          },
+          {
+            name: "",
+            description: "7. Configurable persistence and message storage",
+          },
+          {
+            name: "",
+            description: "8. Comprehensive security model",
+          },
+          {
+            name: "",
+            description: "9. Ability to integrate with other JMS providers",
+          },
+          {
+            name: "",
+            description: "10. Comprehensive monitoring and management tools",
+          },
+        ],
+      },
+      {
+        name: "Benefits of ActiveMQ",
+        intro: "",
+        data: [
+          {
+            name: "1. High Availability",
+            description:
+              "Apache ActiveMQ is designed for high availability and can be replicated across multiple nodes for better scalability.",
+          },
+          {
+            name: "2.	Reliable Messaging",
+            description:
+              "ActiveMQ supports JMS 1.1 and J2EE 1.4 and guarantees delivery of messages using features such as message store and persistent messaging.",
+          },
+          {
+            name: "3.	Flexible Deployment Models",
+            description:
+              "ActiveMQ can be deployed as both an embedded broker or a client/server type of broker.",
+          },
+          {
+            name: "4.	Security",
+            description:
+              "ActiveMQ supports a wide range of security policies, including authentication and authorization.",
+          },
+          {
+            name: "5.	Flexible Connectivity",
+            description:
+              "ActiveMQ supports a wide range of APIs and protocols like AMQP, STOMP, and MQTT, making it easy to integrate with other applications.",
+          },
+          {
+            name: "6.	Performance",
+            description:
+              "ActiveMQ supports asynchronous messaging and uses a distributed queuing system with high throughput.",
+          },
+          {
+            name: "7.	Easy to Manage",
+            description:
+              "ActiveMQ provides a rich monitoring and management console, which makes it easy to manage and monitor the message broker.",
+          },
+        ],
+      },
+      {
+        name: "ActiveMQ Architecture Overview",
+        intro:
+          "ActiveMQ's anatomy consists of data patterns called messages, queues, and topics. <br><br> Messages are just what they sound like, payloads of data that can be shipped between various systems. These payloads can have headers and properties associated with them that can:",
+        data: [
+          {
+            name: "",
+            description: "<ul><li>Categorize them</li></ul>",
+          },
+          {
+            name: "",
+            description:
+              "<ul><li>Control various portions of their routing</li></ul>",
+          },
+          {
+            name: "",
+            description:
+              "<ul><li>Facilitate moving the payloads around a connected network of applications</li></ul>",
+          },
+        ],
+      },
+      {
+        name: "",
+        intro: "Here's a basic JMS structure, such as ActiveMQ:",
+        data: [],
+      },
+      {
+        name: "",
+        intro: `<img width='100%' src=${activemqArchitecture} /> `,
+        data: [],
+      },
+      {
+        name: "How ActiveMQ Messages Work?",
+        intro:
+          "Once messages make their way into the system, they are arranged into two patterns (two types): <em>Queues</em> and <em>Topics</em>. ",
+        data: [
+          {
+            name: "Queue based communication (Point to Point)",
+            description:
+              "Queues are FIFO (first-in, first out) pipelines of messages produced and consumed by brokers and clients. Producers create messages and push them onto these queues. Then those messages are polled and collected by consumer applications, one message at a time.",
+          },
+          {
+            name: "Topic based communication (Publish/ Subscribe)",
+            description:
+              "Topics are subscription-based message broadcast channels. When a producing application sends a message, multiple recipients who are ‘subscribed’ to that topic receive a broadcast of the message. This producing application is sometimes called a ‘publisher’ in the context of topic messaging.",
+          },
+        ],
+      },
+      {
+        name: "",
+        intro:
+          "To sum up, the main difference between a <em>queue</em> and a <em>topic</em> is:",
+        data: [
+          {
+            name: "",
+            description:
+              "<ul><li>A <em>topic</em> implements a publish and subscribe workflow.</li></ul>",
+          },
+          {
+            name: "",
+            description:
+              "<ul><li>A <em>queue</em> implements a load balancing workflow.</li></ul>",
+          },
+        ],
+      },
+      {
+        name: "",
+        intro: `<img width='100%' src=${activemqQueuesTopics} /> `,
+        data: [],
+      },
+      {
+        name: "ActiveMQ use cases",
+        intro: "",
+        data: [
+          {
+            name: "1. Messaging",
+            description:
+              "ActiveMQ is used to build reliable messaging solutions in various domains, such as financial services, e-commerce, healthcare, and more.",
+          },
+          {
+            name: "2.	Event-Driven Architecture",
+            description:
+              "ActiveMQ is used to asynchronously send and receive messages in an event-driven architecture.",
+          },
+          {
+            name: "3.	Mobile Messaging",
+            description:
+              "ActiveMQ is used to provide mobile messaging services across multiple mobile platforms.",
+          },
+          {
+            name: "4.	Business Process Management",
+            description:
+              "ActiveMQ is used to integrate business processes and to facilitate communication between different systems.",
+          },
+          {
+            name: "5.	IoT",
+            description:
+              "ActiveMQ is used to provide data-driven messaging for Internet of Things (IoT) applications.",
+          },
+          {
+            name: "6.	Cloud Integration",
+            description:
+              "ActiveMQ is used to provide secure, reliable, and scalable messaging solutions for cloud-based applications.",
+          },
+        ],
+      },
+    ],
     examples: [],
-    reference: [],
+    reference: [
+      "https://activemq.apache.org/components/classic/documentation",
+      "https://www.openlogic.com/blog/what-apache-activemq",
+      "https://www.tutorialspoint.com/apache_activemq/index.htm",
+    ],
   },
   {
     technology: "IBM MQ",
