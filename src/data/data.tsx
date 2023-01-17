@@ -97,12 +97,12 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "ConcourseCl",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/concourse_square.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "Consul",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/consul_square.png",
-          enabled: true,
+          enabled: false,
         },
       ],
     },

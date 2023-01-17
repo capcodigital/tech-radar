@@ -1,3 +1,5 @@
+import concourse from "../../images/technologies/concourseci.png";
+
 const techContent = [
   {
     technology: "GitHub",
@@ -314,10 +316,46 @@ const techContent = [
   {
     technology: "ConcourseCl",
     docsLink: "https://concourse-ci.org/docs.html",
-    intro: "Content coming soon.",
-    content: [],
+    intro:
+      "Concourse is an open-source continuous CI/CD platform built on self contained pipelines,  Concourse is a free open source project which is written in Go and can scale to any kind of pipeline",
+    content: [
+      {
+        name: "Concourse CI Components",
+        intro: `<img width='100%' src=${concourse} /> `,
+        data: [
+          {
+            name: "Database and web node",
+            description:
+              "Concourse CI used Postgres as its state store and a web node service which  provides the user interface, Here users can quickly view pipelines, progress and erros",
+          },
+          {
+            name: "Worker Nodes",
+            description:
+              "The key feature of Concourse CI is that Worker nodes are compleletly ephemeral, they run tasks defined in the pipeline and then are deleted, task such as cloning GIT repos, downloading container images and running tests. The benefit of this is clean testing",
+          },
+          {
+            name: "Tasks",
+            description:
+              "Tasks are the smallest unit of execution in a Concourse CI pipeline, for example running a script or single command",
+          },
+          {
+            name: "Jobs",
+            description:
+              "Jobs are a grouping of tasks and enable the composition of large pipelines with lots of tasks",
+          },
+          {
+            name: "Resources",
+            description:
+              "Jobs and tasks perform actions on resources such as Git repositories, Docker.",
+          },
+        ],
+      },
+    ],
     examples: [],
-    reference: [],
+    reference: [
+      "https://concourse-ci.org/",
+      "https://ci.concourse-ci.org/teams/main/pipelines/concourse",
+    ],
   },
   {
     technology: "Consul",
@@ -327,7 +365,7 @@ const techContent = [
     content: [
       {
         name: "Consul Features and Architecture",
-        intro: "",
+        intro: "intro: `<img width='100%' src=${concoursepipe} /> `,",
         data: [
           {
             name: "Service Discovery",
