@@ -1,4 +1,5 @@
 import camelArchitecture from "../../images/technologies/camel-architecture.png";
+import grpcArchitecture from "../../images/technologies/grpc-architecture.png";
 
 const techContent = [
   {
@@ -77,11 +78,24 @@ const techContent = [
   },
   {
     technology: "gRPC",
-    docsLink: "https://reactnative.dev/docs/getting-started",
-    intro: "Content coming soon.",
-    content: [],
+    docsLink: "https://grpc.io/docs/",
+    intro:
+      "gRPC is a high-performance, open-source framework initially created by Google for building remote procedure call (RPC) APIs. It uses the Protocol Buffers data serialization format and supports a variety of programming languages, including C++, C#, Go, Java, Python, and Ruby. gRPC is designed to work efficiently over a wide variety of network connections, including high-latency, low-bandwidth connections, and can be used to build both internal and external APIs. It also supports bidirectional streaming, flow control, and error handling.",
+    content: [
+      {
+        name: "Why using gRPC?",
+        intro:
+          "There are several advantages to using gRPC: <br /><ol><li>High performance: gRPC is designed for high-performance, with a compact binary format and support for bidirectional streaming. This makes it well-suited for building high-performance, low-latency APIs.</li><li>Language agnostic: gRPC uses Protocol Buffers as the data serialization format, which allows for easy integration with a variety of programming languages, including C++, C#, Go, Java, Python, and Ruby.</li><li>Built-in flow control and error handling: gRPC includes built-in support for flow control and error handling, which helps to improve the reliability and robustness of your APIs.</li><li>Cross-platform: gRPC can run on a variety of platforms, including Linux, Windows, and MacOS, and can be easily integrated with popular web and mobile frameworks.</li><li>Good support and active community: gRPC is developed and maintained by Google, and has an active open-source community that contributes to its development and provides support.</li><li>Mobile support: gRPC has first class support for mobile platforms, making it easy to build scalable and reliable mobile apps.</li><li>Bi-directional streaming: gRPC supports bidirectional streaming, which allows for real-time communication between clients and servers.</li></ol>",
+        data: [],
+      },
+      {
+        name: "Architecture",
+        intro: `The architecture of gRPC can be divided into two main components: the gRPC server and the gRPC client.<br /><img src=${grpcArchitecture} width="100%" /><br /><br /><ol><li>gRPC Server: The gRPC server is responsible for handling incoming requests from clients and processing them according to the service definition. It uses Protocol Buffers to define the service and its associated methods, which are used to map incoming requests to the appropriate handler functions. The gRPC server can be written in any language that supports gRPC, and runs on a variety of platforms.</li><li>gRPC Client: The gRPC client is responsible for making requests to the gRPC server and handling the responses. The client uses the same service definition as the server to construct requests and parse responses. The gRPC client can also be written in any language that supports gRPC.</li></ol>Both the client and server use the gRPC library to handle the underlying details of the communication, such as establishing connections, serializing data, and handling errors. The gRPC library also provides features such as flow control, and bi-directional streaming. <br />In summary, gRPC uses Protocol Buffers for data serialization, and enables communication between server and clients via a high-performance, binary-based protocol. The gRPC library provides the functionality to establish connections, handle errors, and perform flow control and bidirectional streaming.`,
+        data: [],
+      },
+    ],
     examples: [],
-    reference: [],
+    reference: ["https://grpc.io/"],
   },
   {
     technology: "Kafka",

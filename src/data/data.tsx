@@ -347,7 +347,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "gRPC",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/integration/grpc_square.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "Kafka",
