@@ -359,7 +359,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "ActiveMQ",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/integration/activemq_square.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "IBM MQ",
