@@ -184,11 +184,91 @@ const techContent = [
   },
   {
     technology: "IBM MQ",
-    docsLink: "https://reactnative.dev/docs/getting-started",
-    intro: "Content coming soon.",
-    content: [],
+    docsLink: "https://www.ibm.com/docs/en/ibm-mq",
+    intro:
+      "IBM MQ (formerly known as IBM WebSphere MQ) is a messaging middleware platform that enables the integration of applications and systems across different operating systems, platforms, and programming languages. It allows applications to communicate with each other by sending and receiving messages through queues, which can be located on the same machine or on different machines. IBM MQ provides a reliable, secure, and scalable messaging infrastructure for enterprise environments.",
+    content: [
+      {
+        name: "Benefits",
+        intro:
+          "There are several benefits to using IBM MQ for messaging in an enterprise environment:",
+        data: [
+          {
+            name: "Reliability",
+            description:
+              "IBM MQ guarantees that messages are delivered, even if there are temporary errors or failures in the system.",
+          },
+          {
+            name: "Scalability",
+            description:
+              "IBM MQ can handle a large volume of messages and supports distributed architectures, allowing for easy scaling as the number of applications and systems grows.",
+          },
+          {
+            name: "Security",
+            description:
+              "IBM MQ provides a variety of security features, such as encryption, authentication, and authorization, to protect messages and the MQ infrastructure.",
+          },
+          {
+            name: "Integration",
+            description:
+              "IBM MQ can connect a wide range of systems and applications, regardless of their operating system, platform, or programming language.",
+          },
+          {
+            name: "Flexibility",
+            description:
+              "IBM MQ supports a variety of messaging patterns, such as point-to-point and publish-subscribe, allowing it to be used in a wide range of use cases.",
+          },
+          {
+            name: "Monitoring",
+            description:
+              "IBM MQ provides monitoring and management capabilities, which allow IT administrators to keep track of the message flow, detect issues and diagnose problems quickly.",
+          },
+          {
+            name: "Support",
+            description:
+              "IBM MQ is a mature product with a large user base, and IBM provides a lot of resources and support for it.",
+          },
+        ],
+      },
+      {
+        name: "Use Cases",
+        intro: "",
+        data: [
+          {
+            name: "Application Integration",
+            description:
+              "IBM MQ can be used to integrate different applications and systems within an enterprise, allowing them to communicate and exchange information. This can include, for example, connecting a legacy system to a modern application.",
+          },
+          {
+            name: "Batch Processing",
+            description:
+              "IBM MQ can be used to handle and process large batches of data, such as financial transactions, in a reliable and efficient manner.",
+          },
+          {
+            name: "Event-Driven Architecture",
+            description:
+              "IBM MQ can be used to implement an event-driven architecture, where events are sent as messages to trigger actions in other systems or applications.",
+          },
+          {
+            name: "Real-time Data",
+            description:
+              "IBM MQ can be used to collect, process and distribute real-time data from various sources, such as IoT devices, for various use cases like predictive maintenance, smart grid, fraud detection.",
+          },
+          {
+            name: "Mobile App Integration",
+            description:
+              "IBM MQ can be used to connect mobile applications to backend systems and services, allowing them to exchange information in real-time.",
+          },
+          {
+            name: "Cloud Integration",
+            description:
+              "IBM MQ can be used to connect on-premises systems with cloud-based systems and services, allowing data to be securely transferred between the two environments.",
+          },
+        ],
+      },
+    ],
     examples: [],
-    reference: [],
+    reference: ["https://www.ibm.com/products/mq"],
   },
   {
     technology: "GraphQL",

@@ -364,7 +364,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "IBM MQ",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/integration/ibm-mq_square.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "OpenAPI",
