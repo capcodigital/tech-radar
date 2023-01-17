@@ -38,7 +38,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Elastic",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/elastic_stack_square.png",
-          enabled: false,
+          enabled: true,
         },
       ],
       skilled: [

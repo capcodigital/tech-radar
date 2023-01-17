@@ -103,10 +103,84 @@ const techContent = [
   {
     technology: "Elastic",
     docsLink: "https://www.elastic.co/guide/index.html",
-    intro: "Content coming soon.",
-    content: [],
+    intro:
+      "The Elastic Stack (previously known as the ELK Stack) is a collection of open-source software tools for searching, analyzing, and visualizing data. It is widely used in various industries, including e-commerce, finance, healthcare, and government. Some of its well-known customers include Cisco, eBay, Goldman Sachs, and Uber. Elastic has a large and active community of users and developers who contribute to the development of the Elastic Stack and contribute to the ecosystem of Elastic Stack plugins and integrations.",
+    content: [
+      {
+        name: "Elastic Stack",
+        intro: "The Elastic Stack includes the following components:",
+        data: [
+          {
+            name: "Elasticsearch",
+            description:
+              "Elasticsearch is a search engine based on the Lucene library. It provides a distributed, multitenant-capable full-text search engine with an HTTP web interface and schema-free JSON documents. Elasticsearch is developed in Java and is released as open source under the terms of the Apache License. It is a powerful tool for indexing, searching, and analyzing large volumes of data quickly and in near real time. It can be used for a variety of purposes, including full-text search, performance analysis, and logging.",
+          },
+          {
+            name: "Logstash",
+            description:
+              "Logstash is a data collection and processing pipeline. It ingests data from a variety of sources, including logs, systems metrics, and network data, and then processes it and sends it to Elasticsearch for storage and analysis. Logstash can also send data to other systems, such as email, Jira, and Slack.",
+          },
+          {
+            name: "Kibana",
+            description:
+              "Kibana is a visualization and analytics platform that allows you to create and share interactive and customizable dashboards based on data stored in Elasticsearch. Kibana provides a web interface that allows you to create and share visualizations and dashboards, search and filter data, and perform advanced analytics.",
+          },
+          {
+            name: "Beats",
+            description:
+              "Beats is a family of lightweight data shippers that can send data from various sources to Elasticsearch or Logstash. The Beats family includes different Beats for different types of data, such as Filebeat for log files, Metricbeat for system metrics, and Packetbeat for network data.",
+          },
+          {
+            name: "APM",
+            description:
+              "Application Performance Management (APM) is a feature of Elastic Stack, which allows you to monitor the performance of your applications and services. APM allows you to trace the performance of requests and transactions, view performance metrics, and identify and diagnose performance issues.",
+          },
+          {
+            name: "SIEM",
+            description:
+              "Security Information and Event Management (SIEM) is another feature of Elastic Stack which allows you to monitor and analyze logs and data from various sources for security purposes. SIEM provides a centralized view of security-related data, such as network logs, system logs, and threat intelligence data, and allows you to detect and respond to security threats in real-time.",
+          },
+          {
+            name: "Elastic Cloud",
+            description:
+              "Elastic Cloud is a cloud-based service that makes it easy to deploy, manage, and scale the Elastic Stack in the cloud. It provides a hosted Elasticsearch and Kibana service, as well as a managed Logstash and Beats service.",
+          },
+          {
+            name: "Elasticsearch Service",
+            description:
+              "Elasticsearch Service is a fully managed service that makes it easy to deploy, operate, and scale Elasticsearch clusters in the cloud. It provides automatic provisioning and scaling of Elasticsearch clusters, as well as integration with other Elastic Stack components, such as Kibana and Beats.",
+          },
+        ],
+      },
+      {
+        name: "Use Cases",
+        intro: "",
+        data: [
+          {
+            name: "Log Analysis",
+            description:
+              "Elasticsearch can be used to index, search, and analyze large volumes of log data from various sources, such as servers, applications, and network devices. This can be helpful for troubleshooting and monitoring systems, as well as detecting security threats.",
+          },
+          {
+            name: "Website Search",
+            description:
+              "Elasticsearch can be used to power the search functionality on websites, allowing users to quickly find relevant information. It can also be used to analyze user behavior and search patterns to improve the search experience.",
+          },
+          {
+            name: "Application Performance Monitoring",
+            description:
+              "Elastic APM can be used to monitor the performance of web applications, services, and microservices. It can collect data on response times, error rates, and other performance metrics, which can be used to identify and troubleshoot performance issues.",
+          },
+          {
+            name: "Root Cause Analysis",
+            description:
+              "Elastic APM can be used to identify the root cause of performance issues, such as slow database queries, network bottlenecks, or memory leaks. It can trace requests and responses through the different components of the application, allowing developers to see exactly where the problem is occurring.",
+          },
+        ],
+      },
+    ],
     examples: [],
-    reference: [],
+    reference: ["https://www.elastic.co/"],
   },
   {
     technology: "Bitbucket",
