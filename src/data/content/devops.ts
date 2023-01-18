@@ -556,14 +556,6 @@ const techContent = [
     reference: ["https://docs.twistlock.com/docs/"],
   },
   {
-    technology: "Kiali",
-    docsLink: "https://kiali.io/documentation/",
-    intro: "Content coming soon.",
-    content: [],
-    examples: [],
-    reference: [],
-  },
-  {
     technology: "ConcourseCl",
     docsLink: "https://concourse-ci.org/docs.html",
     intro:
