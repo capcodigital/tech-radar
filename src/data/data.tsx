@@ -18,7 +18,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "CircleCI",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/circleci_square.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "Terraform",
@@ -38,14 +38,14 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Elastic",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/elastic_stack_square.png",
-          enabled: false,
+          enabled: true,
         },
       ],
       skilled: [
         {
           name: "Bitbucket",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/bitbucket_square.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "Jenkins",
@@ -55,7 +55,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "TeamCity",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/teamcity_square.png",
-          enabled: false,
+          enabled: true,
         },
         // {
         //   name: "Istio",
@@ -87,22 +87,17 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Twistlock",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/twistlock_square.png",
-          enabled: false,
-        },
-        {
-          name: "Kiali",
-          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/kiali_square.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "ConcourseCl",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/concourse_square.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "Consul",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/consul_square.png",
-          enabled: true,
+          enabled: false,
         },
       ],
     },
@@ -129,7 +124,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Neo4J",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/neo4j_square.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "MongoDB",
@@ -359,7 +354,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "ActiveMQ",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/integration/activemq_square.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "IBM MQ",
@@ -583,10 +578,6 @@ export const icons: Array<{ name: string; link: string }> = [
   {
     name: "Twistlock",
     link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/twistlock_square.png",
-  },
-  {
-    name: "Kiali",
-    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/kiali_square.png",
   },
   {
     name: "ConcourseCl",
@@ -890,7 +881,6 @@ export const technologies = [
       "Ansible",
       "Packer",
       "Twistlock",
-      "Kiali",
       "ConcourseCl",
       "Consul",
       "Docker",
@@ -1029,7 +1019,6 @@ export const technologyList = [
   "Ansible",
   "Packer",
   "Twistlock",
-  "Kiali",
   "ConcourseCl",
   "Consul",
   "Docker",

@@ -1,3 +1,8 @@
+import concourse from "../../images/technologies/concourseci.png";
+import bitbucketArchitecture from "../../images/technologies/bitbucket_architecture.png";
+import circleciArchitecture from "../../images/technologies/circleci_architecture.png";
+import teamcityOverview from "../../images/technologies/teamcity-overview.png";
+
 const techContent = [
   {
     technology: "GitHub",
@@ -17,10 +22,136 @@ const techContent = [
   {
     technology: "CircleCI",
     docsLink: "https://circleci.com/docs/",
-    intro: "Content coming soon.",
-    content: [],
+    intro:
+      "CircleCI is a continuous integration and delivery platform that automates the build, test, and deployment of software applications. It enables developers to quickly and efficiently build, test, and deploy their code changes, while providing visibility and insight into the success of their builds and deployments. CircleCI integrates with a variety of popular version control systems, such as GitHub, Bitbucket, and GitLab, as well as popular cloud services, such as AWS, Heroku, and Google Cloud Platform.",
+    content: [
+      {
+        name: "Feature of CircleCI",
+        intro: "",
+        data: [
+          {
+            name: "Continuous Integration",
+            description:
+              "CircleCI provides an automated CI/CD pipeline with features such as automated builds, tests, code analysis, and deployments. It integrates with popular code repositories such as GitHub, Bitbucket, and GitLab to enable continuous integration and delivery.",
+          },
+          {
+            name: "Containerization",
+            description:
+              "CircleCI is a container-based platform that allows developers to run builds and tests in isolated, secure environments. It automatically manages container instances and scales up and down according to resource requirements.",
+          },
+          {
+            name: "Security and Compliance",
+            description:
+              "CircleCI enables organizations to securely build, test, and deploy applications on its platform. It offers features such as role-based access control, audit logging, and secure storage for user credentials.",
+          },
+          {
+            name: "Flexible Infrastructure",
+            description:
+              "CircleCI supports both cloud-based and on-premises infrastructures. It allows organizations to choose the best hosting option for their projects and provides a single-sign-on integration with popular cloud services.",
+          },
+          {
+            name: "Extensive Tooling",
+            description:
+              "CircleCI provides developers with a wide range of tools and integrations such as API calls, shell scripts, and cloud-based services. It also integrates with popular enterprise tools such as Slack, Jira, and Salesforce.",
+          },
+        ],
+      },
+      {
+        name: "CircleCI Architecture",
+        intro: `<img width='100%' src=${circleciArchitecture} /> `,
+        data: [],
+      },
+      {
+        name: "",
+        intro:
+          "The CircleCI server application exposes four services, using a single load balancer. If required, the load balancer can be made private, separating it from the public internet.",
+        data: [
+          {
+            name: "",
+            description:
+              '<table cellspacing="4" cellpadding="10" border="4"><tr><th>Service</th><th>Ports</th><th>Description</th></tr><tr><td>Frontend GUI Proxy & API</td><td>80 and 443</td><td>Exposes the web application.</td></tr><tr><td>Nomad Control Plane</td><td>4647</td><td>Exposes an RPC protocol for Nomad clients.</td></tr><tr><td>Output Processor</td><td>8585</td><td>Ingests output from Nomad runners.</td></tr><tr><td>VM Service</td><td>3000</td><td>Provisions virtual machines.</td></tr></table>',
+          },
+        ],
+      },
+      {
+        name: "",
+        intro:
+          "CircleCI server schedules CI jobs using the <em>Nomad</em> scheduler. The <em>Nomad</em> control plane runs inside of Kubernetes, while the <em>Nomad</em> clients, which are responsible for running scheduled CircleCI jobs, are provisioned outside the cluster. CircleCI server can run Docker jobs on the <em>Nomad</em> clients themselves or in a dedicated virtual machine (VM). <br><br> Job artifacts and outputs are sent directly from jobs in <em>Nomad</em> to object storage (S3, Google Cloud Storage, or other supported options). Audit logs and other items from the application are also stored in object storage, so both the Kubernetes cluster and the <em>Nomad</em> clients need access to object storage.",
+        data: [],
+      },
+      {
+        name: "Benefits of CircleCI",
+        intro: "",
+        data: [
+          {
+            name: "1. Automated Testing",
+            description:
+              "CircleCI makes it easy to automate tests for your applications, ensuring that your code is always up to date and running efficiently.",
+          },
+          {
+            name: "2. Faster Builds",
+            description:
+              "CircleCI allows for faster build times than traditional CI/CD systems, meaning you can quickly deploy your applications.",
+          },
+          {
+            name: "3. Security",
+            description:
+              "CircleCI provides a secure build environment that is compliant with industry standards, ensuring that your applications are secure and compliant with regulations.",
+          },
+          {
+            name: "4. Easy to Configure",
+            description:
+              "Setting up CircleCI is easy with their intuitive user interface and well-documented API.",
+          },
+          {
+            name: "5. Continuous Integration",
+            description:
+              "CircleCI is designed to support continuous integration and deployment, making it easy to push new features and updates to your applications.",
+          },
+          {
+            name: "6. Scalability",
+            description:
+              "CircleCI is designed to be highly scalable and can handle large amounts of builds, meaning you can easily scale your applications as needed.",
+          },
+          {
+            name: "7. Cost Savings",
+            description:
+              "With CircleCI, you only pay for the resources you use, making it a cost-effective solution for businesses of any size.",
+          },
+        ],
+      },
+      {
+        name: "CircleCI Use Cases",
+        intro: "",
+        data: [
+          {
+            name: "Continuous Integration",
+            description:
+              "CircleCI can be used to automate the process of integration of new code into existing code. This allows developers to quickly and easily test their code and merge it into the main codebase.",
+          },
+          {
+            name: "Automated Testing",
+            description:
+              "CircleCI can be used to automate the process of running unit tests, integration tests, and other automated tests on code. This allows developers to quickly and easily test their code and ensure that it works properly.",
+          },
+          {
+            name: "Automated Deployment",
+            description:
+              "CircleCI can be used to automate the process of deploying code to production environments. This allows developers to quickly and easily deploy their code without having to manually deploy it themselves.",
+          },
+          {
+            name: "Automated Monitoring",
+            description:
+              "CircleCI can be used to set up automated systems for monitoring code performance. This allows developers to quickly and easily track the performance of their code and identify any issues that need to be addressed.",
+          },
+        ],
+      },
+    ],
     examples: [],
-    reference: [],
+    reference: [
+      "https://circleci.com/docs/",
+      "https://github.com/dwyl/learn-circleci",
+    ],
   },
   {
     technology: "Terraform",
@@ -101,18 +232,203 @@ const techContent = [
   {
     technology: "Elastic",
     docsLink: "https://www.elastic.co/guide/index.html",
-    intro: "Content coming soon.",
-    content: [],
+    intro:
+      "The Elastic Stack (previously known as the ELK Stack) is a collection of open-source software tools for searching, analyzing, and visualizing data. It is widely used in various industries, including e-commerce, finance, healthcare, and government. Some of its well-known customers include Cisco, eBay, Goldman Sachs, and Uber. Elastic has a large and active community of users and developers who contribute to the development of the Elastic Stack and contribute to the ecosystem of Elastic Stack plugins and integrations.",
+    content: [
+      {
+        name: "Elastic Stack",
+        intro: "The Elastic Stack includes the following components:",
+        data: [
+          {
+            name: "Elasticsearch",
+            description:
+              "Elasticsearch is a search engine based on the Lucene library. It provides a distributed, multitenant-capable full-text search engine with an HTTP web interface and schema-free JSON documents. Elasticsearch is developed in Java and is released as open source under the terms of the Apache License. It is a powerful tool for indexing, searching, and analyzing large volumes of data quickly and in near real time. It can be used for a variety of purposes, including full-text search, performance analysis, and logging.",
+          },
+          {
+            name: "Logstash",
+            description:
+              "Logstash is a data collection and processing pipeline. It ingests data from a variety of sources, including logs, systems metrics, and network data, and then processes it and sends it to Elasticsearch for storage and analysis. Logstash can also send data to other systems, such as email, Jira, and Slack.",
+          },
+          {
+            name: "Kibana",
+            description:
+              "Kibana is a visualization and analytics platform that allows you to create and share interactive and customizable dashboards based on data stored in Elasticsearch. Kibana provides a web interface that allows you to create and share visualizations and dashboards, search and filter data, and perform advanced analytics.",
+          },
+          {
+            name: "Beats",
+            description:
+              "Beats is a family of lightweight data shippers that can send data from various sources to Elasticsearch or Logstash. The Beats family includes different Beats for different types of data, such as Filebeat for log files, Metricbeat for system metrics, and Packetbeat for network data.",
+          },
+          {
+            name: "APM",
+            description:
+              "Application Performance Management (APM) is a feature of Elastic Stack, which allows you to monitor the performance of your applications and services. APM allows you to trace the performance of requests and transactions, view performance metrics, and identify and diagnose performance issues.",
+          },
+          {
+            name: "SIEM",
+            description:
+              "Security Information and Event Management (SIEM) is another feature of Elastic Stack which allows you to monitor and analyze logs and data from various sources for security purposes. SIEM provides a centralized view of security-related data, such as network logs, system logs, and threat intelligence data, and allows you to detect and respond to security threats in real-time.",
+          },
+          {
+            name: "Elastic Cloud",
+            description:
+              "Elastic Cloud is a cloud-based service that makes it easy to deploy, manage, and scale the Elastic Stack in the cloud. It provides a hosted Elasticsearch and Kibana service, as well as a managed Logstash and Beats service.",
+          },
+          {
+            name: "Elasticsearch Service",
+            description:
+              "Elasticsearch Service is a fully managed service that makes it easy to deploy, operate, and scale Elasticsearch clusters in the cloud. It provides automatic provisioning and scaling of Elasticsearch clusters, as well as integration with other Elastic Stack components, such as Kibana and Beats.",
+          },
+        ],
+      },
+      {
+        name: "Use Cases",
+        intro: "",
+        data: [
+          {
+            name: "Log Analysis",
+            description:
+              "Elasticsearch can be used to index, search, and analyze large volumes of log data from various sources, such as servers, applications, and network devices. This can be helpful for troubleshooting and monitoring systems, as well as detecting security threats.",
+          },
+          {
+            name: "Website Search",
+            description:
+              "Elasticsearch can be used to power the search functionality on websites, allowing users to quickly find relevant information. It can also be used to analyze user behavior and search patterns to improve the search experience.",
+          },
+          {
+            name: "Application Performance Monitoring",
+            description:
+              "Elastic APM can be used to monitor the performance of web applications, services, and microservices. It can collect data on response times, error rates, and other performance metrics, which can be used to identify and troubleshoot performance issues.",
+          },
+          {
+            name: "Root Cause Analysis",
+            description:
+              "Elastic APM can be used to identify the root cause of performance issues, such as slow database queries, network bottlenecks, or memory leaks. It can trace requests and responses through the different components of the application, allowing developers to see exactly where the problem is occurring.",
+          },
+        ],
+      },
+    ],
     examples: [],
-    reference: [],
+    reference: ["https://www.elastic.co/"],
   },
   {
     technology: "Bitbucket",
     docsLink: "https://bitbucket.org/product/guides",
-    intro: "Content coming soon.",
-    content: [],
+    intro:
+      "BitBucket is a web-based hosting service for projects that use either the Mercurial (since launch) or Git (since October 2011) revision control systems. It is owned by Atlassian and is used for source code and development projects. BitBucket offers both commercial plans and free accounts. It offers free accounts with an unlimited number of private repositories (which can have up to five users in the case of free accounts). It allows for easy code review, collaboration, and code management. It allows developers to host their projects, control access to their code, review code, and collaborate with others. It also provides integration with other tools such as JIRA, Confluence, and Bamboo.",
+    content: [
+      {
+        name: "Feature of Bitbucket",
+        intro: "",
+        data: [
+          {
+            name: "Unlimited private repositories",
+            description:
+              "Bitbucket offers unlimited private repositories for up to five users for free. This is great for small teams or individuals who are just getting started.",
+          },
+          {
+            name: "Access control",
+            description:
+              "Teams can easily control access to their repositories with granular permission levels or branch permissions.",
+          },
+          {
+            name: "Code review",
+            description:
+              "Bitbucket has a built-in code review feature that allows team members to comment on pull requests.",
+          },
+          {
+            name: "Third-party integrations",
+            description:
+              "Bitbucket’s integration with third-party services such as Slack, Jira, and Trello makes it easier to collaborate on projects.",
+          },
+          {
+            name: "Pipelines",
+            description:
+              "Pipelines allow users to quickly build, test, and deploy their code.",
+          },
+          {
+            name: "Automated deployment",
+            description:
+              "Bitbucket supports automated deployment to cloud services such as Amazon Web Services and Microsoft Azure.",
+          },
+          {
+            name: "Source code search",
+            description:
+              "Bitbucket’s source code search allows users to quickly find the code they’re looking for.",
+          },
+        ],
+      },
+      {
+        name: "Bitbucket Architecture",
+        intro: `<img width='100%' src=${bitbucketArchitecture} /> `,
+        data: [],
+      },
+      {
+        name: "",
+        intro:
+          "BitBucket is built on a distributed system architecture, with data stored across multiple datacentres. This architecture allows for high availability, scalability, and performance. At the highest level, BitBucket consists of a web interface, API, and repository layer. <br><br> The web interface provides users with a graphical user interface (GUI) to interact with the system. It includes features such as creating, viewing, and editing repositories, creating, and managing pull requests, and managing user permissions. <br><br> The API layer provides a programmatic interface for interacting with the system. It allows for custom integrations with other services, such as third-party code review tools, or applications that need to access data from BitBucket. <br><br> The repository layer is where the actual code and data is stored. It is built on a distributed system, with multiple datacentres spread out across multiple geographic locations. This allows for high availability and scalability of the system. Each repository is replicated in multiple locations, to ensure that data is not lost in the event of a disaster.",
+        data: [],
+      },
+      {
+        name: "Key terms to know in BitBucket",
+        intro:
+          "Here are some important words and terms to know so you can find your way around Bitbucket. Some of these are terms borrowed from Git, others are specific to Bitbucket.",
+        data: [
+          {
+            name: "1.	Branch",
+            description:
+              "A branch represents an independent line of development. Branches serve as an abstraction for the edit/stage/commit process. You can think of them as a way to request a brand-new working directory, staging area, and project history. New commits are recorded in the history for the current branch, which results in a fork in the history of the project.",
+          },
+          {
+            name: "2. Fork",
+            description:
+              'Instead of using a single server-side repository to act as the "central" codebase, forking gives every developer a server-side repository. This means that each contributor has not one, but two Git repositories: a private local one and a public server-side one.',
+          },
+          {
+            name: "3.	HEAD",
+            description:
+              'Git’s way of referring to the current snapshot. Internally, the git checkout command simply updates the HEAD to point to either the specified branch or commit. When it points to a branch, Git doesn\'t complain, but when you check out a commit, it switches into a "detached HEAD" state.',
+          },
+          {
+            name: "4.	Main",
+            description:
+              'The default development branch. Whenever you create a git repository, a branch named "main" is created, and becomes the active branch.',
+          },
+          {
+            name: "5.	Pipelines",
+            description:
+              "Bitbucket Pipelines is an integrated CI/CD service, built into Bitbucket. It allows you to automatically build, test and even deploy your code, based on a configuration file in your repository.",
+          },
+          {
+            name: "6.	Pipes",
+            description:
+              "Bitbucket Pipes are short code chunks that you can drop into your pipeline to perform powerful actions. Pipes make it easier to build powerful, automated CI/CD workflows and get up and running quickly.",
+          },
+          {
+            name: "7.	Project",
+            description:
+              "A project is a container for repositories. Projects make it easier for teams to focus on a goal, product, or process by organizing your repositories into projects. Projects can be either visible or hidden from public view.",
+          },
+          {
+            name: "8.	Pull Request",
+            description:
+              "Pull requests are a feature that makes it easier for developers to collaborate using Bitbucket. They provide a user-friendly web interface for discussing proposed changes before integrating them into the official project.",
+          },
+          {
+            name: "9.	Working Tree",
+            description:
+              "The tree of actual checked out files, normally containing the contents of the HEAD commit's tree and any local changes you've made but haven't yet committed.",
+          },
+        ],
+      },
+    ],
     examples: [],
-    reference: [],
+    reference: [
+      "https://bitbucket.org/product/guides",
+      "https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud",
+      "https://www.w3schools.com/git/git_remote_getstarted.asp?remote=bitbucket",
+      "https://www.geeksforgeeks.org/introduction-to-bitbucket/",
+    ],
   },
   {
     technology: "Jenkins",
@@ -207,10 +523,43 @@ const techContent = [
     technology: "TeamCity",
     docsLink:
       "https://www.jetbrains.com/help/teamcity/teamcity-documentation.html",
-    intro: "Content coming soon.",
-    content: [],
+    intro: `TeamCity is a continuous integration and continuous delivery server developed by JetBrains. It is a powerful and user-friendly platform which helps teams to build, test, and deploy software projects rapidly and reliably. It supports various technologies and provides out-of-the-box integrations with many third-party tools. TeamCity is a popular tool among software development teams because of its flexibility, scalability, and ease of use. <br /><br /><img src=${teamcityOverview} width="100%" />`,
+    content: [
+      {
+        name: "Main Features",
+        intro:
+          "<ul><li>Automatic build and test triggering</li><li>Code Quality Analysis</li><li>Build Parameterization and Configuration</li><li>Build History and Build Chaining</li><li>Build Artifacts</li><li>Build Distribution and Notifications</li><li>Pre-tested Commit and Revert</li><li>Continuous Integration Dashboard</li><li>Automated Deployment</li><li>Distributed Builds</li><li>Integrations with Third-Party Services</li></ul>",
+        data: [],
+      },
+      {
+        name: "Reasons to use TeamCity",
+        intro: "",
+        data: [
+          {
+            name: "For Developers",
+            description:
+              "<ul><li>Perform better - Just as your IDE gives you more coding powers, TeamCity does the same for continuous integration. It integrates with your building and testing tools, visualizes your DevOps pipelines in detail, and helps you be more productive – right from day one.</li><li>Get started easily - It’s really easy to get started with TeamCity. Setting up your first pipeline takes less than 2 minutes and can be done through a simple UI without writing any code.</li><li>Test intelligence - TeamCity understands your tests like no other CI solution. It integrates with your build and test tools, keeps a history of your tests, flags unstable tests as flaky, and can even help you identify the exact commits that cause failures in your pipelines.</li><li>Real-time reporting - Don’t wait for a build to finish to discover that something is wrong. Everything is reported on the fly, so you can dig into an issue, resolve it, assign it to your project members, or even open it directly in an IDE right at the problem line of code.</li><li>Remote run and pre-tested commit - By integrating TeamCity with your IDE, you can build, check, and run automated tests without creating any branches or committing any code – and keeping your code base clean at all times.</li></ul>",
+          },
+          {
+            name: "For DevOps Engineers",
+            description:
+              "<ul><li>Configuration as code - You can configure your build pipelines via TeamCity’s web UI, or create them programmatically using a strongly typed DSL. Having pipeline configurations as code lets you easily reuse them and keep things under control as your projects grow.</li><li>Pipeline optimization - TeamCity orchestrates your builds and tests in a smart way by optimizing the build queue, reusing artifacts from previous builds, and running only the minimum required steps in pipelines. This can shave 30% or more off your daily build time!</li><li>Templates - You can easily eliminate the hassle of duplicating settings across different projects by extracting build configuration templates. With build templates, you don’t have to go through all the tedious process of setting up your CI/CD pipelines from scratch for every new project.</li><li>RESTful API - Virtually every feature of TeamCity is available via a RESTful API, which allows you to integrate it with your applications or interact with it using scripts.</li><li>Multiplatform, multilanguage - TeamCity supports all programming languages and integrates with all popular tools used for building and testing software. You can create and automate DevOps pipelines of any complexity and any scale, with multiple dependencies and triggers.</li></ul>",
+          },
+          {
+            name: "For Managers",
+            description:
+              "<ul><li>Get a bird's eye view of your CI - TeamCity visualizes how your pipelines work, lets you track how the quality of your team’s code changes over time, and helps you analyze trends. You can always understand the status of each particular build and quickly deploy any version to a staging or production server.</li><li>Organize your team's work- If there is a failure in your pipeline, TeamCity will pinpoint the root cause and try to identify whose changes are responsible. Build problems can be automatically assigned to a team member for investigation.</li><li>Start free, grow to any scale - TeamCity doesn't have limitations on the number of users, so you can start completely for free, even for commercial projects. And you can gradually expand your server capacities as your team gets bigger.</li><li>Receive professional technical support - Having been around for over a decade, TeamCity is one of the industry's most mature products. In the event of any problems, you can get support through our public issue tracker, community forums, comprehensive online documentation, or from our dedicated support engineers.</li><li>Benefit from a fast feedback loop - TeamCity understands your development process and helps you make it more efficient. You and your team can track progress in real time, and you can be notified of the build results right inside your IDE or via email, Slack, and other channels.</li></ul>",
+          },
+          {
+            name: "For Admins",
+            description:
+              "<ul><li>Zero maintenance - TeamCity provides health and performance reports, a Prometheus metrics endpoint, and many other tools for efficient maintenance. It integrates with all popular developer software, and automatically keeps all components up to date, saving you countless hours of work.</li><li>Scalability - You need only one TeamCity server to orchestrate hundreds of build agents. And if you need the highest level of performance and reliability, you can run multiple TeamCity servers and make them work together in a clustered environment.</li><li>Cloud integrations - TeamCity allows you to implement a scalable CI/CD architecture on top of your favorite cloud provider or in your own Kubernetes cluster, and dynamically increase the capacity of your delivery pipelines when needed.</li><li>Access management - You can manage users and their privileges directly in TeamCity, or sync the user directory with your infrastructure via the LDAP protocol. Projects can have their own administrators or inherit settings from their parent projects, which makes access management a breeze.</li><li>Rich plugin ecosystem - TeamCity comes with hundreds of free plugins that can be installed with just a couple of clicks without rebooting the server. And if you want to make your CI even more powerful, you can use OpenAPI to implement a new one.</li></ul>",
+          },
+        ],
+      },
+    ],
     examples: [],
-    reference: [],
+    reference: ["https://www.jetbrains.com/teamcity/"],
   },
   {
     technology: "Istio",
@@ -264,10 +613,6 @@ const techContent = [
             description:
               "After a machine image is built, that machine image can be quickly launched and smoke tested to verify that things appear to be working. If they are, you can be confident that any other machines launched from that image will function properly.",
           },
-          {
-            name: "",
-            description: "",
-          },
         ],
       },
       {
@@ -298,26 +643,122 @@ const techContent = [
   {
     technology: "Twistlock",
     docsLink: "https://docs.twistlock.com/docs/",
-    intro: "Content coming soon.",
-    content: [],
+    intro:
+      "TwistLock is a container security platform designed to provide DevOps teams with the tools they need to protect their containerized applications. TwistLock provides a suite of security tools including vulnerability scanning, runtime protection, and compliance monitoring. The platform also offers integration with popular CI/CD systems, allowing teams to automate security into their DevOps pipelines.",
+    content: [
+      {
+        name: "Twistlock Capabilities",
+        intro: "",
+        data: [
+          {
+            name: "Vulnerability scanning",
+            description:
+              "Identifies potential risks and weaknesses in your container environment.",
+          },
+          {
+            name: "Runtime protection",
+            description:
+              "Monitors and enforces security policies in real time to protect against malicious activities.",
+          },
+          {
+            name: "Compliance and auditing",
+            description:
+              "Ensures compliance with applicable industry standards and regulations.",
+          },
+          {
+            name: "Secure DevOps automation",
+            description:
+              "Automates security processes and reduces the risk of human error.",
+          },
+          {
+            name: "Advanced analytics and machine learning-powered threat detection",
+            description: "Quickly detect and respond to threats.",
+          },
+          {
+            name: "Container management and monitoring",
+            description:
+              "Monitors and manages containerized applications and workloads.",
+          },
+        ],
+      },
+      {
+        name: "Twistlock Advantages",
+        intro: "",
+        data: [
+          {
+            name: "Automated Security",
+            description:
+              "Twistlock automates the process of security and regulatory compliance, with real-time vulnerability scanning for container images and cloud native workloads.",
+          },
+          {
+            name: "Comprehensive Visibility",
+            description:
+              "Twistlock provides end-to-end visibility and control across the cloud native stack.",
+          },
+          {
+            name: "Cloud Native Protection",
+            description:
+              "Twistlock provides robust protection across the entire cloud native stack, including containers, serverless functions, and Kubernetes.",
+          },
+          {
+            name: "Simplified Compliance",
+            description:
+              "Twistlock simplifies compliance and governance with built-in compliance checks and automated policy enforcement.",
+          },
+          {
+            name: "Automated Incident Response",
+            description:
+              "Twistlock provides automated response and investigation tools to help identify and mitigate potential security incidents quickly and accurately.",
+          },
+        ],
+      },
+    ],
     examples: [],
-    reference: [],
-  },
-  {
-    technology: "Kiali",
-    docsLink: "https://kiali.io/documentation/",
-    intro: "Content coming soon.",
-    content: [],
-    examples: [],
-    reference: [],
+    reference: ["https://docs.twistlock.com/docs/"],
   },
   {
     technology: "ConcourseCl",
     docsLink: "https://concourse-ci.org/docs.html",
-    intro: "Content coming soon.",
-    content: [],
+    intro:
+      "Concourse is an open-source continuous CI/CD platform built on self contained pipelines,  Concourse is a free open source project which is written in Go and can scale to any kind of pipeline",
+    content: [
+      {
+        name: "Concourse CI Components",
+        intro: `<img width='100%' src=${concourse} /> `,
+        data: [
+          {
+            name: "Database and web node",
+            description:
+              "Concourse CI used Postgres as its state store and a web node service which  provides the user interface, Here users can quickly view pipelines, progress and erros",
+          },
+          {
+            name: "Worker Nodes",
+            description:
+              "The key feature of Concourse CI is that Worker nodes are compleletly ephemeral, they run tasks defined in the pipeline and then are deleted, task such as cloning GIT repos, downloading container images and running tests. The benefit of this is clean testing",
+          },
+          {
+            name: "Tasks",
+            description:
+              "Tasks are the smallest unit of execution in a Concourse CI pipeline, for example running a script or single command",
+          },
+          {
+            name: "Jobs",
+            description:
+              "Jobs are a grouping of tasks and enable the composition of large pipelines with lots of tasks",
+          },
+          {
+            name: "Resources",
+            description:
+              "Jobs and tasks perform actions on resources such as Git repositories, Docker.",
+          },
+        ],
+      },
+    ],
     examples: [],
-    reference: [],
+    reference: [
+      "https://concourse-ci.org/",
+      "https://ci.concourse-ci.org/teams/main/pipelines/concourse",
+    ],
   },
   {
     technology: "Consul",
@@ -327,7 +768,7 @@ const techContent = [
     content: [
       {
         name: "Consul Features and Architecture",
-        intro: "",
+        intro: "intro: `<img width='100%' src=${concoursepipe} /> `,",
         data: [
           {
             name: "Service Discovery",
