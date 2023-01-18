@@ -55,7 +55,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "TeamCity",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/teamcity_square.png",
-          enabled: false,
+          enabled: true,
         },
         // {
         //   name: "Istio",

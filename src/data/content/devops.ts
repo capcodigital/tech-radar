@@ -1,4 +1,5 @@
 import concourse from "../../images/technologies/concourseci.png";
+import teamcityOverview from "../../images/technologies/teamcity-overview.png";
 
 const techContent = [
   {
@@ -283,10 +284,43 @@ const techContent = [
     technology: "TeamCity",
     docsLink:
       "https://www.jetbrains.com/help/teamcity/teamcity-documentation.html",
-    intro: "Content coming soon.",
-    content: [],
+    intro: `TeamCity is a continuous integration and continuous delivery server developed by JetBrains. It is a powerful and user-friendly platform which helps teams to build, test, and deploy software projects rapidly and reliably. It supports various technologies and provides out-of-the-box integrations with many third-party tools. TeamCity is a popular tool among software development teams because of its flexibility, scalability, and ease of use. <br /><br /><img src=${teamcityOverview} width="100%" />`,
+    content: [
+      {
+        name: "Main Features",
+        intro:
+          "<ul><li>Automatic build and test triggering</li><li>Code Quality Analysis</li><li>Build Parameterization and Configuration</li><li>Build History and Build Chaining</li><li>Build Artifacts</li><li>Build Distribution and Notifications</li><li>Pre-tested Commit and Revert</li><li>Continuous Integration Dashboard</li><li>Automated Deployment</li><li>Distributed Builds</li><li>Integrations with Third-Party Services</li></ul>",
+        data: [],
+      },
+      {
+        name: "Reasons to use TeamCity",
+        intro: "",
+        data: [
+          {
+            name: "For Developers",
+            description:
+              "<ul><li>Perform better - Just as your IDE gives you more coding powers, TeamCity does the same for continuous integration. It integrates with your building and testing tools, visualizes your DevOps pipelines in detail, and helps you be more productive – right from day one.</li><li>Get started easily - It’s really easy to get started with TeamCity. Setting up your first pipeline takes less than 2 minutes and can be done through a simple UI without writing any code.</li><li>Test intelligence - TeamCity understands your tests like no other CI solution. It integrates with your build and test tools, keeps a history of your tests, flags unstable tests as flaky, and can even help you identify the exact commits that cause failures in your pipelines.</li><li>Real-time reporting - Don’t wait for a build to finish to discover that something is wrong. Everything is reported on the fly, so you can dig into an issue, resolve it, assign it to your project members, or even open it directly in an IDE right at the problem line of code.</li><li>Remote run and pre-tested commit - By integrating TeamCity with your IDE, you can build, check, and run automated tests without creating any branches or committing any code – and keeping your code base clean at all times.</li></ul>",
+          },
+          {
+            name: "For DevOps Engineers",
+            description:
+              "<ul><li>Configuration as code - You can configure your build pipelines via TeamCity’s web UI, or create them programmatically using a strongly typed DSL. Having pipeline configurations as code lets you easily reuse them and keep things under control as your projects grow.</li><li>Pipeline optimization - TeamCity orchestrates your builds and tests in a smart way by optimizing the build queue, reusing artifacts from previous builds, and running only the minimum required steps in pipelines. This can shave 30% or more off your daily build time!</li><li>Templates - You can easily eliminate the hassle of duplicating settings across different projects by extracting build configuration templates. With build templates, you don’t have to go through all the tedious process of setting up your CI/CD pipelines from scratch for every new project.</li><li>RESTful API - Virtually every feature of TeamCity is available via a RESTful API, which allows you to integrate it with your applications or interact with it using scripts.</li><li>Multiplatform, multilanguage - TeamCity supports all programming languages and integrates with all popular tools used for building and testing software. You can create and automate DevOps pipelines of any complexity and any scale, with multiple dependencies and triggers.</li></ul>",
+          },
+          {
+            name: "For Managers",
+            description:
+              "<ul><li>Get a bird's eye view of your CI - TeamCity visualizes how your pipelines work, lets you track how the quality of your team’s code changes over time, and helps you analyze trends. You can always understand the status of each particular build and quickly deploy any version to a staging or production server.</li><li>Organize your team's work- If there is a failure in your pipeline, TeamCity will pinpoint the root cause and try to identify whose changes are responsible. Build problems can be automatically assigned to a team member for investigation.</li><li>Start free, grow to any scale - TeamCity doesn't have limitations on the number of users, so you can start completely for free, even for commercial projects. And you can gradually expand your server capacities as your team gets bigger.</li><li>Receive professional technical support - Having been around for over a decade, TeamCity is one of the industry's most mature products. In the event of any problems, you can get support through our public issue tracker, community forums, comprehensive online documentation, or from our dedicated support engineers.</li><li>Benefit from a fast feedback loop - TeamCity understands your development process and helps you make it more efficient. You and your team can track progress in real time, and you can be notified of the build results right inside your IDE or via email, Slack, and other channels.</li></ul>",
+          },
+          {
+            name: "For Admins",
+            description:
+              "<ul><li>Zero maintenance - TeamCity provides health and performance reports, a Prometheus metrics endpoint, and many other tools for efficient maintenance. It integrates with all popular developer software, and automatically keeps all components up to date, saving you countless hours of work.</li><li>Scalability - You need only one TeamCity server to orchestrate hundreds of build agents. And if you need the highest level of performance and reliability, you can run multiple TeamCity servers and make them work together in a clustered environment.</li><li>Cloud integrations - TeamCity allows you to implement a scalable CI/CD architecture on top of your favorite cloud provider or in your own Kubernetes cluster, and dynamically increase the capacity of your delivery pipelines when needed.</li><li>Access management - You can manage users and their privileges directly in TeamCity, or sync the user directory with your infrastructure via the LDAP protocol. Projects can have their own administrators or inherit settings from their parent projects, which makes access management a breeze.</li><li>Rich plugin ecosystem - TeamCity comes with hundreds of free plugins that can be installed with just a couple of clicks without rebooting the server. And if you want to make your CI even more powerful, you can use OpenAPI to implement a new one.</li></ul>",
+          },
+        ],
+      },
+    ],
     examples: [],
-    reference: [],
+    reference: ["https://www.jetbrains.com/teamcity/"],
   },
   {
     technology: "Istio",
