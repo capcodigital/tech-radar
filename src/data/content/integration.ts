@@ -1,5 +1,7 @@
+import { Description } from "@mui/icons-material";
 import camelArchitecture from "../../images/technologies/camel-architecture.png";
 import grpcArchitecture from "../../images/technologies/grpc-architecture.png";
+import graphqlArchitecture from "../../images/technologies/graphql-architecture.png";
 import restArchitecture from "../../images/technologies/rest-architecture.png";
 import activemqArchitecture from "../../images/technologies/activemq_architecture.png";
 import activemqQueuesTopics from "../../images/technologies/queues-topics.png";
@@ -218,7 +220,7 @@ const techContent = [
       },
     ],
     examples: [],
-    reference: [],
+    reference: ["https://www.codesmith.io/blog/graphql-vs-rest"],
   },
   {
     technology: "ActiveMQ",
@@ -520,10 +522,23 @@ const techContent = [
   {
     technology: "GraphQL",
     docsLink: "https://reactnative.dev/docs/getting-started",
-    intro: "Content coming soon.",
-    content: [],
+    intro:
+      "GraphQL is a query language for APIs. It provides developers with a way to define data requests and efficiently retrieve data from a server. GraphQL enables developers to ask for the exact data that they need, rather than having to make multiple requests for more data. Additionally, GraphQL can handle complex queries more efficiently than REST APIs, potentially reducing the number of requests needed.",
+    content: [
+      {
+        name: "GraphQL vs REST APIs",
+        intro: `GraphQL is becoming increasingly popular, but it is still not as well-known as REST APIs. This is because GraphQL is relatively new, and there is still a learning curve associated with understanding and using it. Additionally, many existing services are built on top of REST APIs, making it difficult for developers to switch to GraphQL without significant rework. Finally, GraphQL requires a specialized server implementation and involves complex queries, so it may not be suitable for all applications. <br/> <br/> With GraphQL, clients are able to reach many different types of data storage with a single endpoint, as opposed to RESTful APIs, which may require the client to make multiple requests for multiple pieces of data. <br /> <img src=${graphqlArchitecture} width="100%" /> <br /> <br />`,
+        data: [],
+      },
+      {
+        name: "GraphQL Characteristics",
+        intro:
+          "GraphQL query language is basically about selecting fields on objects. <br/> <br/>  <b> Queries </b> in GraphQL are used to retrieve data from a server. <br/> <br/> <b> Mutations </b> in GraphQL are used to modify data on a server, and they can be used to create, update, or delete data. <br/> <br/> <b> Schema </b> in GraphQL is a set of rules that dictate how data is organized and accessed, it defines the types of data that can be stored, as well as the relationships between types. The schema also defines which fields are required and which are optional. <br/> <br/> <b> Types </b> in GraphQL are used to define the data that can be stored in the schema, these can be scalar, such as strings and numbers, or they can be objects, such as user accounts or blog posts. Types can also have relationships with other types, allowing for more complex data structures.",
+        data: [],
+      },
+    ],
     examples: [],
-    reference: [],
+    reference: ["https://www.codesmith.io/blog/graphql-vs-rest"],
   },
   {
     technology: "OpenAPI",

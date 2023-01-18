@@ -371,7 +371,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "GraphQL",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/integration/graphql_square.png",
-          enabled: false,
+          enabled: true,
         },
       ],
     },
