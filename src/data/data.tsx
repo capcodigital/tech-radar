@@ -90,11 +90,6 @@ export const data: Array<{ name: string; data: techType }> = [
           enabled: true,
         },
         {
-          name: "Kiali",
-          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/kiali_square.png",
-          enabled: false,
-        },
-        {
           name: "ConcourseCl",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/concourse_square.png",
           enabled: true,
@@ -585,10 +580,6 @@ export const icons: Array<{ name: string; link: string }> = [
     link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/twistlock_square.png",
   },
   {
-    name: "Kiali",
-    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/kiali_square.png",
-  },
-  {
     name: "ConcourseCl",
     link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/concourse_square.png",
   },
@@ -890,7 +881,6 @@ export const technologies = [
       "Ansible",
       "Packer",
       "Twistlock",
-      "Kiali",
       "ConcourseCl",
       "Consul",
       "Docker",
@@ -1029,7 +1019,6 @@ export const technologyList = [
   "Ansible",
   "Packer",
   "Twistlock",
-  "Kiali",
   "ConcourseCl",
   "Consul",
   "Docker",
