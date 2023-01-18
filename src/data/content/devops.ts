@@ -1,4 +1,5 @@
 import concourse from "../../images/technologies/concourseci.png";
+import bitbucketArchitecture from "../../images/technologies/bitbucket_architecture.png";
 
 const techContent = [
   {
@@ -185,10 +186,121 @@ const techContent = [
   {
     technology: "Bitbucket",
     docsLink: "https://bitbucket.org/product/guides",
-    intro: "Content coming soon.",
-    content: [],
+    intro:
+      "BitBucket is a web-based hosting service for projects that use either the Mercurial (since launch) or Git (since October 2011) revision control systems. It is owned by Atlassian and is used for source code and development projects. BitBucket offers both commercial plans and free accounts. It offers free accounts with an unlimited number of private repositories (which can have up to five users in the case of free accounts). It allows for easy code review, collaboration, and code management. It allows developers to host their projects, control access to their code, review code, and collaborate with others. It also provides integration with other tools such as JIRA, Confluence, and Bamboo.",
+    content: [
+      {
+        name: "Feature of Bitbucket",
+        intro: "",
+        data: [
+          {
+            name: "Unlimited private repositories",
+            description:
+              "Bitbucket offers unlimited private repositories for up to five users for free. This is great for small teams or individuals who are just getting started.",
+          },
+          {
+            name: "Access control",
+            description:
+              "Teams can easily control access to their repositories with granular permission levels or branch permissions.",
+          },
+          {
+            name: "Code review",
+            description:
+              "Bitbucket has a built-in code review feature that allows team members to comment on pull requests.",
+          },
+          {
+            name: "Third-party integrations",
+            description:
+              "Bitbucket’s integration with third-party services such as Slack, Jira, and Trello makes it easier to collaborate on projects.",
+          },
+          {
+            name: "Pipelines",
+            description:
+              "Pipelines allow users to quickly build, test, and deploy their code.",
+          },
+          {
+            name: "Automated deployment",
+            description:
+              "Bitbucket supports automated deployment to cloud services such as Amazon Web Services and Microsoft Azure.",
+          },
+          {
+            name: "Source code search",
+            description:
+              "Bitbucket’s source code search allows users to quickly find the code they’re looking for.",
+          },
+        ],
+      },
+      {
+        name: "Bitbucket Architecture",
+        intro: `<img width='100%' src=${bitbucketArchitecture} /> `,
+        data: [],
+      },
+      {
+        name: "",
+        intro:
+          "BitBucket is built on a distributed system architecture, with data stored across multiple datacentres. This architecture allows for high availability, scalability, and performance. At the highest level, BitBucket consists of a web interface, API, and repository layer. <br><br> The web interface provides users with a graphical user interface (GUI) to interact with the system. It includes features such as creating, viewing, and editing repositories, creating, and managing pull requests, and managing user permissions. <br><br> The API layer provides a programmatic interface for interacting with the system. It allows for custom integrations with other services, such as third-party code review tools, or applications that need to access data from BitBucket. <br><br> The repository layer is where the actual code and data is stored. It is built on a distributed system, with multiple datacentres spread out across multiple geographic locations. This allows for high availability and scalability of the system. Each repository is replicated in multiple locations, to ensure that data is not lost in the event of a disaster.",
+        data: [],
+      },
+      {
+        name: "Key terms to know in BitBucket",
+        intro:
+          "Here are some important words and terms to know so you can find your way around Bitbucket. Some of these are terms borrowed from Git, others are specific to Bitbucket.",
+        data: [
+          {
+            name: "1.	Branch",
+            description:
+              "A branch represents an independent line of development. Branches serve as an abstraction for the edit/stage/commit process. You can think of them as a way to request a brand-new working directory, staging area, and project history. New commits are recorded in the history for the current branch, which results in a fork in the history of the project.",
+          },
+          {
+            name: "2. Fork",
+            description:
+              'Instead of using a single server-side repository to act as the "central" codebase, forking gives every developer a server-side repository. This means that each contributor has not one, but two Git repositories: a private local one and a public server-side one.',
+          },
+          {
+            name: "3.	HEAD",
+            description:
+              'Git’s way of referring to the current snapshot. Internally, the git checkout command simply updates the HEAD to point to either the specified branch or commit. When it points to a branch, Git doesn\'t complain, but when you check out a commit, it switches into a "detached HEAD" state.',
+          },
+          {
+            name: "4.	Main",
+            description:
+              'The default development branch. Whenever you create a git repository, a branch named "main" is created, and becomes the active branch.',
+          },
+          {
+            name: "5.	Pipelines",
+            description:
+              "Bitbucket Pipelines is an integrated CI/CD service, built into Bitbucket. It allows you to automatically build, test and even deploy your code, based on a configuration file in your repository.",
+          },
+          {
+            name: "6.	Pipes",
+            description:
+              "Bitbucket Pipes are short code chunks that you can drop into your pipeline to perform powerful actions. Pipes make it easier to build powerful, automated CI/CD workflows and get up and running quickly.",
+          },
+          {
+            name: "7.	Project",
+            description:
+              "A project is a container for repositories. Projects make it easier for teams to focus on a goal, product, or process by organizing your repositories into projects. Projects can be either visible or hidden from public view.",
+          },
+          {
+            name: "8.	Pull Request",
+            description:
+              "Pull requests are a feature that makes it easier for developers to collaborate using Bitbucket. They provide a user-friendly web interface for discussing proposed changes before integrating them into the official project.",
+          },
+          {
+            name: "9.	Working Tree",
+            description:
+              "The tree of actual checked out files, normally containing the contents of the HEAD commit's tree and any local changes you've made but haven't yet committed.",
+          },
+        ],
+      },
+    ],
     examples: [],
-    reference: [],
+    reference: [
+      "https://bitbucket.org/product/guides",
+      "https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud",
+      "https://www.w3schools.com/git/git_remote_getstarted.asp?remote=bitbucket",
+      "https://www.geeksforgeeks.org/introduction-to-bitbucket/",
+    ],
   },
   {
     technology: "Jenkins",

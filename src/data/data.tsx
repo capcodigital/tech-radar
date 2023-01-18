@@ -45,7 +45,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Bitbucket",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/bitbucket_square.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "Jenkins",
