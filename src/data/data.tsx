@@ -18,7 +18,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "CircleCI",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/circleci_square.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "Terraform",
