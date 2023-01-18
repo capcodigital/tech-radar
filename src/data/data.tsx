@@ -337,7 +337,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Rest",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/integration/rest_square.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "Camel",
