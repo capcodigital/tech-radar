@@ -1,5 +1,6 @@
 import concourse from "../../images/technologies/concourseci.png";
 import bitbucketArchitecture from "../../images/technologies/bitbucket_architecture.png";
+import circleciArchitecture from "../../images/technologies/circleci_architecture.png";
 
 const techContent = [
   {
@@ -20,10 +21,136 @@ const techContent = [
   {
     technology: "CircleCI",
     docsLink: "https://circleci.com/docs/",
-    intro: "Content coming soon.",
-    content: [],
+    intro:
+      "CircleCI is a continuous integration and delivery platform that automates the build, test, and deployment of software applications. It enables developers to quickly and efficiently build, test, and deploy their code changes, while providing visibility and insight into the success of their builds and deployments. CircleCI integrates with a variety of popular version control systems, such as GitHub, Bitbucket, and GitLab, as well as popular cloud services, such as AWS, Heroku, and Google Cloud Platform.",
+    content: [
+      {
+        name: "Feature of CircleCI",
+        intro: "",
+        data: [
+          {
+            name: "Continuous Integration",
+            description:
+              "CircleCI provides an automated CI/CD pipeline with features such as automated builds, tests, code analysis, and deployments. It integrates with popular code repositories such as GitHub, Bitbucket, and GitLab to enable continuous integration and delivery.",
+          },
+          {
+            name: "Containerization",
+            description:
+              "CircleCI is a container-based platform that allows developers to run builds and tests in isolated, secure environments. It automatically manages container instances and scales up and down according to resource requirements.",
+          },
+          {
+            name: "Security and Compliance",
+            description:
+              "CircleCI enables organizations to securely build, test, and deploy applications on its platform. It offers features such as role-based access control, audit logging, and secure storage for user credentials.",
+          },
+          {
+            name: "Flexible Infrastructure",
+            description:
+              "CircleCI supports both cloud-based and on-premises infrastructures. It allows organizations to choose the best hosting option for their projects and provides a single-sign-on integration with popular cloud services.",
+          },
+          {
+            name: "Extensive Tooling",
+            description:
+              "CircleCI provides developers with a wide range of tools and integrations such as API calls, shell scripts, and cloud-based services. It also integrates with popular enterprise tools such as Slack, Jira, and Salesforce.",
+          },
+        ],
+      },
+      {
+        name: "CircleCI Architecture",
+        intro: `<img width='100%' src=${circleciArchitecture} /> `,
+        data: [],
+      },
+      {
+        name: "",
+        intro:
+          "The CircleCI server application exposes four services, using a single load balancer. If required, the load balancer can be made private, separating it from the public internet.",
+        data: [
+          {
+            name: "",
+            description:
+              '<table cellspacing="4" cellpadding="10" border="4"><tr><th>Service</th><th>Ports</th><th>Description</th></tr><tr><td>Frontend GUI Proxy & API</td><td>80 and 443</td><td>Exposes the web application.</td></tr><tr><td>Nomad Control Plane</td><td>4647</td><td>Exposes an RPC protocol for Nomad clients.</td></tr><tr><td>Output Processor</td><td>8585</td><td>Ingests output from Nomad runners.</td></tr><tr><td>VM Service</td><td>3000</td><td>Provisions virtual machines.</td></tr></table>',
+          },
+        ],
+      },
+      {
+        name: "",
+        intro:
+          "CircleCI server schedules CI jobs using the <em>Nomad</em> scheduler. The <em>Nomad</em> control plane runs inside of Kubernetes, while the <em>Nomad</em> clients, which are responsible for running scheduled CircleCI jobs, are provisioned outside the cluster. CircleCI server can run Docker jobs on the <em>Nomad</em> clients themselves or in a dedicated virtual machine (VM). <br><br> Job artifacts and outputs are sent directly from jobs in <em>Nomad</em> to object storage (S3, Google Cloud Storage, or other supported options). Audit logs and other items from the application are also stored in object storage, so both the Kubernetes cluster and the <em>Nomad</em> clients need access to object storage.",
+        data: [],
+      },
+      {
+        name: "Benefits of CircleCI",
+        intro: "",
+        data: [
+          {
+            name: "1. Automated Testing",
+            description:
+              "CircleCI makes it easy to automate tests for your applications, ensuring that your code is always up to date and running efficiently.",
+          },
+          {
+            name: "2. Faster Builds",
+            description:
+              "CircleCI allows for faster build times than traditional CI/CD systems, meaning you can quickly deploy your applications.",
+          },
+          {
+            name: "3. Security",
+            description:
+              "CircleCI provides a secure build environment that is compliant with industry standards, ensuring that your applications are secure and compliant with regulations.",
+          },
+          {
+            name: "4. Easy to Configure",
+            description:
+              "Setting up CircleCI is easy with their intuitive user interface and well-documented API.",
+          },
+          {
+            name: "5. Continuous Integration",
+            description:
+              "CircleCI is designed to support continuous integration and deployment, making it easy to push new features and updates to your applications.",
+          },
+          {
+            name: "6. Scalability",
+            description:
+              "CircleCI is designed to be highly scalable and can handle large amounts of builds, meaning you can easily scale your applications as needed.",
+          },
+          {
+            name: "7. Cost Savings",
+            description:
+              "With CircleCI, you only pay for the resources you use, making it a cost-effective solution for businesses of any size.",
+          },
+        ],
+      },
+      {
+        name: "CircleCI Use Cases",
+        intro: "",
+        data: [
+          {
+            name: "Continuous Integration",
+            description:
+              "CircleCI can be used to automate the process of integration of new code into existing code. This allows developers to quickly and easily test their code and merge it into the main codebase.",
+          },
+          {
+            name: "Automated Testing",
+            description:
+              "CircleCI can be used to automate the process of running unit tests, integration tests, and other automated tests on code. This allows developers to quickly and easily test their code and ensure that it works properly.",
+          },
+          {
+            name: "Automated Deployment",
+            description:
+              "CircleCI can be used to automate the process of deploying code to production environments. This allows developers to quickly and easily deploy their code without having to manually deploy it themselves.",
+          },
+          {
+            name: "Automated Monitoring",
+            description:
+              "CircleCI can be used to set up automated systems for monitoring code performance. This allows developers to quickly and easily track the performance of their code and identify any issues that need to be addressed.",
+          },
+        ],
+      },
+    ],
     examples: [],
-    reference: [],
+    reference: [
+      "https://circleci.com/docs/",
+      "https://github.com/dwyl/learn-circleci",
+    ],
   },
   {
     technology: "Terraform",
