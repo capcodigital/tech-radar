@@ -1,4 +1,6 @@
 import concourse from "../../images/technologies/concourseci.png";
+import bitbucketArchitecture from "../../images/technologies/bitbucket_architecture.png";
+import circleciArchitecture from "../../images/technologies/circleci_architecture.png";
 import teamcityOverview from "../../images/technologies/teamcity-overview.png";
 
 const techContent = [
@@ -20,10 +22,136 @@ const techContent = [
   {
     technology: "CircleCI",
     docsLink: "https://circleci.com/docs/",
-    intro: "Content coming soon.",
-    content: [],
+    intro:
+      "CircleCI is a continuous integration and delivery platform that automates the build, test, and deployment of software applications. It enables developers to quickly and efficiently build, test, and deploy their code changes, while providing visibility and insight into the success of their builds and deployments. CircleCI integrates with a variety of popular version control systems, such as GitHub, Bitbucket, and GitLab, as well as popular cloud services, such as AWS, Heroku, and Google Cloud Platform.",
+    content: [
+      {
+        name: "Feature of CircleCI",
+        intro: "",
+        data: [
+          {
+            name: "Continuous Integration",
+            description:
+              "CircleCI provides an automated CI/CD pipeline with features such as automated builds, tests, code analysis, and deployments. It integrates with popular code repositories such as GitHub, Bitbucket, and GitLab to enable continuous integration and delivery.",
+          },
+          {
+            name: "Containerization",
+            description:
+              "CircleCI is a container-based platform that allows developers to run builds and tests in isolated, secure environments. It automatically manages container instances and scales up and down according to resource requirements.",
+          },
+          {
+            name: "Security and Compliance",
+            description:
+              "CircleCI enables organizations to securely build, test, and deploy applications on its platform. It offers features such as role-based access control, audit logging, and secure storage for user credentials.",
+          },
+          {
+            name: "Flexible Infrastructure",
+            description:
+              "CircleCI supports both cloud-based and on-premises infrastructures. It allows organizations to choose the best hosting option for their projects and provides a single-sign-on integration with popular cloud services.",
+          },
+          {
+            name: "Extensive Tooling",
+            description:
+              "CircleCI provides developers with a wide range of tools and integrations such as API calls, shell scripts, and cloud-based services. It also integrates with popular enterprise tools such as Slack, Jira, and Salesforce.",
+          },
+        ],
+      },
+      {
+        name: "CircleCI Architecture",
+        intro: `<img width='100%' src=${circleciArchitecture} /> `,
+        data: [],
+      },
+      {
+        name: "",
+        intro:
+          "The CircleCI server application exposes four services, using a single load balancer. If required, the load balancer can be made private, separating it from the public internet.",
+        data: [
+          {
+            name: "",
+            description:
+              '<table cellspacing="4" cellpadding="10" border="4"><tr><th>Service</th><th>Ports</th><th>Description</th></tr><tr><td>Frontend GUI Proxy & API</td><td>80 and 443</td><td>Exposes the web application.</td></tr><tr><td>Nomad Control Plane</td><td>4647</td><td>Exposes an RPC protocol for Nomad clients.</td></tr><tr><td>Output Processor</td><td>8585</td><td>Ingests output from Nomad runners.</td></tr><tr><td>VM Service</td><td>3000</td><td>Provisions virtual machines.</td></tr></table>',
+          },
+        ],
+      },
+      {
+        name: "",
+        intro:
+          "CircleCI server schedules CI jobs using the <em>Nomad</em> scheduler. The <em>Nomad</em> control plane runs inside of Kubernetes, while the <em>Nomad</em> clients, which are responsible for running scheduled CircleCI jobs, are provisioned outside the cluster. CircleCI server can run Docker jobs on the <em>Nomad</em> clients themselves or in a dedicated virtual machine (VM). <br><br> Job artifacts and outputs are sent directly from jobs in <em>Nomad</em> to object storage (S3, Google Cloud Storage, or other supported options). Audit logs and other items from the application are also stored in object storage, so both the Kubernetes cluster and the <em>Nomad</em> clients need access to object storage.",
+        data: [],
+      },
+      {
+        name: "Benefits of CircleCI",
+        intro: "",
+        data: [
+          {
+            name: "1. Automated Testing",
+            description:
+              "CircleCI makes it easy to automate tests for your applications, ensuring that your code is always up to date and running efficiently.",
+          },
+          {
+            name: "2. Faster Builds",
+            description:
+              "CircleCI allows for faster build times than traditional CI/CD systems, meaning you can quickly deploy your applications.",
+          },
+          {
+            name: "3. Security",
+            description:
+              "CircleCI provides a secure build environment that is compliant with industry standards, ensuring that your applications are secure and compliant with regulations.",
+          },
+          {
+            name: "4. Easy to Configure",
+            description:
+              "Setting up CircleCI is easy with their intuitive user interface and well-documented API.",
+          },
+          {
+            name: "5. Continuous Integration",
+            description:
+              "CircleCI is designed to support continuous integration and deployment, making it easy to push new features and updates to your applications.",
+          },
+          {
+            name: "6. Scalability",
+            description:
+              "CircleCI is designed to be highly scalable and can handle large amounts of builds, meaning you can easily scale your applications as needed.",
+          },
+          {
+            name: "7. Cost Savings",
+            description:
+              "With CircleCI, you only pay for the resources you use, making it a cost-effective solution for businesses of any size.",
+          },
+        ],
+      },
+      {
+        name: "CircleCI Use Cases",
+        intro: "",
+        data: [
+          {
+            name: "Continuous Integration",
+            description:
+              "CircleCI can be used to automate the process of integration of new code into existing code. This allows developers to quickly and easily test their code and merge it into the main codebase.",
+          },
+          {
+            name: "Automated Testing",
+            description:
+              "CircleCI can be used to automate the process of running unit tests, integration tests, and other automated tests on code. This allows developers to quickly and easily test their code and ensure that it works properly.",
+          },
+          {
+            name: "Automated Deployment",
+            description:
+              "CircleCI can be used to automate the process of deploying code to production environments. This allows developers to quickly and easily deploy their code without having to manually deploy it themselves.",
+          },
+          {
+            name: "Automated Monitoring",
+            description:
+              "CircleCI can be used to set up automated systems for monitoring code performance. This allows developers to quickly and easily track the performance of their code and identify any issues that need to be addressed.",
+          },
+        ],
+      },
+    ],
     examples: [],
-    reference: [],
+    reference: [
+      "https://circleci.com/docs/",
+      "https://github.com/dwyl/learn-circleci",
+    ],
   },
   {
     technology: "Terraform",
@@ -186,10 +314,121 @@ const techContent = [
   {
     technology: "Bitbucket",
     docsLink: "https://bitbucket.org/product/guides",
-    intro: "Content coming soon.",
-    content: [],
+    intro:
+      "BitBucket is a web-based hosting service for projects that use either the Mercurial (since launch) or Git (since October 2011) revision control systems. It is owned by Atlassian and is used for source code and development projects. BitBucket offers both commercial plans and free accounts. It offers free accounts with an unlimited number of private repositories (which can have up to five users in the case of free accounts). It allows for easy code review, collaboration, and code management. It allows developers to host their projects, control access to their code, review code, and collaborate with others. It also provides integration with other tools such as JIRA, Confluence, and Bamboo.",
+    content: [
+      {
+        name: "Feature of Bitbucket",
+        intro: "",
+        data: [
+          {
+            name: "Unlimited private repositories",
+            description:
+              "Bitbucket offers unlimited private repositories for up to five users for free. This is great for small teams or individuals who are just getting started.",
+          },
+          {
+            name: "Access control",
+            description:
+              "Teams can easily control access to their repositories with granular permission levels or branch permissions.",
+          },
+          {
+            name: "Code review",
+            description:
+              "Bitbucket has a built-in code review feature that allows team members to comment on pull requests.",
+          },
+          {
+            name: "Third-party integrations",
+            description:
+              "Bitbucket’s integration with third-party services such as Slack, Jira, and Trello makes it easier to collaborate on projects.",
+          },
+          {
+            name: "Pipelines",
+            description:
+              "Pipelines allow users to quickly build, test, and deploy their code.",
+          },
+          {
+            name: "Automated deployment",
+            description:
+              "Bitbucket supports automated deployment to cloud services such as Amazon Web Services and Microsoft Azure.",
+          },
+          {
+            name: "Source code search",
+            description:
+              "Bitbucket’s source code search allows users to quickly find the code they’re looking for.",
+          },
+        ],
+      },
+      {
+        name: "Bitbucket Architecture",
+        intro: `<img width='100%' src=${bitbucketArchitecture} /> `,
+        data: [],
+      },
+      {
+        name: "",
+        intro:
+          "BitBucket is built on a distributed system architecture, with data stored across multiple datacentres. This architecture allows for high availability, scalability, and performance. At the highest level, BitBucket consists of a web interface, API, and repository layer. <br><br> The web interface provides users with a graphical user interface (GUI) to interact with the system. It includes features such as creating, viewing, and editing repositories, creating, and managing pull requests, and managing user permissions. <br><br> The API layer provides a programmatic interface for interacting with the system. It allows for custom integrations with other services, such as third-party code review tools, or applications that need to access data from BitBucket. <br><br> The repository layer is where the actual code and data is stored. It is built on a distributed system, with multiple datacentres spread out across multiple geographic locations. This allows for high availability and scalability of the system. Each repository is replicated in multiple locations, to ensure that data is not lost in the event of a disaster.",
+        data: [],
+      },
+      {
+        name: "Key terms to know in BitBucket",
+        intro:
+          "Here are some important words and terms to know so you can find your way around Bitbucket. Some of these are terms borrowed from Git, others are specific to Bitbucket.",
+        data: [
+          {
+            name: "1.	Branch",
+            description:
+              "A branch represents an independent line of development. Branches serve as an abstraction for the edit/stage/commit process. You can think of them as a way to request a brand-new working directory, staging area, and project history. New commits are recorded in the history for the current branch, which results in a fork in the history of the project.",
+          },
+          {
+            name: "2. Fork",
+            description:
+              'Instead of using a single server-side repository to act as the "central" codebase, forking gives every developer a server-side repository. This means that each contributor has not one, but two Git repositories: a private local one and a public server-side one.',
+          },
+          {
+            name: "3.	HEAD",
+            description:
+              'Git’s way of referring to the current snapshot. Internally, the git checkout command simply updates the HEAD to point to either the specified branch or commit. When it points to a branch, Git doesn\'t complain, but when you check out a commit, it switches into a "detached HEAD" state.',
+          },
+          {
+            name: "4.	Main",
+            description:
+              'The default development branch. Whenever you create a git repository, a branch named "main" is created, and becomes the active branch.',
+          },
+          {
+            name: "5.	Pipelines",
+            description:
+              "Bitbucket Pipelines is an integrated CI/CD service, built into Bitbucket. It allows you to automatically build, test and even deploy your code, based on a configuration file in your repository.",
+          },
+          {
+            name: "6.	Pipes",
+            description:
+              "Bitbucket Pipes are short code chunks that you can drop into your pipeline to perform powerful actions. Pipes make it easier to build powerful, automated CI/CD workflows and get up and running quickly.",
+          },
+          {
+            name: "7.	Project",
+            description:
+              "A project is a container for repositories. Projects make it easier for teams to focus on a goal, product, or process by organizing your repositories into projects. Projects can be either visible or hidden from public view.",
+          },
+          {
+            name: "8.	Pull Request",
+            description:
+              "Pull requests are a feature that makes it easier for developers to collaborate using Bitbucket. They provide a user-friendly web interface for discussing proposed changes before integrating them into the official project.",
+          },
+          {
+            name: "9.	Working Tree",
+            description:
+              "The tree of actual checked out files, normally containing the contents of the HEAD commit's tree and any local changes you've made but haven't yet committed.",
+          },
+        ],
+      },
+    ],
     examples: [],
-    reference: [],
+    reference: [
+      "https://bitbucket.org/product/guides",
+      "https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud",
+      "https://www.w3schools.com/git/git_remote_getstarted.asp?remote=bitbucket",
+      "https://www.geeksforgeeks.org/introduction-to-bitbucket/",
+    ],
   },
   {
     technology: "Jenkins",
@@ -476,14 +715,6 @@ const techContent = [
     ],
     examples: [],
     reference: ["https://docs.twistlock.com/docs/"],
-  },
-  {
-    technology: "Kiali",
-    docsLink: "https://kiali.io/documentation/",
-    intro: "Content coming soon.",
-    content: [],
-    examples: [],
-    reference: [],
   },
   {
     technology: "ConcourseCl",

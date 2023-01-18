@@ -1,16 +1,60 @@
 import camelArchitecture from "../../images/technologies/camel-architecture.png";
 import grpcArchitecture from "../../images/technologies/grpc-architecture.png";
+import restArchitecture from "../../images/technologies/rest-architecture.png";
 import activemqArchitecture from "../../images/technologies/activemq_architecture.png";
 import activemqQueuesTopics from "../../images/technologies/queues-topics.png";
 
 const techContent = [
   {
     technology: "Rest",
-    docsLink: "https://reactnative.dev/docs/getting-started",
-    intro: "Content coming soon.",
-    content: [],
+    docsLink: "https://en.wikipedia.org/wiki/Representational_state_transfer",
+    intro:
+      "REST (Representational State Transfer) is a software architectural style that defines a set of constraints to be used for creating web services. REST is used for developing lightweight, stateless, and loosely-coupled web services that are easily scalable and can be used to access and manipulate data in a decentralized environment.",
+    content: [
+      {
+        name: "REST Principles",
+        intro: "",
+        data: [
+          {
+            name: "Client-Server",
+            description:
+              "The client and server should be decoupled and the client should not have any knowledge of the server-side implementation.",
+          },
+          {
+            name: "Stateless",
+            description:
+              "All server state should be stored on the client side.",
+          },
+          {
+            name: "Cacheable",
+            description:
+              "All responses should be cacheable to improve performance.",
+          },
+          {
+            name: "Layered System",
+            description:
+              "The system should be designed in layers to improve scalability.",
+          },
+          {
+            name: "Uniform Interface",
+            description:
+              "All communication between clients and servers should be done using a uniform interface such as HTTP.",
+          },
+          {
+            name: "Code on Demand",
+            description:
+              "The client should be able to download code from the server to improve functionality.",
+          },
+        ],
+      },
+      {
+        name: "Architecture",
+        intro: `<br /><img src=${restArchitecture} width="100%" /><br /><br /><ol>Rest architecture allows for improved performance, as the system is designed to be stateless and cacheable. This means that the server does not need to process the same requests repeatedly and can respond faster. Additionally, the use of a uniform interface makes the system easier to maintain and less prone to errors.`,
+        data: [],
+      },
+    ],
     examples: [],
-    reference: [],
+    reference: ["https://www.codecademy.com/article/what-is-rest"],
   },
   {
     technology: "Camel",

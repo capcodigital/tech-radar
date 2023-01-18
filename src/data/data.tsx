@@ -18,7 +18,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "CircleCI",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/circleci_square.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "Terraform",
@@ -45,7 +45,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Bitbucket",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/bitbucket_square.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "Jenkins",
@@ -88,11 +88,6 @@ export const data: Array<{ name: string; data: techType }> = [
           name: "Twistlock",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/twistlock_square.png",
           enabled: true,
-        },
-        {
-          name: "Kiali",
-          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/kiali_square.png",
-          enabled: false,
         },
         {
           name: "ConcourseCl",
@@ -337,7 +332,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Rest",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/integration/rest_square.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "Camel",
@@ -583,10 +578,6 @@ export const icons: Array<{ name: string; link: string }> = [
   {
     name: "Twistlock",
     link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/twistlock_square.png",
-  },
-  {
-    name: "Kiali",
-    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/kiali_square.png",
   },
   {
     name: "ConcourseCl",
@@ -890,7 +881,6 @@ export const technologies = [
       "Ansible",
       "Packer",
       "Twistlock",
-      "Kiali",
       "ConcourseCl",
       "Consul",
       "Docker",
@@ -1029,7 +1019,6 @@ export const technologyList = [
   "Ansible",
   "Packer",
   "Twistlock",
-  "Kiali",
   "ConcourseCl",
   "Consul",
   "Docker",
