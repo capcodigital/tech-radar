@@ -9,7 +9,7 @@ Scenario: Jenkins content appears as expected
     And the user navigates to "DevOps" via the hamburger menu
     And the user navigates to category "Jenkins"
     And the user should see "Jenkins is a leading open source automation server. It provides an extensive marketplace of plugins to support building, deploying and automating any project as per your specific needs."
-    And the user should see "Jenkins is the most widely adopted solution for continuous delivery, thanks to its extensibility and a vibrant, active community. The Jenkins community offers thousands of plugins that enable Jenkins to integrate with virtually any tool, including all of the best-of-breed solutions used throughout the continuous delivery process. Jenkins continues to grow as the dominant solution for software process automation, continuous integration and continuous delivery."    
+    And the user should see "Jenkins is the most widely adopted solution for continuous delivery, thanks to its extensibility and a vibrant, active community. The Jenkins community offers thousands of plugins that enable Jenkins to integrate with virtually any tool, including all of the best-of-breed solutions used throughout the continuous delivery process. Jenkins continues to grow as the dominant solution for software process automation, continuous integration and continuous delivery."    
     And the user clicks accordion "Easy Installation"
     And the user can see accordion "Easy Installation" description "Jenkins is a platform-agnostic, self-contained Java-based program, ready to run with packages for Windows, Mac OS, and Unix-like operating systems."
     And the user clicks accordion "Easy Configuration"
