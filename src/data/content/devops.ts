@@ -156,10 +156,54 @@ const techContent = [
   {
     technology: "Terraform",
     docsLink: "https://www.terraform.io/docs/index.html",
-    intro: "Content coming soon.",
-    content: [],
+    intro:
+      "Terraform is an open-source infrastructure as code software tool created by HashiCorp. It enables users to define and provision a data center infrastructure using a high-level configuration language known as Hashicorp Configuration Language (HCL), or optionally JSON. It is a tool for building, changing, and versioning infrastructure safely and efficiently. It can be used to: <ul><li>manage a wide variety of infrastructure resources, including physical and virtual machines, networking and storage components, containers, and cloud services. </li><li>automate processes such as rolling out updates, configuring infrastructure, and managing cloud resources.</li><li>manage multi-cloud and hybrid cloud environments, as well as on-premises resources.</li></ul>",
+    content: [
+      {
+        name: "Why using Terraform?",
+        intro:
+          "Terraform is a powerful and reliable tool for managing infrastructure as code. It is easy to use, efficient, and supports multiple cloud and on-premises environments. It enables users to quickly provision and configure resources, build infrastructure, and roll out updates, all from a single configuration file. It can also be used to optimize costs by automatically scaling resources up and down as needed.",
+        data: [],
+      },
+      {
+        name: "Main features",
+        intro: "",
+        data: [
+          {
+            name: "Infrastructure as Code",
+            description:
+              "Terraform allows users to define their infrastructure using configuration files. This enables users to manage multiple environments and re-use configuration files across projects.",
+          },
+          {
+            name: "Version Control",
+            description:
+              "Terraform allows users to store and version their infrastructure configuration in a version control system, such as Git.",
+          },
+          {
+            name: "Automation",
+            description:
+              "Terraform can be used to automate processes such as rolling out updates, configuring infrastructure, and managing cloud resources.",
+          },
+          {
+            name: "Multi-Cloud and Hybrid Cloud",
+            description:
+              "Terraform can be used to manage multi-cloud and hybrid cloud environments, as well as on-premises resources.",
+          },
+          {
+            name: "Orchestration",
+            description:
+              "Terraform can be used to orchestrate processes such as provisioning, configuring, and managing multiple cloud service providers and on-premises resources.",
+          },
+          {
+            name: "Cost Optimization",
+            description:
+              "Terraform can be used to optimize costs by automatically scaling resources up and down as needed.",
+          },
+        ],
+      },
+    ],
     examples: [],
-    reference: [],
+    reference: ["https://www.terraform.io/"],
   },
   {
     technology: "Vault",
@@ -184,7 +228,7 @@ const techContent = [
       {
         name: "",
         intro:
-          "SonarQube provides fully automated analysis and integration with various build tools like  Maven, Ant, Gradle, MS Build and Continuous Integration tools like (Atlassian Bamboo, Jenkins etc.). SonarQube supports the majority of the industry dominating programming languages and it works with multi language projects as well. ",
+          "SonarQube provides fully automated analysis and integration with various build tools like  Maven, Ant, Gradle, MS Build and Continuous Integration tools like (Atlassian Bamboo, Jenkins etc.). SonarQube supports the majority of the industry dominating programming languages and it works with multi language projects as well. ",
         data: [],
       },
       {
@@ -439,13 +483,13 @@ const techContent = [
       {
         name: "",
         intro:
-          "The Jenkins project was started in 2004 (originally called Hudson) by Kohsuke Kawaguchi, while he worked for Sun Microsystems. The intent behind creating this tool was to ensure the continuous integration happens automatically and every incremental project change can be validated against stability with the existing code.       Originally created as a CI (Continuous Integration) tool, Jenkins evolved to a CD (Continuous Delivery) tool and it orchestrates the entire software delivery pipeline.",
+          "The Jenkins project was started in 2004 (originally called Hudson) by Kohsuke Kawaguchi, while he worked for Sun Microsystems. The intent behind creating this tool was to ensure the continuous integration happens automatically and every incremental project change can be validated against stability with the existing code.       Originally created as a CI (Continuous Integration) tool, Jenkins evolved to a CD (Continuous Delivery) tool and it orchestrates the entire software delivery pipeline.",
         data: [],
       },
       {
         name: "",
         intro:
-          "Jenkins is the most widely adopted solution for continuous delivery, thanks to its extensibility and a vibrant, active community. The Jenkins community offers thousands of plugins that enable Jenkins to integrate with virtually any tool, including all of the best-of-breed solutions used throughout the continuous delivery process. Jenkins continues to grow as the dominant solution for software process automation, continuous integration and continuous delivery. ",
+          "Jenkins is the most widely adopted solution for continuous delivery, thanks to its extensibility and a vibrant, active community. The Jenkins community offers thousands of plugins that enable Jenkins to integrate with virtually any tool, including all of the best-of-breed solutions used throughout the continuous delivery process. Jenkins continues to grow as the dominant solution for software process automation, continuous integration and continuous delivery. ",
         data: [],
       },
       {
@@ -837,7 +881,7 @@ const techContent = [
     content: [
       {
         name: "Consul Features and Architecture",
-        intro: "intro: `<img width='100%' src=${concoursepipe} /> `,",
+        intro: "",
         data: [
           {
             name: "Service Discovery",
