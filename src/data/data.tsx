@@ -65,7 +65,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Ansible",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/ansible_square.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "Packer",

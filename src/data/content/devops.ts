@@ -572,10 +572,79 @@ const techContent = [
   {
     technology: "Ansible",
     docsLink: "https://docs.ansible.com/",
-    intro: "Content coming soon.",
-    content: [],
+    intro:
+      "Ansible is a radically simple IT automation system. Ansible uses an agentless architecture, meaning it does not require the use of an agent on the target systems, instead it uses SSH or PowerShell to communicate with the systems. Ansible also provides a powerful set of modules and playbooks to help with automation tasks.",
+    content: [
+      {
+        name: "Ansible Capabilities",
+        intro: "",
+        data: [
+          {
+            name: "Provisioning",
+            description:
+              "Ansible can be used to provision servers and cloud resources such as Amazon EC2 instances, DigitalOcean droplets, and other infrastructure components.",
+          },
+          {
+            name: "Configuration Management",
+            description:
+              "Ansible can be used to manage and configure systems, ensuring they are always in the desired state.",
+          },
+          {
+            name: "Application Deployment",
+            description:
+              "Ansible can be used to deploy applications to multiple systems in an automated manner.",
+          },
+          {
+            name: "Security Automation",
+            description:
+              "Ansible can be used to automate security tasks such as user and file permissions, password policies, and other security related tasks.",
+          },
+          {
+            name: "Orchestration",
+            description:
+              "Ansible can be used to orchestrate complex multi-tier applications and services.",
+          },
+          {
+            name: "Continuous Delivery",
+            description:
+              "Ansible can be used to automate the delivery of applications and services to multiple environments.",
+          },
+        ],
+      },
+      {
+        name: "Ansible Advantages",
+        intro: "",
+        data: [
+          {
+            name: "Easy to Setup and Use",
+            description:
+              "Ansible is very simple to setup and use. It does not require complex programming knowledge and can be easily learned by anyone.",
+          },
+          {
+            name: "Agentless",
+            description:
+              "Ansible does not require any software or agent to be installed on the nodes which it manages. This makes it easy to manage nodes, as it eliminates the need to install and configure agents on each node.",
+          },
+          {
+            name: "Idempotency",
+            description:
+              "Ansible ensures that the same configuration is applied to the nodes, regardless of whether it has been applied before. This ensures that the desired state of the nodes is maintained.",
+          },
+          {
+            name: "Powerful Automation",
+            description:
+              "Ansible provides powerful automation capabilities that enable users to automate complex tasks across multiple nodes with ease.",
+          },
+          {
+            name: "Open Source",
+            description:
+              "Ansible is an open source automation platform and is available for free. It is also supported by an active community of developers who continuously contribute towards its development.",
+          },
+        ],
+      },
+    ],
     examples: [],
-    reference: [],
+    reference: ["https://docs.ansible.com/"],
   },
   {
     technology: "Packer",
