@@ -23,7 +23,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Terraform",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/terraform_square.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "Vault",
@@ -57,11 +57,6 @@ export const data: Array<{ name: string; data: techType }> = [
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/teamcity_square.png",
           enabled: true,
         },
-        // {
-        //   name: "Istio",
-        //   link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/istio_square.png",
-        //   enabled: false,
-        // },
         {
           name: "Ansible",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/ansible_square.png",
@@ -97,7 +92,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Consul",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/consul_square.png",
-          enabled: false,
+          enabled: true,
         },
       ],
     },
@@ -564,10 +559,6 @@ export const icons: Array<{ name: string; link: string }> = [
     link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/teamcity_square.png",
   },
   {
-    name: "Istio",
-    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/istio_square.png",
-  },
-  {
     name: "Ansible",
     link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/ansible_square.png",
   },
@@ -877,7 +868,6 @@ export const technologies = [
       "Bitbucket",
       "Jenkins",
       "TeamCity",
-      "Istio",
       "Ansible",
       "Packer",
       "Twistlock",
@@ -1015,7 +1005,6 @@ export const technologyList = [
   "Bitbucket",
   "Jenkins",
   "TeamCity",
-  "Istio",
   "Ansible",
   "Packer",
   "Twistlock",
