@@ -28,7 +28,7 @@ export const data: Array<{ name: string; data: techType }> = [
         {
           name: "Vault",
           link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/vault_square.png",
-          enabled: false,
+          enabled: true,
         },
         {
           name: "SonarQube",
