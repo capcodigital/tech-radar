@@ -606,14 +606,6 @@ const techContent = [
     reference: ["https://www.jetbrains.com/teamcity/"],
   },
   {
-    technology: "Istio",
-    docsLink: "https://istio.io/latest/docs/",
-    intro: "Content coming soon.",
-    content: [],
-    examples: [],
-    reference: [],
-  },
-  {
     technology: "Ansible",
     docsLink: "https://docs.ansible.com/",
     intro:
