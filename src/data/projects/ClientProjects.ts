@@ -29,6 +29,7 @@ const ClientProjects = [
       "AWS",
       "Kafka",
       "Grafana",
+      "Rest",
     ],
   },
   {
