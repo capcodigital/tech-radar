@@ -2,6 +2,7 @@ import concourse from "../../images/technologies/concourseci.png";
 import bitbucketArchitecture from "../../images/technologies/bitbucket_architecture.png";
 import circleciArchitecture from "../../images/technologies/circleci_architecture.png";
 import teamcityOverview from "../../images/technologies/teamcity-overview.png";
+import vaultArchitecture from "../../images/technologies/vault_architecture.png";
 
 const techContent = [
   {
@@ -163,11 +164,127 @@ const techContent = [
   },
   {
     technology: "Vault",
-    docsLink: "https://www.vaultproject.io/docs",
-    intro: "Content coming soon.",
-    content: [],
+    docsLink: "https://developer.hashicorp.com/vault/docs",
+    intro:
+      "Vault is an open-source tool for securely storing and accessing secrets. It provides a secure, centralized repository for storing and managing secrets such as passwords, certificates, and access keys. Vault is designed to be highly available and scalable, making it an ideal solution for organizations with large and complex environments. Vault also offers an array of features to help organizations control access to their secrets, including encryption, tokenization, and auditing. Additionally, Vault allows users to easily integrate with other security tools such as authentication systems, logging systems, and compliance solutions to provide an added layer of security.",
+    content: [
+      {
+        name: "Feature of Vault",
+        intro: "",
+        data: [
+          {
+            name: "Secure Key Management",
+            description:
+              "Vault provides secure key management for encrypting and decrypting data. It also provides secure storage for cryptographic keys and certificates, which can be used for encrypting data in transit.",
+          },
+          {
+            name: "Dynamic Secrets",
+            description:
+              "Vault can generate dynamic secrets such as API keys, database credentials, and SSH credentials. These secrets are time-limited and can be revoked at any time.",
+          },
+          {
+            name: "Access Control",
+            description:
+              "Vault provides fine-grained access control to secrets, allowing you to control who can access which secrets, and how they can access them.",
+          },
+          {
+            name: "Audit Logging",
+            description:
+              "Vault provides audit logging, allowing you to track and trace who accessed which secrets and when.",
+          },
+          {
+            name: "Data Encryption",
+            description:
+              "Vault provides data encryption capabilities, allowing you to encrypt secrets before they are stored in Vault.",
+          },
+          {
+            name: "Secure Storage",
+            description:
+              "Vault provides secure storage for secrets, ensuring that secrets are stored securely and are not exposed to unauthorized users.",
+          },
+        ],
+      },
+      {
+        name: "Vault Architecture",
+        intro:
+          "The diagram below illustrates the intricacies and distinct components of Vault.",
+        data: [],
+      },
+      {
+        name: "",
+        intro: `<img width='100%' src=${vaultArchitecture} /> `,
+        data: [],
+      },
+      {
+        name: "",
+        intro:
+          "Vault’s encryption layer, referred to as the barrier, is responsible for encrypting and decrypting Vault data. When the Vault server starts, it writes data to its storage backend. Since the storage backend resides outside the barrier, it’s considered untrusted so Vault will encrypt the data before it sends them to the storage backend. This mechanism ensures that if a malicious attacker attempts to gain access to the storage backend, the data cannot be compromised since it remains encrypted, until Vault decrypts the data. The storage backend provides a durable data persistent layer where data is secured and available across server restarts.",
+        data: [],
+      },
+      {
+        name: "Benefits of Vault",
+        intro: "",
+        data: [
+          {
+            name: "1. Enhanced Security",
+            description:
+              "Vault provides a secure environment where sensitive data can be stored securely. It prevents unauthorized access to data by encrypting the data and storing it in an encrypted state. It also provides access control and multi-factor authentication to ensure that only authorized personnel can access the data.",
+          },
+          {
+            name: "2. Improved Data Availability",
+            description:
+              "Vault helps to ensure that data is always available to the right people when they need it. It provides automated backup and recovery services to minimize data loss in case of any unforeseen disaster.",
+          },
+          {
+            name: "3. Increased Efficiency",
+            description:
+              "Vault helps to streamline processes by providing a single source of truth for all data. This reduces the need for manual data entry and simplifies data access.",
+          },
+          {
+            name: "4. Cost Savings",
+            description:
+              "Vault can help reduce costs by reducing the need for manual processes, eliminating the need for multiple copies of data, and providing easy access to data. This can help to reduce operational costs and improve overall efficiency.",
+          },
+        ],
+      },
+      {
+        name: "Vault Use Cases",
+        intro: "",
+        data: [
+          {
+            name: "1. Data Archiving",
+            description:
+              "Vault can be used to store and archive large amounts of business data, such as customer records, financial statements, legal documents, and other sensitive information.",
+          },
+          {
+            name: "2. Secure File Transfer",
+            description:
+              "Vault can be used to store and manage files securely when transferring data between different locations.",
+          },
+          {
+            name: "3. Identity and Access Management",
+            description:
+              "Vault can be used to securely manage user identities and access control lists in order to ensure that only authorized users can access the data stored in Vault.",
+          },
+          {
+            name: "4. Encryption",
+            description:
+              "Vault can be used to encrypt data stored in the cloud, providing an additional layer of security and privacy.",
+          },
+          {
+            name: "5. Disaster Recovery",
+            description:
+              "Vault can be used to store backups of business data and applications in case of a disaster, helping to ensure business continuity.",
+          },
+        ],
+      },
+    ],
     examples: [],
-    reference: [],
+    reference: [
+      "https://developer.hashicorp.com/vault/docs",
+      "https://developer.hashicorp.com/vault/tutorials",
+      "https://www.baeldung.com/vault",
+    ],
   },
   {
     technology: "SonarQube",
