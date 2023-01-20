@@ -105,7 +105,7 @@ const ClientProjects = [
   {
     project: "Fraud Analytics",
     clientName: "Global Tier 1 Bank",
-    clientImage: "CL1",
+    clientImage: "CL11",
     description:
       "Capco makes use of data that is available to find potential fraud activities. We get requirements from data analysts and data scientists that detail the data extraction and transformation, performing the data extraction and transformation in Scala language. And then Spark jobs are submitted to Hadoop clusters to produce what is a CDA(Contextual Data Asset) in the Parquet file format. The parquet file is loaded as HIVE view for business users to monitor and utilize for fraud analytics.",
     technologies: ["Scala", "Apache Spark", "Apache Hive", "Apache Hadoop"],
