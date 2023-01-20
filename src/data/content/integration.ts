@@ -108,7 +108,7 @@ const techContent = [
           {
             name: "One high-level style for many integrations",
             description:
-              "Once you've learned the basic patterns, and how to work with Camel components, you'll find that it becomes easy to churn out many integrations in Camel. <br /><br />This is an advantage of Camel: the ability to create many integrations fairly quickly. Camel is ideal if you are developing a set of integrations, and you would like them all to developed in a similar way. This can be really attractive option in larger companies where it helps to pick one approach which is shared and understood by the development team.",
+              "Once you've learned the basic patterns, and how to work with Camel components, you'll find that it becomes easy to churn out many integrations in Camel. <br /><br />This is an advantage of Camel: the ability to create many integrations fairly quickly. Camel is ideal if you are developing a set of integrations, and you would like them all to be developed in a similar way. This can be really attractive option in larger companies where it helps to pick one approach which is shared and understood by the development team.",
           },
           {
             name: "Working with data, and especially Java objects",
@@ -209,7 +209,7 @@ const techContent = [
           {
             name: "Permanent storage",
             description:
-              "Storeing streams of data safely in a distributed, durable, fault-tolerant cluster.",
+              "Storing streams of data safely in a distributed, durable, fault-tolerant cluster.",
           },
           {
             name: "High availability",
@@ -450,7 +450,7 @@ const techContent = [
           {
             name: "Scalability",
             description:
-              "IBM MQ can handle a large volume of messages and supports distributed architectures, allowing for easy scaling as the number of applications and systems grows.",
+              "IBM MQ can handle a large volume of messages and supports distributed architectures, allowing for easy scaling as the number of applications and systems grow.",
           },
           {
             name: "Security",
