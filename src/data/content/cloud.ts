@@ -8,7 +8,7 @@ const techContent = [
     technology: "Kubernetes",
     docsLink: "https://kubernetes.io/docs/home/",
     intro:
-      "Kubernetes is an open-source system for automating deployment, scaling, and management of containerised applications. It groups containers that make up an application into logical units for easy management and discovery. <br><br> Kubernetes (κυβερνήτης, Greek for '<a href=’ https://en.wikipedia.org/wiki/Helmsman’>helmsman</a>' or 'pilot' or 'governor', and the etymological root of <a href=’https://en.wikipedia.org/wiki/Cybernetics’>cybernetics</a>) was founded by Ville Aikas, Joe Beda, Brendan Burns, and Craig McLuckie, who were quickly joined by other Google engineers including Brian Grant and Tim Hockin, and was first announced by Google in mid-2014. <br><br> The first unified container-management system developed at Google was a system called Borg. It was built to manage both long-running services and batch jobs, which had previously been handled by two separate systems: Babysitter and the Global Work Queue. The latter’s architecture strongly influenced Borg, but was focused on batch jobs, both predated Linux control groups. <br><br> Kubernetes 1.0 was released on July 21, 2015, after being first announced to the public at Dockercon in June 2014. Last stable version 1.21 was released on 8 April 2021. <br><br> Kubernetes is also known as <b>kube</b> or <b>k8s</b>, even you can run a Kubernetes in your local environment using <b>minikube</b>.  <br><br> There are also playgrounds with different scenarios for Kubernetes in <b>Oreilly Katakoda</b> and another one provided directly by Kubernetes in <b>labs-play-with-k8s</b>. <br><br>",
+      "Kubernetes is an open-source system for automating deployment, scaling, and management of containerised applications. It groups containers that make up an application into logical units for easy management and discovery. <br><br> Kubernetes (κυβερνήτης, Greek for '<a href=’ https://en.wikipedia.org/wiki/Helmsman’>helmsman</a>' or 'pilot' or 'governor', and the etymological root of <a href=’https://en.wikipedia.org/wiki/Cybernetics’>cybernetics</a>) was founded by Ville Aikas, Joe Beda, Brendan Burns, and Craig McLuckie, who were quickly joined by other Google engineers including Brian Grant and Tim Hockin, and was first announced by Google in mid-2014. <br><br> The first unified container-management system developed at Google was a system called Borg. It was built to manage both long-running services and batch jobs, which had previously been handled by two separate systems: Babysitter and the Global Work Queue. The latter’s architecture strongly influenced Borg, but was focused on batch jobs, both predated Linux control groups. <br><br> Kubernetes 1.0 was released on July 21, 2015, after being first announced to the public at Dockercon in June 2014. Last stable version 1.21 was released on 8 April 2021. <br><br> Kubernetes is also known as <b>kube</b> or <b>k8s</b>.You can even run Kubernetes in your local environment using <b>minikube</b>.  <br><br> There are also playgrounds with different scenarios for Kubernetes in <b>Oreilly Katakoda</b> and another one provided directly by Kubernetes in <b>labs-play-with-k8s</b>. <br><br>",
     content: [
       {
         name: "Kubernetes Concepts",
@@ -424,7 +424,7 @@ const techContent = [
           {
             name: "Container as a Service (CaaS)",
             description:
-              "<b>Google Kubernetes Engine</b> (GKE) is GCP’s managed Kubernetes offering for container orchestration. <br><br> Some of the key differences between GCP and other offerings such as Amazon Elastic Kubernetes Service (AKS) and Microsoft Azure Kubernetes Service (EKS) are: <br><br> <ul><li><b>Network endpoints</b> that enable a shorter distance between exposing load balancer and the application pods</li><li><b>Data Plane</b> that uses eBPF technology that is used for high performance networking for Kubernetes</li><li><b>Workload identity</b> is the ability to use a Kubernetes service account as a GCP service account on GCP IAM. This feature, as useful as it is, needs extensive care because connecting two isolated IAM services requires both sides should be as secure as each other, and could need extensive hardening on the GKE cluster</li><li><b>Istio</b>, out-of-the-box, Istio is the service mesh technology that is an incubation project at CNCF. Service mesh is the technology to enable security and observability in a microservices architecture</li><li><b>Anthos</b> is a product developed by Google, and a combination of Istio and Anthos operator which keeps the cluster configuration in a desired state kept in a versioned source code repository</li></ul> Primarily, Istio and Anthos are considered as the key to multi-cloud via multi-cluster federation. Just like the other managed Kubernetes service offerings, it presents a managed control plane and manage-able worker nodes, release channel enrolments and auto-upgrades, log integration with the platforms log management solution, and GCP Cloud Operations contextually. <br><br> Below is a communication diagram for a private GKE cluster. A private cluster does not have public exposure and if internet access if required, it will be provided via a controlled gateway called Cloud NAT.<br><br> <img width='100%' src='https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/gcp_gke.svg'/>",
+              "<b>Google Kubernetes Engine</b> (GKE) is GCP’s managed Kubernetes offering for container orchestration. <br><br> Some of the key differences between GCP and other offerings such as Amazon Elastic Kubernetes Service (AKS) and Microsoft Azure Kubernetes Service (EKS) are: <br><br> <ul><li><b>Network endpoints</b> that enable a shorter distance between exposing load balancer and the application pods</li><li><b>Data Plane</b> that uses eBPF technology that is used for high performance networking for Kubernetes</li><li><b>Workload identity</b> is the ability to use a Kubernetes service account as a GCP service account on GCP IAM. This feature, as useful as it is, needs extensive care because connecting two isolated IAM services requires both sides should be as secure as each other, and could need extensive hardening on the GKE cluster</li><li><b>Istio</b>, out-of-the-box, Istio is the service mesh technology that is an incubation project at CNCF. Service mesh is the technology to enable security and observability in a microservices architecture</li><li><b>Anthos</b> is a product developed by Google, and a combination of Istio and Anthos operator which keeps the cluster configuration in a desired state kept in a versioned source code repository</li></ul> Primarily, Istio and Anthos are considered as the key to multi-cloud via multi-cluster federation. Just like the other managed Kubernetes service offerings, it presents a managed control plane and manage-able worker nodes, release channel enrolments and auto-upgrades, log integration with the platforms log management solution, and GCP Cloud Operations contextually. <br><br> Below is a communication diagram for a private GKE cluster. A private cluster does not have public exposure and if internet access is required, it will be provided via a controlled gateway called Cloud NAT.<br><br> <img width='100%' src='https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/gcp_gke.svg'/>",
           },
           {
             name: "Big Data Services",
@@ -446,7 +446,7 @@ const techContent = [
       {
         name: "Global Footprint and Redundancy ",
         intro:
-          "The AWS Global Cloud Infrastructure is the most secure, extensive, and reliable cloud platform, offering over 200 fully featured services from data centers globally. Whether you need to deploy your application workloads across the globe in a single click, or you want to build and deploy specific applications closer to your end-users with single-digit millisecond latency, AWS provides you the cloud infrastructure where and when you need it. <img width='100%' src='https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2020/03/17/aws_regions-1.png'/>AWS data centres are physical facilities designed to meet specific requirements of resiliency, redundancy as well as conform to regional data residency requirements within a specified geography. Key to this is the concept of Availability zones. <br/> <br/>Availability zones are distinct separate facilities within a region. AWS availability zones enable replication of applications and data to protect against single points of failure. This allows the design of high availability and redundancy in your applications. <br/><br/>Today the AWS Cloud spans 81 Availability Zones within 25 geographic regions around the world, with announced plans for 21 more Availability Zones and 7 more AWS Regions in Australia, India, Indonesia, Israel, Spain, Switzerland, and United Arab Emirates (UAE). <img width='100%' src='https://digitalcloud.training/wp-content/uploads/2021/04/aws-global-infrastructure.png'/>With millions of active customers and tens of thousands of partners globally, AWS has the largest and most dynamic ecosystem. Customers across virtually every industry and of every size, including start-ups, enterprises, and public sector organizations, are running every imaginable use case on AWS.  ",
+          "The AWS Global Cloud Infrastructure is the most secure, extensive, and reliable cloud platform, offering over 200 fully featured services from data centers globally. Whether you need to deploy your application workloads across the globe in a single click, or you want to build and deploy specific applications closer to your end-users with single-digit millisecond latency, AWS provides you the cloud infrastructure where and when you need it. <img width='100%' src='https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2020/03/17/aws_regions-1.png'/>AWS data centres are physical facilities designed to meet specific requirements of resiliency, redundancy as well as conform to regional data residency requirements within a specified geography. Key to this is the concept of Availability zones. <br/> <br/>Availability zones are distinct separate facilities within a region. AWS availability zones enable replication of applications and data to protect against single point of failure. This allows the design of high availability and redundancy in your applications. <br/><br/>Today the AWS Cloud spans 81 Availability Zones within 25 geographic regions around the world, with announced plans for 21 more Availability Zones and 7 more AWS Regions in Australia, India, Indonesia, Israel, Spain, Switzerland, and United Arab Emirates (UAE). <img width='100%' src='https://digitalcloud.training/wp-content/uploads/2021/04/aws-global-infrastructure.png'/>With millions of active customers and tens of thousands of partners globally, AWS has the largest and most dynamic ecosystem. Customers across virtually every industry and of every size, including start-ups, enterprises, and public sector organizations, are running every imaginable use case on AWS.  ",
         data: [],
       },
       {
@@ -499,7 +499,7 @@ const techContent = [
           {
             name: "Panels",
             description:
-              "From heatmaps to histograms. Graphs to geomaps. Grafana has fast and flexible visualizations that allows you to visualize your data, any way you want.",
+              "From heatmaps to histograms, graphs to geomaps, Grafana has fast and flexible visualizations that allows you to visualize your data, any way you want.",
           },
           {
             name: "Plugins",
@@ -544,7 +544,7 @@ const techContent = [
     technology: "Apache Hadoop",
     docsLink: "https://hadoop.apache.org/",
     intro:
-      "The Apache™ Hadoop® project develops open-source software for reliable, scalable, distributed computing. The Apache Hadoop software library is a framework that allows for the distributed processing of large data sets across clusters of computers using simple programming models. It is designed to scale up from single servers to thousands of machines, each offering local computation and storage. Rather than rely on hardware to deliver high-availability, the library itself is designed to detect and handle failures at the application layer, so delivering a highly-available service on top of a cluster of computers, each of which may be prone to failures.",
+      "The Apache™ Hadoop® project develops open-source software for reliable, scalable, distributed computing. The Apache Hadoop software library is a framework that allows for the distributed processing of large data sets across clusters of computers using simple programming models. It is designed to scale up from single servers to thousands of machines, each offering local computation and storage. Rather than relying on hardware to deliver high-availability, the library itself is designed to detect and handle failures at the application layer, so delivering a highly-available service on top of a cluster of computers, each of which may be prone to failures.",
     content: [
       {
         name: "",
@@ -574,7 +574,7 @@ const techContent = [
       {
         name: "Ubiquitous",
         intro:
-          "Available on all cloud platforms and able to interact with many soorces of data Spark is a powerful framework ",
+          "Available on all cloud platforms and able to interact with many sources of data Spark is a powerful framework ",
         data: [],
       },
     ],
@@ -595,25 +595,25 @@ const techContent = [
       {
         name: "Redundancy ",
         intro:
-          "Azure data centres are physical facilities designed to meet specific requirements of resiliency, redundancy as well as conforming to regional data residency requirements within a specified geography. <br/><br/>Key to this is the concept of Availability zones. Availability zones are distinct separate facilities within a region. <br/><br/>Azure regions that support availability zones enable replication of applications and data to protect against single points of failure. <img width='100%' src='https://petri-media.s3.amazonaws.com/2020/09/Figure1.jpg' /> ",
+          "Azure data centres are physical facilities designed to meet specific requirements of resiliency, redundancy as well as conforming to regional data residency requirements within a specified geography. <br/><br/>Key to this is the concept of Availability zones. Availability zones are distinct separate facilities within a region. <br/><br/>Azure regions that support availability zones enable replication of applications and data to protect against single point of failure. <img width='100%' src='https://petri-media.s3.amazonaws.com/2020/09/Figure1.jpg' /> ",
         data: [],
       },
       {
         name: "Availability Zones ",
         intro:
-          "Availability zones allow the design of high availability and redundancy in your applictations. By not leveraging this feature your applications and data are at risk of single points of failure during an outage.",
+          "Availability zones allow the design of high availability and redundancy in your applictations. By not leveraging this feature your applications and data are at risk of single point of failure during an outage.",
         data: [],
       },
       {
         name: "Consumption Models ",
         intro:
-          "Cloud computing considerably changes the way businesses view IT operational costs. Traditional IT and on-premises data centres concentrated on upfront capital expenditure to invest in hardware and software to support the business yearly budgetary cycles. However, with cloud computing there is a considerable shift towards pay as you go consumption models. <br/><br/> The term “utility” or “elastic computing” is often used to describe public cloud usage. Your consumption shifts based on the demand for your application and services. The ability to metre your usage allows customers to experiment and do proof of concepts with temporary environments. ",
+          "Cloud computing considerably changes the way businesses view IT operational costs. Traditional IT and on-premises data centres concentrates on upfront capital expenditure to invest in hardware and software to support the business yearly budgetary cycles. However, with cloud computing there is a considerable shift towards pay as you go consumption models. <br/><br/> The term “utility” or “elastic computing” is often used to describe public cloud usage. Your consumption shifts based on the demand for your application and services. The ability to metre your usage allows customers to experiment and do proof of concepts with temporary environments. ",
         data: [],
       },
       {
         name: "Services",
         intro:
-          "Azure offers a wide range service split across computer, storage, and networking. Some of the most popular services in demand in 2021 include: ",
+          "Azure offers a wide range of services split across computer, storage, and networking. Some of the most popular services in demand in 2021 include: ",
         data: [
           {
             name: "Azure SQL Database ",
@@ -628,13 +628,23 @@ const techContent = [
           {
             name: "Azure Virtual Desktop ",
             description:
-              "With the shift towards hybrid ways of working, organizations can leverage Virtual Desktop Infrastructure hosted in Azure to securely deliver VDI solutions to end users. <br/><br/> The above examples are a small snapshot of the services and use cases that Azure offers.  ",
+              "With the shift towards hybrid ways of working, organizations can leverage Virtual Desktop Infrastructure hosted in Azure to securely deliver VDI solutions to end users.",
           },
         ],
       },
+      {
+        name: "",
+        intro:
+          "The above examples are a small snapshot of the services and use cases that Azure offers. ",
+        data: [],
+      },
     ],
     examples: [],
-    reference: [],
+    reference: [
+      "https://learn.microsoft.com/en-us/azure/developer/",
+      "https://azure.microsoft.com/en-gb/get-started/",
+      "https://www.guru99.com/microsoft-azure-tutorial.html",
+    ],
   },
   {
     technology: "Digital Ocean",

@@ -53,7 +53,7 @@ const ClientProjects = [
     clientName: "Global Tier 1 Bank",
     clientImage: "CL6",
     description:
-      "Capco were engaged to upgrade KYC and onboarding processes & technology for Corporate, Wealth and Investment Bank clients of a global Tier 1 bank, specifically to meet regulatory requirements.  Technically, Capco built a standard set of APIs and microservices using Spring Boot to wrap existing backend systems, this were deployed on to the banks PaaS solution provided by OpenShift.",
+      "Capco were engaged to upgrade KYC and onboarding processes & technology for Corporate, Wealth and Investment Bank clients of a global Tier 1 bank, specifically to meet regulatory requirements.  Technically, Capco built a standard set of APIs and microservices using Spring Boot to wrap existing backend systems, this were deployed on to the bank's PaaS solution provided by OpenShift.",
     technologies: [
       "Spring Boot",
       "Open API",
