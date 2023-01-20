@@ -94,6 +94,14 @@ const ClientProjects = [
       "Capco uses Apache Hadoop echosystem as part of Cloudera distribution to run their processes in their on premises environment mainly focussed on ETL, ELT batch scenarios. They also use Apache Spark and Apache Hive as two main components of their framework but also use particulary other Apache Hadoop components like Oozie, HBase, all integrated with Kerberos security.",
     technologies: ["Apache Hadoop", "Apache Spark", "Apache Hive"],
   },
+  {
+    project: "Mobile Transaction App",
+    clientName: "French Neobank",
+    clientImage: "CL2",
+    description:
+      "Capco worked with a challenger bank on developing a robust and scalable mobile banking app, utilizing our expertise in Gradle. We took advantage of Gradle's powerful features such as multi-module builds, custom plugins, and advanced dependency management to streamline their development process and deliver a high-quality app quickly. We helped the client to make use of dynamic feature modules and instant apps, which allowed us to deliver a smaller, more focused app to users, which is great for those who have limited storage on their devices. With Gradle's ability to automate testing and deployment, we helped them to thoroughly test the app and deploy it smoothly.",
+    technologies: ["Gradle Mobile", "Firebase"],
+  },
 ];
 
 export default ClientProjects;
