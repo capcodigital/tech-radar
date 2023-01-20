@@ -102,6 +102,14 @@ const ClientProjects = [
       "Capco worked with a challenger bank on developing a robust and scalable mobile banking app, utilizing our expertise in Gradle. We took advantage of Gradle's powerful features such as multi-module builds, custom plugins, and advanced dependency management to streamline their development process and deliver a high-quality app quickly. We helped the client to make use of dynamic feature modules and instant apps, which allowed us to deliver a smaller, more focused app to users, which is great for those who have limited storage on their devices. With Gradle's ability to automate testing and deployment, we helped them to thoroughly test the app and deploy it smoothly.",
     technologies: ["Gradle Mobile", "Firebase"],
   },
+  {
+    project: "Fraud Analytics",
+    clientName: "Global Tier 1 Bank",
+    clientImage: "CL1",
+    description:
+      "Capco makes use of data that is available to find potential fraud activities. We get requirements from data analysts and data scientists that detail the data extraction and transformation, performing the data extraction and transformation in Scala language. And then Spark jobs are submitted to Hadoop clusters to produce what is a CDA(Contextual Data Asset) in the Parquet file format. The parquest file is loaded as HIVE view for business users to monitor and utilize for fraud analytics.",
+    technologies: ["Scala", "Apache Spark", "Apache Hive", "Apache Hadoop"],
+  },
 ];
 
 export default ClientProjects;
