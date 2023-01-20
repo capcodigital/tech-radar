@@ -613,7 +613,7 @@ const techContent = [
       {
         name: "Services",
         intro:
-          "Azure offers a wide range services split across computer, storage, and networking. Some of the most popular services in demand in 2021 include: ",
+          "Azure offers a wide range of services split across computer, storage, and networking. Some of the most popular services in demand in 2021 include: ",
         data: [
           {
             name: "Azure SQL Database ",
