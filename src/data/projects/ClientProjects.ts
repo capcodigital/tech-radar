@@ -54,13 +54,7 @@ const ClientProjects = [
     clientImage: "CL6",
     description:
       "Capco were engaged to upgrade KYC and onboarding processes & technology for Corporate, Wealth and Investment Bank clients of a global Tier 1 bank, specifically to meet regulatory requirements.  Technically, Capco built a standard set of APIs and microservices using Spring Boot to wrap existing backend systems, this were deployed on to the bank's PaaS solution provided by OpenShift.",
-    technologies: [
-      "Spring Boot",
-      "Open API",
-      "Cucumber",
-      "Splunk",
-      "OpenShift",
-    ],
+    technologies: ["Spring Boot", "OpenAPI", "Cucumber", "Splunk", "OpenShift"],
   },
   {
     project: "Wealth Client Portal",
@@ -109,6 +103,22 @@ const ClientProjects = [
     description:
       "Capco makes use of data that is available to find potential fraud activities. We get requirements from data analysts and data scientists that detail the data extraction and transformation, performing the data extraction and transformation in Scala language. And then Spark jobs are submitted to Hadoop clusters to produce what is a CDA(Contextual Data Asset) in the Parquet file format. The parquet file is loaded as HIVE view for business users to monitor and utilize for fraud analytics.",
     technologies: ["Scala", "Apache Spark", "Apache Hive", "Apache Hadoop"],
+  },
+  {
+    project: "Commercial Payments service",
+    clientName: "Global Tier 1 Bank",
+    clientImage: "CL12",
+    description:
+      "Capco works with Natwest on their commercial banking arm. Natwest's commercial banking arm, the platform is called Bankline. It essentially lets commercial customers (big businesses, not the everyday retail users) make high value payments. Bankline offers features like domestic payments as well as international payments in 40 currencies which is something Capco has recently helped expand",
+    technologies: [
+      "PCF",
+      "ActiveMQ",
+      "Rest",
+      "Spring Boot",
+      "TeamCity",
+      "React",
+      "Kotlin",
+    ],
   },
 ];
 
