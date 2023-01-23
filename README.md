@@ -156,6 +156,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 [contributors-shield]: https://img.shields.io/github/contributors/capcodigital/tech-radar.svg?style=for-the-badge
 [contributors-url]: https://github.com/capcodigital/tech-radar/graphs/contributors
+[coverage-shield]: https://img.shields.io/nycrc/capcodigital/tech-radar?style=for-the-badge
 [forks-shield]: https://img.shields.io/github/forks/capcodigital/tech-radar.svg?style=for-the-badge
 [forks-url]: https://github.com/capcodigital/tech-radar/network/members
 [stars-shield]: https://img.shields.io/github/stars/capcodigital/tech-radar.svg?style=for-the-badge
