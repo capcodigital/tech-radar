@@ -1,8 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CategoryListItem should render CategoryListItem component 1`] = `
+.c0 {
+  padding-top: 12px;
+  font: 300 19px poppins,sans-serif;
+}
+
+.c0 svg.MuiSvgIcon-root {
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.c0 a {
+  color: inherit;
+}
+
+.c0 a:hover {
+  border-bottom: 1px solid white;
+}
+
+@media screen and (max-width:1000px) {
+  .c0 {
+    font-size: 18px;
+  }
+}
+
 <div
-  class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+  class="c0"
 >
   <a
     data-test-id="category-item-GitHub"

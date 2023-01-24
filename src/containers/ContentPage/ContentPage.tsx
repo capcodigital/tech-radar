@@ -31,6 +31,7 @@ import {
 import ClientProjectLink from "../../components/ProjectPageLink/ProjectPageLink";
 import Axios from "axios";
 import ClientProjects from "../../data/projects/ClientProjects";
+import { useLocation } from "react-router-dom";
 
 /* CategoryPage component that is used to display the content of a technology. */
 const CategoryPage = () => {
@@ -40,6 +41,7 @@ const CategoryPage = () => {
   const [imageLink, setImageLink] = useState("");
   const [ossProjectCount, setOssProjectCount] = useState<number>(0);
   const [clientProjectCount, setClientProjectCount] = useState<number>(0);
+  const location = useLocation();
 
   /**
    * When the user clicks on a button, set the category and technology state variables to the values
@@ -115,7 +117,7 @@ const CategoryPage = () => {
       top: 0,
       behavior: "smooth",
     });
-  }, [technology, category, setCategory, setTechnology]);
+  }, [location, technology, category, setCategory, setTechnology]);
 
   let nextTechnology = getNextItem(technology);
 

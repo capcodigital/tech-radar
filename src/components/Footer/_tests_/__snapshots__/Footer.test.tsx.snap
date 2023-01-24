@@ -1,8 +1,51 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Footer should render Footer component 1`] = `
+.c0 {
+  margin-top: auto;
+  height: 70px;
+  width: 100%;
+  background: #00000026;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  padding: 0 100px 0 100px;
+  line-height: 70px;
+  bottom: 0;
+}
+
+.c0 a {
+  color: inherit;
+  float: left;
+}
+
+.c0 div {
+  float: right;
+}
+
+.c0 img {
+  display: none;
+}
+
+@media screen and (max-width:1000px) {
+  .c0 {
+    height: 250px;
+    padding: 40px 100px 0 100px;
+  }
+
+  .c0 a,
+  .c0 div {
+    float: none;
+  }
+
+  .c0 img {
+    display: block;
+    margin: auto;
+  }
+}
+
 <div
-  class="Footer__StyledFooter-sc-15feby7-0 hcXInE footer"
+  class="c0 footer"
 >
   <img
     alt="Logo"

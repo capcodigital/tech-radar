@@ -1,8 +1,55 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Menu should render Menu component 1`] = `
+.c0.c0 {
+  background: transparent;
+  padding-top: 20px;
+  box-shadow: none;
+}
+
+.c0.c0 #purpose:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c1.c1 {
+  z-index: 1400;
+  margin-left: 60px;
+}
+
+.c1.c1 div {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+@media screen and (max-width:1000px) {
+  .c1.c1 {
+    margin-left: 10px;
+  }
+
+  .c1.c1 img {
+    height: 36px;
+  }
+
+  .c1.c1 div {
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width:768px) {
+
+}
+
+@media screen and (max-width:768px) {
+
+}
+
+@media screen and (max-width:1000px) {
+
+}
+
 <header
-  class="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorPrimary styles__StyledAppBar-sc-eb6keh-0 bEZnpo MuiPaper-elevation4"
+  class="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorPrimary c0 MuiPaper-elevation4"
 >
   <div
     class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
@@ -11,7 +58,7 @@ exports[`Menu should render Menu component 1`] = `
       class="MuiGrid-root MuiGrid-container MuiGrid-justify-content-xs-space-between"
     >
       <div
-        class="MuiGrid-root styles__LogoGridItem-sc-eb6keh-1 gVlgxl MuiGrid-item"
+        class="MuiGrid-root c1 MuiGrid-item"
       >
         <a
           href="/home"

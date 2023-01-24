@@ -42,7 +42,7 @@ const BreadcrumbComponent: FC<RouteComponentProps> = ({
       {pathnames.map((name, index) => {
         const routeTo = `/${pathnames.slice(0, index++).join("/")}`;
         const isLast = index === pathnames.length;
-        const Name = name.toUpperCase();
+        const Name = name.toUpperCase().replace("404", "Not Found");
 
         const HandleClick = (event: any) => {
           if (

@@ -12,6 +12,7 @@ import { BackToHomeButton } from "../../components/BackLink/BackLink";
 import { data, technologies, categoryList, techType } from "../../data/data";
 import images from "../../images";
 import styled from "styled-components/macro";
+import { useLocation } from "react-router-dom";
 
 /**
  * WrapperProps is an object with a single property, category, which is a string.
@@ -157,6 +158,8 @@ const CategoryPage = () => {
     data: techType;
   } | null>(null);
 
+  const location = useLocation();
+
   useEffect(() => {
     let url = window.location.pathname.split("/");
 
@@ -175,7 +178,7 @@ const CategoryPage = () => {
       top: 0,
       behavior: "smooth",
     });
-  }, [category, setCategory]);
+  }, [location, category, setCategory]);
 
   const buttonText = categoryList.filter((name: string) => name !== category);
 
