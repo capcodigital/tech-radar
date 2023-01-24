@@ -1,8 +1,291 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ContentPage should render ContentPage component 1`] = `
+.c2 {
+  font-size: 17px;
+  display: block;
+  color: inherit;
+  margin-left: -10px;
+}
+
+.c2 img {
+  margin-left: 10px !important;
+}
+
+.c2:hover {
+  color: inherit;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c7 {
+  margin-bottom: 40px;
+}
+
+.c7 .intro {
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 14px;
+}
+
+.c7 .content {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.c7 .content div:first-child {
+  padding: 3px;
+  margin: 2px;
+  width: 100%;
+}
+
+.c7 .content .content-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.c7 a {
+  color: inherit;
+  border-bottom: 1px solid;
+}
+
+.c7 img {
+  padding: 20px 0;
+}
+
+.c0 {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 90px;
+  margin: 50px 0 100px 0;
+}
+
+.c0 .background {
+  opacity: 0.12;
+  position: absolute;
+  top: -80px;
+  left: -300px;
+}
+
+.c0 img {
+  margin: auto;
+}
+
+.c1 {
+  text-align: left;
+  width: 1060px;
+  margin: auto;
+  position: relative;
+}
+
+.c1:first-child {
+  display: inline-block;
+}
+
+.c1 svg.icon {
+  width: 80px;
+  height: 80px;
+}
+
+.c1 .content-head {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c6 {
+  width: 700px;
+  margin: 0 auto;
+  font-family: poppins,sans-serif;
+}
+
+.c6 .content-intro {
+  font-size: 24px;
+  margin-bottom: 34px;
+}
+
+.c6 .content-intro a {
+  color: inherit;
+  border-bottom: 1px solid;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c5 {
+  font-size: 120px;
+  font-weight: 700;
+  text-align: left;
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 50px;
+}
+
+.c8 {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient( to right,rgba(255,255,255,0),rgba(255,255,255,0.75),rgba(255,255,255,0) );
+}
+
+.c3 > a {
+  font-size: 17px;
+}
+
+.c9 {
+  margin-top: 75px;
+  float: left;
+}
+
+.c9 div:first-child {
+  font: 300 19px poppins,sans-serif;
+  opacity: 0.5;
+}
+
+.c9 a:nth-child(2) {
+  font: 59px bebas-neue-pro,sans-serif;
+  color: inherit;
+}
+
+.c9 a:nth-child(2):hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c10 {
+  margin-top: 75px;
+  float: right;
+}
+
+.c10 div:first-child {
+  font: 300 19px poppins,sans-serif;
+  opacity: 0.5;
+}
+
+.c10 a:nth-child(2) {
+  font: 59px bebas-neue-pro,sans-serif;
+  color: inherit;
+}
+
+.c10 a:nth-child(2):hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c4 {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: Bebas-Neue-Pro,sans-serif;
+  color: inherit;
+  border-bottom: 2px solid;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c4 img {
+  margin-left: 10px !important;
+}
+
+.c4:hover {
+  color: inherit;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+@media screen and (max-width:1000px) {
+  .c7 {
+    margin-bottom: 20px;
+  }
+
+  .c7 .title {
+    font-size: 20px;
+  }
+
+  .c7 .intro,
+  .c7 .content {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .c0 {
+    margin-top: 30px;
+    padding: 0 25px 0 25px;
+  }
+
+  .c0 img.background {
+    display: none;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .c1 {
+    width: 100%;
+  }
+
+  .c1 svg.icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .c1 .content-head {
+    padding: 30px 0;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .c6 {
+    width: 100%;
+  }
+
+  .c6 .content-intro {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .c5 {
+    font-size: 52px;
+    padding-right: 30px;
+  }
+}
+
+@media screen and (min-width:1000px) {
+  .c3 {
+    display: none;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .c9 div:first-child {
+    font-size: 19px;
+  }
+
+  .c9 a:nth-child(2) {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .c10 div:first-child {
+    font-size: 19px;
+  }
+
+  .c10 a:nth-child(2) {
+    font-size: 40px;
+  }
+}
+
 <div
-  class="styles__Wrapper-sc-17b28va-0 cAqPbr"
+  class="c0"
 >
   <img
     alt="DevOps"
@@ -12,7 +295,7 @@ exports[`ContentPage should render ContentPage component 1`] = `
     width="650"
   />
   <div
-    class="styles__ContentWrapper-sc-17b28va-1 jUKZI"
+    class="c1"
   >
     <div
       class="MuiGrid-root MuiGrid-container MuiGrid-justify-content-xs-space-between"
@@ -21,7 +304,7 @@ exports[`ContentPage should render ContentPage component 1`] = `
         class="MuiGrid-root MuiGrid-item"
       >
         <a
-          class="styles__StyledBackLink-sc-1t7dby2-0 eIpoUv"
+          class="c2"
           href="/category/devops"
         >
           <svg
@@ -48,10 +331,10 @@ exports[`ContentPage should render ContentPage component 1`] = `
         class="MuiGrid-root MuiGrid-item"
       >
         <div
-          class="styles__StyledWrapper-sc-17b28va-5 kFIvTx"
+          class="c3"
         >
           <a
-            class="styles__StyledLink-sc-rz9yta-0 MjBCH"
+            class="c4"
             href="/projects/devops/github"
           >
             View Projects
@@ -64,7 +347,7 @@ exports[`ContentPage should render ContentPage component 1`] = `
     >
       <div>
         <div
-          class="styles__Title-sc-17b28va-3 iXyYaR title-GitHub"
+          class="c5 title-GitHub"
         >
           GitHub
         </div>
@@ -95,7 +378,7 @@ exports[`ContentPage should render ContentPage component 1`] = `
       </div>
     </div>
     <div
-      class="styles__ContentBody-sc-17b28va-2 ehYhJm"
+      class="c6"
     >
       <div
         class="content-intro"
@@ -103,16 +386,16 @@ exports[`ContentPage should render ContentPage component 1`] = `
         GitHub is a cloud-based hosting service that lets you manage Git repositories, Github is ubiquitously used in open source sofrware teams and very prominent within Enterprise, Github provided web based features, team manament and other capbilties on top of Git.
       </div>
       <div
-        class="styles__StyledSubContent-sc-1kbw77o-1 iqXZVD"
+        class="c7"
       >
         
         
       </div>
       <hr
-        class="styles__Divider-sc-17b28va-4 cBNUFo"
+        class="c8"
       />
       <div
-        class="ContentNavButton__StyledContentNavButton-sc-17243nr-0 iMUKvo"
+        class="c9"
         data-test-id="Previous"
       >
         <div>
@@ -125,7 +408,7 @@ exports[`ContentPage should render ContentPage component 1`] = `
         </a>
       </div>
       <div
-        class="ContentNavButton__StyledContentNavButton-sc-17243nr-0 cSdhqz"
+        class="c10"
         data-test-id="Next"
       >
         <div>

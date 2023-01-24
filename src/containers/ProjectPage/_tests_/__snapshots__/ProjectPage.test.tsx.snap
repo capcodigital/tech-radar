@@ -1,14 +1,218 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ProjectPage when techology is React it should render ProjectPage component 1`] = `
+.c5 {
+  margin-bottom: 20px;
+  font-family: poppins,sans-serif;
+}
+
+.c5 .projectTech-link {
+  display: inline-block;
+  padding: 10px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.c5 svg.icon {
+  height: 45px;
+  width: 45px;
+}
+
+.c5 .div {
+  margin-bottom: 10px;
+}
+
+.c5 .project-image-wrapper {
+  padding: 5% 10%;
+  background-color: white;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.c5 .project-image {
+  width: 100%;
+}
+
+.c5 .heading {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 12px;
+  text-transform: capitalize;
+}
+
+.c5 .link {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 2;
+  justify-self: end;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
+  border-bottom: 2px solid #e6236d;
+  padding-bottom: 4px;
+  text-transform: capitalize;
+}
+
+.c5 .link:hover {
+  cursor: pointer;
+}
+
+.c5 .project-tag {
+  grid-column: 1 / span 1;
+  background-color: rgba(230,35,109,0.5);
+  border-radius: 40px;
+  min-width: -webkit-min-content;
+  min-width: -moz-min-content;
+  min-width: min-content;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  padding: 4px 16px;
+  text-align: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  font-weight: 500;
+  font-size: 14px line-height:21px;
+}
+
+.c5 .text {
+  margin-bottom: 20px;
+  font-size: 14px line-height:21px;
+}
+
+.c5 .technologies {
+  margin-bottom: 100px;
+  text-transform: capitalize;
+}
+
+.c5 .row-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(2,1fr);
+  margin-bottom: 20px;
+}
+
+.c1 {
+  font-size: 17px;
+  display: block;
+  color: inherit;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.c1 img {
+  margin-left: 10px !important;
+}
+
+.c1:hover {
+  color: inherit;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c4 .MuiButtonBase-root {
+  color: #fff;
+  width: 50%;
+  max-width: none;
+  text-transform: none;
+  font-size: 1rem;
+}
+
+.c4 .MuiButtonBase-root.Mui-selected {
+  color: #fff;
+  font-weight: 700;
+}
+
+.c4 .MuiButtonBase-root.Mui-disabled {
+  color: rgb(228,228,228,0.45);
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.c0 .MuiContainer-root {
+  text-align: left;
+}
+
+.c0 .MuiContainer-root .MuiGrid-container {
+  margin: 35px 0;
+}
+
+.c0 svg.tech-icon {
+  width: 80px;
+  height: 80px;
+}
+
+.c3 {
+  width: 700px;
+  margin: 0 auto;
+  font-family: poppins,sans-serif;
+}
+
+.c3 .content-intro {
+  font-size: 24px;
+  margin-bottom: 34px;
+}
+
+.c3 .content-intro a {
+  color: inherit;
+  border-bottom: 1px solid;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2 {
+  font-size: 120px;
+  font-weight: 700;
+  text-align: left;
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 50px;
+}
+
+@media screen and (max-width:1000px) {
+  .c0 svg.tech-icon {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .c3 {
+    width: 100%;
+  }
+
+  .c3 .content-intro {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .c2 {
+    font-size: 52px;
+    padding-right: 30px;
+  }
+}
+
 <div
-  class="styles__Wrapper-sc-azja3a-0 bzpueU"
+  class="c0"
 >
   <div
     class="MuiContainer-root MuiContainer-maxWidthMd"
   >
     <button
-      class="styles__StyledBackButton-sc-1t7dby2-1 irAvQb"
+      class="c1"
     >
       <svg
         aria-hidden="true"
@@ -23,7 +227,7 @@ exports[`ProjectPage when techology is React it should render ProjectPage compon
       Back
     </button>
     <div
-      class="styles__Title-sc-azja3a-2 cpmuRv"
+      class="c2"
     >
       Projects
     </div>
@@ -46,10 +250,10 @@ exports[`ProjectPage when techology is React it should render ProjectPage compon
       />
     </svg>
     <div
-      class="styles__ContentBody-sc-azja3a-1 fCkuSW"
+      class="c3"
     >
       <div
-        class="styles__StyledTabs-sc-gdc602-0 eZgCjI"
+        class="c4"
       >
         <div
           class="MuiBox-root css-1gsv261"
@@ -67,10 +271,10 @@ exports[`ProjectPage when techology is React it should render ProjectPage compon
                 role="tablist"
               >
                 <button
-                  aria-controls="mui-p-52685-P-1"
+                  aria-controls="mui-p-13291-P-1"
                   aria-selected="true"
                   class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
-                  id="mui-p-52685-T-1"
+                  id="mui-p-13291-T-1"
                   role="tab"
                   tabindex="0"
                   type="button"
@@ -81,11 +285,11 @@ exports[`ProjectPage when techology is React it should render ProjectPage compon
                   />
                 </button>
                 <button
-                  aria-controls="mui-p-52685-P-2"
+                  aria-controls="mui-p-13291-P-2"
                   aria-selected="false"
                   class="MuiButtonBase-root Mui-disabled MuiTab-root MuiTab-textColorPrimary Mui-disabled css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
                   disabled=""
-                  id="mui-p-52685-T-2"
+                  id="mui-p-13291-T-2"
                   role="tab"
                   tabindex="-1"
                   type="button"
@@ -101,13 +305,13 @@ exports[`ProjectPage when techology is React it should render ProjectPage compon
           </div>
         </div>
         <div
-          aria-labelledby="mui-p-52685-T-1"
+          aria-labelledby="mui-p-13291-T-1"
           class="MuiTabPanel-root css-13xfq8m-MuiTabPanel-root"
-          id="mui-p-52685-P-1"
+          id="mui-p-13291-P-1"
           role="tabpanel"
         >
           <div
-            class="styles__StyledWrapper-sc-1pgv985-0 kuStYb"
+            class="c5"
             data-test-id="project-0"
           >
             <div>
@@ -236,10 +440,10 @@ exports[`ProjectPage when techology is React it should render ProjectPage compon
           </div>
         </div>
         <div
-          aria-labelledby="mui-p-52685-T-2"
+          aria-labelledby="mui-p-13291-T-2"
           class="MuiTabPanel-root css-13xfq8m-MuiTabPanel-root"
           hidden=""
-          id="mui-p-52685-P-2"
+          id="mui-p-13291-P-2"
           role="tabpanel"
         />
       </div>

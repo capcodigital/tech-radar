@@ -1,8 +1,103 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ProjectItem should render ProjectItem component 1`] = `
+.c0 {
+  margin-bottom: 20px;
+  font-family: poppins,sans-serif;
+}
+
+.c0 .projectTech-link {
+  display: inline-block;
+  padding: 10px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.c0 svg.icon {
+  height: 45px;
+  width: 45px;
+}
+
+.c0 .div {
+  margin-bottom: 10px;
+}
+
+.c0 .project-image-wrapper {
+  padding: 5% 10%;
+  background-color: white;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.c0 .project-image {
+  width: 100%;
+}
+
+.c0 .heading {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 12px;
+  text-transform: capitalize;
+}
+
+.c0 .link {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 2;
+  justify-self: end;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
+  border-bottom: 2px solid #e6236d;
+  padding-bottom: 4px;
+  text-transform: capitalize;
+}
+
+.c0 .link:hover {
+  cursor: pointer;
+}
+
+.c0 .project-tag {
+  grid-column: 1 / span 1;
+  background-color: rgba(230,35,109,0.5);
+  border-radius: 40px;
+  min-width: -webkit-min-content;
+  min-width: -moz-min-content;
+  min-width: min-content;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  padding: 4px 16px;
+  text-align: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  font-weight: 500;
+  font-size: 14px line-height:21px;
+}
+
+.c0 .text {
+  margin-bottom: 20px;
+  font-size: 14px line-height:21px;
+}
+
+.c0 .technologies {
+  margin-bottom: 100px;
+  text-transform: capitalize;
+}
+
+.c0 .row-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(2,1fr);
+  margin-bottom: 20px;
+}
+
 <div
-  class="styles__StyledWrapper-sc-1pgv985-0 kuStYb"
+  class="c0"
   data-test-id="project-0"
 >
   <div>

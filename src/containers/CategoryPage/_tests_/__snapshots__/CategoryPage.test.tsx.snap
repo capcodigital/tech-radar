@@ -1,8 +1,276 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CategoryPage should render CategoryPage component 1`] = `
+.c8 {
+  margin-top: -10px;
+  display: inline-block;
+  float: right;
+}
+
+.c8 svg {
+  overflow: visible;
+}
+
+.c1 {
+  margin-top: 80px;
+  width: 70vw;
+  position: absolute;
+  right: 0;
+}
+
+.c1 svg {
+  right: 0;
+  overflow: visible;
+}
+
+.c5 {
+  width: 320px;
+  height: 70px;
+  font-size: 30px;
+  border: 1px solid white;
+  color: white;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 12px 0 12px;
+  margin-bottom: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.c5 span {
+  margin: 0 auto 0 10px;
+}
+
+.c5 svg.MuiSvgIcon-root {
+  font-size: 20px;
+}
+
+.c5:hover {
+  background: rgb(255,255,255,0.1);
+}
+
+.c4 {
+  padding-top: 12px;
+  font: 300 19px poppins,sans-serif;
+}
+
+.c4 svg.MuiSvgIcon-root {
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.c4 a {
+  color: inherit;
+}
+
+.c4 a:hover {
+  border-bottom: 1px solid white;
+}
+
+.c6 {
+  font-size: 17px;
+  display: block;
+  color: inherit;
+  margin-left: -10px;
+}
+
+.c6 img {
+  margin-left: 10px !important;
+}
+
+.c6:hover {
+  color: inherit;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.c0 .MuiGrid-container {
+  padding-left: 90px;
+}
+
+.c0 .grid-wrapper {
+  position: relative;
+  width: 100%;
+  float: left;
+  margin-bottom: 50px;
+}
+
+.c0 .grid-wrapper .MuiGrid-container {
+  text-align: left;
+  width: 790px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.c0 .categories-grid {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 .categories-grid span {
+  padding-right: 20px;
+}
+
+.c0 img.background {
+  opacity: 0.12;
+  position: absolute;
+  top: -80px;
+  left: -300px;
+}
+
+.c0 .title {
+  font-size: 32px;
+}
+
+.c0 .subheader {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: left;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 100px 0 20px 0;
+}
+
+.c0 .small-screen .subheader-mobile,
+.c0 .mobile-category {
+  display: none;
+}
+
+.c7 {
+  font-size: 90px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-align: left;
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 30px;
+}
+
+.c2 {
+  width: 210px;
+  font-size: 52px;
+  font-weight: 700;
+  text-align: left;
+  padding-right: 20px;
+  vertical-align: middle;
+  display: inline-block;
+  margin: 20px 0 20px 0;
+}
+
+.c3 {
+  background: white;
+  margin: 0;
+  width: 20px;
+  border-width: 5px;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width:1000px) {
+  .c8 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:1000px) {
+  .c1 {
+    display: none;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .c4 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .c0 {
+    text-align: left;
+  }
+
+  .c0 .mobile-category {
+    display: block;
+    margin: auto;
+  }
+
+  .c0 .grid-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .c0 .first-row-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+  }
+
+  .c0 .first-row-wrapper div:first-child {
+    padding-right: 50px;
+  }
+
+  .c0 .category-icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .c0 .title {
+    font-size: 30px;
+  }
+
+  .c0 .subheader-mobile {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: left;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 50px 0 20px 0;
+  }
+
+  .c0 img.background,
+  .c0 .desktop-grid,
+  .c0 .large-screen {
+    display: none;
+  }
+}
+
 <div
-  class="CategoryPage__Wrapper-sc-1mmonyv-0 fwzZoK"
+  class="c0"
 >
   <img
     alt="DevOps"
@@ -12,7 +280,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
     width="650"
   />
   <div
-    class="MobileRadarBackground__Wrapper-sc-199fz26-0 ehDagh"
+    class="c1"
   >
     <svg
       viewBox="0 0 700 700"
@@ -45,7 +313,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
       class="mobile-category"
     >
       <div
-        class="CategoryPage__MobileTitle-sc-1mmonyv-2 iRdzbS"
+        class="c2"
       >
         DevOps
       </div>
@@ -61,7 +329,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
       >
         <div>
           <hr
-            class="CategoryPage__Divider-sc-1mmonyv-3 iYkwoE"
+            class="c3"
           />
           <div
             class="title"
@@ -69,7 +337,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             Preferred
           </div>
           <div
-            class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+            class="c4"
           >
             <a
               data-test-id="category-item-GitHub"
@@ -89,7 +357,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </svg>
           </div>
           <div
-            class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+            class="c4"
           >
             <a
               data-test-id="category-item-CircleCI"
@@ -109,7 +377,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </svg>
           </div>
           <div
-            class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+            class="c4"
           >
             <a
               data-test-id="category-item-Terraform"
@@ -129,7 +397,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </svg>
           </div>
           <div
-            class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+            class="c4"
           >
             <a
               data-test-id="category-item-Vault"
@@ -149,7 +417,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </svg>
           </div>
           <div
-            class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+            class="c4"
           >
             <a
               data-test-id="category-item-SonarQube"
@@ -169,7 +437,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </svg>
           </div>
           <div
-            class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+            class="c4"
           >
             <a
               data-test-id="category-item-Elastic"
@@ -191,7 +459,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
         </div>
         <div>
           <hr
-            class="CategoryPage__Divider-sc-1mmonyv-3 iYkwoE"
+            class="c3"
           />
           <div
             class="title"
@@ -199,7 +467,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             Skilled
           </div>
           <div
-            class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+            class="c4"
           >
             <a
               data-test-id="category-item-Bitbucket"
@@ -219,7 +487,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </svg>
           </div>
           <div
-            class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+            class="c4"
           >
             <a
               data-test-id="category-item-Jenkins"
@@ -239,7 +507,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </svg>
           </div>
           <div
-            class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+            class="c4"
           >
             <a
               data-test-id="category-item-TeamCity"
@@ -259,7 +527,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </svg>
           </div>
           <div
-            class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+            class="c4"
           >
             <a
               data-test-id="category-item-Ansible"
@@ -279,7 +547,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </svg>
           </div>
           <div
-            class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+            class="c4"
           >
             <a
               data-test-id="category-item-Packer"
@@ -299,7 +567,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </svg>
           </div>
           <div
-            class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+            class="c4"
           >
             <a
               data-test-id="category-item-Docker"
@@ -322,7 +590,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
       </div>
       <div>
         <hr
-          class="CategoryPage__Divider-sc-1mmonyv-3 iYkwoE"
+          class="c3"
         />
         <div
           class="title"
@@ -330,7 +598,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           Scaling
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+          class="c4"
         >
           <a
             data-test-id="category-item-Twistlock"
@@ -350,7 +618,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </svg>
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+          class="c4"
         >
           <a
             data-test-id="category-item-ConcourseCl"
@@ -370,7 +638,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </svg>
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+          class="c4"
         >
           <a
             data-test-id="category-item-Consul"
@@ -401,7 +669,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/mobile"
           >
             <div
-              class="styles__ButtonWrapper-sc-hfvpn3-0 gmCdnx"
+              class="c5"
             >
               <img
                 alt="Mobile"
@@ -428,7 +696,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/frontend"
           >
             <div
-              class="styles__ButtonWrapper-sc-hfvpn3-0 gmCdnx"
+              class="c5"
             >
               <img
                 alt="Frontend"
@@ -455,7 +723,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/backend"
           >
             <div
-              class="styles__ButtonWrapper-sc-hfvpn3-0 gmCdnx"
+              class="c5"
             >
               <img
                 alt="Backend"
@@ -482,7 +750,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/integration"
           >
             <div
-              class="styles__ButtonWrapper-sc-hfvpn3-0 gmCdnx"
+              class="c5"
             >
               <img
                 alt="Integration"
@@ -511,7 +779,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/cloud-&-platforms"
           >
             <div
-              class="styles__ButtonWrapper-sc-hfvpn3-0 gmCdnx"
+              class="c5"
             >
               <img
                 alt="Cloud & Platforms"
@@ -538,7 +806,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/quality-engineering"
           >
             <div
-              class="styles__ButtonWrapper-sc-hfvpn3-0 gmCdnx"
+              class="c5"
             >
               <img
                 alt="Quality Engineering"
@@ -565,7 +833,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/data-engineering"
           >
             <div
-              class="styles__ButtonWrapper-sc-hfvpn3-0 gmCdnx"
+              class="c5"
             >
               <img
                 alt="Data Engineering"
@@ -598,7 +866,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
         class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
       >
         <a
-          class="styles__StyledBackLink-sc-1t7dby2-0 eIpoUv"
+          class="c6"
           href="/home"
         >
           <svg
@@ -614,7 +882,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           Back
         </a>
         <div
-          class="CategoryPage__Title-sc-1mmonyv-1 fIeEHu"
+          class="c7"
         >
           DevOps
         </div>
@@ -630,7 +898,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
         class="MuiGrid-root large-screen MuiGrid-item MuiGrid-grid-xs-4"
       >
         <hr
-          class="CategoryPage__Divider-sc-1mmonyv-3 iYkwoE"
+          class="c3"
         />
         <div
           class="title"
@@ -638,7 +906,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           Preferred
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+          class="c4"
         >
           <a
             data-test-id="category-item-GitHub"
@@ -658,7 +926,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </svg>
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+          class="c4"
         >
           <a
             data-test-id="category-item-CircleCI"
@@ -678,7 +946,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </svg>
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+          class="c4"
         >
           <a
             data-test-id="category-item-Terraform"
@@ -698,7 +966,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </svg>
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+          class="c4"
         >
           <a
             data-test-id="category-item-Vault"
@@ -718,7 +986,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </svg>
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+          class="c4"
         >
           <a
             data-test-id="category-item-SonarQube"
@@ -738,7 +1006,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </svg>
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+          class="c4"
         >
           <a
             data-test-id="category-item-Elastic"
@@ -762,7 +1030,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
         class="MuiGrid-root large-screen MuiGrid-item MuiGrid-grid-xs-4"
       >
         <hr
-          class="CategoryPage__Divider-sc-1mmonyv-3 iYkwoE"
+          class="c3"
         />
         <div
           class="title"
@@ -770,7 +1038,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           Skilled
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+          class="c4"
         >
           <a
             data-test-id="category-item-Bitbucket"
@@ -790,7 +1058,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </svg>
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+          class="c4"
         >
           <a
             data-test-id="category-item-Jenkins"
@@ -810,7 +1078,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </svg>
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+          class="c4"
         >
           <a
             data-test-id="category-item-TeamCity"
@@ -830,7 +1098,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </svg>
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+          class="c4"
         >
           <a
             data-test-id="category-item-Ansible"
@@ -850,7 +1118,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </svg>
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+          class="c4"
         >
           <a
             data-test-id="category-item-Packer"
@@ -870,7 +1138,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </svg>
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+          class="c4"
         >
           <a
             data-test-id="category-item-Docker"
@@ -894,7 +1162,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
         class="MuiGrid-root large-screen MuiGrid-item MuiGrid-grid-xs-4"
       >
         <hr
-          class="CategoryPage__Divider-sc-1mmonyv-3 iYkwoE"
+          class="c3"
         />
         <div
           class="title"
@@ -902,7 +1170,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           Scaling
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+          class="c4"
         >
           <a
             data-test-id="category-item-Twistlock"
@@ -922,7 +1190,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </svg>
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+          class="c4"
         >
           <a
             data-test-id="category-item-ConcourseCl"
@@ -942,7 +1210,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </svg>
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
+          class="c4"
         >
           <a
             data-test-id="category-item-Consul"
@@ -975,7 +1243,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/mobile"
           >
             <div
-              class="styles__ButtonWrapper-sc-hfvpn3-0 gmCdnx"
+              class="c5"
             >
               <img
                 alt="Mobile"
@@ -1002,7 +1270,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/frontend"
           >
             <div
-              class="styles__ButtonWrapper-sc-hfvpn3-0 gmCdnx"
+              class="c5"
             >
               <img
                 alt="Frontend"
@@ -1029,7 +1297,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/backend"
           >
             <div
-              class="styles__ButtonWrapper-sc-hfvpn3-0 gmCdnx"
+              class="c5"
             >
               <img
                 alt="Backend"
@@ -1056,7 +1324,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/integration"
           >
             <div
-              class="styles__ButtonWrapper-sc-hfvpn3-0 gmCdnx"
+              class="c5"
             >
               <img
                 alt="Integration"
@@ -1085,7 +1353,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/cloud-&-platforms"
           >
             <div
-              class="styles__ButtonWrapper-sc-hfvpn3-0 gmCdnx"
+              class="c5"
             >
               <img
                 alt="Cloud & Platforms"
@@ -1112,7 +1380,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/quality-engineering"
           >
             <div
-              class="styles__ButtonWrapper-sc-hfvpn3-0 gmCdnx"
+              class="c5"
             >
               <img
                 alt="Quality Engineering"
@@ -1139,7 +1407,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/data-engineering"
           >
             <div
-              class="styles__ButtonWrapper-sc-hfvpn3-0 gmCdnx"
+              class="c5"
             >
               <img
                 alt="Data Engineering"
@@ -1167,7 +1435,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
     </div>
   </div>
   <div
-    class="CategoryRadar__Wrapper-sc-45bajh-0 jKelJV"
+    class="c8"
   >
     <svg
       height="800"
