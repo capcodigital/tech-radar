@@ -76,7 +76,7 @@ const ProjectPage = () => {
    */
   const fetchClientProjects = (techName: string) => {
     let results: Project[] = [];
-    let splitTechName: string = techName.toLowerCase().replace(/-/g, " ");
+    let splitTechName: string = techName?.toLowerCase().replace(/-/g, " ");
     let iconResult = icons.filter(
       (icon: any) => icon.name.toLowerCase() === splitTechName
     )[0];

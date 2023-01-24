@@ -2,7 +2,7 @@
 
 exports[`CategoryPage should render CategoryPage component 1`] = `
 <div
-  class="CategoryPage__Wrapper-sc-1mmonyv-0 jNUMox"
+  class="CategoryPage__Wrapper-sc-1mmonyv-0 fwzZoK"
 >
   <img
     alt="DevOps"
@@ -12,7 +12,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
     width="650"
   />
   <div
-    class="MobileRadarBackground__Wrapper-sc-199fz26-0 kpFMji"
+    class="MobileRadarBackground__Wrapper-sc-199fz26-0 ehDagh"
   >
     <svg
       viewBox="0 0 700 700"
@@ -45,7 +45,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
       class="mobile-category"
     >
       <div
-        class="CategoryPage__MobileTitle-sc-1mmonyv-2 fkYTqd"
+        class="CategoryPage__MobileTitle-sc-1mmonyv-2 iRdzbS"
       >
         DevOps
       </div>
@@ -61,7 +61,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
       >
         <div>
           <hr
-            class="CategoryPage__Divider-sc-1mmonyv-3 kJmJdj"
+            class="CategoryPage__Divider-sc-1mmonyv-3 iYkwoE"
           />
           <div
             class="title"
@@ -69,7 +69,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             Preferred
           </div>
           <div
-            class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
+            class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
           >
             <a
               data-test-id="category-item-GitHub"
@@ -89,40 +89,67 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </svg>
           </div>
           <div
-            class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
+            class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
           >
             <a
               data-test-id="category-item-CircleCI"
               href="/technology/devops/circleci"
-              style="pointer-events: none;"
             >
               CircleCI
             </a>
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+              />
+            </svg>
           </div>
           <div
-            class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
+            class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
           >
             <a
               data-test-id="category-item-Terraform"
               href="/technology/devops/terraform"
-              style="pointer-events: none;"
             >
               Terraform
             </a>
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+              />
+            </svg>
           </div>
           <div
-            class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
+            class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
           >
             <a
               data-test-id="category-item-Vault"
               href="/technology/devops/vault"
-              style="pointer-events: none;"
             >
               Vault
             </a>
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+              />
+            </svg>
           </div>
           <div
-            class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
+            class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
           >
             <a
               data-test-id="category-item-SonarQube"
@@ -142,20 +169,29 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </svg>
           </div>
           <div
-            class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
+            class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
           >
             <a
               data-test-id="category-item-Elastic"
               href="/technology/devops/elastic"
-              style="pointer-events: none;"
             >
               Elastic
             </a>
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+              />
+            </svg>
           </div>
         </div>
         <div>
           <hr
-            class="CategoryPage__Divider-sc-1mmonyv-3 kJmJdj"
+            class="CategoryPage__Divider-sc-1mmonyv-3 iYkwoE"
           />
           <div
             class="title"
@@ -163,18 +199,27 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             Skilled
           </div>
           <div
-            class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
+            class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
           >
             <a
               data-test-id="category-item-Bitbucket"
               href="/technology/devops/bitbucket"
-              style="pointer-events: none;"
             >
               Bitbucket
             </a>
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+              />
+            </svg>
           </div>
           <div
-            class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
+            class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
           >
             <a
               data-test-id="category-item-Jenkins"
@@ -194,40 +239,67 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </svg>
           </div>
           <div
-            class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
+            class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
           >
             <a
               data-test-id="category-item-TeamCity"
               href="/technology/devops/teamcity"
-              style="pointer-events: none;"
             >
               TeamCity
             </a>
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+              />
+            </svg>
           </div>
           <div
-            class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
+            class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
           >
             <a
               data-test-id="category-item-Ansible"
               href="/technology/devops/ansible"
-              style="pointer-events: none;"
             >
               Ansible
             </a>
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+              />
+            </svg>
           </div>
           <div
-            class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
+            class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
           >
             <a
               data-test-id="category-item-Packer"
               href="/technology/devops/packer"
-              style="pointer-events: none;"
             >
               Packer
             </a>
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+              />
+            </svg>
           </div>
           <div
-            class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
+            class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
           >
             <a
               data-test-id="category-item-Docker"
@@ -250,7 +322,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
       </div>
       <div>
         <hr
-          class="CategoryPage__Divider-sc-1mmonyv-3 kJmJdj"
+          class="CategoryPage__Divider-sc-1mmonyv-3 iYkwoE"
         />
         <div
           class="title"
@@ -258,48 +330,64 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           Scaling
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
+          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
         >
           <a
             data-test-id="category-item-Twistlock"
             href="/technology/devops/twistlock"
-            style="pointer-events: none;"
           >
             Twistlock
           </a>
-        </div>
-        <div
-          class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
-        >
-          <a
-            data-test-id="category-item-Kiali"
-            href="/technology/devops/kiali"
-            style="pointer-events: none;"
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
           >
-            Kiali
-          </a>
+            <path
+              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+            />
+          </svg>
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
+          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
         >
           <a
             data-test-id="category-item-ConcourseCl"
             href="/technology/devops/concoursecl"
-            style="pointer-events: none;"
           >
             ConcourseCl
           </a>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+            />
+          </svg>
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
+          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
         >
           <a
             data-test-id="category-item-Consul"
             href="/technology/devops/consul"
-            style="pointer-events: none;"
           >
             Consul
           </a>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+            />
+          </svg>
         </div>
       </div>
       <div>
@@ -313,7 +401,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/mobile"
           >
             <div
-              class="styles__ButtonWrapper-sc-hfvpn3-0 ftdjay"
+              class="styles__ButtonWrapper-sc-hfvpn3-0 gmCdnx"
             >
               <img
                 alt="Mobile"
@@ -340,7 +428,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/frontend"
           >
             <div
-              class="styles__ButtonWrapper-sc-hfvpn3-0 ftdjay"
+              class="styles__ButtonWrapper-sc-hfvpn3-0 gmCdnx"
             >
               <img
                 alt="Frontend"
@@ -367,7 +455,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/backend"
           >
             <div
-              class="styles__ButtonWrapper-sc-hfvpn3-0 ftdjay"
+              class="styles__ButtonWrapper-sc-hfvpn3-0 gmCdnx"
             >
               <img
                 alt="Backend"
@@ -394,7 +482,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/integration"
           >
             <div
-              class="styles__ButtonWrapper-sc-hfvpn3-0 ftdjay"
+              class="styles__ButtonWrapper-sc-hfvpn3-0 gmCdnx"
             >
               <img
                 alt="Integration"
@@ -423,7 +511,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/cloud-&-platforms"
           >
             <div
-              class="styles__ButtonWrapper-sc-hfvpn3-0 ftdjay"
+              class="styles__ButtonWrapper-sc-hfvpn3-0 gmCdnx"
             >
               <img
                 alt="Cloud & Platforms"
@@ -450,7 +538,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/quality-engineering"
           >
             <div
-              class="styles__ButtonWrapper-sc-hfvpn3-0 ftdjay"
+              class="styles__ButtonWrapper-sc-hfvpn3-0 gmCdnx"
             >
               <img
                 alt="Quality Engineering"
@@ -477,7 +565,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/data-engineering"
           >
             <div
-              class="styles__ButtonWrapper-sc-hfvpn3-0 ftdjay"
+              class="styles__ButtonWrapper-sc-hfvpn3-0 gmCdnx"
             >
               <img
                 alt="Data Engineering"
@@ -510,7 +598,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
         class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
       >
         <a
-          class="styles__StyledBackLink-sc-1t7dby2-0 buYLtI"
+          class="styles__StyledBackLink-sc-1t7dby2-0 eIpoUv"
           href="/home"
         >
           <svg
@@ -526,7 +614,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           Back
         </a>
         <div
-          class="CategoryPage__Title-sc-1mmonyv-1 juQmIJ"
+          class="CategoryPage__Title-sc-1mmonyv-1 fIeEHu"
         >
           DevOps
         </div>
@@ -542,7 +630,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
         class="MuiGrid-root large-screen MuiGrid-item MuiGrid-grid-xs-4"
       >
         <hr
-          class="CategoryPage__Divider-sc-1mmonyv-3 kJmJdj"
+          class="CategoryPage__Divider-sc-1mmonyv-3 iYkwoE"
         />
         <div
           class="title"
@@ -550,7 +638,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           Preferred
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
+          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
         >
           <a
             data-test-id="category-item-GitHub"
@@ -570,40 +658,67 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </svg>
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
+          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
         >
           <a
             data-test-id="category-item-CircleCI"
             href="/technology/devops/circleci"
-            style="pointer-events: none;"
           >
             CircleCI
           </a>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+            />
+          </svg>
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
+          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
         >
           <a
             data-test-id="category-item-Terraform"
             href="/technology/devops/terraform"
-            style="pointer-events: none;"
           >
             Terraform
           </a>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+            />
+          </svg>
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
+          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
         >
           <a
             data-test-id="category-item-Vault"
             href="/technology/devops/vault"
-            style="pointer-events: none;"
           >
             Vault
           </a>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+            />
+          </svg>
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
+          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
         >
           <a
             data-test-id="category-item-SonarQube"
@@ -623,22 +738,31 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </svg>
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
+          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
         >
           <a
             data-test-id="category-item-Elastic"
             href="/technology/devops/elastic"
-            style="pointer-events: none;"
           >
             Elastic
           </a>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+            />
+          </svg>
         </div>
       </div>
       <div
         class="MuiGrid-root large-screen MuiGrid-item MuiGrid-grid-xs-4"
       >
         <hr
-          class="CategoryPage__Divider-sc-1mmonyv-3 kJmJdj"
+          class="CategoryPage__Divider-sc-1mmonyv-3 iYkwoE"
         />
         <div
           class="title"
@@ -646,18 +770,27 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           Skilled
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
+          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
         >
           <a
             data-test-id="category-item-Bitbucket"
             href="/technology/devops/bitbucket"
-            style="pointer-events: none;"
           >
             Bitbucket
           </a>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+            />
+          </svg>
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
+          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
         >
           <a
             data-test-id="category-item-Jenkins"
@@ -677,40 +810,67 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </svg>
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
+          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
         >
           <a
             data-test-id="category-item-TeamCity"
             href="/technology/devops/teamcity"
-            style="pointer-events: none;"
           >
             TeamCity
           </a>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+            />
+          </svg>
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
+          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
         >
           <a
             data-test-id="category-item-Ansible"
             href="/technology/devops/ansible"
-            style="pointer-events: none;"
           >
             Ansible
           </a>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+            />
+          </svg>
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
+          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
         >
           <a
             data-test-id="category-item-Packer"
             href="/technology/devops/packer"
-            style="pointer-events: none;"
           >
             Packer
           </a>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+            />
+          </svg>
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
+          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
         >
           <a
             data-test-id="category-item-Docker"
@@ -734,7 +894,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
         class="MuiGrid-root large-screen MuiGrid-item MuiGrid-grid-xs-4"
       >
         <hr
-          class="CategoryPage__Divider-sc-1mmonyv-3 kJmJdj"
+          class="CategoryPage__Divider-sc-1mmonyv-3 iYkwoE"
         />
         <div
           class="title"
@@ -742,48 +902,64 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           Scaling
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
+          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
         >
           <a
             data-test-id="category-item-Twistlock"
             href="/technology/devops/twistlock"
-            style="pointer-events: none;"
           >
             Twistlock
           </a>
-        </div>
-        <div
-          class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
-        >
-          <a
-            data-test-id="category-item-Kiali"
-            href="/technology/devops/kiali"
-            style="pointer-events: none;"
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
           >
-            Kiali
-          </a>
+            <path
+              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+            />
+          </svg>
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
+          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
         >
           <a
             data-test-id="category-item-ConcourseCl"
             href="/technology/devops/concoursecl"
-            style="pointer-events: none;"
           >
             ConcourseCl
           </a>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+            />
+          </svg>
         </div>
         <div
-          class="styles__StyledListItem-sc-19ijf8-0 hymvPL"
+          class="styles__StyledListItem-sc-19ijf8-0 bdyTDw"
         >
           <a
             data-test-id="category-item-Consul"
             href="/technology/devops/consul"
-            style="pointer-events: none;"
           >
             Consul
           </a>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+            />
+          </svg>
         </div>
       </div>
       <div
@@ -799,7 +975,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/mobile"
           >
             <div
-              class="styles__ButtonWrapper-sc-hfvpn3-0 ftdjay"
+              class="styles__ButtonWrapper-sc-hfvpn3-0 gmCdnx"
             >
               <img
                 alt="Mobile"
@@ -826,7 +1002,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/frontend"
           >
             <div
-              class="styles__ButtonWrapper-sc-hfvpn3-0 ftdjay"
+              class="styles__ButtonWrapper-sc-hfvpn3-0 gmCdnx"
             >
               <img
                 alt="Frontend"
@@ -853,7 +1029,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/backend"
           >
             <div
-              class="styles__ButtonWrapper-sc-hfvpn3-0 ftdjay"
+              class="styles__ButtonWrapper-sc-hfvpn3-0 gmCdnx"
             >
               <img
                 alt="Backend"
@@ -880,7 +1056,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/integration"
           >
             <div
-              class="styles__ButtonWrapper-sc-hfvpn3-0 ftdjay"
+              class="styles__ButtonWrapper-sc-hfvpn3-0 gmCdnx"
             >
               <img
                 alt="Integration"
@@ -909,7 +1085,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/cloud-&-platforms"
           >
             <div
-              class="styles__ButtonWrapper-sc-hfvpn3-0 ftdjay"
+              class="styles__ButtonWrapper-sc-hfvpn3-0 gmCdnx"
             >
               <img
                 alt="Cloud & Platforms"
@@ -936,7 +1112,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/quality-engineering"
           >
             <div
-              class="styles__ButtonWrapper-sc-hfvpn3-0 ftdjay"
+              class="styles__ButtonWrapper-sc-hfvpn3-0 gmCdnx"
             >
               <img
                 alt="Quality Engineering"
@@ -963,7 +1139,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             href="/category/data-engineering"
           >
             <div
-              class="styles__ButtonWrapper-sc-hfvpn3-0 ftdjay"
+              class="styles__ButtonWrapper-sc-hfvpn3-0 gmCdnx"
             >
               <img
                 alt="Data Engineering"
@@ -991,7 +1167,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
     </div>
   </div>
   <div
-    class="CategoryRadar__Wrapper-sc-45bajh-0 cDuyzK"
+    class="CategoryRadar__Wrapper-sc-45bajh-0 jKelJV"
   >
     <svg
       height="800"
@@ -1278,8 +1454,8 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             title="Twistlock"
           >
             <circle
-              cx="-28.06345170677325"
-              cy="67.75116571749437"
+              cx="-36.66666666666666"
+              cy="63.508529610858844"
               fill="white"
               r="24"
             />
@@ -1287,29 +1463,8 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
               height="33.941125496954285"
               href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/twistlock_square.png"
               width="33.941125496954285"
-              x="-45.03401445525039"
-              y="50.78060296901723"
-            />
-          </g>
-        </g>
-        <g>
-          <g
-            aria-label="Kiali"
-            class=""
-            title="Kiali"
-          >
-            <circle
-              cx="-67.75116571749437"
-              cy="28.06345170677326"
-              fill="white"
-              r="24"
-            />
-            <image
-              height="33.941125496954285"
-              href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/kiali_square.png"
-              width="33.941125496954285"
-              x="-84.72172846597152"
-              y="11.092888958296118"
+              x="-53.6372294151438"
+              y="46.5379668623817"
             />
           </g>
         </g>
@@ -1320,8 +1475,8 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             title="ConcourseCl"
           >
             <circle
-              cx="-67.75116571749437"
-              cy="-28.063451706773247"
+              cx="-73.33333333333334"
+              cy="4.154728524941852e-14"
               fill="white"
               r="24"
             />
@@ -1329,8 +1484,8 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
               height="33.941125496954285"
               href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/concourse_square.png"
               width="33.941125496954285"
-              x="-84.72172846597152"
-              y="-45.034014455250386"
+              x="-90.30389608181048"
+              y="-16.9705627484771"
             />
           </g>
         </g>
@@ -1341,8 +1496,8 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             title="Consul"
           >
             <circle
-              cx="-28.063451706773296"
-              cy="-67.75116571749436"
+              cx="-36.66666666666671"
+              cy="-63.50852961085883"
               fill="white"
               r="24"
             />
@@ -1350,8 +1505,8 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
               height="33.941125496954285"
               href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/consul_square.png"
               width="33.941125496954285"
-              x="-45.03401445525044"
-              y="-84.7217284659715"
+              x="-53.63722941514385"
+              y="-80.47909235933597"
             />
           </g>
         </g>

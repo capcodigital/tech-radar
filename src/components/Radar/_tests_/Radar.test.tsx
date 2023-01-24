@@ -1,4 +1,3 @@
-import * as React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
 import Radar from "../Radar";
 import { BrowserRouter as Router } from "react-router-dom";
@@ -15,26 +14,6 @@ describe("Radar", () => {
       </Router>
     );
     expect(container.firstChild).toMatchSnapshot();
-  });
-
-  it("should click Consul icon on Radar and check that url has not changed", () => {
-    const technologyClassNameWithNoContent = "techIcon-Consul";
-    const { container } = render(
-      <Router>
-        <Radar
-          scalingClicked={true}
-          skilledClicked={true}
-          preferredClicked={true}
-        />
-      </Router>
-    );
-    const g = container.querySelectorAll("g");
-    g.forEach((x) => {
-      if (x.outerHTML.includes(technologyClassNameWithNoContent)) {
-        fireEvent.click(x);
-      }
-    });
-    expect(window.location.href).toBe("http://localhost/");
   });
 
   it("should click React icon on Radar and check that url is /technology/frontend/react", () => {
