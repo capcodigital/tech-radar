@@ -2,7 +2,7 @@
 
 exports[`ProjectItem should render ProjectItem component 1`] = `
 <div
-  class="styles__StyledWrapper-sc-1pgv985-0 elmUIY"
+  class="styles__StyledWrapper-sc-1pgv985-0 kuStYb"
   data-test-id="project-0"
 >
   <div>

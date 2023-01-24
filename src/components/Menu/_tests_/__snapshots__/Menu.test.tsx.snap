@@ -2,7 +2,7 @@
 
 exports[`Menu should render Menu component 1`] = `
 <header
-  class="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorPrimary styles__StyledAppBar-sc-eb6keh-0 kmLLXf MuiPaper-elevation4"
+  class="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorPrimary styles__StyledAppBar-sc-eb6keh-0 bEZnpo MuiPaper-elevation4"
 >
   <div
     class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
@@ -11,7 +11,7 @@ exports[`Menu should render Menu component 1`] = `
       class="MuiGrid-root MuiGrid-container MuiGrid-justify-content-xs-space-between"
     >
       <div
-        class="MuiGrid-root styles__LogoGridItem-sc-eb6keh-1 gInqwC MuiGrid-item"
+        class="MuiGrid-root styles__LogoGridItem-sc-eb6keh-1 gVlgxl MuiGrid-item"
       >
         <a
           href="/home"
@@ -23,7 +23,7 @@ exports[`Menu should render Menu component 1`] = `
           />
           <div>
             TECH RADAR 
-            2022
+            2023
           </div>
         </a>
       </div>
