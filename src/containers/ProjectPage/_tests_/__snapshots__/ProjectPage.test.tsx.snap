@@ -271,10 +271,10 @@ exports[`ProjectPage when techology is React it should render ProjectPage compon
                 role="tablist"
               >
                 <button
-                  aria-controls="mui-p-13291-P-1"
+                  aria-controls="mui-00000"
                   aria-selected="true"
                   class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
-                  id="mui-p-13291-T-1"
+                  id="mui-00000"
                   role="tab"
                   tabindex="0"
                   type="button"
@@ -285,11 +285,11 @@ exports[`ProjectPage when techology is React it should render ProjectPage compon
                   />
                 </button>
                 <button
-                  aria-controls="mui-p-13291-P-2"
+                  aria-controls="mui-00000"
                   aria-selected="false"
                   class="MuiButtonBase-root Mui-disabled MuiTab-root MuiTab-textColorPrimary Mui-disabled css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
                   disabled=""
-                  id="mui-p-13291-T-2"
+                  id="mui-00000"
                   role="tab"
                   tabindex="-1"
                   type="button"
@@ -305,9 +305,9 @@ exports[`ProjectPage when techology is React it should render ProjectPage compon
           </div>
         </div>
         <div
-          aria-labelledby="mui-p-13291-T-1"
+          aria-labelledby="mui-00000"
           class="MuiTabPanel-root css-13xfq8m-MuiTabPanel-root"
-          id="mui-p-13291-P-1"
+          id="mui-00000"
           role="tabpanel"
         >
           <div
@@ -440,10 +440,10 @@ exports[`ProjectPage when techology is React it should render ProjectPage compon
           </div>
         </div>
         <div
-          aria-labelledby="mui-p-13291-T-2"
+          aria-labelledby="mui-00000"
           class="MuiTabPanel-root css-13xfq8m-MuiTabPanel-root"
           hidden=""
-          id="mui-p-13291-P-2"
+          id="mui-00000"
           role="tabpanel"
         />
       </div>

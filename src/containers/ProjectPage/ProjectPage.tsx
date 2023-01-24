@@ -57,7 +57,7 @@ const ProjectPage = () => {
     const picked =
       results &&
       results.map(({ name, topics, html_url, description }: any) => ({
-        project: name.replace("-", " "),
+        project: name.replaceAll("-", " "),
         technologies: topics.flatMap((technology: any) =>
           technology.replaceAll("-", " ")
         ),
