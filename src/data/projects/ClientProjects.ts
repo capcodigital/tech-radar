@@ -109,7 +109,7 @@ const ClientProjects = [
     clientName: "Global Tier 1 Bank",
     clientImage: "CL12",
     description:
-      "Capco works with Natwest on their commercial banking arm. Natwest's commercial banking arm, the platform is called Bankline. It essentially lets commercial customers (big businesses, not the everyday retail users) make high value payments. Bankline offers features like domestic payments as well as international payments in 40 currencies which is something Capco has recently helped expand",
+      "Capco works with Natwest on their commercial banking arm. Natwest's commercial banking arm, the platform is called Bankline. It essentially lets commercial customers (big businesses, not the everyday retail users) make high value payments. Bankline offers features like domestic payments as well as international payments in 40 currencies which is something Capco has recently helped expand. Selenium is used for UI layer of testing coverage & tests are run on SauceLabs.",
     technologies: [
       "PCF",
       "ActiveMQ",
@@ -118,6 +118,7 @@ const ClientProjects = [
       "TeamCity",
       "React",
       "Kotlin",
+      "Selenium",
     ],
   },
 ];
