@@ -1,9 +1,8 @@
-import React, { FC } from "react";
 import ProjectTechnologyLink from "../ProjectPageLink/ProjectTechnologyLink";
-import images from "../../images/ClientProjects";
+import images from "images/ClientProjects";
 import StyledWrapper from "./styles";
-import externallink from "../../images/externallink.svg";
-import { technologyList } from "../../data/data";
+import externallink from "images/externallink.svg";
+import { technologyList } from "data/data";
 
 type ProjectItemProps = {
   data: Array<{
@@ -21,7 +20,7 @@ const includesValue = (keyTech: string) =>
     return tech.toLowerCase() === keyTech.toLowerCase();
   });
 
-const ProjectItem: FC<ProjectItemProps> = ({ data }) => (
+const ProjectItem = ({ data }: ProjectItemProps) => (
   <>
     {data.map(
       (
@@ -45,8 +44,8 @@ const ProjectItem: FC<ProjectItemProps> = ({ data }) => (
                 className="project-image"
                 src={
                   clientImage
-                    ? (images as any)[clientImage]
-                    : require("../../images/ClientProjects/CL2.png")
+                    ? (images as { [key: string]: string })[clientImage]
+                    : require("images/ClientProjects/CL2.png")
                 }
                 alt="computer screen"
               />

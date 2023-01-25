@@ -1,7 +1,6 @@
-import React, { FC } from "react";
 import styled from "styled-components/macro";
 
-const StyledPageWrapper = styled.div`
+const PageWrapper = styled.div`
   width: 100%;
   background: radial-gradient(rgba(230, 35, 109, 0.6) 10%, transparent 70%);
   text-align: center;
@@ -19,9 +18,5 @@ const StyledPageWrapper = styled.div`
     );
   }
 `;
-
-const PageWrapper: FC = ({ children }) => {
-  return <StyledPageWrapper>{children}</StyledPageWrapper>;
-};
 
 export default PageWrapper;

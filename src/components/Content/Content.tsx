@@ -1,4 +1,3 @@
-import React, { FC } from "react";
 import AccordionComponent from "../Accordion/Accordion";
 import { StyledSubContent, Title, SourceLink } from "./styles";
 import { capitalizeFirstCharacter } from "../../helpers/helpers";
@@ -25,7 +24,7 @@ type ReferenceContentType = {
  * @param  - `contentData` - an array of objects that contain the following properties:
  * @returns A styled component that is a div with a class of subcontent.
  */
-export const SubContent: FC<SubContentType> = ({ contentData }) => {
+export const SubContent = ({ contentData }: SubContentType) => {
   return (
     <>
       {contentData.map(({ name, intro, data }, idx) => (
@@ -39,32 +38,25 @@ export const SubContent: FC<SubContentType> = ({ contentData }) => {
               }}
             />
           )}
-          {data.map(({ name, description }, idx) => {
-            return (
-              <>
-                {!name && (
-                  <div className="content" key={`data-content-${idx}`}>
-                    <div
-                      dangerouslySetInnerHTML={{
-                        __html: description.replace(
-                          /href=/g,
-                          'rel="noreferrer" target="_blank" href='
-                        ),
-                      }}
-                    />
-                  </div>
-                )}
-                {name && (
-                  <div className="content" key={`data-content-${idx}`}>
-                    <AccordionComponent
-                      name={name}
-                      description={capitalizeFirstCharacter(description)}
-                    />
-                  </div>
-                )}
-              </>
-            );
-          })}
+          {data.map(({ name, description }, idx) => (
+            <div className="content" key={`data-content-${idx}`}>
+              {name ? (
+                <AccordionComponent
+                  name={name}
+                  description={capitalizeFirstCharacter(description)}
+                />
+              ) : (
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: description.replace(
+                      /href=/g,
+                      'rel="noreferrer" target="_blank" href='
+                    ),
+                  }}
+                />
+              )}
+            </div>
+          ))}
         </StyledSubContent>
       ))}
     </>
@@ -72,7 +64,7 @@ export const SubContent: FC<SubContentType> = ({ contentData }) => {
 };
 
 /* A React component that takes in contentData as a prop and returns a styled subcontent component. */
-export const ExampleContent: FC<ExampleContentType> = ({ contentData }) => (
+export const ExampleContent = ({ contentData }: ExampleContentType) => (
   <StyledSubContent>
     <Title>Use Cases</Title>
     {contentData.map(({ name, description, imageUrl }) => (
@@ -96,7 +88,7 @@ export const ExampleContent: FC<ExampleContentType> = ({ contentData }) => (
  * It takes in an array of strings and returns a styled list of links
  * @param  - `contentData` - the data that will be displayed in the content
  */
-export const ReferenceContent: FC<ReferenceContentType> = ({ contentData }) => (
+export const ReferenceContent = ({ contentData }: ReferenceContentType) => (
   <StyledSubContent>
     <Title>Sources</Title>
     {contentData.map((link, idx) => (

@@ -1,8 +1,8 @@
-import concourse from "../../images/technologies/concourseci.png";
-import bitbucketArchitecture from "../../images/technologies/bitbucket_architecture.png";
-import circleciArchitecture from "../../images/technologies/circleci_architecture.png";
-import teamcityOverview from "../../images/technologies/teamcity-overview.png";
-import vaultArchitecture from "../../images/technologies/vault_architecture.png";
+import concourse from "images/technologies/concourseci.png";
+import bitbucketArchitecture from "images/technologies/bitbucket_architecture.png";
+import circleciArchitecture from "images/technologies/circleci_architecture.png";
+import teamcityOverview from "images/technologies/teamcity-overview.png";
+import vaultArchitecture from "images/technologies/vault_architecture.png";
 
 const techContent = [
   {

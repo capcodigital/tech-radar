@@ -1,6 +1,6 @@
 import * as React from "react";
 import { render } from "@testing-library/react";
-import { RadarContext } from "../../../components/RadarContextProvider/RadarContextProvider";
+import { RadarContext } from "components/RadarContextProvider/RadarContextProvider";
 import ProjectPage from "../ProjectPage";
 import { BrowserRouter as Router } from "react-router-dom";
 
@@ -12,15 +12,12 @@ const mockValue = {
 };
 
 /* Mocking the RadarContextProvider component. */
-jest.doMock(
-  "../../../components/RadarContextProvider/RadarContextProvider",
-  () => {
-    return {
-      __esModule: true,
-      default: React.createContext,
-    };
-  }
-);
+jest.doMock("components/RadarContextProvider/RadarContextProvider", () => {
+  return {
+    __esModule: true,
+    default: React.createContext,
+  };
+});
 
 window.scroll = jest.fn();
 

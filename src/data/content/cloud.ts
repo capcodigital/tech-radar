@@ -1,7 +1,7 @@
-import AzureMap from "../../images/Azuremap.png";
-import splunkWorking from "../../images/technologies/splunk_working.png";
-import splunkArchitecture from "../../images/technologies/splunk_architecture.png";
-import splunkUsage from "../../images/technologies/splunk_usages.png";
+import AzureMap from "images/Azuremap.png";
+import splunkWorking from "images/technologies/splunk_working.png";
+import splunkArchitecture from "images/technologies/splunk_architecture.png";
+import splunkUsage from "images/technologies/splunk_usages.png";
 
 const techContent = [
   {

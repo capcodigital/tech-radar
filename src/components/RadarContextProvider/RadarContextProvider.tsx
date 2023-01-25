@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-empty-function */
 import { createContext, useState, FC } from "react";
 
 export type RadarContextType = {
@@ -10,8 +11,8 @@ export type RadarContextType = {
 export const RadarContext = createContext<RadarContextType>({
   category: "",
   technology: "",
-  setCategory: (name: string) => {},
-  setTechnology: (name: string) => {},
+  setCategory: () => {},
+  setTechnology: () => {},
 });
 
 export const RadarContextProvider: FC = ({ children }) => {

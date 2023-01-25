@@ -1,22 +1,26 @@
-import React, { FC } from "react";
-import { icons, technologies } from "../../data/data";
+import { icons, technologies } from "data/data";
 import { Link } from "react-router-dom";
 
 type TechnologyLinkProps = {
   techName: string;
 };
+type Technology = {
+  categoryName: string;
+  technologies: string[];
+};
 
-const ProjectTechnologyLink: FC<TechnologyLinkProps> = ({ techName }) => {
-  let iconResult = icons.filter(
-    (icon: any) => icon.name.toLowerCase() === techName.toLowerCase()
+const ProjectTechnologyLink = ({ techName }: TechnologyLinkProps) => {
+  const iconResult = icons.filter(
+    (icon: { name: string; link: string }) =>
+      icon.name.toLowerCase() === techName.toLowerCase()
   )[0];
-  let iconRef = iconResult ? iconResult.link : "";
-  let result = technologies.filter((el: any) =>
-    el.technologies.some((element: any) => {
+  const iconRef = iconResult ? iconResult.link : "";
+  const result = technologies.filter((el: Technology) =>
+    el.technologies.some((element: string) => {
       return element.toLowerCase() === techName.toLowerCase();
     })
   );
-  let category = result[0] ? result[0].categoryName : "";
+  const category = result[0] ? result[0].categoryName : "";
 
   return (
     <Link

@@ -1,18 +1,17 @@
-// eslint-disable-next-line
-import React, { FC, useState, useContext } from "react";
+import { useState, useContext } from "react";
 import { useHistory } from "react-router-dom";
 import {
   RadarContextType,
   RadarContext,
-} from "../RadarContextProvider/RadarContextProvider";
+} from "components/RadarContextProvider/RadarContextProvider";
 import * as d3 from "d3";
-import { data } from "../../data/data";
-import images from "../../images";
-import StyledGroup from "../RadarStyledComponents/StyledGroup";
+import { data } from "data/data";
+import images from "images";
+import StyledGroup from "components/RadarStyledComponents/StyledGroup";
 import { Wrapper, StyledNav } from "./styles/";
-import { RadarTooltip } from "../RadarStyledComponents/StyledTooltip";
-import { getRowLength } from "../../helpers/helpers";
-import techContent from "../../data/content/index";
+import { RadarTooltip } from "components/RadarStyledComponents/StyledTooltip";
+import techContent from "data/content/index";
+import { getRowLength } from "helpers/helpers";
 
 const labels = [
   "DevOps",
@@ -46,12 +45,8 @@ interface Props {
   preferredClicked: boolean;
 }
 
-const Radar: FC<Props> = ({
-  scalingClicked,
-  skilledClicked,
-  preferredClicked,
-}) => {
-  let history = useHistory();
+const Radar = ({ scalingClicked, skilledClicked, preferredClicked }: Props) => {
+  const history = useHistory();
   const { setCategory, setTechnology } =
     useContext<RadarContextType>(RadarContext);
   const [hovered, setHovered] = useState("DevOps");
@@ -159,7 +154,7 @@ const Radar: FC<Props> = ({
               opacity={0.03}
             />
           )}
-          {new Array(8).fill(0).map((d: any, idx: number) => (
+          {new Array(8).fill(0).map((_d, idx: number) => (
             <line
               key={`tech-line-${idx}`}
               transform={`rotate(${(360 / 8) * idx + 22.5})`}
@@ -336,106 +331,112 @@ const Radar: FC<Props> = ({
           {data.map((segment: any) => {
             techIdx += 2;
             return ["preferred", "skilled", "scaling"].map(
-              (category: any, catIdx: number) =>
-                segment.data[category].map((dataPoint: any, idx: number) => {
-                  // split data into 2 rows if more than 3 data point
-                  let r = idx > 2 ? radius[catIdx] - 90 : radius[catIdx] - 30;
-                  let dataLengthPerRow = getRowLength(
-                    segment.data[category].length,
-                    idx
-                  );
+              (category: string, catIdx: number) =>
+                segment.data[category].map(
+                  (
+                    dataPoint: { name: string; link: string; enabled: boolean },
+                    idx: number
+                  ) => {
+                    // split data into 2 rows if more than 3 data point
+                    const r =
+                      idx > 2 ? radius[catIdx] - 90 : radius[catIdx] - 30;
+                    const dataLengthPerRow = getRowLength(
+                      segment.data[category].length,
+                      idx
+                    );
 
-                  return (
-                    <StyledGroup
-                      key={`preferred-${idx}`}
-                      opacity={
-                        hovered === segment.name ||
-                        scalingClicked ||
-                        skilledClicked ||
-                        preferredClicked
-                          ? 1
-                          : 0.3
-                      }
-                      onClick={() =>
-                        handleClickIcon(segment.name, dataPoint.name)
-                      }
-                    >
-                      <RadarTooltip
-                        title={dataPoint.name}
-                        aria-label={dataPoint.name}
-                        placement="top"
-                        arrow
+                    return (
+                      <StyledGroup
+                        key={`preferred-${idx}`}
+                        opacity={
+                          hovered === segment.name ||
+                          scalingClicked ||
+                          skilledClicked ||
+                          preferredClicked
+                            ? 1
+                            : 0.3
+                        }
+                        onClick={() =>
+                          handleClickIcon(segment.name, dataPoint.name)
+                        }
                       >
-                        <g
-                          className={`techIcon-${dataPoint.name} ${
-                            technologyHasNoContent(dataPoint.name) &&
-                            "no-content"
-                          }`}
+                        <RadarTooltip
+                          title={dataPoint.name}
+                          aria-label={dataPoint.name}
+                          placement="top"
+                          arrow
                         >
-                          {/* background circle for icons */}
-                          <circle
-                            key={`preferred-${dataPoint.name}-${idx}`}
-                            // r = distance from center
-                            // Math.PI/segmentsNum = move points inside a segment otherwise only half of the points would be inside
-                            // (2 * Math.PI) / (segmentsNum * dataLengthPerRow)) * (idx > 2 ? idx - 3 : idx) = calculating coordinates
-                            // (idx > 2 ? idx - 3 : idx) = start angle at original point after 3rd data point
-                            // Math.PI / (segmentsNum * dataLengthPerRow) = evenly distribute inside segment
-                            cx={`${
-                              r *
-                              Math.cos(
-                                (techIdx * Math.PI) / segmentsNum +
-                                  ((2 * Math.PI) /
-                                    (segmentsNum * dataLengthPerRow)) *
-                                    (idx > 2 ? idx - 3 : idx) +
-                                  Math.PI / (segmentsNum * dataLengthPerRow)
-                              )
+                          <g
+                            className={`techIcon-${dataPoint.name} ${
+                              technologyHasNoContent(dataPoint.name) &&
+                              "no-content"
                             }`}
-                            cy={`${
-                              r *
-                              Math.sin(
-                                (techIdx * Math.PI) / segmentsNum +
-                                  ((2 * Math.PI) /
-                                    (segmentsNum * dataLengthPerRow)) *
-                                    (idx > 2 ? idx - 3 : idx) +
-                                  Math.PI / (segmentsNum * dataLengthPerRow)
-                              )
-                            }`}
-                            r={dataPointCircleRadius}
-                            fill={"white"}
-                          />
-
-                          <image
-                            x={`${
-                              r *
+                          >
+                            {/* background circle for icons */}
+                            <circle
+                              key={`preferred-${dataPoint.name}-${idx}`}
+                              // r = distance from center
+                              // Math.PI/segmentsNum = move points inside a segment otherwise only half of the points would be inside
+                              // (2 * Math.PI) / (segmentsNum * dataLengthPerRow)) * (idx > 2 ? idx - 3 : idx) = calculating coordinates
+                              // (idx > 2 ? idx - 3 : idx) = start angle at original point after 3rd data point
+                              // Math.PI / (segmentsNum * dataLengthPerRow) = evenly distribute inside segment
+                              cx={`${
+                                r *
                                 Math.cos(
                                   (techIdx * Math.PI) / segmentsNum +
                                     ((2 * Math.PI) /
                                       (segmentsNum * dataLengthPerRow)) *
                                       (idx > 2 ? idx - 3 : idx) +
                                     Math.PI / (segmentsNum * dataLengthPerRow)
-                                ) -
-                              imageSize / 2
-                            }`}
-                            y={`${
-                              r *
+                                )
+                              }`}
+                              cy={`${
+                                r *
                                 Math.sin(
                                   (techIdx * Math.PI) / segmentsNum +
                                     ((2 * Math.PI) /
                                       (segmentsNum * dataLengthPerRow)) *
                                       (idx > 2 ? idx - 3 : idx) +
                                     Math.PI / (segmentsNum * dataLengthPerRow)
-                                ) -
-                              imageSize / 2
-                            }`}
-                            href={dataPoint.link}
-                            height={imageSize}
-                            width={imageSize}
-                          />
-                        </g>
-                      </RadarTooltip>
-                    </StyledGroup>
-                  );
-                })
+                                )
+                              }`}
+                              r={dataPointCircleRadius}
+                              fill={"white"}
+                            />
+
+                            <image
+                              x={`${
+                                r *
+                                  Math.cos(
+                                    (techIdx * Math.PI) / segmentsNum +
+                                      ((2 * Math.PI) /
+                                        (segmentsNum * dataLengthPerRow)) *
+                                        (idx > 2 ? idx - 3 : idx) +
+                                      Math.PI / (segmentsNum * dataLengthPerRow)
+                                  ) -
+                                imageSize / 2
+                              }`}
+                              y={`${
+                                r *
+                                  Math.sin(
+                                    (techIdx * Math.PI) / segmentsNum +
+                                      ((2 * Math.PI) /
+                                        (segmentsNum * dataLengthPerRow)) *
+                                        (idx > 2 ? idx - 3 : idx) +
+                                      Math.PI / (segmentsNum * dataLengthPerRow)
+                                  ) -
+                                imageSize / 2
+                              }`}
+                              href={dataPoint.link}
+                              height={imageSize}
+                              width={imageSize}
+                            />
+                          </g>
+                        </RadarTooltip>
+                      </StyledGroup>
+                    );
+                  }
+                )
             );
           })}
         </g>

@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { useState, ReactNode } from "react";
 import Box from "@mui/material/Box";
 import Tab from "@mui/material/Tab";
 import TabContext from "@mui/lab/TabContext";
@@ -17,18 +17,18 @@ import StyledTabs from "./styles/";
 type TabsProps = {
   ossProjectCount: number;
   clientProjectCount: number;
-  panelOne: React.ReactNode;
-  panelTwo: React.ReactNode;
+  panelOne: ReactNode;
+  panelTwo: ReactNode;
 };
 
 /* It's Tabs component that takes in four props and returns a styled tab component. */
-const Tabs: FC<TabsProps> = ({
+const Tabs = ({
   ossProjectCount,
   clientProjectCount,
   panelOne,
   panelTwo,
-}) => {
-  const [value, setValue] = React.useState("1");
+}: TabsProps) => {
+  const [value, setValue] = useState("1");
 
   /**
    * handleChange takes in an event and a newValue and sets the value to the newValue.

@@ -1,14 +1,13 @@
-import { FC } from "react";
 import { withRouter, RouteComponentProps } from "react-router-dom";
 import Typography from "@mui/material/Typography";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Link from "@mui/material/Link";
 import BreadcrumbStyles from "./styles/";
 
-const BreadcrumbComponent: FC<RouteComponentProps> = ({
+const BreadcrumbComponent = ({
   history,
   location: { pathname },
-}) => {
+}: RouteComponentProps) => {
   const pathnames = pathname
     .replaceAll("technology", "category")
     .replaceAll("projects", "category")
@@ -31,9 +30,7 @@ const BreadcrumbComponent: FC<RouteComponentProps> = ({
             color="#fff"
             className="breadcrumb-nav"
             style={{ fontWeight: "bold" }}
-            onClick={() => {
-              history.push("/home");
-            }}
+            onClick={() => history.push("/home")}
           >
             TECH RADAR
           </Link>
@@ -44,7 +41,7 @@ const BreadcrumbComponent: FC<RouteComponentProps> = ({
         const isLast = index === pathnames.length;
         const Name = name.toUpperCase().replace("404", "Not Found");
 
-        const HandleClick = (event: any) => {
+        const handleClick = () => {
           if (
             routeTo.indexOf(
               "mobile" ||
@@ -57,7 +54,7 @@ const BreadcrumbComponent: FC<RouteComponentProps> = ({
                 "devops"
             )
           ) {
-            if (event.target.innerText === "CATEGORY") {
+            if (Name === "CATEGORY") {
               history.push(`/category/${pathnames[index]}`);
               return;
             }
@@ -66,14 +63,14 @@ const BreadcrumbComponent: FC<RouteComponentProps> = ({
         };
         return isLast ? (
           <Typography
-            key={index}
+            key={name}
             style={{ color: "grey", fontSize: "12px", cursor: "not-allowed" }}
           >
             {Name}
           </Typography>
         ) : (
-          <BreadcrumbStyles key={index}>
-            <Link color="#fff" className="breadcrumb-nav" onClick={HandleClick}>
+          <BreadcrumbStyles key={name}>
+            <Link color="#fff" className="breadcrumb-nav" onClick={handleClick}>
               {Name}
             </Link>
           </BreadcrumbStyles>

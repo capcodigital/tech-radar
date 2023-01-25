@@ -93,8 +93,9 @@ const NotFoundPage = () => {
           <Title>404</Title>
         </div>
         <div>
-          Sorry, we can't find that page! Don't worry though, come and see what
-          we know.
+          {
+            "Sorry, we can't find that page! Don't worry though, come and see what we know."
+          }
         </div>
         <StyledButton to={"/home"}>View Our Tech Radar</StyledButton>
       </IntroText>

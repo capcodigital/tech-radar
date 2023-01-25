@@ -104,7 +104,7 @@ const techContent = [
         imageUrl:
           "https://general-gif-bucket.s3.eu-west-2.amazonaws.com/demo.gif",
         description:
-          'A React, TypeScript web application that provides a more readable format of our Engineering Competency Framework to help explain performance expectations. Unit tests are written in Jest and React Testing Library, E2E tests are written in Cypress and are automated via <a href="https://github.com/features/actions">GitHub Actions</a>.',
+          'A TypeScript web application that provides a more readable format of our Engineering Competency Framework to help explain performance expectations. Unit tests are written in Jest and React Testing Library, E2E tests are written in Cypress and are automated via <a href="https://github.com/features/actions">GitHub Actions</a>.',
       },
     ],
     reference: ["https://reactjs.org/", "https://redux.js.org/"],
@@ -351,7 +351,7 @@ const techContent = [
         imageUrl:
           "https://general-gif-bucket.s3.eu-west-2.amazonaws.com/demo.gif",
         description:
-          'A React, TypeScript web application that provides a more readable format of our Engineering Competency Framework to help explain performance expectations. Unit tests are written in Jest and React Testing Library, E2E tests are written in Cypress and are automated via <a href="https://github.com/features/actions">GitHub Actions</a>.',
+          'A TypeScript web application that provides a more readable format of our Engineering Competency Framework to help explain performance expectations. Unit tests are written in Jest and React Testing Library, E2E tests are written in Cypress and are automated via <a href="https://github.com/features/actions">GitHub Actions</a>.',
       },
     ],
     reference: [],
