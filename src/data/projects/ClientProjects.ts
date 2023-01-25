@@ -119,6 +119,7 @@ const ClientProjects = [
       "React",
       "Kotlin",
       "Selenium",
+      "Sauce Labs",
     ],
   },
 ];
