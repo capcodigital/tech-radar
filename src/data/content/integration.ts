@@ -1,10 +1,9 @@
-import { Description } from "@mui/icons-material";
-import camelArchitecture from "../../images/technologies/camel-architecture.png";
-import grpcArchitecture from "../../images/technologies/grpc-architecture.png";
-import graphqlArchitecture from "../../images/technologies/graphql-architecture.png";
-import restArchitecture from "../../images/technologies/rest-architecture.png";
-import activemqArchitecture from "../../images/technologies/activemq_architecture.png";
-import activemqQueuesTopics from "../../images/technologies/queues-topics.png";
+import camelArchitecture from "images/technologies/camel-architecture.png";
+import grpcArchitecture from "images/technologies/grpc-architecture.png";
+import graphqlArchitecture from "images/technologies/graphql-architecture.png";
+import restArchitecture from "images/technologies/rest-architecture.png";
+import activemqArchitecture from "images/technologies/activemq_architecture.png";
+import activemqQueuesTopics from "images/technologies/queues-topics.png";
 
 const techContent = [
   {

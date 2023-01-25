@@ -1,10 +1,10 @@
-import NativeDevelopment from "../../images/NativeDevelopment.png";
+import NativeDevelopment from "images/NativeDevelopment.png";
 const techContent = [
   {
     technology: "React Native",
     docsLink: "https://reactnative.dev/docs/getting-started",
     intro:
-      "React Native was created in 2015 by Facebook and runs on React, the framework is a popular open-source library for building user interfaces with JavaScript. This framework is UI focused and helps to create real and exciting mobile apps, which is supportable for both android and iOS platforms, making it currently the most popular cross platform technology. ",
+      "React Native was created in 2015 by Facebook and runs on the framework is a popular open-source library for building user interfaces with JavaScript. This framework is UI focused and helps to create real and exciting mobile apps, which is supportable for both android and iOS platforms, making it currently the most popular cross platform technology. ",
     content: [
       {
         name: "Features",

@@ -8,7 +8,7 @@ Scenario: React Native content appears as expected
     And the user clicks the hamburger menu
     And the user navigates to "Mobile" via the hamburger menu
     And the user navigates to category "React Native"
-    Then the user should see "React Native was created in 2015 by Facebook and runs on React, the framework is a popular open-source library for building user interfaces with JavaScript. This framework is UI focused and helps to create real and exciting mobile apps, which is supportable for both android and iOS platforms, making it currently the most popular cross platform technology."
+    Then the user should see "React Native was created in 2015 by Facebook and runs on the framework is a popular open-source library for building user interfaces with JavaScript. This framework is UI focused and helps to create real and exciting mobile apps, which is supportable for both android and iOS platforms, making it currently the most popular cross platform technology."
     And the user should see "The biggest feature and benefit is the short development time. Developers only need to write one set of code in JavaScript which provides an opportunity to share the codebase not only between mobile platforms but also React web applications. React Native also supports platforms such as android TV, macOS, tvOS, Web, Windows and UWP."
     And the user clicks accordion "Community Support"
     And the user can see accordion "Community Support" description "As this is an open-source framework, developers have loads of resources at their disposal and a huge community to get information from."

@@ -1,4 +1,3 @@
-import React, { FC } from "react";
 import { KeyTooltip } from "../RadarStyledComponents/StyledTooltip";
 import {
   StyledRadarKey,
@@ -6,7 +5,7 @@ import {
   TooltipContent,
   KeyBorder,
 } from "./styles/";
-import { radarKeysText } from "../../data/data";
+import { radarKeysText } from "data/data";
 
 interface KeyCircleProps {
   color1: string;
@@ -20,7 +19,7 @@ interface Props {
   setPreferredClicked: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const KeyCircle: FC<KeyCircleProps> = ({ color1, color2, color3 }) => (
+const KeyCircle = ({ color1, color2, color3 }: KeyCircleProps) => (
   <svg width={24} height={24}>
     <circle cx={12} cy={12} r={12} fill={color1} />
     <circle cx={12} cy={12} r={8} fill={color2} />
@@ -28,11 +27,11 @@ const KeyCircle: FC<KeyCircleProps> = ({ color1, color2, color3 }) => (
   </svg>
 );
 
-const RadarKey: FC<Props> = ({
+const RadarKey = ({
   setScalingClicked,
   setSkilledClicked,
   setPreferredClicked,
-}) => {
+}: Props) => {
   return (
     <StyledRadarKey>
       <div>Key</div>

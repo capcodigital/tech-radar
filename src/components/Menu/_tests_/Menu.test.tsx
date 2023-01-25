@@ -1,10 +1,9 @@
-import * as React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import Menu from "../Menu";
-import { categoryList } from "../../../data/data";
 import { BrowserRouter as Router } from "react-router-dom";
-import { RadarContextProvider } from "../../RadarContextProvider/RadarContextProvider";
+import userEvent from "@testing-library/user-event";
+import { categoryList } from "data/data";
+import { RadarContextProvider } from "components/RadarContextProvider/RadarContextProvider";
+import Menu from "../Menu";
 
 describe("Menu", () => {
   it("should render Menu component", () => {

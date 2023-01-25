@@ -1,4 +1,3 @@
-import React, { FC } from "react";
 import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
@@ -11,7 +10,7 @@ type Props = {
   description: string;
 };
 
-const AccordionComponent: FC<Props> = ({ name, description }) => {
+const AccordionComponent = ({ name, description }: Props) => {
   return (
     <Wrapper>
       <Accordion id="accordion-component">

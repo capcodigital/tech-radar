@@ -1,4 +1,4 @@
-import React, { FC, MouseEventHandler } from "react";
+import { MouseEventHandler } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components/macro";
 
@@ -39,14 +39,14 @@ type ContentNavButtonProps = {
   next: boolean;
 };
 
-const ContentNavButton: FC<ContentNavButtonProps> = ({
+const ContentNavButton = ({
   onClick,
   previousTechnology,
   nextTechnology,
   previousCategory,
   nextCategory,
   next,
-}) => {
+}: ContentNavButtonProps) => {
   return (
     <StyledContentNavButton
       align={next ? "right" : "left"}

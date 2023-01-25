@@ -1,19 +1,20 @@
-import React, { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import Grid from "@material-ui/core/Grid";
 import {
   RadarContextType,
   RadarContext,
-} from "../../components/RadarContextProvider/RadarContextProvider";
-import BackLink from "../../components/BackLink/BackLink";
-import { icons, technologies } from "../../data/data";
+} from "components/RadarContextProvider/RadarContextProvider";
+import BackLink from "components/BackLink/BackLink";
+import { icons, technologies } from "data/data";
 import {
   SubContent,
   ExampleContent,
   ReferenceContent,
-} from "../../components/Content/Content";
-import { TechContentType } from "../../data/content";
-import techContent from "../../data/content/index";
-import images from "../../images";
+} from "components/Content/Content";
+import { TechContentType } from "data/content";
+import techContent from "data/content/index";
+import images from "images";
 import {
   Wrapper,
   ContentWrapper,
@@ -22,16 +23,15 @@ import {
   Divider,
   StyledWrapper,
 } from "./styles/";
-import ContentNavButton from "../../components/ComponentNavButton/ContentNavButton";
+import ContentNavButton from "components/ComponentNavButton/ContentNavButton";
 import {
   getNextItem,
   getPrevItem,
   filterClientProjects,
 } from "../../helpers/helpers";
-import ClientProjectLink from "../../components/ProjectPageLink/ProjectPageLink";
+import ClientProjectLink from "components/ProjectPageLink/ProjectPageLink";
 import Axios from "axios";
-import ClientProjects from "../../data/projects/ClientProjects";
-import { useLocation } from "react-router-dom";
+import ClientProjects from "data/projects/ClientProjects";
 
 /* CategoryPage component that is used to display the content of a technology. */
 const CategoryPage = () => {
@@ -81,33 +81,34 @@ const CategoryPage = () => {
   /* A React hook that is called after the component is mounted. It is used to set the state of the
   component. */
   useEffect(() => {
-    let url = window.location.pathname.split("/");
+    const url = window.location.pathname.split("/");
 
     // Find category and tech name in technologies data
-    let categoriesAndTechnologies =
+    const categoriesAndTechnologies =
       technologies.filter(
         ({ categoryName }) =>
           url[2] && categoryName.toLowerCase() === url[2].replace(/-/g, " ")
       )[0] || technologies[0];
 
-    let technologyFromUrl =
+    const technologyFromUrl =
       categoriesAndTechnologies.technologies.filter(
         (tech: string) =>
           url[3] && tech.toLowerCase() === url[3].replace(/-/g, " ")
       )[0] || technologies[0].technologies[0];
 
-    let categoryFromUrl = categoriesAndTechnologies.categoryName;
+    const categoryFromUrl = categoriesAndTechnologies.categoryName;
 
-    let icon = icons.filter(
-      (el: any) => el.name.toLowerCase() === technologyFromUrl.toLowerCase()
-    )[0]!;
+    const icon = icons.filter(
+      (el: { name: string; link: string }) =>
+        el.name.toLowerCase() === technologyFromUrl.toLowerCase()
+    )[0];
     // Filter the content for specific tech
-    let content = techContent.filter(
+    const content = techContent.filter(
       ({ technology }) => technology === technologyFromUrl
     )[0];
 
     setContent(content);
-    setImageLink(icon.link);
+    setImageLink(icon?.link);
     setTechnology(technologyFromUrl);
     setCategory(categoryFromUrl);
     fetchOssProject(technologyFromUrl.toLowerCase());
@@ -119,30 +120,30 @@ const CategoryPage = () => {
     });
   }, [location, technology, category, setCategory, setTechnology]);
 
-  let nextTechnology = getNextItem(technology);
+  const nextTechnology = getNextItem(technology);
 
-  let previousTechnology = getPrevItem(technology);
+  const previousTechnology = getPrevItem(technology);
 
-  let filteredNext =
+  const filteredNext =
     technology &&
     technologies.filter(({ technologies }) =>
       technologies.includes(nextTechnology)
     )[0];
-  let nextCategory = filteredNext ? filteredNext.categoryName : "Devops";
+  const nextCategory = filteredNext ? filteredNext.categoryName : "Devops";
 
-  let filteredPrev =
+  const filteredPrev =
     technology &&
     technologies.filter(({ technologies }) =>
       technologies.includes(previousTechnology)
     )[0];
-  let previousCategory = filteredPrev ? filteredPrev.categoryName : "Mobile";
+  const previousCategory = filteredPrev ? filteredPrev.categoryName : "Mobile";
 
   /* Returning the JSX that is rendered on the page. */
   return (
     <Wrapper category={category}>
       <img
         className="background"
-        src={(images as any)[category]}
+        src={(images as { [key: string]: string })[category]}
         alt={category}
         width={650}
         height={650}

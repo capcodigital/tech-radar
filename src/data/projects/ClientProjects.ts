@@ -12,7 +12,7 @@ const ClientProjects = [
     clientName: "UK Tier 1 Corporate Bank",
     clientImage: "CL2",
     description:
-      "Capco were engaged by a Tier 1 Private Bank to significantly improve the experience & functionality of their client digital channels.  Capco provided technology delivery, software engineering and test automation expertise.  The project included building APIs into the backend systems for new features, improving the nascent Angular web app, migrating it to React, breaking the monolith app into micro frontends, and creating component library for reuse in other applications.",
+      "Capco were engaged by a Tier 1 Private Bank to significantly improve the experience & functionality of their client digital channels.  Capco provided technology delivery, software engineering and test automation expertise.  The project included building APIs into the backend systems for new features, improving the nascent Angular web app, migrating it to breaking the monolith app into micro frontends, and creating component library for reuse in other applications.",
     technologies: ["Angular", "React", "Spring Boot", "Kubernetes", "Datadog"],
   },
   {
@@ -45,7 +45,7 @@ const ClientProjects = [
     clientName: "Global Tier 1 Private Bank",
     clientImage: "CL5",
     description:
-      "Capco were engaged by a Tier 1 Private Bank to significantly improve the experience & functionality of their client digital channels.  Capco provided technology delivery, software engineering and test automation expertise.  The project included building APIs into the backend systems for new features, improving the nascent Angular web app, migrating it to React, breaking the monolith app into micro frontends, and creating component library for reuse in other applications.",
+      "Capco were engaged by a Tier 1 Private Bank to significantly improve the experience & functionality of their client digital channels.  Capco provided technology delivery, software engineering and test automation expertise.  The project included building APIs into the backend systems for new features, improving the nascent Angular web app, migrating it to breaking the monolith app into micro frontends, and creating component library for reuse in other applications.",
     technologies: ["Angular", "React", "Spring Boot", "Docker", "Jest"],
   },
   {

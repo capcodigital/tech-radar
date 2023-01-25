@@ -1,6 +1,6 @@
 import * as React from "react";
 import { render } from "@testing-library/react";
-import { RadarContextProvider } from "../../../components/RadarContextProvider/RadarContextProvider";
+import { RadarContextProvider } from "components/RadarContextProvider/RadarContextProvider";
 import ContentPage from "../ContentPage";
 import { BrowserRouter as Router } from "react-router-dom";
 

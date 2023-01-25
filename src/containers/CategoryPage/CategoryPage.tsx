@@ -1,16 +1,16 @@
-import React, { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import {
   RadarContextType,
   RadarContext,
-} from "../../components/RadarContextProvider/RadarContextProvider";
-import CategoryRadar from "../../components/CategoryRadar/CategoryRadar";
+} from "components/RadarContextProvider/RadarContextProvider";
+import CategoryRadar from "components/CategoryRadar/CategoryRadar";
 import Grid from "@material-ui/core/Grid";
-import MobileRadarBackground from "../../components/MobileRadarBackground/MobileRadarBackground";
-import Button from "../../components/Button/Button";
-import CategoryListItem from "../../components/CategoryListItem/CategoryListItem";
-import { BackToHomeButton } from "../../components/BackLink/BackLink";
-import { data, technologies, categoryList, techType } from "../../data/data";
-import images from "../../images";
+import MobileRadarBackground from "components/MobileRadarBackground/MobileRadarBackground";
+import Button from "components/Button/Button";
+import CategoryListItem from "components/CategoryListItem/CategoryListItem";
+import { BackToHomeButton } from "components/BackLink/BackLink";
+import { data, technologies, categoryList, techType } from "data/data";
+import images from "images";
 import styled from "styled-components/macro";
 import { useLocation } from "react-router-dom";
 
@@ -161,15 +161,15 @@ const CategoryPage = () => {
   const location = useLocation();
 
   useEffect(() => {
-    let url = window.location.pathname.split("/");
+    const url = window.location.pathname.split("/");
 
-    let categoriesAndTechnologies =
+    const categoriesAndTechnologies =
       technologies.filter(
         ({ categoryName }) =>
           url[2] && categoryName.toLowerCase() === url[2].replace(/-/g, " ")
       )[0] || technologies[0];
 
-    let categoryName = categoriesAndTechnologies.categoryName;
+    const categoryName = categoriesAndTechnologies.categoryName;
 
     setCategory(categoryName);
     setContent(data.filter((item: any) => item.name === categoryName)[0]);
@@ -188,7 +188,7 @@ const CategoryPage = () => {
         <Wrapper category={category}>
           <img
             className="background"
-            src={(images as any)[category]}
+            src={(images as { [key: string]: string })[category]}
             alt={category}
             width={650}
             height={650}
@@ -199,7 +199,7 @@ const CategoryPage = () => {
               <MobileTitle>{content.name}</MobileTitle>
               <img
                 className="category-icon"
-                src={(images as any)[category]}
+                src={(images as { [key: string]: string })[category]}
                 alt={category}
                 width={126}
                 height={126}
@@ -277,7 +277,7 @@ const CategoryPage = () => {
                 <Title>{content.name}</Title>
                 <img
                   className="category-icon"
-                  src={(images as any)[category]}
+                  src={(images as { [key: string]: string })[category]}
                   alt={category}
                   width={126}
                   height={126}

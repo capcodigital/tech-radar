@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import List from "@material-ui/core/List";
 import IconButton from "@material-ui/core/IconButton";
@@ -6,11 +6,11 @@ import MenuIcon from "@material-ui/icons/Menu";
 import ClearIcon from "@material-ui/icons/Clear";
 import Toolbar from "@material-ui/core/Toolbar";
 import Grid from "@material-ui/core/Grid";
-import logo from "../../images/logo.png";
-import robot from "../../images/robot.svg";
+import logo from "images/logo.png";
+import robot from "images/robot.svg";
 import { ListItem } from "@material-ui/core";
 import { RadarContext } from "../RadarContextProvider/RadarContextProvider";
-import { categoryList } from "../../data/data";
+import { categoryList } from "data/data";
 import {
   StyledAppBar,
   LogoGridItem,
