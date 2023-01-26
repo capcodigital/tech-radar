@@ -108,7 +108,7 @@ export const data: Array<{ name: string; data: techType }> = [
         },
         {
           name: "Apache Hive",
-          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/hive_highres.png",
+          link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/hive_square.png",
           enabled: true,
         },
         {
@@ -847,7 +847,7 @@ export const icons: Array<{ name: string; link: string }> = [
   },
   {
     name: "Apache Hive",
-    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/hive_highres.png",
+    link: "https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/hive_square.png",
   },
   {
     name: "Apache Hadoop",
