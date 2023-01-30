@@ -35,12 +35,9 @@ jobs:
         with:
           cloudflare_project_id: 'tech-radar'
           wait_until_ready: true
-          node-version: 16
       - name: get-url
         run: echo "${{ steps.cloudflare_preview_url.outputs.preview_url }}"
       - uses: actions/checkout@v2
-        with: 
-          node-version: 16
       - name: Use Node.js 16
         uses: actions/setup-node@v2
         with:
