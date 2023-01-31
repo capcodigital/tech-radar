@@ -47,5 +47,5 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Run Cucumber Tests 
-        run: ${{ output.url }} npm run cucumberTest
+        run: TEST_URL=${{ output.url }} npm run cucumberTest
         
