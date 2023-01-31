@@ -36,8 +36,9 @@ jobs:
         with:
           cloudflare_project_id: 'tech-radar'
           wait_until_ready: true
-      - name: get-url
-        run: echo "url = ${{ steps.cloudflare_preview_url.outputs.preview_url }}" >> $GITHUB_OUTPUT
+      - name: Retrieve Cloudflare Preview URL
+        id: get_url
+        run: echo "URL=${{ steps.cloudflare_preview_url.outputs.preview_url }}" >> $GITHUB_OUTPUT
       - uses: actions/checkout@v3
       - name: Use Node.js ${{ matrix.node-version}}
         uses: actions/setup-node@v3
@@ -47,5 +48,4 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Run Cucumber Tests 
-        run: TEST_URL=${{ output.url }} npm run cucumberTest
-        
+        run: TEST_URL=${{steps.get_url.outputs.URL}} npm run cucumberTest
