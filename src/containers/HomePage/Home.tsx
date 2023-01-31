@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
-import Grid from "@material-ui/core/Grid";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import Grid from "@mui/material/Grid";
 import { Wrapper, OutterWrapper } from "containers/HomePage/styles/";
 import images from "images";
 import MobileRadarBackground from "components/MobileRadarBackground/MobileRadarBackground";

@@ -49,16 +49,16 @@ exports[`Menu should render Menu component 1`] = `
 }
 
 <header
-  class="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorPrimary c0 MuiPaper-elevation4"
+  class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic c0 css-hip9hq-MuiPaper-root-MuiAppBar-root"
 >
   <div
-    class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
+    class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-hyum1k-MuiToolbar-root"
   >
     <div
-      class="MuiGrid-root MuiGrid-container MuiGrid-justify-content-xs-space-between"
+      class="MuiGrid-root MuiGrid-container css-1lmj5vd-MuiGrid-root"
     >
       <div
-        class="MuiGrid-root c1 MuiGrid-item"
+        class="MuiGrid-root MuiGrid-item c1 css-13i4rnv-MuiGrid-root"
       >
         <a
           href="/home"
@@ -75,30 +75,27 @@ exports[`Menu should render Menu component 1`] = `
         </a>
       </div>
       <div
-        class="MuiGrid-root MuiGrid-item"
+        class="MuiGrid-root MuiGrid-item css-qh4ozh-MuiGrid-root"
       >
         <button
           aria-label="menu"
-          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-edgeStart"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-edgeStart MuiIconButton-sizeMedium css-1d6w9lk-MuiButtonBase-root-MuiIconButton-root"
           tabindex="0"
           type="button"
         >
-          <span
-            class="MuiIconButton-label"
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-tzssek-MuiSvgIcon-root"
+            data-testid="MenuIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
           >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
-              />
-            </svg>
-          </span>
+            <path
+              d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+            />
+          </svg>
           <span
-            class="MuiTouchRipple-root"
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
           />
         </button>
       </div>

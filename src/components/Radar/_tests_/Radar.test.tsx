@@ -1,12 +1,19 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import Radar from "../Radar";
-import { BrowserRouter as Router } from "react-router-dom";
+import { MemoryRouter } from "react-router-dom";
+
+const mockNavigate = jest.fn();
+
+jest.mock("react-router-dom", () => ({
+  ...jest.requireActual("react-router-dom"),
+  useNavigate: () => mockNavigate,
+}));
 
 const renderComponent = () =>
   render(
-    <Router>
+    <MemoryRouter>
       <Radar scalingClicked skilledClicked preferredClicked />
-    </Router>
+    </MemoryRouter>
   );
 
 describe("Radar", () => {
@@ -19,25 +26,26 @@ describe("Radar", () => {
     const technologyClassNameWithContent = "techIcon-React";
     const { container } = renderComponent();
     const g = container.querySelectorAll("g");
+
     g.forEach((x) => {
       if (x.outerHTML.includes(technologyClassNameWithContent)) {
         fireEvent.click(x);
       }
     });
-    expect(window.location.href).toBe(
-      "http://localhost/technology/mobile/react-native"
+    expect(mockNavigate).toHaveBeenLastCalledWith(
+      "/technology/mobile/react-native"
     );
   });
 
   it("should click DevOps on Radar and check that url is /category/devops", () => {
     renderComponent();
     fireEvent.click(screen.getByText("DevOps"));
-    expect(window.location.href).toBe("http://localhost/category/devops");
+    expect(mockNavigate).toHaveBeenCalledWith("/category/devops");
   });
 
   it("should click DevOps segment on Radar and check that url is /category/devops", () => {
     renderComponent();
     fireEvent.click(screen.getByTestId("DevOps-arc"));
-    expect(window.location.href).toBe("http://localhost/category/devops");
+    expect(mockNavigate).toHaveBeenCalledWith("/category/devops");
   });
 });

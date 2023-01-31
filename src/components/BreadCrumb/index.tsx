@@ -1,13 +1,13 @@
-import { withRouter, RouteComponentProps } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import Typography from "@mui/material/Typography";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Link from "@mui/material/Link";
 import BreadcrumbStyles from "./styles/";
 
-const BreadcrumbComponent = ({
-  history,
-  location: { pathname },
-}: RouteComponentProps) => {
+const BreadcrumbComponent = () => {
+  const navigate = useNavigate();
+  const { pathname } = useLocation();
+
   const pathnames = pathname
     .replaceAll("technology", "category")
     .replaceAll("projects", "category")
@@ -21,16 +21,22 @@ const BreadcrumbComponent = ({
         margin: "25px 0 0 90px",
         color: "#fff",
         fontSize: "12px",
-        cursor: "pointer",
       }}
     >
+      {pathname === "/" && (
+        <Typography
+          style={{ color: "grey", fontSize: "12px", cursor: "not-allowed" }}
+        >
+          RADAR PURPOSE
+        </Typography>
+      )}
       {pathnames.length > 0 && (
         <BreadcrumbStyles>
           <Link
             color="#fff"
             className="breadcrumb-nav"
             style={{ fontWeight: "bold" }}
-            onClick={() => history.push("/home")}
+            onClick={() => navigate("/home")}
           >
             TECH RADAR
           </Link>
@@ -55,10 +61,10 @@ const BreadcrumbComponent = ({
             )
           ) {
             if (Name === "CATEGORY") {
-              history.push(`/category/${pathnames[index]}`);
+              navigate(`/category/${pathnames[index]}`);
               return;
             }
-            history.push(`/${pathnames.slice(0, index++).join("/")}`);
+            navigate(`/${pathnames.slice(0, index++).join("/")}`);
           }
         };
         return isLast ? (
@@ -80,4 +86,4 @@ const BreadcrumbComponent = ({
   );
 };
 
-export default withRouter(BreadcrumbComponent);
+export default BreadcrumbComponent;

@@ -2,9 +2,7 @@
 
 exports[`Footer should render Footer component 1`] = `
 .c0 {
-  margin-top: auto;
   height: 70px;
-  width: 100%;
   background: #00000026;
   text-align: center;
   font-size: 18px;
@@ -30,7 +28,7 @@ exports[`Footer should render Footer component 1`] = `
 @media screen and (max-width:1000px) {
   .c0 {
     height: 250px;
-    padding: 40px 100px 0 100px;
+    padding: 0 100px 0 100px;
   }
 
   .c0 a,

@@ -5,12 +5,12 @@ import {
   RadarTooltip,
   KeyTooltip,
 } from "../StyledTooltip";
-import { BrowserRouter as Router } from "react-router-dom";
+import { MemoryRouter } from "react-router-dom";
 
 describe("Tooltips", () => {
   it("should render KeyTooltip component", () => {
     const { container } = render(
-      <Router>
+      <MemoryRouter>
         <KeyTooltip
           title={<div>Test</div>}
           aria-label={"Test"}
@@ -19,14 +19,14 @@ describe("Tooltips", () => {
         >
           <div>Test</div>
         </KeyTooltip>
-      </Router>
+      </MemoryRouter>
     );
     expect(container.firstChild).toMatchSnapshot();
   });
 
   it("should render RadarTooltip component", () => {
     const { container } = render(
-      <Router>
+      <MemoryRouter>
         <RadarTooltip
           title={<div>Test</div>}
           aria-label={"Test"}
@@ -35,14 +35,14 @@ describe("Tooltips", () => {
         >
           <div>Test</div>
         </RadarTooltip>
-      </Router>
+      </MemoryRouter>
     );
     expect(container.firstChild).toMatchSnapshot();
   });
 
   it("should render CategoryRadarTooltip component", () => {
     const { container } = render(
-      <Router>
+      <MemoryRouter>
         <CategoryRadarTooltip
           title={<div>Test</div>}
           aria-label={"Test"}
@@ -51,7 +51,7 @@ describe("Tooltips", () => {
         >
           <div>Test</div>
         </CategoryRadarTooltip>
-      </Router>
+      </MemoryRouter>
     );
     expect(container.firstChild).toMatchSnapshot();
   });

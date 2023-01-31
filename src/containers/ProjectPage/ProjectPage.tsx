@@ -6,7 +6,7 @@ import {
 import ProjectItem from "components/ProjectItem/ProjectItem";
 import { icons } from "data/data";
 import ClientProjects from "data/projects/ClientProjects";
-import { Container } from "@material-ui/core";
+import { Container } from "@mui/material";
 import { BackButton } from "components/BackLink/BackLink";
 import Tabs from "components/Tabs/Tabs";
 import { Wrapper, ContentBody, Title } from "./styles/";
@@ -37,8 +37,6 @@ const ProjectPage = () => {
   const { technology } = useContext<RadarContextType>(RadarContext);
 
   const [clientProjects, setClientProjects] = useState<Project[]>([]);
-  const [clientProjectCount, setClientProjectCount] = useState<number>(0);
-  const [ossProjectCount, setOssProjectCount] = useState<number>(0);
   const [iconRef, setIconRef] = useState<string>("");
   const [ossProjects, setOssProjects] = useState([]);
 
@@ -66,7 +64,6 @@ const ProjectPage = () => {
       }));
 
     setOssProjects(picked);
-    setOssProjectCount(results.length);
   };
 
   /**
@@ -94,7 +91,6 @@ const ProjectPage = () => {
         );
 
     setClientProjects(results);
-    setClientProjectCount(results.length);
   };
 
   /* Fetching the client projects and the open source projects. */
@@ -115,18 +111,24 @@ const ProjectPage = () => {
           <image x={15} y={15} href={iconRef} height={50} width={50} />
         </svg>
         <ContentBody>
-          <Tabs
-            ossProjectCount={ossProjectCount}
-            clientProjectCount={clientProjectCount}
-            panelOne={
-              clientProjectCount > 0 ? (
-                <ProjectItem data={clientProjects} />
-              ) : (
-                <p>Projects not available</p>
-              )
-            }
-            panelTwo={ossProjectCount > 0 && <ProjectItem data={ossProjects} />}
-          ></Tabs>
+          {clientProjects.length + ossProjects.length > 0 ? (
+            <Tabs
+              ossProjectCount={ossProjects.length}
+              clientProjectCount={clientProjects.length}
+              panelOne={
+                clientProjects.length > 0 ? (
+                  <ProjectItem data={clientProjects} />
+                ) : (
+                  <p>Projects not available</p>
+                )
+              }
+              panelTwo={
+                ossProjects.length > 0 && <ProjectItem data={ossProjects} />
+              }
+            />
+          ) : (
+            <p>Projects not available</p>
+          )}
         </ContentBody>
       </Container>
     </Wrapper>

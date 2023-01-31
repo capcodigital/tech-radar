@@ -1,34 +1,19 @@
-import { Link } from "react-router-dom";
-import styled from "styled-components/macro";
+import styled from "@emotion/styled";
+import { Link } from "@mui/material";
 
-const StyledBackLink = styled(Link)`
-  font-size: 17px;
-  display: block;
-  color: inherit;
-  margin-left: -10px;
-  img {
-    margin-left: 10px !important;
-  }
-  :hover {
-    color: inherit;
-    text-decoration: underline;
-  }
-`;
-
-export const StyledBackButton = styled.button`
-  font-size: 17px;
-  display: block;
-  color: inherit;
-  background: transparent;
-  border: none;
-  padding: 0;
-  img {
-    margin-left: 10px !important;
-  }
-  :hover {
-    color: inherit;
-    text-decoration: underline;
-  }
-`;
+const StyledBackLink = styled(Link)({
+  textDecoration: "none",
+  fontSize: 17,
+  display: "flex",
+  color: "white",
+  marginLeft: "-10px",
+  cursor: "pointer",
+  "& img": {
+    marginLeft: "10px !important",
+  },
+  "&:hover": {
+    textDecoration: "underline !important",
+  },
+});
 
 export default StyledBackLink;

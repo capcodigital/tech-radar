@@ -1,5 +1,5 @@
 import { useState, useContext } from "react";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import {
   RadarContextType,
   RadarContext,
@@ -46,7 +46,7 @@ interface Props {
 }
 
 const Radar = ({ scalingClicked, skilledClicked, preferredClicked }: Props) => {
-  const history = useHistory();
+  const navigate = useNavigate();
   const { setCategory, setTechnology } =
     useContext<RadarContextType>(RadarContext);
   const [hovered, setHovered] = useState("DevOps");
@@ -60,7 +60,7 @@ const Radar = ({ scalingClicked, skilledClicked, preferredClicked }: Props) => {
 
   const handleClick = (categoryName: string) => {
     setCategory(categoryName);
-    history.push(`/category/${categoryName.replace(/\s/g, "-")}`.toLowerCase());
+    navigate(`/category/${categoryName.replace(/\s/g, "-")}`.toLowerCase());
   };
 
   const handleClickIcon = (categoryName: string, technologyName: string) => {
@@ -69,7 +69,7 @@ const Radar = ({ scalingClicked, skilledClicked, preferredClicked }: Props) => {
 
     if (technologyHasNoContent(technologyName)) return;
 
-    history.push(
+    navigate(
       `/technology/${categoryName}/${technologyName}`
         .replace(/\s/g, "-")
         .toLowerCase()

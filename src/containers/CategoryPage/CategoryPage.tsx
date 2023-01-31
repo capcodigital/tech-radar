@@ -4,15 +4,16 @@ import {
   RadarContext,
 } from "components/RadarContextProvider/RadarContextProvider";
 import CategoryRadar from "components/CategoryRadar/CategoryRadar";
-import Grid from "@material-ui/core/Grid";
+import Grid from "@mui/material/Grid";
 import MobileRadarBackground from "components/MobileRadarBackground/MobileRadarBackground";
 import Button from "components/Button/Button";
 import CategoryListItem from "components/CategoryListItem/CategoryListItem";
-import { BackToHomeButton } from "components/BackLink/BackLink";
+import { BackButton } from "components/BackLink/BackLink";
 import { data, technologies, categoryList, techType } from "data/data";
 import images from "images";
 import styled from "styled-components/macro";
 import { useLocation } from "react-router-dom";
+import { Box } from "@mui/material";
 
 /**
  * WrapperProps is an object with a single property, category, which is a string.
@@ -117,7 +118,6 @@ const Wrapper = styled.div<WrapperProps>`
 /* It's a template literal. */
 const Title = styled.div`
   font-size: 90px;
-  margin-bottom: 20px;
   font-weight: 700;
   text-align: left;
   display: inline-block;
@@ -140,10 +140,11 @@ const MobileTitle = styled.div`
 /* It's a template literal. */
 const Divider = styled.hr`
   background: white;
-  margin: 0;
+  margin: 0px 0px 15px;
   width: 20px;
   border-width: 5px;
-  margin-bottom: 15px;
+  border: 0;
+  border-top: 5px solid rgba(0, 0, 0, 0.1);
 `;
 
 /* A React component that renders the category page. */
@@ -273,15 +274,17 @@ const CategoryPage = () => {
 
             <Grid container className="desktop-grid">
               <Grid item xs={12}>
-                <BackToHomeButton />
-                <Title>{content.name}</Title>
-                <img
-                  className="category-icon"
-                  src={(images as { [key: string]: string })[category]}
-                  alt={category}
-                  width={126}
-                  height={126}
-                />
+                <BackButton to="/home" />
+                <Box sx={{ display: "flex", alignItems: "center", mb: "20px" }}>
+                  <Title>{content.name}</Title>
+                  <img
+                    className="category-icon"
+                    src={(images as { [key: string]: string })[category]}
+                    alt={category}
+                    width={126}
+                    height={126}
+                  />
+                </Box>
               </Grid>
               <Grid item xs={4} className="large-screen">
                 <Divider />

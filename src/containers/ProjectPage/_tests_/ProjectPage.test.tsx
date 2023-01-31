@@ -1,8 +1,10 @@
 import * as React from "react";
-import { render } from "@testing-library/react";
+import { render, waitFor } from "@testing-library/react";
 import { RadarContext } from "components/RadarContextProvider/RadarContextProvider";
 import ProjectPage from "../ProjectPage";
-import { BrowserRouter as Router } from "react-router-dom";
+import { MemoryRouter } from "react-router-dom";
+import mockAxios from "jest-mock-axios";
+import { act } from "react-dom/test-utils";
 
 const mockValue = {
   category: "mobile",
@@ -22,15 +24,26 @@ jest.doMock("components/RadarContextProvider/RadarContextProvider", () => {
 window.scroll = jest.fn();
 
 describe("ProjectPage", () => {
-  it("when techology is React it should render ProjectPage component", () => {
-    const { container } = render(
-      <Router>
-        <RadarContext.Provider value={mockValue}>
-          <ProjectPage />
-        </RadarContext.Provider>
-      </Router>
-    );
+  beforeEach(() => {
+    mockAxios.get.mockResolvedValue({ data: [] });
+  });
+  afterEach(() => {
+    jest.restoreAllMocks();
+    mockAxios.reset();
+  });
 
+  it("when techology is React it should render ProjectPage component", async () => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    let renderedComponent: any;
+    await act(async () => {
+      renderedComponent = render(
+        <MemoryRouter>
+          <RadarContext.Provider value={mockValue}>
+            <ProjectPage />
+          </RadarContext.Provider>
+        </MemoryRouter>
+      );
+    });
     expect.addSnapshotSerializer({
       // Identify if there is any dynamic prop created by MUI (Material UI).
       test: (val: any) =>
@@ -43,7 +56,9 @@ describe("ProjectPage", () => {
         return `"${str}"`;
       },
     });
-
-    expect(container.firstChild).toMatchSnapshot();
+    expect(mockAxios.get).toHaveBeenCalledWith(
+      "https://api.github.com/orgs/capcodigital/repos"
+    );
+    expect(renderedComponent).toMatchSnapshot();
   });
 });

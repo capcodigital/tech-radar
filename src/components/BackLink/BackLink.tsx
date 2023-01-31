@@ -1,41 +1,40 @@
-import NavigateBeforeIcon from "@material-ui/icons/NavigateBefore";
-import StyledBackLink, { StyledBackButton } from "./styles/";
+import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
+import StyledBackLink from "./styles/";
 import images from "images";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 type BackLinkType = {
   category: string;
 };
 
-const BackLink = ({ category }: BackLinkType) => (
-  <StyledBackLink
-    to={`/category/${category.replace(/\s/g, "-").toLowerCase()}`}
-  >
-    <NavigateBeforeIcon />
-    Back to {category}
-    <img
-      src={(images as { [key: string]: string })[category]}
-      alt={category}
-      width={24}
-      height={24}
-    />
-  </StyledBackLink>
-);
-
-export const BackToHomeButton = () => (
-  <StyledBackLink to={"/home"}>
-    <NavigateBeforeIcon />
-    Back
-  </StyledBackLink>
-);
-
-export const BackButton = () => {
-  const history = useHistory();
+const BackLink = ({ category }: BackLinkType) => {
+  const navigate = useNavigate();
   return (
-    <StyledBackButton onClick={() => history.goBack()}>
+    <StyledBackLink
+      onClick={() =>
+        navigate(`/category/${category.replace(/\s/g, "-").toLowerCase()}`)
+      }
+    >
+      <NavigateBeforeIcon />
+      Back to {category}
+      <img
+        src={(images as { [key: string]: string })[category]}
+        alt={category}
+        width={24}
+        height={24}
+      />
+    </StyledBackLink>
+  );
+};
+
+export const BackButton = ({ to }: { to?: string }) => {
+  const navigate = useNavigate();
+  return (
+    // @ts-ignore
+    <StyledBackLink onClick={() => navigate(to ?? -1)}>
       <NavigateBeforeIcon />
       Back
-    </StyledBackButton>
+    </StyledBackLink>
   );
 };
 

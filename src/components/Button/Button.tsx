@@ -1,6 +1,6 @@
 import { MouseEventHandler } from "react";
 import { Link } from "react-router-dom";
-import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ButtonWrapper from "./styles/";
 import images from "images";
 
