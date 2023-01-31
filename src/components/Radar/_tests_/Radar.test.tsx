@@ -25,7 +25,6 @@ describe("Radar", () => {
   it("should click React icon on Radar and check that url is /technology/frontend/react", () => {
     const technologyClassNameWithContent = "techIcon-React";
     const { container } = renderComponent();
-
     const g = container.querySelectorAll("g");
 
     g.forEach((x) => {
