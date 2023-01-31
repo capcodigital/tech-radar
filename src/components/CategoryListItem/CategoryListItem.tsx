@@ -1,22 +1,21 @@
-import React, { FC } from "react";
 import { Link } from "react-router-dom";
-import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import StyledListItem from "./styles/";
 type ListItemProps = {
   techName: string;
   category: string;
   hovered: boolean;
   enabled: boolean;
-  onClick: any;
+  onClick: () => void;
 };
 
-const CategoryListItem: FC<ListItemProps> = ({
+const CategoryListItem = ({
   techName,
   category,
   enabled,
   onClick,
   hovered,
-}) => (
+}: ListItemProps) => (
   <StyledListItem className={hovered ? "hovered" : ""} onClick={onClick}>
     <Link
       to={`/technology/${category.replace(/\s/g, "-")}/${techName.replace(

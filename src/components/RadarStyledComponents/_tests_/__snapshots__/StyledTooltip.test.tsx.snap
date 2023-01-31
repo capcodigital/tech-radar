@@ -4,6 +4,7 @@ exports[`Tooltips should render CategoryRadarTooltip component 1`] = `
 <div
   aria-label="Test"
   class=""
+  data-mui-internal-clone-element="true"
 >
   Test
 </div>
@@ -13,6 +14,7 @@ exports[`Tooltips should render KeyTooltip component 1`] = `
 <div
   aria-label="Test"
   class=""
+  data-mui-internal-clone-element="true"
 >
   Test
 </div>
@@ -22,6 +24,7 @@ exports[`Tooltips should render RadarTooltip component 1`] = `
 <div
   aria-label="Test"
   class=""
+  data-mui-internal-clone-element="true"
 >
   Test
 </div>

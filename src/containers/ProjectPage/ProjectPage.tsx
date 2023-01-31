@@ -1,14 +1,14 @@
-import React, { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import {
   RadarContextType,
   RadarContext,
-} from "../../components/RadarContextProvider/RadarContextProvider";
-import ProjectItem from "../../components/ProjectItem/ProjectItem";
-import { icons } from "../../data/data";
-import ClientProjects from "../../data/projects/ClientProjects";
-import { Container } from "@material-ui/core";
-import { BackButton } from "../../components/BackLink/BackLink";
-import Tabs from "../../components/Tabs/Tabs";
+} from "components/RadarContextProvider/RadarContextProvider";
+import ProjectItem from "components/ProjectItem/ProjectItem";
+import { icons } from "data/data";
+import ClientProjects from "data/projects/ClientProjects";
+import { Container } from "@mui/material";
+import { BackButton } from "components/BackLink/BackLink";
+import Tabs from "components/Tabs/Tabs";
 import { Wrapper, ContentBody, Title } from "./styles/";
 import Axios from "axios";
 
@@ -37,10 +37,8 @@ const ProjectPage = () => {
   const { technology } = useContext<RadarContextType>(RadarContext);
 
   const [clientProjects, setClientProjects] = useState<Project[]>([]);
-  const [clientProjectCount, setClientProjectCount] = useState<number>(0);
-  const [ossProjectCount, setOssProjectCount] = useState<number>(0);
   const [iconRef, setIconRef] = useState<string>("");
-  const [ossProjects, setOssProjects] = useState<any>([]);
+  const [ossProjects, setOssProjects] = useState([]);
 
   /**
    * It fetches data from the Github API, filters the data based on the technology name, and then sets
@@ -66,7 +64,6 @@ const ProjectPage = () => {
       }));
 
     setOssProjects(picked);
-    setOssProjectCount(results.length);
   };
 
   /**
@@ -76,11 +73,11 @@ const ProjectPage = () => {
    */
   const fetchClientProjects = (techName: string) => {
     let results: Project[] = [];
-    let splitTechName: string = techName?.toLowerCase().replace(/-/g, " ");
-    let iconResult = icons.filter(
+    const splitTechName: string = techName?.toLowerCase().replace(/-/g, " ");
+    const iconResult = icons.filter(
       (icon: any) => icon.name.toLowerCase() === splitTechName
     )[0];
-    let ref = iconResult ? iconResult.link : "";
+    const ref = iconResult ? iconResult.link : "";
     setIconRef(ref);
 
     results = technology
@@ -94,13 +91,11 @@ const ProjectPage = () => {
         );
 
     setClientProjects(results);
-    setClientProjectCount(results.length);
   };
 
   /* Fetching the client projects and the open source projects. */
   useEffect(() => {
-    let url = window.location.pathname.split("/");
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    const url = window.location.pathname.split("/");
     fetchClientProjects(url[3]);
     fetchOssProject(url[3]);
   }, []);
@@ -116,18 +111,24 @@ const ProjectPage = () => {
           <image x={15} y={15} href={iconRef} height={50} width={50} />
         </svg>
         <ContentBody>
-          <Tabs
-            ossProjectCount={ossProjectCount}
-            clientProjectCount={clientProjectCount}
-            panelOne={
-              clientProjectCount > 0 ? (
-                <ProjectItem data={clientProjects} />
-              ) : (
-                <p>Projects not available</p>
-              )
-            }
-            panelTwo={ossProjectCount > 0 && <ProjectItem data={ossProjects} />}
-          ></Tabs>
+          {clientProjects.length + ossProjects.length > 0 ? (
+            <Tabs
+              ossProjectCount={ossProjects.length}
+              clientProjectCount={clientProjects.length}
+              panelOne={
+                clientProjects.length > 0 ? (
+                  <ProjectItem data={clientProjects} />
+                ) : (
+                  <p>Projects not available</p>
+                )
+              }
+              panelTwo={
+                ossProjects.length > 0 && <ProjectItem data={ossProjects} />
+              }
+            />
+          ) : (
+            <p>Projects not available</p>
+          )}
         </ContentBody>
       </Container>
     </Wrapper>

@@ -1,14 +1,13 @@
-import { FC } from "react";
-import { withRouter, RouteComponentProps } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import Typography from "@mui/material/Typography";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Link from "@mui/material/Link";
 import BreadcrumbStyles from "./styles/";
 
-const BreadcrumbComponent: FC<RouteComponentProps> = ({
-  history,
-  location: { pathname },
-}) => {
+const BreadcrumbComponent = () => {
+  const navigate = useNavigate();
+  const { pathname } = useLocation();
+
   const pathnames = pathname
     .replaceAll("technology", "category")
     .replaceAll("projects", "category")
@@ -22,18 +21,22 @@ const BreadcrumbComponent: FC<RouteComponentProps> = ({
         margin: "25px 0 0 90px",
         color: "#fff",
         fontSize: "12px",
-        cursor: "pointer",
       }}
     >
+      {pathname === "/" && (
+        <Typography
+          style={{ color: "grey", fontSize: "12px", cursor: "not-allowed" }}
+        >
+          RADAR PURPOSE
+        </Typography>
+      )}
       {pathnames.length > 0 && (
         <BreadcrumbStyles>
           <Link
             color="#fff"
             className="breadcrumb-nav"
             style={{ fontWeight: "bold" }}
-            onClick={() => {
-              history.push("/home");
-            }}
+            onClick={() => navigate("/home")}
           >
             TECH RADAR
           </Link>
@@ -44,7 +47,7 @@ const BreadcrumbComponent: FC<RouteComponentProps> = ({
         const isLast = index === pathnames.length;
         const Name = name.toUpperCase().replace("404", "Not Found");
 
-        const HandleClick = (event: any) => {
+        const handleClick = () => {
           if (
             routeTo.indexOf(
               "mobile" ||
@@ -57,23 +60,23 @@ const BreadcrumbComponent: FC<RouteComponentProps> = ({
                 "devops"
             )
           ) {
-            if (event.target.innerText === "CATEGORY") {
-              history.push(`/category/${pathnames[index]}`);
+            if (Name === "CATEGORY") {
+              navigate(`/category/${pathnames[index]}`);
               return;
             }
-            history.push(`/${pathnames.slice(0, index++).join("/")}`);
+            navigate(`/${pathnames.slice(0, index++).join("/")}`);
           }
         };
         return isLast ? (
           <Typography
-            key={index}
+            key={name}
             style={{ color: "grey", fontSize: "12px", cursor: "not-allowed" }}
           >
             {Name}
           </Typography>
         ) : (
-          <BreadcrumbStyles key={index}>
-            <Link color="#fff" className="breadcrumb-nav" onClick={HandleClick}>
+          <BreadcrumbStyles key={name}>
+            <Link color="#fff" className="breadcrumb-nav" onClick={handleClick}>
               {Name}
             </Link>
           </BreadcrumbStyles>
@@ -83,4 +86,4 @@ const BreadcrumbComponent: FC<RouteComponentProps> = ({
   );
 };
 
-export default withRouter(BreadcrumbComponent);
+export default BreadcrumbComponent;

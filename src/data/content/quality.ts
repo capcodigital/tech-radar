@@ -1,18 +1,18 @@
-import cypressExample from "../../images/technologies/cypress-example.png";
-import cypressFlow from "../../images/technologies/cypress-flow.png";
-import SeleniumImg from "../../images/technologies/selenium-img.png";
-import postmanExample from "../../images/technologies/postman_snapshot.png";
-import postmanTesting from "../../images/technologies/postman_testing.png";
-import gatlingExample1 from "../../images/technologies/gatling_example1.png";
-import gatlingExample2 from "../../images/technologies/gatling_example2.png";
-import gatlingExample3 from "../../images/technologies/gatling_example3.png";
-import cucumberSteps from "../../images/technologies/cucumberSteps.png";
-import cucumberSchema from "../../images/technologies/cucumberSchema.png";
-import stepDef from "../../images/technologies/stepDef.png";
-import restAssuredSample from "../../images/technologies/rest-assured-sample.png";
-import appiumServerSample from "../../images/technologies/appium-server.png";
-import pactSummary from "../../images/technologies/pact-summary.png";
-import pactConcept from "../../images/technologies/pact-concept.png";
+import cypressExample from "images/technologies/cypress-example.png";
+import cypressFlow from "images/technologies/cypress-flow.png";
+import SeleniumImg from "images/technologies/selenium-img.png";
+import postmanExample from "images/technologies/postman_snapshot.png";
+import postmanTesting from "images/technologies/postman_testing.png";
+import gatlingExample1 from "images/technologies/gatling_example1.png";
+import gatlingExample2 from "images/technologies/gatling_example2.png";
+import gatlingExample3 from "images/technologies/gatling_example3.png";
+import cucumberSteps from "images/technologies/cucumberSteps.png";
+import cucumberSchema from "images/technologies/cucumberSchema.png";
+import stepDef from "images/technologies/stepDef.png";
+import restAssuredSample from "images/technologies/rest-assured-sample.png";
+import appiumServerSample from "images/technologies/appium-server.png";
+import pactSummary from "images/technologies/pact-summary.png";
+import pactConcept from "images/technologies/pact-concept.png";
 
 const techContent = [
   {
@@ -564,7 +564,7 @@ const techContent = [
       {
         name: "How Applitools works",
         intro:
-          "Applitools uses the same approach as above by providing the tools that you can use to take snapshots, send snapshots to the Applitools cloud and run AI logic to compare the snapshots with their corresponding baselines. <br /><br />Applitools provides a rich set of Software Development Kits (SDKs) for well-known test suites. For instance: <br /><ul><li>SDK for Cypress.io end-to-end testing framework (recently launched)</li><li>SDKs for Storybook with React, Angular and Vue (recently launched)</li><li>SDKs for almost all of the Selenium flavors (JavaScript, Java, C#, Ruby, etc.).</li><li>SDKs for almost all of the Appium flavors (Native C#, Native Java, Native PHP, etc.).</li></ul>",
+          "Applitools uses the same approach as above by providing the tools that you can use to take snapshots, send snapshots to the Applitools cloud and run AI logic to compare the snapshots with their corresponding baselines. <br /><br />Applitools provides a rich set of Software Development Kits (SDKs) for well-known test suites. For instance: <br /><ul><li>SDK for Cypress.io end-to-end testing framework (recently launched)</li><li>SDKs for Storybook with Angular and Vue (recently launched)</li><li>SDKs for almost all of the Selenium flavors (JavaScript, Java, C#, Ruby, etc.).</li><li>SDKs for almost all of the Appium flavors (Native C#, Native Java, Native PHP, etc.).</li></ul>",
         data: [],
       },
       {

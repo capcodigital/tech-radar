@@ -1,6 +1,5 @@
-import React from "react";
 import { Link } from "react-router-dom";
-import robot from "../../images/robot.svg";
+import robot from "images/robot.svg";
 import styled from "styled-components/macro";
 
 const size = 700;
@@ -135,7 +134,7 @@ const IntroPage = () => {
                 fill={"#ffffff"}
                 opacity={0.02}
               />
-              {new Array(8).fill(0).map((d: any, idx: number) => (
+              {new Array(8).fill(0).map((_d, idx: number) => (
                 <line
                   key={`tech-line-${idx}`}
                   transform={`rotate(${(360 / 8) * idx + 22.5})`}

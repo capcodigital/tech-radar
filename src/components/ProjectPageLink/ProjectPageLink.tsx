@@ -1,4 +1,4 @@
-import React, { FC, useContext } from "react";
+import { useContext } from "react";
 import { StyledLink } from "./styles";
 import {
   RadarContextType,
@@ -6,10 +6,10 @@ import {
 } from "../RadarContextProvider/RadarContextProvider";
 
 type LinkProps = {
-  onClick: any;
+  onClick: () => void;
 };
 
-const ProjectPageLink: FC<LinkProps> = ({ onClick }) => {
+const ProjectPageLink = ({ onClick }: LinkProps) => {
   const { category, technology } = useContext<RadarContextType>(RadarContext);
   return (
     <>

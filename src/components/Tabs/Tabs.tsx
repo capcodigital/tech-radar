@@ -1,9 +1,7 @@
-import React, { FC } from "react";
+import { ReactNode, useState, SyntheticEvent } from "react";
 import Box from "@mui/material/Box";
+import MuiTabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
-import TabContext from "@mui/lab/TabContext";
-import TabList from "@mui/lab/TabList";
-import TabPanel from "@mui/lab/TabPanel";
 import StyledTabs from "./styles/";
 
 /**
@@ -12,56 +10,90 @@ import StyledTabs from "./styles/";
  * @property {number} ossProjectCount - The number of open source projects you've contributed to.
  * @property {number} clientProjectCount - The number of client projects
  * @property panelOne - This is the first panel that will be displayed.
- * @property panelTwo - React.ReactNode;
+ * @property panelTwo - ReactNode;
  */
-type TabsProps = {
+
+interface TabsProps {
   ossProjectCount: number;
   clientProjectCount: number;
-  panelOne: React.ReactNode;
-  panelTwo: React.ReactNode;
-};
+  panelOne: ReactNode;
+  panelTwo: ReactNode;
+}
+
+interface TabPanelProps {
+  value: number;
+  index: number;
+  children: ReactNode;
+}
+
+/* tabPanel and tabsprops*/
+
+function TabPanel({ value, index, children }: TabPanelProps) {
+  return (
+    <div
+      role="tabpanel"
+      hidden={value !== index}
+      id={`simple-tabpanel-${index}`}
+      aria-labelledby={`simple-tab-${index}`}
+    >
+      {value === index && <Box sx={{ p: 3 }}>{children}</Box>}
+    </div>
+  );
+}
 
 /* It's Tabs component that takes in four props and returns a styled tab component. */
-const Tabs: FC<TabsProps> = ({
+
+function a11yProps(index: number) {
+  return {
+    id: `simple-tab-${index}`,
+    "aria-controls": `simple-tabpanel-${index}`,
+  };
+}
+export default function Tabs({
   ossProjectCount,
   clientProjectCount,
   panelOne,
   panelTwo,
-}) => {
-  const [value, setValue] = React.useState("1");
+}: TabsProps) {
+  const [value, setValue] = useState(0);
 
   /**
    * handleChange takes in an event and a newValue and sets the value to the newValue.
-   * @param event - React.SyntheticEvent
+   * @param event - SyntheticEvent
    * @param {string} newValue - The new value of the tab.
    */
-  const handleChange = (event: React.SyntheticEvent, newValue: string) => {
+  const handleChange = (_event: SyntheticEvent, newValue: number) => {
     setValue(newValue);
   };
 
   /* It's returning a styled tab component. */
   return (
     <StyledTabs>
-      <TabContext value={value}>
-        <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-          <TabList onChange={handleChange} aria-label="Project tabs" centered>
-            <Tab
-              label={`Client Projects (${clientProjectCount})`}
-              value="1"
-              disabled={clientProjectCount === 0}
-            />
-            <Tab
-              label={`Capco OSS Projects (${ossProjectCount})`}
-              value="2"
-              disabled={ossProjectCount === 0}
-            />
-          </TabList>
-        </Box>
-        <TabPanel value="1">{panelOne}</TabPanel>
-        <TabPanel value="2">{panelTwo}</TabPanel>
-      </TabContext>
+      <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+        <MuiTabs
+          value={value}
+          onChange={handleChange}
+          aria-label="Project tabs"
+        >
+          <Tab
+            label={`Client Projects (${clientProjectCount})`}
+            {...a11yProps(0)}
+            disabled={clientProjectCount === 0}
+          />
+          <Tab
+            label={`Capco OSS Projects (${ossProjectCount})`}
+            {...a11yProps(1)}
+            disabled={ossProjectCount === 0}
+          />
+        </MuiTabs>
+      </Box>
+
+      <TabPanel value={value} index={0}>
+        {panelOne}
+      </TabPanel>
+      <TabPanel value={value} index={1}>
+        {panelTwo}
+      </TabPanel>
     </StyledTabs>
   );
-};
-
-export default Tabs;
+}

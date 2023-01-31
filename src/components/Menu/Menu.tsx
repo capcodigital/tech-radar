@@ -1,16 +1,16 @@
-import React, { useState, useContext } from "react";
+import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
-import List from "@material-ui/core/List";
-import IconButton from "@material-ui/core/IconButton";
-import MenuIcon from "@material-ui/icons/Menu";
-import ClearIcon from "@material-ui/icons/Clear";
-import Toolbar from "@material-ui/core/Toolbar";
-import Grid from "@material-ui/core/Grid";
-import logo from "../../images/logo.png";
-import robot from "../../images/robot.svg";
-import { ListItem } from "@material-ui/core";
+import List from "@mui/material/List";
+import IconButton from "@mui/material/IconButton";
+import MenuIcon from "@mui/icons-material/Menu";
+import ClearIcon from "@mui/icons-material/Clear";
+import Toolbar from "@mui/material/Toolbar";
+import Grid from "@mui/material/Grid";
+import logo from "images/logo.png";
+import robot from "images/robot.svg";
+import { ListItem } from "@mui/material";
 import { RadarContext } from "../RadarContextProvider/RadarContextProvider";
-import { categoryList } from "../../data/data";
+import { categoryList } from "data/data";
 import {
   StyledAppBar,
   LogoGridItem,
@@ -40,7 +40,7 @@ const Menu = () => {
     <>
       <StyledAppBar position="static">
         <Toolbar>
-          <Grid justifyContent="space-between" container>
+          <Grid justifyContent="space-between" alignItems="start" container>
             <LogoGridItem item>
               <Link to="/home">
                 <img height={85} src={logo} alt="Large Logo" />
@@ -48,7 +48,7 @@ const Menu = () => {
               </Link>
             </LogoGridItem>
 
-            <Grid item>
+            <Grid item alignItems="center" sx={{ display: "flex" }}>
               {window.location.pathname !== "/" && (
                 <StyledLink id="purpose" to="/">
                   <img src={robot} alt="robot" width={28} height={26} />

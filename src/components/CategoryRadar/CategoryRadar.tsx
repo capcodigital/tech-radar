@@ -1,4 +1,3 @@
-import React, { FC } from "react";
 import * as d3 from "d3";
 import styled from "styled-components/macro";
 import { CategoryRadarTooltip } from "../RadarStyledComponents/StyledTooltip";
@@ -30,12 +29,12 @@ type CategoryRadarType = {
     skilled: Array<{ name: string; link: string }>;
     scaling: Array<{ name: string; link: string }>;
   };
-  setHovered: any;
+  setHovered: (val: string) => void;
 };
 
 const createArc = d3.arc().padAngle(0);
 
-const CategoryRadar: FC<CategoryRadarType> = ({ data, setHovered }) => {
+const CategoryRadar = ({ data, setHovered }: CategoryRadarType) => {
   return (
     <Wrapper>
       <svg width={400} height={800}>

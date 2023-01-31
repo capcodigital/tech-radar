@@ -1,4 +1,3 @@
-import React, { FC } from "react";
 import { KeyTooltip } from "../RadarStyledComponents/StyledTooltip";
 import {
   StyledRadarKey,
@@ -6,7 +5,8 @@ import {
   TooltipContent,
   KeyBorder,
 } from "./styles/";
-import { radarKeysText } from "../../data/data";
+import { radarKeysText } from "data/data";
+import { Box } from "@mui/material";
 
 interface KeyCircleProps {
   color1: string;
@@ -20,7 +20,7 @@ interface Props {
   setPreferredClicked: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const KeyCircle: FC<KeyCircleProps> = ({ color1, color2, color3 }) => (
+const KeyCircle = ({ color1, color2, color3 }: KeyCircleProps) => (
   <svg width={24} height={24}>
     <circle cx={12} cy={12} r={12} fill={color1} />
     <circle cx={12} cy={12} r={8} fill={color2} />
@@ -28,11 +28,11 @@ const KeyCircle: FC<KeyCircleProps> = ({ color1, color2, color3 }) => (
   </svg>
 );
 
-const RadarKey: FC<Props> = ({
+const RadarKey = ({
   setScalingClicked,
   setSkilledClicked,
   setPreferredClicked,
-}) => {
+}: Props) => {
   return (
     <StyledRadarKey>
       <div>Key</div>
@@ -48,7 +48,8 @@ const RadarKey: FC<Props> = ({
           placement="right"
           arrow
         >
-          <div
+          <Box
+            sx={{ display: "flex" }}
             onMouseEnter={() => setScalingClicked(true)}
             onMouseLeave={() => setScalingClicked(false)}
           >
@@ -58,7 +59,7 @@ const RadarKey: FC<Props> = ({
               color3={"#e6236d"}
             />
             <span className="key-text">Scaling</span>
-          </div>
+          </Box>
         </KeyTooltip>
         <KeyTooltip
           title={
@@ -71,7 +72,8 @@ const RadarKey: FC<Props> = ({
           placement="right"
           arrow
         >
-          <div
+          <Box
+            sx={{ display: "flex" }}
             onMouseEnter={() => setSkilledClicked(true)}
             onMouseLeave={() => setSkilledClicked(false)}
           >
@@ -81,7 +83,7 @@ const RadarKey: FC<Props> = ({
               color3={"#222222"}
             />
             <span className="key-text">Skilled</span>
-          </div>
+          </Box>
         </KeyTooltip>
         <KeyTooltip
           title={
@@ -94,7 +96,8 @@ const RadarKey: FC<Props> = ({
           placement="right"
           arrow
         >
-          <div
+          <Box
+            sx={{ display: "flex" }}
             onMouseEnter={() => setPreferredClicked(true)}
             onMouseLeave={() => setPreferredClicked(false)}
           >
@@ -104,7 +107,7 @@ const RadarKey: FC<Props> = ({
               color3={"#391A46"}
             />
             <span className="key-text">Preferred</span>
-          </div>
+          </Box>
         </KeyTooltip>
       </KeyBorder>
     </StyledRadarKey>

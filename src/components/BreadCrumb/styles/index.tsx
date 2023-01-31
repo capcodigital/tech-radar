@@ -7,6 +7,7 @@ const Wrapper = styled.div`
 
   .breadcrumb-nav: hover {
     color: #e6236d;
+    cursor: pointer;
   }
 `;
 

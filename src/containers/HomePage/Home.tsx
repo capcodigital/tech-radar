@@ -1,12 +1,12 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
-import Grid from "@material-ui/core/Grid";
-import MobileRadarBackground from "../../components/MobileRadarBackground/MobileRadarBackground";
-import Radar from "../../components/Radar/Radar";
-import RadarKey from "../../components/RadarKey/RadarKey";
-import { Wrapper, OutterWrapper } from "../HomePage/styles/";
-import images from "../../images";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import Grid from "@mui/material/Grid";
+import { Wrapper, OutterWrapper } from "containers/HomePage/styles/";
+import images from "images";
+import MobileRadarBackground from "components/MobileRadarBackground/MobileRadarBackground";
+import Radar from "components/Radar/Radar";
+import RadarKey from "components/RadarKey/RadarKey";
 
 const Home = () => {
   const [scalingClicked, setScalingClicked] = useState<boolean>(false);
