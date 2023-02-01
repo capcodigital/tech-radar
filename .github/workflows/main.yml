@@ -25,14 +25,13 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
       - run: sleep 30
-      - name: cloudflare-preview-url
+      - name: Cloudflare Preview URL
         uses: zentered/cloudflare-preview-url@v1.3.0
         id: cloudflare_preview_url
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_EMAIL: ${{ secrets.CLOUDFLARE_ACCOUNT_EMAIL }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          NODE_VERSION: 16.19.0
         with:
           cloudflare_project_id: 'tech-radar'
           wait_until_ready: true
