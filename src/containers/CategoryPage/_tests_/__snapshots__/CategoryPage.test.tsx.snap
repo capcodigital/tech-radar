@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CategoryPage should render CategoryPage component 1`] = `
-.c8 {
+.c7 {
   margin-top: -10px;
   display: inline-block;
   float: right;
 }
 
-.c8 svg {
+.c7 svg {
   overflow: visible;
 }
 
@@ -73,23 +73,6 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
   border-bottom: 1px solid white;
 }
 
-.c6 {
-  font-size: 17px;
-  display: block;
-  color: inherit;
-  margin-left: -10px;
-}
-
-.c6 img {
-  margin-left: 10px !important;
-}
-
-.c6:hover {
-  color: inherit;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
 .c0 {
   width: 100%;
   display: -webkit-box;
@@ -153,9 +136,8 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
   display: none;
 }
 
-.c7 {
+.c6 {
   font-size: 90px;
-  margin-bottom: 20px;
   font-weight: 700;
   text-align: left;
   display: inline-block;
@@ -176,14 +158,15 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
 
 .c3 {
   background: white;
-  margin: 0;
+  margin: 0px 0px 15px;
   width: 20px;
   border-width: 5px;
-  margin-bottom: 15px;
+  border: 0;
+  border-top: 5px solid rgba(0,0,0,0.1);
 }
 
 @media screen and (max-width:1000px) {
-  .c8 {
+  .c7 {
     display: none;
   }
 }
@@ -290,17 +273,17 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
       >
         <path
           class="arc"
-          d="M3.6739403974420595e-14,600A600,600,0,1,1,-1.1021821192326178e-13,-600L0,0Z"
+          d="M0,600A600,600,0,1,1,0,-600L0,0Z"
           fill="rgba(255,255,255,0.05"
         />
         <path
           class="arc"
-          d="M2.4492935982947064e-14,400A400,400,0,1,1,-7.347880794884119e-14,-400L0,0Z"
+          d="M0,400A400,400,0,1,1,0,-400L0,0Z"
           fill="rgba(255,255,255,0.05"
         />
         <path
           class="arc"
-          d="M1.2246467991473532e-14,200A200,200,0,1,1,-3.6739403974420595e-14,-200L0,0Z"
+          d="M0,200A200,200,0,1,1,0,-200L0,0Z"
           fill="rgba(255,255,255,0.05"
         />
       </g>
@@ -347,12 +330,13 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </a>
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+              data-testid="ArrowForwardIosIcon"
               focusable="false"
               viewBox="0 0 24 24"
             >
               <path
-                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
               />
             </svg>
           </div>
@@ -367,12 +351,13 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </a>
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+              data-testid="ArrowForwardIosIcon"
               focusable="false"
               viewBox="0 0 24 24"
             >
               <path
-                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
               />
             </svg>
           </div>
@@ -387,12 +372,13 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </a>
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+              data-testid="ArrowForwardIosIcon"
               focusable="false"
               viewBox="0 0 24 24"
             >
               <path
-                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
               />
             </svg>
           </div>
@@ -407,12 +393,13 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </a>
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+              data-testid="ArrowForwardIosIcon"
               focusable="false"
               viewBox="0 0 24 24"
             >
               <path
-                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
               />
             </svg>
           </div>
@@ -427,12 +414,13 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </a>
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+              data-testid="ArrowForwardIosIcon"
               focusable="false"
               viewBox="0 0 24 24"
             >
               <path
-                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
               />
             </svg>
           </div>
@@ -447,12 +435,13 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </a>
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+              data-testid="ArrowForwardIosIcon"
               focusable="false"
               viewBox="0 0 24 24"
             >
               <path
-                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
               />
             </svg>
           </div>
@@ -477,12 +466,13 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </a>
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+              data-testid="ArrowForwardIosIcon"
               focusable="false"
               viewBox="0 0 24 24"
             >
               <path
-                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
               />
             </svg>
           </div>
@@ -497,12 +487,13 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </a>
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+              data-testid="ArrowForwardIosIcon"
               focusable="false"
               viewBox="0 0 24 24"
             >
               <path
-                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
               />
             </svg>
           </div>
@@ -517,12 +508,13 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </a>
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+              data-testid="ArrowForwardIosIcon"
               focusable="false"
               viewBox="0 0 24 24"
             >
               <path
-                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
               />
             </svg>
           </div>
@@ -537,12 +529,13 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </a>
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+              data-testid="ArrowForwardIosIcon"
               focusable="false"
               viewBox="0 0 24 24"
             >
               <path
-                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
               />
             </svg>
           </div>
@@ -557,12 +550,13 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </a>
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+              data-testid="ArrowForwardIosIcon"
               focusable="false"
               viewBox="0 0 24 24"
             >
               <path
-                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
               />
             </svg>
           </div>
@@ -577,12 +571,13 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
             </a>
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+              data-testid="ArrowForwardIosIcon"
               focusable="false"
               viewBox="0 0 24 24"
             >
               <path
-                d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
               />
             </svg>
           </div>
@@ -608,12 +603,13 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </a>
           <svg
             aria-hidden="true"
-            class="MuiSvgIcon-root"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="ArrowForwardIosIcon"
             focusable="false"
             viewBox="0 0 24 24"
           >
             <path
-              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+              d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
             />
           </svg>
         </div>
@@ -628,12 +624,13 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </a>
           <svg
             aria-hidden="true"
-            class="MuiSvgIcon-root"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="ArrowForwardIosIcon"
             focusable="false"
             viewBox="0 0 24 24"
           >
             <path
-              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+              d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
             />
           </svg>
         </div>
@@ -648,12 +645,13 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </a>
           <svg
             aria-hidden="true"
-            class="MuiSvgIcon-root"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="ArrowForwardIosIcon"
             focusable="false"
             viewBox="0 0 24 24"
           >
             <path
-              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+              d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
             />
           </svg>
         </div>
@@ -682,12 +680,13 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
               </span>
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="ArrowForwardIosIcon"
                 focusable="false"
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                  d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
                 />
               </svg>
             </div>
@@ -709,12 +708,13 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
               </span>
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="ArrowForwardIosIcon"
                 focusable="false"
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                  d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
                 />
               </svg>
             </div>
@@ -736,12 +736,13 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
               </span>
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="ArrowForwardIosIcon"
                 focusable="false"
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                  d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
                 />
               </svg>
             </div>
@@ -763,12 +764,13 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
               </span>
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="ArrowForwardIosIcon"
                 focusable="false"
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                  d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
                 />
               </svg>
             </div>
@@ -792,12 +794,13 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
               </span>
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="ArrowForwardIosIcon"
                 focusable="false"
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                  d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
                 />
               </svg>
             </div>
@@ -819,12 +822,13 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
               </span>
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="ArrowForwardIosIcon"
                 focusable="false"
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                  d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
                 />
               </svg>
             </div>
@@ -846,12 +850,13 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
               </span>
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="ArrowForwardIosIcon"
                 focusable="false"
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                  d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
                 />
               </svg>
             </div>
@@ -860,42 +865,46 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
       </div>
     </div>
     <div
-      class="MuiGrid-root desktop-grid MuiGrid-container"
+      class="MuiGrid-root MuiGrid-container desktop-grid css-11lq3yg-MuiGrid-root"
     >
       <div
-        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
       >
         <a
-          class="c6"
-          href="/home"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1yxot5x-MuiTypography-root-MuiLink-root"
         >
           <svg
             aria-hidden="true"
-            class="MuiSvgIcon-root"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="NavigateBeforeIcon"
             focusable="false"
             viewBox="0 0 24 24"
           >
             <path
-              d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+              d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"
             />
           </svg>
           Back
         </a>
         <div
-          class="c7"
+          class="MuiBox-root css-bdbwla"
         >
-          DevOps
+          <div
+            class="c6"
+          >
+            DevOps
+          </div>
+          <img
+            alt="DevOps"
+            class="category-icon"
+            height="126"
+            src="devops.svg"
+            width="126"
+          />
         </div>
-        <img
-          alt="DevOps"
-          class="category-icon"
-          height="126"
-          src="devops.svg"
-          width="126"
-        />
       </div>
       <div
-        class="MuiGrid-root large-screen MuiGrid-item MuiGrid-grid-xs-4"
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 large-screen css-gj1fbr-MuiGrid-root"
       >
         <hr
           class="c3"
@@ -916,12 +925,13 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </a>
           <svg
             aria-hidden="true"
-            class="MuiSvgIcon-root"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="ArrowForwardIosIcon"
             focusable="false"
             viewBox="0 0 24 24"
           >
             <path
-              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+              d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
             />
           </svg>
         </div>
@@ -936,12 +946,13 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </a>
           <svg
             aria-hidden="true"
-            class="MuiSvgIcon-root"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="ArrowForwardIosIcon"
             focusable="false"
             viewBox="0 0 24 24"
           >
             <path
-              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+              d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
             />
           </svg>
         </div>
@@ -956,12 +967,13 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </a>
           <svg
             aria-hidden="true"
-            class="MuiSvgIcon-root"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="ArrowForwardIosIcon"
             focusable="false"
             viewBox="0 0 24 24"
           >
             <path
-              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+              d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
             />
           </svg>
         </div>
@@ -976,12 +988,13 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </a>
           <svg
             aria-hidden="true"
-            class="MuiSvgIcon-root"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="ArrowForwardIosIcon"
             focusable="false"
             viewBox="0 0 24 24"
           >
             <path
-              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+              d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
             />
           </svg>
         </div>
@@ -996,12 +1009,13 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </a>
           <svg
             aria-hidden="true"
-            class="MuiSvgIcon-root"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="ArrowForwardIosIcon"
             focusable="false"
             viewBox="0 0 24 24"
           >
             <path
-              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+              d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
             />
           </svg>
         </div>
@@ -1016,18 +1030,19 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </a>
           <svg
             aria-hidden="true"
-            class="MuiSvgIcon-root"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="ArrowForwardIosIcon"
             focusable="false"
             viewBox="0 0 24 24"
           >
             <path
-              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+              d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
             />
           </svg>
         </div>
       </div>
       <div
-        class="MuiGrid-root large-screen MuiGrid-item MuiGrid-grid-xs-4"
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 large-screen css-gj1fbr-MuiGrid-root"
       >
         <hr
           class="c3"
@@ -1048,12 +1063,13 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </a>
           <svg
             aria-hidden="true"
-            class="MuiSvgIcon-root"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="ArrowForwardIosIcon"
             focusable="false"
             viewBox="0 0 24 24"
           >
             <path
-              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+              d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
             />
           </svg>
         </div>
@@ -1068,12 +1084,13 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </a>
           <svg
             aria-hidden="true"
-            class="MuiSvgIcon-root"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="ArrowForwardIosIcon"
             focusable="false"
             viewBox="0 0 24 24"
           >
             <path
-              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+              d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
             />
           </svg>
         </div>
@@ -1088,12 +1105,13 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </a>
           <svg
             aria-hidden="true"
-            class="MuiSvgIcon-root"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="ArrowForwardIosIcon"
             focusable="false"
             viewBox="0 0 24 24"
           >
             <path
-              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+              d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
             />
           </svg>
         </div>
@@ -1108,12 +1126,13 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </a>
           <svg
             aria-hidden="true"
-            class="MuiSvgIcon-root"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="ArrowForwardIosIcon"
             focusable="false"
             viewBox="0 0 24 24"
           >
             <path
-              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+              d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
             />
           </svg>
         </div>
@@ -1128,12 +1147,13 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </a>
           <svg
             aria-hidden="true"
-            class="MuiSvgIcon-root"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="ArrowForwardIosIcon"
             focusable="false"
             viewBox="0 0 24 24"
           >
             <path
-              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+              d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
             />
           </svg>
         </div>
@@ -1148,18 +1168,19 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </a>
           <svg
             aria-hidden="true"
-            class="MuiSvgIcon-root"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="ArrowForwardIosIcon"
             focusable="false"
             viewBox="0 0 24 24"
           >
             <path
-              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+              d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
             />
           </svg>
         </div>
       </div>
       <div
-        class="MuiGrid-root large-screen MuiGrid-item MuiGrid-grid-xs-4"
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 large-screen css-gj1fbr-MuiGrid-root"
       >
         <hr
           class="c3"
@@ -1180,12 +1201,13 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </a>
           <svg
             aria-hidden="true"
-            class="MuiSvgIcon-root"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="ArrowForwardIosIcon"
             focusable="false"
             viewBox="0 0 24 24"
           >
             <path
-              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+              d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
             />
           </svg>
         </div>
@@ -1200,12 +1222,13 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </a>
           <svg
             aria-hidden="true"
-            class="MuiSvgIcon-root"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="ArrowForwardIosIcon"
             focusable="false"
             viewBox="0 0 24 24"
           >
             <path
-              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+              d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
             />
           </svg>
         </div>
@@ -1220,12 +1243,13 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           </a>
           <svg
             aria-hidden="true"
-            class="MuiSvgIcon-root"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="ArrowForwardIosIcon"
             focusable="false"
             viewBox="0 0 24 24"
           >
             <path
-              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+              d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
             />
           </svg>
         </div>
@@ -1236,7 +1260,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
         Other Categories
       </div>
       <div
-        class="MuiGrid-root categories-grid MuiGrid-item MuiGrid-grid-xs-12"
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 categories-grid css-1idn90j-MuiGrid-root"
       >
         <span>
           <a
@@ -1256,12 +1280,13 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
               </span>
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="ArrowForwardIosIcon"
                 focusable="false"
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                  d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
                 />
               </svg>
             </div>
@@ -1283,12 +1308,13 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
               </span>
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="ArrowForwardIosIcon"
                 focusable="false"
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                  d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
                 />
               </svg>
             </div>
@@ -1310,12 +1336,13 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
               </span>
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="ArrowForwardIosIcon"
                 focusable="false"
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                  d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
                 />
               </svg>
             </div>
@@ -1337,12 +1364,13 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
               </span>
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="ArrowForwardIosIcon"
                 focusable="false"
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                  d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
                 />
               </svg>
             </div>
@@ -1366,12 +1394,13 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
               </span>
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="ArrowForwardIosIcon"
                 focusable="false"
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                  d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
                 />
               </svg>
             </div>
@@ -1393,12 +1422,13 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
               </span>
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="ArrowForwardIosIcon"
                 focusable="false"
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                  d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
                 />
               </svg>
             </div>
@@ -1420,12 +1450,13 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
               </span>
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="ArrowForwardIosIcon"
                 focusable="false"
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+                  d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
                 />
               </svg>
             </div>
@@ -1435,7 +1466,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
     </div>
   </div>
   <div
-    class="c8"
+    class="c7"
   >
     <svg
       height="800"
@@ -1446,20 +1477,20 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
       >
         <path
           class="arc"
-          d="M2.4492935982947064e-14,400A400,400,0,1,1,-7.347880794884119e-14,-400L0,0Z"
+          d="M0,400A400,400,0,1,1,0,-400L0,0Z"
           fill="#ffffff"
           opacity="0.03"
           stroke="lightgrey"
         />
         <path
           class="arc"
-          d="M1.6328623988631378e-14,266.6666666666667A266.6666666666667,266.6666666666667,0,1,1,-4.898587196589413e-14,-266.6666666666667L0,0Z"
+          d="M0,266.667A266.667,266.667,0,1,1,0,-266.667L0,0Z"
           fill="#ffffff"
           opacity="0.03"
         />
         <path
           class="arc"
-          d="M8.164311994315689e-15,133.33333333333334A133.33333333333334,133.33333333333334,0,1,1,-2.4492935982947064e-14,-133.33333333333334L0,0Z"
+          d="M0,133.333A133.333,133.333,0,1,1,0,-133.333L0,0Z"
           fill="#ffffff"
           opacity="0.05"
         />
@@ -1467,7 +1498,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           <g
             aria-label="GitHub"
             class=""
-            title="GitHub"
+            data-mui-internal-clone-element="true"
           >
             <circle
               cx="-294.4486372867092"
@@ -1488,7 +1519,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           <g
             aria-label="CircleCI"
             class=""
-            title="CircleCI"
+            data-mui-internal-clone-element="true"
           >
             <circle
               cx="-332.57018424949393"
@@ -1509,7 +1540,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           <g
             aria-label="Terraform"
             class=""
-            title="Terraform"
+            data-mui-internal-clone-element="true"
           >
             <circle
               cx="-338.1374444252129"
@@ -1530,7 +1561,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           <g
             aria-label="Vault"
             class=""
-            title="Vault"
+            data-mui-internal-clone-element="true"
           >
             <circle
               cx="-310.6054555984843"
@@ -1551,7 +1582,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           <g
             aria-label="SonarQube"
             class=""
-            title="SonarQube"
+            data-mui-internal-clone-element="true"
           >
             <circle
               cx="-252.66924066231405"
@@ -1572,7 +1603,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           <g
             aria-label="Elastic"
             class=""
-            title="Elastic"
+            data-mui-internal-clone-element="true"
           >
             <circle
               cx="-170.00000000000014"
@@ -1593,7 +1624,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           <g
             aria-label="Bitbucket"
             class=""
-            title="Bitbucket"
+            data-mui-internal-clone-element="true"
           >
             <circle
               cx="-178.978583448784"
@@ -1614,7 +1645,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           <g
             aria-label="Jenkins"
             class=""
-            title="Jenkins"
+            data-mui-internal-clone-element="true"
           >
             <circle
               cx="-202.1505041516532"
@@ -1635,7 +1666,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           <g
             aria-label="TeamCity"
             class=""
-            title="TeamCity"
+            data-mui-internal-clone-element="true"
           >
             <circle
               cx="-205.5345250427765"
@@ -1656,7 +1687,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           <g
             aria-label="Ansible"
             class=""
-            title="Ansible"
+            data-mui-internal-clone-element="true"
           >
             <circle
               cx="-188.79939457947086"
@@ -1677,7 +1708,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           <g
             aria-label="Packer"
             class=""
-            title="Packer"
+            data-mui-internal-clone-element="true"
           >
             <circle
               cx="-153.58326393199482"
@@ -1698,7 +1729,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           <g
             aria-label="Docker"
             class=""
-            title="Docker"
+            data-mui-internal-clone-element="true"
           >
             <circle
               cx="-103.33333333333343"
@@ -1719,7 +1750,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           <g
             aria-label="Twistlock"
             class=""
-            title="Twistlock"
+            data-mui-internal-clone-element="true"
           >
             <circle
               cx="-36.66666666666666"
@@ -1740,7 +1771,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           <g
             aria-label="ConcourseCl"
             class=""
-            title="ConcourseCl"
+            data-mui-internal-clone-element="true"
           >
             <circle
               cx="-73.33333333333334"
@@ -1761,7 +1792,7 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           <g
             aria-label="Consul"
             class=""
-            title="Consul"
+            data-mui-internal-clone-element="true"
           >
             <circle
               cx="-36.66666666666671"

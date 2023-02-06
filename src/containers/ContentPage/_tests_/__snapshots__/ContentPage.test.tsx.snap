@@ -1,55 +1,38 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ContentPage should render ContentPage component 1`] = `
-.c2 {
-  font-size: 17px;
-  display: block;
-  color: inherit;
-  margin-left: -10px;
-}
-
-.c2 img {
-  margin-left: 10px !important;
-}
-
-.c2:hover {
-  color: inherit;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c7 {
+.c6 {
   margin-bottom: 40px;
 }
 
-.c7 .intro {
+.c6 .intro {
   font-size: 18px;
   font-weight: 500;
   padding-bottom: 14px;
 }
 
-.c7 .content {
+.c6 .content {
   font-size: 16px;
   font-weight: 300;
 }
 
-.c7 .content div:first-child {
+.c6 .content div:first-child {
   padding: 3px;
   margin: 2px;
   width: 100%;
 }
 
-.c7 .content .content-title {
+.c6 .content .content-title {
   font-size: 18px;
   font-weight: 700;
 }
 
-.c7 a {
+.c6 a {
   color: inherit;
   border-bottom: 1px solid;
 }
 
-.c7 img {
+.c6 img {
   padding: 20px 0;
 }
 
@@ -102,25 +85,25 @@ exports[`ContentPage should render ContentPage component 1`] = `
   justify-content: space-between;
 }
 
-.c6 {
+.c5 {
   width: 700px;
   margin: 0 auto;
   font-family: poppins,sans-serif;
 }
 
-.c6 .content-intro {
+.c5 .content-intro {
   font-size: 24px;
   margin-bottom: 34px;
 }
 
-.c6 .content-intro a {
+.c5 .content-intro a {
   color: inherit;
   border-bottom: 1px solid;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c5 {
+.c4 {
   font-size: 120px;
   font-weight: 700;
   text-align: left;
@@ -129,19 +112,39 @@ exports[`ContentPage should render ContentPage component 1`] = `
   padding-right: 50px;
 }
 
-.c8 {
+.c7 {
   border: 0;
   height: 1px;
   background-image: linear-gradient( to right,rgba(255,255,255,0),rgba(255,255,255,0.75),rgba(255,255,255,0) );
 }
 
-.c3 > a {
+.c2 > a {
   font-size: 17px;
+}
+
+.c8 {
+  margin-top: 75px;
+  float: left;
+}
+
+.c8 div:first-child {
+  font: 300 19px poppins,sans-serif;
+  opacity: 0.5;
+}
+
+.c8 a:nth-child(2) {
+  font: 59px bebas-neue-pro,sans-serif;
+  color: inherit;
+}
+
+.c8 a:nth-child(2):hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c9 {
   margin-top: 75px;
-  float: left;
+  float: right;
 }
 
 .c9 div:first-child {
@@ -159,27 +162,7 @@ exports[`ContentPage should render ContentPage component 1`] = `
   text-decoration: underline;
 }
 
-.c10 {
-  margin-top: 75px;
-  float: right;
-}
-
-.c10 div:first-child {
-  font: 300 19px poppins,sans-serif;
-  opacity: 0.5;
-}
-
-.c10 a:nth-child(2) {
-  font: 59px bebas-neue-pro,sans-serif;
-  color: inherit;
-}
-
-.c10 a:nth-child(2):hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c4 {
+.c3 {
   font-size: 40px;
   font-weight: 700;
   font-family: Bebas-Neue-Pro,sans-serif;
@@ -190,27 +173,27 @@ exports[`ContentPage should render ContentPage component 1`] = `
   align-self: center;
 }
 
-.c4 img {
+.c3 img {
   margin-left: 10px !important;
 }
 
-.c4:hover {
+.c3:hover {
   color: inherit;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 @media screen and (max-width:1000px) {
-  .c7 {
+  .c6 {
     margin-bottom: 20px;
   }
 
-  .c7 .title {
+  .c6 .title {
     font-size: 20px;
   }
 
-  .c7 .intro,
-  .c7 .content {
+  .c6 .intro,
+  .c6 .content {
     font-size: 18px;
   }
 }
@@ -242,25 +225,35 @@ exports[`ContentPage should render ContentPage component 1`] = `
 }
 
 @media screen and (max-width:1000px) {
-  .c6 {
+  .c5 {
     width: 100%;
   }
 
-  .c6 .content-intro {
+  .c5 .content-intro {
     font-size: 18px;
   }
 }
 
 @media screen and (max-width:1000px) {
-  .c5 {
+  .c4 {
     font-size: 52px;
     padding-right: 30px;
   }
 }
 
 @media screen and (min-width:1000px) {
-  .c3 {
+  .c2 {
     display: none;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .c8 div:first-child {
+    font-size: 19px;
+  }
+
+  .c8 a:nth-child(2) {
+    font-size: 40px;
   }
 }
 
@@ -270,16 +263,6 @@ exports[`ContentPage should render ContentPage component 1`] = `
   }
 
   .c9 a:nth-child(2) {
-    font-size: 40px;
-  }
-}
-
-@media screen and (max-width:1000px) {
-  .c10 div:first-child {
-    font-size: 19px;
-  }
-
-  .c10 a:nth-child(2) {
     font-size: 40px;
   }
 }
@@ -298,23 +281,23 @@ exports[`ContentPage should render ContentPage component 1`] = `
     class="c1"
   >
     <div
-      class="MuiGrid-root MuiGrid-container MuiGrid-justify-content-xs-space-between"
+      class="MuiGrid-root MuiGrid-container css-1xzqqmo-MuiGrid-root"
     >
       <div
-        class="MuiGrid-root MuiGrid-item"
+        class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
       >
         <a
-          class="c2"
-          href="/category/devops"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1yxot5x-MuiTypography-root-MuiLink-root"
         >
           <svg
             aria-hidden="true"
-            class="MuiSvgIcon-root"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="NavigateBeforeIcon"
             focusable="false"
             viewBox="0 0 24 24"
           >
             <path
-              d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+              d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"
             />
           </svg>
           Back to 
@@ -328,13 +311,13 @@ exports[`ContentPage should render ContentPage component 1`] = `
         </a>
       </div>
       <div
-        class="MuiGrid-root MuiGrid-item"
+        class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
       >
         <div
-          class="c3"
+          class="c2"
         >
           <a
-            class="c4"
+            class="c3"
             href="/projects/devops/github"
           >
             View Projects
@@ -345,9 +328,11 @@ exports[`ContentPage should render ContentPage component 1`] = `
     <div
       class="content-head"
     >
-      <div>
+      <div
+        class="MuiBox-root css-70qvj9"
+      >
         <div
-          class="c5 title-GitHub"
+          class="c4 title-GitHub"
         >
           GitHub
         </div>
@@ -378,7 +363,7 @@ exports[`ContentPage should render ContentPage component 1`] = `
       </div>
     </div>
     <div
-      class="c6"
+      class="c5"
     >
       <div
         class="content-intro"
@@ -386,16 +371,13 @@ exports[`ContentPage should render ContentPage component 1`] = `
         GitHub is a cloud-based hosting service that lets you manage Git repositories, Github is ubiquitously used in open source sofrware teams and very prominent within Enterprise, Github provided web based features, team manament and other capbilties on top of Git.
       </div>
       <div
-        class="c7"
-      >
-        
-        
-      </div>
+        class="c6"
+      />
       <hr
-        class="c8"
+        class="c7"
       />
       <div
-        class="c9"
+        class="c8"
         data-test-id="Previous"
       >
         <div>
@@ -408,7 +390,7 @@ exports[`ContentPage should render ContentPage component 1`] = `
         </a>
       </div>
       <div
-        class="c10"
+        class="c9"
         data-test-id="Next"
       >
         <div>

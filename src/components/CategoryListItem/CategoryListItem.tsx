@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import StyledListItem from "./styles/";
 type ListItemProps = {
   techName: string;

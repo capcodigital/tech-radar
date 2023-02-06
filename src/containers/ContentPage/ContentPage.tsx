@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import Grid from "@material-ui/core/Grid";
+import Grid from "@mui/material/Grid";
 import {
   RadarContextType,
   RadarContext,
@@ -32,6 +32,7 @@ import {
 import ClientProjectLink from "components/ProjectPageLink/ProjectPageLink";
 import Axios from "axios";
 import ClientProjects from "data/projects/ClientProjects";
+import { Box } from "@mui/material";
 
 /* CategoryPage component that is used to display the content of a technology. */
 const CategoryPage = () => {
@@ -163,7 +164,7 @@ const CategoryPage = () => {
             </Grid>
           </Grid>
           <div className="content-head">
-            <div>
+            <Box sx={{ display: "flex", alignItems: "center" }}>
               <Title className={`title-${technology}`}>{technology}</Title>
               <a href={content.docsLink} target="_blank" rel="noreferrer">
                 <svg className="icon" viewBox={"0 0 80 80"}>
@@ -177,7 +178,7 @@ const CategoryPage = () => {
                   />
                 </svg>
               </a>
-            </div>
+            </Box>
             {(ossProjectCount !== 0 || clientProjectCount !== 0) && (
               <StyledWrapper>
                 <ClientProjectLink

@@ -6,6 +6,7 @@ import {
   KeyBorder,
 } from "./styles/";
 import { radarKeysText } from "data/data";
+import { Box } from "@mui/material";
 
 interface KeyCircleProps {
   color1: string;
@@ -47,7 +48,8 @@ const RadarKey = ({
           placement="right"
           arrow
         >
-          <div
+          <Box
+            sx={{ display: "flex" }}
             onMouseEnter={() => setScalingClicked(true)}
             onMouseLeave={() => setScalingClicked(false)}
           >
@@ -57,7 +59,7 @@ const RadarKey = ({
               color3={"#e6236d"}
             />
             <span className="key-text">Scaling</span>
-          </div>
+          </Box>
         </KeyTooltip>
         <KeyTooltip
           title={
@@ -70,7 +72,8 @@ const RadarKey = ({
           placement="right"
           arrow
         >
-          <div
+          <Box
+            sx={{ display: "flex" }}
             onMouseEnter={() => setSkilledClicked(true)}
             onMouseLeave={() => setSkilledClicked(false)}
           >
@@ -80,7 +83,7 @@ const RadarKey = ({
               color3={"#222222"}
             />
             <span className="key-text">Skilled</span>
-          </div>
+          </Box>
         </KeyTooltip>
         <KeyTooltip
           title={
@@ -93,7 +96,8 @@ const RadarKey = ({
           placement="right"
           arrow
         >
-          <div
+          <Box
+            sx={{ display: "flex" }}
             onMouseEnter={() => setPreferredClicked(true)}
             onMouseLeave={() => setPreferredClicked(false)}
           >
@@ -103,7 +107,7 @@ const RadarKey = ({
               color3={"#391A46"}
             />
             <span className="key-text">Preferred</span>
-          </div>
+          </Box>
         </KeyTooltip>
       </KeyBorder>
     </StyledRadarKey>

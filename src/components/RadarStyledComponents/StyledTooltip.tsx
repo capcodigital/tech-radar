@@ -1,8 +1,15 @@
-import Tooltip from "@material-ui/core/Tooltip";
-import { withStyles } from "@material-ui/core/styles";
+import Tooltip, { tooltipClasses, TooltipProps } from "@mui/material/Tooltip";
+import { styled } from "@mui/system";
 
-export const KeyTooltip = withStyles(() => ({
-  tooltip: {
+export const KeyTooltip = styled(({ className, ...props }: TooltipProps) => (
+  <Tooltip {...props} classes={{ popper: className }} />
+))({
+  [`& .${tooltipClasses.arrow}`]: {
+    "&::before": {
+      backgroundColor: "white",
+    },
+  },
+  [`& .${tooltipClasses.tooltip}`]: {
     backgroundColor: "white",
     color: "black",
     fontSize: 16,
@@ -11,15 +18,17 @@ export const KeyTooltip = withStyles(() => ({
     padding: 15,
     boxShadow: "3px 3px 3px 3px rgba(0, 0, 0, 0.2)",
   },
-  arrow: {
+});
+
+export const RadarTooltip = styled(({ className, ...props }: TooltipProps) => (
+  <Tooltip {...props} classes={{ popper: className }} />
+))({
+  [`& .${tooltipClasses.arrow}`]: {
     "&::before": {
       backgroundColor: "white",
     },
   },
-}))(Tooltip);
-
-export const RadarTooltip = withStyles(() => ({
-  tooltip: {
+  [`& .${tooltipClasses.tooltip}`]: {
     backgroundColor: "white",
     color: "black",
     fontSize: 14,
@@ -27,15 +36,19 @@ export const RadarTooltip = withStyles(() => ({
     fontFamily: "bebas-neue-pro, sans-serif",
     borderRadius: 0,
   },
-  arrow: {
+});
+
+export const CategoryRadarTooltip = styled(
+  ({ className, ...props }: TooltipProps) => (
+    <Tooltip {...props} classes={{ popper: className }} />
+  )
+)({
+  [`& .${tooltipClasses.arrow}`]: {
     "&::before": {
       backgroundColor: "white",
     },
   },
-}))(Tooltip);
-
-export const CategoryRadarTooltip = withStyles(() => ({
-  tooltip: {
+  [`& .${tooltipClasses.tooltip}`]: {
     backgroundColor: "white",
     color: "black",
     fontSize: 16,
@@ -43,9 +56,4 @@ export const CategoryRadarTooltip = withStyles(() => ({
     fontFamily: "bebas-neue-pro, sans-serif",
     borderRadius: 0,
   },
-  arrow: {
-    "&::before": {
-      backgroundColor: "white",
-    },
-  },
-}))(Tooltip);
+});

@@ -604,49 +604,49 @@ exports[`Radar should render Radar component 1`] = `
       </g>
       <path
         class="arc DevOps-segment"
-        d="M-133.9392013277814,-323.35783637895037A350,350,0,0,1,133.93920132778143,-323.35783637895037L0,0Z"
+        d="M-133.939,-323.358A350,350,0,0,1,133.939,-323.358L0,0Z"
         data-test-id="DevOps-arc"
         fill="rgb(235, 35, 109, 0.3)"
       />
       <path
         class="arc Data Engineering-segment"
-        d="M133.93920132778143,-323.35783637895037A350,350,0,0,1,323.35783637895037,-133.93920132778143L0,0Z"
+        d="M133.939,-323.358A350,350,0,0,1,323.358,-133.939L0,0Z"
         data-test-id="Data Engineering-arc"
         fill="transparent"
       />
       <path
         class="arc Quality Engineering-segment"
-        d="M323.35783637895037,-133.93920132778143A350,350,0,0,1,323.35783637895037,133.93920132778143L0,0Z"
+        d="M323.358,-133.939A350,350,0,0,1,323.358,133.939L0,0Z"
         data-test-id="Quality Engineering-arc"
         fill="transparent"
       />
       <path
         class="arc Cloud & Platforms-segment"
-        d="M323.35783637895037,133.93920132778143A350,350,0,0,1,133.93920132778143,323.35783637895037L0,0Z"
+        d="M323.358,133.939A350,350,0,0,1,133.939,323.358L0,0Z"
         data-test-id="Cloud & Platforms-arc"
         fill="transparent"
       />
       <path
         class="arc Integration-segment"
-        d="M133.93920132778143,323.35783637895037A350,350,0,0,1,-133.9392013277814,323.35783637895037L0,0Z"
+        d="M133.939,323.358A350,350,0,0,1,-133.939,323.358L0,0Z"
         data-test-id="Integration-arc"
         fill="transparent"
       />
       <path
         class="arc Backend-segment"
-        d="M-133.9392013277814,323.35783637895037A350,350,0,0,1,-323.35783637895025,133.9392013277816L0,0Z"
+        d="M-133.939,323.358A350,350,0,0,1,-323.358,133.939L0,0Z"
         data-test-id="Backend-arc"
         fill="transparent"
       />
       <path
         class="arc Frontend-segment"
-        d="M-323.35783637895025,133.9392013277816A350,350,0,0,1,-323.3578363789503,-133.93920132778152L0,0Z"
+        d="M-323.358,133.939A350,350,0,0,1,-323.358,-133.939L0,0Z"
         data-test-id="Frontend-arc"
         fill="transparent"
       />
       <path
         class="arc Mobile-segment"
-        d="M-323.3578363789503,-133.93920132778152A350,350,0,0,1,-133.93920132778163,-323.35783637895025L0,0Z"
+        d="M-323.358,-133.939A350,350,0,0,1,-133.939,-323.358L0,0Z"
         data-test-id="Mobile-arc"
         fill="transparent"
       />
@@ -657,7 +657,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="GitHub"
           class="techIcon-GitHub undefined"
-          title="GitHub"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="-82.82209443280689"
@@ -681,7 +681,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="CircleCI"
           class="techIcon-CircleCI undefined"
-          title="CircleCI"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="-3.43000140663113e-13"
@@ -705,7 +705,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Terraform"
           class="techIcon-Terraform undefined"
-          title="Terraform"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="82.8220944328065"
@@ -729,7 +729,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Vault"
           class="techIcon-Vault undefined"
-          title="Vault"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="-67.29295172665559"
@@ -753,7 +753,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="SonarQube"
           class="techIcon-SonarQube undefined"
-          title="SonarQube"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="-2.786876142887793e-13"
@@ -777,7 +777,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Elastic"
           class="techIcon-Elastic undefined"
-          title="Elastic"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="67.29295172665528"
@@ -801,7 +801,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Bitbucket"
           class="techIcon-Bitbucket undefined"
-          title="Bitbucket"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="-52.626539170846044"
@@ -825,7 +825,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Jenkins"
           class="techIcon-Jenkins undefined"
-          title="Jenkins"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="-2.1794800604635308e-13"
@@ -849,7 +849,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="TeamCity"
           class="techIcon-TeamCity undefined"
-          title="TeamCity"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="52.626539170845795"
@@ -873,7 +873,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Ansible"
           class="techIcon-Ansible undefined"
-          title="Ansible"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="-37.097396464694754"
@@ -897,7 +897,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Packer"
           class="techIcon-Packer undefined"
-          title="Packer"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="-1.5363547967201937e-13"
@@ -921,7 +921,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Docker"
           class="techIcon-Docker undefined"
-          title="Docker"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="37.097396464694576"
@@ -945,7 +945,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Twistlock"
           class="techIcon-Twistlock undefined"
-          title="Twistlock"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="-22.4309839088852"
@@ -969,7 +969,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="ConcourseCl"
           class="techIcon-ConcourseCl undefined"
-          title="ConcourseCl"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="-9.28958714295931e-14"
@@ -993,7 +993,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Consul"
           class="techIcon-Consul undefined"
-          title="Consul"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="22.430983908885093"
@@ -1017,7 +1017,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Apache Spark"
           class="techIcon-Apache Spark undefined"
-          title="Apache Spark"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="160.00000000000003"
@@ -1041,7 +1041,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Apache Hive"
           class="techIcon-Apache Hive undefined"
-          title="Apache Hive"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="226.27416997969516"
@@ -1051,7 +1051,7 @@ exports[`Radar should render Radar component 1`] = `
           />
           <image
             height="16.970562748477143"
-            href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/hive_highres.png"
+            href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/databases/hive_square.png"
             width="16.970562748477143"
             x="217.78888860545658"
             y="-234.75945135393385"
@@ -1065,7 +1065,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Postgres"
           class="techIcon-Postgres undefined"
-          title="Postgres"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="277.12812921102045"
@@ -1089,7 +1089,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Neo4J"
           class="techIcon-Neo4J undefined"
-          title="Neo4J"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="144.44826058509668"
@@ -1113,7 +1113,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="MongoDB"
           class="techIcon-MongoDB undefined"
-          title="MongoDB"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="216.1820991986619"
@@ -1137,7 +1137,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="MySQL"
           class="techIcon-MySQL undefined"
-          title="MySQL"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="101.6666666666667"
@@ -1161,7 +1161,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Oracle"
           class="techIcon-Oracle undefined"
-          title="Oracle"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="143.77837884126464"
@@ -1185,7 +1185,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="SQL Server"
           class="techIcon-SQL Server no-content"
-          title="SQL Server"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="176.0918321028359"
@@ -1209,7 +1209,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="BigQuery"
           class="techIcon-BigQuery undefined"
-          title="BigQuery"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="43.33333333333334"
@@ -1233,7 +1233,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Snowflake"
           class="techIcon-Snowflake undefined"
-          title="Snowflake"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="61.28258770283411"
@@ -1257,7 +1257,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Liquibase"
           class="techIcon-Liquibase undefined"
-          title="Liquibase"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="75.05553499465137"
@@ -1281,7 +1281,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Selenium"
           class="techIcon-Selenium undefined"
-          title="Selenium"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="309.0962644125018"
@@ -1305,7 +1305,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Cucumber"
           class="techIcon-Cucumber undefined"
-          title="Cucumber"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="320"
@@ -1329,7 +1329,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Appium"
           class="techIcon-Appium undefined"
-          title="Appium"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="309.0962644125019"
@@ -1353,7 +1353,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="REST Assured"
           class="techIcon-REST Assured undefined"
-          title="REST Assured"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="251.1407148351577"
@@ -1377,7 +1377,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="BrowserStack"
           class="techIcon-BrowserStack undefined"
-          title="BrowserStack"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="260"
@@ -1401,7 +1401,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Sauce Labs"
           class="techIcon-Sauce Labs undefined"
-          title="Sauce Labs"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="251.14071483515778"
@@ -1425,7 +1425,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Wiremock"
           class="techIcon-Wiremock undefined"
-          title="Wiremock"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="196.40491801211053"
@@ -1449,7 +1449,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Applitools"
           class="techIcon-Applitools undefined"
-          title="Applitools"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="203.33333333333334"
@@ -1473,7 +1473,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="JMeter"
           class="techIcon-JMeter undefined"
-          title="JMeter"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="196.40491801211058"
@@ -1497,7 +1497,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Axe"
           class="techIcon-Axe undefined"
-          title="Axe"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="138.44936843476643"
@@ -1521,7 +1521,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Cypress"
           class="techIcon-Cypress undefined"
-          title="Cypress"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="143.33333333333334"
@@ -1545,7 +1545,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Postman"
           class="techIcon-Postman undefined"
-          title="Postman"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="138.44936843476648"
@@ -1569,7 +1569,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Gatling"
           class="techIcon-Gatling undefined"
-          title="Gatling"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="85.00139096827996"
@@ -1593,7 +1593,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="PACT"
           class="techIcon-PACT undefined"
-          title="PACT"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="85.00139096827998"
@@ -1617,7 +1617,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="GCP"
           class="techIcon-GCP undefined"
-          title="GCP"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="277.12812921102034"
@@ -1641,7 +1641,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Kubernetes"
           class="techIcon-Kubernetes undefined"
-          title="Kubernetes"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="226.27416997969527"
@@ -1665,7 +1665,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Serverless"
           class="techIcon-Serverless undefined"
-          title="Serverless"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="159.99999999999991"
@@ -1689,7 +1689,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="OpenShift"
           class="techIcon-OpenShift undefined"
-          title="OpenShift"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="225.16660498395404"
@@ -1713,7 +1713,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Apache Hadoop"
           class="techIcon-Apache Hadoop undefined"
-          title="Apache Hadoop"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="183.8477631085024"
@@ -1737,7 +1737,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Grafana"
           class="techIcon-Grafana undefined"
-          title="Grafana"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="129.99999999999991"
@@ -1761,7 +1761,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="AWS"
           class="techIcon-AWS undefined"
-          title="AWS"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="176.09183210283587"
@@ -1785,7 +1785,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Azure"
           class="techIcon-Azure undefined"
-          title="Azure"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="143.7783788412647"
@@ -1809,7 +1809,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="PCF"
           class="techIcon-PCF undefined"
-          title="PCF"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="101.66666666666661"
@@ -1833,7 +1833,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Splunk"
           class="techIcon-Splunk undefined"
-          title="Splunk"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="119.17731109669813"
@@ -1857,7 +1857,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Anthos"
           class="techIcon-Anthos undefined"
-          title="Anthos"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="79.63173339947622"
@@ -1881,7 +1881,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Digital Ocean"
           class="techIcon-Digital Ocean undefined"
-          title="Digital Ocean"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="72.06069973288724"
@@ -1905,7 +1905,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="PKS"
           class="techIcon-PKS undefined"
-          title="PKS"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="48.149420195032135"
@@ -1929,7 +1929,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Rest"
           class="techIcon-Rest undefined"
-          title="Rest"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="82.82209443280692"
@@ -1953,7 +1953,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Camel"
           class="techIcon-Camel undefined"
-          title="Camel"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="3.821888382358283e-13"
@@ -1977,7 +1977,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="gRPC"
           class="techIcon-gRPC undefined"
-          title="gRPC"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="-82.82209443280647"
@@ -2001,7 +2001,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Kafka"
           class="techIcon-Kafka undefined"
-          title="Kafka"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="7.960204194457796e-14"
@@ -2025,7 +2025,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="ActiveMQ"
           class="techIcon-ActiveMQ undefined"
-          title="ActiveMQ"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="52.626539170846065"
@@ -2049,7 +2049,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="IBM MQ"
           class="techIcon-IBM MQ undefined"
-          title="IBM MQ"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="2.4284915762901594e-13"
@@ -2073,7 +2073,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="OpenAPI"
           class="techIcon-OpenAPI undefined"
-          title="OpenAPI"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="-52.626539170845774"
@@ -2097,7 +2097,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="GraphQL"
           class="techIcon-GraphQL undefined"
-          title="GraphQL"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="2.653401398152599e-14"
@@ -2121,7 +2121,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Java"
           class="techIcon-Java undefined"
-          title="Java"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="-160.00000000000026"
@@ -2145,7 +2145,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Node"
           class="techIcon-Node undefined"
-          title="Node"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="-226.27416997969533"
@@ -2169,7 +2169,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Go"
           class="techIcon-Go undefined"
-          title="Go"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="-277.12812921102045"
@@ -2193,7 +2193,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Scala"
           class="techIcon-Scala undefined"
-          title="Scala"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="-144.44826058509645"
@@ -2217,7 +2217,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Gradle"
           class="techIcon-Gradle undefined"
-          title="Gradle"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="-216.18209919866175"
@@ -2241,7 +2241,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Python"
           class="techIcon-Python undefined"
-          title="Python"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="-112.96594738065235"
@@ -2265,7 +2265,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Groovy"
           class="techIcon-Groovy undefined"
-          title="Groovy"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="-169.06548783485084"
@@ -2289,7 +2289,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Kotlin"
           class="techIcon-Kotlin undefined"
-          title="Kotlin"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="-61.28258770283416"
@@ -2313,7 +2313,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="React"
           class="techIcon-React undefined"
-          title="React"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="-309.09626441250185"
@@ -2337,7 +2337,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Angular"
           class="techIcon-Angular undefined"
-          title="Angular"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="-320"
@@ -2361,7 +2361,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="TypeScript"
           class="techIcon-TypeScript undefined"
-          title="TypeScript"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="-309.0962644125019"
@@ -2385,7 +2385,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="HTML"
           class="techIcon-HTML undefined"
-          title="HTML"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="-196.40491801211056"
@@ -2409,7 +2409,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="CSS"
           class="techIcon-CSS undefined"
-          title="CSS"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="-203.33333333333334"
@@ -2433,7 +2433,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="JavaScript"
           class="techIcon-JavaScript undefined"
-          title="JavaScript"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="-196.40491801211058"
@@ -2457,7 +2457,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Webpack"
           class="techIcon-Webpack undefined"
-          title="Webpack"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="-143.33333333333334"
@@ -2481,7 +2481,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Flutter"
           class="techIcon-Flutter undefined"
-          title="Flutter"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="-85.00139096827995"
@@ -2505,7 +2505,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Vue"
           class="techIcon-Vue undefined"
-          title="Vue"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="-85.00139096827999"
@@ -2529,7 +2529,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="React Native"
           class="techIcon-React Native undefined"
-          title="React Native"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="-266.0702759368146"
@@ -2553,7 +2553,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Gradle Mobile"
           class="techIcon-Gradle Mobile undefined"
-          title="Gradle Mobile"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="-177.78247456627275"
@@ -2577,7 +2577,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Swift"
           class="techIcon-Swift undefined"
-          title="Swift"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="-176.09183210283578"
@@ -2601,7 +2601,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Java Mobile"
           class="techIcon-Java Mobile undefined"
-          title="Java Mobile"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="-143.77837884126458"
@@ -2625,7 +2625,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Ionic"
           class="techIcon-Ionic undefined"
-          title="Ionic"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="-101.66666666666664"
@@ -2649,7 +2649,7 @@ exports[`Radar should render Radar component 1`] = `
         <g
           aria-label="Flutter"
           class="techIcon-Flutter undefined"
-          title="Flutter"
+          data-mui-internal-clone-element="true"
         >
           <circle
             cx="-61.282587702834086"

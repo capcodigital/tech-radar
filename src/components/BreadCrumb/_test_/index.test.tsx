@@ -1,13 +1,13 @@
 import { render } from "@testing-library/react";
 import BreadCrumb from "../";
-import { BrowserRouter as Router } from "react-router-dom";
+import { MemoryRouter } from "react-router-dom";
 
 describe("BreadCrumb", () => {
   it("should render StyledButton component", () => {
     const { container } = render(
-      <Router>
+      <MemoryRouter>
         <BreadCrumb />
-      </Router>
+      </MemoryRouter>
     );
     expect(container.firstChild).toMatchSnapshot();
   });

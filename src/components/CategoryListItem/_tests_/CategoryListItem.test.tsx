@@ -2,14 +2,14 @@ import * as React from "react";
 import { render, screen } from "@testing-library/react";
 import { RadarContextProvider } from "../../RadarContextProvider/RadarContextProvider";
 import CategoryListItem from "../CategoryListItem";
-import { BrowserRouter as Router } from "react-router-dom";
+import { MemoryRouter } from "react-router-dom";
 
 window.scroll = jest.fn();
 const mockCallBack = jest.fn();
 describe("CategoryListItem", () => {
   it("should render CategoryListItem component", () => {
     const { container } = render(
-      <Router>
+      <MemoryRouter>
         <RadarContextProvider>
           <CategoryListItem
             techName="GitHub"
@@ -19,14 +19,14 @@ describe("CategoryListItem", () => {
             hovered={false}
           />
         </RadarContextProvider>
-      </Router>
+      </MemoryRouter>
     );
     expect(container.firstChild).toMatchSnapshot();
   });
 
   it("should render GitHub CategoryListItem component and check the correct text is displayed", () => {
     render(
-      <Router>
+      <MemoryRouter>
         <RadarContextProvider>
           <CategoryListItem
             techName="GitHub"
@@ -36,7 +36,7 @@ describe("CategoryListItem", () => {
             hovered={false}
           />
         </RadarContextProvider>
-      </Router>
+      </MemoryRouter>
     );
 
     expect(screen.getByTestId("category-item-GitHub").focus).toBeTruthy();

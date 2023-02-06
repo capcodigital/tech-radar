@@ -2,7 +2,7 @@ import * as React from "react";
 import { render, screen } from "@testing-library/react";
 import { RadarContextProvider } from "../../RadarContextProvider/RadarContextProvider";
 import ProjectItem from "../ProjectItem";
-import { BrowserRouter as Router } from "react-router-dom";
+import { MemoryRouter } from "react-router-dom";
 
 window.scroll = jest.fn();
 const mockValue = [
@@ -18,22 +18,22 @@ const mockValue = [
 describe("ProjectItem", () => {
   it("should render ProjectItem component", () => {
     const { container } = render(
-      <Router>
+      <MemoryRouter>
         <RadarContextProvider>
           <ProjectItem data={mockValue} />
         </RadarContextProvider>
-      </Router>
+      </MemoryRouter>
     );
     expect(container.firstChild).toMatchSnapshot();
   });
 
   it("should render GitHub ProjectItem component and check the correct text is displayed", () => {
     render(
-      <Router>
+      <MemoryRouter>
         <RadarContextProvider>
           <ProjectItem data={mockValue} />
         </RadarContextProvider>
-      </Router>
+      </MemoryRouter>
     );
 
     expect(screen.getByTestId("project-0").focus).toBeTruthy();

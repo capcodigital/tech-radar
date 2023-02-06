@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components/macro";
-import Drawer from "@material-ui/core/Drawer";
-import AppBar from "@material-ui/core/AppBar";
-import Grid from "@material-ui/core/Grid";
+import Drawer from "@mui/material/Drawer";
+import AppBar from "@mui/material/AppBar";
+import Grid from "@mui/material/Grid";
 
 export const StyledAppBar = styled(AppBar)`
   && {
@@ -85,7 +85,7 @@ export const StyledDrawer = styled(Drawer)`
 `;
 
 export const StyledLink = styled(Link)`
-  display: inline-block;
+  display: inline-flex;
   color: white;
   font-size: 20px;
   margin-right: 60px;

@@ -2,9 +2,7 @@ import logo from "images/logo.png";
 import styled from "styled-components/macro";
 
 const StyledFooter = styled.div`
-  margin-top: auto;
   height: 70px;
-  width: 100%;
   background: #00000026;
   text-align: center;
   font-size: 18px;
@@ -25,7 +23,7 @@ const StyledFooter = styled.div`
 
   @media screen and (max-width: 1000px) {
     height: 250px;
-    padding: 40px 100px 0 100px;
+    padding: 0 100px 0 100px;
     a,
     div {
       float: none;
