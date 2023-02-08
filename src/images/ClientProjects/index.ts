@@ -10,6 +10,9 @@ import CL9 from "./CL3.png";
 import CL10 from "./CL1.png";
 import CL11 from "./CL1.png";
 import CL12 from "./CL3.png";
+import CL13 from "./CL4.png";
+import CL14 from "./CL1.png";
+import CL15 from "./CL2.png";
 
 const images = {
   CL1: CL1,
@@ -24,6 +27,9 @@ const images = {
   CL10: CL10,
   CL11: CL11,
   CL12: CL12,
+  CL13: CL13,
+  CL14: CL14,
+  CL15: CL15,
 };
 
 export default images;
