@@ -89,14 +89,6 @@ const ClientProjects = [
     technologies: ["Apache Hadoop", "Apache Spark", "Apache Hive"],
   },
   {
-    project: "Mobile Transaction App",
-    clientName: "French Neobank",
-    clientImage: "CL2",
-    description:
-      "Capco worked with a challenger bank on developing a robust and scalable mobile banking app, utilizing our expertise in Gradle. We took advantage of Gradle's powerful features such as multi-module builds, custom plugins, and advanced dependency management to streamline their development process and deliver a high-quality app quickly. We helped the client to make use of dynamic feature modules and instant apps, which allowed us to deliver a smaller, more focused app to users, which is great for those who have limited storage on their devices. With Gradle's ability to automate testing and deployment, we helped them to thoroughly test the app and deploy it smoothly.",
-    technologies: ["Gradle Mobile", "Firebase"],
-  },
-  {
     project: "Fraud Analytics",
     clientName: "Global Tier 1 Bank",
     clientImage: "CL11",
@@ -120,6 +112,44 @@ const ClientProjects = [
       "Kotlin",
       "Selenium",
       "Sauce Labs",
+    ],
+  },
+  {
+    project: "Internet Banking Wealthview Platform ",
+    clientName: "Global Tier 1 Bank",
+    clientImage: "CL13",
+    description:
+      "Capco partnered with a Tier 1 global bank on the delivery of an award-winning internet banking platform. The platform dramatically improved PB clients’ user experience providing; a dashboard view of their accounts/holdings, a digital home for their documents and additional insights on performance and asset allocations. Capco provided an updated UI/UX and reducing exposure to third party services by bringing FE infrastructure in-house. Faster development and release of product  improvements was possible due to provisioning of new React VMs / pipeline to host the front-end.",
+    technologies: ["React Native", "Java", "Jenkins"],
+  },
+  {
+    project: "Mobile Transaction App",
+    clientName: "French Neobank",
+    clientImage: "CL14",
+    description:
+      "Capco worked with a challenger bank on developing a robust and scalable mobile banking app, utilizing our expertise in Gradle. We took advantage of Gradle's powerful features such as multi-module builds, custom plugins, and advanced dependency management to streamline their development process and deliver a high-quality app quickly. We helped the client to make use of dynamic feature modules and instant apps, which allowed us to deliver a smaller, more focused app to users, which is great for those who have limited storage on their devices. With Gradle's ability to automate testing and deployment, we helped them to thoroughly test the app and deploy it smoothly.",
+    technologies: ["Gradle Mobile", "Firebase"],
+  },
+  {
+    project: "DevOps Acceleration",
+    clientName: "Global Tier 1 Bank",
+    clientImage: "CL15",
+    description:
+      "Capco partnered with a Tier 1 bank to deliver a DevOps acceleration programme focusing on cloud migration and use of DevOps best practices across people, processes and technology to have fast flow of changes for their digital products in a secure and reliable manner with minimum risk to achieve sustainable, stable and predictable delivery. Capco worked on delivering DevOps as a service platform focusing on: <ul><li> Set up of autonomous teams to own delivery E2E and accelerate product delivery </li> <li> CI/CD pipeline built for continuous delivery </li> <li>Containerisation of products to test earlier in the delivery lifecycle leading to reduced cycle time & lower risk of change </li> <li> CaaS ecosystem cloud PoC to drive cloud migration initiative </li> <li>DevOps as a service platform offering<li>",
+    technologies: [
+      "Jenkins",
+      "Cucumber",
+      "SonarQube",
+      "JMeter",
+      "Consul",
+      "Ansible",
+      "Vault",
+      "Terraform",
+      "AWS",
+      "Kubernetes",
+      "Splunk",
+      "BrowserStack",
+      "RestAssured",
     ],
   },
 ];
