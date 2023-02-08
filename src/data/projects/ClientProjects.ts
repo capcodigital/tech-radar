@@ -148,6 +148,8 @@ const ClientProjects = [
       "AWS",
       "Kubernetes",
       "Splunk",
+      "BrowserStack",
+      "RestAssured",
     ],
   },
 ];
