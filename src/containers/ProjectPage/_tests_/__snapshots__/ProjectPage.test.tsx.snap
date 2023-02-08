@@ -307,7 +307,7 @@ Object {
                         class="project-image-wrapper"
                       >
                         <img
-                          alt="computer screen"
+                          alt="project image"
                           class="project-image"
                           src="CL3.png"
                         />
@@ -743,7 +743,7 @@ Object {
                       class="project-image-wrapper"
                     >
                       <img
-                        alt="computer screen"
+                        alt="project image"
                         class="project-image"
                         src="CL3.png"
                       />
