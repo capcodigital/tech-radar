@@ -26,7 +26,7 @@ jobs:
       - uses: actions/checkout@v3
       - run: sleep 30
       - name: cloudflare-preview-url
-        uses: zentered/cloudflare-preview-url@v1.3.0
+        uses: zentered/cloudflare-preview-url@v1.4.0
         id: cloudflare_preview_url
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -35,15 +35,19 @@ jobs:
         with:
           cloudflare_project_id: 'tech-radar'
           wait_until_ready: true
-      - name: get-url
+      - name: Get Cloudflare Preview URL
         run: echo "${{ steps.cloudflare_preview_url.outputs.preview_url }}"
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Use Node.js ${{ matrix.node-version}}
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
           check-latest: true
       - name: Install dependencies
         run: npm install
+      - name: Type check and code style (ESLint)
+        run: npm run type-check && npm run lint
+      - name: Run unit tests
+        run: npm test
       - name: Run Cucumber Tests 
         run: TEST_URL=${{ steps.cloudflare_preview_url.outputs.preview_url }} npm run cucumberTest  

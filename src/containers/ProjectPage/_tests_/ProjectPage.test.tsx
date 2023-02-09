@@ -1,5 +1,5 @@
 import * as React from "react";
-import { render, waitFor } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import { RadarContext } from "components/RadarContextProvider/RadarContextProvider";
 import ProjectPage from "../ProjectPage";
 import { MemoryRouter } from "react-router-dom";

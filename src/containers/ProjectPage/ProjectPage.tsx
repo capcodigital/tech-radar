@@ -25,7 +25,7 @@ import Axios from "axios";
 type Project = {
   project: string;
   clientName: string;
-  clientImage: string;
+  clientImage?: string;
   description: string;
   technologies: Array<string>;
 };

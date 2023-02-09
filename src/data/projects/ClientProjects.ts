@@ -99,7 +99,6 @@ const ClientProjects = [
   {
     project: "Commercial Payments service",
     clientName: "Global Tier 1 Bank",
-    clientImage: "CL12",
     description:
       "Capco works with Natwest on their commercial banking arm. Natwest's commercial banking arm, the platform is called Bankline. It essentially lets commercial customers (big businesses, not the everyday retail users) make high value payments. Bankline offers features like domestic payments as well as international payments in 40 currencies which is something Capco has recently helped expand. Selenium is used for UI layer of testing coverage & tests are run on SauceLabs.",
     technologies: [
@@ -125,7 +124,6 @@ const ClientProjects = [
   {
     project: "Mobile Transaction App",
     clientName: "French Neobank",
-    clientImage: "CL14",
     description:
       "Capco worked with a challenger bank on developing a robust and scalable mobile banking app, utilizing our expertise in Gradle. We took advantage of Gradle's powerful features such as multi-module builds, custom plugins, and advanced dependency management to streamline their development process and deliver a high-quality app quickly. We helped the client to make use of dynamic feature modules and instant apps, which allowed us to deliver a smaller, more focused app to users, which is great for those who have limited storage on their devices. With Gradle's ability to automate testing and deployment, we helped them to thoroughly test the app and deploy it smoothly.",
     technologies: ["Gradle Mobile", "Firebase"],
@@ -133,9 +131,8 @@ const ClientProjects = [
   {
     project: "DevOps Acceleration",
     clientName: "Global Tier 1 Bank",
-    clientImage: "CL15",
     description:
-      "Capco partnered with a Tier 1 bank to deliver a DevOps acceleration programme focusing on cloud migration and use of DevOps best practices across people, processes and technology to have fast flow of changes for their digital products in a secure and reliable manner with minimum risk to achieve sustainable, stable and predictable delivery. Capco worked on delivering DevOps as a service platform focusing on: <ul><li> Set up of autonomous teams to own delivery E2E and accelerate product delivery </li> <li> CI/CD pipeline built for continuous delivery </li> <li>Containerisation of products to test earlier in the delivery lifecycle leading to reduced cycle time & lower risk of change </li> <li> CaaS ecosystem cloud PoC to drive cloud migration initiative </li> <li>DevOps as a service platform offering<li>",
+      "Capco partnered with a Tier 1 bank to deliver a DevOps acceleration programme focusing on cloud migration and use of DevOps best practices across people, processes and technology to have fast flow of changes for their digital products in a secure and reliable manner with minimum risk to achieve sustainable, stable and predictable delivery. Capco worked on delivering DevOps as a service platform focusing on: set up of autonomous teams to own delivery E2E and accelerate product delivery, CI/CD pipeline built for continuous delivery, containerisation of products to test earlier in the delivery lifecycle leading to reduced cycle time & lower risk of change, CaaS ecosystem cloud PoC to drive cloud migration initiative, DevOps as a service platform offering",
     technologies: [
       "Jenkins",
       "Cucumber",

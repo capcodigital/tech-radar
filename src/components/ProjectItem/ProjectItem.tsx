@@ -8,7 +8,7 @@ type ProjectItemProps = {
   data: Array<{
     project: string;
     clientName: string;
-    clientImage: string;
+    clientImage?: string;
     description: string;
     technologies: Array<string>;
     githubLink?: string;
@@ -39,17 +39,15 @@ const ProjectItem = ({ data }: ProjectItemProps) => (
           data-test-id={`project-${index}`}
         >
           <div>
-            <div className="project-image-wrapper">
-              <img
-                className="project-image"
-                src={
-                  clientImage
-                    ? (images as { [key: string]: string })[clientImage]
-                    : require("images/ClientProjects/CL2.png")
-                }
-                alt="computer screen"
-              />
-            </div>
+            {clientImage && (
+              <div className="project-image-wrapper">
+                <img
+                  className="project-image"
+                  src={(images as { [key: string]: string })[clientImage]}
+                  alt="project image"
+                />
+              </div>
+            )}
             <div className="row-wrapper">
               <div className="heading">{project}</div>
               {githubLink && (

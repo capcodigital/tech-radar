@@ -105,7 +105,7 @@ exports[`ProjectItem should render ProjectItem component 1`] = `
       class="project-image-wrapper"
     >
       <img
-        alt="computer screen"
+        alt="project image"
         class="project-image"
         src="CL1.png"
       />
