@@ -384,9 +384,9 @@ exports[`ContentPage should render ContentPage component 1`] = `
           Previous
         </div>
         <a
-          href="/technology/data-engineering/liquibase"
+          href="/technology/devops/circleci"
         >
-          Liquibase
+          CircleCI
         </a>
       </div>
       <div
@@ -397,9 +397,9 @@ exports[`ContentPage should render ContentPage component 1`] = `
           Next
         </div>
         <a
-          href="/technology/devops/circleci"
+          href="/technology/devops/docker"
         >
-          CircleCI
+          Docker
         </a>
       </div>
     </div>
