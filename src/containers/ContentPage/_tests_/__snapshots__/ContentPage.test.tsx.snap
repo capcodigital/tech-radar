@@ -384,9 +384,9 @@ exports[`ContentPage should render ContentPage component 1`] = `
           Previous
         </div>
         <a
-          href="/technology/data-engineering/apache-hive"
+          href="/technology/data-engineering/liquibase"
         >
-          Apache Hive
+          Liquibase
         </a>
       </div>
       <div
