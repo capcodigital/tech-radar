@@ -995,6 +995,21 @@ export const categoryList = [
 ];
 
 export const technologyList = [
+  "GitHub",
+  "CircleCI",
+  "Terraform",
+  "Vault",
+  "SonarQube",
+  "Elastic",
+  "Bitbucket",
+  "Jenkins",
+  "TeamCity",
+  "Ansible",
+  "Packer",
+  "Docker",
+  "ConcourseCl",
+  "Twistlock",
+  "Consul",
   "React Native",
   "Gradle Mobile",
   "Swift",
@@ -1064,21 +1079,6 @@ export const technologyList = [
   "BigQuery",
   "Snowflake",
   "Liquibase",
-  "GitHub",
-  "CircleCI",
-  "Terraform",
-  "Vault",
-  "SonarQube",
-  "Elastic",
-  "Bitbucket",
-  "Jenkins",
-  "TeamCity",
-  "Ansible",
-  "Packer",
-  "Docker",
-  "ConcourseCl",
-  "Twistlock",
-  "Consul",
 ];
 
 export const radarKeysText = {
