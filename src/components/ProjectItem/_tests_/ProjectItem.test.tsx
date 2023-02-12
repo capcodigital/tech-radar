@@ -9,7 +9,6 @@ const mockValue = [
   {
     project: "GLOBAL DevOpS Acceleration",
     clientName: "Global Tier 1 Private Bank",
-    clientImage: "CL1",
     description:
       "Capco delivered a DevOps acceleration program focused on improving delivery quality and speed.  This included integrating existing tools to improve developer experience, simplifying consumption of existing internal Kubernetes services, cloud migration, uplifting the platforms observability and monitoring maturity, re-engineering for containerization, building a single pane of glass portal, and training global teams e.g., India, China.",
     technologies: ["Go", "Docker", "AWS", "Kubernetes", "Datadog"],

@@ -3,7 +3,6 @@ import { technologyList } from "../data/data";
 export type Project = {
   project: string;
   clientName: string;
-  clientImage?: string;
   description: string;
   technologies: Array<string>;
 };

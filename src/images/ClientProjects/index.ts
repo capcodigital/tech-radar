@@ -14,6 +14,7 @@ import CL13 from "./CL4.png";
 import CL14 from "./CL1.png";
 import CL15 from "./CL2.png";
 
+// Deprecated client images feature
 const images = {
   CL1: CL1,
   CL2: CL2,
