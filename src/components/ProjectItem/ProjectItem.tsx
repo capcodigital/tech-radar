@@ -1,5 +1,4 @@
 import ProjectTechnologyLink from "../ProjectPageLink/ProjectTechnologyLink";
-import images from "images/ClientProjects";
 import StyledWrapper from "./styles";
 import externallink from "images/externallink.svg";
 import { technologyList } from "data/data";
@@ -8,7 +7,6 @@ type ProjectItemProps = {
   data: Array<{
     project: string;
     clientName: string;
-    clientImage?: string;
     description: string;
     technologies: Array<string>;
     githubLink?: string;
@@ -24,14 +22,7 @@ const ProjectItem = ({ data }: ProjectItemProps) => (
   <>
     {data.map(
       (
-        {
-          project,
-          clientName,
-          clientImage,
-          description,
-          technologies,
-          githubLink,
-        },
+        { project, clientName, description, technologies, githubLink },
         index
       ) => (
         <StyledWrapper
@@ -39,15 +30,6 @@ const ProjectItem = ({ data }: ProjectItemProps) => (
           data-test-id={`project-${index}`}
         >
           <div>
-            {clientImage && (
-              <div className="project-image-wrapper">
-                <img
-                  className="project-image"
-                  src={(images as { [key: string]: string })[clientImage]}
-                  alt="project image"
-                />
-              </div>
-            )}
             <div className="row-wrapper">
               <div className="heading">{project}</div>
               {githubLink && (

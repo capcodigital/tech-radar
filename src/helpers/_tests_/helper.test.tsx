@@ -43,14 +43,12 @@ describe("filterClientProjects", () => {
     {
       project: "GLOBAL DevOpS Acceleration",
       clientName: "Global Tier 1 Private Bank",
-      clientImage: "CL1",
       description: "Capco...",
       technologies: ["Go", "Docker", "AWS", "Kubernetes", "Datadog"],
     },
     {
       project: "Agency Bank Payment APIs",
       clientName: "UK Tier 1 Corporate Bank",
-      clientImage: "CL2",
       description: "Capco...",
       technologies: ["Angular", "React"],
     },

@@ -25,7 +25,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
       - run: sleep 30
-      - name: cloudflare-preview-url
+      - name: Generate Cloudflare Preview Url
         uses: zentered/cloudflare-preview-url@v1.4.0
         id: cloudflare_preview_url
         env:

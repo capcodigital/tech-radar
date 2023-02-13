@@ -304,15 +304,6 @@ Object {
                   >
                     <div>
                       <div
-                        class="project-image-wrapper"
-                      >
-                        <img
-                          alt="project image"
-                          class="project-image"
-                          src="CL3.png"
-                        />
-                      </div>
-                      <div
                         class="row-wrapper"
                       >
                         <div
@@ -739,15 +730,6 @@ Object {
                   data-test-id="project-0"
                 >
                   <div>
-                    <div
-                      class="project-image-wrapper"
-                    >
-                      <img
-                        alt="project image"
-                        class="project-image"
-                        src="CL3.png"
-                      />
-                    </div>
                     <div
                       class="row-wrapper"
                     >

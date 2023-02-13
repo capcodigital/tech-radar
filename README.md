@@ -113,7 +113,18 @@ If using VSCode, install the Snyk extension to analyse the code security and qua
 
 ### Deployment
 
-The CI/CD pipline is done via the [Github Actions](https://github.com/capcodigital/tech-radar/actions) defined in [.github/workflows/main.yml](https://github.com/capcodigital/tech-radar/blob/master/.github/workflows/main.yml). Commits to all branches will trigger a deployment of the test version to Cloudflare Pages and then test automation will run against the preview. The deployed URL will be shown on the PR. 
+The CI/CD pipline is done via the [Github Actions](https://github.com/capcodigital/tech-radar/actions) defined in [.github/workflows/main.yml](https://github.com/capcodigital/tech-radar/blob/master/.github/workflows/main.yml). It is lighweight CI/CD tool that can be used to integrate and deploy code changes to a third-party cloud application platform as well as test, track, and manage code changes. GitHub Actions also supports third-party CI/CD tools, the container platform Docker, and other automation platforms.
+
+Github Actions Workflow contains of a number of jobs running sequentially or in parallel. In our workflow commits to all branches will trigger one "build" job consisting of multiple steps (including third party actions) to deploy test version of the website to Cloudflare Pages. The deployed URL will then be shown on the PR.
+
+Steps executing for deployment and test automation run against the preview are:
+- Generating Cloudflare Preview URL
+- Capturing the above URL for E2E tests
+- Setting up Node.js version
+- Installing dependencies
+- Type checking and code style
+- Running unit tests
+- Running E2E Cucumber tests
 
 Reference: https://github.com/capcodigital/tech-radar/wiki/Continuous-Integration-in-Tech-Radar
 

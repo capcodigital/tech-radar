@@ -14,18 +14,16 @@ import Axios from "axios";
 
 /**
  * Project is an object with a project property that is a string, a clientName property that is a
- * string, a clientImage property that is a string, a description property that is a string, and a
+ * string, a description property that is a string, and a
  * technologies property that is an array of strings.
  * @property {string} project - The name of the project.
  * @property {string} clientName - The name of the client.
- * @property {string} clientImage - The image of the client.
  * @property {string} description - A short description of the project.
  * @property technologies - Array<string>;
  */
 type Project = {
   project: string;
   clientName: string;
-  clientImage?: string;
   description: string;
   technologies: Array<string>;
 };
