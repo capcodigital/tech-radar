@@ -18,7 +18,7 @@ const techContent = [
           {
             name: "Repositories",
             description:
-              " Where all project files are stored and each file's hisory is saved. This is where projects are managed and collaborated on",
+              "Where all project files are stored and each file's hisory is saved. This is where projects are managed and collaborated on",
           },
           {
             name: "Pull requests",
