@@ -13,6 +13,7 @@ export const Wrapper = styled.div`
   svg.tech-icon {
     width: 80px;
     height: 80px;
+    position: relative;
   }
   @media screen and (max-width: 1000px) {
     svg.tech-icon {

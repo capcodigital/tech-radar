@@ -108,7 +108,7 @@ const techContent = [
       },
     ],
     examples: [],
-    reference: [],
+    reference: ["https://docs.oracle.com/en/java/ ", "https://dev.java/learn/"],
   },
   {
     technology: "Scala",
@@ -185,7 +185,7 @@ const techContent = [
       },
     ],
     examples: [],
-    reference: [],
+    reference: ["https://docs.scala-lang.org/"],
   },
   {
     technology: "Node",
@@ -296,7 +296,7 @@ const techContent = [
       },
     ],
     examples: [],
-    reference: [],
+    reference: ["https://nodejs.org/en/docs/", "https://devdocs.io/node/"],
   },
   {
     technology: "Go",
@@ -474,7 +474,11 @@ const techContent = [
       },
     ],
     examples: [],
-    reference: [],
+    reference: [
+      "https://docs.python.org/3/",
+      "https://www.python.org/doc/",
+      "https://pandas.pydata.org/docs/",
+    ],
   },
   {
     technology: "Kotlin",
@@ -603,7 +607,7 @@ const techContent = [
       },
     ],
     examples: [],
-    reference: [],
+    reference: ["https://kotlinlang.org/docs/home.html"],
   },
   {
     technology: "Groovy",
@@ -686,7 +690,10 @@ const techContent = [
       },
     ],
     examples: [],
-    reference: [],
+    reference: [
+      "https://groovy-lang.org/documentation.html",
+      "https://devdocs.io/groovy~3.0/",
+    ],
   },
   {
     technology: "Gradle",
@@ -748,7 +755,10 @@ const techContent = [
       },
     ],
     examples: [],
-    reference: [],
+    reference: [
+      "https://docs.gradle.org/current/userguide/userguide.html",
+      "https://gradle.org/guides/",
+    ],
   },
 ];
 export default techContent;

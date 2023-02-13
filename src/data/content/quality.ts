@@ -203,7 +203,10 @@ const techContent = [
       },
     ],
     examples: [],
-    reference: [],
+    reference: [
+      "https://www.selenium.dev/",
+      "https://selenium-python.readthedocs.io/",
+    ],
   },
   {
     technology: "Cucumber",
@@ -430,7 +433,7 @@ const techContent = [
       },
     ],
     examples: [],
-    reference: [],
+    reference: ["https://www.browserstack.com/"],
   },
   {
     technology: "Sauce Labs",
@@ -725,7 +728,10 @@ const techContent = [
       },
     ],
     examples: [],
-    reference: [],
+    reference: [
+      "https://www.deque.com/axe/core-documentation/api-documentation/",
+      "https://github.com/dequelabs/axe-core/blob/develop/doc/rule-descriptions.md",
+    ],
   },
   {
     technology: "Cypress",
@@ -854,7 +860,11 @@ const techContent = [
       },
     ],
     examples: [],
-    reference: [],
+    reference: [
+      "https://docs.cypress.io/guides/overview/why-cypress",
+      "https://www.cypress.io/",
+      "https://devdocs.io/cypress/",
+    ],
   },
   {
     technology: "Gatling",

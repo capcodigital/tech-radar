@@ -376,7 +376,10 @@ const techContent = [
       },
     ],
     examples: [],
-    reference: [],
+    reference: [
+      "https://docs.oracle.com/en/",
+      "https://www.educba.com/what-is-oracle/",
+    ],
   },
   {
     technology: "SQL Server",

@@ -12,13 +12,24 @@ const techContent = [
       "GitHub is a cloud-based hosting service that lets you manage Git repositories, Github is ubiquitously used in open source sofrware teams and very prominent within Enterprise, Github provided web based features, team manament and other capbilties on top of Git.",
     content: [
       {
-        name: "",
+        name: "Features of GitHub",
         intro: "",
-        data: [],
+        data: [
+          {
+            name: "Repositories",
+            description:
+              "Where all project files are stored and each file's hisory is saved. This is where projects are managed and collaborated on",
+          },
+          {
+            name: "Pull requests",
+            description:
+              "This allows you to inform other members of your team of the changes you have made on the shared project. These changes can be discussed and reviewed by other collaborators before commitng your changes and merging them to the base/master branch.",
+          },
+        ],
       },
     ],
     examples: [],
-    reference: [],
+    reference: ["https://docs.github.com/en"],
   },
   {
     technology: "CircleCI",
@@ -388,7 +399,10 @@ const techContent = [
       },
     ],
     examples: [],
-    reference: [],
+    reference: [
+      "https://docs.sonarqube.org/latest/",
+      "https://www.sonarsource.com/products/sonarqube/",
+    ],
   },
   {
     technology: "Elastic",
@@ -678,7 +692,7 @@ const techContent = [
       },
     ],
     examples: [],
-    reference: [],
+    reference: ["https://www.jenkins.io/doc/"],
   },
   {
     technology: "TeamCity",
