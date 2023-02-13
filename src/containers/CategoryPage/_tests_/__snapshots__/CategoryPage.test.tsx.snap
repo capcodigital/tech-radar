@@ -918,73 +918,10 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           class="c4"
         >
           <a
-            data-test-id="category-item-GitHub"
-            href="/technology/devops/github"
+            data-test-id="category-item-Elastic"
+            href="/technology/devops/elastic"
           >
-            GitHub
-          </a>
-          <svg
-            aria-hidden="true"
-            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
-            data-testid="ArrowForwardIosIcon"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
-            />
-          </svg>
-        </div>
-        <div
-          class="c4"
-        >
-          <a
-            data-test-id="category-item-CircleCI"
-            href="/technology/devops/circleci"
-          >
-            CircleCI
-          </a>
-          <svg
-            aria-hidden="true"
-            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
-            data-testid="ArrowForwardIosIcon"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
-            />
-          </svg>
-        </div>
-        <div
-          class="c4"
-        >
-          <a
-            data-test-id="category-item-Terraform"
-            href="/technology/devops/terraform"
-          >
-            Terraform
-          </a>
-          <svg
-            aria-hidden="true"
-            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
-            data-testid="ArrowForwardIosIcon"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
-            />
-          </svg>
-        </div>
-        <div
-          class="c4"
-        >
-          <a
-            data-test-id="category-item-Vault"
-            href="/technology/devops/vault"
-          >
-            Vault
+            Elastic
           </a>
           <svg
             aria-hidden="true"
@@ -1023,10 +960,73 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           class="c4"
         >
           <a
-            data-test-id="category-item-Elastic"
-            href="/technology/devops/elastic"
+            data-test-id="category-item-Vault"
+            href="/technology/devops/vault"
           >
-            Elastic
+            Vault
+          </a>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="ArrowForwardIosIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
+            />
+          </svg>
+        </div>
+        <div
+          class="c4"
+        >
+          <a
+            data-test-id="category-item-Terraform"
+            href="/technology/devops/terraform"
+          >
+            Terraform
+          </a>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="ArrowForwardIosIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
+            />
+          </svg>
+        </div>
+        <div
+          class="c4"
+        >
+          <a
+            data-test-id="category-item-CircleCI"
+            href="/technology/devops/circleci"
+          >
+            CircleCI
+          </a>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="ArrowForwardIosIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
+            />
+          </svg>
+        </div>
+        <div
+          class="c4"
+        >
+          <a
+            data-test-id="category-item-GitHub"
+            href="/technology/devops/github"
+          >
+            GitHub
           </a>
           <svg
             aria-hidden="true"
@@ -1056,73 +1056,10 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           class="c4"
         >
           <a
-            data-test-id="category-item-Bitbucket"
-            href="/technology/devops/bitbucket"
+            data-test-id="category-item-Docker"
+            href="/technology/devops/docker"
           >
-            Bitbucket
-          </a>
-          <svg
-            aria-hidden="true"
-            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
-            data-testid="ArrowForwardIosIcon"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
-            />
-          </svg>
-        </div>
-        <div
-          class="c4"
-        >
-          <a
-            data-test-id="category-item-Jenkins"
-            href="/technology/devops/jenkins"
-          >
-            Jenkins
-          </a>
-          <svg
-            aria-hidden="true"
-            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
-            data-testid="ArrowForwardIosIcon"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
-            />
-          </svg>
-        </div>
-        <div
-          class="c4"
-        >
-          <a
-            data-test-id="category-item-TeamCity"
-            href="/technology/devops/teamcity"
-          >
-            TeamCity
-          </a>
-          <svg
-            aria-hidden="true"
-            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
-            data-testid="ArrowForwardIosIcon"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
-            />
-          </svg>
-        </div>
-        <div
-          class="c4"
-        >
-          <a
-            data-test-id="category-item-Ansible"
-            href="/technology/devops/ansible"
-          >
-            Ansible
+            Docker
           </a>
           <svg
             aria-hidden="true"
@@ -1161,10 +1098,73 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           class="c4"
         >
           <a
-            data-test-id="category-item-Docker"
-            href="/technology/devops/docker"
+            data-test-id="category-item-Ansible"
+            href="/technology/devops/ansible"
           >
-            Docker
+            Ansible
+          </a>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="ArrowForwardIosIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
+            />
+          </svg>
+        </div>
+        <div
+          class="c4"
+        >
+          <a
+            data-test-id="category-item-TeamCity"
+            href="/technology/devops/teamcity"
+          >
+            TeamCity
+          </a>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="ArrowForwardIosIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
+            />
+          </svg>
+        </div>
+        <div
+          class="c4"
+        >
+          <a
+            data-test-id="category-item-Jenkins"
+            href="/technology/devops/jenkins"
+          >
+            Jenkins
+          </a>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="ArrowForwardIosIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
+            />
+          </svg>
+        </div>
+        <div
+          class="c4"
+        >
+          <a
+            data-test-id="category-item-Bitbucket"
+            href="/technology/devops/bitbucket"
+          >
+            Bitbucket
           </a>
           <svg
             aria-hidden="true"
@@ -1194,10 +1194,10 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           class="c4"
         >
           <a
-            data-test-id="category-item-Twistlock"
-            href="/technology/devops/twistlock"
+            data-test-id="category-item-Consul"
+            href="/technology/devops/consul"
           >
-            Twistlock
+            Consul
           </a>
           <svg
             aria-hidden="true"
@@ -1236,10 +1236,10 @@ exports[`CategoryPage should render CategoryPage component 1`] = `
           class="c4"
         >
           <a
-            data-test-id="category-item-Consul"
-            href="/technology/devops/consul"
+            data-test-id="category-item-Twistlock"
+            href="/technology/devops/twistlock"
           >
-            Consul
+            Twistlock
           </a>
           <svg
             aria-hidden="true"

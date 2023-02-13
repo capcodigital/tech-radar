@@ -240,34 +240,6 @@ exports[`ProjectItem should render ProjectItem component 1`] = `
           </div>
         </a>
       </span>
-      <span>
-        <a
-          class="projectTech-link"
-          href="/technology/devops/datadog"
-        >
-          <svg
-            class="icon"
-            viewBox="0 0 80 80"
-          >
-            <circle
-              cx="40"
-              cy="40"
-              fill="white"
-              r="40"
-            />
-            <image
-              height="50"
-              href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/datadog_square.png"
-              width="50"
-              x="15"
-              y="15"
-            />
-          </svg>
-          <div>
-            Datadog
-          </div>
-        </a>
-      </span>
     </div>
   </div>
 </div>

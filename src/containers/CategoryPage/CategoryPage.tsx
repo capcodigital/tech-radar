@@ -289,44 +289,50 @@ const CategoryPage = () => {
               <Grid item xs={4} className="large-screen">
                 <Divider />
                 <div className="title">Preferred</div>
-                {content.data.preferred.map(({ name, enabled }) => (
-                  <CategoryListItem
-                    key={name}
-                    hovered={hovered === name}
-                    category={category}
-                    techName={name}
-                    enabled={enabled}
-                    onClick={() => setTechnology(name)}
-                  />
-                ))}
+                {[...content.data.preferred]
+                  .reverse()
+                  .map(({ name, enabled }) => (
+                    <CategoryListItem
+                      key={name}
+                      hovered={hovered === name}
+                      category={category}
+                      techName={name}
+                      enabled={enabled}
+                      onClick={() => setTechnology(name)}
+                    />
+                  ))}
               </Grid>
               <Grid item xs={4} className="large-screen">
                 <Divider />
                 <div className="title">Skilled</div>
-                {content.data.skilled.map(({ name, enabled }) => (
-                  <CategoryListItem
-                    key={name}
-                    hovered={hovered === name}
-                    category={category}
-                    techName={name}
-                    enabled={enabled}
-                    onClick={() => setTechnology(name)}
-                  />
-                ))}
+                {[...content.data.skilled]
+                  .reverse()
+                  .map(({ name, enabled }) => (
+                    <CategoryListItem
+                      key={name}
+                      hovered={hovered === name}
+                      category={category}
+                      techName={name}
+                      enabled={enabled}
+                      onClick={() => setTechnology(name)}
+                    />
+                  ))}
               </Grid>
               <Grid item xs={4} className="large-screen">
                 <Divider />
                 <div className="title">Scaling</div>
-                {content.data.scaling.map(({ name, enabled }) => (
-                  <CategoryListItem
-                    key={name}
-                    hovered={hovered === name}
-                    category={category}
-                    techName={name}
-                    enabled={enabled}
-                    onClick={() => setTechnology(name)}
-                  />
-                ))}
+                {[...content.data.scaling]
+                  .reverse()
+                  .map(({ name, enabled }) => (
+                    <CategoryListItem
+                      key={name}
+                      hovered={hovered === name}
+                      category={category}
+                      techName={name}
+                      enabled={enabled}
+                      onClick={() => setTechnology(name)}
+                    />
+                  ))}
               </Grid>
 
               <div className="subheader">Other Categories</div>
