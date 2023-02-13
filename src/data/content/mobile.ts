@@ -372,7 +372,9 @@ const techContent = [
       },
     ],
     examples: [],
-    reference: [],
+    reference: [
+      "https://developer.android.com/codelabs/build-your-first-android-app#0",
+    ],
   },
   {
     technology: "Ionic",

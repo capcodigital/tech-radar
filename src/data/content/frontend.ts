@@ -194,7 +194,7 @@ const techContent = [
       },
     ],
     examples: [],
-    reference: [],
+    reference: ["https://angular.io/"],
   },
   {
     technology: "Vue",
@@ -281,7 +281,10 @@ const techContent = [
       },
     ],
     examples: [],
-    reference: [],
+    reference: [
+      "https://vuejs.org/guide/introduction.html",
+      "https://devdocs.io/vue/",
+    ],
   },
   {
     technology: "TypeScript",
@@ -354,7 +357,7 @@ const techContent = [
           'A TypeScript web application that provides a more readable format of our Engineering Competency Framework to help explain performance expectations. Unit tests are written in Jest and React Testing Library, E2E tests are written in Cypress and are automated via <a href="https://github.com/features/actions">GitHub Actions</a>.',
       },
     ],
-    reference: [],
+    reference: ["https://www.typescriptlang.org/"],
   },
   {
     technology: "JavaScript",
@@ -454,7 +457,11 @@ const techContent = [
       },
     ],
     examples: [],
-    reference: [],
+    reference: [
+      "https://devdocs.io/javascript/",
+      "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+      "https://javascript.info/",
+    ],
   },
   {
     technology: "HTML",
@@ -537,7 +544,10 @@ const techContent = [
       },
     ],
     examples: [],
-    reference: [],
+    reference: [
+      "https://html.com/document/",
+      "https://docs.fileformat.com/web/html/",
+    ],
   },
   {
     technology: "CSS",
@@ -568,7 +578,10 @@ const techContent = [
       },
     ],
     examples: [],
-    reference: [],
+    reference: [
+      "https://developer.mozilla.org/en-US/docs/Web/CSS",
+      "https://devdocs.io/css/",
+    ],
   },
   {
     technology: "Webpack",
@@ -604,7 +617,7 @@ const techContent = [
       },
     ],
     examples: [],
-    reference: [],
+    reference: ["https://webpack.js.org/"],
   },
 ];
 export default techContent;
