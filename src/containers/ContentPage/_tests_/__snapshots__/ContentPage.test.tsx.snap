@@ -1,6 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ContentPage should render ContentPage component 1`] = `
+.c8 {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.c8 .MuiAccordion-root {
+  background-color: transparent;
+  border: #fff 2px solid;
+  position: relative;
+  -webkit-transition: margin 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: margin 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  overflow-anchor: none;
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 0%),0px 1px 1px 0px rgb(0 0 0 / 0%),0px 1px 3px 0px rgb(0 0 0 / 0%);
+}
+
+.c8 .MuiSvgIcon-root {
+  color: #fff;
+  float: right;
+}
+
+.c8 .MuiTypography-root {
+  width: 100%;
+}
+
 .c6 {
   margin-bottom: 40px;
 }
@@ -34,6 +58,22 @@ exports[`ContentPage should render ContentPage component 1`] = `
 
 .c6 img {
   padding: 20px 0;
+}
+
+.c7 {
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 14px;
+}
+
+.c9 {
+  color: inherit;
+  border-bottom: none!;
+  font-size: 16px;
+}
+
+.c9:hover {
+  border-bottom: 1px solid;
 }
 
 .c0 {
@@ -112,7 +152,7 @@ exports[`ContentPage should render ContentPage component 1`] = `
   padding-right: 50px;
 }
 
-.c7 {
+.c10 {
   border: 0;
   height: 1px;
   background-image: linear-gradient( to right,rgba(255,255,255,0),rgba(255,255,255,0.75),rgba(255,255,255,0) );
@@ -122,42 +162,42 @@ exports[`ContentPage should render ContentPage component 1`] = `
   font-size: 17px;
 }
 
-.c8 {
+.c11 {
   margin-top: 75px;
   float: left;
 }
 
-.c8 div:first-child {
+.c11 div:first-child {
   font: 300 19px poppins,sans-serif;
   opacity: 0.5;
 }
 
-.c8 a:nth-child(2) {
+.c11 a:nth-child(2) {
   font: 59px bebas-neue-pro,sans-serif;
   color: inherit;
 }
 
-.c8 a:nth-child(2):hover {
+.c11 a:nth-child(2):hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c9 {
+.c12 {
   margin-top: 75px;
   float: right;
 }
 
-.c9 div:first-child {
+.c12 div:first-child {
   font: 300 19px poppins,sans-serif;
   opacity: 0.5;
 }
 
-.c9 a:nth-child(2) {
+.c12 a:nth-child(2) {
   font: 59px bebas-neue-pro,sans-serif;
   color: inherit;
 }
 
-.c9 a:nth-child(2):hover {
+.c12 a:nth-child(2):hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -181,6 +221,12 @@ exports[`ContentPage should render ContentPage component 1`] = `
   color: inherit;
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+@media screen and (max-width:1000px) {
+  .c8 {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width:1000px) {
@@ -248,21 +294,21 @@ exports[`ContentPage should render ContentPage component 1`] = `
 }
 
 @media screen and (max-width:1000px) {
-  .c8 div:first-child {
+  .c11 div:first-child {
     font-size: 19px;
   }
 
-  .c8 a:nth-child(2) {
+  .c11 a:nth-child(2) {
     font-size: 40px;
   }
 }
 
 @media screen and (max-width:1000px) {
-  .c9 div:first-child {
+  .c12 div:first-child {
     font-size: 19px;
   }
 
-  .c9 a:nth-child(2) {
+  .c12 a:nth-child(2) {
     font-size: 40px;
   }
 }
@@ -372,12 +418,209 @@ exports[`ContentPage should render ContentPage component 1`] = `
       </div>
       <div
         class="c6"
-      />
+      >
+        <div
+          class="c7"
+        >
+          Features of GitHub
+        </div>
+        <div
+          class="content"
+        >
+          <div
+            class="c8"
+          >
+            <div
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiAccordion-root MuiAccordion-rounded MuiAccordion-gutters css-1elwnq4-MuiPaper-root-MuiAccordion-root"
+              id="accordion-component"
+            >
+              <div
+                aria-controls="panel1bh-content"
+                aria-expanded="false"
+                class="MuiButtonBase-root MuiAccordionSummary-root MuiAccordionSummary-gutters css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root"
+                data-test-id="Repositories"
+                id="panel1bh-header"
+                role="button"
+                tabindex="0"
+              >
+                <div
+                  class="MuiAccordionSummary-content MuiAccordionSummary-contentGutters css-o4b71y-MuiAccordionSummary-content"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 css-1m4ljmh-MuiTypography-root"
+                  >
+                    <div
+                      class="content-title"
+                    >
+                      Repositories
+                    </div>
+                  </span>
+                </div>
+                <div
+                  class="MuiAccordionSummary-expandIconWrapper css-yw020d-MuiAccordionSummary-expandIconWrapper"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                    data-testid="ExpandMoreIcon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="MuiCollapse-root MuiCollapse-vertical MuiCollapse-hidden css-bz4dnt-MuiCollapse-root"
+                style="min-height: 0px;"
+              >
+                <div
+                  class="MuiCollapse-wrapper MuiCollapse-vertical css-smkl36-MuiCollapse-wrapper"
+                >
+                  <div
+                    class="MuiCollapse-wrapperInner MuiCollapse-vertical css-9l5vo-MuiCollapse-wrapperInner"
+                  >
+                    <div
+                      aria-labelledby="panel1bh-header"
+                      class="MuiAccordion-region"
+                      id="panel1bh-content"
+                      role="region"
+                    >
+                      <div
+                        class="MuiAccordionDetails-root css-15v22id-MuiAccordionDetails-root"
+                      >
+                        <span
+                          class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+                        >
+                          <div
+                            data-test-id="Repositories-content"
+                            style="font-weight: 300; color: rgb(255, 255, 255);"
+                          >
+                            Where all project files are stored and each file's hisory is saved. This is where projects are managed and collaborated on
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="content"
+        >
+          <div
+            class="c8"
+          >
+            <div
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiAccordion-root MuiAccordion-rounded MuiAccordion-gutters css-1elwnq4-MuiPaper-root-MuiAccordion-root"
+              id="accordion-component"
+            >
+              <div
+                aria-controls="panel1bh-content"
+                aria-expanded="false"
+                class="MuiButtonBase-root MuiAccordionSummary-root MuiAccordionSummary-gutters css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root"
+                data-test-id="Pull requests"
+                id="panel1bh-header"
+                role="button"
+                tabindex="0"
+              >
+                <div
+                  class="MuiAccordionSummary-content MuiAccordionSummary-contentGutters css-o4b71y-MuiAccordionSummary-content"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 css-1m4ljmh-MuiTypography-root"
+                  >
+                    <div
+                      class="content-title"
+                    >
+                      Pull requests
+                    </div>
+                  </span>
+                </div>
+                <div
+                  class="MuiAccordionSummary-expandIconWrapper css-yw020d-MuiAccordionSummary-expandIconWrapper"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                    data-testid="ExpandMoreIcon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="MuiCollapse-root MuiCollapse-vertical MuiCollapse-hidden css-bz4dnt-MuiCollapse-root"
+                style="min-height: 0px;"
+              >
+                <div
+                  class="MuiCollapse-wrapper MuiCollapse-vertical css-smkl36-MuiCollapse-wrapper"
+                >
+                  <div
+                    class="MuiCollapse-wrapperInner MuiCollapse-vertical css-9l5vo-MuiCollapse-wrapperInner"
+                  >
+                    <div
+                      aria-labelledby="panel1bh-header"
+                      class="MuiAccordion-region"
+                      id="panel1bh-content"
+                      role="region"
+                    >
+                      <div
+                        class="MuiAccordionDetails-root css-15v22id-MuiAccordionDetails-root"
+                      >
+                        <span
+                          class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+                        >
+                          <div
+                            data-test-id="Pull requests-content"
+                            style="font-weight: 300; color: rgb(255, 255, 255);"
+                          >
+                            This allows you to inform other members of your team of the changes you have made on the shared project. These changes can be discussed and reviewed by other collaborators before commitng your changes and merging them to the base/master branch.
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="c6"
+      >
+        <div
+          class="c7"
+        >
+          Sources
+        </div>
+        <div
+          class="content"
+        >
+          <a
+            class="c9"
+            href="https://docs.github.com/en"
+            rel="noreferrer"
+            target="_blank"
+          >
+            https://docs.github.com/en
+          </a>
+        </div>
+      </div>
       <hr
-        class="c7"
+        class="c10"
       />
       <div
-        class="c8"
+        class="c11"
         data-test-id="Previous"
       >
         <div>
@@ -390,7 +633,7 @@ exports[`ContentPage should render ContentPage component 1`] = `
         </a>
       </div>
       <div
-        class="c9"
+        class="c12"
         data-test-id="Next"
       >
         <div>
