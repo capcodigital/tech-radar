@@ -135,6 +135,7 @@ Object {
 .c0 svg.tech-icon {
   width: 80px;
   height: 80px;
+  position: relative;
 }
 
 .c2 {
@@ -563,6 +564,7 @@ Object {
 .c0 svg.tech-icon {
   width: 80px;
   height: 80px;
+  position: relative;
 }
 
 .c2 {

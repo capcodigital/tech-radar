@@ -55,7 +55,7 @@ export default function Tabs({
   panelOne,
   panelTwo,
 }: TabsProps) {
-  const [value, setValue] = useState(0);
+  const [value, setValue] = useState(clientProjectCount > 0 ? 0 : 1);
 
   /**
    * handleChange takes in an event and a newValue and sets the value to the newValue.
