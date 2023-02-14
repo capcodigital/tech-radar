@@ -331,90 +331,100 @@ Object {
                       <div
                         class="technologies"
                       >
-                        <span>
-                          <a
-                            class="projectTech-link"
-                            href="/technology/mobile/swift"
+                        <div
+                          class="MuiGrid-root MuiGrid-container css-18axsdx-MuiGrid-root"
+                        >
+                          <div
+                            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 MuiGrid-grid-md-2 css-frxywp-MuiGrid-root"
                           >
-                            <svg
-                              class="icon"
-                              viewBox="0 0 80 80"
+                            <a
+                              class="projectTech-link"
+                              href="/technology/mobile/swift"
                             >
-                              <circle
-                                cx="40"
-                                cy="40"
-                                fill="white"
-                                r="40"
-                              />
-                              <image
-                                height="50"
-                                href="https://img.icons8.com/fluent/452/swift.png"
-                                width="50"
-                                x="15"
-                                y="15"
-                              />
-                            </svg>
-                            <div>
-                              Swift
-                            </div>
-                          </a>
-                        </span>
-                        <span>
-                          <a
-                            class="projectTech-link"
-                            href="/technology/backend/kotlin"
+                              <svg
+                                class="icon"
+                                viewBox="0 0 80 80"
+                              >
+                                <circle
+                                  cx="40"
+                                  cy="40"
+                                  fill="white"
+                                  r="40"
+                                />
+                                <image
+                                  height="50"
+                                  href="https://img.icons8.com/fluent/452/swift.png"
+                                  width="50"
+                                  x="15"
+                                  y="15"
+                                />
+                              </svg>
+                              <div>
+                                Swift
+                              </div>
+                            </a>
+                          </div>
+                          <div
+                            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 MuiGrid-grid-md-2 css-frxywp-MuiGrid-root"
                           >
-                            <svg
-                              class="icon"
-                              viewBox="0 0 80 80"
+                            <a
+                              class="projectTech-link"
+                              href="/technology/backend/kotlin"
                             >
-                              <circle
-                                cx="40"
-                                cy="40"
-                                fill="white"
-                                r="40"
-                              />
-                              <image
-                                height="50"
-                                href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/backend/kotlin_square.png"
-                                width="50"
-                                x="15"
-                                y="15"
-                              />
-                            </svg>
-                            <div>
-                              Kotlin
-                            </div>
-                          </a>
-                        </span>
-                        <span>
-                          <a
-                            class="projectTech-link"
-                            href="/technology/devops/jenkins"
+                              <svg
+                                class="icon"
+                                viewBox="0 0 80 80"
+                              >
+                                <circle
+                                  cx="40"
+                                  cy="40"
+                                  fill="white"
+                                  r="40"
+                                />
+                                <image
+                                  height="50"
+                                  href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/backend/kotlin_square.png"
+                                  width="50"
+                                  x="15"
+                                  y="15"
+                                />
+                              </svg>
+                              <div>
+                                Kotlin
+                              </div>
+                            </a>
+                          </div>
+                          <div
+                            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 MuiGrid-grid-md-2 css-frxywp-MuiGrid-root"
                           >
-                            <svg
-                              class="icon"
-                              viewBox="0 0 80 80"
+                            <a
+                              class="projectTech-link"
+                              href="/technology/devops/jenkins"
                             >
-                              <circle
-                                cx="40"
-                                cy="40"
-                                fill="white"
-                                r="40"
-                              />
-                              <image
-                                height="50"
-                                href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/jenkins_square.png"
-                                width="50"
-                                x="15"
-                                y="15"
-                              />
-                            </svg>
-                            <div>
-                              Jenkins
-                            </div>
-                          </a>
-                        </span>
+                              <svg
+                                class="icon"
+                                viewBox="0 0 80 80"
+                              >
+                                <circle
+                                  cx="40"
+                                  cy="40"
+                                  fill="white"
+                                  r="40"
+                                />
+                                <image
+                                  height="50"
+                                  href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/jenkins_square.png"
+                                  width="50"
+                                  x="15"
+                                  y="15"
+                                />
+                              </svg>
+                              <div>
+                                Jenkins
+                              </div>
+                            </a>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -759,90 +769,100 @@ Object {
                     <div
                       class="technologies"
                     >
-                      <span>
-                        <a
-                          class="projectTech-link"
-                          href="/technology/mobile/swift"
+                      <div
+                        class="MuiGrid-root MuiGrid-container css-18axsdx-MuiGrid-root"
+                      >
+                        <div
+                          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 MuiGrid-grid-md-2 css-frxywp-MuiGrid-root"
                         >
-                          <svg
-                            class="icon"
-                            viewBox="0 0 80 80"
+                          <a
+                            class="projectTech-link"
+                            href="/technology/mobile/swift"
                           >
-                            <circle
-                              cx="40"
-                              cy="40"
-                              fill="white"
-                              r="40"
-                            />
-                            <image
-                              height="50"
-                              href="https://img.icons8.com/fluent/452/swift.png"
-                              width="50"
-                              x="15"
-                              y="15"
-                            />
-                          </svg>
-                          <div>
-                            Swift
-                          </div>
-                        </a>
-                      </span>
-                      <span>
-                        <a
-                          class="projectTech-link"
-                          href="/technology/backend/kotlin"
+                            <svg
+                              class="icon"
+                              viewBox="0 0 80 80"
+                            >
+                              <circle
+                                cx="40"
+                                cy="40"
+                                fill="white"
+                                r="40"
+                              />
+                              <image
+                                height="50"
+                                href="https://img.icons8.com/fluent/452/swift.png"
+                                width="50"
+                                x="15"
+                                y="15"
+                              />
+                            </svg>
+                            <div>
+                              Swift
+                            </div>
+                          </a>
+                        </div>
+                        <div
+                          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 MuiGrid-grid-md-2 css-frxywp-MuiGrid-root"
                         >
-                          <svg
-                            class="icon"
-                            viewBox="0 0 80 80"
+                          <a
+                            class="projectTech-link"
+                            href="/technology/backend/kotlin"
                           >
-                            <circle
-                              cx="40"
-                              cy="40"
-                              fill="white"
-                              r="40"
-                            />
-                            <image
-                              height="50"
-                              href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/backend/kotlin_square.png"
-                              width="50"
-                              x="15"
-                              y="15"
-                            />
-                          </svg>
-                          <div>
-                            Kotlin
-                          </div>
-                        </a>
-                      </span>
-                      <span>
-                        <a
-                          class="projectTech-link"
-                          href="/technology/devops/jenkins"
+                            <svg
+                              class="icon"
+                              viewBox="0 0 80 80"
+                            >
+                              <circle
+                                cx="40"
+                                cy="40"
+                                fill="white"
+                                r="40"
+                              />
+                              <image
+                                height="50"
+                                href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/backend/kotlin_square.png"
+                                width="50"
+                                x="15"
+                                y="15"
+                              />
+                            </svg>
+                            <div>
+                              Kotlin
+                            </div>
+                          </a>
+                        </div>
+                        <div
+                          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 MuiGrid-grid-md-2 css-frxywp-MuiGrid-root"
                         >
-                          <svg
-                            class="icon"
-                            viewBox="0 0 80 80"
+                          <a
+                            class="projectTech-link"
+                            href="/technology/devops/jenkins"
                           >
-                            <circle
-                              cx="40"
-                              cy="40"
-                              fill="white"
-                              r="40"
-                            />
-                            <image
-                              height="50"
-                              href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/jenkins_square.png"
-                              width="50"
-                              x="15"
-                              y="15"
-                            />
-                          </svg>
-                          <div>
-                            Jenkins
-                          </div>
-                        </a>
-                      </span>
+                            <svg
+                              class="icon"
+                              viewBox="0 0 80 80"
+                            >
+                              <circle
+                                cx="40"
+                                cy="40"
+                                fill="white"
+                                r="40"
+                              />
+                              <image
+                                height="50"
+                                href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/jenkins_square.png"
+                                width="50"
+                                x="15"
+                                y="15"
+                              />
+                            </svg>
+                            <div>
+                              Jenkins
+                            </div>
+                          </a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>

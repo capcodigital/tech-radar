@@ -128,118 +128,130 @@ exports[`ProjectItem should render ProjectItem component 1`] = `
     <div
       class="technologies"
     >
-      <span>
-        <a
-          class="projectTech-link"
-          href="/technology/backend/go"
+      <div
+        class="MuiGrid-root MuiGrid-container css-18axsdx-MuiGrid-root"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 MuiGrid-grid-md-2 css-frxywp-MuiGrid-root"
         >
-          <svg
-            class="icon"
-            viewBox="0 0 80 80"
+          <a
+            class="projectTech-link"
+            href="/technology/backend/go"
           >
-            <circle
-              cx="40"
-              cy="40"
-              fill="white"
-              r="40"
-            />
-            <image
-              height="50"
-              href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/backend/go_square.png"
-              width="50"
-              x="15"
-              y="15"
-            />
-          </svg>
-          <div>
-            Go
-          </div>
-        </a>
-      </span>
-      <span>
-        <a
-          class="projectTech-link"
-          href="/technology/devops/docker"
+            <svg
+              class="icon"
+              viewBox="0 0 80 80"
+            >
+              <circle
+                cx="40"
+                cy="40"
+                fill="white"
+                r="40"
+              />
+              <image
+                height="50"
+                href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/backend/go_square.png"
+                width="50"
+                x="15"
+                y="15"
+              />
+            </svg>
+            <div>
+              Go
+            </div>
+          </a>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 MuiGrid-grid-md-2 css-frxywp-MuiGrid-root"
         >
-          <svg
-            class="icon"
-            viewBox="0 0 80 80"
+          <a
+            class="projectTech-link"
+            href="/technology/devops/docker"
           >
-            <circle
-              cx="40"
-              cy="40"
-              fill="white"
-              r="40"
-            />
-            <image
-              height="50"
-              href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/docker_square.png"
-              width="50"
-              x="15"
-              y="15"
-            />
-          </svg>
-          <div>
-            Docker
-          </div>
-        </a>
-      </span>
-      <span>
-        <a
-          class="projectTech-link"
-          href="/technology/cloud-&-platforms/aws"
+            <svg
+              class="icon"
+              viewBox="0 0 80 80"
+            >
+              <circle
+                cx="40"
+                cy="40"
+                fill="white"
+                r="40"
+              />
+              <image
+                height="50"
+                href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/devops/docker_square.png"
+                width="50"
+                x="15"
+                y="15"
+              />
+            </svg>
+            <div>
+              Docker
+            </div>
+          </a>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 MuiGrid-grid-md-2 css-frxywp-MuiGrid-root"
         >
-          <svg
-            class="icon"
-            viewBox="0 0 80 80"
+          <a
+            class="projectTech-link"
+            href="/technology/cloud-&-platforms/aws"
           >
-            <circle
-              cx="40"
-              cy="40"
-              fill="white"
-              r="40"
-            />
-            <image
-              height="50"
-              href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/aws_square_1.png"
-              width="50"
-              x="15"
-              y="15"
-            />
-          </svg>
-          <div>
-            AWS
-          </div>
-        </a>
-      </span>
-      <span>
-        <a
-          class="projectTech-link"
-          href="/technology/cloud-&-platforms/kubernetes"
+            <svg
+              class="icon"
+              viewBox="0 0 80 80"
+            >
+              <circle
+                cx="40"
+                cy="40"
+                fill="white"
+                r="40"
+              />
+              <image
+                height="50"
+                href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/aws_square_1.png"
+                width="50"
+                x="15"
+                y="15"
+              />
+            </svg>
+            <div>
+              AWS
+            </div>
+          </a>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 MuiGrid-grid-md-2 css-frxywp-MuiGrid-root"
         >
-          <svg
-            class="icon"
-            viewBox="0 0 80 80"
+          <a
+            class="projectTech-link"
+            href="/technology/cloud-&-platforms/kubernetes"
           >
-            <circle
-              cx="40"
-              cy="40"
-              fill="white"
-              r="40"
-            />
-            <image
-              height="50"
-              href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/k8s_square.png"
-              width="50"
-              x="15"
-              y="15"
-            />
-          </svg>
-          <div>
-            Kubernetes
-          </div>
-        </a>
-      </span>
+            <svg
+              class="icon"
+              viewBox="0 0 80 80"
+            >
+              <circle
+                cx="40"
+                cy="40"
+                fill="white"
+                r="40"
+              />
+              <image
+                height="50"
+                href="https://raw.githubusercontent.com/capcodigital/presentation-logos/master/tech-radar/cloud/k8s_square.png"
+                width="50"
+                x="15"
+                y="15"
+              />
+            </svg>
+            <div>
+              Kubernetes
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
