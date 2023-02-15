@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ContentPage should render ContentPage component 1`] = `
-.c8 {
+.c9 {
   width: 700px;
   margin: 0 auto;
 }
 
-.c8 .MuiAccordion-root {
+.c9 .MuiAccordion-root {
   background-color: transparent;
   border: #fff 2px solid;
   position: relative;
@@ -16,63 +16,63 @@ exports[`ContentPage should render ContentPage component 1`] = `
   box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 0%),0px 1px 1px 0px rgb(0 0 0 / 0%),0px 1px 3px 0px rgb(0 0 0 / 0%);
 }
 
-.c8 .MuiSvgIcon-root {
+.c9 .MuiSvgIcon-root {
   color: #fff;
   float: right;
 }
 
-.c8 .MuiTypography-root {
+.c9 .MuiTypography-root {
   width: 100%;
 }
 
-.c6 {
+.c7 {
   margin-bottom: 40px;
 }
 
-.c6 .intro {
+.c7 .intro {
   font-size: 18px;
   font-weight: 500;
   padding-bottom: 14px;
 }
 
-.c6 .content {
+.c7 .content {
   font-size: 16px;
   font-weight: 300;
 }
 
-.c6 .content div:first-child {
+.c7 .content div:first-child {
   padding: 3px;
   margin: 2px;
   width: 100%;
 }
 
-.c6 .content .content-title {
+.c7 .content .content-title {
   font-size: 18px;
   font-weight: 700;
 }
 
-.c6 a {
+.c7 a {
   color: inherit;
   border-bottom: 1px solid;
 }
 
-.c6 img {
+.c7 img {
   padding: 20px 0;
 }
 
-.c7 {
+.c8 {
   font-size: 24px;
   font-weight: 700;
   padding-bottom: 14px;
 }
 
-.c9 {
+.c10 {
   color: inherit;
   border-bottom: none!;
   font-size: 16px;
 }
 
-.c9:hover {
+.c10:hover {
   border-bottom: 1px solid;
 }
 
@@ -125,18 +125,18 @@ exports[`ContentPage should render ContentPage component 1`] = `
   justify-content: space-between;
 }
 
-.c5 {
+.c6 {
   width: 700px;
   margin: 0 auto;
   font-family: poppins,sans-serif;
 }
 
-.c5 .content-intro {
+.c6 .content-intro {
   font-size: 24px;
   margin-bottom: 34px;
 }
 
-.c5 .content-intro a {
+.c6 .content-intro a {
   color: inherit;
   border-bottom: 1px solid;
   -webkit-text-decoration: none;
@@ -152,7 +152,7 @@ exports[`ContentPage should render ContentPage component 1`] = `
   padding-right: 50px;
 }
 
-.c10 {
+.c11 {
   border: 0;
   height: 1px;
   background-image: linear-gradient( to right,rgba(255,255,255,0),rgba(255,255,255,0.75),rgba(255,255,255,0) );
@@ -162,29 +162,9 @@ exports[`ContentPage should render ContentPage component 1`] = `
   font-size: 17px;
 }
 
-.c11 {
-  margin-top: 75px;
-  float: left;
-}
-
-.c11 div:first-child {
-  font: 300 19px poppins,sans-serif;
-  opacity: 0.5;
-}
-
-.c11 a:nth-child(2) {
-  font: 59px bebas-neue-pro,sans-serif;
-  color: inherit;
-}
-
-.c11 a:nth-child(2):hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
 .c12 {
   margin-top: 75px;
-  float: right;
+  float: left;
 }
 
 .c12 div:first-child {
@@ -198,6 +178,26 @@ exports[`ContentPage should render ContentPage component 1`] = `
 }
 
 .c12 a:nth-child(2):hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c13 {
+  margin-top: 75px;
+  float: right;
+}
+
+.c13 div:first-child {
+  font: 300 19px poppins,sans-serif;
+  opacity: 0.5;
+}
+
+.c13 a:nth-child(2) {
+  font: 59px bebas-neue-pro,sans-serif;
+  color: inherit;
+}
+
+.c13 a:nth-child(2):hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -224,22 +224,22 @@ exports[`ContentPage should render ContentPage component 1`] = `
 }
 
 @media screen and (max-width:1000px) {
-  .c8 {
+  .c9 {
     width: 100%;
   }
 }
 
 @media screen and (max-width:1000px) {
-  .c6 {
+  .c7 {
     margin-bottom: 20px;
   }
 
-  .c6 .title {
+  .c7 .title {
     font-size: 20px;
   }
 
-  .c6 .intro,
-  .c6 .content {
+  .c7 .intro,
+  .c7 .content {
     font-size: 18px;
   }
 }
@@ -271,11 +271,11 @@ exports[`ContentPage should render ContentPage component 1`] = `
 }
 
 @media screen and (max-width:1000px) {
-  .c5 {
+  .c6 {
     width: 100%;
   }
 
-  .c5 .content-intro {
+  .c6 .content-intro {
     font-size: 18px;
   }
 }
@@ -294,12 +294,8 @@ exports[`ContentPage should render ContentPage component 1`] = `
 }
 
 @media screen and (max-width:1000px) {
-  .c11 div:first-child {
-    font-size: 19px;
-  }
-
-  .c11 a:nth-child(2) {
-    font-size: 40px;
+  .c5 {
+    display: none;
   }
 }
 
@@ -309,6 +305,16 @@ exports[`ContentPage should render ContentPage component 1`] = `
   }
 
   .c12 a:nth-child(2) {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .c13 div:first-child {
+    font-size: 19px;
+  }
+
+  .c13 a:nth-child(2) {
     font-size: 40px;
   }
 }
@@ -407,9 +413,19 @@ exports[`ContentPage should render ContentPage component 1`] = `
           </svg>
         </a>
       </div>
+      <div
+        class="c5"
+      >
+        <a
+          class="c3"
+          href="/projects/devops/github"
+        >
+          View Projects
+        </a>
+      </div>
     </div>
     <div
-      class="c5"
+      class="c6"
     >
       <div
         class="content-intro"
@@ -417,10 +433,10 @@ exports[`ContentPage should render ContentPage component 1`] = `
         GitHub is a cloud-based hosting service that lets you manage Git repositories, Github is ubiquitously used in open source sofrware teams and very prominent within Enterprise, Github provided web based features, team manament and other capbilties on top of Git.
       </div>
       <div
-        class="c6"
+        class="c7"
       >
         <div
-          class="c7"
+          class="c8"
         >
           Features of GitHub
         </div>
@@ -428,7 +444,7 @@ exports[`ContentPage should render ContentPage component 1`] = `
           class="content"
         >
           <div
-            class="c8"
+            class="c9"
           >
             <div
               class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiAccordion-root MuiAccordion-rounded MuiAccordion-gutters css-1elwnq4-MuiPaper-root-MuiAccordion-root"
@@ -513,7 +529,7 @@ exports[`ContentPage should render ContentPage component 1`] = `
           class="content"
         >
           <div
-            class="c8"
+            class="c9"
           >
             <div
               class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiAccordion-root MuiAccordion-rounded MuiAccordion-gutters css-1elwnq4-MuiPaper-root-MuiAccordion-root"
@@ -596,10 +612,10 @@ exports[`ContentPage should render ContentPage component 1`] = `
         </div>
       </div>
       <div
-        class="c6"
+        class="c7"
       >
         <div
-          class="c7"
+          class="c8"
         >
           Sources
         </div>
@@ -607,7 +623,7 @@ exports[`ContentPage should render ContentPage component 1`] = `
           class="content"
         >
           <a
-            class="c9"
+            class="c10"
             href="https://docs.github.com/en"
             rel="noreferrer"
             target="_blank"
@@ -617,10 +633,10 @@ exports[`ContentPage should render ContentPage component 1`] = `
         </div>
       </div>
       <hr
-        class="c10"
+        class="c11"
       />
       <div
-        class="c11"
+        class="c12"
         data-test-id="Previous"
       >
         <div>
@@ -633,7 +649,7 @@ exports[`ContentPage should render ContentPage component 1`] = `
         </a>
       </div>
       <div
-        class="c12"
+        class="c13"
         data-test-id="Next"
       >
         <div>

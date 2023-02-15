@@ -2,6 +2,7 @@ import ProjectTechnologyLink from "../ProjectPageLink/ProjectTechnologyLink";
 import StyledWrapper from "./styles";
 import externallink from "images/externallink.svg";
 import { technologyList } from "data/data";
+import Grid from "@mui/material/Grid";
 
 type ProjectItemProps = {
   data: Array<{
@@ -44,17 +45,27 @@ const ProjectItem = ({ data }: ProjectItemProps) => (
                 <div className="project-tag">Internal</div>
               )}
             </div>
-            <div className="text">{description}</div>
+            <div
+              className="text"
+              dangerouslySetInnerHTML={{
+                __html: description.replace(
+                  /href=/g,
+                  'rel="noreferrer" target="_blank" href='
+                ),
+              }}
+            />
             <div className="heading">Key Technologies</div>
             <div className="technologies">
-              {technologies.map(
-                (tech: string, idx: number) =>
-                  includesValue(tech) && (
-                    <span key={`tech-${idx}`}>
-                      <ProjectTechnologyLink techName={tech} />
-                    </span>
-                  )
-              )}
+              <Grid container alignItems="center" textAlign="center">
+                {technologies.map(
+                  (tech: string, idx: number) =>
+                    includesValue(tech) && (
+                      <Grid item xs={3} md={2} key={`tech-${idx}`}>
+                        <ProjectTechnologyLink techName={tech} />
+                      </Grid>
+                    )
+                )}
+              </Grid>
             </div>
           </div>
         </StyledWrapper>
