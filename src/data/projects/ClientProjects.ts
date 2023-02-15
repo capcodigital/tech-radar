@@ -14,6 +14,7 @@ const ClientProjects = [
       "Jenkins",
       "GitHub",
       "Java",
+      "Python",
     ],
   },
   {
