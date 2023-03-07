@@ -7,6 +7,6 @@ export default defineConfig({
     setupNodeEvents(on, config) {
       return require("./cypress/plugins/index.ts")(on, config);
     },
-    baseUrl: "https://radar.capco.io/",
+    baseUrl: "https://ae463622.tech-radar-dtc.pages.dev/",
   },
 });
