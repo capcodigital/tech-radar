@@ -994,6 +994,28 @@ export const categoryList = [
   "DevOps",
 ];
 
+export const categoryPaths = [
+  "mobile",
+  "frontend",
+  "backend",
+  "integration",
+  "cloud-&-platforms",
+  "quality-engineering",
+  "data-engineering",
+  "devops",
+];
+
+export const previousTechInCategory = [
+  "react-native",
+  "react",
+  "java",
+  "rest",
+  "gcp",
+  "selenium",
+  "apache-spark",
+  "github",
+];
+
 export const technologyList = [
   "Elastic",
   "SonarQube",
