@@ -60,6 +60,7 @@ const CategoryPage = () => {
    * the state of the number of open source projects that use that technology
    * @param {string} techName - The name of the technology you want to search for.
    */
+
   const fetchOssProject = async (techName: string) => {
     const response = await Axios.get(
       "https://api.github.com/orgs/capcodigital/repos"
@@ -113,6 +114,7 @@ const CategoryPage = () => {
     setTechnology(technologyFromUrl);
     setCategory(categoryFromUrl);
     fetchOssProject(technologyFromUrl.toLowerCase());
+
     getClientProjects(technologyFromUrl.toLowerCase());
 
     window.scroll({
