@@ -114,7 +114,6 @@ const CategoryPage = () => {
     setTechnology(technologyFromUrl);
     setCategory(categoryFromUrl);
     fetchOssProject(technologyFromUrl.toLowerCase());
-
     getClientProjects(technologyFromUrl.toLowerCase());
 
     window.scroll({
