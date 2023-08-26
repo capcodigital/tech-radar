@@ -21,7 +21,7 @@
     "axios": "^1.2.4",
     "dotenv": "^16.0.3",
     "jest-styled-components": "^7.1.1",
-    "playwright": "^1.34.3",
+    "playwright": "^1.36.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.7.0",
